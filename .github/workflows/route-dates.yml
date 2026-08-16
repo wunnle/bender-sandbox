@@ -1,0 +1,35 @@
+name: route dates
+
+on:
+  push:
+    branches: [main]
+
+# The commit this job pushes is made with GITHUB_TOKEN, and pushes made with
+# that token don't trigger workflows — so this can't retrigger itself.
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # route-dates.mjs reads per-directory git history
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: node scripts/route-dates.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- src/app/route-dates.json; then
+            echo "route dates unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update route dates [skip ci]" -- src/app/route-dates.json
+          git push

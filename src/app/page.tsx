@@ -2,6 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import Link from "next/link";
 import EyeLogo from "./EyeLogo";
+// Generated from git history by scripts/route-dates.mjs, committed by the
+// route-dates workflow. See that script for why it isn't read from git here.
+import routeDates from "./route-dates.json";
+
+const dates: Record<string, string> = routeDates;
 
 // Optional blurbs. Anything not listed still shows up, just without a description.
 const NOTES: Record<string, string> = {
@@ -22,8 +27,20 @@ function experiments() {
         fs.existsSync(path.join(appDir, e.name, "page.tsx")),
     )
     .map((e) => e.name)
-    .sort();
+    .sort((a, b) => {
+      // Most recently changed first; anything without a date sinks to the bottom.
+      const da = dates[a] ?? "";
+      const db = dates[b] ?? "";
+      return db.localeCompare(da) || a.localeCompare(b);
+    });
 }
+
+const formatDate = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+  timeZone: "UTC",
+}).format;
 
 export default function Home() {
   const routes = experiments();
@@ -59,8 +76,18 @@ export default function Home() {
                   <span className="text-sm text-neutral-500">{NOTES[name]}</span>
                 )}
               </span>
-              <span className="text-neutral-400 transition group-hover:translate-x-0.5">
-                →
+              <span className="flex shrink-0 items-baseline gap-3">
+                {dates[name] && (
+                  <time
+                    dateTime={dates[name]}
+                    className="text-xs tabular-nums text-neutral-400"
+                  >
+                    {formatDate(new Date(dates[name]))}
+                  </time>
+                )}
+                <span className="text-neutral-400 transition group-hover:translate-x-0.5">
+                  →
+                </span>
               </span>
             </Link>
           </li>
