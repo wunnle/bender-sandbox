@@ -10,15 +10,6 @@ const NOTES: Record<string, string> = {
   stopwatch: "Stopwatch with laps",
 };
 
-// Newest mtime anywhere under the route's directory.
-function lastChanged(dir: string): number {
-  return fs.readdirSync(dir, { withFileTypes: true }).reduce((newest, e) => {
-    const full = path.join(dir, e.name);
-    const at = e.isDirectory() ? lastChanged(full) : fs.statSync(full).mtimeMs;
-    return Math.max(newest, at);
-  }, 0);
-}
-
 function experiments() {
   const appDir = path.join(process.cwd(), "src/app");
   return fs
@@ -30,19 +21,9 @@ function experiments() {
         !e.name.startsWith("(") &&
         fs.existsSync(path.join(appDir, e.name, "page.tsx")),
     )
-    .map((e) => ({
-      name: e.name,
-      changed: lastChanged(path.join(appDir, e.name)),
-    }))
-    .sort((a, b) => b.changed - a.changed || a.name.localeCompare(b.name));
+    .map((e) => e.name)
+    .sort();
 }
-
-const formatDate = new Intl.DateTimeFormat("en-GB", {
-  day: "numeric",
-  month: "short",
-  year: "numeric",
-  timeZone: "UTC",
-}).format;
 
 export default function Home() {
   const routes = experiments();
@@ -66,7 +47,7 @@ export default function Home() {
       </header>
 
       <ul className="flex flex-col gap-2">
-        {routes.map(({ name, changed }) => (
+        {routes.map((name) => (
           <li key={name}>
             <Link
               href={`/${name}`}
@@ -78,16 +59,8 @@ export default function Home() {
                   <span className="text-sm text-neutral-500">{NOTES[name]}</span>
                 )}
               </span>
-              <span className="flex shrink-0 items-baseline gap-3">
-                <time
-                  dateTime={new Date(changed).toISOString()}
-                  className="text-xs tabular-nums text-neutral-400"
-                >
-                  {formatDate(new Date(changed))}
-                </time>
-                <span className="text-neutral-400 transition group-hover:translate-x-0.5">
-                  →
-                </span>
+              <span className="text-neutral-400 transition group-hover:translate-x-0.5">
+                →
               </span>
             </Link>
           </li>
