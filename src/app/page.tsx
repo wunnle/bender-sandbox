@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import Image from "next/image";
 import Link from "next/link";
 
 // Optional blurbs. Anything not listed still shows up, just without a description.
@@ -29,11 +30,27 @@ export default function Home() {
 
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col justify-center gap-10 p-8">
-      <header>
-        <h1 className="text-2xl font-semibold tracking-tight">Sandbox</h1>
-        <p className="mt-1 text-sm text-neutral-500">
-          Throwaway experiments. {routes.length} live.
-        </p>
+      <header className="flex items-center gap-4">
+        <Image
+          src="/kafagoz.svg"
+          alt=""
+          width={64}
+          height={100}
+          priority
+          className="h-20 w-auto shrink-0"
+        />
+        <div>
+          <h1 className="text-2xl font-semibold tracking-tight">Sandbox</h1>
+          <p className="mt-1 text-sm text-neutral-500">
+            Throwaway experiments. {routes.length} live.
+          </p>
+          <a
+            href="https://kafagoz.com"
+            className="mt-1 inline-block text-sm text-neutral-400 underline-offset-4 hover:underline"
+          >
+            kafagoz.com
+          </a>
+        </div>
       </header>
 
       <ul className="flex flex-col gap-2">
