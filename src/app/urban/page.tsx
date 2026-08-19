@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button, Game, fitCanvas } from "./engine";
-import { TitleScene } from "./scenes";
+import { RoomScene, TitleScene } from "./scenes";
 
 const DPAD: { b: Button; label: string; cls: string }[] = [
   { b: "up", label: "▲", cls: "col-start-2 row-start-1" },
@@ -25,7 +25,9 @@ export default function UrbanPage() {
 
     const game = new Game(canvas);
     gameRef.current = game;
-    game.push(new TitleScene());
+    // ?scene=room skips the title screen — handy when iterating on the cafe.
+    const skipTitle = new URLSearchParams(window.location.search).get("scene") === "room";
+    game.push(skipTitle ? new RoomScene() : new TitleScene());
     game.start();
 
     const detachKeys = game.attachKeyboard();
