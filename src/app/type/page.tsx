@@ -482,8 +482,16 @@ export default function TypePage() {
               href="/marquee"
               className="underline decoration-white/30 underline-offset-4"
             >
-              Ten circular marquees are next door.
-            </a>
+              Ten circular marquees
+            </a>{" "}
+            and{" "}
+            <a
+              href="/paths"
+              className="underline decoration-white/30 underline-offset-4"
+            >
+              ten parametric curves
+            </a>{" "}
+            are next door.
           </p>
           <input
             value={text}

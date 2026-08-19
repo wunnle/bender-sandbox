@@ -54,10 +54,6 @@ function PathType({
   className = "fill-white",
   tracking = "0.25em",
   guide = true,
-  className2,
-  d2,
-  reps2,
-  speed2,
 }: {
   d: string;
   viewBox: string;
@@ -68,30 +64,20 @@ function PathType({
   className?: string;
   tracking?: string;
   guide?: boolean;
-  className2?: string;
-  d2?: string;
-  reps2?: number;
-  speed2?: number;
 }) {
   const raw = useId();
   const id = raw.replace(/:/g, "");
   const [o1, setO1] = useState(0);
-  const [o2, setO2] = useState(0);
   useRaf((t) => {
     setO1((-t * speed) % 6000);
-    if (d2) setO2((t * (speed2 ?? speed)) % 6000);
   });
   return (
     <svg viewBox={viewBox} className="h-full w-full">
       <defs>
         <path id={`p-${id}`} d={d} fill="none" />
-        {d2 && <path id={`q-${id}`} d={d2} fill="none" />}
       </defs>
       {guide && (
-        <>
-          <use href={`#p-${id}`} className="stroke-white/[0.08]" strokeWidth={1} />
-          {d2 && <use href={`#q-${id}`} className="stroke-white/[0.08]" strokeWidth={1} />}
-        </>
+        <use href={`#p-${id}`} className="stroke-white/[0.08]" strokeWidth={1} />
       )}
       <text
         className={`${className} font-mono`}
@@ -101,16 +87,6 @@ function PathType({
           {repeat(text.toUpperCase(), reps)}
         </textPath>
       </text>
-      {d2 && (
-        <text
-          className={`${className2 ?? className} font-mono`}
-          style={{ fontSize: size, letterSpacing: tracking }}
-        >
-          <textPath href={`#q-${id}`} startOffset={o2}>
-            {repeat(text.toUpperCase(), reps2 ?? reps)}
-          </textPath>
-        </text>
-      )}
     </svg>
   );
 }

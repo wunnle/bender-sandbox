@@ -434,8 +434,13 @@ export default function MarqueePage() {
             Loops on paths, rings, spirals and cylinders. Scroll over #09 to
             shove it.{" "}
             <a href="/type" className="underline decoration-white/30 underline-offset-4">
-              The first nine live here.
-            </a>
+              Set I
+            </a>{" "}
+            and{" "}
+            <a href="/paths" className="underline decoration-white/30 underline-offset-4">
+              set III
+            </a>{" "}
+            are next door.
           </p>
           <input
             value={text}
