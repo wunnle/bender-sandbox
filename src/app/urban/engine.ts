@@ -8,9 +8,29 @@ export const GAME_HEIGHT = 180;
 const TICK_MS = 1000 / 60;
 const MAX_FRAME_MS = 250; // clamp so a backgrounded tab doesn't spiral
 
-export type Button = "up" | "down" | "left" | "right" | "action" | "cancel";
+export type Button =
+  | "up"
+  | "down"
+  | "left"
+  | "right"
+  | "action"
+  | "cancel"
+  // Temporary hooks for nudging stats until real interactions land (BEN-219).
+  | "debugFun"
+  | "debugCaffeine"
+  | "debugSocial";
 
-const BUTTONS: Button[] = ["up", "down", "left", "right", "action", "cancel"];
+const BUTTONS: Button[] = [
+  "up",
+  "down",
+  "left",
+  "right",
+  "action",
+  "cancel",
+  "debugFun",
+  "debugCaffeine",
+  "debugSocial",
+];
 
 const KEY_MAP: Record<string, Button> = {
   ArrowUp: "up",
@@ -25,6 +45,9 @@ const KEY_MAP: Record<string, Button> = {
   Enter: "action",
   KeyE: "action",
   Escape: "cancel",
+  Digit1: "debugFun",
+  Digit2: "debugCaffeine",
+  Digit3: "debugSocial",
 };
 
 /** Edge-detected button state. `held` is this tick, `pressed` is the rising edge. */

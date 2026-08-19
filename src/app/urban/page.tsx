@@ -77,6 +77,20 @@ export default function UrbanPage() {
         />
       </div>
 
+      <div className="flex gap-2 sm:hidden">
+        {(
+          [
+            ["debugFun", "FUN"],
+            ["debugCaffeine", "CAF"],
+            ["debugSocial", "SOC"],
+          ] as [Button, string][]
+        ).map(([b, label]) => (
+          <button key={b} className={`${btn} h-9 px-3 text-xs`} onPointerDown={tap(b)}>
+            +{label}
+          </button>
+        ))}
+      </div>
+
       <div className="flex w-full max-w-md items-center justify-between gap-6 sm:hidden">
         <div className="grid grid-cols-3 grid-rows-3 gap-1">
           {DPAD.map(({ b, label, cls }) => (
@@ -103,8 +117,8 @@ export default function UrbanPage() {
       </div>
 
       <p className="max-w-md text-center font-mono text-[11px] leading-relaxed text-white/35">
-        Engine shell only — fixed 60 Hz timestep, integer-scaled backbuffer, scene stack,
-        shared keyboard/touch input. Cafe, stat bars and the day counter come next.
+        Fun / Caffeine / Social decay through the day and flash red under 15. Press 1, 2 or 3
+        to bump them — real cafe interactions and the day counter come next.
       </p>
     </main>
   );

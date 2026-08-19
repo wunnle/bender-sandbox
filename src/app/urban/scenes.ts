@@ -2,6 +2,7 @@
 // The real Urban Cafe art and stat systems land in later issues.
 
 import {
+  Button,
   GAME_HEIGHT,
   GAME_WIDTH,
   Scene,
@@ -9,6 +10,8 @@ import {
   drawText,
   textWidth,
 } from "./engine";
+import { drawStatBars } from "./hud";
+import { StatKey, Stats } from "./stats";
 
 const PALETTE = {
   wall: "#2b2137",
@@ -66,6 +69,12 @@ export class RoomScene implements Scene {
   private walkPhase = 0;
   private note = "";
   private noteT = 0;
+  private clock = 0;
+
+  readonly stats = new Stats({ fun: 55, caffeine: 40, social: 62 });
+
+  /** In-game minutes per real second — a full day lands in a couple of minutes. */
+  private readonly timeScale = 4;
 
   private readonly speed = 52; // px/sec
   private readonly bounds = { left: 12, right: GAME_WIDTH - 12, top: 96, bottom: GAME_HEIGHT - 14 };
@@ -73,6 +82,17 @@ export class RoomScene implements Scene {
   update(dt: number, { input, game }: SceneContext) {
     this.px = this.x;
     this.py = this.y;
+    this.clock += dt;
+    this.stats.update(dt, this.timeScale);
+
+    const debug: [Button, StatKey, number][] = [
+      ["debugFun", "fun", 14],
+      ["debugCaffeine", "caffeine", 18],
+      ["debugSocial", "social", 12],
+    ];
+    for (const [button, key, amount] of debug) {
+      if (input.justPressed(button)) this.stats.add(key, amount);
+    }
 
     let dx = input.axisX();
     let dy = input.axisY();
@@ -156,6 +176,12 @@ export class RoomScene implements Scene {
       centerText(g, this.note, 155, PALETTE.ink);
     }
 
-    drawText(g, "MOVE: ARROWS  ACT: E  BACK: ESC", 6, 6, PALETTE.dim);
+    drawStatBars(g, this.stats, 4, 4, this.clock);
+
+    if (this.stats.anyCritical() && Math.floor(this.clock * 2) % 2 === 0) {
+      centerText(g, "RUNNING ON EMPTY", 18, "#e5544b");
+    }
+
+    drawText(g, "1/2/3 BUMP STATS  ESC BACK", 6, GAME_HEIGHT - 9, PALETTE.dim);
   }
 }
