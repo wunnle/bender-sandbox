@@ -13,6 +13,7 @@ const NOTES: Record<string, string> = {
   dice: "Roll d4 through d100, up to six at a time",
   qr: "Turn any text or URL into a QR code",
   stopwatch: "Stopwatch with laps",
+  urban: "Pixel-art cafe life-sim — engine shell",
 };
 
 function experiments() {
