@@ -477,7 +477,13 @@ export default function TypePage() {
           </h1>
           <p className="mt-3 max-w-xl text-sm text-white/45">
             Type below — every experiment retargets live. Click the ones marked
-            replay.
+            replay.{" "}
+            <a
+              href="/marquee"
+              className="underline decoration-white/30 underline-offset-4"
+            >
+              Ten circular marquees are next door.
+            </a>
           </p>
           <input
             value={text}
