@@ -11,7 +11,16 @@ import {
   textWidth,
 } from "./engine";
 import { drawStatBars } from "./hud";
-import { FURNITURE, Rect, SPAWN, Solid, WALLS, interactableNear, overlaps } from "./floorplan";
+import {
+  FURNITURE,
+  ORAL,
+  Rect,
+  SPAWN,
+  Solid,
+  WALLS,
+  interactableNear,
+  overlaps,
+} from "./floorplan";
 import { StatKey, Stats } from "./stats";
 
 const PALETTE = {
@@ -26,6 +35,9 @@ const PALETTE = {
   counterShadow: "#a37f0c",
   table: "#5b4746",
   tableTop: "#6d5655",
+  oral: "#8f5f9e",
+  oralDark: "#6b4478",
+  oralApron: "#d9d2c4",
   ink: "#e8e0d0",
   dim: "#9a8b7a",
   darkInk: "#3a3038",
@@ -173,6 +185,7 @@ export class RoomScene implements Scene {
     const target = interactableNear(this.body());
     for (const f of FURNITURE) drawFurniture(g, f, f === target);
 
+    drawOral(g, ORAL.x, ORAL.y, this.clock);
     drawPlayer(g, x, y, this.facing, this.walkPhase);
 
     if (target) {
@@ -227,6 +240,44 @@ function drawFurniture(g: CanvasRenderingContext2D, f: Solid, highlighted: boole
     g.fillRect(f.x - 1, f.y, 1, f.h);
     g.fillRect(f.x + f.w, f.y, 1, f.h);
   }
+}
+
+/**
+ * Oral, perched cross-legged on the big table. He sways very slightly, which is
+ * the only sign he is awake.
+ */
+function drawOral(g: CanvasRenderingContext2D, x: number, y: number, t: number) {
+  const sway = Math.floor(t * 1.1) % 2 === 0 ? 0 : 1;
+  const lean = 1; // he never sits straight
+
+  // Crossed shins resting on the tabletop
+  g.fillStyle = PALETTE.oralDark;
+  g.fillRect(x - 5, y, 10, 2);
+  g.fillRect(x - 6, y + 1, 4, 1);
+  g.fillRect(x + 2, y + 1, 4, 1);
+
+  // Torso, tipped over to one side
+  g.fillStyle = PALETTE.oral;
+  g.fillRect(x - 4 + lean, y - 7, 8, 7);
+  g.fillStyle = PALETTE.oralApron;
+  g.fillRect(x - 3 + lean, y - 3, 6, 3);
+
+  // One arm propping him up, the other draped over a knee
+  g.fillStyle = PALETTE.oral;
+  g.fillRect(x + 4 + lean, y - 5, 2, 5);
+  g.fillRect(x - 6 + lean, y - 4, 2, 3);
+
+  // Head, tilted, turned away from the room
+  const hy = y - 13 + sway;
+  g.fillStyle = PALETTE.skin;
+  g.fillRect(x - 3 + lean, hy, 6, 6);
+  g.fillStyle = PALETTE.hair;
+  g.fillRect(x - 3 + lean, hy - 1, 6, 3);
+  g.fillRect(x - 4 + lean, hy, 1, 2);
+  g.fillRect(x + 3 + lean, hy, 1, 2);
+  // Back of the head — no face from this angle, just one ear
+  g.fillStyle = "#c79268";
+  g.fillRect(x + 3 + lean, hy + 2, 1, 2);
 }
 
 function drawPlayer(

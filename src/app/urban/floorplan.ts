@@ -31,12 +31,12 @@ export const WALLS: Solid[] = [
 
 export const FURNITURE: Solid[] = [
   // Bar counters
-  { kind: "counter", x: 31, y: 20, w: 156, h: 16, prompt: "ORDER A COFFEE" },
+  { kind: "counter", x: 31, y: 20, w: 118, h: 16, prompt: "ORDER A COFFEE" },
   { kind: "counter", x: 217, y: 20, w: 79, h: 16, prompt: "PASTRY CASE" },
 
   // Main room tables
   { kind: "table", x: 38, y: 54, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 84, y: 47, w: 47, h: 22, prompt: "THE BIG TABLE" },
+  { kind: "table", x: 84, y: 47, w: 47, h: 22, prompt: "ORAL, THE OWNER" },
   { kind: "table", x: 38, y: 85, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
   { kind: "table", x: 106, y: 85, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
   { kind: "table", x: 272, y: 48, w: 24, h: 51, prompt: "THE LONG BENCH" },
@@ -49,6 +49,12 @@ export const FURNITURE: Solid[] = [
 ];
 
 export const SOLIDS: Solid[] = [...WALLS, ...FURNITURE];
+
+/**
+ * Oral owns the place and does not sit on chairs. He perches on the big table,
+ * cross-legged, facing away from the room. Anchor is his seat on the tabletop.
+ */
+export const ORAL = { x: 107, y: 61 };
 
 /** Where the player starts the day — just inside the door. */
 export const SPAWN = { x: 213, y: 104 };
