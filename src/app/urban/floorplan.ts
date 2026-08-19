@@ -1,7 +1,7 @@
 // Urban Cafe floor plan, traced from Sinan's layout sketch.
-// The sketch was 1288x938; everything here is already scaled to the 320x180
-// backbuffer. Walls enclose the main room, with a doorway in the bottom wall
-// leading down to the open seating area.
+// The sketch's proportions were rough and left too much dead floor through the
+// middle, so the room is pulled in to a 256x180 backbuffer. Walls enclose the
+// main room, with a doorway in the bottom wall leading to the seating area.
 
 export interface Rect {
   x: number;
@@ -21,43 +21,57 @@ export interface Solid extends Rect {
 }
 
 export const WALLS: Solid[] = [
-  { kind: "wall", x: 0, y: 0, w: 320, h: 7 },
+  { kind: "wall", x: 0, y: 0, w: 256, h: 7 },
   { kind: "wall", x: 0, y: 0, w: 8, h: 118 },
-  { kind: "wall", x: 312, y: 0, w: 8, h: 118 },
-  // Bottom wall, split by the doorway at x 189..238.
-  { kind: "wall", x: 0, y: 111, w: 189, h: 7 },
-  { kind: "wall", x: 238, y: 111, w: 82, h: 7 },
+  { kind: "wall", x: 248, y: 0, w: 8, h: 118 },
+  // Bottom wall, split by the doorway at x 152..190.
+  { kind: "wall", x: 0, y: 111, w: 152, h: 7 },
+  { kind: "wall", x: 190, y: 111, w: 66, h: 7 },
 ];
+
+/** The big table Qral works at — referenced when placing him and his laptop. */
+export const BIG_TABLE: Solid = {
+  kind: "table",
+  x: 84,
+  y: 58,
+  w: 47,
+  h: 20,
+  prompt: "QRAL, THE OWNER",
+};
 
 export const FURNITURE: Solid[] = [
   // Bar counters
   { kind: "counter", x: 31, y: 20, w: 118, h: 16, prompt: "ORDER A COFFEE" },
-  { kind: "counter", x: 217, y: 20, w: 79, h: 16, prompt: "PASTRY CASE" },
+  { kind: "counter", x: 169, y: 20, w: 79, h: 16, prompt: "PASTRY CASE" },
 
   // Main room tables
   { kind: "table", x: 38, y: 54, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 84, y: 47, w: 47, h: 22, prompt: "ORAL, THE OWNER" },
-  { kind: "table", x: 38, y: 85, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 106, y: 85, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 272, y: 48, w: 24, h: 51, prompt: "THE LONG BENCH" },
+  BIG_TABLE,
+  { kind: "table", x: 38, y: 88, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
+  { kind: "table", x: 106, y: 88, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
+  { kind: "table", x: 224, y: 48, w: 24, h: 51, prompt: "THE LONG BENCH" },
 
   // Lower seating area, past the doorway
-  { kind: "table", x: 239, y: 119, w: 81, h: 11, prompt: "WINDOW LEDGE" },
-  { kind: "table", x: 122, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 170, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
-  { kind: "table", x: 291, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
+  { kind: "table", x: 190, y: 119, w: 66, h: 11, prompt: "WINDOW LEDGE" },
+  { kind: "table", x: 100, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
+  { kind: "table", x: 148, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
+  { kind: "table", x: 232, y: 140, w: 13, h: 12, round: true, prompt: "A FREE TABLE" },
 ];
 
 export const SOLIDS: Solid[] = [...WALLS, ...FURNITURE];
 
 /**
- * Oral owns the place and does not sit on chairs. He perches on the big table,
- * cross-legged, facing away from the room. Anchor is his seat on the tabletop.
+ * Qral owns the cafe. He sits at the north side of the big table behind his
+ * laptop, so the table hides him from the waist down. Anchor is the table's
+ * north edge; he is drawn before the furniture so it overlaps him correctly.
  */
-export const ORAL = { x: 107, y: 61 };
+export const QRAL = { x: BIG_TABLE.x + 23, y: BIG_TABLE.y };
+
+/** His laptop, sitting on the tabletop in front of him. */
+export const LAPTOP = { x: BIG_TABLE.x + 16, y: BIG_TABLE.y + 2, w: 14, h: 6 };
 
 /** Where the player starts the day — just inside the door. */
-export const SPAWN = { x: 213, y: 104 };
+export const SPAWN = { x: 168, y: 104 };
 
 export function overlaps(a: Rect, b: Rect) {
   return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;

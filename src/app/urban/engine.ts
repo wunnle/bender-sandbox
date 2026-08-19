@@ -2,7 +2,7 @@
 // Fixed low-res backbuffer, nearest-neighbour upscale, fixed-timestep loop,
 // scene stack, and a unified keyboard/touch input source.
 
-export const GAME_WIDTH = 320;
+export const GAME_WIDTH = 256;
 export const GAME_HEIGHT = 180;
 
 const TICK_MS = 1000 / 60;

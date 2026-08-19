@@ -13,7 +13,8 @@ import {
 import { drawStatBars } from "./hud";
 import {
   FURNITURE,
-  ORAL,
+  LAPTOP,
+  QRAL,
   Rect,
   SPAWN,
   Solid,
@@ -35,9 +36,8 @@ const PALETTE = {
   counterShadow: "#a37f0c",
   table: "#5b4746",
   tableTop: "#6d5655",
-  oral: "#8f5f9e",
-  oralDark: "#6b4478",
-  oralApron: "#d9d2c4",
+  qral: "#8f5f9e",
+  qralApron: "#d9d2c4",
   ink: "#e8e0d0",
   dim: "#9a8b7a",
   darkInk: "#3a3038",
@@ -180,12 +180,16 @@ export class RoomScene implements Scene {
 
     // Doormat in the gap of the bottom wall
     g.fillStyle = "#a89a8c";
-    g.fillRect(191, 112, 45, 5);
+    g.fillRect(154, 112, 34, 5);
 
     const target = interactableNear(this.body());
-    for (const f of FURNITURE) drawFurniture(g, f, f === target);
 
-    drawOral(g, ORAL.x, ORAL.y, this.clock);
+    // Qral sits behind the big table, so he goes down before the furniture and
+    // his laptop goes on top of it.
+    drawQral(g, QRAL.x, QRAL.y, this.clock);
+    for (const f of FURNITURE) drawFurniture(g, f, f === target);
+    drawLaptop(g, this.clock);
+
     drawPlayer(g, x, y, this.facing, this.walkPhase);
 
     if (target) {
@@ -194,7 +198,7 @@ export class RoomScene implements Scene {
 
     // HUD lives in the open lower area, clear of the counters.
     drawStatBars(g, this.stats, 4, 142, this.clock);
-    drawText(g, "URBAN", 232, 11, PALETTE.darkInk);
+    drawText(g, "URBAN", 189, 11, PALETTE.darkInk);
 
     if (this.stats.anyCritical() && Math.floor(this.clock * 2) % 2 === 0) {
       centerText(g, "RUNNING ON EMPTY", 132, "#e5544b");
@@ -243,41 +247,61 @@ function drawFurniture(g: CanvasRenderingContext2D, f: Solid, highlighted: boole
 }
 
 /**
- * Oral, perched cross-legged on the big table. He sways very slightly, which is
- * the only sign he is awake.
+ * Qral at the north side of the big table, facing the room over his laptop.
+ * Everything below the table's north edge is drawn anyway and then covered by
+ * the tabletop, which is what sells him as sitting behind it.
  */
-function drawOral(g: CanvasRenderingContext2D, x: number, y: number, t: number) {
-  const sway = Math.floor(t * 1.1) % 2 === 0 ? 0 : 1;
-  const lean = 1; // he never sits straight
+function drawQral(g: CanvasRenderingContext2D, x: number, y: number, t: number) {
+  // A slow shift in the shoulders — he's been here a while.
+  const shift = Math.floor(t * 0.7) % 2 === 0 ? 0 : 1;
 
-  // Crossed shins resting on the tabletop
-  g.fillStyle = PALETTE.oralDark;
-  g.fillRect(x - 5, y, 10, 2);
-  g.fillRect(x - 6, y + 1, 4, 1);
-  g.fillRect(x + 2, y + 1, 4, 1);
+  // Chair back poking up behind him
+  g.fillStyle = "#4a3736";
+  g.fillRect(x - 5, y - 9, 10, 3);
 
-  // Torso, tipped over to one side
-  g.fillStyle = PALETTE.oral;
-  g.fillRect(x - 4 + lean, y - 7, 8, 7);
-  g.fillStyle = PALETTE.oralApron;
-  g.fillRect(x - 3 + lean, y - 3, 6, 3);
+  // Torso and shoulders
+  g.fillStyle = PALETTE.qral;
+  g.fillRect(x - 4, y - 9, 8, 9);
+  g.fillStyle = PALETTE.qralApron;
+  g.fillRect(x - 2, y - 6, 4, 6);
 
-  // One arm propping him up, the other draped over a knee
-  g.fillStyle = PALETTE.oral;
-  g.fillRect(x + 4 + lean, y - 5, 2, 5);
-  g.fillRect(x - 6 + lean, y - 4, 2, 3);
+  // Forearms reaching forward onto the table, toward the laptop
+  g.fillStyle = PALETTE.qral;
+  g.fillRect(x - 6, y - 5 + shift, 2, 5);
+  g.fillRect(x + 4, y - 5 + shift, 2, 5);
 
-  // Head, tilted, turned away from the room
-  const hy = y - 13 + sway;
+  // Head and face, looking out at the room
+  const hy = y - 16;
   g.fillStyle = PALETTE.skin;
-  g.fillRect(x - 3 + lean, hy, 6, 6);
+  g.fillRect(x - 3, hy, 6, 7);
   g.fillStyle = PALETTE.hair;
-  g.fillRect(x - 3 + lean, hy - 1, 6, 3);
-  g.fillRect(x - 4 + lean, hy, 1, 2);
-  g.fillRect(x + 3 + lean, hy, 1, 2);
-  // Back of the head — no face from this angle, just one ear
-  g.fillStyle = "#c79268";
-  g.fillRect(x + 3 + lean, hy + 2, 1, 2);
+  g.fillRect(x - 4, hy - 2, 8, 3);
+  g.fillRect(x - 4, hy, 1, 3);
+  g.fillRect(x + 3, hy, 1, 3);
+  g.fillStyle = PALETTE.darkInk;
+  g.fillRect(x - 2, hy + 3, 1, 1);
+  g.fillRect(x + 1, hy + 3, 1, 1);
+  // Moustache, because he is that guy
+  g.fillStyle = PALETTE.hair;
+  g.fillRect(x - 2, hy + 5, 4, 1);
+}
+
+/** Open laptop, screen facing Qral, so the player sees the lid and its glow. */
+function drawLaptop(g: CanvasRenderingContext2D, t: number) {
+  const { x, y, w, h } = LAPTOP;
+
+  // Lid, seen from behind
+  g.fillStyle = "#3d3a44";
+  g.fillRect(x, y, w, h - 2);
+  g.fillStyle = "#55515f";
+  g.fillRect(x, y, w, 1);
+  // Screen glow spilling around the edges and onto his face
+  g.fillStyle = Math.floor(t * 3) % 2 === 0 ? "#9fd7e8" : "#8cc6d8";
+  g.fillRect(x + 1, y - 1, w - 2, 1);
+
+  // Keyboard deck in front of the lid
+  g.fillStyle = "#2f2d36";
+  g.fillRect(x - 1, y + h - 2, w + 2, 2);
 }
 
 function drawPlayer(

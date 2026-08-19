@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Button, Game, fitCanvas } from "./engine";
+import { Button, GAME_HEIGHT, GAME_WIDTH, Game, fitCanvas } from "./engine";
 import { RoomScene, TitleScene } from "./scenes";
 
 const DPAD: { b: Button; label: string; cls: string }[] = [
@@ -66,7 +66,7 @@ export default function UrbanPage() {
       <header className="flex w-full max-w-3xl items-baseline justify-between">
         <h1 className="font-mono text-sm tracking-widest text-amber-400">URBAN ADVENTURES</h1>
         <span className="font-mono text-xs text-white/40">
-          320×180 ·{scale}× · {fps} fps
+          {GAME_WIDTH}×{GAME_HEIGHT} ·{scale}× · {fps} fps
         </span>
       </header>
 
