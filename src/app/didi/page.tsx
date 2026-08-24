@@ -85,7 +85,7 @@ export default function DiDiPage() {
 
       // waveform "teeth" — a sharp zigzag along the slit, like a cel-drawn scanline
       const pts: string[] = [];
-      const steps = 8;
+      const steps = 4;
       for (let i = 0; i <= steps; i++) {
         const x = -58 + (i / steps) * 116;
         const taper = Math.cos((x / 70) * (Math.PI / 2)); // fade to nothing at the corners
@@ -170,13 +170,13 @@ export default function DiDiPage() {
           </g>
 
           <path ref={lipsRef} d={lipPath(0.2)} fill="url(#lipGrad)" stroke="#140208" strokeWidth="4" strokeLinejoin="round" />
-          <path ref={slitRef} d={slitPath(0.2)} fill="#3a0110" stroke="#140208" strokeWidth="2" />
+          <path ref={slitRef} d={slitPath(0.2)} fill="#fdf6ee" stroke="#140208" strokeWidth="2" />
           <g clipPath="url(#mouthClip)">
             <polyline
               ref={waveRef}
               points=""
               fill="none"
-              stroke="#fdf6ee"
+              stroke="#140208"
               strokeWidth="3.5"
               strokeLinecap="round"
               strokeLinejoin="round"
