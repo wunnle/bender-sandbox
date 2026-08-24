@@ -22,12 +22,12 @@ function lipPath(open: number) {
   return [
     // upper lip: left corner -> cupid's bow -> right corner
     `M -100 0`,
-    `C -92 -44 -50 -66 -16 -34`,
-    `C -6 -25 6 -25 16 -34`,
-    `C 50 -66 92 -44 100 0`,
-    // lower lip back to the left corner
-    `C 94 ${52 + gap} 48 ${76 + gap} 0 ${78 + gap}`,
-    `C -48 ${76 + gap} -94 ${52 + gap} -100 0`,
+    `C -96 -60 -52 -88 -17 -46`,
+    `C -6 -33 6 -33 17 -46`,
+    `C 52 -88 96 -60 100 0`,
+    // lower lip back to the left corner — shallower than the upper
+    `C 90 ${36 + gap} 46 ${52 + gap} 0 ${54 + gap}`,
+    `C -46 ${52 + gap} -90 ${36 + gap} -100 0`,
     `Z`,
   ].join(" ");
 }
@@ -85,7 +85,7 @@ export default function DiDiPage() {
 
       // waveform "teeth" — a sharp zigzag along the slit, like a cel-drawn scanline
       const pts: string[] = [];
-      const steps = 4;
+      const steps = 6;
       for (let i = 0; i <= steps; i++) {
         const x = -58 + (i / steps) * 116;
         const taper = Math.cos((x / 70) * (Math.PI / 2)); // fade to nothing at the corners
@@ -183,7 +183,7 @@ export default function DiDiPage() {
             />
           </g>
           {/* cel highlight on the lower lip */}
-          <ellipse cx="26" cy="52" rx="28" ry="7" fill="#fff" opacity="0.16" />
+          <ellipse cx="26" cy="34" rx="26" ry="6" fill="#fff" opacity="0.16" />
         </g>
       </svg>
 
