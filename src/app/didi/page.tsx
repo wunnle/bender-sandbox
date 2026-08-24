@@ -13,40 +13,44 @@ const LINES = [
   "I have 40 gigabytes of secrets, dear.",
 ];
 
-/** Lip outline as a function of how open the mouth is (0 = closed, 1 = wide). */
+/**
+ * Lip outline. In the show the mouth stays nearly shut — a narrow slit, not a
+ * cavity — so `open` only ever nudges the halves a few units apart.
+ */
 function lipPath(open: number) {
-  const gap = 6 + open * 30; // half-height of the mouth opening
-  const cupid = 10 + open * 3;
+  const gap = open * 7; // how far each lip pulls back from the seam
   return [
     // upper lip: left corner -> cupid's bow -> right corner
     `M -100 0`,
-    `C -78 -${28 + open * 6} -40 -${34 + cupid} -14 -${16 + open * 4}`,
-    `C -6 -${10 + open * 2} 6 -${10 + open * 2} 14 -${16 + open * 4}`,
-    `C 40 -${34 + cupid} 78 -${28 + open * 6} 100 0`,
+    `C -84 -26 -46 -40 -15 -20`,
+    `C -6 -13 6 -13 15 -20`,
+    `C 46 -40 84 -26 100 0`,
     // lower lip back to the left corner
-    `C 74 ${34 + open * 18} 40 ${gap + 26} 0 ${gap + 30}`,
-    `C -40 ${gap + 26} -74 ${34 + open * 18} -100 0`,
+    `C 82 ${34 + gap} 42 ${52 + gap} 0 ${54 + gap}`,
+    `C -42 ${52 + gap} -82 ${34 + gap} -100 0`,
     `Z`,
   ].join(" ");
 }
 
-/** Inner mouth cavity, where the waveform "teeth" live. */
-function cavityPath(open: number) {
-  const h = 2 + open * 26;
+/** The slit between the lips, where the waveform "teeth" show through. */
+function slitPath(open: number) {
+  const h = 5 + open * 9;
   return [
-    `M -74 0`,
-    `C -46 -${h} 46 -${h} 74 0`,
-    `C 46 ${h * 1.15} -46 ${h * 1.15} -74 0`,
+    `M -76 0`,
+    `C -48 -${h} 48 -${h} 76 0`,
+    `C 48 ${h * 1.5} -48 ${h * 1.5} -76 0`,
     `Z`,
   ].join(" ");
 }
 
 export default function DiDiPage() {
   const lipsRef = useRef<SVGPathElement>(null);
-  const cavityRef = useRef<SVGPathElement>(null);
+  const slitRef = useRef<SVGPathElement>(null);
   const waveRef = useRef<SVGPolylineElement>(null);
   const bodyRef = useRef<SVGGElement>(null);
   const glowRef = useRef<SVGEllipseElement>(null);
+  const sparkRef = useRef<SVGGElement>(null);
+  const tipRef = useRef<SVGCircleElement>(null);
 
   const [line, setLine] = useState(LINES[0]);
   const [talking, setTalking] = useState(true);
@@ -70,21 +74,22 @@ export default function DiDiPage() {
         : 0.02 + 0.02 * Math.sin(t * 2);
 
       lipsRef.current?.setAttribute("d", lipPath(env));
-      cavityRef.current?.setAttribute("d", cavityPath(env));
-      glowRef.current?.setAttribute("opacity", String(0.15 + env * 0.5));
+      slitRef.current?.setAttribute("d", slitPath(env));
+      glowRef.current?.setAttribute("opacity", String(0.1 + env * 0.35));
 
-      // waveform "teeth" — a scanline across the cavity, amplitude driven by env
+      // antenna tip: dark bead at rest, bursting into a starburst as she speaks
+      sparkRef.current?.setAttribute("opacity", talkingRef.current ? env.toFixed(2) : "0");
+      sparkRef.current?.setAttribute("transform", `rotate(${(t * 90) % 360} 0 0) scale(${0.7 + env * 0.6})`);
+      tipRef.current?.setAttribute("opacity", String(1 - env * 0.8));
+
+      // waveform "teeth" — a sharp zigzag along the slit, like a cel-drawn scanline
       const pts: string[] = [];
-      for (let i = 0; i <= 72; i++) {
-        const x = -72 + (i / 72) * 144;
-        const taper = Math.cos((x / 82) * (Math.PI / 2)); // fade to nothing at the corners
-        const y =
-          taper *
-          (10 + env * 22) *
-          (Math.sin(i * 0.55 - t * 14) * 0.6 +
-            Math.sin(i * 1.31 + t * 9) * 0.3 +
-            Math.sin(i * 2.7 - t * 21) * 0.18) *
-          (talkingRef.current ? 1 : 0.15);
+      const steps = 26;
+      for (let i = 0; i <= steps; i++) {
+        const x = -62 + (i / steps) * 124;
+        const taper = Math.cos((x / 70) * (Math.PI / 2)); // fade to nothing at the corners
+        const zig = i % 2 === 0 ? 1 : -1;
+        const y = taper * zig * (3 + env * 9) * (0.6 + 0.4 * Math.sin(i * 1.7 - t * 16));
         pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
       }
       waveRef.current?.setAttribute("points", pts.join(" "));
@@ -121,14 +126,10 @@ export default function DiDiPage() {
       <svg viewBox="0 0 500 420" className="w-full max-w-xl drop-shadow-[0_0_40px_rgba(255,40,90,0.25)]">
         <defs>
           <linearGradient id="lipGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ff5b7f" />
-            <stop offset="45%" stopColor="#e3123f" />
-            <stop offset="100%" stopColor="#8c0322" />
+            <stop offset="0%" stopColor="#c8113a" />
+            <stop offset="55%" stopColor="#b00d31" />
+            <stop offset="100%" stopColor="#8e0724" />
           </linearGradient>
-          <radialGradient id="cavityGrad">
-            <stop offset="0%" stopColor="#3c0212" />
-            <stop offset="100%" stopColor="#12000a" />
-          </radialGradient>
           <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="6" />
           </filter>
@@ -139,20 +140,41 @@ export default function DiDiPage() {
 
         <g ref={bodyRef} transform="translate(250 210)">
           <ellipse ref={glowRef} cx="0" cy="0" rx="130" ry="72" fill="#ff2d5e" opacity="0.3" filter="url(#soft)" />
-          <path ref={lipsRef} d={lipPath(0.2)} fill="url(#lipGrad)" stroke="#4d0113" strokeWidth="2.5" />
-          <path ref={cavityRef} d={cavityPath(0.2)} fill="url(#cavityGrad)" />
+
+          {/* antenna off the right corner, tip flaring when she speaks */}
+          <path d="M 92 -14 L 150 -86" stroke="#140208" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <g transform="translate(150 -86)">
+            <circle ref={tipRef} cx="0" cy="0" r="5" fill="#140208" />
+            <g ref={sparkRef} opacity="0">
+              {Array.from({ length: 8 }, (_, i) => (
+                <line
+                  key={i}
+                  x1="0"
+                  y1="0"
+                  x2={(Math.cos((i * Math.PI) / 4) * 18).toFixed(1)}
+                  y2={(Math.sin((i * Math.PI) / 4) * 18).toFixed(1)}
+                  stroke="#fff"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                />
+              ))}
+              <circle cx="0" cy="0" r="4" fill="none" stroke="#fff" strokeWidth="2" />
+            </g>
+          </g>
+
+          <path ref={lipsRef} d={lipPath(0.2)} fill="url(#lipGrad)" stroke="#140208" strokeWidth="4" strokeLinejoin="round" />
+          <path ref={slitRef} d={slitPath(0.2)} fill="#3a0110" stroke="#140208" strokeWidth="2" />
           <polyline
             ref={waveRef}
             points=""
             fill="none"
-            stroke="#7dffe6"
+            stroke="#fdf6ee"
             strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* highlight on the upper lip */}
-          <ellipse cx="-42" cy="-22" rx="20" ry="7" fill="#fff" opacity="0.35" transform="rotate(-18 -42 -22)" />
-          <ellipse cx="34" cy="30" rx="26" ry="6" fill="#fff" opacity="0.18" />
+          {/* cel highlight on the lower lip */}
+          <ellipse cx="26" cy="34" rx="26" ry="6" fill="#fff" opacity="0.16" />
         </g>
       </svg>
 
