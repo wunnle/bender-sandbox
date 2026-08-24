@@ -22,23 +22,23 @@ function lipPath(open: number) {
   return [
     // upper lip: left corner -> cupid's bow -> right corner
     `M -100 0`,
-    `C -84 -26 -46 -40 -15 -20`,
-    `C -6 -13 6 -13 15 -20`,
-    `C 46 -40 84 -26 100 0`,
+    `C -92 -44 -50 -66 -16 -34`,
+    `C -6 -25 6 -25 16 -34`,
+    `C 50 -66 92 -44 100 0`,
     // lower lip back to the left corner
-    `C 82 ${34 + gap} 42 ${52 + gap} 0 ${54 + gap}`,
-    `C -42 ${52 + gap} -82 ${34 + gap} -100 0`,
+    `C 94 ${52 + gap} 48 ${76 + gap} 0 ${78 + gap}`,
+    `C -48 ${76 + gap} -94 ${52 + gap} -100 0`,
     `Z`,
   ].join(" ");
 }
 
 /** The slit between the lips, where the waveform "teeth" show through. */
 function slitPath(open: number) {
-  const h = 5 + open * 9;
+  const h = 7 + open * 11;
   return [
-    `M -76 0`,
-    `C -48 -${h} 48 -${h} 76 0`,
-    `C 48 ${h * 1.5} -48 ${h * 1.5} -76 0`,
+    `M -78 0`,
+    `C -50 -${h} 50 -${h} 78 0`,
+    `C 50 ${h * 1.6} -50 ${h * 1.6} -78 0`,
     `Z`,
   ].join(" ");
 }
@@ -50,6 +50,7 @@ export default function DiDiPage() {
   const bodyRef = useRef<SVGGElement>(null);
   const glowRef = useRef<SVGEllipseElement>(null);
   const sparkRef = useRef<SVGGElement>(null);
+  const clipRef = useRef<SVGPathElement>(null);
   const tipRef = useRef<SVGCircleElement>(null);
 
   const [line, setLine] = useState(LINES[0]);
@@ -84,15 +85,18 @@ export default function DiDiPage() {
 
       // waveform "teeth" — a sharp zigzag along the slit, like a cel-drawn scanline
       const pts: string[] = [];
-      const steps = 26;
+      const steps = 8;
       for (let i = 0; i <= steps; i++) {
-        const x = -62 + (i / steps) * 124;
+        const x = -58 + (i / steps) * 116;
         const taper = Math.cos((x / 70) * (Math.PI / 2)); // fade to nothing at the corners
         const zig = i % 2 === 0 ? 1 : -1;
-        const y = taper * zig * (3 + env * 9) * (0.6 + 0.4 * Math.sin(i * 1.7 - t * 16));
+        const y = taper * zig * (3 + env * 8) * (0.65 + 0.35 * Math.sin(i * 1.7 - t * 9));
         pts.push(`${x.toFixed(1)},${y.toFixed(1)}`);
       }
       waveRef.current?.setAttribute("points", pts.join(" "));
+
+      // keep the clip in lockstep with the slit so the zigzag stays inside the mouth
+      clipRef.current?.setAttribute("d", slitPath(env));
 
       // idle float — bob, drift and a lazy tilt
       const bob = Math.sin(t * 0.9) * 14;
@@ -133,6 +137,9 @@ export default function DiDiPage() {
           <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
             <feGaussianBlur stdDeviation="6" />
           </filter>
+          <clipPath id="mouthClip">
+            <path ref={clipRef} d={slitPath(0.2)} />
+          </clipPath>
         </defs>
 
         {/* hover shadow on the "floor" */}
@@ -164,17 +171,19 @@ export default function DiDiPage() {
 
           <path ref={lipsRef} d={lipPath(0.2)} fill="url(#lipGrad)" stroke="#140208" strokeWidth="4" strokeLinejoin="round" />
           <path ref={slitRef} d={slitPath(0.2)} fill="#3a0110" stroke="#140208" strokeWidth="2" />
-          <polyline
-            ref={waveRef}
-            points=""
-            fill="none"
-            stroke="#fdf6ee"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
+          <g clipPath="url(#mouthClip)">
+            <polyline
+              ref={waveRef}
+              points=""
+              fill="none"
+              stroke="#fdf6ee"
+              strokeWidth="3.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
           {/* cel highlight on the lower lip */}
-          <ellipse cx="26" cy="34" rx="26" ry="6" fill="#fff" opacity="0.16" />
+          <ellipse cx="26" cy="52" rx="28" ry="7" fill="#fff" opacity="0.16" />
         </g>
       </svg>
 
