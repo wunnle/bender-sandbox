@@ -1,225 +1,88 @@
-export type Category = "music" | "theatre" | "cinema" | "art" | "other";
-
 export type Ev = {
-  date: string; // ISO
-  time?: string;
+  when: string;
   title: string;
+  blurb: string;
   venue: string;
+  address?: string;
   price?: string;
-  cat: Category;
-  url?: string;
+  url: string;
+  urlLabel: string;
+  alt?: { url: string; label: string };
   note?: string;
-  unconfirmed?: boolean;
-  pick?: boolean;
+  warn?: string;
 };
 
-// Week of Tue 1 – Mon 7 Sept 2026, plus a few worth planning ahead for.
 export const EVENTS: Ev[] = [
   {
-    date: "2026-09-01",
-    title: "Gaye Su Akyol, Kalben, Ceylan Ertem, Nilipek, Nova Norda, Yasemin Mori, Eda Baba",
-    venue: "Harbiye Cemil Topuzlu Açıkhava",
-    cat: "music",
-    url: "https://www.songkick.com/metro-areas/32463-turkey-istanbul/september-2026",
-    note: "All-women lineup — the single best night of the week if you only pick one",
-    pick: true,
-  },
-  {
-    date: "2026-09-02",
-    title: "Yıldız Tilbe",
-    venue: "Ataköy Marina Açık Hava",
-    cat: "music",
-    url: "https://www.songkick.com/metro-areas/32463-turkey-istanbul/september-2026",
-  },
-  {
-    date: "2026-09-02",
-    title: "Çalıkuşu — Eyfel Sema Çoruh",
-    venue: "Taksim İstiklal Sahne",
-    price: "from 300₺",
-    cat: "theatre",
-    url: "https://www.bubilet.com.tr/mekan/taksim-istiklal-sahne",
-    note: "One-woman show. Start time not published; İstiklal Sahne weeknights are usually 20:30",
-    unconfirmed: true,
-    pick: true,
-  },
-  {
-    date: "2026-09-02",
-    time: "20:00–22:00",
-    title: "LEGOLAND Yetişkin Gecesi (18+)",
-    venue: "LEGOLAND Discovery Centre, Forum Istanbul, Bayrampaşa",
-    cat: "other",
-    url: "https://www.biletix.com/etkinlik-grup/140566923/TURKIYE/tr/legoland-discovery-centre",
-    note: "Billed as first Wednesday monthly — free build competitions, 4D film, pizza and beer. No live 2026 listing found; call before planning around it",
-    unconfirmed: true,
-  },
-  {
-    date: "2026-09-02",
-    title: "KAOS (instrumental jazz)",
-    venue: "AKM Çok Amaçlı Salon",
-    cat: "music",
-    url: "https://akmistanbul.gov.tr",
-    note: "Türk Telekom Prime AKM summer series",
-  },
-  { date: "2026-09-02", title: "yung ouzo", venue: "Dorock XL", cat: "music" },
-  { date: "2026-09-03", title: "Ufuk Beydemir", venue: "Blind, Kadıköy", cat: "music" },
-  {
-    date: "2026-09-04",
-    title: "Sertab Erener",
-    venue: "Harbiye Cemil Topuzlu Açıkhava",
-    cat: "music",
-  },
-  {
-    date: "2026-09-04",
-    title: "The Great Gatsby — open-air screening",
-    venue: "AKM Açık Hava Sineması",
-    cat: "cinema",
-  },
-  {
-    date: "2026-09-04",
-    title: "Ağzı Çiçekli Adam",
-    venue: "Cafe Theatre Koşuyolu",
-    cat: "theatre",
-    note: "Also 5 and 6 Sept",
-  },
-  {
-    date: "2026-09-04",
-    title: "Flashback 90'lar Türkçe Pop Gecesi",
-    venue: "Jolly Joker Vadistanbul",
-    cat: "music",
-  },
-  { date: "2026-09-04", title: "Su Soley", venue: "Swissôtel The Bosphorus", cat: "music" },
-  {
-    date: "2026-09-05",
-    title: "Gogol Bordello",
-    venue: "JJ Arena Ataşehir",
-    cat: "music",
-    url: "https://www.songkick.com/metro-areas/32463-turkey-istanbul/september-2026",
-    pick: true,
-  },
-  { date: "2026-09-05", title: "Can Bonomo", venue: "Paribu Vadi Açıkhava", cat: "music" },
-  { date: "2026-09-05", title: "Kenan Doğulu", venue: "Maximum Uniq Açıkhava", cat: "music" },
-  { date: "2026-09-05", title: "Gökhan Türkmen", venue: "Jolly Joker Vadistanbul", cat: "music" },
-  {
-    date: "2026-09-05",
-    title: "Emre Aydın",
-    venue: "Selamiçeşme Özgürlük Parkı Amfi, Kadıköy",
-    cat: "music",
-  },
-  {
-    date: "2026-09-05",
-    title: "Sertab Erener (2nd night)",
-    venue: "Harbiye Cemil Topuzlu Açıkhava",
-    cat: "music",
-  },
-  {
-    date: "2026-09-05",
-    time: "20:30",
-    title: "Fareler ve İnsanlar",
-    venue: "Bakırköy Butik Sahne — İzzet Molla Sk. No:12",
-    price: "from 240₺",
-    cat: "theatre",
-    url: "https://www.bubilet.com.tr/mekan/bakirkoy-butik-sahne",
-    note: "Steinbeck two-hander: Furkan Karayama and Müslüm Çelik, dir. Muhammet Emre Aydın. Not the 672–728₺ touring production — that one plays Ankara and Antalya",
-    pick: true,
-  },
-  {
-    date: "2026-09-05",
-    title: "Inception — open-air screening",
-    venue: "AKM Açık Hava Sineması",
-    cat: "cinema",
-  },
-  {
-    date: "2026-09-05",
-    title: "Lifepark K-Pop Festival — P1Harmony, AleXa",
-    venue: "Lifepark",
-    cat: "music",
-  },
-  {
-    date: "2026-09-05",
-    title: "Ayna / Ayta Sözeri / Fatih Erkoç / Cihan Mürtezaoğlu",
-    venue: "JJ Atakent · JJ Kartal · Swissôtel · Burgazada",
-    cat: "music",
-  },
-  { date: "2026-09-06", title: "Simge", venue: "Paribu Vadi Açıkhava", cat: "music" },
-  {
-    date: "2026-09-06",
-    title: "Sibel Can",
-    venue: "Harbiye Cemil Topuzlu Açıkhava",
-    cat: "music",
-  },
-  { date: "2026-09-06", title: "Ferit Odman (jazz)", venue: "Swissôtel The Bosphorus", cat: "music" },
-  {
-    date: "2026-09-06",
-    title: "Aşk ve Yaşam — open-air screening",
-    venue: "Zorlu PSM Vestel Amfi",
-    cat: "cinema",
-  },
-  {
-    date: "2026-09-07",
-    time: "16:00",
-    title: "Fareler ve İnsanlar (matinee)",
+    when: "Fri 4 Sept · 20:30  ·  Sun 6 Sept · 18:15",
+    title: "Çalıkuşu",
+    blurb:
+      "Eyfel Sema Çoruh alone on stage as Feride, from Reşat Nuri Güntekin's 1922 novel. Short — audience reports put it at 35–40 minutes.",
     venue: "Bakırköy Butik Sahne",
+    address: "Cevizlik, İzzet Molla Sk. No:12, Bakırköy",
+    price: "from 550₺ · unnumbered seating",
+    url: "https://www.bubilet.com.tr/istanbul/etkinlik/calikusu",
+    urlLabel: "Bubilet — dated listing",
+    note: "Pray Tiyatro, dir. Muhammet Emre Aydın. Later run at Taksim İstiklal Sahne: 18 Sept and 4 Oct, 20:30, from 800₺.",
+    warn:
+      "A Cumhuriyet listing put this at Taksim İstiklal Sahne on 2 Sept. Bubilet's own dated calendar says Bakırköy on the 4th and 6th — I'd trust the seller.",
+  },
+  {
+    when: "Sat 5 Sept · 20:30  ·  Mon 7 Sept · 16:00",
+    title: "Fareler ve İnsanlar",
+    blurb:
+      "Steinbeck's Of Mice and Men carried by two actors — Furkan Karayama and Müslüm Çelik. Same company and director as Çalıkuşu.",
+    venue: "Bakırköy Butik Sahne",
+    address: "Cevizlik, İzzet Molla Sk. No:12, Bakırköy",
     price: "from 240₺",
-    cat: "theatre",
     url: "https://www.bubilet.com.tr/mekan/bakirkoy-butik-sahne",
-    note: "Afternoon show, not an evening one",
+    urlLabel: "Bubilet — venue calendar",
+    note: "The 7 Sept show is a 16:00 matinee, not an evening one.",
+    warn:
+      "Don't confuse it with the 672–728₺ touring production of the same name — that one plays Ankara, Antalya and Muğla this month, not Istanbul.",
   },
   {
-    date: "2026-09-07",
-    title: "Hayko Cepkin",
-    venue: "Harbiye Cemil Topuzlu Açıkhava",
-    cat: "music",
+    when: "Sat 5 Sept · 18:00  ·  Sun 6 Sept · 20:30",
+    title: "Ağzı Çiçekli Adam",
+    blurb:
+      "Pirandello, staged and performed by Metin Zakoğlu — a man facing death rediscovering his life. The café runs as a cabaret from 20:30.",
+    venue: "Cafe Theatre Koşuyolu",
+    address: "Bekir Sıtkı Sezgin Sk. No:168, Koşuyolu",
+    price: "5 Sept from 600₺ (unnumbered) · 6 Sept from 1000₺ (assigned seats)",
+    url: "https://www.bubilet.com.tr/istanbul/etkinlik/agzi-cicekli-adam",
+    urlLabel: "Bubilet — dated listing",
+    note: "Also played 1 Sept; runs every Tue and Sat through 29 Sept if these dates don't work.",
   },
-  { date: "2026-09-07", title: "Erol Evgin", venue: "Harbiye Açıkhava", cat: "music" },
-  { date: "2026-09-07", title: "Yaşar", venue: "Swissôtel The Bosphorus", cat: "music" },
-];
-
-export const LATER: Ev[] = [
   {
-    date: "2026-09-11",
-    time: "21:30",
+    when: "Fri 11 Sept · 21:30",
     title: "Jojo Mayer — ME/MACHINE",
-    venue: "Komünite, Kadıköy — Kurbağalıdere Cd. No:2/2",
-    cat: "music",
-    url: "https://komunite.social/event/jojo-mayer-konser",
-    note: "Solo improvised duet with a machine that mutates his drum patterns. Tickets via Paribu Pass; price not published",
-    pick: true,
+    blurb:
+      "Solo improvised duet against a custom music engine that reinterprets his drumming live. Grew out of an experimental session with Brian Eno.",
+    venue: "Komünite, Terminal Istanbul, Kadıköy",
+    address: "Kurbağalıdere Cd. No:2/2 — 3 min walk from Söğütlüçeşme",
+    price: "1.400₺ (1.386₺ in the app)",
+    url: "https://pass.paribu.com/muzik/jojo-mayer",
+    urlLabel: "Paribu Pass — buy",
+    alt: { url: "https://komunite.social/event/jojo-mayer-konser", label: "venue page" },
+    note: "Open-air, 18+, unreserved seating so arrive early. No outside food or drink.",
   },
   {
-    date: "2026-09-12",
-    title: "Festibağ — music, art, gastronomy (2 days)",
-    venue: "Swissôtel The Bosphorus & Chalet Garden",
-    cat: "other",
-  },
-  {
-    date: "2026-09-19",
-    title: "Istanbul Fringe Festival, 8th edition (to 26 Sept)",
-    venue: "Various",
-    cat: "theatre",
-  },
-  {
-    date: "2026-09-23",
-    title: "Contemporary Istanbul Edition21 (to 27 Sept)",
-    venue: "Tersane",
-    cat: "art",
-  },
-  {
-    date: "2026-11-05",
-    title: "Jojo Mayer & Nerve — Garanti Caz Yeşili",
-    venue: "Babylon Bomonti",
-    cat: "music",
-    url: "https://www.songkick.com/artists/3009231-jojo-mayer",
-    note: "The full-band show, if you'd rather have Nerve than the solo set",
+    when: "Sun 8 Nov · 15:00 and 20:30  ·  Mon 9 Nov · 15:00",
+    title: "Bovary",
+    blurb:
+      "Flaubert reworked as contemporary feminist theatre — Emma as a 21st-century voice rather than a naive dreamer. Flemish Royal Theatre production.",
+    venue: "Zorlu PSM",
+    price: "2.000–3.000₺",
+    url: "https://www.timeout.com/istanbul/tr/tiyatro/bovary",
+    urlLabel: "Time Out — details",
+    alt: { url: "https://www.iksv.org/en/events/current-events", label: "İKSV festival" },
+    note:
+      "Dir. Carme Portaceli and Michael De Cock, with Maaike Neuville, Koen De Sutter and Ana Naqe. Part of the Istanbul Theatre Festival's 'A Woman in This' strand — well outside this week, but it's the only Istanbul staging.",
   },
 ];
 
-export const ONGOING: Ev[] = [
-  {
-    date: "2026-09-01",
-    title: "Türk Resmini İzlemek",
-    venue: "İş Bankası Resim Heykel Müzesi",
-    price: "free",
-    cat: "art",
-    note: "Runs all month",
-  },
-];
+export const DEAD = {
+  title: "LEGOLAND Yetişkin Gecesi",
+  body:
+    "There is nothing to book. LEGOLAND Discovery Centre Istanbul, at Forum Istanbul in Bayrampaşa, operated from 2015 and closed in 2025. The 18+ adult nights — 20:00 start, free build competitions, 4D film, pizza and beer — went with it. Every page still describing them is stale.",
+};
