@@ -59,15 +59,16 @@ export default function IstanbulPage() {
     <main className="min-h-screen bg-neutral-950 px-5 py-14 text-neutral-200 sm:px-8">
       <div className="mx-auto max-w-3xl">
         <header>
-          <p className="text-xs uppercase tracking-widest text-neutral-500">September 2026</p>
+          <p className="text-xs uppercase tracking-widest text-neutral-500">2 – 7 September 2026</p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             The shortlist
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-neutral-400">
-            Four things worth booking, each linked to the seller with the actual dated calendar
-            rather than a search page. Where a listing contradicted another, the conflict is spelled
-            out instead of averaged away. Three of the four are the same company at the same
-            Bakırköy stage, so they double up cleanly in one evening.
+            Four things worth booking, all of them this week. Each links to the seller page with
+            the actual dated calendar rather than a search result. Where one listing contradicted
+            another, the conflict is spelled out instead of averaged away. Three are Pray Tiyatro at
+            Bakırköy Butik Sahne and pair up in a single evening with no travel; the Pirandello is
+            across town in Koşuyolu.
           </p>
         </header>
 

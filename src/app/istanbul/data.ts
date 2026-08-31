@@ -49,11 +49,11 @@ export const EVENTS: Ev[] = [
     venue: "Bakırköy Butik Sahne",
     address: "Cevizlik, İzzet Molla Sk. No:12, Bakırköy",
     price: "from 240₺",
-    url: "https://www.bubilet.com.tr/mekan/bakirkoy-butik-sahne",
-    urlLabel: "Bubilet — venue calendar",
-    note: "The 7 Sept show is a 16:00 matinee, not an evening one.",
+    url: "https://www.bubilet.com.tr/istanbul/etkinlik/-fareler-ve-insanlar--",
+    urlLabel: "Bubilet — dated listing",
+    note: "Adapted by Sude Naz Demirci. Unnumbered seating. The 7 Sept show is a 16:00 matinee, not an evening one.",
     warn:
-      "Don't confuse it with the 672–728₺ touring production of the same name — that one plays Ankara, Antalya and Muğla this month, not Istanbul.",
+      "Bubilet hosts three pages under this title and two of them are the wrong production — the Ankara Yeni Sahne touring version, which plays Ankara and Antalya, not Istanbul. The link above is the Butik Sahne one.",
   },
   {
     when: "Sat 5 Sept · 18:00  ·  Sun 6 Sept · 20:30",
@@ -66,18 +66,5 @@ export const EVENTS: Ev[] = [
     url: "https://www.bubilet.com.tr/istanbul/etkinlik/agzi-cicekli-adam",
     urlLabel: "Bubilet — dated listing",
     note: "Also played 1 Sept; runs every Tue and Sat through 29 Sept if these dates don't work.",
-  },
-  {
-    when: "Sun 8 Nov · 15:00 and 20:30  ·  Mon 9 Nov · 15:00",
-    title: "Bovary",
-    blurb:
-      "Flaubert reworked as contemporary feminist theatre — Emma as a 21st-century voice rather than a naive dreamer. Flemish Royal Theatre production.",
-    venue: "Zorlu PSM",
-    price: "2.000–3.000₺",
-    url: "https://www.timeout.com/istanbul/tr/tiyatro/bovary",
-    urlLabel: "Time Out — details",
-    alt: { url: "https://www.iksv.org/en/events/current-events", label: "İKSV festival" },
-    note:
-      "Dir. Carme Portaceli and Michael De Cock, with Maaike Neuville, Koen De Sutter and Ana Naqe. Part of the Istanbul Theatre Festival's 'A Woman in This' strand — well outside this week, but it's the only Istanbul staging.",
   },
 ];
