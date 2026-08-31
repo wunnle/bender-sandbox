@@ -14,6 +14,20 @@ export type Ev = {
 
 export const EVENTS: Ev[] = [
   {
+    when: "Wed 2 Sept · 19:30  ·  Fri 4 Sept · 18:15  ·  Sun 6 Sept · 16:00",
+    title: "Anna Karenina",
+    blurb:
+      "Tolstoy as a single interior monologue — Anna in her own voice rather than seen through everyone else's, from the glittering salons inward. Ali Aktı performs it solo.",
+    venue: "Bakırköy Butik Sahne",
+    address: "Cevizlik, İzzet Molla Sk. No:12, Bakırköy",
+    price: "from 300₺ · unnumbered seating",
+    url: "https://www.bubilet.com.tr/istanbul/etkinlik/anna-karenina-",
+    urlLabel: "Bubilet — dated listing",
+    note: "Pray Tiyatro, dir. Muhammet Emre Aydın. 50 minutes, ages 10+. No late entry once it starts.",
+    warn:
+      "Bubilet has two near-identical pages for this and the other one lists no sessions at all. The link above is the one with live dates.",
+  },
+  {
     when: "Fri 4 Sept · 20:30  ·  Sun 6 Sept · 18:15",
     title: "Çalıkuşu",
     blurb:
@@ -54,19 +68,6 @@ export const EVENTS: Ev[] = [
     note: "Also played 1 Sept; runs every Tue and Sat through 29 Sept if these dates don't work.",
   },
   {
-    when: "Fri 11 Sept · 21:30",
-    title: "Jojo Mayer — ME/MACHINE",
-    blurb:
-      "Solo improvised duet against a custom music engine that reinterprets his drumming live. Grew out of an experimental session with Brian Eno.",
-    venue: "Komünite, Terminal Istanbul, Kadıköy",
-    address: "Kurbağalıdere Cd. No:2/2 — 3 min walk from Söğütlüçeşme",
-    price: "1.400₺ (1.386₺ in the app)",
-    url: "https://pass.paribu.com/muzik/jojo-mayer",
-    urlLabel: "Paribu Pass — buy",
-    alt: { url: "https://komunite.social/event/jojo-mayer-konser", label: "venue page" },
-    note: "Open-air, 18+, unreserved seating so arrive early. No outside food or drink.",
-  },
-  {
     when: "Sun 8 Nov · 15:00 and 20:30  ·  Mon 9 Nov · 15:00",
     title: "Bovary",
     blurb:
@@ -80,9 +81,3 @@ export const EVENTS: Ev[] = [
       "Dir. Carme Portaceli and Michael De Cock, with Maaike Neuville, Koen De Sutter and Ana Naqe. Part of the Istanbul Theatre Festival's 'A Woman in This' strand — well outside this week, but it's the only Istanbul staging.",
   },
 ];
-
-export const DEAD = {
-  title: "LEGOLAND Yetişkin Gecesi",
-  body:
-    "There is nothing to book. LEGOLAND Discovery Centre Istanbul, at Forum Istanbul in Bayrampaşa, operated from 2015 and closed in 2025. The 18+ adult nights — 20:00 start, free build competitions, 4D film, pizza and beer — went with it. Every page still describing them is stale.",
-};

@@ -1,4 +1,4 @@
-import { DEAD, EVENTS, Ev } from "./data";
+import { EVENTS, Ev } from "./data";
 
 function Card({ e }: { e: Ev }) {
   return (
@@ -64,9 +64,10 @@ export default function IstanbulPage() {
             The shortlist
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-neutral-400">
-            Five things worth booking, each linked to the seller with the actual dated calendar
+            Four things worth booking, each linked to the seller with the actual dated calendar
             rather than a search page. Where a listing contradicted another, the conflict is spelled
-            out instead of averaged away.
+            out instead of averaged away. Three of the four are the same company at the same
+            Bakırköy stage, so they double up cleanly in one evening.
           </p>
         </header>
 
@@ -75,16 +76,6 @@ export default function IstanbulPage() {
             <Card key={e.title} e={e} />
           ))}
         </div>
-
-        <section className="mt-5 rounded-2xl border border-white/10 bg-white/[0.02] p-6">
-          <p className="text-xs font-medium uppercase tracking-widest text-neutral-600">
-            Cut — permanently closed
-          </p>
-          <h2 className="mt-2 text-xl font-medium text-neutral-500 line-through decoration-neutral-700">
-            {DEAD.title}
-          </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500">{DEAD.body}</p>
-        </section>
 
         <footer className="mt-14 border-t border-white/10 pt-6 text-xs leading-relaxed text-neutral-600">
           Prices and times from Bubilet, Paribu Pass, Time Out and İKSV. Biletix blocks automated
