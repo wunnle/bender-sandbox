@@ -14,6 +14,7 @@ type Stay = {
   score: number;
   price: number;
   slug: string;
+  station?: string;
   note?: string;
 };
 
@@ -33,7 +34,7 @@ const BASES: Base[] = [
     stays: [
       { name: "H-Aparts Essen", where: "1.0 km from Fair Essen", score: 8.9, price: 1823, slug: "h-aparts-essen-heinrich-apartments", note: "Apartment. Closest available thing to the halls." },
       { name: "Im Stadtzentrum / Küche / Für 5", where: "1.3 km", score: 8.8, price: 2973, slug: "im-stadtzentrum-kuche-fur-5" },
-      { name: "Trip Inn Hotel & Suites Essen", where: "2.1 km", score: 8.1, price: 1310, slug: "trip-inn-living-amp-suites", note: "Cheapest decent actual hotel left in Essen." },
+      { name: "Trip Inn Hotel & Suites Essen", where: "2.1 km", station: "Bismarckplatz (Stadtbahn) 150 m", score: 8.1, price: 1310, slug: "trip-inn-living-amp-suites", note: "Cheapest decent actual hotel left in Essen, and a 150 m walk to the tram." },
       { name: "Ruhig & Zentral — 2 Kingsize Betten", where: "2.2 km", score: 9.5, price: 2258, slug: "ruhig-amp-zentral-2-kingsize-betten-wi-fi-essen" },
       { name: "art Hotel Körschen", where: "2.7 km", score: 8.1, price: 2100, slug: "art-korschen" },
       { name: "New Work Hotel Essen", where: "2.7 km", score: 8.0, price: 1820, slug: "kempe-new-work-essen" },
@@ -44,18 +45,18 @@ const BASES: Base[] = [
   },
   {
     city: "Duisburg",
-    commute: "~30 min",
+    commute: "~45 min",
     detail:
-      "13 min by train to Essen Hbf, then the U11 to Messe Essen / Gruga. Trains run 6+ times an hour. Best commute-per-euro of anything available.",
+      "Careful here. Every affordable Duisburg option sits in Dellviertel, 1–1.5 km south of Duisburg Hbf, and the stops on their doorsteps are U79 Stadtbahn stations — not S-Bahn or regional rail. The Essen train leaves from the Hbf, so the real morning is: walk or ride one stop to Duisburg Hbf, train to Essen Hbf, then the U11. The 13-minute Duisburg–Essen train time is real; the door-to-door isn't 30 minutes.",
     stays: [
-      { name: "Hotel Plaza", where: "Duisburg centre", score: 8.6, price: 542, slug: "plaza", note: "Pick if you want to save money." },
-      { name: "Twins Hotel", where: "Duisburg centre", score: 9.0, price: 603, slug: "twins", note: "Top pick — 9.0 over 1,460 reviews." },
-      { name: "Hotel Conti Duisburg — SORAT", where: "Duisburg centre", score: 8.5, price: 590, slug: "contisorat" },
+      { name: "Hotel Plaza", where: "Dellviertel", station: "König-Heinrich-Platz (U79) 500 m", score: 8.6, price: 542, slug: "plaza" },
+      { name: "Twins Hotel", where: "Dellviertel", station: "Steinsche Gasse (U79) 250 m", score: 9.0, price: 603, slug: "twins", note: "Best-rated in Duisburg, but not the Hbf." },
+      { name: "Hotel Conti Duisburg — SORAT", where: "Dellviertel", station: "Kremerstraße (U79) 100 m", score: 8.5, price: 590, slug: "contisorat" },
       { name: "Niteroom Boutiquehotel", where: "Duisburg centre", score: 8.1, price: 531, slug: "niteroom-boutiquehotel-amp-apartements" },
       { name: "SECRET HIDEAWAYS boho ARTstudio", where: "near Hbf", score: 8.6, price: 540, slug: "boho-loft-secret-hideaway-for-work-amp-travel-duisburg" },
       { name: "ELENA flat Lavendel", where: "Duisburg centre", score: 8.6, price: 638, slug: "center-5min-vom-hbf-dusseldorf-messe-nahe-2-og-l-lavendel" },
       { name: "Blumenhof Duisburg HBF", where: "near Hbf", score: 8.7, price: 743, slug: "elena-flat-mandarin-duisburg-hbf" },
-      { name: "Hotel Carlton", where: "Duisburg centre", score: 8.0, price: 402, slug: "regent-duisburg", note: "Cheapest hotel that clears 8.0." },
+      { name: "Hotel Carlton", where: "Dellplatz", station: "Steinsche Gasse (U79) 400 m · Hbf 15 min walk", score: 8.0, price: 402, slug: "regent-duisburg", note: "Cheapest hotel that clears 8.0." },
       { name: "Monteurswohnung Duisburg", where: "Duisburg", score: 8.0, price: 200, slug: "monteurswohnung-duisburg", note: "Workers' flat, only 2 reviews. Cheap for a reason — check it." },
     ],
   },
@@ -63,10 +64,10 @@ const BASES: Base[] = [
     city: "Bochum",
     commute: "~30 min",
     detail:
-      "12 min to Essen Hbf on the S1/RE, then the U11. Cheaper than Düsseldorf, livelier than Duisburg. Watch the distances — several bargains are 4–5 km out of the centre.",
+      "The S1 runs direct from Bochum into Essen Hbf, where you pick up the U11. This is the only base where a good, cheap room sits on top of an actual S-Bahn platform rather than a tram stop. Watch the distances — several of the bargains are 4–5 km out.",
     stays: [
-      { name: "STAYERY Bochum Ehrenfeld", where: "1.3 km from centre", score: 9.2, price: 476, slug: "stayery-bochum-ehrenfeld", note: "Best score-to-price on this whole page." },
-      { name: "Garner Hotel Bochum by IHG", where: "350 m from centre", score: 8.0, price: 477, slug: "garner-hotel-bochum" },
+      { name: "STAYERY Bochum Ehrenfeld", where: "1.3 km from Bochum Hbf", station: "Bochum-Ehrenfeld (S-Bahn) 200 m", score: 9.2, price: 476, slug: "stayery-bochum-ehrenfeld", note: "The pick. 200 m from an S-Bahn platform with a direct run into Essen Hbf." },
+      { name: "Garner Hotel Bochum by IHG", where: "350 m from centre", station: "Deutsches Bergbau-Museum (U35) 350 m", score: 8.0, price: 477, slug: "garner-hotel-bochum", note: "Stadtbahn, not S-Bahn — change at Bochum Hbf." },
       { name: "Tippelsberg", where: "3.2 km", score: 10, price: 468, slug: "tippelsberg" },
       { name: "Limehome Bochum Kortumstr", where: "500 m", score: 8.7, price: 685, slug: "limehome-bochum-kortumstr" },
       { name: "Holiday Inn Express Bochum", where: "350 m", score: 8.6, price: 703, slug: "holiday-inn-express-bochum-an-ihg" },
@@ -81,7 +82,7 @@ const BASES: Base[] = [
     detail:
       "25–30 min to Essen Hbf, trains every few minutes until late. Longest commute of the four, but a real city for the evenings and a direct airport rail link — worth weighing since the return flight isn't booked.",
     stays: [
-      { name: "Boutique Hotel Sir & Lady Astor", where: "300 m from Hbf", score: 8.6, price: 533, slug: "hotelsirandladyastor", note: "Best of Düsseldorf — 1,929 reviews at 8.6." },
+      { name: "Boutique Hotel Sir & Lady Astor", where: "Stadtmitte", station: "Düsseldorf Hbf 350 m", score: 8.6, price: 533, slug: "hotelsirandladyastor", note: "Best of Düsseldorf — 1,929 reviews at 8.6, and genuinely at the Hbf." },
       { name: "Gästehaus Grupello", where: "0.5 km", score: 8.5, price: 397, slug: "ga-stehaus-grupello", note: "Guesthouse, not a hotel." },
       { name: "Perfect apartment for business trip", where: "250 m", score: 9.7, price: 516, slug: "perfect-apartment-for-business-trip", note: "Only 3 reviews." },
       { name: "Hotel Paris", where: "400 m", score: 8.0, price: 620, slug: "nizza" },
@@ -112,7 +113,12 @@ function StayRow({ stay }: { stay: Stay }) {
       <span className="flex-1 font-medium text-neutral-900 underline-offset-4 group-hover:underline dark:text-neutral-100">
         {stay.name}
       </span>
-      <span className="text-sm text-neutral-500 sm:w-48 dark:text-neutral-400">{stay.where}</span>
+      <span className="text-sm text-neutral-500 sm:w-56 dark:text-neutral-400">
+        {stay.where}
+        {stay.station ? (
+          <span className="block text-neutral-400 dark:text-neutral-500">{stay.station}</span>
+        ) : null}
+      </span>
       <span className={`w-fit rounded px-1.5 py-0.5 text-xs font-semibold tabular-nums ${scoreTone(stay.score)}`}>
         {stay.score.toFixed(1)}
       </span>
@@ -146,14 +152,19 @@ export default function SpielEssenPage() {
       <section className="mb-10 rounded-xl border border-amber-500/30 bg-amber-500/[0.07] p-5">
         <h2 className="font-semibold text-neutral-900 dark:text-neutral-100">The recommendation</h2>
         <p className="mt-2 leading-relaxed">
-          <strong>Twins Hotel, Duisburg — €603.</strong> 9.0 over 1,460 reviews, and roughly 30 minutes
-          door-to-hall every morning: 13 min train to Essen Hbf, then the U11 to Messe Essen / Gruga.
-          That beats paying €1,310 for a 8.1-rated room in Essen that still leaves you a tram ride away.
+          <strong>STAYERY Bochum Ehrenfeld — €476.</strong> Scores 9.2, and it sits{" "}
+          <strong>200 m from Bochum-Ehrenfeld S-Bahn station</strong>, which runs direct into Essen Hbf where
+          you pick up the U11. It is the cheapest good room on this page and the only one where the every-morning
+          trip is a two-minute walk followed by one train.
           <br />
           <span className="mt-2 inline-block">
-            If you&apos;d rather have a proper city in the evenings, take{" "}
-            <strong>Sir &amp; Lady Astor, Düsseldorf — €533</strong>, and accept ~15 extra minutes each way.
+            If you want a bigger city for the evenings, <strong>Sir &amp; Lady Astor, Düsseldorf — €533</strong>,
+            350 m from Düsseldorf Hbf and direct RE trains to Essen. Costs ~15 extra minutes each way.
           </span>
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+          Not Duisburg, despite the low prices. Every cheap Duisburg room is in Dellviertel, 1–1.5 km from the
+          Hbf, served by U79 Stadtbahn stops rather than the S-Bahn — so the morning gains a leg.
         </p>
       </section>
 
@@ -251,7 +262,8 @@ export default function SpielEssenPage() {
 
       <footer className="border-t border-black/10 pt-6 text-sm text-neutral-400 dark:border-white/10">
         All links open the property on Booking.com with 21–26 Oct 2026 pre-filled. Availability and prices
-        checked 31 Aug 2026.
+        checked 31 Aug 2026. Station distances are Booking&apos;s own figures, verified per property for the
+        shortlisted options only — properties without a station line underneath weren&apos;t individually checked.
       </footer>
     </main>
   );
