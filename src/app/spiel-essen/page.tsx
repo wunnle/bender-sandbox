@@ -244,12 +244,17 @@ export default function SpielEssenPage() {
           </li>
           <li>
             <strong>Deutschlandticket, €58 for October.</strong> Covers every regional train, S-Bahn and tram
-            in Germany including the U11. Cheaper than four days of point-to-point fares plus the airport leg.
-            Monthly subscription — cancel before the deadline for November.
+            in Germany including the U11 and the Bochum&nbsp;S1. Five days of Bochum–Essen returns plus the
+            airport leg cost more than this on their own, so buy it. Monthly subscription — cancel before the
+            deadline for November.
           </li>
           <li>
-            <strong>Check.</strong> SPIEL entry tickets have historically included VRR-area transport on fair
-            days, which would cover the Essen commute for free. Confirm on the ticket.
+            <strong>Your SPIEL ticket almost certainly does not include transport.</strong> The VRR
+            &ldquo;KombiTicket&rdquo; scheme does let an event ticket double as a bus and train fare, but it has
+            to be booked into the ticket and is <em>printed on the ticket itself</em> when it applies. SPIEL&apos;s
+            own travel page and FAQ push public transport hard and never once mention VRR, KombiTicket or included
+            travel — for an organiser that would advertise it, the silence is the answer. Look for the wording on
+            your ticket, but budget for the Deutschlandticket.
           </li>
         </ul>
       </section>
