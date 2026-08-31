@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { CopyAddress } from "./copy-address";
+import ADDRESSES from "./addresses.json";
 
 export const metadata: Metadata = {
   title: "SPIEL Essen 2026 — where to stay",
@@ -16,11 +18,13 @@ type Stay = {
   slug: string;
   station?: string;
   note?: string;
+  address?: string;
 };
 
 type Base = {
   city: string;
   commute: string;
+  legs: { from: string; time: string; via: string }[];
   detail: string;
   stays: Stay[];
 };
@@ -29,6 +33,10 @@ const BASES: Base[] = [
   {
     city: "Essen",
     commute: "10–20 min",
+    legs: [
+      { from: "Essen Hbf", time: "5 min", via: "U11 direct, no change" },
+      { from: "Essen Bismarckplatz", time: "11–14 min", via: "U18 or U17, change to U11" },
+    ],
     detail:
       "Nothing at all is available inside 1 km of the fairground. Mintrops, Atlantic Congress, Hotel An der Gruga, DORMERO and Garner Essen-Messe all return zero rooms for these dates — the walking ring is sold out. What's left is 1–3 km out at fair-week prices.",
     stays: [
@@ -45,9 +53,10 @@ const BASES: Base[] = [
   },
   {
     city: "Duisburg",
-    commute: "~45 min",
+    commute: "35–40 min",
+    legs: [{ from: "Duisburg Hbf", time: "19–24 min", via: "RE, change to U11 at Essen Hbf" }],
     detail:
-      "Careful here. Every affordable Duisburg option sits in Dellviertel, 1–1.5 km south of Duisburg Hbf, and the stops on their doorsteps are U79 Stadtbahn stations — not S-Bahn or regional rail. The Essen train leaves from the Hbf, so the real morning is: walk or ride one stop to Duisburg Hbf, train to Essen Hbf, then the U11. The 13-minute Duisburg–Essen train time is real; the door-to-door isn't 30 minutes.",
+      "The train leg is genuinely quick — 19–24 minutes from Duisburg Hbf to the halls. The catch is that every affordable Duisburg room sits in Dellviertel, 1–1.5 km south of the Hbf, and the stops on their doorsteps are U79 Stadtbahn stations, not S-Bahn or regional rail. Add ~15 minutes at the front of every morning to reach the station your train actually leaves from.",
     stays: [
       { name: "Hotel Plaza", where: "Dellviertel", station: "König-Heinrich-Platz (U79) 500 m", score: 8.6, price: 542, slug: "plaza" },
       { name: "Twins Hotel", where: "Dellviertel", station: "Steinsche Gasse (U79) 250 m", score: 9.0, price: 603, slug: "twins", note: "Best-rated in Duisburg, but not the Hbf." },
@@ -62,7 +71,11 @@ const BASES: Base[] = [
   },
   {
     city: "Bochum",
-    commute: "~30 min",
+    commute: "25–30 min",
+    legs: [
+      { from: "Bochum-Ehrenfeld", time: "24–29 min", via: "S1, change to U11 at Essen Hbf" },
+      { from: "Bochum Hbf", time: "18–22 min", via: "RE1 / RE11, change to U11" },
+    ],
     detail:
       "The S1 runs direct from Bochum into Essen Hbf, where you pick up the U11. This is the only base where a good, cheap room sits on top of an actual S-Bahn platform rather than a tram stop. Watch the distances — several of the bargains are 4–5 km out.",
     stays: [
@@ -78,7 +91,8 @@ const BASES: Base[] = [
   },
   {
     city: "Düsseldorf",
-    commute: "~45 min",
+    commute: "40–45 min",
+    legs: [{ from: "Düsseldorf Hbf", time: "36–39 min", via: "RE / ICE, change to U11 at Essen Hbf" }],
     detail:
       "25–30 min to Essen Hbf, trains every few minutes until late. Longest commute of the four, but a real city for the evenings and a direct airport rail link — worth weighing since the return flight isn't booked.",
     stays: [
@@ -103,16 +117,20 @@ function scoreTone(score: number) {
 }
 
 function StayRow({ stay }: { stay: Stay }) {
+  const address = stay.address ?? (ADDRESSES as Record<string, string>)[stay.slug];
   return (
-    <a
-      href={`https://www.booking.com/hotel/de/${stay.slug}.en-gb.html${DATE_QS}`}
-      target="_blank"
-      rel="noreferrer"
-      className="group flex flex-col gap-1 border-b border-black/5 py-3 transition-colors hover:bg-black/[0.03] sm:flex-row sm:items-baseline sm:gap-4 dark:border-white/10 dark:hover:bg-white/[0.04]"
-    >
-      <span className="flex-1 font-medium text-neutral-900 underline-offset-4 group-hover:underline dark:text-neutral-100">
-        {stay.name}
-      </span>
+    <div className="flex flex-col gap-1 border-b border-black/5 py-3 sm:flex-row sm:items-baseline sm:gap-4 dark:border-white/10">
+      <div className="flex flex-1 flex-wrap items-baseline gap-x-2 gap-y-1">
+        <a
+          href={`https://www.booking.com/hotel/de/${stay.slug}.en-gb.html${DATE_QS}`}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-100"
+        >
+          {stay.name}
+        </a>
+        {address ? <CopyAddress address={address} /> : null}
+      </div>
       <span className="text-sm text-neutral-500 sm:w-56 dark:text-neutral-400">
         {stay.where}
         {stay.station ? (
@@ -128,7 +146,7 @@ function StayRow({ stay }: { stay: Stay }) {
       {stay.note ? (
         <span className="basis-full text-sm text-neutral-500 sm:hidden dark:text-neutral-400">{stay.note}</span>
       ) : null}
-    </a>
+    </div>
   );
 }
 
@@ -154,17 +172,20 @@ export default function SpielEssenPage() {
         <p className="mt-2 leading-relaxed">
           <strong>STAYERY Bochum Ehrenfeld — €476.</strong> Scores 9.2, and it sits{" "}
           <strong>200 m from Bochum-Ehrenfeld S-Bahn station</strong>, which runs direct into Essen Hbf where
-          you pick up the U11. It is the cheapest good room on this page and the only one where the every-morning
-          trip is a two-minute walk followed by one train.
+          you pick up the U11 — a routing check puts it at <strong>24–29 minutes station-to-halls</strong>, so
+          call it half an hour door-to-door. It is the cheapest good room on this page and the only one where the
+          every-morning trip is a two-minute walk followed by one train.
           <br />
           <span className="mt-2 inline-block">
             If you want a bigger city for the evenings, <strong>Sir &amp; Lady Astor, Düsseldorf — €533</strong>,
-            350 m from Düsseldorf Hbf and direct RE trains to Essen. Costs ~15 extra minutes each way.
+            350 m from Düsseldorf Hbf and direct trains to Essen. Costs about 10 extra minutes each way
+            (36–39 min station-to-halls) for a much bigger city at night.
           </span>
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-          Not Duisburg, despite the low prices. Every cheap Duisburg room is in Dellviertel, 1–1.5 km from the
-          Hbf, served by U79 Stadtbahn stops rather than the S-Bahn — so the morning gains a leg.
+          Not Duisburg, despite the low prices. The train itself is the quickest of the three at 19–24 min, but
+          every cheap Duisburg room is in Dellviertel, 1–1.5 km from the Hbf and served by U79 Stadtbahn stops
+          rather than the S-Bahn — so the morning gains a leg before it starts.
         </p>
       </section>
 
@@ -179,6 +200,15 @@ export default function SpielEssenPage() {
             </span>
           </div>
           <p className="mt-2 leading-relaxed text-neutral-600 dark:text-neutral-300">{base.detail}</p>
+          <dl className="mt-4 space-y-1.5 rounded-lg bg-black/[0.03] p-4 text-sm dark:bg-white/[0.05]">
+            {base.legs.map((leg) => (
+              <div key={leg.from} className="flex flex-wrap items-baseline gap-x-2">
+                <dt className="font-medium text-neutral-700 dark:text-neutral-200">{leg.from}</dt>
+                <dd className="font-semibold tabular-nums text-neutral-900 dark:text-neutral-50">{leg.time}</dd>
+                <dd className="text-neutral-500 dark:text-neutral-400">· {leg.via}</dd>
+              </div>
+            ))}
+          </dl>
           <div className="mt-5">
             {base.stays.map((stay) => (
               <StayRow key={stay.slug} stay={stay} />
@@ -202,10 +232,10 @@ export default function SpielEssenPage() {
         </h2>
         <ul className="mt-4 space-y-3 leading-relaxed text-neutral-600 dark:text-neutral-300">
           <li>
-            <strong>Arrival, Wed 21 Oct.</strong> TK1671 lands Köln/Bonn 09:25. The{" "}
-            <strong>RE6 runs direct from Köln/Bonn Flughafen to Essen Hbf</strong>, no changes, ~1h05 —
-            and it calls at Düsseldorf and Duisburg on the way, so all three bases are one train from the
-            airport.
+            <strong>Arrival, Wed 21 Oct.</strong> TK1671 lands Köln/Bonn 09:25. Airport to the fairground
+            measures <strong>~1h40 to 1h55</strong> all-in via the RE6 corridor. The RE6 calls at Düsseldorf,
+            Duisburg and Essen on the way, so every base on this page is one train from the airport — you just
+            get off earlier.
           </li>
           <li>
             <strong>Every morning.</strong> Essen Hbf → <strong>U11</strong> to Messe Essen / Gruga, ~8 min.
@@ -264,6 +294,12 @@ export default function SpielEssenPage() {
         All links open the property on Booking.com with 21–26 Oct 2026 pre-filled. Availability and prices
         checked 31 Aug 2026. Station distances are Booking&apos;s own figures, verified per property for the
         shortlisted options only — properties without a station line underneath weren&apos;t individually checked.
+        <br />
+        Journey times are real routings to <em>Essen Messe Ost/Gruga</em> for an 08:30 weekday departure, from
+        the Transitous/MOTIS planner over German open transit data — fastest and typical of six itineraries.
+        They were measured on a date whose timetable is fully published; October 2026 schedules aren&apos;t out
+        yet, so treat them as the service pattern rather than a booked connection. Add walking time from the
+        door to the station on top.
       </footer>
     </main>
   );
