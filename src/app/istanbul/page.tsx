@@ -1,86 +1,69 @@
-import { EVENTS, Ev } from "./data";
+import { EVENTS, CINEMAS, Ev } from "./data";
 
-function Card({ e }: { e: Ev }) {
+function Row({ e }: { e: Ev }) {
   return (
-    <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-      <p className="text-xs font-medium uppercase tracking-widest text-neutral-400">{e.when}</p>
-      <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">{e.title}</h2>
-      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-300">{e.blurb}</p>
-
-      <dl className="mt-4 space-y-1 text-sm">
-        <div className="flex gap-2">
-          <dt className="w-16 shrink-0 text-neutral-600">Where</dt>
-          <dd className="text-neutral-300">
-            {e.venue}
-            {e.address && <span className="block text-neutral-500">{e.address}</span>}
-          </dd>
-        </div>
-        {e.price && (
-          <div className="flex gap-2">
-            <dt className="w-16 shrink-0 text-neutral-600">Price</dt>
-            <dd className="text-neutral-300">{e.price}</dd>
-          </div>
-        )}
-      </dl>
-
-      {e.note && <p className="mt-4 text-xs leading-relaxed text-neutral-500">{e.note}</p>}
-      {e.warn && (
-        <p className="mt-3 border-l-2 border-amber-500/50 pl-3 text-xs leading-relaxed text-amber-200/70">
-          {e.warn}
-        </p>
-      )}
-
-      <div className="mt-5 flex flex-wrap items-center gap-3">
-        <a
-          href={e.url}
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-900 transition hover:bg-neutral-200"
-        >
-          {e.urlLabel} →
-        </a>
-        {e.alt && (
-          <a
-            href={e.alt.url}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm text-neutral-400 underline underline-offset-4 transition hover:text-white"
-          >
-            {e.alt.label}
-          </a>
-        )}
-      </div>
-    </article>
+    <li className="border-b border-white/10 py-4 text-sm leading-relaxed">
+      <span className="font-medium text-white">{e.date}:</span>{" "}
+      <a
+        href={e.url}
+        target="_blank"
+        rel="noreferrer"
+        className="text-neutral-200 underline underline-offset-4 hover:text-white"
+      >
+        {e.title}
+      </a>
+      , {e.kind}
+      {e.time && <>, {e.time}</>}, {e.venue}, {e.area}
+      {e.price && <>, {e.price}</>}
+      {e.note && <span className="text-neutral-500"> — {e.note}</span>}
+    </li>
   );
 }
 
 export default function IstanbulPage() {
   return (
     <main className="min-h-screen bg-neutral-950 px-5 py-14 text-neutral-200 sm:px-8">
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-2xl">
         <header>
-          <p className="text-xs uppercase tracking-widest text-neutral-500">2 – 7 September 2026</p>
+          <p className="text-xs uppercase tracking-widest text-neutral-500">7 – 14 September 2026</p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            The shortlist
+            Istanbul events
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-neutral-400">
-            Four things worth booking, all of them this week. Each links to the seller page with
-            the actual dated calendar rather than a search result. Where one listing contradicted
-            another, the conflict is spelled out instead of averaged away. Three are Pray Tiyatro at
-            Bakırköy Butik Sahne and pair up in a single evening with no travel; the Pirandello is
-            across town in Koşuyolu.
+            Filtered list, excluding Erol Evgin, Karanlıkta Diyalog, Candan Erçetin, Ajda Pekkan,
+            Leman Sam, Bengü and Serdar Ortaç.
           </p>
         </header>
 
-        <div className="mt-10 space-y-5">
+        <ul className="mt-8">
           {EVENTS.map((e) => (
-            <Card key={e.title} e={e} />
+            <Row key={`${e.date}-${e.title}`} e={e} />
           ))}
-        </div>
+        </ul>
+
+        <section className="mt-10">
+          <h2 className="text-lg font-semibold tracking-tight text-white">Cinema options</h2>
+          <p className="mt-2 text-sm text-neutral-500">Exact sessions and prices must be selected live.</p>
+          <ul className="mt-4 space-y-3 text-sm">
+            {CINEMAS.map((c) => (
+              <li key={c.name}>
+                <a
+                  href={c.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-neutral-200 underline underline-offset-4 hover:text-white"
+                >
+                  {c.name}
+                </a>{" "}
+                ({c.area}): {c.films}
+              </li>
+            ))}
+          </ul>
+        </section>
 
         <footer className="mt-14 border-t border-white/10 pt-6 text-xs leading-relaxed text-neutral-600">
-          Prices and times from Bubilet, Paribu Pass, Time Out and İKSV. Biletix blocks automated
-          lookups, so nothing here reflects live seat availability — check before you travel.
+          Biletix blocks automated lookups, so Biletix links above are search results rather than
+          direct listings — check live availability before you travel.
         </footer>
       </div>
     </main>
