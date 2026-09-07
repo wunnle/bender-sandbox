@@ -88,7 +88,7 @@ function MiniEvent({ e }: { e: Ev }) {
         <span className="block line-clamp-2 text-xs leading-snug text-neutral-400">
           {e.venue}
         </span>
-        <span className="block line-clamp-1 break-all text-xs text-neutral-500">{e.area}</span>
+        <span className="block line-clamp-1 break-words text-xs text-neutral-500">{e.area}</span>
         <span className="mt-1 flex flex-wrap items-center gap-1">
           {e.price && (
             <span className="rounded bg-white/5 px-1.5 py-0.5 text-[11px] font-medium text-neutral-300 ring-1 ring-inset ring-white/10">

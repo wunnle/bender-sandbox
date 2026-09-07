@@ -1,9 +1,10 @@
-import payload from "./events.json";
+import payload from "../../../event-data.json";
 
 /**
- * Everything on this page is derived from events.json. Nothing about Istanbul,
- * September, or any particular event is hardcoded below — drop in a payload for
- * another city and the page follows.
+ * Everything on this page is derived from event-data.json at the repo root —
+ * the single file Hermes overwrites. Nothing about Istanbul, September, or any
+ * particular event is hardcoded below; drop in a payload for another city and
+ * the page follows.
  */
 
 export type Category = "stage" | "music" | "screen" | "other";
