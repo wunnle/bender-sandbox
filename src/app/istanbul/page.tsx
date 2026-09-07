@@ -18,8 +18,6 @@ function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
   return new Date(`${iso}T12:00:00`).toLocaleDateString("en-GB", opts);
 }
 
-const dayName = (iso: string) => fmt(iso, { weekday: "short" });
-const dayNum = (iso: string) => fmt(iso, { day: "numeric" });
 const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", month: "long" });
 
 function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
@@ -41,15 +39,14 @@ function KindChip({ e }: { e: Ev }) {
 
 function Card({ e }: { e: Ev }) {
   const cat = CATEGORY_OF[e.kind];
-  return (
-    <a
-      href={e.url}
-      target="_blank"
-      rel="noreferrer"
-      className={`group block rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 ${CATEGORY_META[cat].ring}`}
-    >
+  const body = (
+    <>
       <div className="flex items-start justify-between gap-3">
-        <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
+        <h3
+          className={`text-lg font-semibold text-white ${
+            e.url ? "group-hover:underline group-hover:underline-offset-4" : ""
+          }`}
+        >
           {e.title}
         </h3>
         <span className="shrink-0 font-mono text-sm text-neutral-400">{e.time ?? "—"}</span>
@@ -64,14 +61,32 @@ function Card({ e }: { e: Ev }) {
             {e.price}
           </span>
         )}
+        {!e.url && (
+          <span className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-neutral-500 ring-1 ring-inset ring-white/10">
+            no ticket link
+          </span>
+        )}
         {e.note && <span className="text-xs text-neutral-500">{e.note}</span>}
       </div>
+    </>
+  );
+
+  const className =
+    "group block rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 " +
+    CATEGORY_META[cat].ring;
+
+  if (!e.url) {
+    return <div className={className}>{body}</div>;
+  }
+
+  return (
+    <a href={e.url} target="_blank" rel="noreferrer" className={className}>
+      {body}
     </a>
   );
 }
 
 export default function IstanbulPage() {
-  const [view, setView] = useState<"calendar" | "list">("calendar");
   const [active, setActive] = useState<Category[]>([]);
 
   const shown = useMemo(
@@ -108,26 +123,14 @@ export default function IstanbulPage() {
             Istanbul events
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
-            {EVENTS.length} picks across eight days. Excludes Erol Evgin, Karanlıkta Diyalog, Candan
-            Erçetin, Ajda Pekkan, Leman Sam, Bengü and Serdar Ortaç.
+            {EVENTS.length} picks across eight days — concerts, theatre, stand-up and film
+            screenings. Excludes Erol Evgin, Karanlıkta Diyalog, Candan Erçetin, Ajda Pekkan,
+            Leman Sam, Bengü and Serdar Ortaç, and all sailing/sports-boat events (İstanbul
+            Yelken Kulübü appears here only for its open-air film screenings).
           </p>
         </header>
 
         <div className="mt-7 flex flex-wrap items-center gap-2">
-          <div className="mr-1 flex rounded-lg bg-white/5 p-0.5 ring-1 ring-inset ring-white/10">
-            {(["calendar", "list"] as const).map((v) => (
-              <button
-                key={v}
-                onClick={() => setView(v)}
-                className={`rounded-md px-4 py-2 text-sm font-medium capitalize transition ${
-                  view === v ? "bg-white text-neutral-900" : "text-neutral-400 hover:text-white"
-                }`}
-              >
-                {v}
-              </button>
-            ))}
-          </div>
-
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (
@@ -140,10 +143,7 @@ export default function IstanbulPage() {
                     : "bg-transparent text-neutral-400 ring-white/10 hover:text-white"
                 }`}
               >
-                <Icon
-                  cat={c}
-                  className={`h-4 w-4 ${on ? "" : CATEGORY_META[c].text}`}
-                />
+                <Icon cat={c} className={`h-4 w-4 ${on ? "" : CATEGORY_META[c].text}`} />
                 {CATEGORY_META[c].label}
                 <span className="text-neutral-500">{counts[c]}</span>
               </button>
@@ -160,74 +160,25 @@ export default function IstanbulPage() {
           )}
         </div>
 
-        {view === "calendar" ? (
-          <div className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-4 lg:grid-cols-4">
-            {DAYS.map((d) => {
-              const list = byDay.get(d) ?? [];
-              return (
-                <div
-                  key={d}
-                  className="min-h-[12rem] rounded-xl border border-white/10 bg-white/[0.02] p-4"
-                >
-                  <div className="flex items-baseline justify-between border-b border-white/10 pb-2">
-                    <span className="text-sm uppercase tracking-wider text-neutral-500">
-                      {dayName(d)}
-                    </span>
-                    <span className="text-2xl font-semibold text-white">{dayNum(d)}</span>
-                  </div>
-                  <ul className="mt-2 space-y-1.5">
-                    {list.map((e) => (
-                      <li key={e.title}>
-                        <a
-                          href={e.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex items-start gap-2 rounded-md px-1.5 py-1.5 text-[15px] leading-snug text-neutral-300 transition hover:bg-white/[0.06] hover:text-white"
-                        >
-                          <Icon
-                            cat={CATEGORY_OF[e.kind]}
-                            className={`mt-0.5 h-4 w-4 ${CATEGORY_META[CATEGORY_OF[e.kind]].text}`}
-                          />
-
-                          <span className="min-w-0">
-                            <span className="block truncate font-medium">{e.title}</span>
-                            <span className="block truncate text-xs text-neutral-500">
-                              {e.time ? `${e.time} · ` : ""}
-                              {e.area}
-                            </span>
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                    {list.length === 0 && (
-                      <li className="px-1.5 py-1 text-[15px] text-neutral-600">Nothing</li>
-                    )}
-                  </ul>
+        <div className="mt-6 space-y-8">
+          {DAYS.map((d) => {
+            const list = byDay.get(d) ?? [];
+            if (list.length === 0) return null;
+            return (
+              <section key={d}>
+                <h2 className="sticky top-0 z-10 bg-neutral-950/90 py-2 text-lg font-semibold tracking-tight text-white backdrop-blur">
+                  {longDay(d)}
+                  <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
+                </h2>
+                <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                  {list.map((e) => (
+                    <Card key={e.title} e={e} />
+                  ))}
                 </div>
-              );
-            })}
-          </div>
-        ) : (
-          <div className="mt-6 space-y-8">
-            {DAYS.map((d) => {
-              const list = byDay.get(d) ?? [];
-              if (list.length === 0) return null;
-              return (
-                <section key={d}>
-                  <h2 className="sticky top-0 z-10 bg-neutral-950/90 py-2 text-lg font-semibold tracking-tight text-white backdrop-blur">
-                    {longDay(d)}
-                    <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
-                  </h2>
-                  <div className="mt-2 grid gap-3 sm:grid-cols-2">
-                    {list.map((e) => (
-                      <Card key={e.title} e={e} />
-                    ))}
-                  </div>
-                </section>
-              );
-            })}
-          </div>
-        )}
+              </section>
+            );
+          })}
+        </div>
 
         <section className="mt-14">
           <h2 className="text-2xl font-semibold tracking-tight text-white">Cinema options</h2>
@@ -254,8 +205,9 @@ export default function IstanbulPage() {
         </section>
 
         <footer className="mt-14 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600">
-          Biletix blocks automated lookups, so Biletix links above are search results rather than
-          direct listings — check live availability before you travel.
+          Biletix and Bubilet block automated lookups of individual listings, so events without a
+          confirmed direct event page are marked "no ticket link" rather than linked to a generic
+          search — search the venue or listing site by title before you travel.
         </footer>
       </div>
     </main>

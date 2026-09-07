@@ -4,10 +4,9 @@ export type Kind =
   | "musical"
   | "concert"
   | "festival"
-  | "open-air cinema"
-  | "sailing";
+  | "film";
 
-export type Category = "stage" | "music" | "screen" | "outdoors";
+export type Category = "stage" | "music" | "screen";
 
 export type Ev = {
   /** ISO days the event runs on */
@@ -18,7 +17,8 @@ export type Ev = {
   venue: string;
   area: string;
   price?: string;
-  url: string;
+  /** omitted when no reliable direct event page exists — see `note` */
+  url?: string;
   note?: string;
 };
 
@@ -28,8 +28,7 @@ export const CATEGORY_OF: Record<Kind, Category> = {
   musical: "stage",
   concert: "music",
   festival: "music",
-  "open-air cinema": "screen",
-  sailing: "outdoors",
+  film: "screen",
 };
 
 export const CATEGORY_META: Record<
@@ -57,13 +56,6 @@ export const CATEGORY_META: Record<
     chip: "bg-sky-400/10 text-sky-200 ring-sky-400/30",
     ring: "ring-sky-400/40",
   },
-  outdoors: {
-    label: "Outdoors",
-    dot: "bg-emerald-400",
-    text: "text-emerald-400",
-    chip: "bg-emerald-400/10 text-emerald-200 ring-emerald-400/30",
-    ring: "ring-emerald-400/40",
-  },
 };
 
 export const DAYS = [
@@ -86,12 +78,12 @@ export const EVENTS: Ev[] = [
     venue: "Özgürlük Parkı Amfi Tiyatro",
     area: "Kadıköy",
     price: "from ₺528",
-    url: "https://www.biletix.com/search/TURKIYE/tr?searchText=Kakt%C3%BCs%20%C3%87i%C3%A7e%C4%9Fi",
+    note: "No direct event page found — search Biletix for this title.",
   },
   {
     days: ["2026-09-07"],
     title: "The Invite / Davet",
-    kind: "open-air cinema",
+    kind: "film",
     time: "20:30",
     venue: "İstanbul Yelken Kulübü",
     area: "Fenerbahçe/Kadıköy",
@@ -106,7 +98,7 @@ export const EVENTS: Ev[] = [
     venue: "Özgürlük Parkı",
     area: "Kadıköy",
     price: "from ₺1,120",
-    url: "https://www.bubilet.com.tr/arama?q=Hadi%20%C3%96ld%C3%BCrsene%20Canikom",
+    note: "No direct event page found — search Bubilet for this title.",
   },
   {
     days: ["2026-09-08", "2026-09-09"],
@@ -121,7 +113,7 @@ export const EVENTS: Ev[] = [
   {
     days: ["2026-09-08"],
     title: "Sil Baştan",
-    kind: "open-air cinema",
+    kind: "film",
     time: "20:30",
     venue: "İstanbul Yelken Kulübü",
     area: "Fenerbahçe/Kadıköy",
@@ -134,8 +126,7 @@ export const EVENTS: Ev[] = [
     kind: "theatre",
     venue: "DasDas",
     area: "Ataşehir",
-    url: "https://www.bubilet.com.tr/arama?q=Zengin%20Mutfa%C4%9F%C4%B1",
-    note: "Time and price unavailable.",
+    note: "Time, price and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-09"],
@@ -144,8 +135,7 @@ export const EVENTS: Ev[] = [
     time: "21:00",
     venue: "Özgürlük Parkı",
     area: "Kadıköy",
-    url: "https://www.bubilet.com.tr/arama?q=Mutlu%20Aile%20Tablosu",
-    note: "Price unavailable.",
+    note: "Price and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-10"],
@@ -154,13 +144,12 @@ export const EVENTS: Ev[] = [
     time: "21:00",
     venue: "Özgürlük Parkı",
     area: "Kadıköy",
-    url: "https://www.bubilet.com.tr/arama?q=%C5%9Eairler%20Mezarl%C4%B1%C4%9F%C4%B1",
-    note: "Price unavailable.",
+    note: "Price and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-10"],
     title: "Yürüyen Şato",
-    kind: "open-air cinema",
+    kind: "film",
     time: "20:30",
     venue: "İstanbul Yelken Kulübü",
     area: "Fenerbahçe/Kadıköy",
@@ -173,8 +162,7 @@ export const EVENTS: Ev[] = [
     kind: "stand-up",
     venue: "Sancaktepe Sahnesi",
     area: "Sancaktepe",
-    url: "https://www.bubilet.com.tr/arama?q=Do%C4%9Fu%20Demirkol",
-    note: "Time and price unavailable.",
+    note: "Time, price and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-11"],
@@ -182,8 +170,7 @@ export const EVENTS: Ev[] = [
     kind: "concert",
     venue: "Muaf Kadıköy",
     area: "Kadıköy",
-    url: "https://www.bubilet.com.tr/arama?q=Kamufle",
-    note: "Time and price unavailable.",
+    note: "Time, price and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-11"],
@@ -203,7 +190,7 @@ export const EVENTS: Ev[] = [
     venue: "Özgürlük Parkı",
     area: "Kadıköy",
     price: "from ₺1,150",
-    url: "https://www.biletix.com/search/TURKIYE/tr?searchText=Ayna",
+    note: "No direct event page found — search Biletix for this title.",
   },
   {
     days: ["2026-09-12"],
@@ -222,7 +209,7 @@ export const EVENTS: Ev[] = [
     venue: "Life Park",
     area: "Sarıyer",
     price: "from approx ₺2,690",
-    url: "https://www.biletix.com/search/TURKIYE/tr?searchText=Rock%27n%20Park%20%C4%B0stanbul",
+    note: "No direct event page found — search Biletix for this title.",
   },
   {
     days: ["2026-09-12"],
@@ -231,8 +218,7 @@ export const EVENTS: Ev[] = [
     venue: "Jolly Joker Vadistanbul",
     area: "Sarıyer",
     price: "from approx ₺3,940",
-    url: "https://www.bubilet.com.tr/arama?q=Ersay%20%C3%9Cner",
-    note: "Time unavailable.",
+    note: "Time and direct event page unavailable — search Bubilet for this title.",
   },
   {
     days: ["2026-09-13"],
@@ -241,22 +227,12 @@ export const EVENTS: Ev[] = [
     time: "21:00",
     venue: "Harbiye Açıkhava",
     area: "Şişli",
-    url: "https://www.biletix.com/search/TURKIYE/tr?searchText=Z%C3%BClf%C3%BC%20Livaneli",
-    note: "Price unavailable.",
-  },
-  {
-    days: ["2026-09-12", "2026-09-13"],
-    title: "İYK Sportsboat Türkiye Trophy",
-    kind: "sailing",
-    venue: "İstanbul Yelken Kulübü",
-    area: "Fenerbahçe/Kadıköy",
-    url: "https://www.iyk.org.tr/",
-    note: "No spectator ticket.",
+    note: "Price and direct event page unavailable — search Biletix for this title.",
   },
   {
     days: ["2026-09-14"],
     title: "Aşk ve Gurur",
-    kind: "open-air cinema",
+    kind: "film",
     time: "20:30",
     venue: "İstanbul Yelken Kulübü",
     area: "Fenerbahçe/Kadıköy",
