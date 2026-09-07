@@ -25,6 +25,7 @@ export type Ev = {
 type Payload = {
   city: string;
   timezone?: string;
+  lastUpdated?: string;
   range: { start: string; end: string };
   preferences?: {
     excluded_titles?: string[];
@@ -118,6 +119,7 @@ export const CINEMAS = data.cinemas ?? [];
 
 export const META = {
   city: data.city,
+  lastUpdated: data.lastUpdated,
   range: data.range,
   researchNote: data.research_note,
   omitted: data.omitted_records ?? 0,

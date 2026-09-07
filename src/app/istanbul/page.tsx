@@ -80,15 +80,42 @@ function MiniEvent({ e }: { e: Ev }) {
   const inner = (
     <>
       <Icon cat={cat} className={`mt-0.5 h-4 w-4 ${CATEGORY_META[cat].text}`} />
-      <span className="min-w-0">
-        <span className="block line-clamp-2 font-medium">
-          {e.title}
-          {e.owned && <span className="ml-1 text-emerald-400" title="You have tickets">✓</span>}
+      <span className="min-w-0 flex-1">
+        <span className="block line-clamp-2 font-medium">{e.title}</span>
+        {e.time && (
+          <span className="mt-0.5 block font-mono text-xs text-neutral-400">{e.time}</span>
+        )}
+        <span className="block line-clamp-2 text-xs leading-snug text-neutral-400">
+          {e.venue}
         </span>
-        <span className="block truncate text-xs text-neutral-500">
-          {e.time ? `${e.time} · ` : ""}
-          {e.area}
+        <span className="block line-clamp-1 break-all text-xs text-neutral-500">{e.area}</span>
+        <span className="mt-1 flex flex-wrap items-center gap-1">
+          {e.price && (
+            <span className="rounded bg-white/5 px-1.5 py-0.5 text-[11px] font-medium text-neutral-300 ring-1 ring-inset ring-white/10">
+              {e.price}
+            </span>
+          )}
+          {e.owned && (
+            <span className="rounded bg-emerald-400/10 px-1.5 py-0.5 text-[11px] font-medium text-emerald-200 ring-1 ring-inset ring-emerald-400/30">
+              ✓ have tickets
+            </span>
+          )}
+          {e.availability && e.availability !== "available" && (
+            <span className="rounded bg-rose-400/10 px-1.5 py-0.5 text-[11px] font-medium text-rose-200 ring-1 ring-inset ring-rose-400/30">
+              {e.availability.replace(/_/g, " ")}
+            </span>
+          )}
+          {!e.url && (
+            <span className="rounded bg-white/5 px-1.5 py-0.5 text-[11px] text-neutral-500 ring-1 ring-inset ring-white/10">
+              no link
+            </span>
+          )}
         </span>
+        {e.note && (
+          <span className="mt-1 block line-clamp-2 text-[11px] leading-snug text-neutral-500">
+            {e.note}
+          </span>
+        )}
       </span>
     </>
   );
@@ -131,7 +158,7 @@ function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
           {dayNum(iso)}
         </span>
       </div>
-      <ul className="mt-2 space-y-1">
+      <ul className="mt-1 divide-y divide-white/5">
         {list.map((e) => (
           <li key={e.title}>
             <MiniEvent e={e} />
@@ -251,6 +278,11 @@ export default function IstanbulPage() {
           {META.researchNote && (
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
               {META.researchNote}
+            </p>
+          )}
+          {META.lastUpdated && (
+            <p className="mt-2 text-xs uppercase tracking-wider text-neutral-600">
+              Last updated {META.lastUpdated}
             </p>
           )}
         </header>
