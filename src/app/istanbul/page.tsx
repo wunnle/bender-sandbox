@@ -31,9 +31,9 @@ function KindChip({ e }: { e: Ev }) {
   const cat = CATEGORY_OF[e.kind];
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
     >
-      <Icon cat={cat} className="h-3 w-3" />
+      <Icon cat={cat} className="h-3.5 w-3.5" />
       {e.kind}
     </span>
   );
@@ -49,22 +49,22 @@ function Card({ e }: { e: Ev }) {
       className={`group block rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 ${CATEGORY_META[cat].ring}`}
     >
       <div className="flex items-start justify-between gap-3">
-        <h3 className="text-[15px] font-semibold text-white group-hover:underline group-hover:underline-offset-4">
+        <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
           {e.title}
         </h3>
-        <span className="shrink-0 font-mono text-xs text-neutral-400">{e.time ?? "—"}</span>
+        <span className="shrink-0 font-mono text-sm text-neutral-400">{e.time ?? "—"}</span>
       </div>
-      <p className="mt-1.5 text-sm text-neutral-400">
+      <p className="mt-1.5 text-[15px] text-neutral-400">
         {e.venue} <span className="text-neutral-600">·</span> {e.area}
       </p>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <KindChip e={e} />
         {e.price && (
-          <span className="rounded-full bg-white/5 px-2 py-0.5 text-[11px] text-neutral-300 ring-1 ring-inset ring-white/10">
+          <span className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-neutral-300 ring-1 ring-inset ring-white/10">
             {e.price}
           </span>
         )}
-        {e.note && <span className="text-[11px] text-neutral-500">{e.note}</span>}
+        {e.note && <span className="text-xs text-neutral-500">{e.note}</span>}
       </div>
     </a>
   );
@@ -99,15 +99,15 @@ export default function IstanbulPage() {
 
   return (
     <main className="min-h-screen bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
         <header>
-          <p className="text-xs uppercase tracking-widest text-neutral-500">
+          <p className="text-sm uppercase tracking-widest text-neutral-500">
             7 – 14 September 2026
           </p>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Istanbul events
           </h1>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-400">
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
             {EVENTS.length} picks across eight days. Excludes Erol Evgin, Karanlıkta Diyalog, Candan
             Erçetin, Ajda Pekkan, Leman Sam, Bengü and Serdar Ortaç.
           </p>
@@ -119,7 +119,7 @@ export default function IstanbulPage() {
               <button
                 key={v}
                 onClick={() => setView(v)}
-                className={`rounded-md px-3 py-1.5 text-xs font-medium capitalize transition ${
+                className={`rounded-md px-4 py-2 text-sm font-medium capitalize transition ${
                   view === v ? "bg-white text-neutral-900" : "text-neutral-400 hover:text-white"
                 }`}
               >
@@ -134,7 +134,7 @@ export default function IstanbulPage() {
               <button
                 key={c}
                 onClick={() => toggle(c)}
-                className={`flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium ring-1 ring-inset transition ${
+                className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium ring-1 ring-inset transition ${
                   on
                     ? CATEGORY_META[c].chip
                     : "bg-transparent text-neutral-400 ring-white/10 hover:text-white"
@@ -142,7 +142,7 @@ export default function IstanbulPage() {
               >
                 <Icon
                   cat={c}
-                  className={`h-3.5 w-3.5 ${on ? "" : CATEGORY_META[c].text}`}
+                  className={`h-4 w-4 ${on ? "" : CATEGORY_META[c].text}`}
                 />
                 {CATEGORY_META[c].label}
                 <span className="text-neutral-500">{counts[c]}</span>
@@ -153,7 +153,7 @@ export default function IstanbulPage() {
           {active.length > 0 && (
             <button
               onClick={() => setActive([])}
-              className="text-xs text-neutral-500 underline underline-offset-4 hover:text-neutral-300"
+              className="text-sm text-neutral-500 underline underline-offset-4 hover:text-neutral-300"
             >
               clear
             </button>
@@ -167,13 +167,13 @@ export default function IstanbulPage() {
               return (
                 <div
                   key={d}
-                  className="min-h-[9rem] rounded-xl border border-white/10 bg-white/[0.02] p-3"
+                  className="min-h-[12rem] rounded-xl border border-white/10 bg-white/[0.02] p-4"
                 >
                   <div className="flex items-baseline justify-between border-b border-white/10 pb-2">
-                    <span className="text-xs uppercase tracking-wider text-neutral-500">
+                    <span className="text-sm uppercase tracking-wider text-neutral-500">
                       {dayName(d)}
                     </span>
-                    <span className="text-lg font-semibold text-white">{dayNum(d)}</span>
+                    <span className="text-2xl font-semibold text-white">{dayNum(d)}</span>
                   </div>
                   <ul className="mt-2 space-y-1.5">
                     {list.map((e) => (
@@ -182,16 +182,16 @@ export default function IstanbulPage() {
                           href={e.url}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-start gap-2 rounded-md px-1.5 py-1 text-[13px] leading-snug text-neutral-300 transition hover:bg-white/[0.06] hover:text-white"
+                          className="flex items-start gap-2 rounded-md px-1.5 py-1.5 text-[15px] leading-snug text-neutral-300 transition hover:bg-white/[0.06] hover:text-white"
                         >
                           <Icon
                             cat={CATEGORY_OF[e.kind]}
-                            className={`mt-0.5 h-3.5 w-3.5 ${CATEGORY_META[CATEGORY_OF[e.kind]].text}`}
+                            className={`mt-0.5 h-4 w-4 ${CATEGORY_META[CATEGORY_OF[e.kind]].text}`}
                           />
 
                           <span className="min-w-0">
                             <span className="block truncate font-medium">{e.title}</span>
-                            <span className="block truncate text-[11px] text-neutral-500">
+                            <span className="block truncate text-xs text-neutral-500">
                               {e.time ? `${e.time} · ` : ""}
                               {e.area}
                             </span>
@@ -200,7 +200,7 @@ export default function IstanbulPage() {
                       </li>
                     ))}
                     {list.length === 0 && (
-                      <li className="px-1.5 py-1 text-[13px] text-neutral-600">Nothing</li>
+                      <li className="px-1.5 py-1 text-[15px] text-neutral-600">Nothing</li>
                     )}
                   </ul>
                 </div>
@@ -214,7 +214,7 @@ export default function IstanbulPage() {
               if (list.length === 0) return null;
               return (
                 <section key={d}>
-                  <h2 className="sticky top-0 z-10 bg-neutral-950/90 py-2 text-sm font-semibold tracking-tight text-white backdrop-blur">
+                  <h2 className="sticky top-0 z-10 bg-neutral-950/90 py-2 text-lg font-semibold tracking-tight text-white backdrop-blur">
                     {longDay(d)}
                     <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
                   </h2>
@@ -230,8 +230,8 @@ export default function IstanbulPage() {
         )}
 
         <section className="mt-14">
-          <h2 className="text-lg font-semibold tracking-tight text-white">Cinema options</h2>
-          <p className="mt-1 text-sm text-neutral-500">
+          <h2 className="text-2xl font-semibold tracking-tight text-white">Cinema options</h2>
+          <p className="mt-1 text-[15px] text-neutral-500">
             Exact sessions and prices must be selected live.
           </p>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -243,17 +243,17 @@ export default function IstanbulPage() {
                 rel="noreferrer"
                 className="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06]"
               >
-                <h3 className="text-[15px] font-semibold text-white group-hover:underline group-hover:underline-offset-4">
+                <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
                   {c.name}
                 </h3>
-                <p className="mt-1 text-sm text-neutral-500">{c.area}</p>
-                <p className="mt-2 text-sm text-neutral-400">{c.films}</p>
+                <p className="mt-1 text-[15px] text-neutral-500">{c.area}</p>
+                <p className="mt-2 text-[15px] text-neutral-400">{c.films}</p>
               </a>
             ))}
           </div>
         </section>
 
-        <footer className="mt-14 border-t border-white/10 pt-6 text-xs leading-relaxed text-neutral-600">
+        <footer className="mt-14 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600">
           Biletix blocks automated lookups, so Biletix links above are search results rather than
           direct listings — check live availability before you travel.
         </footer>
