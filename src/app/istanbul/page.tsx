@@ -213,16 +213,19 @@ export default function IstanbulPage() {
       <div className="mx-auto max-w-6xl">
         <header>
           <p className="text-sm uppercase tracking-widest text-neutral-500">
-            7 – 14 September 2026
+            8 – 21 September 2026
           </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Istanbul events
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
-            {EVENTS.length} picks across eight days — concerts, theatre, stand-up and film
-            screenings. Excludes Erol Evgin, Karanlıkta Diyalog, Candan Erçetin, Ajda Pekkan,
-            Leman Sam, Bengü and Serdar Ortaç, and all sailing/sports-boat events (İstanbul
-            Yelken Kulübü appears here only for its open-air film screenings).
+            {EVENTS.length} picks across two weeks — concerts, theatre and a musical, each
+            verified as on-sale on its ticketing page. Excludes Erol Evgin, Karanlıkta Diyalog,
+            Candan Erçetin, Ajda Pekkan, Leman Sam, Bengü and Serdar Ortaç, all sailing/sports-boat
+            events, sold-out shows (The Invite/Davet, Zülfü Livaneli & Maria Farantouri, The Black
+            Keys — cancelled), and Yürüyen Şato (already have a ticket). İstanbul Yelken Kulübü's
+            open-air film program had no verifiable per-date listing this cycle, so no screenings
+            are included — see footer.
           </p>
         </header>
 
@@ -351,7 +354,17 @@ export default function IstanbulPage() {
         <footer className="mt-14 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600">
           Biletix and Bubilet block automated lookups of individual listings, so events without a
           confirmed direct event page are marked "no ticket link" rather than linked to a generic
-          search — search the venue or listing site by title before you travel.
+          search — search the venue or listing site by title before you travel. İstanbul Yelken
+          Kulübü's open-air cinema is confirmed running through late September, but its per-film
+          schedule wasn't published on a checkable page at build time — check{" "}
+          <a
+            href="https://biletinial.com/etkinlikleri/istanbul-yelken-kulubu-acik-hava-sinemasi"
+            className="underline underline-offset-2"
+          >
+            its listing
+          </a>{" "}
+          closer to the date. Kaktüs Çiçeği, Zengin Mutfağı, Doğu Demirkol, Kamufle and Ersay Üner
+          had no date in this window; each is dropped rather than guessed.
         </footer>
       </div>
     </main>
