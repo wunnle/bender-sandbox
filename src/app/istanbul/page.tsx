@@ -19,6 +19,33 @@ function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
 }
 
 const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", month: "long" });
+const dayNum = (iso: string) => fmt(iso, { day: "numeric" });
+const shortDay = (iso: string) => fmt(iso, { weekday: "short" });
+
+const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+const toIso = (d: Date) => d.toISOString().slice(0, 10);
+const shift = (iso: string, days: number) => {
+  const d = new Date(`${iso}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return toIso(d);
+};
+/** Monday-based weekday index, 0–6 */
+const weekIndex = (iso: string) => (new Date(`${iso}T12:00:00Z`).getUTCDay() + 6) % 7;
+
+/** Full Mon–Sun weeks covering every day in DAYS, so columns line up by weekday. */
+const WEEKS: string[][] = (() => {
+  const sorted = [...DAYS].sort();
+  const first = shift(sorted[0], -weekIndex(sorted[0]));
+  const last = shift(sorted[sorted.length - 1], 6 - weekIndex(sorted[sorted.length - 1]));
+  const weeks: string[][] = [];
+  for (let cur = first; cur <= last; cur = shift(cur, 7)) {
+    weeks.push(Array.from({ length: 7 }, (_, i) => shift(cur, i)));
+  }
+  return weeks;
+})();
+
+const IN_RANGE = new Set(DAYS);
 
 function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
   const Glyph = CATEGORY_ICON[cat];
@@ -34,6 +61,74 @@ function KindChip({ e }: { e: Ev }) {
       <Icon cat={cat} className="h-3.5 w-3.5" />
       {e.kind}
     </span>
+  );
+}
+
+/** One event as a single line inside a calendar cell. */
+function MiniEvent({ e }: { e: Ev }) {
+  const cat = CATEGORY_OF[e.kind];
+  const inner = (
+    <>
+      <Icon cat={cat} className={`mt-0.5 h-4 w-4 ${CATEGORY_META[cat].text}`} />
+      <span className="min-w-0">
+        <span className="block line-clamp-2 font-medium">{e.title}</span>
+        <span className="block truncate text-xs text-neutral-500">
+          {e.time ? `${e.time} · ` : ""}
+          {e.area}
+        </span>
+      </span>
+    </>
+  );
+  const className =
+    "flex items-start gap-2 rounded-md px-1.5 py-1.5 text-[15px] leading-snug text-neutral-300 transition";
+
+  if (!e.url) return <div className={`${className} opacity-80`}>{inner}</div>;
+  return (
+    <a
+      href={e.url}
+      target="_blank"
+      rel="noreferrer"
+      className={`${className} hover:bg-white/[0.06] hover:text-white`}
+    >
+      {inner}
+    </a>
+  );
+}
+
+/** One day of the week grid. Days outside the covered range render as a faint placeholder. */
+function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
+  const covered = IN_RANGE.has(iso);
+  return (
+    <div
+      className={`flex flex-col rounded-xl border p-3 ${
+        covered
+          ? "min-h-[11rem] border-white/10 bg-white/[0.02]"
+          : "border-white/5 bg-transparent"
+      }`}
+    >
+      <div className="flex items-baseline justify-between border-b border-white/10 pb-2">
+        <span className="text-sm uppercase tracking-wider text-neutral-500 sm:hidden">
+          {shortDay(iso)}
+        </span>
+        <span
+          className={`ml-auto text-2xl font-semibold sm:ml-0 ${
+            covered ? "text-white" : "text-neutral-700"
+          }`}
+        >
+          {dayNum(iso)}
+        </span>
+      </div>
+      <ul className="mt-2 space-y-1">
+        {list.map((e) => (
+          <li key={e.title}>
+            <MiniEvent e={e} />
+          </li>
+        ))}
+        {covered && list.length === 0 && (
+          <li className="px-1.5 py-1 text-[15px] text-neutral-600">Nothing</li>
+        )}
+      </ul>
+    </div>
   );
 }
 
@@ -87,6 +182,7 @@ function Card({ e }: { e: Ev }) {
 }
 
 export default function IstanbulPage() {
+  const [view, setView] = useState<"week" | "list">("week");
   const [active, setActive] = useState<Category[]>([]);
 
   const shown = useMemo(
@@ -131,6 +227,20 @@ export default function IstanbulPage() {
         </header>
 
         <div className="mt-7 flex flex-wrap items-center gap-2">
+          <div className="mr-1 flex rounded-lg bg-white/5 p-0.5 ring-1 ring-inset ring-white/10">
+            {(["week", "list"] as const).map((v) => (
+              <button
+                key={v}
+                onClick={() => setView(v)}
+                className={`rounded-md px-4 py-2 text-sm font-medium capitalize transition ${
+                  view === v ? "bg-white text-neutral-900" : "text-neutral-400 hover:text-white"
+                }`}
+              >
+                {v}
+              </button>
+            ))}
+          </div>
+
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (
@@ -160,7 +270,41 @@ export default function IstanbulPage() {
           )}
         </div>
 
-        <div className="mt-6 space-y-8">
+        {view === "week" && (
+          <>
+            {/* Desktop: true Mon–Sun grid, weeks stacked, columns aligned by weekday */}
+            <div className="mt-6 hidden sm:block">
+              <div className="grid grid-cols-7 gap-2 pb-2">
+                {WEEKDAYS.map((w) => (
+                  <div
+                    key={w}
+                    className="px-1 text-xs uppercase tracking-widest text-neutral-500"
+                  >
+                    {w}
+                  </div>
+                ))}
+              </div>
+              <div className="space-y-2">
+                {WEEKS.map((week) => (
+                  <div key={week[0]} className="grid grid-cols-7 gap-2">
+                    {week.map((d) => (
+                      <DayCell key={d} iso={d} list={byDay.get(d) ?? []} />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile: a seven-column grid is unreadable, so stack the covered days */}
+            <div className="mt-6 grid gap-2 sm:hidden">
+              {DAYS.map((d) => (
+                <DayCell key={d} iso={d} list={byDay.get(d) ?? []} />
+              ))}
+            </div>
+          </>
+        )}
+
+        <div className={`mt-6 space-y-8 ${view === "list" ? "" : "hidden"}`}>
           {DAYS.map((d) => {
             const list = byDay.get(d) ?? [];
             if (list.length === 0) return null;
