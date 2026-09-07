@@ -2,17 +2,17 @@
 
 import { useMemo, useState } from "react";
 import {
+  ALL_DAYS as DAYS,
+  CATEGORIES,
   CATEGORY_META,
-  CATEGORY_OF,
+  categoryOf,
   CINEMAS,
-  DAYS,
   EVENTS,
+  META,
   type Category,
   type Ev,
 } from "./data";
 import { CATEGORY_ICON } from "./icons";
-
-const CATEGORIES = Object.keys(CATEGORY_META) as Category[];
 
 function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
   return new Date(`${iso}T12:00:00`).toLocaleDateString("en-GB", opts);
@@ -23,6 +23,16 @@ const dayNum = (iso: string) => fmt(iso, { day: "numeric" });
 const shortDay = (iso: string) => fmt(iso, { weekday: "short" });
 
 const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+/** "8 – 14 September 2026", collapsing the month/year when both ends share one. */
+const rangeLabel = (() => {
+  const { start, end } = META.range;
+  const sameMonth = start.slice(0, 7) === end.slice(0, 7);
+  const left = sameMonth
+    ? fmt(start, { day: "numeric" })
+    : fmt(start, { day: "numeric", month: "long" });
+  return `${left} – ${fmt(end, { day: "numeric", month: "long", year: "numeric" })}`;
+})();
 
 const toIso = (d: Date) => d.toISOString().slice(0, 10);
 const shift = (iso: string, days: number) => {
@@ -53,7 +63,7 @@ function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: strin
 }
 
 function KindChip({ e }: { e: Ev }) {
-  const cat = CATEGORY_OF[e.kind];
+  const cat = categoryOf(e.kind);
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
@@ -66,12 +76,15 @@ function KindChip({ e }: { e: Ev }) {
 
 /** One event as a single line inside a calendar cell. */
 function MiniEvent({ e }: { e: Ev }) {
-  const cat = CATEGORY_OF[e.kind];
+  const cat = categoryOf(e.kind);
   const inner = (
     <>
       <Icon cat={cat} className={`mt-0.5 h-4 w-4 ${CATEGORY_META[cat].text}`} />
       <span className="min-w-0">
-        <span className="block line-clamp-2 font-medium">{e.title}</span>
+        <span className="block line-clamp-2 font-medium">
+          {e.title}
+          {e.owned && <span className="ml-1 text-emerald-400" title="You have tickets">✓</span>}
+        </span>
         <span className="block truncate text-xs text-neutral-500">
           {e.time ? `${e.time} · ` : ""}
           {e.area}
@@ -133,7 +146,7 @@ function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
 }
 
 function Card({ e }: { e: Ev }) {
-  const cat = CATEGORY_OF[e.kind];
+  const cat = categoryOf(e.kind);
   const body = (
     <>
       <div className="flex items-start justify-between gap-3">
@@ -161,6 +174,16 @@ function Card({ e }: { e: Ev }) {
             no ticket link
           </span>
         )}
+        {e.owned && (
+          <span className="rounded-full bg-emerald-400/10 px-2.5 py-1 text-xs font-medium text-emerald-200 ring-1 ring-inset ring-emerald-400/30">
+            you have tickets
+          </span>
+        )}
+        {e.availability && e.availability !== "available" && (
+          <span className="rounded-full bg-rose-400/10 px-2.5 py-1 text-xs font-medium text-rose-200 ring-1 ring-inset ring-rose-400/30">
+            {e.availability.replace(/_/g, " ")}
+          </span>
+        )}
         {e.note && <span className="text-xs text-neutral-500">{e.note}</span>}
       </div>
     </>
@@ -186,7 +209,7 @@ export default function IstanbulPage() {
   const [active, setActive] = useState<Category[]>([]);
 
   const shown = useMemo(
-    () => EVENTS.filter((e) => active.length === 0 || active.includes(CATEGORY_OF[e.kind])),
+    () => EVENTS.filter((e) => active.length === 0 || active.includes(categoryOf(e.kind))),
     [active],
   );
 
@@ -204,7 +227,7 @@ export default function IstanbulPage() {
   const counts = useMemo(() => {
     const c = {} as Record<Category, number>;
     for (const cat of CATEGORIES) c[cat] = 0;
-    for (const e of EVENTS) c[CATEGORY_OF[e.kind]] += 1;
+    for (const e of EVENTS) c[categoryOf(e.kind)] += 1;
     return c;
   }, []);
 
@@ -212,17 +235,24 @@ export default function IstanbulPage() {
     <main className="min-h-screen bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
       <div className="mx-auto max-w-6xl">
         <header>
-          <p className="text-sm uppercase tracking-widest text-neutral-500">
-            8 – 14 September 2026
-          </p>
+          <p className="text-sm uppercase tracking-widest text-neutral-500">{rangeLabel}</p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Istanbul events
+            {META.city} events
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
-            {EVENTS.length} pick this week, verified as on-sale on its ticketing page. 4 other
-            researched records were omitted for this window — unavailable, sold out, cancelled, or
-            without a trustworthy direct ticket link.
+            {EVENTS.length} {EVENTS.length === 1 ? "pick" : "picks"} across {DAYS.length} days
+            {META.omitted > 0 &&
+              `, with ${META.omitted} researched ${
+                META.omitted === 1 ? "record" : "records"
+              } omitted as unavailable or unlinkable`}
+            .
+            {META.excluded.length > 0 && ` Excludes ${META.excluded.join(", ")}.`}
           </p>
+          {META.researchNote && (
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+              {META.researchNote}
+            </p>
+          )}
         </header>
 
         <div className="mt-7 flex flex-wrap items-center gap-2">
