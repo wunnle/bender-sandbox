@@ -100,6 +100,16 @@ export const EVENTS: Ev[] = [
     url: "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
   },
   {
+    days: ["2026-09-10"],
+    title: "Yürüyen Şato",
+    kind: "film",
+    time: "20:30",
+    venue: "İstanbul Yelken Kulübü",
+    area: "Fenerbahçe/Kadıköy",
+    price: "₺514",
+    url: "https://biletinial.com/tr-tr/etkinlik/yuruyen-sato",
+  },
+  {
     days: ["2026-09-11", "2026-09-12", "2026-09-13"],
     title: "The Bodyguard",
     kind: "musical",
