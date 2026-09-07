@@ -213,19 +213,15 @@ export default function IstanbulPage() {
       <div className="mx-auto max-w-6xl">
         <header>
           <p className="text-sm uppercase tracking-widest text-neutral-500">
-            8 – 21 September 2026
+            8 – 14 September 2026
           </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Istanbul events
           </h1>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
-            {EVENTS.length} picks across two weeks — concerts, theatre and a musical, each
-            verified as on-sale on its ticketing page. Excludes Erol Evgin, Karanlıkta Diyalog,
-            Candan Erçetin, Ajda Pekkan, Leman Sam, Bengü and Serdar Ortaç, all sailing/sports-boat
-            events, sold-out shows (The Invite/Davet, Zülfü Livaneli & Maria Farantouri, The Black
-            Keys — cancelled), and Yürüyen Şato (already have a ticket). İstanbul Yelken Kulübü's
-            open-air film program had no verifiable per-date listing this cycle, so no screenings
-            are included — see footer.
+            {EVENTS.length} pick this week, verified as on-sale on its ticketing page. 4 other
+            researched records were omitted for this window — unavailable, sold out, cancelled, or
+            without a trustworthy direct ticket link.
           </p>
         </header>
 
@@ -327,44 +323,35 @@ export default function IstanbulPage() {
           })}
         </div>
 
-        <section className="mt-14">
-          <h2 className="text-2xl font-semibold tracking-tight text-white">Cinema options</h2>
-          <p className="mt-1 text-[15px] text-neutral-500">
-            Exact sessions and prices must be selected live.
-          </p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-            {CINEMAS.map((c) => (
-              <a
-                key={c.name}
-                href={c.url}
-                target="_blank"
-                rel="noreferrer"
-                className="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06]"
-              >
-                <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
-                  {c.name}
-                </h3>
-                <p className="mt-1 text-[15px] text-neutral-500">{c.area}</p>
-                <p className="mt-2 text-[15px] text-neutral-400">{c.films}</p>
-              </a>
-            ))}
-          </div>
-        </section>
+        {CINEMAS.length > 0 && (
+          <section className="mt-14">
+            <h2 className="text-2xl font-semibold tracking-tight text-white">Cinema options</h2>
+            <p className="mt-1 text-[15px] text-neutral-500">
+              Exact sessions and prices must be selected live.
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {CINEMAS.map((c) => (
+                <a
+                  key={c.name}
+                  href={c.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06]"
+                >
+                  <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
+                    {c.name}
+                  </h3>
+                  <p className="mt-1 text-[15px] text-neutral-500">{c.area}</p>
+                  <p className="mt-2 text-[15px] text-neutral-400">{c.films}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         <footer className="mt-14 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600">
-          Biletix and Bubilet block automated lookups of individual listings, so events without a
-          confirmed direct event page are marked "no ticket link" rather than linked to a generic
-          search — search the venue or listing site by title before you travel. İstanbul Yelken
-          Kulübü's open-air cinema is confirmed running through late September, but its per-film
-          schedule wasn't published on a checkable page at build time — check{" "}
-          <a
-            href="https://biletinial.com/etkinlikleri/istanbul-yelken-kulubu-acik-hava-sinemasi"
-            className="underline underline-offset-2"
-          >
-            its listing
-          </a>{" "}
-          closer to the date. Kaktüs Çiçeği, Zengin Mutfağı, Doğu Demirkol, Kamufle and Ersay Üner
-          had no date in this window; each is dropped rather than guessed.
+          Only researched, event-specific, directly validated ticket links are listed. Generic
+          marketplace search links are never substituted for a real listing.
         </footer>
       </div>
     </main>
