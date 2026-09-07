@@ -10,6 +10,7 @@ import {
   type Category,
   type Ev,
 } from "./data";
+import { CATEGORY_ICON } from "./icons";
 
 const CATEGORIES = Object.keys(CATEGORY_META) as Category[];
 
@@ -21,16 +22,18 @@ const dayName = (iso: string) => fmt(iso, { weekday: "short" });
 const dayNum = (iso: string) => fmt(iso, { day: "numeric" });
 const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", month: "long" });
 
-function Dot({ cat }: { cat: Category }) {
-  return <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${CATEGORY_META[cat].dot}`} />;
+function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
+  const Glyph = CATEGORY_ICON[cat];
+  return <Glyph className={`shrink-0 ${className}`} />;
 }
 
 function KindChip({ e }: { e: Ev }) {
   const cat = CATEGORY_OF[e.kind];
   return (
     <span
-      className={`rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
+      className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
     >
+      <Icon cat={cat} className="h-3 w-3" />
       {e.kind}
     </span>
   );
@@ -137,7 +140,10 @@ export default function IstanbulPage() {
                     : "bg-transparent text-neutral-400 ring-white/10 hover:text-white"
                 }`}
               >
-                <Dot cat={c} />
+                <Icon
+                  cat={c}
+                  className={`h-3.5 w-3.5 ${on ? "" : CATEGORY_META[c].text}`}
+                />
                 {CATEGORY_META[c].label}
                 <span className="text-neutral-500">{counts[c]}</span>
               </button>
@@ -178,9 +184,11 @@ export default function IstanbulPage() {
                           rel="noreferrer"
                           className="flex items-start gap-2 rounded-md px-1.5 py-1 text-[13px] leading-snug text-neutral-300 transition hover:bg-white/[0.06] hover:text-white"
                         >
-                          <span className="mt-1.5">
-                            <Dot cat={CATEGORY_OF[e.kind]} />
-                          </span>
+                          <Icon
+                            cat={CATEGORY_OF[e.kind]}
+                            className={`mt-0.5 h-3.5 w-3.5 ${CATEGORY_META[CATEGORY_OF[e.kind]].text}`}
+                          />
+
                           <span className="min-w-0">
                             <span className="block truncate font-medium">{e.title}</span>
                             <span className="block truncate text-[11px] text-neutral-500">

@@ -34,29 +34,33 @@ export const CATEGORY_OF: Record<Kind, Category> = {
 
 export const CATEGORY_META: Record<
   Category,
-  { label: string; dot: string; chip: string; ring: string }
+  { label: string; dot: string; text: string; chip: string; ring: string }
 > = {
   stage: {
     label: "Stage",
     dot: "bg-amber-400",
+    text: "text-amber-400",
     chip: "bg-amber-400/10 text-amber-200 ring-amber-400/30",
     ring: "ring-amber-400/40",
   },
   music: {
     label: "Music",
     dot: "bg-violet-400",
+    text: "text-violet-400",
     chip: "bg-violet-400/10 text-violet-200 ring-violet-400/30",
     ring: "ring-violet-400/40",
   },
   screen: {
     label: "Screen",
     dot: "bg-sky-400",
+    text: "text-sky-400",
     chip: "bg-sky-400/10 text-sky-200 ring-sky-400/30",
     ring: "ring-sky-400/40",
   },
   outdoors: {
     label: "Outdoors",
     dot: "bg-emerald-400",
+    text: "text-emerald-400",
     chip: "bg-emerald-400/10 text-emerald-200 ring-emerald-400/30",
     ring: "ring-emerald-400/40",
   },
