@@ -98,9 +98,7 @@ function Card({ e }: { e: Ev }) {
           {price && <div className="mt-0.5 text-sm font-medium text-neutral-400">{price}</div>}
         </div>
       </div>
-      <p className="mt-1.5 text-[15px] text-neutral-400">
-        {e.venue} <span className="text-neutral-600">·</span> {e.area}
-      </p>
+      <p className="mt-1.5 text-[15px] text-neutral-400">{e.venue}</p>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <KindChip e={e} />
         {!e.url && (
@@ -318,7 +316,6 @@ export default function IstanbulPage() {
                   <h3 className="text-lg font-semibold text-white group-hover:underline group-hover:underline-offset-4">
                     {c.name}
                   </h3>
-                  <p className="mt-1 text-[15px] text-neutral-500">{c.area}</p>
                   <p className="mt-2 text-[15px] text-neutral-400">{c.films}</p>
                 </a>
               ))}
