@@ -14,6 +14,8 @@ export type Ev = {
   title: string;
   kind: string;
   time?: string;
+  /** Multiple sessions on the same day. Supersedes `time` when present. */
+  times?: string[];
   venue: string;
   area: string;
   price?: string;

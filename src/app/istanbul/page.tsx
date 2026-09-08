@@ -62,8 +62,18 @@ function CheckIcon({ className = "h-4 w-4" }: { className?: string }) {
   );
 }
 
+/** "price unavailable" is the payload saying it doesn't know — not a price to print. */
+const realPrice = (p?: string) =>
+  p && !/unavailable|unknown|n\/a/i.test(p) ? p : undefined;
+
+/** `times` supersedes `time`; `time` may itself be a comma-joined list. */
+const sessionTimes = (e: Ev) =>
+  e.times?.length ? e.times : e.time ? e.time.split(",").map((t) => t.trim()) : [];
+
 function Card({ e }: { e: Ev }) {
   const cat = categoryOf(e.kind);
+  const times = sessionTimes(e);
+  const price = realPrice(e.price);
   const details = (
     <>
       <div className="flex items-start justify-between gap-4">
@@ -76,10 +86,16 @@ function Card({ e }: { e: Ev }) {
         </h3>
         {/* Time and price stack as one right-hand column — the two numbers you scan for */}
         <div className="shrink-0 text-right">
-          <div className="font-mono text-sm text-neutral-300">{e.time ?? "—"}</div>
-          {e.price && (
-            <div className="mt-0.5 text-sm font-medium text-neutral-400">{e.price}</div>
+          {times.length > 0 ? (
+            times.map((t) => (
+              <div key={t} className="font-mono text-sm text-neutral-300">
+                {t}
+              </div>
+            ))
+          ) : (
+            <div className="font-mono text-sm text-neutral-600">—</div>
           )}
+          {price && <div className="mt-0.5 text-sm font-medium text-neutral-400">{price}</div>}
         </div>
       </div>
       <p className="mt-1.5 text-[15px] text-neutral-400">
@@ -173,7 +189,9 @@ export default function IstanbulPage() {
     const m = new Map<string, Ev[]>(DAYS.map((d) => [d, []]));
     for (const e of shown) for (const d of e.days) m.get(d)?.push(e);
     for (const list of m.values())
-      list.sort((a, b) => (a.time ?? "99:99").localeCompare(b.time ?? "99:99"));
+      list.sort((a, b) =>
+        (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
+      );
     return m;
   }, [shown]);
 
