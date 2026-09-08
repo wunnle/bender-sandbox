@@ -19,10 +19,7 @@ function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
 }
 
 const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", month: "long" });
-const dayNum = (iso: string) => fmt(iso, { day: "numeric" });
-const shortDay = (iso: string) => fmt(iso, { weekday: "short" });
 
-const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 /** "8 – 14 September 2026", collapsing the month/year when both ends share one. */
 const rangeLabel = (() => {
@@ -34,28 +31,6 @@ const rangeLabel = (() => {
   return `${left} – ${fmt(end, { day: "numeric", month: "long", year: "numeric" })}`;
 })();
 
-const toIso = (d: Date) => d.toISOString().slice(0, 10);
-const shift = (iso: string, days: number) => {
-  const d = new Date(`${iso}T12:00:00Z`);
-  d.setUTCDate(d.getUTCDate() + days);
-  return toIso(d);
-};
-/** Monday-based weekday index, 0–6 */
-const weekIndex = (iso: string) => (new Date(`${iso}T12:00:00Z`).getUTCDay() + 6) % 7;
-
-/** Full Mon–Sun weeks covering every day in DAYS, so columns line up by weekday. */
-const WEEKS: string[][] = (() => {
-  const sorted = [...DAYS].sort();
-  const first = shift(sorted[0], -weekIndex(sorted[0]));
-  const last = shift(sorted[sorted.length - 1], 6 - weekIndex(sorted[sorted.length - 1]));
-  const weeks: string[][] = [];
-  for (let cur = first; cur <= last; cur = shift(cur, 7)) {
-    weeks.push(Array.from({ length: 7 }, (_, i) => shift(cur, i)));
-  }
-  return weeks;
-})();
-
-const IN_RANGE = new Set(DAYS);
 
 function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
   const Glyph = CATEGORY_ICON[cat];
@@ -74,95 +49,16 @@ function KindChip({ e }: { e: Ev }) {
   );
 }
 
-/** One event as a single line inside a calendar cell. */
-function MiniEvent({ e }: { e: Ev }) {
-  const cat = categoryOf(e.kind);
-  const inner = (
-    <>
-      <Icon cat={cat} className={`mt-0.5 h-4 w-4 ${CATEGORY_META[cat].text}`} />
-      <span className="min-w-0 flex-1">
-        <span className="block line-clamp-2 font-medium">{e.title}</span>
-        <span className="mt-0.5 flex flex-wrap items-baseline gap-x-2 text-xs">
-          {e.time && <span className="font-mono text-neutral-300">{e.time}</span>}
-          {e.price && <span className="font-medium text-neutral-400">{e.price}</span>}
-        </span>
-        <span className="block line-clamp-2 text-xs leading-snug text-neutral-500">{e.venue}</span>
-        <span className="block truncate text-xs text-neutral-600">{e.area}</span>
-        <span className="mt-1 flex flex-wrap items-center gap-1 empty:mt-0">
-          {e.owned && (
-            <span className="rounded bg-emerald-400/10 px-1.5 py-0.5 text-[11px] font-medium text-emerald-200 ring-1 ring-inset ring-emerald-400/30">
-              ✓ have tickets
-            </span>
-          )}
-          {e.availability && e.availability !== "available" && (
-            <span className="rounded bg-rose-400/10 px-1.5 py-0.5 text-[11px] font-medium text-rose-200 ring-1 ring-inset ring-rose-400/30">
-              {e.availability.replace(/_/g, " ")}
-            </span>
-          )}
-          {!e.url && (
-            <span className="rounded bg-white/5 px-1.5 py-0.5 text-[11px] text-neutral-500 ring-1 ring-inset ring-white/10">
-              no link
-            </span>
-          )}
-        </span>
-        {e.note && (
-          <span className="mt-1 block line-clamp-2 text-[11px] leading-snug text-neutral-500">
-            {e.note}
-          </span>
-        )}
-      </span>
-    </>
-  );
-  const className =
-    "flex items-start gap-2 rounded-md px-1.5 py-1.5 text-[15px] leading-snug text-neutral-300 transition";
 
-  if (!e.url) return <div className={`${className} opacity-80`}>{inner}</div>;
+function CheckIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
-    <a
-      href={e.url}
-      target="_blank"
-      rel="noreferrer"
-      className={`${className} hover:bg-white/[0.06] hover:text-white`}
-    >
-      {inner}
-    </a>
-  );
-}
-
-/** One day of the week grid. Days outside the covered range render as a faint placeholder. */
-function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
-  const covered = IN_RANGE.has(iso);
-  return (
-    <div
-      className={`flex flex-col rounded-xl border p-3 ${
-        covered
-          ? "min-h-[6rem] border-white/10 bg-white/[0.02]"
-          : "self-start border-white/5 bg-transparent"
-      }`}
-    >
-      <div className="flex items-baseline justify-between border-b border-white/10 pb-2">
-        <span className="text-sm uppercase tracking-wider text-neutral-500 sm:hidden">
-          {shortDay(iso)}
-        </span>
-        <span
-          className={`ml-auto text-2xl font-semibold sm:ml-0 ${
-            covered ? "text-white" : "text-neutral-700"
-          }`}
-        >
-          {dayNum(iso)}
-        </span>
-      </div>
-      <ul className="mt-1 divide-y divide-white/5">
-        {list.map((e) => (
-          <li key={e.title}>
-            <MiniEvent e={e} />
-          </li>
-        ))}
-        {covered && list.length === 0 && (
-          <li className="px-1.5 py-1 text-[15px] text-neutral-600">Nothing</li>
-        )}
-      </ul>
-    </div>
+    <svg viewBox="0 0 20 20" fill="currentColor" className={className} aria-hidden="true">
+      <path
+        fillRule="evenodd"
+        d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 9.7a1 1 0 1 1 1.4-1.4l3.8 3.8 6.8-6.8a1 1 0 0 1 1.4 0Z"
+        clipRule="evenodd"
+      />
+    </svg>
   );
 }
 
@@ -170,7 +66,7 @@ function Card({ e }: { e: Ev }) {
   const cat = categoryOf(e.kind);
   const details = (
     <>
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-start justify-between gap-4">
         <h3
           className={`text-lg font-semibold text-white ${
             e.url ? "group-hover:underline group-hover:underline-offset-4" : ""
@@ -178,26 +74,22 @@ function Card({ e }: { e: Ev }) {
         >
           {e.title}
         </h3>
-        <span className="shrink-0 font-mono text-sm text-neutral-400">{e.time ?? "—"}</span>
+        {/* Time and price stack as one right-hand column — the two numbers you scan for */}
+        <div className="shrink-0 text-right">
+          <div className="font-mono text-sm text-neutral-300">{e.time ?? "—"}</div>
+          {e.price && (
+            <div className="mt-0.5 text-sm font-medium text-neutral-400">{e.price}</div>
+          )}
+        </div>
       </div>
       <p className="mt-1.5 text-[15px] text-neutral-400">
         {e.venue} <span className="text-neutral-600">·</span> {e.area}
       </p>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <KindChip e={e} />
-        {e.price && (
-          <span className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-neutral-300 ring-1 ring-inset ring-white/10">
-            {e.price}
-          </span>
-        )}
         {!e.url && (
           <span className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-neutral-500 ring-1 ring-inset ring-white/10">
             no ticket link
-          </span>
-        )}
-        {e.owned && (
-          <span className="rounded-full bg-emerald-400/10 px-2.5 py-1 text-xs font-medium text-emerald-200 ring-1 ring-inset ring-emerald-400/30">
-            you have tickets
           </span>
         )}
         {e.availability && e.availability !== "available" && (
@@ -218,7 +110,7 @@ function Card({ e }: { e: Ev }) {
         src={e.image}
         alt=""
         loading="lazy"
-        className="h-24 w-16 shrink-0 rounded-lg object-cover ring-1 ring-white/10"
+        className="h-44 w-30 shrink-0 rounded-lg object-cover ring-1 ring-white/10 sm:h-52 sm:w-36"
       />
       <div className="min-w-0 flex-1">{details}</div>
     </div>
@@ -227,22 +119,38 @@ function Card({ e }: { e: Ev }) {
   );
 
   const className =
-    "group block rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 " +
+    "group relative block rounded-xl border p-4 transition focus:outline-none focus-visible:ring-2 " +
+    (e.owned
+      ? "border-emerald-400/40 bg-emerald-400/10 hover:border-emerald-300/60 hover:bg-emerald-400/15 "
+      : "border-white/10 bg-white/[0.03] hover:border-white/25 hover:bg-white/[0.06] ") +
     CATEGORY_META[cat].ring;
 
+  const inner = (
+    <>
+      {e.owned && (
+        <span
+          title="You have tickets"
+          className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/20"
+        >
+          <CheckIcon className="h-5 w-5" />
+        </span>
+      )}
+      {body}
+    </>
+  );
+
   if (!e.url) {
-    return <div className={className}>{body}</div>;
+    return <div className={className}>{inner}</div>;
   }
 
   return (
     <a href={e.url} target="_blank" rel="noreferrer" className={className}>
-      {body}
+      {inner}
     </a>
   );
 }
 
 export default function IstanbulPage() {
-  const [view, setView] = useState<"week" | "list">("week");
   const [active, setActive] = useState<Category[]>([]);
 
   const shown = useMemo(
@@ -313,20 +221,6 @@ export default function IstanbulPage() {
         )}
 
         <div className="mt-7 flex flex-wrap items-center gap-2">
-          <div className="mr-1 flex rounded-lg bg-white/5 p-0.5 ring-1 ring-inset ring-white/10">
-            {(["week", "list"] as const).map((v) => (
-              <button
-                key={v}
-                onClick={() => setView(v)}
-                className={`rounded-md px-4 py-2 text-sm font-medium capitalize transition ${
-                  view === v ? "bg-white text-neutral-900" : "text-neutral-400 hover:text-white"
-                }`}
-              >
-                {v}
-              </button>
-            ))}
-          </div>
-
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (
@@ -356,41 +250,7 @@ export default function IstanbulPage() {
           )}
         </div>
 
-        {view === "week" && (
-          <>
-            {/* Desktop: true Mon–Sun grid, weeks stacked, columns aligned by weekday */}
-            <div className="mt-6 hidden sm:block">
-              <div className="grid grid-cols-7 gap-2 pb-2">
-                {WEEKDAYS.map((w) => (
-                  <div
-                    key={w}
-                    className="px-1 text-xs uppercase tracking-widest text-neutral-500"
-                  >
-                    {w}
-                  </div>
-                ))}
-              </div>
-              <div className="space-y-2">
-                {WEEKS.map((week) => (
-                  <div key={week[0]} className="grid grid-cols-7 gap-2">
-                    {week.map((d) => (
-                      <DayCell key={d} iso={d} list={byDay.get(d) ?? []} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Mobile: a seven-column grid is unreadable, so stack the covered days */}
-            <div className="mt-6 grid gap-2 sm:hidden">
-              {DAYS.map((d) => (
-                <DayCell key={d} iso={d} list={byDay.get(d) ?? []} />
-              ))}
-            </div>
-          </>
-        )}
-
-        <div className={`mt-6 space-y-8 ${view === "list" ? "" : "hidden"}`}>
+        <div className="mt-6 space-y-8">
           {DAYS.map((d) => {
             const list = byDay.get(d) ?? [];
             if (list.length === 0) return null;
