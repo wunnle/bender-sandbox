@@ -82,19 +82,13 @@ function MiniEvent({ e }: { e: Ev }) {
       <Icon cat={cat} className={`mt-0.5 h-4 w-4 ${CATEGORY_META[cat].text}`} />
       <span className="min-w-0 flex-1">
         <span className="block line-clamp-2 font-medium">{e.title}</span>
-        {e.time && (
-          <span className="mt-0.5 block font-mono text-xs text-neutral-400">{e.time}</span>
-        )}
-        <span className="block line-clamp-2 text-xs leading-snug text-neutral-400">
-          {e.venue}
+        <span className="mt-0.5 flex flex-wrap items-baseline gap-x-2 text-xs">
+          {e.time && <span className="font-mono text-neutral-300">{e.time}</span>}
+          {e.price && <span className="font-medium text-neutral-400">{e.price}</span>}
         </span>
-        <span className="block line-clamp-1 break-words text-xs text-neutral-500">{e.area}</span>
-        <span className="mt-1 flex flex-wrap items-center gap-1">
-          {e.price && (
-            <span className="rounded bg-white/5 px-1.5 py-0.5 text-[11px] font-medium text-neutral-300 ring-1 ring-inset ring-white/10">
-              {e.price}
-            </span>
-          )}
+        <span className="block line-clamp-2 text-xs leading-snug text-neutral-500">{e.venue}</span>
+        <span className="block truncate text-xs text-neutral-600">{e.area}</span>
+        <span className="mt-1 flex flex-wrap items-center gap-1 empty:mt-0">
           {e.owned && (
             <span className="rounded bg-emerald-400/10 px-1.5 py-0.5 text-[11px] font-medium text-emerald-200 ring-1 ring-inset ring-emerald-400/30">
               ✓ have tickets
@@ -142,8 +136,8 @@ function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
     <div
       className={`flex flex-col rounded-xl border p-3 ${
         covered
-          ? "min-h-[11rem] border-white/10 bg-white/[0.02]"
-          : "border-white/5 bg-transparent"
+          ? "min-h-[6rem] border-white/10 bg-white/[0.02]"
+          : "self-start border-white/5 bg-transparent"
       }`}
     >
       <div className="flex items-baseline justify-between border-b border-white/10 pb-2">
@@ -261,31 +255,46 @@ export default function IstanbulPage() {
   return (
     <main className="min-h-screen bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
       <div className="mx-auto max-w-6xl">
-        <header>
-          <p className="text-sm uppercase tracking-widest text-neutral-500">{rangeLabel}</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            {META.city} events
-          </h1>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-neutral-400">
-            {EVENTS.length} {EVENTS.length === 1 ? "pick" : "picks"} across {DAYS.length} days
-            {META.omitted > 0 &&
-              `, with ${META.omitted} researched ${
-                META.omitted === 1 ? "record" : "records"
-              } omitted as unavailable or unlinkable`}
-            .
-            {META.excluded.length > 0 && ` Excludes ${META.excluded.join(", ")}.`}
-          </p>
-          {META.researchNote && (
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-              {META.researchNote}
-            </p>
-          )}
-          {META.lastUpdated && (
-            <p className="mt-2 text-xs uppercase tracking-wider text-neutral-600">
-              Last updated {META.lastUpdated}
-            </p>
-          )}
+        <header className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+          <div>
+            <p className="text-sm uppercase tracking-widest text-neutral-500">{rangeLabel}</p>
+            <h1 className="mt-1 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              {META.city} events
+            </h1>
+          </div>
+
+          {/* Counts live in the header's dead right-hand space instead of another paragraph */}
+          <dl className="flex items-end gap-6 text-neutral-400">
+            <div>
+              <dt className="text-xs uppercase tracking-wider text-neutral-500">Events</dt>
+              <dd className="text-2xl font-semibold text-white">{EVENTS.length}</dd>
+            </div>
+            <div>
+              <dt className="text-xs uppercase tracking-wider text-neutral-500">Days</dt>
+              <dd className="text-2xl font-semibold text-white">{DAYS.length}</dd>
+            </div>
+            {META.omitted > 0 && (
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-neutral-500">Omitted</dt>
+                <dd className="text-2xl font-semibold text-neutral-500">{META.omitted}</dd>
+              </div>
+            )}
+            {META.lastUpdated && (
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-neutral-500">Updated</dt>
+                <dd className="text-2xl font-semibold text-neutral-400">
+                  {fmt(META.lastUpdated, { day: "numeric", month: "short" })}
+                </dd>
+              </div>
+            )}
+          </dl>
         </header>
+
+        {META.excluded.length > 0 && (
+          <p className="mt-4 max-w-3xl text-sm text-neutral-500">
+            Excludes {META.excluded.join(", ")}.
+          </p>
+        )}
 
         <div className="mt-7 flex flex-wrap items-center gap-2">
           <div className="mr-1 flex rounded-lg bg-white/5 p-0.5 ring-1 ring-inset ring-white/10">
@@ -411,9 +420,12 @@ export default function IstanbulPage() {
           </section>
         )}
 
-        <footer className="mt-14 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600">
-          Only researched, event-specific, directly validated ticket links are listed. Generic
-          marketplace search links are never substituted for a real listing.
+        <footer className="mt-14 grid gap-4 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600 sm:grid-cols-2">
+          <p>
+            Only researched, event-specific, directly validated ticket links are listed. Generic
+            marketplace search links are never substituted for a real listing.
+          </p>
+          {META.researchNote && <p>{META.researchNote}</p>}
         </footer>
       </div>
     </main>
