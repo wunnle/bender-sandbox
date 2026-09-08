@@ -102,20 +102,31 @@ function Card({ e }: { e: Ev }) {
     </>
   );
 
-  // Roughly half the payload carries a poster; the rest must not leave a gap.
-  const body = e.image ? (
+  // Only about half the payload carries a poster. The rest get a category-tinted
+  // panel at identical dimensions, so a missing image never reads as a lesser event.
+  const mediaClass = "h-44 w-30 shrink-0 rounded-lg ring-1 sm:h-52 sm:w-36";
+  const media = e.image ? (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={e.image}
+      alt=""
+      loading="lazy"
+      className={`${mediaClass} object-cover ring-white/10`}
+    />
+  ) : (
+    <div
+      aria-hidden="true"
+      className={`${mediaClass} flex items-center justify-center bg-gradient-to-br from-white/[0.07] to-white/[0.02] ring-white/10`}
+    >
+      <Icon cat={cat} className={`h-10 w-10 opacity-40 ${CATEGORY_META[cat].text}`} />
+    </div>
+  );
+
+  const body = (
     <div className="flex gap-4">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={e.image}
-        alt=""
-        loading="lazy"
-        className="h-44 w-30 shrink-0 rounded-lg object-cover ring-1 ring-white/10 sm:h-52 sm:w-36"
-      />
+      {media}
       <div className="min-w-0 flex-1">{details}</div>
     </div>
-  ) : (
-    details
   );
 
   const className =
