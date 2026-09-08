@@ -168,7 +168,7 @@ function DayCell({ iso, list }: { iso: string; list: Ev[] }) {
 
 function Card({ e }: { e: Ev }) {
   const cat = categoryOf(e.kind);
-  const body = (
+  const details = (
     <>
       <div className="flex items-start justify-between gap-3">
         <h3
@@ -208,6 +208,22 @@ function Card({ e }: { e: Ev }) {
         {e.note && <span className="text-xs text-neutral-500">{e.note}</span>}
       </div>
     </>
+  );
+
+  // Roughly half the payload carries a poster; the rest must not leave a gap.
+  const body = e.image ? (
+    <div className="flex gap-4">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={e.image}
+        alt=""
+        loading="lazy"
+        className="h-24 w-16 shrink-0 rounded-lg object-cover ring-1 ring-white/10"
+      />
+      <div className="min-w-0 flex-1">{details}</div>
+    </div>
+  ) : (
+    details
   );
 
   const className =

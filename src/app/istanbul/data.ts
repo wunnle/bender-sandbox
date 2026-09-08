@@ -21,6 +21,8 @@ export type Ev = {
   note?: string;
   availability?: string;
   owned?: boolean;
+  /** Poster from the source listing. Present on roughly half the payload. */
+  image?: string;
 };
 
 type Payload = {
