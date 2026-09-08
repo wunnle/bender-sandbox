@@ -260,7 +260,8 @@ export default function IstanbulPage() {
                   {longDay(d)}
                   <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
                 </h2>
-                <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                {/* items-start: a poster-less card shouldn't stretch to match a poster one */}
+                <div className="mt-2 grid items-start gap-3 sm:grid-cols-2">
                   {list.map((e) => (
                     <Card key={e.title} e={e} />
                   ))}
