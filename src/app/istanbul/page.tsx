@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import {
   ALL_DAYS as DAYS,
   CATEGORIES,
@@ -22,14 +22,13 @@ const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", mon
 
 
 /** "8 – 14 September 2026", collapsing the month/year when both ends share one. */
-const rangeLabel = (() => {
-  const { start, end } = META.range;
+const rangeLabel = (start: string, end: string) => {
   const sameMonth = start.slice(0, 7) === end.slice(0, 7);
   const left = sameMonth
     ? fmt(start, { day: "numeric" })
     : fmt(start, { day: "numeric", month: "long" });
   return `${left} – ${fmt(end, { day: "numeric", month: "long", year: "numeric" })}`;
-})();
+};
 
 
 function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
@@ -175,40 +174,72 @@ function Card({ e }: { e: Ev }) {
   );
 }
 
+/** The date never changes mid-session in practice, so nothing to subscribe to. */
+const subscribeNever = () => () => {};
+
+/** Today in Istanbul, regardless of where the browser is. */
+const todayInIstanbul = () =>
+  new Intl.DateTimeFormat("en-CA", {
+    timeZone: META.timezone ?? "Europe/Istanbul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+
 export default function IstanbulPage() {
   const [active, setActive] = useState<Category[]>([]);
+  // Client-only: the page is statically built, so the build date must never be
+  // baked in. The server snapshot is null, so prerendered HTML shows every day
+  // and hydration then drops the ones already gone.
+  const today = useSyncExternalStore(subscribeNever, todayInIstanbul, () => null);
+
+  /** Days still to come. Before hydration nothing is dropped, so SSR matches. */
+  const days = useMemo(() => (today ? DAYS.filter((d) => d >= today) : DAYS), [today]);
 
   const shown = useMemo(
-    () => EVENTS.filter((e) => active.length === 0 || active.includes(categoryOf(e.kind))),
-    [active],
+    () =>
+      EVENTS.filter(
+        (e) =>
+          (active.length === 0 || active.includes(categoryOf(e.kind))) &&
+          e.days.some((d) => !today || d >= today),
+      ),
+    [active, today],
   );
 
   const byDay = useMemo(() => {
-    const m = new Map<string, Ev[]>(DAYS.map((d) => [d, []]));
+    const m = new Map<string, Ev[]>(days.map((d) => [d, []]));
     for (const e of shown) for (const d of e.days) m.get(d)?.push(e);
     for (const list of m.values())
       list.sort((a, b) =>
         (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
       );
     return m;
-  }, [shown]);
+  }, [shown, days]);
 
   const toggle = (c: Category) =>
     setActive((prev) => (prev.includes(c) ? prev.filter((x) => x !== c) : [...prev, c]));
 
+  /** Counts describe what's actually listed, so they shrink as days roll off. */
+  const upcoming = useMemo(
+    () => EVENTS.filter((e) => e.days.some((d) => !today || d >= today)),
+    [today],
+  );
+
   const counts = useMemo(() => {
     const c = {} as Record<Category, number>;
     for (const cat of CATEGORIES) c[cat] = 0;
-    for (const e of EVENTS) c[categoryOf(e.kind)] += 1;
+    for (const e of upcoming) c[categoryOf(e.kind)] += 1;
     return c;
-  }, []);
+  }, [upcoming]);
 
   return (
     <main className="min-h-screen bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
       <div className="mx-auto max-w-6xl">
         <header className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div>
-            <p className="text-sm uppercase tracking-widest text-neutral-500">{rangeLabel}</p>
+            <p className="text-sm uppercase tracking-widest text-neutral-500">
+              {days.length > 0 ? rangeLabel(days[0], days[days.length - 1]) : "Nothing upcoming"}
+            </p>
             <h1 className="mt-1 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               {META.city} events
             </h1>
@@ -218,11 +249,11 @@ export default function IstanbulPage() {
           <dl className="flex items-end gap-6 text-neutral-400">
             <div>
               <dt className="text-xs uppercase tracking-wider text-neutral-500">Events</dt>
-              <dd className="text-2xl font-semibold text-white">{EVENTS.length}</dd>
+              <dd className="text-2xl font-semibold text-white">{upcoming.length}</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-wider text-neutral-500">Days</dt>
-              <dd className="text-2xl font-semibold text-white">{DAYS.length}</dd>
+              <dd className="text-2xl font-semibold text-white">{days.length}</dd>
             </div>
             {META.omitted > 0 && (
               <div>
@@ -278,7 +309,7 @@ export default function IstanbulPage() {
         </div>
 
         <div className="mt-6 space-y-8">
-          {DAYS.map((d) => {
+          {days.map((d) => {
             const list = byDay.get(d) ?? [];
             if (list.length === 0) return null;
             return (

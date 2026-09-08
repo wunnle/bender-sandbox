@@ -124,6 +124,7 @@ export const CINEMAS = data.cinemas ?? [];
 
 export const META = {
   city: data.city,
+  timezone: data.timezone,
   lastUpdated: data.lastUpdated,
   range: data.range,
   researchNote: data.research_note,
