@@ -417,98 +417,54 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-21"
+      ],
+      "title": "The Invite / Davet",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "₺514,99",
+      "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
+      "availability": "available",
+      "owned": true,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg"
+    },
+    {
+      "days": [
+        "2026-09-28"
+      ],
+      "title": "The Invite / Davet",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "₺514,99",
+      "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
+      "availability": "available",
+      "owned": true,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg"
     }
   ],
   "cinemas": [
+    {
+      "name": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "films": "Yürüyen Şato; Aşk ve Gurur; Mamma Mia!; The Devil Wears Prada 2 - Açık Hava Gösterimi; The Invite / Davet - Açık Hava Gösterimi; Tavuk; Girl with a Pearl Earring / İnci Küpeli Kız - Açık Hava Gösterimi; Ruhların Kaçışı; Billy Elliot Film Gösterimi",
+      "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
+      "note": "Current venue programme from Biletinial; film detail pages provide dated sessions."
+    },
     {
       "name": "Kadıköy Sineması",
       "area": "Kadıköy",
       "films": "Harry Potter ve Felsefe Taşı; Aşıklar Şehri; Komşum Totoro; Prenses Mononoke; Bir Zamanlar Anadolu'da",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi"
-    },
-    {
-      "name": "Paribu Cineverse Akasya",
-      "area": "Üsküdar",
-      "dateChecked": "2026-09-09",
-      "films": "Fall 2: Ölümcül Tırmanış; Aşıklar Şehri; Harry Potter ve Felsefe Taşı; Ruhlar Bölgesi: Aramızdalar; Örümcek-Adam: Yepyeni Bir Gün; The Odyssey",
-      "url": "https://www.paribucineverse.com/sinemalar/akasya",
-      "note": "Official cinema page checked directly; session buttons are dynamic and not stable publishable ticket URLs.",
-      "sessionData": [
-        {
-          "title": "Fall 2: Ölümcül Tırmanış",
-          "format": "2D - Altyazılı",
-          "times": [
-            "11:00",
-            "13:30",
-            "16:00",
-            "19:10",
-            "21:30",
-            "23:55"
-          ]
-        },
-        {
-          "title": "Aşıklar Şehri",
-          "format": "2D - Altyazılı",
-          "times": [
-            "10:30",
-            "13:20",
-            "16:15",
-            "18:50",
-            "21:40"
-          ]
-        },
-        {
-          "title": "Harry Potter ve Felsefe Taşı",
-          "format": "2D - Altyazılı",
-          "times": [
-            "11:30",
-            "18:20"
-          ]
-        },
-        {
-          "title": "Ruhlar Bölgesi: Aramızdalar",
-          "format": "2D - Altyazılı",
-          "times": [
-            "11:30",
-            "14:00",
-            "16:25",
-            "18:30",
-            "21:00",
-            "23:30"
-          ]
-        },
-        {
-          "title": "Örümcek-Adam: Yepyeni Bir Gün",
-          "format": "Altyazılı",
-          "times": [
-            "10:30",
-            "13:35",
-            "16:45",
-            "20:00",
-            "23:15",
-            "12:15",
-            "15:25",
-            "18:40",
-            "21:45"
-          ]
-        },
-        {
-          "title": "The Odyssey",
-          "times": [
-            "10:45",
-            "14:20",
-            "17:55",
-            "21:30",
-            "11:15",
-            "14:50",
-            "18:25",
-            "22:00"
-          ]
-        }
-      ]
     }
   ],
   "omitted_records": 0,
-  "research_note": "Full source sweep on 2026-09-09 for the rolling 20-day window. Theatre discovery/ticket flows, official Paribu Cineverse Akasya programme, and Fastmail ownership were checked. Yürüyen Şato and The Invite/Davet are calendar-owned; The Invite was not published as a dated event because no stable direct ticket/detail URL was recovered during this run.",
+  "research_note": "Biletinial venue programme used for independent cinema. İstanbul Yelken Kulübü programme includes nine listed films; The Invite / Davet dated screenings restored from its direct event page. Paribu Cineverse omitted by preference.",
   "lastUpdated": "2026-09-09"
 }
