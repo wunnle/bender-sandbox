@@ -425,9 +425,90 @@
       "area": "Kadıköy",
       "films": "Harry Potter ve Felsefe Taşı; Aşıklar Şehri; Komşum Totoro; Prenses Mononoke; Bir Zamanlar Anadolu'da",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi"
+    },
+    {
+      "name": "Paribu Cineverse Akasya",
+      "area": "Üsküdar",
+      "dateChecked": "2026-09-09",
+      "films": "Fall 2: Ölümcül Tırmanış; Aşıklar Şehri; Harry Potter ve Felsefe Taşı; Ruhlar Bölgesi: Aramızdalar; Örümcek-Adam: Yepyeni Bir Gün; The Odyssey",
+      "url": "https://www.paribucineverse.com/sinemalar/akasya",
+      "note": "Official cinema page checked directly; session buttons are dynamic and not stable publishable ticket URLs.",
+      "sessionData": [
+        {
+          "title": "Fall 2: Ölümcül Tırmanış",
+          "format": "2D - Altyazılı",
+          "times": [
+            "11:00",
+            "13:30",
+            "16:00",
+            "19:10",
+            "21:30",
+            "23:55"
+          ]
+        },
+        {
+          "title": "Aşıklar Şehri",
+          "format": "2D - Altyazılı",
+          "times": [
+            "10:30",
+            "13:20",
+            "16:15",
+            "18:50",
+            "21:40"
+          ]
+        },
+        {
+          "title": "Harry Potter ve Felsefe Taşı",
+          "format": "2D - Altyazılı",
+          "times": [
+            "11:30",
+            "18:20"
+          ]
+        },
+        {
+          "title": "Ruhlar Bölgesi: Aramızdalar",
+          "format": "2D - Altyazılı",
+          "times": [
+            "11:30",
+            "14:00",
+            "16:25",
+            "18:30",
+            "21:00",
+            "23:30"
+          ]
+        },
+        {
+          "title": "Örümcek-Adam: Yepyeni Bir Gün",
+          "format": "Altyazılı",
+          "times": [
+            "10:30",
+            "13:35",
+            "16:45",
+            "20:00",
+            "23:15",
+            "12:15",
+            "15:25",
+            "18:40",
+            "21:45"
+          ]
+        },
+        {
+          "title": "The Odyssey",
+          "times": [
+            "10:45",
+            "14:20",
+            "17:55",
+            "21:30",
+            "11:15",
+            "14:50",
+            "18:25",
+            "22:00"
+          ]
+        }
+      ]
     }
   ],
   "omitted_records": 0,
-  "research_note": "Full refresh on 2026-09-09 for the rolling 20-day window. Kadıköy theatre discovery was followed through detail and ticket-selection pages where available; direct source images were retained when exposed. Calendar ownership checked via Fastmail; Yürüyen Şato remains owned.",
+  "research_note": "Full source sweep on 2026-09-09 for the rolling 20-day window. Theatre discovery/ticket flows, official Paribu Cineverse Akasya programme, and Fastmail ownership were checked. Yürüyen Şato and The Invite/Davet are calendar-owned; The Invite was not published as a dated event because no stable direct ticket/detail URL was recovered during this run.",
   "lastUpdated": "2026-09-09"
 }
