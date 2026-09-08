@@ -2,8 +2,8 @@
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
   "range": {
-    "start": "2026-09-08",
-    "end": "2026-09-14"
+    "start": "2026-09-09",
+    "end": "2026-09-22"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,19 +14,9 @@
   },
   "events": [
     {
-      "days": ["2026-09-08"],
-      "title": "Hadi Öldürsene Canikom",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Özgürlük Parkı Amfi Tiyatro",
-      "area": "Kadıköy",
-      "price": "from ₺1,118",
-      "url": "https://biletinial.com/tr-tr/tiyatro/hadi-oldursene-canikom-tiyatro-etkinligi",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": ["2026-09-09"],
+      "days": [
+        "2026-09-09"
+      ],
       "title": "Mutlu Aile Tablosu",
       "kind": "theatre",
       "time": "21:00",
@@ -38,19 +28,9 @@
       "owned": false
     },
     {
-      "days": ["2026-09-10"],
-      "title": "Şairler Mezarlığı",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Özgürlük Parkı Amfi Tiyatro",
-      "area": "Kadıköy",
-      "price": "from ₺700",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": ["2026-09-10"],
+      "days": [
+        "2026-09-10"
+      ],
       "title": "Yürüyen Şato",
       "kind": "film",
       "time": "20:30",
@@ -62,7 +42,40 @@
       "owned": true
     },
     {
-      "days": ["2026-09-11", "2026-09-12", "2026-09-13"],
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Şairler Mezarlığı",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Özgürlük Parkı Amfi Tiyatro",
+      "area": "Kadıköy",
+      "price": "from ₺700",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "Abdullah Konuş",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/abdullah-konus",
+      "availability": "listed",
+      "owned": false,
+      "note": "Session and Kadıköy venue verified on the theatre detail page."
+    },
+    {
+      "days": [
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13"
+      ],
       "title": "The Bodyguard",
       "kind": "musical",
       "time": "20:30",
@@ -75,19 +88,10 @@
       "note": "Sep 13 also has a 15:30 matinee."
     },
     {
-      "days": ["2026-09-12"],
-      "title": "Ayna",
-      "kind": "concert",
-      "time": "21:00",
-      "venue": "Özgürlük Parkı Amfi Tiyatro",
-      "area": "Kadıköy",
-      "price": "from ₺1,150",
-      "url": "https://biletinial.com/tr-tr/muzik/ayna-konserii",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": ["2026-09-12", "2026-09-13"],
+      "days": [
+        "2026-09-12",
+        "2026-09-13"
+      ],
       "title": "Rock’n Park İstanbul",
       "kind": "festival",
       "time": "16:00",
@@ -99,7 +103,38 @@
       "owned": false
     },
     {
-      "days": ["2026-09-13"],
+      "days": [
+        "2026-09-12"
+      ],
+      "title": "Sevgili Arsız Ölüm - Dirmit",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/sevgili-arsiz-olum-dirmit",
+      "availability": "listed",
+      "owned": false,
+      "note": "Session and Kadıköy venue verified on the theatre detail page."
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
+      "title": "Ayna",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Özgürlük Parkı Amfi Tiyatro",
+      "area": "Kadıköy",
+      "price": "from ₺1,150",
+      "url": "https://biletinial.com/tr-tr/muzik/ayna-konserii",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-13"
+      ],
       "title": "İstanbul Coffee Festival 2026",
       "kind": "festival",
       "time": "1. Seans",
@@ -110,6 +145,21 @@
       "availability": "available",
       "owned": false,
       "note": "Login required to purchase."
+    },
+    {
+      "days": [
+        "2026-09-18"
+      ],
+      "title": "Meçhul Paşa",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/mechul-pasa-1",
+      "availability": "listed",
+      "owned": false,
+      "note": "Session and Kadıköy venue verified on the theatre detail page."
     }
   ],
   "cinemas": [
@@ -121,5 +171,6 @@
     }
   ],
   "omitted_records": 0,
-  "research_note": "Fresh lookup on 2026-09-08. Included event-specific ticket pages found or re-confirmed during lookup; excluded category pages and generic search results. Availability means the event page/listing was active, not a guaranteed seat inventory claim."
+  "research_note": "Refreshed 2026-09-09 for 2026-09-09 through 2026-09-22. Past sessions removed; future listings retained only with verified dates/venues and direct detail or ticket URLs. Calendar ownership checked via Fastmail; Yürüyen Şato remains owned.",
+  "lastUpdated": "2026-09-09"
 }
