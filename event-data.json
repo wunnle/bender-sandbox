@@ -47,6 +47,21 @@
       "days": [
         "2026-09-10"
       ],
+      "title": "Yürüyen Şato",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "₺514",
+      "url": "https://biletinial.com/tr-tr/etkinlik/yuruyen-sato",
+      "availability": "available",
+      "owned": true,
+      "image": "https://b6s54eznn8xq.merlincdn.net/dist/assets/img/logo.svg"
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
       "title": "Şairler Mezarlığı",
       "kind": "theatre",
       "time": "21:00",
@@ -403,10 +418,40 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-21"
+      ],
+      "title": "The Invite / Davet",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "₺514,99",
+      "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
+      "availability": "available",
+      "owned": true,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg"
+    },
+    {
+      "days": [
+        "2026-09-28"
+      ],
+      "title": "The Invite / Davet",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "₺514,99",
+      "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
+      "availability": "available",
+      "owned": true,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg"
     }
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Cinema data normalized into events: only dated screenings from the three preferred Biletinial cinemas are included, each with the same event schema and source-backed poster where available. Programme-only films omitted; Paribu skipped. Theatre source: Tiyatrolar.com.tr.",
+  "research_note": "Cinema entries are represented only as dated event records. Programme-only films are omitted. Preferred cinema sources: Biletinial Yelken, Kadıköy Sineması, and Caddebostan CKM; Paribu skipped. Theatre source: Tiyatrolar.com.tr.",
   "lastUpdated": "2026-09-09"
 }
