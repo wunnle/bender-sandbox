@@ -3,7 +3,7 @@
   "timezone": "Europe/Istanbul",
   "range": {
     "start": "2026-09-09",
-    "end": "2026-09-22"
+    "end": "2026-09-28"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -26,6 +26,22 @@
       "url": "https://www.bubilet.com.tr/istanbul/etkinlik/mutlu-aile-tablosu-oyunu",
       "availability": "available",
       "owned": false
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Yabancı",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/yabanci-1",
+      "image": "https://tiyatrolar.com.tr/files/activity/y/yabanci-1/image/yabanci-1.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
     },
     {
       "days": [
@@ -69,6 +85,23 @@
       "availability": "listed",
       "owned": false,
       "note": "Session and Kadıköy venue verified on the theatre detail page."
+    },
+    {
+      "days": [
+        "2026-09-11",
+        "2026-09-12"
+      ],
+      "title": "Babamı Kim Öldürdü",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/babami-kim-oldurdu",
+      "image": "https://tiyatrolar.com.tr/files/activity/b/babami-kim-oldurdu/image/babami-kim-oldurdu.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
     },
     {
       "days": [
@@ -148,6 +181,54 @@
     },
     {
       "days": [
+        "2026-09-17"
+      ],
+      "title": "Vakit Tamam Abbas",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/vakit-tamam-abbas",
+      "image": "https://tiyatrolar.com.tr/files/activity/v/vakit-tamam-abbas/image/vakit-tamam-abbas.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-17"
+      ],
+      "title": "Bunu Kendime Neden Yapıyorum?",
+      "kind": "theatre",
+      "time": "21:15",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/bunu-kendime-neden-yapiyorum",
+      "image": "https://tiyatrolar.com.tr/files/activity/b/bunu-kendime-neden-yapiyorum/image/bunu-kendime-neden-yapiyorum.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-18"
+      ],
+      "title": "Lucy",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Decollage Art Space",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/lucy",
+      "image": "https://tiyatrolar.com.tr/files/activity/l/lucy/image/lucy.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
         "2026-09-18"
       ],
       "title": "Meçhul Paşa",
@@ -160,6 +241,182 @@
       "availability": "listed",
       "owned": false,
       "note": "Session and Kadıköy venue verified on the theatre detail page."
+    },
+    {
+      "days": [
+        "2026-09-19"
+      ],
+      "title": "Aşk Hikayen Düşmüş",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/ask-hikayen-dusmus",
+      "image": "https://tiyatrolar.com.tr/files/activity/a/ask-hikayen-dusmus/image/ask-hikayen-dusmus.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-19"
+      ],
+      "title": "Nokta",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Baba Sahne",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/nokta",
+      "image": "https://tiyatrolar.com.tr/files/activity/n/nokta/image/nokta.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-20"
+      ],
+      "title": "Eylül",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Baba Sahne",
+      "area": "Kadıköy",
+      "price": "₺950",
+      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/eylul",
+      "image": "https://tiyatrolar.com.tr/files/activity/e/eylul/image/eylul.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-20"
+      ],
+      "title": "Pınar Fidan Stand-Up",
+      "kind": "stand-up",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/pinar-fidan-stand-up",
+      "image": "https://tiyatrolar.com.tr/files/activity/p/pinar-fidan-stand-up/image/pinar-fidan-stand-up.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-22"
+      ],
+      "title": "Aşk Listesi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Baba Sahne",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/ask-listesi-2",
+      "image": "https://tiyatrolar.com.tr/files/activity/a/ask-listesi-2/image/ask-listesi-2.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-23"
+      ],
+      "title": "Birbirimizi Hiç Göremeyecekmişiz",
+      "kind": "theatre",
+      "time": "19:00",
+      "venue": "Paribu Art",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/birbirimizi-hic-goremeyecekmisiz",
+      "image": "https://tiyatrolar.com.tr/files/activity/b/birbirimizi-hic-goremeyecekmisiz/image/birbirimizi-hic-goremeyecekmisiz.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-23"
+      ],
+      "title": "Herkes Kocama Benziyor",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Baba Sahne",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/herkes-kocama-benziyor-1",
+      "image": "https://tiyatrolar.com.tr/files/activity/h/herkes-kocama-benziyor-1/image/herkes-kocama-benziyor-1.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-23"
+      ],
+      "title": "Clown Jam",
+      "kind": "stand-up",
+      "time": "22:00",
+      "venue": "Komünite",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/clown-jam",
+      "image": "https://tiyatrolar.com.tr/files/activity/c/clown-jam/image/clown-jam.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Bir Baba Hamlet",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Baba Sahne",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/bir-baba-hamlet",
+      "image": "https://tiyatrolar.com.tr/files/activity/b/bir-baba-hamlet/image/bir-baba-hamlet.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Elma Labrador Çimen",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/elma-labrador-cimen",
+      "image": "https://tiyatrolar.com.tr/files/activity/e/elma-labrador-cimen/image/elma-labrador-cimen.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-28"
+      ],
+      "title": "Çok Küçük Bir İhtimalin Hikayesi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://tiyatrolar.com.tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi",
+      "image": "https://tiyatrolar.com.tr/files/activity/c/cok-kucuk-bir-ihtimalin-hikayesi/image/cok-kucuk-bir-ihtimalin-hikayesi.jpg",
+      "availability": "listed",
+      "owned": false,
+      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
     }
   ],
   "cinemas": [
@@ -171,6 +428,6 @@
     }
   ],
   "omitted_records": 0,
-  "research_note": "Refreshed 2026-09-09 for 2026-09-09 through 2026-09-22. Past sessions removed; future listings retained only with verified dates/venues and direct detail or ticket URLs. Calendar ownership checked via Fastmail; Yürüyen Şato remains owned.",
+  "research_note": "Full refresh on 2026-09-09 for the rolling 20-day window. Kadıköy theatre discovery was followed through detail and ticket-selection pages where available; direct source images were retained when exposed. Calendar ownership checked via Fastmail; Yürüyen Şato remains owned.",
   "lastUpdated": "2026-09-09"
 }
