@@ -119,7 +119,7 @@ function Tile({ e }: { e: Ev }) {
   const inner = (
     <>
       <div
-        className={`relative aspect-[2/3] w-full overflow-hidden rounded-2xl ring-1 transition ${
+        className={`relative aspect-[2/3] w-full overflow-hidden rounded-3xl ring-1 transition ${
           e.owned ? "ring-emerald-400/60" : "ring-white/10 group-hover:ring-white/30"
         }`}
       >
@@ -134,26 +134,23 @@ function Tile({ e }: { e: Ev }) {
         )}
       </div>
 
-      {/* Fixed-height metadata and title keep every tile in a row aligned, however
-          many sessions a film has or how long its name runs. */}
-      <div className="mt-2.5 flex h-5 items-center gap-3 overflow-hidden text-xs text-neutral-400">
+      {/* Title, then where, then when. Reserved heights keep a row's tiles aligned
+          however long a name runs or how many sessions a film has. */}
+      <h3 className="mt-2.5 line-clamp-2 min-h-10 text-sm font-semibold leading-snug text-white">
+        {e.title}
+      </h3>
+      <p className="mt-1 line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
+      <div className="mt-1 flex h-4 items-center gap-2 overflow-hidden text-[11px] text-neutral-400">
         {times.length > 0 && (
           <span className="flex min-w-0 items-center gap-1">
-            <ClockIcon className={`h-3.5 w-3.5 shrink-0 ${meta.text}`} />
-            <span className="truncate font-mono" title={times.join(", ")}>
-              {times.join(" · ")}
+            <ClockIcon className={`h-3 w-3 shrink-0 ${meta.text}`} />
+            <span className="truncate font-mono tracking-tight" title={times.join(", ")}>
+              {times.join(" ")}
             </span>
           </span>
         )}
-        {price && (
-          <span className="shrink-0 font-medium text-neutral-300">{price}</span>
-        )}
+        {price && <span className="shrink-0 font-medium text-neutral-300">{price}</span>}
       </div>
-
-      <h3 className="mt-1.5 line-clamp-2 min-h-11 text-base font-semibold leading-snug text-white">
-        {e.title}
-      </h3>
-      <p className="mt-0.5 line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
       {(e.availability && e.availability !== "available") || !e.url ? (
         <p className="mt-1 text-xs text-neutral-600">
           {e.availability && e.availability !== "available"
@@ -165,7 +162,7 @@ function Tile({ e }: { e: Ev }) {
   );
 
   const className =
-    "group w-40 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-48 " +
+    "group w-48 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
     meta.ring;
 
   return e.url ? (
@@ -190,7 +187,6 @@ function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
       <div className="flex items-center justify-between gap-4">
         <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
           {longDay(iso)}
-          <span className="ml-2 text-base font-normal text-neutral-500">{list.length}</span>
         </h2>
         {/* Pointer affordance only — the strip is scrollable and keyboard reachable without it */}
         <div className="hidden shrink-0 gap-2 sm:flex">
@@ -287,7 +283,7 @@ export default function IstanbulPage() {
         aria-hidden="true"
         className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[80rem] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(180,83,9,0.18),transparent)] blur-2xl"
       />
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-[110rem]">
         <header className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div>
             <p className="text-sm uppercase tracking-widest text-neutral-500">
