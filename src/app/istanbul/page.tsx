@@ -155,9 +155,8 @@ function Tile({ e }: { e: Ev }) {
         )}
       </div>
 
-      {/* Title, then where, then when. Reserved heights keep a row's tiles aligned
-          however long a name runs or how many sessions a film has. */}
-      <h3 className="mt-2.5 line-clamp-2 min-h-9 text-sm font-semibold leading-tight text-white">
+      {/* Title, then where, then when. */}
+      <h3 className="mt-2.5 line-clamp-2 text-sm font-semibold leading-tight text-white">
         {e.title}
       </h3>
       <p className="line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
