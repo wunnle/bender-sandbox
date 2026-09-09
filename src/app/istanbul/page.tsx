@@ -18,7 +18,13 @@ function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
   return new Date(`${iso}T12:00:00`).toLocaleDateString("en-GB", opts);
 }
 
-const longDay = (iso: string) => fmt(iso, { weekday: "long", day: "numeric", month: "long" });
+/** "Wed, 9 Sep" — composed by hand because en-GB renders "Wed 9 Sept", no comma. */
+const longDay = (iso: string) => {
+  const d = new Date(`${iso}T12:00:00`);
+  const weekday = d.toLocaleDateString("en-US", { weekday: "short" });
+  const month = d.toLocaleDateString("en-US", { month: "short" });
+  return `${weekday}, ${d.getDate()} ${month}`;
+};
 
 
 /** "8 – 14 September 2026", collapsing the month/year when both ends share one. */
@@ -118,29 +124,33 @@ function Tile({ e }: { e: Ev }) {
 
   const inner = (
     <>
+      {/* 3:4 matches the source posters (600x800), so nothing gets cropped. */}
       <div
-        className={`relative aspect-[2/3] w-full overflow-hidden rounded-3xl ring-1 transition ${
-          e.owned ? "ring-emerald-400/60" : "ring-white/10 group-hover:ring-white/30"
+        className={`relative aspect-[3/4] w-full overflow-hidden rounded-3xl transition ${
+          e.owned
+            ? "ring-2 ring-emerald-400 shadow-lg shadow-emerald-500/25"
+            : "ring-1 ring-white/10 group-hover:ring-white/30"
         }`}
       >
         {art}
         {e.owned && (
           <span
             title="You have tickets"
-            className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/30"
+            className="absolute inset-x-0 bottom-0 flex items-center gap-1.5 bg-emerald-400 px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-950"
           >
-            <CheckIcon className="h-4 w-4" />
+            <CheckIcon className="h-3.5 w-3.5 shrink-0" />
+            Booked
           </span>
         )}
       </div>
 
       {/* Title, then where, then when. Reserved heights keep a row's tiles aligned
           however long a name runs or how many sessions a film has. */}
-      <h3 className="mt-2.5 line-clamp-2 min-h-10 text-sm font-semibold leading-snug text-white">
+      <h3 className="mt-2.5 line-clamp-2 min-h-9 text-sm font-semibold leading-tight text-white">
         {e.title}
       </h3>
-      <p className="mt-1 line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
-      <div className="mt-1 flex h-4 items-center gap-2 overflow-hidden text-[11px] text-neutral-400">
+      <p className="line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
+      <div className="mt-0.5 flex h-4 items-center gap-2 overflow-hidden text-[11px] text-neutral-400">
         {times.length > 0 && (
           <span className="flex min-w-0 items-center gap-1">
             <ClockIcon className={`h-3 w-3 shrink-0 ${meta.text}`} />
@@ -162,7 +172,7 @@ function Tile({ e }: { e: Ev }) {
   );
 
   const className =
-    "group w-48 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
+    "group w-32 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
     meta.ring;
 
   return e.url ? (
@@ -185,7 +195,7 @@ function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
   return (
     <section>
       <div className="flex items-center justify-between gap-4">
-        <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+        <h2 className="text-base font-semibold tracking-tight text-white sm:text-lg">
           {longDay(iso)}
         </h2>
         {/* Pointer affordance only — the strip is scrollable and keyboard reachable without it */}
@@ -253,9 +263,12 @@ export default function IstanbulPage() {
   const byDay = useMemo(() => {
     const m = new Map<string, Ev[]>(days.map((d) => [d, []]));
     for (const e of shown) for (const d of e.days) m.get(d)?.push(e);
+    // Anything already booked leads its day; the rest stay in start-time order.
     for (const list of m.values())
-      list.sort((a, b) =>
-        (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
+      list.sort(
+        (a, b) =>
+          Number(!!b.owned) - Number(!!a.owned) ||
+          (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
       );
     return m;
   }, [shown, days]);
