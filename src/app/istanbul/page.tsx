@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
   ALL_DAYS as DAYS,
   CATEGORIES,
@@ -49,6 +49,41 @@ function CheckIcon({ className = "h-4 w-4" }: { className?: string }) {
   );
 }
 
+function ClockIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="10" cy="10" r="7.2" />
+      <path d="M10 6v4.3l2.8 1.7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ dir, className = "h-4 w-4" }: { dir: -1 | 1; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      className={className}
+      aria-hidden="true"
+    >
+      <path
+        d={dir === 1 ? "m8 5 5 5-5 5" : "m12 5-5 5 5 5"}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 /** "price unavailable" is the payload saying it doesn't know — not a price to print. */
 const realPrice = (p?: string) =>
   p && !/unavailable|unknown|n\/a/i.test(p) ? p : undefined;
@@ -84,51 +119,53 @@ function Tile({ e }: { e: Ev }) {
   const inner = (
     <>
       <div
-        className={`relative aspect-[2/3] w-full overflow-hidden rounded-lg ring-1 transition ${
+        className={`relative aspect-[2/3] w-full overflow-hidden rounded-2xl ring-1 transition ${
           e.owned ? "ring-emerald-400/60" : "ring-white/10 group-hover:ring-white/30"
         }`}
       >
         {art}
-        {/* Times sit on the poster: on a tile there's no room for a side column */}
-        {times.length > 0 && (
-          <div className="absolute inset-x-0 bottom-0 flex flex-wrap gap-1 bg-gradient-to-t from-black/90 to-transparent p-2 pt-6">
-            {times.map((t) => (
-              <span
-                key={t}
-                className="rounded bg-black/60 px-1.5 py-0.5 font-mono text-[11px] text-white ring-1 ring-inset ring-white/15"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-        )}
         {e.owned && (
           <span
             title="You have tickets"
-            className="absolute right-1.5 top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/30"
+            className="absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/30"
           >
             <CheckIcon className="h-4 w-4" />
           </span>
         )}
-        <span className={`absolute left-0 top-0 h-1 w-full ${meta.dot} opacity-70`} />
       </div>
 
-      <h3 className="mt-2 line-clamp-2 text-sm font-semibold leading-snug text-white">
+      {/* Fixed-height metadata and title keep every tile in a row aligned, however
+          many sessions a film has or how long its name runs. */}
+      <div className="mt-2.5 flex h-5 items-center gap-3 overflow-hidden text-xs text-neutral-400">
+        {times.length > 0 && (
+          <span className="flex min-w-0 items-center gap-1">
+            <ClockIcon className={`h-3.5 w-3.5 shrink-0 ${meta.text}`} />
+            <span className="truncate font-mono" title={times.join(", ")}>
+              {times.join(" · ")}
+            </span>
+          </span>
+        )}
+        {price && (
+          <span className="shrink-0 font-medium text-neutral-300">{price}</span>
+        )}
+      </div>
+
+      <h3 className="mt-1.5 line-clamp-2 min-h-11 text-base font-semibold leading-snug text-white">
         {e.title}
       </h3>
       <p className="mt-0.5 line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
-      <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
-        {price && <span className="text-xs font-medium text-neutral-400">{price}</span>}
-        {e.availability && e.availability !== "available" && (
-          <span className="text-xs text-rose-300/80">{e.availability.replace(/_/g, " ")}</span>
-        )}
-        {!e.url && <span className="text-xs text-neutral-600">no ticket link</span>}
-      </div>
+      {(e.availability && e.availability !== "available") || !e.url ? (
+        <p className="mt-1 text-xs text-neutral-600">
+          {e.availability && e.availability !== "available"
+            ? e.availability.replace(/_/g, " ")
+            : "no ticket link"}
+        </p>
+      ) : null}
     </>
   );
 
   const className =
-    "group w-40 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-44 " +
+    "group w-40 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-48 " +
     meta.ring;
 
   return e.url ? (
@@ -137,6 +174,51 @@ function Tile({ e }: { e: Ev }) {
     </a>
   ) : (
     <div className={className}>{inner}</div>
+  );
+}
+
+/** One day: a heading, arrow controls, and a horizontally scrolled strip of tiles. */
+function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
+  const strip = useRef<HTMLDivElement>(null);
+
+  // Scroll by most of a viewport so a nudge advances several tiles, not one.
+  const scrollBy = (dir: -1 | 1) =>
+    strip.current?.scrollBy({ left: dir * strip.current.clientWidth * 0.8, behavior: "smooth" });
+
+  return (
+    <section>
+      <div className="flex items-center justify-between gap-4">
+        <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+          {longDay(iso)}
+          <span className="ml-2 text-base font-normal text-neutral-500">{list.length}</span>
+        </h2>
+        {/* Pointer affordance only — the strip is scrollable and keyboard reachable without it */}
+        <div className="hidden shrink-0 gap-2 sm:flex">
+          {([-1, 1] as const).map((dir) => (
+            <button
+              key={dir}
+              onClick={() => scrollBy(dir)}
+              aria-label={dir === 1 ? `Later on ${longDay(iso)}` : `Earlier on ${longDay(iso)}`}
+              className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-300 ring-1 ring-white/15 transition hover:bg-white/5 hover:text-white"
+            >
+              <ChevronIcon dir={dir} />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Negative margins let tiles bleed to the screen edge so the row reads as continuing */}
+      <div
+        ref={strip}
+        className="-mx-4 mt-4 overflow-x-auto px-4 pb-3 [scrollbar-color:theme(colors.neutral.800)_transparent] [scrollbar-width:thin] sm:-mx-8 sm:px-8"
+      >
+        <div className="flex snap-x snap-mandatory gap-4">
+          {list.map((e, i) => (
+            <Tile key={`${iso}-${e.title}-${e.venue}-${i}`} e={e} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -199,8 +281,13 @@ export default function IstanbulPage() {
   }, [upcoming]);
 
   return (
-    <main className="min-h-screen bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
-      <div className="mx-auto max-w-6xl">
+    <main className="relative min-h-screen overflow-hidden bg-neutral-950 px-4 py-10 text-neutral-200 sm:px-8 sm:py-14">
+      {/* Warm ambient wash behind the top rows, so the page isn't flat black */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[80rem] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(180,83,9,0.18),transparent)] blur-2xl"
+      />
+      <div className="relative mx-auto max-w-6xl">
         <header className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div>
             <p className="text-sm uppercase tracking-widest text-neutral-500">
@@ -244,7 +331,8 @@ export default function IstanbulPage() {
           </p>
         )}
 
-        <div className="mt-7 flex flex-wrap items-center gap-2">
+        <div className="mt-8 flex flex-wrap items-center gap-2">
+          <span className="mr-2 max-w-16 text-sm leading-tight text-neutral-500">Find by type</span>
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (
@@ -279,21 +367,7 @@ export default function IstanbulPage() {
             const list = byDay.get(d) ?? [];
             if (list.length === 0) return null;
             return (
-              <section key={d}>
-                <h2 className="text-lg font-semibold tracking-tight text-white">
-                  {longDay(d)}
-                  <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
-                </h2>
-                {/* One horizontally scrolled row per day. The negative margins let
-                    tiles bleed to the screen edge so the row reads as continuing. */}
-                <div className="-mx-4 mt-3 overflow-x-auto px-4 pb-3 [scrollbar-color:theme(colors.neutral.700)_transparent] [scrollbar-width:thin] sm:-mx-8 sm:px-8">
-                  <div className="flex snap-x snap-mandatory gap-3">
-                    {list.map((e, i) => (
-                      <Tile key={`${d}-${e.title}-${e.venue}-${i}`} e={e} />
-                    ))}
-                  </div>
-                </div>
-              </section>
+              <DayRow key={d} iso={d} list={list} />
             );
           })}
         </div>
