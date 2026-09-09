@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
+  <!-- Ticket stub: the notches read even at 16px, the perforation does not. -->
+  <path
+    d="M6 12a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.5a2.5 2.5 0 0 0 0 5V20a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1.5a2.5 2.5 0 0 0 0-5V12Z"
+    fill="#fbbf24"/>
+  <path d="M18 12.5v7" stroke="#0a0a0a" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2.2"/>
+</svg>

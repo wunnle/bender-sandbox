@@ -19,14 +19,18 @@
       ],
       "title": "Davet",
       "kind": "film",
-      "time": "12:50",
+      "time": "12:50, 16:15",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
+      "times": [
+        "12:50",
+        "16:15"
+      ]
     },
     {
       "days": [
@@ -34,14 +38,18 @@
       ],
       "title": "Harry Potter ve Felsefe Taşı",
       "kind": "film",
-      "time": "13:00",
+      "time": "13:00, 17:15",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
+      "times": [
+        "13:00",
+        "17:15"
+      ]
     },
     {
       "days": [
@@ -49,14 +57,18 @@
       ],
       "title": "Aşıklar Şehri",
       "kind": "film",
-      "time": "14:50",
+      "time": "14:50, 20:30",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
+      "times": [
+        "14:50",
+        "20:30"
+      ]
     },
     {
       "days": [
@@ -109,14 +121,20 @@
       ],
       "title": "Davet",
       "kind": "film",
-      "time": "16:30",
+      "time": "13:30, 16:00, 18:30, 21:15",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
+      "times": [
+        "13:30",
+        "16:00",
+        "18:30",
+        "21:15"
+      ]
     },
     {
       "days": [
@@ -124,14 +142,19 @@
       ],
       "title": "Örümcek-Adam: Yepyeni Bir Gün",
       "kind": "film",
-      "time": "18:00",
+      "time": "15:00, 18:00, 21:00",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png",
+      "times": [
+        "15:00",
+        "18:00",
+        "21:00"
+      ]
     },
     {
       "days": [
@@ -169,14 +192,18 @@
       ],
       "title": "Odyssey",
       "kind": "film",
-      "time": "19:30",
+      "time": "16:30, 20:00",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg",
+      "times": [
+        "16:30",
+        "20:00"
+      ]
     },
     {
       "days": [
@@ -318,14 +345,20 @@
       ],
       "title": "Aşkın Büyüsü 2",
       "kind": "film",
-      "time": "16:00",
+      "time": "13:00, 15:45, 18:30, 21:15",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/askin-buyusu-2",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png",
+      "times": [
+        "13:00",
+        "15:45",
+        "18:30",
+        "21:15"
+      ]
     },
     {
       "days": [
@@ -1127,6 +1160,6 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Cinema screenings from the three preferred Biletinial cinemas use the unified event schema. Multiple sessions for the same film, venue, and day are consolidated: time is UI-compatible and times[] preserves every session. Source-backed poster images included where available. Theatre source: Tiyatrolar.com.tr; Paribu skipped.",
+  "research_note": "Cinema screenings from the three preferred Biletinial cinemas use the unified event schema. Multiple sessions for the same film, venue, and day are consolidated: time is UI-compatible and times[] preserves every session. Source-backed poster images included where available. Theatre source: Tiyatrolar.com.tr; Paribu skipped. Session times are extracted from Biletinial cinemaPartitions/tarihler/seanslar payloads; multi-session screenings use times[].",
   "lastUpdated": "2026-09-09"
 }
