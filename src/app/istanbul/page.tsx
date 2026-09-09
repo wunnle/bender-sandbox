@@ -128,23 +128,30 @@ function Tile({ e }: { e: Ev }) {
       <div
         className={`relative aspect-[3/4] w-full overflow-hidden rounded-3xl transition ${
           e.owned
-            ? "ring-2 ring-emerald-400 shadow-lg shadow-emerald-500/25"
+            ? "shadow-lg shadow-emerald-500/25"
             : "ring-1 ring-white/10 group-hover:ring-white/30"
         }`}
       >
         {art}
         {e.owned && (
-          <span
-            title="You have tickets"
-            className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-emerald-500/55 backdrop-blur-[1px]"
-          >
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-900/40">
-              <CheckIcon className="h-7 w-7" />
+          <>
+            <span
+              title="You have tickets"
+              className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-emerald-950/90 backdrop-blur-[2px]"
+            >
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-900/40">
+                <CheckIcon className="h-7 w-7" />
+              </span>
+              <span className="text-xs font-semibold uppercase tracking-widest text-emerald-100">
+                Booked
+              </span>
             </span>
-            <span className="text-xs font-semibold uppercase tracking-widest text-white drop-shadow">
-              Booked
-            </span>
-          </span>
+            {/* Drawn above the overlay so the border reads as inset, not outlined */}
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 rounded-3xl ring-4 ring-inset ring-emerald-400"
+            />
+          </>
         )}
       </div>
 
@@ -344,7 +351,6 @@ export default function IstanbulPage() {
         )}
 
         <div className="mt-8 flex flex-wrap items-center gap-2">
-          <span className="mr-2 max-w-16 text-sm leading-tight text-neutral-500">Find by type</span>
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (
