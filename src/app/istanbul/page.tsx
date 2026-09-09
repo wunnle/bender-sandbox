@@ -137,7 +137,7 @@ function Tile({ e }: { e: Ev }) {
           <>
             <span
               title="You have tickets"
-              className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-emerald-950/90 backdrop-blur-[2px]"
+              className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-emerald-950/70 backdrop-blur-[1px]"
             >
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-900/40">
                 <CheckIcon className="h-7 w-7" />
