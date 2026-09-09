@@ -119,7 +119,7 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
-        className="w-full max-w-md rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
+        className="w-full max-w-2xl rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
       >
         <div className="flex items-start justify-between gap-4">
           <h2 className="text-lg font-semibold text-white">{group[0].title}</h2>
@@ -133,40 +133,22 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
         </div>
         <p className="mt-1 text-sm text-neutral-500">{group.length} venues this day</p>
 
-        <ul className="mt-4 space-y-2">
+        {/* The same card as in the row, one per venue, so the comparison is like for like */}
+        <ul className="mt-5 flex gap-4 overflow-x-auto pb-1 [scrollbar-width:thin]">
           {group.map((o, i) => {
-            const times = sessionTimes(o);
-            const price = realPrice(o.price);
-            const row = (
-              <>
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="font-medium text-white">{o.venue}</span>
-                  {price && <span className="shrink-0 text-xs text-neutral-400">{price}</span>}
-                </div>
-                {times.length > 0 && (
-                  <p className="mt-1 font-mono text-xs text-neutral-400">{times.join("  ")}</p>
-                )}
-                {o.owned && (
-                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-emerald-400">
-                    Booked
-                  </p>
-                )}
-              </>
-            );
-            const cls = "block rounded-xl bg-white/[0.04] p-3 text-sm";
+            const cls =
+              "group block w-40 shrink-0 rounded-xl focus:outline-none focus-visible:ring-2 sm:w-44 " +
+              CATEGORY_META[categoryOf(o.kind)].ring;
             return (
               <li key={`${o.venue}-${i}`}>
                 {o.url ? (
-                  <a
-                    href={o.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`${cls} transition hover:bg-white/[0.09]`}
-                  >
-                    {row}
+                  <a href={o.url} target="_blank" rel="noreferrer" className={cls}>
+                    <TileBody e={o} />
                   </a>
                 ) : (
-                  <div className={cls}>{row}</div>
+                  <div className={cls}>
+                    <TileBody e={o} />
+                  </div>
                 )}
               </li>
             );
@@ -177,11 +159,8 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
   );
 }
 
-/** A poster-first tile sized for a horizontally scrolled row. */
-function Tile({ group }: { group: Group }) {
-  const [open, setOpen] = useState(false);
-  const e = group[0];
-  const extra = group.length - 1;
+/** The visual body of a tile: poster, then title, venue and times. */
+function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
   const cat = categoryOf(e.kind);
   const times = sessionTimes(e);
   const price = realPrice(e.price);
@@ -204,7 +183,7 @@ function Tile({ group }: { group: Group }) {
     </div>
   );
 
-  const inner = (
+  return (
     <>
       {/* 3:4 matches the source posters (600x800), so nothing gets cropped. */}
       <div
@@ -269,17 +248,24 @@ function Tile({ group }: { group: Group }) {
       ) : null}
     </>
   );
+}
+
+/** A poster-first tile sized for a horizontally scrolled row. */
+function Tile({ group }: { group: Group }) {
+  const [open, setOpen] = useState(false);
+  const e = group[0];
+  const extra = group.length - 1;
 
   const className =
     "group w-32 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
-    meta.ring;
+    CATEGORY_META[categoryOf(e.kind)].ring;
 
   // With several venues the tile can't link anywhere sensible, so it opens the list.
   if (extra > 0) {
     return (
       <>
         <button onClick={() => setOpen(true)} className={`${className} text-left`}>
-          {inner}
+          <TileBody e={e} extra={extra} />
         </button>
         {open && <OptionsDialog group={group} onClose={() => setOpen(false)} />}
       </>
@@ -288,10 +274,12 @@ function Tile({ group }: { group: Group }) {
 
   return e.url ? (
     <a href={e.url} target="_blank" rel="noreferrer" className={className}>
-      {inner}
+      <TileBody e={e} />
     </a>
   ) : (
-    <div className={className}>{inner}</div>
+    <div className={className}>
+      <TileBody e={e} />
+    </div>
   );
 }
 
