@@ -119,7 +119,7 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
-        className="w-full max-w-2xl rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
+        className="w-full max-w-md rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
       >
         <div className="flex items-start justify-between gap-4">
           <h2 className="text-lg font-semibold text-white">{group[0].title}</h2>
