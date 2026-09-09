@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
   ALL_DAYS as DAYS,
   CATEGORIES,
@@ -98,8 +98,90 @@ const realPrice = (p?: string) =>
 const sessionTimes = (e: Ev) =>
   e.times?.length ? e.times : e.time ? e.time.split(",").map((t) => t.trim()) : [];
 
+/** Options for one title on one day — usually a single venue, sometimes several. */
+type Group = Ev[];
+
+/** Overlay listing every venue showing a title on a given day. */
+function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${group[0].title} — where to see it`}
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-4 backdrop-blur-sm sm:items-center"
+    >
+      <div
+        onClick={(ev) => ev.stopPropagation()}
+        className="w-full max-w-md rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <h2 className="text-lg font-semibold text-white">{group[0].title}</h2>
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            className="-mr-1 -mt-1 rounded-full px-2 py-1 text-neutral-400 transition hover:bg-white/10 hover:text-white"
+          >
+            ✕
+          </button>
+        </div>
+        <p className="mt-1 text-sm text-neutral-500">{group.length} venues this day</p>
+
+        <ul className="mt-4 space-y-2">
+          {group.map((o, i) => {
+            const times = sessionTimes(o);
+            const price = realPrice(o.price);
+            const row = (
+              <>
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="font-medium text-white">{o.venue}</span>
+                  {price && <span className="shrink-0 text-xs text-neutral-400">{price}</span>}
+                </div>
+                {times.length > 0 && (
+                  <p className="mt-1 font-mono text-xs text-neutral-400">{times.join("  ")}</p>
+                )}
+                {o.owned && (
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-emerald-400">
+                    Booked
+                  </p>
+                )}
+              </>
+            );
+            const cls = "block rounded-xl bg-white/[0.04] p-3 text-sm";
+            return (
+              <li key={`${o.venue}-${i}`}>
+                {o.url ? (
+                  <a
+                    href={o.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={`${cls} transition hover:bg-white/[0.09]`}
+                  >
+                    {row}
+                  </a>
+                ) : (
+                  <div className={cls}>{row}</div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 /** A poster-first tile sized for a horizontally scrolled row. */
-function Tile({ e }: { e: Ev }) {
+function Tile({ group }: { group: Group }) {
+  const [open, setOpen] = useState(true);
+  const e = group[0];
+  const extra = group.length - 1;
   const cat = categoryOf(e.kind);
   const times = sessionTimes(e);
   const price = realPrice(e.price);
@@ -153,13 +235,20 @@ function Tile({ e }: { e: Ev }) {
             />
           </>
         )}
+        {extra > 0 && (
+          <span className="absolute right-2 top-2 rounded-full bg-black/75 px-2 py-1 text-xs font-semibold text-white ring-1 ring-inset ring-white/25 backdrop-blur-sm">
+            +{extra}
+          </span>
+        )}
       </div>
 
       {/* Title, then where, then when. */}
-      <h3 className="mt-2.5 line-clamp-2 text-sm font-semibold leading-tight text-white">
+      <h3 className="mt-2.5 line-clamp-2 min-h-[1.6em] text-sm font-semibold leading-tight text-white">
         {e.title}
       </h3>
-      <p className="line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
+      <p className="line-clamp-1 text-xs text-neutral-500">
+        {extra > 0 ? `${e.venue} and ${extra} more` : e.venue}
+      </p>
       <div className="mt-0.5 flex h-4 items-center gap-2 overflow-hidden text-[11px] text-neutral-400">
         {times.length > 0 && (
           <span className="flex min-w-0 items-center gap-1">
@@ -185,6 +274,18 @@ function Tile({ e }: { e: Ev }) {
     "group w-32 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
     meta.ring;
 
+  // With several venues the tile can't link anywhere sensible, so it opens the list.
+  if (extra > 0) {
+    return (
+      <>
+        <button onClick={() => setOpen(true)} className={`${className} text-left`}>
+          {inner}
+        </button>
+        {open && <OptionsDialog group={group} onClose={() => setOpen(false)} />}
+      </>
+    );
+  }
+
   return e.url ? (
     <a href={e.url} target="_blank" rel="noreferrer" className={className}>
       {inner}
@@ -195,7 +296,7 @@ function Tile({ e }: { e: Ev }) {
 }
 
 /** One day: a heading, arrow controls, and a horizontally scrolled strip of tiles. */
-function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
+function DayRow({ iso, list }: { iso: string; list: Group[] }) {
   const strip = useRef<HTMLDivElement>(null);
 
   // Scroll by most of a viewport so a nudge advances several tiles, not one.
@@ -228,8 +329,8 @@ function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
         className="mt-4 overflow-x-auto pb-3 [scrollbar-color:theme(colors.neutral.800)_transparent] [scrollbar-width:thin]"
       >
         <div className="flex snap-x snap-mandatory gap-4">
-          {list.map((e, i) => (
-            <Tile key={`${iso}-${e.title}-${e.venue}-${i}`} e={e} />
+          {list.map((g, i) => (
+            <Tile key={`${iso}-${g[0].title}-${i}`} group={g} />
           ))}
         </div>
       </div>
@@ -270,16 +371,38 @@ export default function IstanbulPage() {
   );
 
   const byDay = useMemo(() => {
-    const m = new Map<string, Ev[]>(days.map((d) => [d, []]));
-    for (const e of shown) for (const d of e.days) m.get(d)?.push(e);
-    // Anything already booked leads its day; the rest stay in start-time order.
-    for (const list of m.values())
-      list.sort(
-        (a, b) =>
-          Number(!!b.owned) - Number(!!a.owned) ||
-          (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
+    const raw = new Map<string, Ev[]>(days.map((d) => [d, []]));
+    for (const e of shown) for (const d of e.days) raw.get(d)?.push(e);
+
+    const first = (g: Group) => sessionTimes(g[0])[0] ?? "99:99";
+    const booked = (g: Group) => g.some((o) => o.owned);
+
+    const out = new Map<string, Group[]>();
+    for (const [day, list] of raw) {
+      // The same title can play several venues on one day — collapse into one tile.
+      const byTitle = new Map<string, Group>();
+      for (const e of list) {
+        const key = e.title.trim().toLowerCase();
+        const group = byTitle.get(key);
+        if (group) group.push(e);
+        else byTitle.set(key, [e]);
+      }
+
+      const groups = [...byTitle.values()];
+      // Within a group, a booked venue leads, then the earliest session.
+      for (const g of groups)
+        g.sort(
+          (a, b) =>
+            Number(!!b.owned) - Number(!!a.owned) ||
+            (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
+        );
+      // Anything already booked leads the day; the rest stay in start-time order.
+      groups.sort(
+        (a, b) => Number(booked(b)) - Number(booked(a)) || first(a).localeCompare(first(b)),
       );
-    return m;
+      out.set(day, groups);
+    }
+    return out;
   }, [shown, days]);
 
   const toggle = (c: Category) =>
