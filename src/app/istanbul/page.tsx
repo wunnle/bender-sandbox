@@ -136,10 +136,14 @@ function Tile({ e }: { e: Ev }) {
         {e.owned && (
           <span
             title="You have tickets"
-            className="absolute inset-x-0 bottom-0 flex items-center gap-1.5 bg-emerald-400 px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-neutral-950"
+            className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-emerald-500/55 backdrop-blur-[1px]"
           >
-            <CheckIcon className="h-3.5 w-3.5 shrink-0" />
-            Booked
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-900/40">
+              <CheckIcon className="h-7 w-7" />
+            </span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-white drop-shadow">
+              Booked
+            </span>
           </span>
         )}
       </div>
@@ -213,10 +217,9 @@ function DayRow({ iso, list }: { iso: string; list: Ev[] }) {
         </div>
       </div>
 
-      {/* Negative margins let tiles bleed to the screen edge so the row reads as continuing */}
       <div
         ref={strip}
-        className="-mx-4 mt-4 overflow-x-auto px-4 pb-3 [scrollbar-color:theme(colors.neutral.800)_transparent] [scrollbar-width:thin] sm:-mx-8 sm:px-8"
+        className="mt-4 overflow-x-auto pb-3 [scrollbar-color:theme(colors.neutral.800)_transparent] [scrollbar-width:thin]"
       >
         <div className="flex snap-x snap-mandatory gap-4">
           {list.map((e, i) => (
