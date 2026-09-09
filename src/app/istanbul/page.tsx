@@ -179,7 +179,7 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
 
 /** A poster-first tile sized for a horizontally scrolled row. */
 function Tile({ group }: { group: Group }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const e = group[0];
   const extra = group.length - 1;
   const cat = categoryOf(e.kind);
