@@ -36,18 +36,6 @@ function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: strin
   return <Glyph className={`shrink-0 ${className}`} />;
 }
 
-function KindChip({ e }: { e: Ev }) {
-  const cat = categoryOf(e.kind);
-  return (
-    <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${CATEGORY_META[cat].chip}`}
-    >
-      <Icon cat={cat} className="h-3.5 w-3.5" />
-      {e.kind}
-    </span>
-  );
-}
-
 
 function CheckIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
@@ -69,103 +57,86 @@ const realPrice = (p?: string) =>
 const sessionTimes = (e: Ev) =>
   e.times?.length ? e.times : e.time ? e.time.split(",").map((t) => t.trim()) : [];
 
-function Card({ e }: { e: Ev }) {
+/** A poster-first tile sized for a horizontally scrolled row. */
+function Tile({ e }: { e: Ev }) {
   const cat = categoryOf(e.kind);
   const times = sessionTimes(e);
   const price = realPrice(e.price);
-  const details = (
-    <>
-      <div className="flex items-start justify-between gap-4">
-        <h3 className="text-lg font-semibold text-white">{e.title}</h3>
-        {/* Time and price stack as one right-hand column — the two numbers you scan for */}
-        <div className="shrink-0 text-right">
-          {times.length > 0 ? (
-            times.map((t) => (
-              <div key={t} className="font-mono text-sm text-neutral-300">
-                {t}
-              </div>
-            ))
-          ) : (
-            <div className="font-mono text-sm text-neutral-600">—</div>
-          )}
-          {price && <div className="mt-0.5 text-sm font-medium text-neutral-400">{price}</div>}
-        </div>
-      </div>
-      <p className="mt-1.5 text-[15px] text-neutral-400">{e.venue}</p>
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        <KindChip e={e} />
-        {!e.url && (
-          <span className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-neutral-500 ring-1 ring-inset ring-white/10">
-            no ticket link
-          </span>
-        )}
-        {e.availability && e.availability !== "available" && (
-          <span className="rounded-full bg-rose-400/10 px-2.5 py-1 text-xs font-medium text-rose-200 ring-1 ring-inset ring-rose-400/30">
-            {e.availability.replace(/_/g, " ")}
-          </span>
-        )}
-        {e.note && <span className="text-xs text-neutral-500">{e.note}</span>}
-      </div>
-    </>
-  );
+  const meta = CATEGORY_META[cat];
 
-  // Only about half the payload carries a poster. The rest get a category-tinted
-  // panel at identical dimensions, so a missing image never reads as a lesser event.
-  const mediaClass = "h-44 w-30 shrink-0 rounded-lg ring-1 sm:h-52 sm:w-36";
-  const media = e.image ? (
+  const art = e.image ? (
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={e.image}
       alt=""
       loading="lazy"
-      className={`${mediaClass} object-cover ring-white/10`}
+      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
     />
   ) : (
     <div
       aria-hidden="true"
-      className={`${mediaClass} flex items-center justify-center bg-gradient-to-br from-white/[0.07] to-white/[0.02] ring-white/10`}
+      className="flex h-full w-full items-center justify-center bg-gradient-to-br from-white/[0.08] to-white/[0.02] transition duration-300 group-hover:scale-105"
     >
-      <Icon cat={cat} className={`h-10 w-10 opacity-40 ${CATEGORY_META[cat].text}`} />
+      <Icon cat={cat} className={`h-12 w-12 opacity-40 ${meta.text}`} />
     </div>
   );
-
-  const body = (
-    <div className="flex gap-4">
-      {media}
-      <div className="min-w-0 flex-1">{details}</div>
-    </div>
-  );
-
-  const className =
-    "group relative block rounded-xl border p-4 transition focus:outline-none focus-visible:ring-2 " +
-    // Owned keeps its own emerald identity; everything else is tinted by category.
-    (e.owned
-      ? "border-emerald-400/40 bg-emerald-400/[0.12] hover:border-emerald-300/60 hover:bg-emerald-400/[0.06] "
-      : CATEGORY_META[cat].card + " ") +
-    CATEGORY_META[cat].ring;
 
   const inner = (
     <>
-      {e.owned && (
-        <span
-          title="You have tickets"
-          className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/20"
-        >
-          <CheckIcon className="h-5 w-5" />
-        </span>
-      )}
-      {body}
+      <div
+        className={`relative aspect-[2/3] w-full overflow-hidden rounded-lg ring-1 transition ${
+          e.owned ? "ring-emerald-400/60" : "ring-white/10 group-hover:ring-white/30"
+        }`}
+      >
+        {art}
+        {/* Times sit on the poster: on a tile there's no room for a side column */}
+        {times.length > 0 && (
+          <div className="absolute inset-x-0 bottom-0 flex flex-wrap gap-1 bg-gradient-to-t from-black/90 to-transparent p-2 pt-6">
+            {times.map((t) => (
+              <span
+                key={t}
+                className="rounded bg-black/60 px-1.5 py-0.5 font-mono text-[11px] text-white ring-1 ring-inset ring-white/15"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
+        {e.owned && (
+          <span
+            title="You have tickets"
+            className="absolute right-1.5 top-1.5 flex h-7 w-7 items-center justify-center rounded-full bg-emerald-400 text-neutral-950 shadow-lg shadow-emerald-500/30"
+          >
+            <CheckIcon className="h-4 w-4" />
+          </span>
+        )}
+        <span className={`absolute left-0 top-0 h-1 w-full ${meta.dot} opacity-70`} />
+      </div>
+
+      <h3 className="mt-2 line-clamp-2 text-sm font-semibold leading-snug text-white">
+        {e.title}
+      </h3>
+      <p className="mt-0.5 line-clamp-1 text-xs text-neutral-500">{e.venue}</p>
+      <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+        {price && <span className="text-xs font-medium text-neutral-400">{price}</span>}
+        {e.availability && e.availability !== "available" && (
+          <span className="text-xs text-rose-300/80">{e.availability.replace(/_/g, " ")}</span>
+        )}
+        {!e.url && <span className="text-xs text-neutral-600">no ticket link</span>}
+      </div>
     </>
   );
 
-  if (!e.url) {
-    return <div className={className}>{inner}</div>;
-  }
+  const className =
+    "group w-40 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-44 " +
+    meta.ring;
 
-  return (
+  return e.url ? (
     <a href={e.url} target="_blank" rel="noreferrer" className={className}>
       {inner}
     </a>
+  ) : (
+    <div className={className}>{inner}</div>
   );
 }
 
@@ -303,21 +274,24 @@ export default function IstanbulPage() {
           )}
         </div>
 
-        <div className="mt-6 space-y-8">
+        <div className="mt-6 space-y-9">
           {days.map((d) => {
             const list = byDay.get(d) ?? [];
             if (list.length === 0) return null;
             return (
               <section key={d}>
-                <h2 className="sticky top-0 z-10 bg-neutral-950/90 py-2 text-lg font-semibold tracking-tight text-white backdrop-blur">
+                <h2 className="text-lg font-semibold tracking-tight text-white">
                   {longDay(d)}
                   <span className="ml-2 font-normal text-neutral-500">{list.length}</span>
                 </h2>
-                {/* items-start: a poster-less card shouldn't stretch to match a poster one */}
-                <div className="mt-2 grid items-start gap-3 sm:grid-cols-2">
-                  {list.map((e) => (
-                    <Card key={e.title} e={e} />
-                  ))}
+                {/* One horizontally scrolled row per day. The negative margins let
+                    tiles bleed to the screen edge so the row reads as continuing. */}
+                <div className="-mx-4 mt-3 overflow-x-auto px-4 pb-3 [scrollbar-color:theme(colors.neutral.700)_transparent] [scrollbar-width:thin] sm:-mx-8 sm:px-8">
+                  <div className="flex snap-x snap-mandatory gap-3">
+                    {list.map((e, i) => (
+                      <Tile key={`${d}-${e.title}-${e.venue}-${i}`} e={e} />
+                    ))}
+                  </div>
                 </div>
               </section>
             );
