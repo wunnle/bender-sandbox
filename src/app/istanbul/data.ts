@@ -65,9 +65,13 @@ const KIND_CATEGORY: Record<string, Category> = {
 export const categoryOf = (kind: string): Category =>
   KIND_CATEGORY[kind.toLowerCase()] ?? "other";
 
+/**
+ * `card` tints the card body by category. The hover state drops the tint rather
+ * than raising it — against a near-black page, less light tint reads as darker.
+ */
 export const CATEGORY_META: Record<
   Category,
-  { label: string; dot: string; text: string; chip: string; ring: string }
+  { label: string; dot: string; text: string; chip: string; ring: string; card: string }
 > = {
   stage: {
     label: "Stage",
@@ -75,6 +79,7 @@ export const CATEGORY_META: Record<
     text: "text-amber-400",
     chip: "bg-amber-400/10 text-amber-200 ring-amber-400/30",
     ring: "ring-amber-400/40",
+    card: "border-amber-400/15 bg-amber-400/[0.06] hover:border-amber-400/25 hover:bg-amber-400/[0.02]",
   },
   music: {
     label: "Music & festivals",
@@ -82,6 +87,7 @@ export const CATEGORY_META: Record<
     text: "text-violet-400",
     chip: "bg-violet-400/10 text-violet-200 ring-violet-400/30",
     ring: "ring-violet-400/40",
+    card: "border-violet-400/15 bg-violet-400/[0.06] hover:border-violet-400/25 hover:bg-violet-400/[0.02]",
   },
   screen: {
     label: "Screen",
@@ -89,6 +95,7 @@ export const CATEGORY_META: Record<
     text: "text-sky-400",
     chip: "bg-sky-400/10 text-sky-200 ring-sky-400/30",
     ring: "ring-sky-400/40",
+    card: "border-sky-400/15 bg-sky-400/[0.06] hover:border-sky-400/25 hover:bg-sky-400/[0.02]",
   },
   other: {
     label: "Other",
@@ -96,6 +103,7 @@ export const CATEGORY_META: Record<
     text: "text-emerald-400",
     chip: "bg-emerald-400/10 text-emerald-200 ring-emerald-400/30",
     ring: "ring-emerald-400/40",
+    card: "border-emerald-400/15 bg-emerald-400/[0.06] hover:border-emerald-400/25 hover:bg-emerald-400/[0.02]",
   },
 };
 

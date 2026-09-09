@@ -76,13 +76,7 @@ function Card({ e }: { e: Ev }) {
   const details = (
     <>
       <div className="flex items-start justify-between gap-4">
-        <h3
-          className={`text-lg font-semibold text-white ${
-            e.url ? "group-hover:underline group-hover:underline-offset-4" : ""
-          }`}
-        >
-          {e.title}
-        </h3>
+        <h3 className="text-lg font-semibold text-white">{e.title}</h3>
         {/* Time and price stack as one right-hand column — the two numbers you scan for */}
         <div className="shrink-0 text-right">
           {times.length > 0 ? (
@@ -144,9 +138,10 @@ function Card({ e }: { e: Ev }) {
 
   const className =
     "group relative block rounded-xl border p-4 transition focus:outline-none focus-visible:ring-2 " +
+    // Owned keeps its own emerald identity; everything else is tinted by category.
     (e.owned
-      ? "border-emerald-400/40 bg-emerald-400/10 hover:border-emerald-300/60 hover:bg-emerald-400/15 "
-      : "border-white/10 bg-white/[0.03] hover:border-white/25 hover:bg-white/[0.06] ") +
+      ? "border-emerald-400/40 bg-emerald-400/[0.12] hover:border-emerald-300/60 hover:bg-emerald-400/[0.06] "
+      : CATEGORY_META[cat].card + " ") +
     CATEGORY_META[cat].ring;
 
   const inner = (
