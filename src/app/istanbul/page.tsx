@@ -213,7 +213,7 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
-        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl [scrollbar-width:thin]"
+        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-white/25 bg-neutral-900 p-5 shadow-2xl shadow-black/80 ring-1 ring-black/50 [scrollbar-width:thin]"
       >
         <div className="flex gap-4">
           {poster && (
