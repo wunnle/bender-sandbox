@@ -2,8 +2,8 @@
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
   "range": {
-    "start": "2026-09-09",
-    "end": "2026-09-28"
+    "start": "2026-09-10",
+    "end": "2026-09-29"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -15,64 +15,7 @@
   "events": [
     {
       "days": [
-        "2026-09-09"
-      ],
-      "title": "Davet",
-      "kind": "film",
-      "time": "12:50, 16:15",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "times": [
-        "12:50",
-        "16:15"
-      ]
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Harry Potter ve Felsefe Taşı",
-      "kind": "film",
-      "time": "13:00, 17:15",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
-      "times": [
-        "13:00",
-        "17:15"
-      ]
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Aşıklar Şehri",
-      "kind": "film",
-      "time": "14:50, 20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
-      "times": [
-        "14:50",
-        "20:30"
-      ]
-    },
-    {
-      "days": [
-        "2026-09-09"
+        "2026-09-10"
       ],
       "title": "Minyonlar ve Canavarlar",
       "kind": "film",
@@ -87,7 +30,37 @@
     },
     {
       "days": [
-        "2026-09-09"
+        "2026-09-10"
+      ],
+      "title": "Davet",
+      "kind": "film",
+      "time": "15:50",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Harry Potter ve Felsefe Taşı",
+      "kind": "film",
+      "time": "16:00",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png"
+    },
+    {
+      "days": [
+        "2026-09-10"
       ],
       "title": "Harry Potter ve Felsefe Taşı",
       "kind": "film",
@@ -102,7 +75,7 @@
     },
     {
       "days": [
-        "2026-09-09"
+        "2026-09-10"
       ],
       "title": "Kurtuluş",
       "kind": "film",
@@ -117,132 +90,28 @@
     },
     {
       "days": [
-        "2026-09-09"
+        "2026-09-10"
       ],
       "title": "Davet",
       "kind": "film",
-      "time": "13:30, 16:00, 18:30, 21:15",
+      "time": "16:30",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "times": [
-        "13:30",
-        "16:00",
-        "18:30",
-        "21:15"
-      ]
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
-        "2026-09-09"
-      ],
-      "title": "Örümcek-Adam: Yepyeni Bir Gün",
-      "kind": "film",
-      "time": "15:00, 18:00, 21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png",
-      "times": [
-        "15:00",
-        "18:00",
-        "21:00"
-      ]
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Yeşil Şövalye",
-      "kind": "film",
-      "time": "18:10",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/yesil-sovalye-the-green-knight",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yesil-sovalye-2026824151412f92636f7cad94bb0843bd993fbdc4647.jpg"
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Fırtınadan Önce",
-      "kind": "film",
-      "time": "19:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/pressure",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png"
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Odyssey",
-      "kind": "film",
-      "time": "16:30, 20:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg",
-      "times": [
-        "16:30",
-        "20:00"
-      ]
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Tatlı Hayat",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/tatli-hayat-la-dolce-vita",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tatli-hayat-202581113931733d1c1e63fc4bb7901b574e55a6295f.JPG"
-    },
-    {
-      "days": [
-        "2026-09-09"
-      ],
-      "title": "Mutlu Aile Tablosu",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Özgürlük Parkı Amfi Tiyatro",
-      "area": "Kadıköy",
-      "price": "from ₺1,370",
-      "url": "https://www.bubilet.com.tr/istanbul/etkinlik/mutlu-aile-tablosu-oyunu",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-09-09"
+        "2026-09-10"
       ],
       "title": "Aşıklar Şehri",
       "kind": "film",
-      "time": "21:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
+      "time": "17:50",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
       "availability": "available",
@@ -251,18 +120,18 @@
     },
     {
       "days": [
-        "2026-09-09"
+        "2026-09-10"
       ],
-      "title": "Tatlı Hayat",
+      "title": "Örümcek-Adam: Yepyeni Bir Gün",
       "kind": "film",
-      "time": "23:30",
+      "time": "18:00",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/tatli-hayat-la-dolce-vita",
+      "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tatli-hayat-202581113931733d1c1e63fc4bb7901b574e55a6295f.JPG"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png"
     },
     {
       "days": [
@@ -284,6 +153,36 @@
       "days": [
         "2026-09-10"
       ],
+      "title": "Fırtınadan Önce",
+      "kind": "film",
+      "time": "19:00",
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Caddebostan/Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/pressure",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png"
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Odyssey",
+      "kind": "film",
+      "time": "19:30",
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Caddebostan/Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
       "title": "Yürüyen Şato",
       "kind": "film",
       "time": "20:30",
@@ -299,21 +198,6 @@
       "days": [
         "2026-09-10"
       ],
-      "title": "8½",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
       "title": "Şairler Mezarlığı",
       "kind": "theatre",
       "time": "21:00",
@@ -323,6 +207,36 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
       "availability": "available",
       "owned": false
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Aşıklar Şehri",
+      "kind": "film",
+      "time": "21:15",
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Caddebostan/Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "8½",
+      "kind": "film",
+      "time": "00:00",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg"
     },
     {
       "days": [
@@ -343,22 +257,61 @@
       "days": [
         "2026-09-11"
       ],
+      "title": "İçimdeki Yabancı",
+      "kind": "film",
+      "time": "15:30",
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Caddebostan/Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
       "title": "Aşkın Büyüsü 2",
       "kind": "film",
-      "time": "13:00, 15:45, 18:30, 21:15",
+      "time": "16:00",
       "venue": "Caddebostan CKM Sineması",
       "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/askin-buyusu-2",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png",
-      "times": [
-        "13:00",
-        "15:45",
-        "18:30",
-        "21:15"
-      ]
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "Arabalar",
+      "kind": "film",
+      "time": "16:45",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/arabalar",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/arabalar-2025118185945e4c0bf5b364649d6a92fc60e01d06138.jpg"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "İçimdeki Yabancı",
+      "kind": "film",
+      "time": "16:45",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg"
     },
     {
       "days": [
@@ -409,21 +362,6 @@
     },
     {
       "days": [
-        "2026-09-11"
-      ],
-      "title": "Komşum Totoro",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/komsum-totoro",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg"
-    },
-    {
-      "days": [
         "2026-09-11",
         "2026-09-12",
         "2026-09-13"
@@ -438,6 +376,21 @@
       "availability": "available",
       "owned": false,
       "note": "Sep 13 also has a 15:30 matinee."
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "Komşum Totoro",
+      "kind": "film",
+      "time": "23:30",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/komsum-totoro",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg"
     },
     {
       "days": [
@@ -473,21 +426,6 @@
       "days": [
         "2026-09-12"
       ],
-      "title": "Prenses Mononoke",
-      "kind": "film",
-      "time": "18:00",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/prenses-mononoke",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg"
-    },
-    {
-      "days": [
-        "2026-09-12"
-      ],
       "title": "Sevgili Arsız Ölüm - Dirmit",
       "kind": "theatre",
       "time": "20:30",
@@ -512,6 +450,21 @@
       "url": "https://biletinial.com/tr-tr/muzik/ayna-konserii",
       "availability": "available",
       "owned": false
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
+      "title": "Prenses Mononoke",
+      "kind": "film",
+      "time": "21:00",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/prenses-mononoke",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg"
     },
     {
       "days": [
@@ -549,7 +502,7 @@
       ],
       "title": "Ruhların Kaçışı",
       "kind": "film",
-      "time": "20:30",
+      "time": "23:30",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
@@ -577,24 +530,9 @@
       "days": [
         "2026-09-14"
       ],
-      "title": "Aşk ve Gurur",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/ask-ve-gurur-filmi",
-      "availability": "listed",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-gurur-202682114291641c0b01972ef4c8980173371afa193e2.jpg"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
       "title": "Yürüyen Şato",
       "kind": "film",
-      "time": "20:30",
+      "time": "23:30",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
@@ -622,16 +560,16 @@
       "days": [
         "2026-09-15"
       ],
-      "title": "Küçük Deniz Kızı Ponyo",
+      "title": "Hayatımın Şarkısı",
       "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
+      "time": "17:30",
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Caddebostan/Kadıköy",
       "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kucuk-denizkizi-ponyo",
+      "url": "https://biletinial.com/tr-tr/sinema/hayatimin-sarkisi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayatimin-sarkisi-202661812474500afd2dad5cc4ae6a0ced38b58de29f6.png"
     },
     {
       "days": [
@@ -650,6 +588,21 @@
     },
     {
       "days": [
+        "2026-09-15"
+      ],
+      "title": "Küçük Deniz Kızı Ponyo",
+      "kind": "film",
+      "time": "23:30",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/kucuk-denizkizi-ponyo",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg"
+    },
+    {
+      "days": [
         "2026-09-16"
       ],
       "title": "Küçük Deniz Kızı Ponyo",
@@ -669,7 +622,7 @@
       ],
       "title": "Dönüş Yok",
       "kind": "film",
-      "time": "18:20",
+      "time": "21:20",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
@@ -677,6 +630,21 @@
       "availability": "available",
       "owned": false,
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg"
+    },
+    {
+      "days": [
+        "2026-09-16"
+      ],
+      "title": "Hırçın",
+      "kind": "film",
+      "time": "22:00",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/hircin",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/7ed7d878fdc540f4a4127fff6330c2db.jpg"
     },
     {
       "days": [
@@ -692,21 +660,6 @@
       "availability": "available",
       "owned": false,
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg"
-    },
-    {
-      "days": [
-        "2026-09-17"
-      ],
-      "title": "Climax",
-      "kind": "film",
-      "time": "18:20",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/climax-",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg"
     },
     {
       "days": [
@@ -744,16 +697,16 @@
       "days": [
         "2026-09-17"
       ],
-      "title": "Melikşah Altuntaş - Bunu Kendime Neden Yapıyorum?",
+      "title": "Climax",
       "kind": "film",
-      "time": "21:15",
+      "time": "21:20",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/tiyatro/meliksah-altuntas-bunu-kendime-neden-yapiyorum-standup",
+      "url": "https://biletinial.com/tr-tr/sinema/climax-",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/meliksah-altuntas-bunu-kendime-neden-yapiyorum-202499154951aff22cb4ba254e6fa6b9f74e714fc002.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg"
     },
     {
       "days": [
@@ -774,16 +727,16 @@
       "days": [
         "2026-09-18"
       ],
-      "title": "Vortex",
+      "title": "Melikşah Altuntaş - Bunu Kendime Neden Yapıyorum?",
       "kind": "film",
-      "time": "18:20",
+      "time": "00:15",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/vortex",
+      "url": "https://biletinial.com/tr-tr/tiyatro/meliksah-altuntas-bunu-kendime-neden-yapiyorum-standup",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vortex-2022511184919.jpeg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/meliksah-altuntas-bunu-kendime-neden-yapiyorum-202499154951aff22cb4ba254e6fa6b9f74e714fc002.jpg"
     },
     {
       "days": [
@@ -818,13 +771,13 @@
     },
     {
       "days": [
-        "2026-09-19"
+        "2026-09-18"
       ],
       "title": "Vortex",
       "kind": "film",
-      "time": "00:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
+      "time": "21:20",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
       "price": "price unavailable",
       "url": "https://biletinial.com/tr-tr/sinema/vortex",
       "availability": "available",
@@ -837,7 +790,7 @@
       ],
       "title": "Celil Sadık ile Batı Resminde Şeytan Tasvirleri",
       "kind": "film",
-      "time": "15:00",
+      "time": "18:00",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
@@ -866,21 +819,6 @@
       "days": [
         "2026-09-19"
       ],
-      "title": "Mayıs Sıkıntısı",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/mayis-sikintisi",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mayis-sikintisi-202011313397.jpg"
-    },
-    {
-      "days": [
-        "2026-09-19"
-      ],
       "title": "Nokta",
       "kind": "theatre",
       "time": "20:30",
@@ -892,6 +830,21 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-19"
+      ],
+      "title": "Mayıs Sıkıntısı",
+      "kind": "film",
+      "time": "23:30",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/mayis-sikintisi",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mayis-sikintisi-202011313397.jpg"
     },
     {
       "days": [
@@ -946,7 +899,7 @@
       ],
       "title": "Uzak",
       "kind": "film",
-      "time": "20:30",
+      "time": "23:30",
       "venue": "Kadıköy Sineması",
       "area": "Kadıköy",
       "price": "price unavailable",
@@ -954,21 +907,6 @@
       "availability": "available",
       "owned": false,
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/uzak-20201025104926.jpg"
-    },
-    {
-      "days": [
-        "2026-09-21"
-      ],
-      "title": "Bir Zamanlar Anadolu'da",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/bir-zamanlar-anadoluda",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg"
     },
     {
       "days": [
@@ -987,6 +925,21 @@
     },
     {
       "days": [
+        "2026-09-21"
+      ],
+      "title": "Bir Zamanlar Anadolu'da",
+      "kind": "film",
+      "time": "23:30",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/bir-zamanlar-anadoluda",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg"
+    },
+    {
+      "days": [
         "2026-09-22"
       ],
       "title": "Aşk Listesi",
@@ -1000,21 +953,6 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Kış Uykusu",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kis-uykusu",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kis-uykusu-2020102510302.jpg"
     },
     {
       "days": [
@@ -1156,10 +1094,25 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-29"
+      ],
+      "title": "Billy Elliot Film Gösterimi",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "area": "Fenerbahçe/Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/etkinlik/billy-elliot-film-gosterimi",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/billy-elliot-film-gosterimi-2026819172183a9c6a7683764ca8b0849cd35882532f.jpg"
     }
   ],
   "cinemas": [],
-  "omitted_records": 0,
-  "research_note": "Cinema screenings from the three preferred Biletinial cinemas use the unified event schema. Multiple sessions for the same film, venue, and day are consolidated: time is UI-compatible and times[] preserves every session. Source-backed poster images included where available. Theatre source: Tiyatrolar.com.tr; Paribu skipped. Session times are extracted from Biletinial cinemaPartitions/tarihler/seanslar payloads; multi-session screenings use times[].",
-  "lastUpdated": "2026-09-09"
+  "omitted_records": 1,
+  "research_note": "Refreshed from live JSON-LD at the three preferred Biletinial cinemas; sold-out and out-of-window screenings omitted. Existing verified Kadıköy theatre listings retained inside the new range; Paribu skipped. Fastmail ownership checked; Google Colonist checked, while Google Personal required reauthorization.",
+  "lastUpdated": "2026-09-10"
 }
