@@ -165,6 +165,13 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
   const times = sessionTimes(e);
   const price = realPrice(e.price);
   const meta = CATEGORY_META[cat];
+  const duration = e.duration?.match(/^PT(?:(\d+)H)?(?:(\d+)M)?/)?.slice(1);
+  const durationLabel = duration
+    ? [duration[0] ? `${duration[0]}h` : "", duration[1] ? `${duration[1]}m` : ""]
+        .filter(Boolean)
+        .join(" ")
+    : undefined;
+  const details = [e.genre, durationLabel, e.rating ? `★ ${e.rating}` : undefined].filter(Boolean);
 
   const art = e.image ? (
     // eslint-disable-next-line @next/next/no-img-element
@@ -222,7 +229,10 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
       </div>
 
       {/* Title, then where, then when. */}
-      <h3 className="mt-2.5 line-clamp-2 min-h-[1.6em] text-sm font-semibold leading-tight text-white">
+      <h3
+        className="mt-2.5 line-clamp-2 min-h-[1.6em] text-sm font-semibold leading-tight text-white"
+        title={e.description}
+      >
         {e.title}
       </h3>
       <p className="line-clamp-1 text-xs text-neutral-500">
@@ -239,6 +249,11 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
         )}
         {price && <span className="shrink-0 font-medium text-neutral-300">{price}</span>}
       </div>
+      {details.length > 0 && (
+        <p className="mt-1 truncate text-[11px] text-neutral-500" title={e.description}>
+          {details.join(" · ")}
+        </p>
+      )}
       {(e.availability && e.availability !== "available") || !e.url ? (
         <p className="mt-1 text-xs text-neutral-600">
           {e.availability && e.availability !== "available"

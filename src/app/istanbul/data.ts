@@ -21,6 +21,14 @@ export type Ev = {
   price?: string;
   url?: string;
   note?: string;
+  description?: string;
+  duration?: string;
+  genre?: string;
+  director?: string;
+  cast?: string[];
+  rating?: string;
+  reviewCount?: number;
+  trailer?: string;
   availability?: string;
   owned?: boolean;
   /** Poster from the source listing. Present on roughly half the payload. */

@@ -26,7 +26,14 @@
       "url": "https://biletinial.com/tr-tr/sinema/minyonlar-ve-canavarlar",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/minyonlar-ve-canavarlar-2026611164351198a2b05ad441c893d026f6c6a123dc.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/minyonlar-ve-canavarlar-2026611164351198a2b05ad441c893d026f6c6a123dc.jpg",
+      "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
+      "duration": "PT1H30M00S",
+      "genre": "Macera",
+      "director": "Pierre  Coffin",
+      "rating": "4.5",
+      "reviewCount": 52,
+      "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU"
     },
     {
       "days": [
@@ -41,7 +48,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
+      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
+      "duration": "PT1H47M00S",
+      "genre": "Dram",
+      "director": "Olivia Wilde",
+      "cast": [
+        "Seth Rogen",
+        "Olivia Wilde",
+        "Edward Norton",
+        "Penélope Cruz",
+        "Skip  Howland",
+        "Mel  Powell"
+      ],
+      "rating": "3.9",
+      "reviewCount": 52,
+      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8"
     },
     {
       "days": [
@@ -56,7 +78,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
+      "description": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sor",
+      "duration": "PT2H32M00S",
+      "genre": "Macera",
+      "director": "Chris Columbus",
+      "cast": [
+        "Rupert Grint",
+        "Emma Watson",
+        "Richard Harris",
+        "Tom Felton",
+        "Alan Rickman",
+        "Robbie Coltrane"
+      ],
+      "rating": "4.7",
+      "reviewCount": 24,
+      "trailer": "https://www.youtube.com/watch?v=-j45eNLdIBQ"
     },
     {
       "days": [
@@ -71,7 +108,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
+      "description": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sor",
+      "duration": "PT2H32M00S",
+      "genre": "Macera",
+      "director": "Chris Columbus",
+      "cast": [
+        "Rupert Grint",
+        "Emma Watson",
+        "Richard Harris",
+        "Tom Felton",
+        "Alan Rickman",
+        "Robbie Coltrane"
+      ],
+      "rating": "4.7",
+      "reviewCount": 24,
+      "trailer": "https://www.youtube.com/watch?v=-j45eNLdIBQ"
     },
     {
       "days": [
@@ -86,7 +138,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/kurtulus",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kurtulus-2026321517346ceb80e60f5e4eb6a849fe0277d18031.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kurtulus-2026321517346ceb80e60f5e4eb6a849fe0277d18031.png",
+      "description": "Kurtuluş filmi, yıllar önce terk etmek zorunda kaldıkları köylerine geri dönen Bezariler ile bölgede hakimiyet kuran korucu Hazeran aşireti arasındaki toprak anlaşmazlığını ve tırmanan iktidar mücadelesini konu alıyor.",
+      "duration": "PT1H57M00S",
+      "genre": "Dram",
+      "director": "Emin Alper",
+      "cast": [
+        "Caner Cindoruk",
+        "Berkay Ateş",
+        "Feyyaz Duman",
+        "Naz Göktan",
+        "Özlem Taş",
+        "Mehmet Selim Akgül"
+      ],
+      "rating": "4.5",
+      "reviewCount": 284,
+      "trailer": "https://www.youtube.com/watch?v=GWxm5QJERn4"
     },
     {
       "days": [
@@ -101,7 +168,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
+      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
+      "duration": "PT1H47M00S",
+      "genre": "Dram",
+      "director": "Olivia Wilde",
+      "cast": [
+        "Seth Rogen",
+        "Olivia Wilde",
+        "Edward Norton",
+        "Penélope Cruz",
+        "Skip  Howland",
+        "Mel  Powell"
+      ],
+      "rating": "3.9",
+      "reviewCount": 52,
+      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8"
     },
     {
       "days": [
@@ -116,7 +198,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
+      "description": "Aşıklar Şehri, her şeyin başladığı Los Angeles'da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını b",
+      "duration": "PT2H6M00S",
+      "genre": "Dram",
+      "director": "Damien Chazelle",
+      "cast": [
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend",
+        "J.K. Simmons",
+        "Finn Wittrock",
+        "Callie Hernandez"
+      ],
+      "rating": "4.6",
+      "reviewCount": 24,
+      "trailer": "https://www.youtube.com/watch?v=SuPYUmti_qo"
     },
     {
       "days": [
@@ -131,7 +228,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png",
+      "description": "Örümcek Adam: Yepyeni Bir Gün, kendini sevdiklerinin hafızasından gönüllü olarak silmek zorunda kalan Peter'ın, artık kimsenin gerçek kimliğini bilmediği New York sokaklarında tek başına suçla savaşırken, yaşamaya başladığı fiziksel değişimle boğuşmasını anlatıyor. Sevdiklerinin hafızasından kendini gönüllü olarak silen Peter, artık tamamen yalnız yaşayan bir yetişkin olarak, adını bile bilmeyen bir New York sokaklarında suçla savaşmaktadır. Kendisini tamamen şehrini korumaya adamış ‘tam zama",
+      "duration": "PT2H30M00S",
+      "genre": "Aksiyon",
+      "director": "Destin Daniel Cretton",
+      "cast": [
+        "Tom Holland",
+        "Zendaya ",
+        "Sadie Sink",
+        "Jacob Batalon",
+        "Jon Bernthal",
+        "Tramell  Tillman"
+      ],
+      "rating": "4.4",
+      "reviewCount": 1078,
+      "trailer": "https://www.youtube.com/watch?v=FdThKhBJNZY"
     },
     {
       "days": [
@@ -162,7 +274,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/pressure",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png",
+      "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
+      "duration": "PT1H40M00S",
+      "genre": "Dram",
+      "director": "Anthony  Maras",
+      "cast": [
+        "Andrew Scott",
+        "Brendan Fraser",
+        "Kerry Condon",
+        "Chris Messina",
+        "Damian Lewis",
+        "Tamsin  Topolski"
+      ],
+      "rating": "4.2",
+      "reviewCount": 4,
+      "trailer": "https://www.youtube.com/watch?v=_EGyIsEIplM"
     },
     {
       "days": [
@@ -177,7 +304,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg",
+      "description": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor. Odyssey filmini izlemek için hemen sinema biletinizi alın!",
+      "duration": "PT2H52M00S",
+      "genre": "Aksiyon",
+      "director": "Christopher Nolan",
+      "cast": [
+        "Matt Damon",
+        "Tom Holland",
+        "Anne Hathaway",
+        "Robert Pattinson",
+        "Lupita Nyong'o",
+        "Charlize Theron"
+      ],
+      "rating": "4.7",
+      "reviewCount": 862,
+      "trailer": "https://www.youtube.com/watch?v=JrvTC4OyQjo"
     },
     {
       "days": [
@@ -192,7 +334,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/yuruyen-sato-film",
       "availability": "available",
       "owned": true,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20257494112177508552cc24831890cb548d9f773e1.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20257494112177508552cc24831890cb548d9f773e1.jpg",
+      "description": "Yürüyen Şato Film Gösterimi İlk kez vizyona girişinin 20. yılına özel olarak yeniden sinemalarda seyirciyle buluşan Hayao Miyazaki'nin başyapıtlarından Yürüyen Şato, kendisine yapılan büyüyü bozabilmek için arkadaşlarıyla birlikte yürüyen bir şatoda ikamet eden genç bir büyücü prensi bulması gereken Sophie'nin hikâyesini anlatıyor. Sıradan bir hayat süren genç kadın Sophie, kötü bir cadının yaptığı büyü sebebiyle çok yaşlı bir kadına dönüşür. Büyüyü bozması için tek umudu ise bacakları ola"
     },
     {
       "days": [
@@ -206,7 +349,8 @@
       "price": "from ₺700",
       "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Şairler Mezarlığı Tiyatro Oyunu Direklerarası Tiyatro Ödülleri 2025 \"Küçük Salon Kadın Oyuncu\" İsmet Küntay Tiyatro Ödülleri 2025 \"Yılın İsmet Küntay Özel Ödülü\" -Üstün Akmen Tiyatro Ödülleri 2025 Yılın Kadın Oyuncusu Adaylığı -Yılın Oyun Yazarı Adaylığı -Yılın Yardımcı Kadın Oyuncusu Adaylığı “Bilinen ve bilinmeyenin” sınırlarında gezinen bir hikâye: “Şairler Mezarlığı” Tiyatro ve şiir türünü buluşturan yepyeni bir deneyim, şiir ve bedenin iç içe geçtiği gerçeküstü bir dünyaya y"
     },
     {
       "days": [
@@ -221,7 +365,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
+      "description": "Aşıklar Şehri, her şeyin başladığı Los Angeles'da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını b",
+      "duration": "PT2H6M00S",
+      "genre": "Dram",
+      "director": "Damien Chazelle",
+      "cast": [
+        "Ryan Gosling",
+        "Emma Stone",
+        "John Legend",
+        "J.K. Simmons",
+        "Finn Wittrock",
+        "Callie Hernandez"
+      ],
+      "rating": "4.6",
+      "reviewCount": 24,
+      "trailer": "https://www.youtube.com/watch?v=SuPYUmti_qo"
     },
     {
       "days": [
@@ -236,7 +395,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg",
+      "description": "Sekiz Buçuk, yeni filmine duyduğu ilgiyi kaybeden bir yönetmenin anıların ve fantazilerini konu ediyor. Guido Anselmi, merakla beklenen yeni projesini gerçekleştirmeye çalışırken yazar tıkanması tarzı bir handikapla karşılaşan ünlü bir İtalyan yönetmendir. Yeni projesi biyografik öğeler de barındıran bir bilimkurgu filmidir. Ancak yönetmen bir anda vuku bulan bu durum nedeniyle sanata ve filmine duyduğu tüm ilgisini ve heyecanını kaybetmiş durumdadır. İşi üzerinde yoğunlaşmaya ve bir şekilde bit",
+      "duration": "PT2H18M00S",
+      "genre": "Dram",
+      "director": "Federico Fellini",
+      "cast": [
+        "Anouk Aimée",
+        "Sandra Milo",
+        "Claudia Cardinale",
+        "Rossella Falk",
+        "Barbara Steele",
+        "Madeleine Lebeau"
+      ],
+      "rating": "4.6",
+      "reviewCount": 5,
+      "trailer": "https://www.youtube.com/watch?v=jUc4oHnFBnc"
     },
     {
       "days": [
@@ -251,7 +425,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg",
+      "description": "Sekiz Buçuk, yeni filmine duyduğu ilgiyi kaybeden bir yönetmenin anıların ve fantazilerini konu ediyor. Guido Anselmi, merakla beklenen yeni projesini gerçekleştirmeye çalışırken yazar tıkanması tarzı bir handikapla karşılaşan ünlü bir İtalyan yönetmendir. Yeni projesi biyografik öğeler de barındıran bir bilimkurgu filmidir. Ancak yönetmen bir anda vuku bulan bu durum nedeniyle sanata ve filmine duyduğu tüm ilgisini ve heyecanını kaybetmiş durumdadır. İşi üzerinde yoğunlaşmaya ve bir şekilde bit",
+      "duration": "PT2H18M00S",
+      "genre": "Dram",
+      "director": "Federico Fellini",
+      "cast": [
+        "Anouk Aimée",
+        "Sandra Milo",
+        "Claudia Cardinale",
+        "Rossella Falk",
+        "Barbara Steele",
+        "Madeleine Lebeau"
+      ],
+      "rating": "4.6",
+      "reviewCount": 5,
+      "trailer": "https://www.youtube.com/watch?v=jUc4oHnFBnc"
     },
     {
       "days": [
@@ -266,7 +455,20 @@
       "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg",
+      "description": "İçe kapanık bir fotoğrafçı olan David Zimmerman, arkadaşlarının ısrarıyla katıldığı çılgın bir partiyle rutininin dışına çıkar. Burada tanıştığı gizemli bir kadın, kısa sürede onun zihnini tamamen ele geçirir. David, bu kadına karşı giderek artan bir takıntı geliştirir ve onu izlemeye başlar. Ancak gece sona erip şafak söktüğünde, her şey geri dönülmez biçimde değişir. David, gözlerini açtığında artık kendi bedeninde değildir; takıntı haline getirdiği kadının bedeninde uyanmıştır. İçimdeki Ya",
+      "duration": "PT2H19M00S",
+      "genre": "Dram",
+      "director": "Arthur Harari",
+      "cast": [
+        "Léa Seydoux",
+        "Niels Schneider",
+        "Valérie Dréville",
+        "Lilith  Grasmug",
+        "Radu  Jude",
+        "Shanti  Masud"
+      ],
+      "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg"
     },
     {
       "days": [
@@ -281,7 +483,20 @@
       "url": "https://biletinial.com/tr-tr/sinema/askin-buyusu-2",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png",
+      "description": "Sally Owens (Sandra Bullock) ve Gillian Owens (Nicole Kidman), ailelerinin geleceğini tehdit eden karanlık bir lanetin ortaya çıkmasıyla yeniden güçlerini birleştirir. Aile bağlarını parçalama tehlikesi taşıyan bu lanet karşısında kardeşler, sevdiklerini korumaya ve karşı karşıya oldukları tehdidin üstesinden gelmeye çalışır. Aşkın Büyüsü 2 filmini izlemek için hemen sinema biletinizi alın!",
+      "duration": "PT1H50M00S",
+      "genre": "Dram",
+      "director": "Susanne Bier",
+      "cast": [
+        "Sandra Bullock",
+        "Nicole Kidman",
+        "Joey King",
+        "Maisie Williams",
+        "Xolo  Maridueña",
+        "Lee Pace"
+      ],
+      "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg"
     },
     {
       "days": [
@@ -296,7 +511,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/arabalar",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/arabalar-2025118185945e4c0bf5b364649d6a92fc60e01d06138.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/arabalar-2025118185945e4c0bf5b364649d6a92fc60e01d06138.jpg",
+      "description": "Piston Kupası şampiyonluğu için yarışmaya giden kibirli yarış arabası Şimşek McQueen’in, kaza eseri rotasından saparak unutulmuş bir kasaba olan Radyatör Kasabası’nda mahsur kalmasıyla değişen yaşamını konu alıyor. Arabalar filmi için hemen sinema biletinizi alın!",
+      "duration": "PT1H57M00S",
+      "genre": "Animasyon",
+      "director": "John Lasseter",
+      "rating": "5",
+      "reviewCount": 2
     },
     {
       "days": [
@@ -311,7 +532,20 @@
       "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg",
+      "description": "İçe kapanık bir fotoğrafçı olan David Zimmerman, arkadaşlarının ısrarıyla katıldığı çılgın bir partiyle rutininin dışına çıkar. Burada tanıştığı gizemli bir kadın, kısa sürede onun zihnini tamamen ele geçirir. David, bu kadına karşı giderek artan bir takıntı geliştirir ve onu izlemeye başlar. Ancak gece sona erip şafak söktüğünde, her şey geri dönülmez biçimde değişir. David, gözlerini açtığında artık kendi bedeninde değildir; takıntı haline getirdiği kadının bedeninde uyanmıştır. İçimdeki Ya",
+      "duration": "PT2H19M00S",
+      "genre": "Dram",
+      "director": "Arthur Harari",
+      "cast": [
+        "Léa Seydoux",
+        "Niels Schneider",
+        "Valérie Dréville",
+        "Lilith  Grasmug",
+        "Radu  Jude",
+        "Shanti  Masud"
+      ],
+      "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg"
     },
     {
       "days": [
@@ -326,7 +560,14 @@
       "url": "https://biletinial.com/tr-tr/sinema/hayvan-ciftligi-",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayvan-ciftligi-2026629155630c89855f47e364dfc8573e0de15c8c291.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayvan-ciftligi-2026629155630c89855f47e364dfc8573e0de15c8c291.png",
+      "description": "Bir grup çiftlik hayvanı, eşitlik ve özgürlük hayaliyle, kendilerini ihmal eden sahiplerine karşı ayaklanır. Ancak domuzlar kontrolü ele geçirince, devrim tiranlığa dönüşür, gerçek yeniden yazılır ve muhalefet bastırılır. Hayvan Çiftliği filmini sinemada izlemek için hemen biletini al!",
+      "duration": "PT1H36M00S",
+      "genre": "Macera",
+      "director": "Andy Serkis",
+      "rating": "3.5",
+      "reviewCount": 2,
+      "trailer": "https://www.youtube.com/watch?v=MxQdC6UXiFg"
     },
     {
       "days": [
@@ -375,7 +616,8 @@
       "url": "https://biletinial.com/tr-tr/muzik/the-bodyguard",
       "availability": "available",
       "owned": false,
-      "note": "Sep 13 also has a 15:30 matinee."
+      "note": "Sep 13 also has a 15:30 matinee.",
+      "description": "Bodyguard Müzikali THE BODYGUARD İLK KEZ TÜRKİYE’DE *Gösteri, orijinal dili İngilizce olarak sahnelenecek ve performans boyunca Türkçe üst yazı desteği sunulacaktır. Uluslararası ödüllere layık görülen hit müzikal THE BODYGUARD, BKM ve Zorlu PSM iş birliği ile ilk kez İstanbul’a geliyor. Dünya sahnesinin en çok konuşulan prodüksiyonlarından biri olarak gösterilen yapım, 11–20 Eylül tarihleri arasında, yalnızca 10 gün sürecek özel bir seriyle izleyiciyle buluşacak. EFSANE HİKÂYE, BÜ"
     },
     {
       "days": [
@@ -390,7 +632,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/komsum-totoro",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg",
+      "description": "Komşum Totoro'da anneleri, isimlendirmeyen ve uzun süreli bir hastalığa yakalandığında ona daha yakın olmak için yattığı hastanenin yakınındaki eski bir eve taşınmak isteyen iki küçük kız, bir profesör olan babalarını da ikna edip bu kırsal yere taşınırlar. Küçük kızlar Satsuki ve Mei zamanla evin içerisinde onlarla birlikte yaşamakta olan, bazı varlıkların olduğunu fark ederler. Bu varlıklardan bir şekilde kurtulduklarında, evlerinin karşısındaki ormanda karşılaştıkları büyüleyici varlıklar iki",
+      "duration": "PT1H26M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.8",
+      "reviewCount": 31
     },
     {
       "days": [
@@ -405,7 +653,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/komsum-totoro",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/komsum-totoro-20242231133592906c6794d64dfbb30132e7cfc54ac5.jpg",
+      "description": "Komşum Totoro'da anneleri, isimlendirmeyen ve uzun süreli bir hastalığa yakalandığında ona daha yakın olmak için yattığı hastanenin yakınındaki eski bir eve taşınmak isteyen iki küçük kız, bir profesör olan babalarını da ikna edip bu kırsal yere taşınırlar. Küçük kızlar Satsuki ve Mei zamanla evin içerisinde onlarla birlikte yaşamakta olan, bazı varlıkların olduğunu fark ederler. Bu varlıklardan bir şekilde kurtulduklarında, evlerinin karşısındaki ormanda karşılaştıkları büyüleyici varlıklar iki",
+      "duration": "PT1H26M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.8",
+      "reviewCount": 31
     },
     {
       "days": [
@@ -449,7 +703,8 @@
       "price": "from ₺1,150",
       "url": "https://biletinial.com/tr-tr/muzik/ayna-konserii",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Ayna Konseri Ayna, \"Ölünce Sevemezsem Seni\", \"Severek Ayrılanlar\" ve \"Anlatmalıymış Meğer\" gibi hafızalara kazınmış şarkılarıyla müzikseverlerle buluşuyor. Ayna, enerjik sahne performanslarıyla dinleyicilerine unutulmaz anlar yaşatıyor."
     },
     {
       "days": [
@@ -464,7 +719,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/prenses-mononoke",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg",
+      "description": "Prenses Mononoke, ormanı koruyan doğaüstü yaratıklarla, doğanın kaynaklarını hızla ve acımasızca tüketen insanların amansız mücadelesi. Ashitaka, köyüne saldıran şeytanlaşmış domuz tanrıyı öldürürken şeytanın koluna bıraktığı izi ölene kadar taşıyacaktır. Ashitaka bu lanetin geldiği yeri öğrenmek için köyünden uzaklaşır ve bu savaşa son vermek için daha önce karşılaştığı kurt kızı San ile birlikte kendini bu savaşın içinde bulur.",
+      "duration": "PT2H14M00S",
+      "genre": "Macera",
+      "director": "Hayao Miyazaki",
+      "rating": "4.7",
+      "reviewCount": 23
     },
     {
       "days": [
@@ -479,7 +740,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/prenses-mononoke",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/prenses-mononoke-20243714511899e241a97e084646a9996e845242951e.jpg",
+      "description": "Prenses Mononoke, ormanı koruyan doğaüstü yaratıklarla, doğanın kaynaklarını hızla ve acımasızca tüketen insanların amansız mücadelesi. Ashitaka, köyüne saldıran şeytanlaşmış domuz tanrıyı öldürürken şeytanın koluna bıraktığı izi ölene kadar taşıyacaktır. Ashitaka bu lanetin geldiği yeri öğrenmek için köyünden uzaklaşır ve bu savaşa son vermek için daha önce karşılaştığı kurt kızı San ile birlikte kendini bu savaşın içinde bulur.",
+      "duration": "PT2H14M00S",
+      "genre": "Macera",
+      "director": "Hayao Miyazaki",
+      "rating": "4.7",
+      "reviewCount": 23
     },
     {
       "days": [
@@ -509,7 +776,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/ruhlarin-kacisi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-20242231146334b2c4044997345ff96aef99717fe891d.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-20242231146334b2c4044997345ff96aef99717fe891d.jpg",
+      "description": "Ruhların Kaçışı, Japon animasyon üstadı Hayao Miyazaki’nin en değerli yapıtlarından biri. Film, küçük Chihiro ve ailesinin yeni bir kasabaya taşınmalarıyla açılır. Yolculuk esnasında yolda gördükleri bir tünele dikkat eden aile, tünelin içerisinden geçtiklerinde karşılaştıkları fantastik dünyanın içerisinde büyülenirler. Ancak bu kasabada yolunda gitmeyen bir şeyler vardır, bu büyü kısa bir zaman sonra bozulacaktır. Ailesini kaybeden küçük Chihiro, babasını kurtarmak için korku dolu bir maceraya",
+      "duration": "PT2H5M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.9",
+      "reviewCount": 69
     },
     {
       "days": [
@@ -524,7 +797,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/ruhlarin-kacisi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-20242231146334b2c4044997345ff96aef99717fe891d.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-20242231146334b2c4044997345ff96aef99717fe891d.jpg",
+      "description": "Ruhların Kaçışı, Japon animasyon üstadı Hayao Miyazaki’nin en değerli yapıtlarından biri. Film, küçük Chihiro ve ailesinin yeni bir kasabaya taşınmalarıyla açılır. Yolculuk esnasında yolda gördükleri bir tünele dikkat eden aile, tünelin içerisinden geçtiklerinde karşılaştıkları fantastik dünyanın içerisinde büyülenirler. Ancak bu kasabada yolunda gitmeyen bir şeyler vardır, bu büyü kısa bir zaman sonra bozulacaktır. Ailesini kaybeden küçük Chihiro, babasını kurtarmak için korku dolu bir maceraya",
+      "duration": "PT2H5M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.9",
+      "reviewCount": 69
     },
     {
       "days": [
@@ -539,7 +818,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/yuruyen-sato",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg",
+      "description": "Yürüyen Şato, kendisine yapılan büyünün etkisini yok etmeye çalışan genç bir kızın hikayesini anlatıyor. Sıradan bir genç kız olan Sophie şeytani bir cadı tarafından büyüyle doksan yaşında bir kadına dönüşür. Sophie artık fazlasıyla yaşlanmış ve çevresi tarafından tanınmaz bir görünüme bürünmüştür. Bu yüzden büyük bir umutsuzluğa kapılan ve yaşadığı yeri terk etmek zorunda kalan Sophie, Howl isimli yürüyen bir şatoda yaşayan bir büyücünün yanına yerleşir. Bu şatoda yaşayan cinlerden biri de Soph",
+      "duration": "PT1H59M00S",
+      "genre": "Macera",
+      "director": "Hayao Miyazaki",
+      "rating": "4.8",
+      "reviewCount": 119
     },
     {
       "days": [
@@ -554,7 +839,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/yuruyen-sato",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg",
+      "description": "Yürüyen Şato, kendisine yapılan büyünün etkisini yok etmeye çalışan genç bir kızın hikayesini anlatıyor. Sıradan bir genç kız olan Sophie şeytani bir cadı tarafından büyüyle doksan yaşında bir kadına dönüşür. Sophie artık fazlasıyla yaşlanmış ve çevresi tarafından tanınmaz bir görünüme bürünmüştür. Bu yüzden büyük bir umutsuzluğa kapılan ve yaşadığı yeri terk etmek zorunda kalan Sophie, Howl isimli yürüyen bir şatoda yaşayan bir büyücünün yanına yerleşir. Bu şatoda yaşayan cinlerden biri de Soph",
+      "duration": "PT1H59M00S",
+      "genre": "Macera",
+      "director": "Hayao Miyazaki",
+      "rating": "4.8",
+      "reviewCount": 119
     },
     {
       "days": [
@@ -569,7 +860,22 @@
       "url": "https://biletinial.com/tr-tr/sinema/hayatimin-sarkisi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayatimin-sarkisi-202661812474500afd2dad5cc4ae6a0ced38b58de29f6.png"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayatimin-sarkisi-202661812474500afd2dad5cc4ae6a0ced38b58de29f6.png",
+      "description": "PAUL RUDD’UN BİR DÜĞÜN ŞARKICISINI, NICK JONAS’IN İSE BİR ROCK YILDIZINI CANLANDIRDIĞI HAYATIMIN ŞARKISI, İZLEYİCİLERE MÜZİKLE DOLU, TEMPOLU VE ENERJİK BİR HİKÂYE SUNUYOR. Rastlantı sonucu gerçekleşen bir karşılaşmanın ardından, düğün grubu solisti Rick, eski bir pop grubu yıldızı olan Danny ile sarhoşken bir şarkı yazar. Altı ay sonra Rick, birlikte söyledikleri doğaçlama şarkının dünya çapında bir üne kavuştuğunu öğrenince şaşırıp kalır, ancak şarkıyla ilgili tüm övgüyü Danny toplayıp, şan",
+      "duration": "PT1H38M00S",
+      "genre": "Dram",
+      "director": "John  Carney",
+      "cast": [
+        "Paul Rudd",
+        "Nick Jonas",
+        "Peter McDonald",
+        "Rory  Keenan",
+        "Paul  Reid",
+        "Keith  McErlean"
+      ],
+      "rating": "4.5",
+      "reviewCount": 2,
+      "trailer": "https://www.youtube.com/watch?v=1klIKobhKeY"
     },
     {
       "days": [
@@ -584,7 +890,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/mamma-mia",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mamma-mia-202682114289e79854e083064a488531842826f325e9.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mamma-mia-202682114289e79854e083064a488531842826f325e9.jpg",
+      "description": "Mamma Mia! Film Gösterimi Mamma Mia, Yunanistan'da bir adada evlilik hazırlığı yapan genç Sophie'nin, babasının kim olduğunu öğrenme çabasını konu alır. Annesinin günlüğünü okuyarak hayatına girmiş olabilecek üç farklı erkeği düğününe gizlice davet etmesiyle, ünlü ABBA şarkıları eşliğinde eğlenceli ve duygusal bir macera başlar. Genel Bilet: Patlamış mısır + soft içecek VIP 1 Kişilik: VIP kategoride oturma alanı + Feriye mutfağından hazırlanan atıştırmalık sandviçler, kuruyemişler, mey"
     },
     {
       "days": [
@@ -599,7 +906,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/kucuk-denizkizi-ponyo",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg",
+      "description": "Küçük Deniz Kızı Ponyo, insani olduğu kadar çevreci, sımsıcak bir animasyon olan Küçük Denizkızı Ponyo, bu sanatın büyük ustası Miyazaki tarafından beyazperde'ye aktarıldı. Küçük ve sevimli bir Japon balığı olan Ponyo'nun en büyük hayali insan olmaktır. Bu umutsuz hayali onu maceradan maceraya sürükleyecektir. Bu esnada beş yaşındaki bir oğlan çocuğu ile arkadaşlık etme fırsatı yakalar. Bu arkadaşlık küçük dişi balığın en büyük hayaline ulaşmasına yardımcı olur. Çevre ve deniz kirlenmesine de di",
+      "duration": "PT1H41M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.9",
+      "reviewCount": 16
     },
     {
       "days": [
@@ -614,7 +927,13 @@
       "url": "https://biletinial.com/tr-tr/sinema/kucuk-denizkizi-ponyo",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-denizkizi-ponyo-2024223111189bea856fc2134cb3a9d1b82dd31b3f7f.jpg",
+      "description": "Küçük Deniz Kızı Ponyo, insani olduğu kadar çevreci, sımsıcak bir animasyon olan Küçük Denizkızı Ponyo, bu sanatın büyük ustası Miyazaki tarafından beyazperde'ye aktarıldı. Küçük ve sevimli bir Japon balığı olan Ponyo'nun en büyük hayali insan olmaktır. Bu umutsuz hayali onu maceradan maceraya sürükleyecektir. Bu esnada beş yaşındaki bir oğlan çocuğu ile arkadaşlık etme fırsatı yakalar. Bu arkadaşlık küçük dişi balığın en büyük hayaline ulaşmasına yardımcı olur. Çevre ve deniz kirlenmesine de di",
+      "duration": "PT1H41M00S",
+      "genre": "Animasyon",
+      "director": "Hayao Miyazaki",
+      "rating": "4.9",
+      "reviewCount": 16
     },
     {
       "days": [
@@ -629,7 +948,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/donus-yok",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg",
+      "description": "Dönüş Yok filmi, Paris'te oldukça pis bir arka sokak barı... İçeriden dışarıya çıkan sedyeler, ambulans ışıkları ve yaşanmış kanlı bir gece... Bu gecenin kurbanları, aslında bu gecenin sonunda değil başındalardır henüz. Hayatın kurgusu, bazen insanın zannettiği gibi ileri doğru değil, geriye doğru akar. Bütün günahlar, birer birer ortaya çıkacaklardır ve insanoğlu kendi pisliğiyle karşı karşıya gelecektir. Modern sinemanın heyecan verici yönetmenlerinden Gaspar Noe'nin oldukça sert tonlarda kot",
+      "duration": "PT1H37M00S",
+      "genre": "Dram",
+      "director": "Gaspar Noé",
+      "cast": [
+        "Vincent Cassel",
+        "Albert Dupontel",
+        "Jo Prestia",
+        "Philippe Nahon",
+        "Stéphane Drouot",
+        "Jean-Louis Costes"
+      ],
+      "rating": "5",
+      "reviewCount": 2
     },
     {
       "days": [
@@ -644,7 +977,20 @@
       "url": "https://biletinial.com/tr-tr/sinema/hircin",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/7ed7d878fdc540f4a4127fff6330c2db.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/7ed7d878fdc540f4a4127fff6330c2db.jpg",
+      "description": "Ergenlik yıllarından beri klip yönetmenliği yapan Charlotte Regan’ın ilk uzun metrajı, 12 yaşında, hayalperest, komik, kendi başına buyruk Georgie’nin peşinden hiç ayrılmıyor. Annesinin ölümünün ardından Georgie, Londra’nın dışındaki evlerinde tek başına mutlu bir şekilde yaşamaya devam etmektedir, arkadaşı Ali ile birlikte evini ve dünyasını yaşama sevinciyle doldurmaktadır. Birdenbire Georgie’nin babası olduğunu iddia eden bir adam ortaya çıkar ve onu gerçeklerle yüzleşmeye zorlar. Canlı, sıca",
+      "duration": "PT1H24M00S",
+      "genre": "Dram",
+      "director": "Charlotte Regan",
+      "cast": [
+        "Harris Dickinson",
+        "Alin Uzun",
+        "Laura Aikman",
+        "Ambreen Razia",
+        "Asheq Akhtar",
+        "Olivia Brady"
+      ],
+      "trailer": "https://www.youtube.com/watch?v=fNOpoQ4ELgU"
     },
     {
       "days": [
@@ -659,7 +1005,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/donus-yok",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/donus-yok-20268271027588b858b0e540d499b9c10f550e3bf4256.jpg",
+      "description": "Dönüş Yok filmi, Paris'te oldukça pis bir arka sokak barı... İçeriden dışarıya çıkan sedyeler, ambulans ışıkları ve yaşanmış kanlı bir gece... Bu gecenin kurbanları, aslında bu gecenin sonunda değil başındalardır henüz. Hayatın kurgusu, bazen insanın zannettiği gibi ileri doğru değil, geriye doğru akar. Bütün günahlar, birer birer ortaya çıkacaklardır ve insanoğlu kendi pisliğiyle karşı karşıya gelecektir. Modern sinemanın heyecan verici yönetmenlerinden Gaspar Noe'nin oldukça sert tonlarda kot",
+      "duration": "PT1H37M00S",
+      "genre": "Dram",
+      "director": "Gaspar Noé",
+      "cast": [
+        "Vincent Cassel",
+        "Albert Dupontel",
+        "Jo Prestia",
+        "Philippe Nahon",
+        "Stéphane Drouot",
+        "Jean-Louis Costes"
+      ],
+      "rating": "5",
+      "reviewCount": 2
     },
     {
       "days": [
@@ -706,7 +1066,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/climax-",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg",
+      "description": "Climax, Fransa’daki köhne bir dans kulübünde geçen uzun bir geceyi takip ediyor. 90’ların ortasında 20 dansçı, üç günlük bir prova için ormandaki yatılı bir okulda bir araya gelir. Birbirini yeni tanıyan ekip provalar dışında da eğlenceli vakit geçirirler. Provalar bitmesinin ardından ayrılmadan önce son bir parti düzenlerler. Fakat içkilerin sayısı arttıkça içlerinden bazıları tuhaf davranışlar sergilemeye başlar. Gençler bir süre sonra tamamen kontrollerini kaybeder. Artık onların içine düştük",
+      "duration": "PT1H35M00S",
+      "genre": "Dram",
+      "director": "Gaspar Noé",
+      "cast": [
+        "Romain Guillermic",
+        "Souheila Yacoub",
+        "Kiddy Smile",
+        "Claude-Emmanuelle Gajan-Maull",
+        "Giselle Palmer",
+        "Taylor Kastle"
+      ],
+      "rating": "3.9",
+      "reviewCount": 9
     },
     {
       "days": [
@@ -721,7 +1095,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/climax-",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/climax-2021622102455.jpg",
+      "description": "Climax, Fransa’daki köhne bir dans kulübünde geçen uzun bir geceyi takip ediyor. 90’ların ortasında 20 dansçı, üç günlük bir prova için ormandaki yatılı bir okulda bir araya gelir. Birbirini yeni tanıyan ekip provalar dışında da eğlenceli vakit geçirirler. Provalar bitmesinin ardından ayrılmadan önce son bir parti düzenlerler. Fakat içkilerin sayısı arttıkça içlerinden bazıları tuhaf davranışlar sergilemeye başlar. Gençler bir süre sonra tamamen kontrollerini kaybeder. Artık onların içine düştük",
+      "duration": "PT1H35M00S",
+      "genre": "Dram",
+      "director": "Gaspar Noé",
+      "cast": [
+        "Romain Guillermic",
+        "Souheila Yacoub",
+        "Kiddy Smile",
+        "Claude-Emmanuelle Gajan-Maull",
+        "Giselle Palmer",
+        "Taylor Kastle"
+      ],
+      "rating": "3.9",
+      "reviewCount": 9
     },
     {
       "days": [
@@ -736,7 +1124,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/meliksah-altuntas-bunu-kendime-neden-yapiyorum-standup",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/meliksah-altuntas-bunu-kendime-neden-yapiyorum-202499154951aff22cb4ba254e6fa6b9f74e714fc002.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/meliksah-altuntas-bunu-kendime-neden-yapiyorum-202499154951aff22cb4ba254e6fa6b9f74e714fc002.jpg",
+      "description": "Melikşah Altuntaş - Bunu Kendime Neden Yapıyorum? Stand Up Gösterisi Hayır diyememe hastalığı ve mesleki soru işaretlerinden muzdarip Melikşah Altuntaş, beklentiler, önyargı ve hayal kırıklığı üzerine batılı anlamda ilk Elazığlılık deneyimini, görsel ve işitsel bir anksiyete krizine dönüştürüyor."
     },
     {
       "days": [
@@ -782,7 +1171,20 @@
       "url": "https://biletinial.com/tr-tr/sinema/vortex",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vortex-2022511184919.jpeg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vortex-2022511184919.jpeg",
+      "description": "Vortex, hayata, yönetmenin kendi ölümlülüğü üzerine de düşündüğü son derece kişisel bir pencereden bakıyor. Gaspar Noé bu projede, “her yaşam formunun kendi tünelinde yaşadığını” anlatmak üzere neredeyse baştan sona, bölünmüş ekran tekniği kullanıyor; filmdeki iki kameradan birinin arkasında bizzat kendisi yer alıyor. Gerilim-korku türünün ustalarından Dario Argento’nun başrolünü paylaştığı film, yaşlılık ve bunamadan mustarip sevgi dolu bir çiftin son günlerine odaklanıyor. Gaspar Noé filmini “",
+      "duration": "PT2H15M00S",
+      "genre": "Dram",
+      "director": "Gaspar Noé",
+      "cast": [
+        "Françoise Lebrun",
+        "Alex Lutz",
+        "Kamel Benchemekh",
+        "Corinne Bruand",
+        "Nathalie Roubaud",
+        "Kylian Dheret"
+      ],
+      "trailer": "https://www.youtube.com/watch?v=YuuoT6CfeCQ"
     },
     {
       "days": [
@@ -797,7 +1199,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/celil-sadik-ile-bati-resminde-seytan-tasvirleri",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/celil-sadik-ile-bati-resminde-seytan-tasvirleri-202681214345449dce6bb0ab40739d6635c9e129c173.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/celil-sadik-ile-bati-resminde-seytan-tasvirleri-202681214345449dce6bb0ab40739d6635c9e129c173.jpg",
+      "description": "Celil Sadık ile Batı Resminde Şeytan Tasvirleri 19 Eylül Cumartesi, saat: 15.00’te Kadıköy Sineması’da Celil Sadık ile Sanat Tarihi seminerimizde konumuz: Batı Resminde Şeytan Tasvirleri 😈 Rönesans döneminden modern akımlara kadar şeytan imgesinin resim sanatına nasıl yansıdığını, sanatçının kötülük kavramına nasıl biçim verdiğini, Orta Çağ ikonografisinden Bosch’un kabusvari dünyasına, Goya’nın karanlık vizyonlarından çağdaş sanattaki dönüşümüne kadar birçok örnek üzerinden inceleyeceğiz"
     },
     {
       "days": [
@@ -844,7 +1247,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/mayis-sikintisi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mayis-sikintisi-202011313397.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mayis-sikintisi-202011313397.jpg",
+      "description": "Kasabada bu mayıs, sanki eskiye göre daha sıcak, daha sıkıntılı. Herkes küçük dertleriyle , sürprizlere kapalı hayatlarıyla yine de huzurlu görünüyor. Ancak bu huzur, çocukluğunu geçirdiği bu kasabada bir film çekmeyi kafasına koymuş Muzaffer’in gelişiyle biraz zedelenir. Mayıs Sıkıntısı doğduğu kasabaya film çekmek üzere dönen Muzaffer'in hikayesini anlatır. Babası Emin, tarlasının yanındaki küçük bir ormanlık bölgeyi tarlasının hudutları içine katma mücadelesindedir. Dokuz yaşındaki yeğeni",
+      "duration": "PT2H10M00S",
+      "genre": "Dram",
+      "director": "Nuri Bilge Ceylan",
+      "cast": [
+        "Mehmet Emin  Ceylan",
+        "Muzaffer Özdemir",
+        "Fatma Ceylan",
+        "Mehmet Emin Toprak",
+        "Muhammed  Zımbaoğlu",
+        "Hatice  Bodur"
+      ],
+      "rating": "5",
+      "reviewCount": 1
     },
     {
       "days": [
@@ -891,7 +1308,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/the-devil-wears-prada-2-acik-hava-gosterimi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-devil-wears-prada-2-acik-hava-gosterimi-202671716510e99fcbf793b243549cd1773b2856d659.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-devil-wears-prada-2-acik-hava-gosterimi-202671716510e99fcbf793b243549cd1773b2856d659.jpg",
+      "description": "The Devil Wears Prada 2 - Açık Hava Gösterimi"
     },
     {
       "days": [
@@ -906,7 +1324,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/uzak-nbc",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/uzak-20201025104926.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/uzak-20201025104926.jpg",
+      "description": "Çanakkale'nin Yenice kasabasını kendisine mekan olarak seçen yönetmen, Uzak filmi için karlar altında bir İstanbul'u tercih etmiş.Film, ideallerinden uzaklaşmaya başladıkça yaşamının anlamını yitiren ve uzaklara gitmeyi düşleyen bir adamla, hayallerini gerçekleştirmek için İstanbula gelen bir gencin hikayesini anlatıyor.Minimalist bir sinema anlayışına sahip olan Nuri Bilge Ceylan, filmin senaryosunu ve yönetimini üstlendiği gibi, görüntü yönetmenliğini de kendisi yapmış. Sinemasında doğuya özgü",
+      "duration": "PT1H50M00S",
+      "genre": "Dram",
+      "director": "Nuri Bilge Ceylan",
+      "cast": [
+        "Muzaffer Özdemir",
+        "Mehmet Emin Toprak",
+        "Zuhal Gencer Erkaya",
+        "Nazan Kesal",
+        "Feridun Koç",
+        "Fatma Ceylan"
+      ],
+      "rating": "5",
+      "reviewCount": 2
     },
     {
       "days": [
@@ -921,7 +1353,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
       "availability": "available",
       "owned": true,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg",
+      "description": "The Invite / Davet - Açık Hava Gösterimi Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yap"
     },
     {
       "days": [
@@ -936,7 +1369,21 @@
       "url": "https://biletinial.com/tr-tr/sinema/bir-zamanlar-anadoluda",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg",
+      "description": "Nuri Bilge Ceylan, bu filmiyle kentsel kaygılarını bir kenara bırakıp, tekrar taşranın sıkıntılı dünyasına ama bu sefer bir cinayet hikayesinin gerilimi ile dönüyor... Bir doktor ile bir savcının 12 saatlik gerilimli öyküsünün peliküle aktarıldığı filmin başrollerinde Muhammet Uzuner, Yılmaz Erdoğan ve Taner Birsel yer alıyor. Senaryoda Ebru ve Nuri Bilge Ceylan'ın yanı sıra Ercan Kesal'ın da imzası var. Yolların tek düzeliği ve kasabanın insana yeni bir şey sunmamasının sıradanlığını fona alan",
+      "duration": "PT2H37M00S",
+      "genre": "Dram",
+      "director": "Nuri Bilge Ceylan",
+      "cast": [
+        "Yılmaz Erdoğan",
+        "Taner Birsel",
+        "Ahmet Mümtaz Taylan",
+        "Fırat Tanış",
+        "Ercan Kesal",
+        "Erol Eraslan"
+      ],
+      "rating": "4.8",
+      "reviewCount": 5
     },
     {
       "days": [
@@ -967,7 +1414,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/tavuk-film-gosterimi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavuk-film-gosterimi-2026921340531d189d36d85449bfba15b86fa036b624.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavuk-film-gosterimi-2026921340531d189d36d85449bfba15b86fa036b624.jpg",
+      "description": "Tavuk Film Gösterimi 2025 | DCP | Renkli Colour | 96’ | Yunanca; Türkçe altyazılı, Greek; Turkish sub. | Almanya, Yunanistan, Macaristan Germany, Greece, Hungry YÖNETMEN DIRECTOR György Pálfi OYUNCULAR CAST Tavuk, Yannis Kokiasmenos, Maria Diakopanayotou, Argyris Pandazaras Bu filmin baş karakteri bir tavuk. Bu sefer hayvanlar insanların hikâyelerine eşlik eden birer araç değil; hikâyenin merkezinde kendi iradesiyle hareket eden bir tavuk var. Kendi hikâyesine yön ver"
     },
     {
       "days": [
@@ -1030,7 +1478,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/girl-with-a-pearl-earring-inci-kupeli-kiz",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/girl-with-a-pearl-earring-inci-kupeli-kiz-20268211430119d96e708aa4f4e3fb561343cf2e57d54.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/girl-with-a-pearl-earring-inci-kupeli-kiz-20268211430119d96e708aa4f4e3fb561343cf2e57d54.jpg",
+      "description": "Girl with a Pearl Earring / İnci Küpeli Kız - Açık Hava Gösterimi 17. yüzyıl Hollanda’sında geçen film, ailesine destek olmak için ressam Johannes Vermeer’in evinde hizmetçi olarak çalışmaya başlayan genç Griet’in hikâyesini anlatır. Vermeer’in içine kapanık ve gergin dünyasına adım atan Griet, kısa sürede ressamın sanatına olan ilgisi ve renkleri kavrama yeteneğiyle onun dikkatini çeker. Aralarındaki usta-çırak ilişkisi sessiz bir hayranlığa ve sanatsal bir iş birliğine dönüşürken, bu yakınl"
     },
     {
       "days": [
@@ -1077,7 +1526,8 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/ruhlarin-kacisi-film",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-202574944123271fb7634449099b35fc57272e41b5.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ruhlarin-kacisi-202574944123271fb7634449099b35fc57272e41b5.jpg",
+      "description": "Ruhların Kaçışı Film Gösterimi Hayao Miyazaki'nin başyapıtlarından biri olan film, ailesiyle banliyöye taşınırken ruhlar alemine geçiş yapan küçük Chihiro'nun hikâyesini konu ediniyor. Ailesiyle birlikte banliyöye taşınmakta olan 10 yaşındaki Chihiro’nun, cadılar ve ruhlar tarafından yönetilen, insanların farklı yaratıklara dönüştüğü bir evrene düşer. İnsanların dünyasına dönmeye çalışırken tuhaf ruhlarla, çeşit çeşit yaratıklarla karşılaşacaktır."
     },
     {
       "days": [
@@ -1108,11 +1558,12 @@
       "url": "https://biletinial.com/tr-tr/etkinlik/billy-elliot-film-gosterimi",
       "availability": "available",
       "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/billy-elliot-film-gosterimi-2026819172183a9c6a7683764ca8b0849cd35882532f.jpg"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/billy-elliot-film-gosterimi-2026819172183a9c6a7683764ca8b0849cd35882532f.jpg",
+      "description": "Billy Elliot Film Gösterimi"
     }
   ],
   "cinemas": [],
   "omitted_records": 1,
-  "research_note": "Refreshed from live JSON-LD at the three preferred Biletinial cinemas; sold-out and out-of-window screenings omitted. Existing verified Kadıköy theatre listings retained inside the new range; Paribu skipped. Fastmail ownership checked; Google Colonist checked, while Google Personal required reauthorization.",
+  "research_note": "Refreshed from live JSON-LD at the three preferred Biletinial cinemas; sold-out and out-of-window screenings omitted. Existing verified Kadıköy theatre listings retained inside the new range; Paribu skipped. Fastmail ownership checked; Google Colonist checked, while Google Personal required reauthorization. Detail pages were also parsed for descriptions, duration, genre, director, selected cast, source rating/review count, and trailer links where published.",
   "lastUpdated": "2026-09-10"
 }
