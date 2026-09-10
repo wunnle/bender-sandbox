@@ -37,6 +37,9 @@ export type Ev = {
   owned?: boolean;
   /** Poster from the source listing. Present on roughly half the payload. */
   image?: string;
+  ageLimit?: string;
+  /** Per-venue, e.g. "Türkçe Altyazılı", "3D / Türkçe Dublaj". */
+  formats?: string[];
 };
 
 type Payload = {

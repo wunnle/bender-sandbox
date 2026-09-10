@@ -101,8 +101,82 @@ const sessionTimes = (e: Ev) =>
 /** Options for one title on one day — usually a single venue, sometimes several. */
 type Group = Ev[];
 
-/** Overlay listing every venue showing a title on a given day. */
+/** "PT1H30M00S" → "1h 30m". Returns undefined for anything unparseable. */
+function humanDuration(iso?: string) {
+  if (!iso) return undefined;
+  const m = /^PT(?:(\d+)H)?(?:(\d+)M)?/.exec(iso);
+  if (!m || (!m[1] && !m[2])) return undefined;
+  const h = Number(m[1] ?? 0);
+  const min = Number(m[2] ?? 0);
+  return [h ? `${h}h` : null, min ? `${min}m` : null].filter(Boolean).join(" ");
+}
+
+const nf = new Intl.NumberFormat("en-US");
+
+function StarIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M10 1.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5-2.6-5 2.6 1-5.6-4-3.9 5.6-.8L10 1.8Z" />
+    </svg>
+  );
+}
+
+/** The IMDb score, linking out to the title's page. */
+function ImdbBlock({ e }: { e: Ev }) {
+  if (!e.imdbRating) return null;
+  const body = (
+    <>
+      <span className="rounded bg-[#f5c518] px-1.5 py-0.5 text-[11px] font-bold tracking-tight text-black">
+        IMDb
+      </span>
+      <StarIcon className="h-4 w-4 text-[#f5c518]" />
+      <span className="font-semibold text-white">{e.imdbRating}</span>
+      <span className="text-neutral-500">/10</span>
+      {e.imdbVotes ? (
+        <span className="text-neutral-500">· {nf.format(e.imdbVotes)} votes</span>
+      ) : null}
+    </>
+  );
+  const cls = "inline-flex items-center gap-1.5 text-sm";
+  return e.imdbUrl ? (
+    <a
+      href={e.imdbUrl}
+      target="_blank"
+      rel="noreferrer"
+      className={`${cls} rounded transition hover:opacity-80`}
+    >
+      {body}
+    </a>
+  ) : (
+    <span className={cls}>{body}</span>
+  );
+}
+
+/** Synopsis clamped to three lines, expandable — some run to 1,300 characters. */
+function Synopsis({ text }: { text: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="mt-4">
+      <p className={`text-sm leading-relaxed text-neutral-300 ${open ? "" : "line-clamp-3"}`}>
+        {text}
+      </p>
+      {text.length > 180 && (
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="mt-1 text-xs text-neutral-400 underline underline-offset-4 hover:text-white"
+        >
+          {open ? "less" : "more"}
+        </button>
+      )}
+    </div>
+  );
+}
+
+/** Detail view for one title on one day: metadata, then every venue showing it. */
 function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }) {
+  const e = group[0];
+  const facts = [e.genre, humanDuration(e.duration), e.ageLimit].filter(Boolean) as string[];
+
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
@@ -119,41 +193,130 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
-        className="w-full max-w-md rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl"
+        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl [scrollbar-width:thin]"
       >
-        <div className="flex items-start justify-between gap-4">
-          <h2 className="text-lg font-semibold text-white">{group[0].title}</h2>
-          <button
-            onClick={onClose}
-            aria-label="Close"
-            className="-mr-1 -mt-1 rounded-full px-2 py-1 text-neutral-400 transition hover:bg-white/10 hover:text-white"
-          >
-            ✕
-          </button>
+        <div className="flex gap-4">
+          {e.image && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={e.image}
+              alt=""
+              className="h-36 w-27 shrink-0 rounded-xl object-cover ring-1 ring-white/10"
+            />
+          )}
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between gap-3">
+              <h2 className="text-lg font-semibold leading-tight text-white">{e.title}</h2>
+              <button
+                onClick={onClose}
+                aria-label="Close"
+                className="-mr-1 -mt-1 shrink-0 rounded-full px-2 py-1 text-neutral-400 transition hover:bg-white/10 hover:text-white"
+              >
+                ✕
+              </button>
+            </div>
+            {/* Genre · duration · age limit — whichever exist */}
+            {facts.length > 0 && (
+              <p className="mt-1 text-sm text-neutral-400">{facts.join(" · ")}</p>
+            )}
+            <div className="mt-2">
+              <ImdbBlock e={e} />
+            </div>
+          </div>
         </div>
-        <p className="mt-1 text-sm text-neutral-500">{group.length} venues this day</p>
 
-        {/* The same card as in the row, one per venue, so the comparison is like for like */}
-        <ul className="mt-5 flex gap-4 overflow-x-auto pb-1 [scrollbar-width:thin]">
+        {e.description && <Synopsis text={e.description} />}
+
+        {(e.director || e.cast?.length) && (
+          <dl className="mt-4 space-y-1 text-sm">
+            {e.director && (
+              <div className="flex gap-2">
+                <dt className="w-16 shrink-0 text-neutral-500">Director</dt>
+                <dd className="text-neutral-300">{e.director.replace(/\s+/g, " ")}</dd>
+              </div>
+            )}
+            {e.cast?.length ? (
+              <div className="flex gap-2">
+                <dt className="w-16 shrink-0 text-neutral-500">Cast</dt>
+                <dd className="text-neutral-300">
+                  {e.cast.slice(0, 4).map((c) => c.replace(/\s+/g, " ")).join(", ")}
+                </dd>
+              </div>
+            ) : null}
+          </dl>
+        )}
+
+        <h3 className="mt-5 text-xs font-medium uppercase tracking-widest text-neutral-500">
+          {group.length > 1 ? `Where & when · ${group.length} venues` : "Where & when"}
+        </h3>
+        <ul className="mt-2 space-y-2">
           {group.map((o, i) => {
-            const cls =
-              "group block w-40 shrink-0 rounded-xl focus:outline-none focus-visible:ring-2 sm:w-44 " +
-              CATEGORY_META[categoryOf(o.kind)].ring;
+            const times = sessionTimes(o);
+            const price = realPrice(o.price);
             return (
-              <li key={`${o.venue}-${i}`}>
-                {o.url ? (
-                  <a href={o.url} target="_blank" rel="noreferrer" className={cls}>
-                    <TileBody e={o} />
-                  </a>
-                ) : (
-                  <div className={cls}>
-                    <TileBody e={o} />
+              <li
+                key={`${o.venue}-${i}`}
+                className={`rounded-xl p-3 ${
+                  o.owned ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/40" : "bg-white/[0.04]"
+                }`}
+              >
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="text-sm font-medium text-white">{o.venue}</span>
+                  {price && <span className="shrink-0 text-xs text-neutral-400">{price}</span>}
+                </div>
+                {times.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {times.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-xs text-neutral-200"
+                      >
+                        {t}
+                      </span>
+                    ))}
                   </div>
                 )}
+                {/* Subtitled vs dubbed can differ by cinema, so it lives per venue */}
+                {o.formats?.length ? (
+                  <p className="mt-2 text-xs text-neutral-400">{o.formats.join(" · ")}</p>
+                ) : null}
+                <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs">
+                  {o.owned && (
+                    <span className="font-semibold uppercase tracking-wide text-emerald-400">
+                      Booked
+                    </span>
+                  )}
+                  {o.availability && o.availability !== "available" && (
+                    <span className="text-rose-300/80">{o.availability.replace(/_/g, " ")}</span>
+                  )}
+                  {o.url ? (
+                    <a
+                      href={o.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-medium text-white underline underline-offset-4 hover:text-neutral-300"
+                    >
+                      Tickets
+                    </a>
+                  ) : (
+                    <span className="text-neutral-600">no ticket link</span>
+                  )}
+                </div>
               </li>
             );
           })}
         </ul>
+
+        {e.trailer && (
+          <a
+            href={e.trailer}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-block rounded-full px-3 py-1.5 text-sm text-neutral-300 ring-1 ring-white/15 transition hover:bg-white/5 hover:text-white"
+          >
+            Watch trailer ↗
+          </a>
+        )}
       </div>
     </div>
   );
@@ -279,26 +442,14 @@ function Tile({ group }: { group: Group }) {
     "group w-32 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
     CATEGORY_META[categoryOf(e.kind)].ring;
 
-  // With several venues the tile can't link anywhere sensible, so it opens the list.
-  if (extra > 0) {
-    return (
-      <>
-        <button onClick={() => setOpen(true)} className={`${className} text-left`}>
-          <TileBody e={e} extra={extra} />
-        </button>
-        {open && <OptionsDialog group={group} onClose={() => setOpen(false)} />}
-      </>
-    );
-  }
-
-  return e.url ? (
-    <a href={e.url} target="_blank" rel="noreferrer" className={className}>
-      <TileBody e={e} />
-    </a>
-  ) : (
-    <div className={className}>
-      <TileBody e={e} />
-    </div>
+  // Every tile opens the detail view; the ticket link lives inside it, per venue.
+  return (
+    <>
+      <button onClick={() => setOpen(true)} className={`${className} text-left`}>
+        <TileBody e={e} extra={extra} />
+      </button>
+      {open && <OptionsDialog group={group} onClose={() => setOpen(false)} />}
+    </>
   );
 }
 
