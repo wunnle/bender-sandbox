@@ -102,6 +102,18 @@ const sessionTimes = (e: Ev) =>
 /** Options for one title on one day — usually a single venue, sometimes several. */
 type Group = Ev[];
 
+/**
+ * A 0–1 score for ranking. IMDb is out of 10 and the local rating out of 5, so
+ * both are normalised before comparing. Unscored events sort last.
+ */
+function score(e: Ev): number {
+  const imdb = e.imdbRating ? Number.parseFloat(e.imdbRating) : NaN;
+  if (Number.isFinite(imdb)) return imdb / 10;
+  const local = e.rating ? Number.parseFloat(e.rating) : NaN;
+  if (Number.isFinite(local)) return local / 5;
+  return -1;
+}
+
 /** "PT1H30M00S" → "1h 30m". Returns undefined for anything unparseable. */
 function humanDuration(iso?: string) {
   if (!iso) return undefined;
@@ -422,6 +434,18 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
             </span>
           </span>
         )}
+        {/* Grayscale here: the row is poster-led, so the score shouldn't shout */}
+        {e.imdbRating && (
+          <span
+            className="flex shrink-0 items-center gap-1 text-neutral-400"
+            title={`IMDb ${e.imdbRating}/10`}
+          >
+            <span className="rounded bg-neutral-700 px-1 text-[9px] font-bold leading-4 tracking-tight text-neutral-200">
+              IMDb
+            </span>
+            <span className="font-medium">{e.imdbRating}</span>
+          </span>
+        )}
         {price && <span className="shrink-0 font-medium text-neutral-300">{price}</span>}
       </div>
       {details.length > 0 && (
@@ -494,7 +518,7 @@ function DayRow({ iso, list }: { iso: string; list: Group[] }) {
         ref={strip}
         className="mt-4 overflow-x-auto pb-3 [scrollbar-color:theme(colors.neutral.800)_transparent] [scrollbar-width:thin]"
       >
-        <div className="flex snap-x snap-mandatory gap-4">
+        <div className="flex snap-x snap-mandatory items-start gap-4">
           {list.map((g, i) => (
             <Tile key={`${iso}-${g[0].title}-${i}`} group={g} />
           ))}
@@ -562,9 +586,12 @@ export default function IstanbulPage() {
             Number(!!b.owned) - Number(!!a.owned) ||
             (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
         );
-      // Anything already booked leads the day; the rest stay in start-time order.
+      // Booked first, then best-reviewed, then earliest — time only breaks ties.
       groups.sort(
-        (a, b) => Number(booked(b)) - Number(booked(a)) || first(a).localeCompare(first(b)),
+        (a, b) =>
+          Number(booked(b)) - Number(booked(a)) ||
+          score(b[0]) - score(a[0]) ||
+          first(a).localeCompare(first(b)),
       );
       out.set(day, groups);
     }
@@ -600,7 +627,7 @@ export default function IstanbulPage() {
             <p className="text-sm uppercase tracking-widest text-neutral-500">
               {days.length > 0 ? rangeLabel(days[0], days[days.length - 1]) : "Nothing upcoming"}
             </p>
-            <h1 className="mt-1 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            <h1 className="mt-1 text-4xl font-light tracking-tight text-white sm:text-5xl">
               {META.city} events
             </h1>
           </div>
