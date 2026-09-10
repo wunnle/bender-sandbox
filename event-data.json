@@ -34,7 +34,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -74,8 +74,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -236,8 +236,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -318,11 +318,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -353,14 +353,14 @@
       "duration": "PT1H40M00S",
       "genre": "Dram",
       "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
-      "director": "Anthony  Maras",
+      "director": "Anthony Maras",
       "cast": [
         "Andrew Scott",
         "Brendan Fraser",
         "Kerry Condon",
         "Chris Messina",
         "Damian Lewis",
-        "Tamsin  Topolski"
+        "Tamsin Topolski"
       ],
       "rating": "4.2",
       "reviewCount": 4,
@@ -469,6 +469,23 @@
       "days": [
         "2026-09-10"
       ],
+      "title": "BlueScat",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Sahne",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bluescat",
+      "availability": "available",
+      "owned": false,
+      "description": "BlueScat Tiyatro Oyunu Bir yüksek katlı rezidansta bir asansör. İş çıkışı dairelerinin bulunduğu kata doğru asansörle çıkmaktadırlar. Asansör ara katların birinde aniden arızalanıp durur. Birbirini hiç tanımayan bir kadın ve bir erkek kurtarılmayı beklerken birbirleriyle konuşmadan, temas etmeden, duymadan monologlarını terennüm ederler: bu terennümde korkuları, kaygıları, travmaları barınır. Bira Fabrikası, Dıkşın: Büyük Şans (Bigshoot), Ağaçların Kokusu adlı oyunları moda sahnesi’nde oyn",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bluescat-2026514917264a31e4b9100f4077b472e30d19106df8.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bluescat"
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
       "title": "Yürüyen Şato",
       "kind": "film",
       "time": "20:30",
@@ -486,6 +503,23 @@
       "imdbUrl": "https://www.imdb.com/title/tt0347149/",
       "imdbRating": "8.2",
       "imdbVotes": 521269
+    },
+    {
+      "days": [
+        "2026-09-10"
+      ],
+      "title": "Özgür Turhan - Yepyenisi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1120 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi",
+      "availability": "available",
+      "owned": false,
+      "description": "Özgür Turhan - Yepyenisi Stand Up Gösterisi Tek Perde Özgür Turhan, “Aynısı” ve “Yenisi” gösterilerinin ardından “Yepyenisi” ile sezona başlıyor, Türkiye turnesine hız kesmeden devam ediyor. Gösteride açılış komedyeni yer almaktadır. Küfür, argo vs içermektedir.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ozgur-turhan-yepyenisi-2026130175056babb6b85a98147238ce997fcc8092e0f.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi"
     },
     {
       "days": [
@@ -580,6 +614,23 @@
     },
     {
       "days": [
+        "2026-09-10"
+      ],
+      "title": "Şairler Mezarlığı",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Kadıköy Belediyesi Selamiçeşme Özgürlük Parkı",
+      "area": "Istanbul",
+      "price": "700 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
+      "availability": "available",
+      "owned": false,
+      "description": "Şairler Mezarlığı Tiyatro Oyunu Direklerarası Tiyatro Ödülleri 2025 \"Küçük Salon Kadın Oyuncu\" İsmet Küntay Tiyatro Ödülleri 2025 \"Yılın İsmet Küntay Özel Ödülü\" -Üstün Akmen Tiyatro Ödülleri 2025 Yılın Kadın Oyuncusu Adaylığı -Yılın Oyun Yazarı Adaylığı -Yılın Yardımcı Kadın Oyuncusu Adaylığı “Bilinen ve bilinmeyenin” sınırlarında gezinen bir hikâye: “Şairler Mezarlığı” Tiyatro ve şiir türünü buluşturan yepyeni bir deneyim, şiir ve bedenin iç içe geçtiği gerçeküstü bir dünyaya y",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sairler-mezarligi-202582311164876d0128db2a4649b0f9b90602c8ed2c.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi"
+    },
+    {
+      "days": [
         "2026-09-11"
       ],
       "title": "Minyonlar ve Canavarlar",
@@ -599,7 +650,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -638,9 +689,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -680,7 +731,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -752,9 +803,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -795,8 +846,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -860,11 +911,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -905,8 +956,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -994,6 +1045,23 @@
       "days": [
         "2026-09-11"
       ],
+      "title": "Babamı Kim Öldürdü",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
+      "availability": "available",
+      "owned": false,
+      "description": "Babamı Kim Öldürdü Tiyatro Oyunu Edouard Louis, görmek istemediği, eşcinsel kimliğinden dolayı kendisini şiddet ve aşağılanmalara maruz bırakan babasını, geçirdiği iş kazası neticesinde yatalak olmasıyla yaşadığı şehirde ziyarete gelir. Karşısında gördüğü babası artık tanımakta güçlü çektiği bir haldedir. Onu gördüğünde ise geçmişindeki yaşanmışlıkları bugünün penceresinden anlatmaya başlar. Bu ziyaret yalnızca geçen yılların baba ve oğul yüzleşmesi değil, bedeni, artık çalışamayan, yürüy",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/babami-kim-oldurdu-2023218162015.jpeg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
       "title": "Komşum Totoro",
       "kind": "film",
       "time": "20:30",
@@ -1068,6 +1136,40 @@
     },
     {
       "days": [
+        "2026-09-11"
+      ],
+      "title": "Abdullah, Konuş!",
+      "kind": "theatre",
+      "time": "21:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus",
+      "availability": "available",
+      "owned": false,
+      "description": "Abdullah, konuş! Tiyatro Oyunu Ahmet Hamdi Tanpınar’ın “Abdullah Efendinin Rüyaları” adlı eserinden hareketle yeniden yazılmıştır. XXV. Direklerarası Seyirci Ödülleri “Tek Kişilik Performans” Ödüllü Ahmet Hamdi Tanpınar’ın “Abdullah Efendi’nin Rüyaları” öyküsünden hareketle, ancak bambaşka bir bakış açısıyla yazılan metin, şefkatle nefret arasında gidip geldiğimiz bir karakter yaratıyor. Hem bize hem de canımızı yakan herkese çok benzeyen biri o. Abdullah’ın uzun gecesini kabusa çeviren",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/abdullah-konus-2026941038420b5c63447b114f5cbc523a12902e7faf.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus"
+    },
+    {
+      "days": [
+        "2026-09-11"
+      ],
+      "title": "Bu Hikaye Senden Uzun Osman",
+      "kind": "theatre",
+      "time": "23:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1120 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman",
+      "availability": "available",
+      "owned": false,
+      "description": "Bu Hikaye Senden Uzun Osman Tiyatro Oyunu Etkinlik kurallarını lütfen dikkatle okuyunuz. Bilet satın alarak, etkinlik alanında geçerli olan tüm kuralları okuduğunuzu, anladığınızı ve bu kurallara uyacağınızı kabul etmiş olursunuz. Aylin Balboa’nın çok sevilen “Bu Hikaye Senden Uzun Osman” eseri uyarlanmıştır. Yönetmenliğini Salih Usta, metin danışmanlığını Sertaç Sayın, dramaturgluğunu Ozan Ömer Akgül’ün yaptığı oyunda, ülkemizin en değerli oyuncularından Şenay Gürler oynamaktadır. Oyun uz",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bu-hikaye-senden-uzun-osman-20261261503541ded16149524800894ad9eff23f0a5d.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman"
+    },
+    {
+      "days": [
         "2026-09-12"
       ],
       "title": "Minyonlar ve Canavarlar",
@@ -1087,7 +1189,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -1126,15 +1228,32 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
       "imdbUrl": "https://www.imdb.com/title/tt32359586/",
       "imdbRating": "6.3",
       "imdbVotes": 363
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
+      "title": "Şubadap Çocuk",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "767 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk",
+      "availability": "available",
+      "owned": false,
+      "description": "Şubadap Çocuk Şarkıları Konseri 2013 yılından bu yana çocuklar için özgün şarkılar üreten Şubadap, bugüne kadar yayımladığı 8 albüm ve gerçekleştirdiği yüzlerce konserle Türkiye'nin dört bir yanında çocuklarla buluşmaya devam ediyor. Yaklaşık 50 dakika süren bu interaktif konserde çocuklar yalnızca izleyici değil; şarkılara eşlik ediyor, dans ediyor, oyunlar oynuyor ve konserin bir parçası oluyor. Konserde çocuklar Çekirdeksiz Domates'le eğlenecek, Dino'yla dans edecek, Faso Fiso'ya hep",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/subadap-cocuk-2025211430539af66e7e54d74aeca36660d239c112dc.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk"
     },
     {
       "days": [
@@ -1168,7 +1287,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -1240,9 +1359,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -1283,8 +1402,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -1328,6 +1447,23 @@
       "days": [
         "2026-09-12"
       ],
+      "title": "Şubadap Çocuk",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "767 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk",
+      "availability": "available",
+      "owned": false,
+      "description": "Şubadap Çocuk Şarkıları Konseri 2013 yılından bu yana çocuklar için özgün şarkılar üreten Şubadap, bugüne kadar yayımladığı 8 albüm ve gerçekleştirdiği yüzlerce konserle Türkiye'nin dört bir yanında çocuklarla buluşmaya devam ediyor. Yaklaşık 50 dakika süren bu interaktif konserde çocuklar yalnızca izleyici değil; şarkılara eşlik ediyor, dans ediyor, oyunlar oynuyor ve konserin bir parçası oluyor. Konserde çocuklar Çekirdeksiz Domates'le eğlenecek, Dino'yla dans edecek, Faso Fiso'ya hep",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/subadap-cocuk-2025211430539af66e7e54d74aeca36660d239c112dc.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk"
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
       "title": "Örümcek-Adam: Yepyeni Bir Gün",
       "kind": "film",
       "time": "15:15",
@@ -1348,11 +1484,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -1361,6 +1497,23 @@
       "imdbUrl": "https://www.imdb.com/title/tt22084616/",
       "imdbRating": "8.0",
       "imdbVotes": 291673
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
+      "title": "Babamı Kim Öldürdü",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
+      "availability": "available",
+      "owned": false,
+      "description": "Babamı Kim Öldürdü Tiyatro Oyunu Edouard Louis, görmek istemediği, eşcinsel kimliğinden dolayı kendisini şiddet ve aşağılanmalara maruz bırakan babasını, geçirdiği iş kazası neticesinde yatalak olmasıyla yaşadığı şehirde ziyarete gelir. Karşısında gördüğü babası artık tanımakta güçlü çektiği bir haldedir. Onu gördüğünde ise geçmişindeki yaşanmışlıkları bugünün penceresinden anlatmaya başlar. Bu ziyaret yalnızca geçen yılların baba ve oğul yüzleşmesi değil, bedeni, artık çalışamayan, yürüy",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/babami-kim-oldurdu-2023218162015.jpeg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn"
     },
     {
       "days": [
@@ -1389,8 +1542,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -1520,6 +1673,23 @@
       "days": [
         "2026-09-12"
       ],
+      "title": "Ensemble Kabardinka",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "1250 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ensemble-kabardinka",
+      "availability": "available",
+      "owned": false,
+      "description": "Ensemble Kabardinka Dans Gösterisi Ensemble Kabardinka , 12-13 Eylül tarihlerinde İstanbul ve Ankara’da sevenleriyle buluşacak. \"Kabardinka\" Devlet Akademik Halk Dansları Topluluğu, 1933 yılında Kafkasya’nın kalbinde (Kabardey-Balkar Cumhuriyeti, Nalçik) kurulmuştur. Kafkasya’nın ve Rusya’nın en köklü, en eski ve en saygın profesyonel halk dansları topluluklarından biridir. \"Devlet Akademik\" Unvanı: Topluluğun adında yer alan \"Akademik\" unvanı, sıradan bir dans grubunun çok ötesinde, de",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ensemble-kabardinka-20267201534524dd1ff76de604a1b8f3701c3e7fc1370.jpeg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/ensemble-kabardinka"
+    },
+    {
+      "days": [
+        "2026-09-12"
+      ],
       "title": "Prenses Mononoke",
       "kind": "film",
       "time": "21:00",
@@ -1581,7 +1751,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -1620,9 +1790,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -1662,7 +1832,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -1732,9 +1902,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -1775,8 +1945,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -1840,11 +2010,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -1853,6 +2023,40 @@
       "imdbUrl": "https://www.imdb.com/title/tt22084616/",
       "imdbRating": "8.0",
       "imdbVotes": 291673
+    },
+    {
+      "days": [
+        "2026-09-13"
+      ],
+      "title": "Bütün Çılgınlar Sever Beni",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "609 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
+      "availability": "available",
+      "owned": false,
+      "description": "Bütün Çılgınlar Sever Beni Tiyatro Oyunu Tek perde İki eski arkadaş Yosif ve Angel yıllar sonra yeniden karşılaşırlar. Fakat iki arkadaş birbirlerine kırgındırlar. Yosif kendisi evlendikten sonra Angel’in uzaklaştığını, Angel ise evlendikten sonra Yosif’in çok değiştiğini söylerler. Aralarındaki bu diyalog daha sonrasında Yosif’in evliliği ve Maria’ya uzanır. Yıllar sonra bu bu buluşmanın arkasındaki sis perdesi aralanır. Maria’nın son derece kusursuzluğu ve sadakati Yosif’i rahatsız ed",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/butun-cilginlar-sever-beni-2025228182942f86868cff223456b8c27a82aab0b6e81.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni"
+    },
+    {
+      "days": [
+        "2026-09-13"
+      ],
+      "title": "Müzeyyen",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "672 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/muzeyyen-benzemez-kimse-sana",
+      "availability": "available",
+      "owned": false,
+      "description": "Müzeyyen Tiyatro Oyunu Kadıköy Halk Tiyatrosu iftiharla sunar! Türk müziğinin unutulmaz sesi, Cumhuriyet'in Divası Müzeyyen Senar iki önemli tiyatro sanatçısı tarafından sahnede yad ediliyor. Müzeyyen isimli biyografik oyunda; Celile isimli oyunla izleyicinin kalbinde taht kuran Yılın Kadın Performansı ödüllü Ayşegül Yalçıner ile 1994'de yayınlanan Kaygısızlar dizisinden beri ekranlarda ve sahnede olan Damla Özen rol alıyor. Kendi gençliği ile karşılaşınca ne yapar insan? Seçtiği yol",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/muzeyyen-benzemez-kimse-sana-2025921164219e910e3d5181245cf93850d16cb2bf30e.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/muzeyyen-benzemez-kimse-sana"
     },
     {
       "days": [
@@ -1885,8 +2089,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -1937,6 +2141,23 @@
       "imdbUrl": "https://www.imdb.com/title/tt33764258/",
       "imdbRating": "8.4",
       "imdbVotes": 483163
+    },
+    {
+      "days": [
+        "2026-09-13"
+      ],
+      "title": "Bütün Çılgınlar Sever Beni",
+      "kind": "theatre",
+      "time": "19:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "609 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
+      "availability": "available",
+      "owned": false,
+      "description": "Bütün Çılgınlar Sever Beni Tiyatro Oyunu Tek perde İki eski arkadaş Yosif ve Angel yıllar sonra yeniden karşılaşırlar. Fakat iki arkadaş birbirlerine kırgındırlar. Yosif kendisi evlendikten sonra Angel’in uzaklaştığını, Angel ise evlendikten sonra Yosif’in çok değiştiğini söylerler. Aralarındaki bu diyalog daha sonrasında Yosif’in evliliği ve Maria’ya uzanır. Yıllar sonra bu bu buluşmanın arkasındaki sis perdesi aralanır. Maria’nın son derece kusursuzluğu ve sadakati Yosif’i rahatsız ed",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/butun-cilginlar-sever-beni-2025228182942f86868cff223456b8c27a82aab0b6e81.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni"
     },
     {
       "days": [
@@ -2000,6 +2221,23 @@
       "days": [
         "2026-09-14"
       ],
+      "title": "Sesler - Salih Bademci",
+      "kind": "theatre",
+      "time": "00:00",
+      "venue": "Kadıköy Belediyesi Selamiçeşme Özgürlük Parkı",
+      "area": "Istanbul",
+      "price": "1250 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci",
+      "availability": "available",
+      "owned": false,
+      "description": "Sesler - Salih Bademci Tiyatro Oyunu Sahnede genç bir adam, bize özel bir ilgi alanından bahsediyor: sesler. Doğrudan bizimle konuşuyor. Sanki bir sunum yapar gibi. Sahnenin merkezindeki uzun masa adeta teknik bir merkez gibi. Birtakım aletler, cihazlar, objeler, fotoğraflar, kayıtlar… Seslerin onun için nasıl bir etkiye sahip olduğundan bahsediyor. Çocukluğundan başlayarak, bu konudaki ilgisinin nasıl geliştiğini paylaşıyor bizimle. Anlattığı şeyler çok kişiselmiş gibi geliyor",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sesler-salih-bademci-202596142029591985ab928422196f27959cbddfb8a.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci"
+    },
+    {
+      "days": [
+        "2026-09-14"
+      ],
       "title": "Minyonlar ve Canavarlar",
       "kind": "film",
       "time": "12:30",
@@ -2017,7 +2255,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -2056,9 +2294,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -2098,7 +2336,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -2168,9 +2406,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -2211,8 +2449,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -2243,14 +2481,14 @@
       "duration": "PT1H40M00S",
       "genre": "Dram",
       "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
-      "director": "Anthony  Maras",
+      "director": "Anthony Maras",
       "cast": [
         "Andrew Scott",
         "Brendan Fraser",
         "Kerry Condon",
         "Chris Messina",
         "Damian Lewis",
-        "Tamsin  Topolski"
+        "Tamsin Topolski"
       ],
       "rating": "4.2",
       "reviewCount": 4,
@@ -2284,11 +2522,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -2329,8 +2567,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -2405,6 +2643,23 @@
       "days": [
         "2026-09-14"
       ],
+      "title": "Ermiş",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "776 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ermis-tiyatro-oyunu",
+      "availability": "available",
+      "owned": false,
+      "description": "Ermiş Tiyatro Oyunu On iki yıl bir liman kenti olan Orphalese'de yaşayan bilge bir adam, sonunda yurduna dönmeye hazırdır. Onu uğurlamaya gelen insanlar, \"Son kez bizimle konuş, bilgeliğinden ve hakikatinden bize de ver.\" derler. Ona aşk, evlilik, çocuklar, yasalar, özgürlük, çalışma, acı ve ölüm üzerine sorular sorarlar. Böylece Ermiş onlarla konuşmaya başlar. Halil Cibran'ın ölümsüz eseri, modern meddah geleneğinin anlatım olanaklarıyla sahneye uyarlanıyor. Meddah, oyun boyunca otu",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ermis-20267279303050351407eddd4a14bd8c2fa352863790.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/ermis-tiyatro-oyunu"
+    },
+    {
+      "days": [
+        "2026-09-14"
+      ],
       "title": "Yürüyen Şato",
       "kind": "film",
       "time": "20:30",
@@ -2474,7 +2729,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -2513,9 +2768,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -2555,7 +2810,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -2625,9 +2880,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -2668,8 +2923,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -2700,14 +2955,14 @@
       "duration": "PT1H38M00S",
       "genre": "Dram",
       "description": "PAUL RUDD’UN BİR DÜĞÜN ŞARKICISINI, NICK JONAS’IN İSE BİR ROCK YILDIZINI CANLANDIRDIĞI HAYATIMIN ŞARKISI, İZLEYİCİLERE MÜZİKLE DOLU, TEMPOLU VE ENERJİK BİR HİKÂYE SUNUYOR. Rastlantı sonucu gerçekleşen bir karşılaşmanın ardından, düğün grubu solisti Rick, eski bir pop grubu yıldızı olan Danny ile sarhoşken bir şarkı yazar. Altı ay sonra Rick, birlikte söyledikleri doğaçlama şarkının dünya çapında bir üne kavuştuğunu öğrenince şaşırıp kalır, ancak şarkıyla ilgili tüm övgüyü Danny toplayıp, şan",
-      "director": "John  Carney",
+      "director": "John Carney",
       "cast": [
         "Paul Rudd",
         "Nick Jonas",
         "Peter McDonald",
-        "Rory  Keenan",
-        "Paul  Reid",
-        "Keith  McErlean"
+        "Rory Keenan",
+        "Paul Reid",
+        "Keith McErlean"
       ],
       "rating": "4.5",
       "reviewCount": 2,
@@ -2741,11 +2996,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -2786,8 +3041,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -2838,6 +3093,23 @@
       "imdbUrl": "https://www.imdb.com/title/tt33764258/",
       "imdbRating": "8.4",
       "imdbVotes": 483163
+    },
+    {
+      "days": [
+        "2026-09-15"
+      ],
+      "title": "Bahar Noktası Soruşturması",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Sahne",
+      "area": "Istanbul",
+      "price": "831 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bahar-noktasi-sorusturmasi",
+      "availability": "available",
+      "owned": false,
+      "description": "Bahar Noktası Soruşturması Tiyatro Oyunu BGST Tiyatro, yeni prodüksiyonu \"Bahar Noktası Soruşturması\" ile seyirciyi bir düğün sahnesinden bir sorgu odasına; bir Shakespeare komedisinden bir soruşturma atmosferine taşıyor. Oyun, William Shakespeare’in “A Midsummer Night’s Dream” adlı eserinin, Can Yücel imzalı “Bahar Noktası” çevirisini merkezine alıyor. Hikâye, Başkan Haretleri’nin düğününde sahnelenen bir klasik siparişi ile başlar. Güvenli, denenmiş, kültürel itibarı yüksek bir",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bahar-noktasi-sorusturmasi-202622518289a70ebb90e27741318d71b991f5330a8e.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bahar-noktasi-sorusturmasi"
     },
     {
       "days": [
@@ -2939,7 +3211,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -2978,9 +3250,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -3020,7 +3292,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -3089,9 +3361,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -3132,8 +3404,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -3164,14 +3436,14 @@
       "duration": "PT1H40M00S",
       "genre": "Dram",
       "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
-      "director": "Anthony  Maras",
+      "director": "Anthony Maras",
       "cast": [
         "Andrew Scott",
         "Brendan Fraser",
         "Kerry Condon",
         "Chris Messina",
         "Damian Lewis",
-        "Tamsin  Topolski"
+        "Tamsin Topolski"
       ],
       "rating": "4.2",
       "reviewCount": 4,
@@ -3205,11 +3477,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -3246,8 +3518,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -3376,6 +3648,40 @@
       "days": [
         "2026-09-16"
       ],
+      "title": "Othello",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/othello-",
+      "availability": "available",
+      "owned": false,
+      "description": "Othello Tiyatro Oyunu Shakespeare'nin ünlü trajedisi aşk ile başlar. Osmanlı'ya karşı savaşta Venedik ordusunun başında bulunan mağribi lakaplı Othello ile Venedik’in soylularından Brabantio’nun kızı Desdemona arasında başlayan aşk gizlice kıyılmış bir nikahla son bulur. İzni alınmadan gerçekleşen bu evliliğe Brabantio hiddetlenir ve nikahın geçersiz sayılmasını talep eder. Ancak Desdemona kendi iradesiyle evlendiğini beyan ederek babasının talebini geçersiz kılar. Osmanlı'nın Kı",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/othello-202495131465d1eb48411014420930f8465e7464672.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/othello-"
+    },
+    {
+      "days": [
+        "2026-09-16"
+      ],
+      "title": "Sabahattin Ali - Yol ve Ötesi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "896 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sabahattin-ali-yol-ve-otesi",
+      "availability": "available",
+      "owned": false,
+      "description": "Sabahattin Ali - Yol ve Ötesi Tiyatro Oyunu Oyun Türkiye´de bilinen ilk faili meçhul cinayet olan Sabahattin Ali cinayetinden önceki 24 saati konu alıyor. Sabahattin Ali’nin yoğun tehditler aldığı ve yaşam alanının gittikçe daraldığı 1948 Türkiye’sinde, tek çare çok sevdiği vatanını bırakıp gitmektir. Bu gidiş onun için bir kaçış değil mücadelesi için yeni bir zemin arayışıdır. İstanbul’dan yola çıkan bir sebze kamyonuyla Edirne´den sınırı geçerek yurt dışına gitmeyi planlar. Yalnız bu",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sabahattin-ali-yol-ve-otesi-202651714571666f0b827dc48449aa8c4c6778e60658d.jpeg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sabahattin-ali-yol-ve-otesi"
+    },
+    {
+      "days": [
+        "2026-09-16"
+      ],
       "title": "Dönüş Yok",
       "kind": "film",
       "time": "21:00",
@@ -3430,7 +3736,7 @@
       "duration": "PT1H30M00S",
       "genre": "Macera",
       "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre  Coffin",
+      "director": "Pierre Coffin",
       "rating": "4.5",
       "reviewCount": 52,
       "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
@@ -3469,9 +3775,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -3511,7 +3817,7 @@
         "Nicole Kidman",
         "Joey King",
         "Maisie Williams",
-        "Xolo  Maridueña",
+        "Xolo Maridueña",
         "Lee Pace"
       ],
       "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
@@ -3581,9 +3887,9 @@
         "Léa Seydoux",
         "Niels Schneider",
         "Valérie Dréville",
-        "Lilith  Grasmug",
-        "Radu  Jude",
-        "Shanti  Masud"
+        "Lilith Grasmug",
+        "Radu Jude",
+        "Shanti Masud"
       ],
       "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
       "imdbId": "tt32359586",
@@ -3624,8 +3930,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -3656,14 +3962,14 @@
       "duration": "PT1H38M00S",
       "genre": "Dram",
       "description": "PAUL RUDD’UN BİR DÜĞÜN ŞARKICISINI, NICK JONAS’IN İSE BİR ROCK YILDIZINI CANLANDIRDIĞI HAYATIMIN ŞARKISI, İZLEYİCİLERE MÜZİKLE DOLU, TEMPOLU VE ENERJİK BİR HİKÂYE SUNUYOR. Rastlantı sonucu gerçekleşen bir karşılaşmanın ardından, düğün grubu solisti Rick, eski bir pop grubu yıldızı olan Danny ile sarhoşken bir şarkı yazar. Altı ay sonra Rick, birlikte söyledikleri doğaçlama şarkının dünya çapında bir üne kavuştuğunu öğrenince şaşırıp kalır, ancak şarkıyla ilgili tüm övgüyü Danny toplayıp, şan",
-      "director": "John  Carney",
+      "director": "John Carney",
       "cast": [
         "Paul Rudd",
         "Nick Jonas",
         "Peter McDonald",
-        "Rory  Keenan",
-        "Paul  Reid",
-        "Keith  McErlean"
+        "Rory Keenan",
+        "Paul Reid",
+        "Keith McErlean"
       ],
       "rating": "4.5",
       "reviewCount": 2,
@@ -3697,11 +4003,11 @@
       "director": "Destin Daniel Cretton",
       "cast": [
         "Tom Holland",
-        "Zendaya ",
+        "Zendaya",
         "Sadie Sink",
         "Jacob Batalon",
         "Jon Bernthal",
-        "Tramell  Tillman"
+        "Tramell Tillman"
       ],
       "rating": "4.4",
       "reviewCount": 1078,
@@ -3738,8 +4044,8 @@
         "Olivia Wilde",
         "Edward Norton",
         "Penélope Cruz",
-        "Skip  Howland",
-        "Mel  Powell"
+        "Skip Howland",
+        "Mel Powell"
       ],
       "rating": "3.9",
       "reviewCount": 52,
@@ -3843,6 +4149,23 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-17"
+      ],
+      "title": "Othello",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/othello-",
+      "availability": "available",
+      "owned": false,
+      "description": "Othello Tiyatro Oyunu Shakespeare'nin ünlü trajedisi aşk ile başlar. Osmanlı'ya karşı savaşta Venedik ordusunun başında bulunan mağribi lakaplı Othello ile Venedik’in soylularından Brabantio’nun kızı Desdemona arasında başlayan aşk gizlice kıyılmış bir nikahla son bulur. İzni alınmadan gerçekleşen bu evliliğe Brabantio hiddetlenir ve nikahın geçersiz sayılmasını talep eder. Ancak Desdemona kendi iradesiyle evlendiğini beyan ederek babasının talebini geçersiz kılar. Osmanlı'nın Kı",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/othello-202495131465d1eb48411014420930f8465e7464672.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/othello-"
     },
     {
       "days": [
@@ -3987,6 +4310,23 @@
       "days": [
         "2026-09-18"
       ],
+      "title": "Şirreti Evcilleştirmek",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
+      "availability": "available",
+      "owned": false,
+      "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek"
+    },
+    {
+      "days": [
+        "2026-09-18"
+      ],
       "title": "Vortex",
       "kind": "film",
       "time": "21:00",
@@ -4040,6 +4380,23 @@
       "days": [
         "2026-09-19"
       ],
+      "title": "Şirreti Evcilleştirmek",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
+      "availability": "available",
+      "owned": false,
+      "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek"
+    },
+    {
+      "days": [
+        "2026-09-19"
+      ],
       "title": "Aşk Hikayen Düşmüş",
       "kind": "theatre",
       "time": "20:30",
@@ -4074,12 +4431,12 @@
       "description": "Kasabada bu mayıs, sanki eskiye göre daha sıcak, daha sıkıntılı. Herkes küçük dertleriyle , sürprizlere kapalı hayatlarıyla yine de huzurlu görünüyor. Ancak bu huzur, çocukluğunu geçirdiği bu kasabada bir film çekmeyi kafasına koymuş Muzaffer’in gelişiyle biraz zedelenir. Mayıs Sıkıntısı doğduğu kasabaya film çekmek üzere dönen Muzaffer'in hikayesini anlatır. Babası Emin, tarlasının yanındaki küçük bir ormanlık bölgeyi tarlasının hudutları içine katma mücadelesindedir. Dokuz yaşındaki yeğeni",
       "director": "Nuri Bilge Ceylan",
       "cast": [
-        "Mehmet Emin  Ceylan",
+        "Mehmet Emin Ceylan",
         "Muzaffer Özdemir",
         "Fatma Ceylan",
         "Mehmet Emin Toprak",
-        "Muhammed  Zımbaoğlu",
-        "Hatice  Bodur"
+        "Muhammed Zımbaoğlu",
+        "Hatice Bodur"
       ],
       "rating": "5",
       "reviewCount": 1,
@@ -4108,6 +4465,23 @@
       "days": [
         "2026-09-19"
       ],
+      "title": "Şirreti Evcilleştirmek",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
+      "availability": "available",
+      "owned": false,
+      "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek"
+    },
+    {
+      "days": [
+        "2026-09-19"
+      ],
       "title": "Mayıs Sıkıntısı",
       "kind": "film",
       "time": "21:00",
@@ -4126,12 +4500,12 @@
       "description": "Kasabada bu mayıs, sanki eskiye göre daha sıcak, daha sıkıntılı. Herkes küçük dertleriyle , sürprizlere kapalı hayatlarıyla yine de huzurlu görünüyor. Ancak bu huzur, çocukluğunu geçirdiği bu kasabada bir film çekmeyi kafasına koymuş Muzaffer’in gelişiyle biraz zedelenir. Mayıs Sıkıntısı doğduğu kasabaya film çekmek üzere dönen Muzaffer'in hikayesini anlatır. Babası Emin, tarlasının yanındaki küçük bir ormanlık bölgeyi tarlasının hudutları içine katma mücadelesindedir. Dokuz yaşındaki yeğeni",
       "director": "Nuri Bilge Ceylan",
       "cast": [
-        "Mehmet Emin  Ceylan",
+        "Mehmet Emin Ceylan",
         "Muzaffer Özdemir",
         "Fatma Ceylan",
         "Mehmet Emin Toprak",
-        "Muhammed  Zımbaoğlu",
-        "Hatice  Bodur"
+        "Muhammed Zımbaoğlu",
+        "Hatice Bodur"
       ],
       "rating": "5",
       "reviewCount": 1,
@@ -4155,6 +4529,40 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-20"
+      ],
+      "title": "Şirreti Evcilleştirmek",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
+      "availability": "available",
+      "owned": false,
+      "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek"
+    },
+    {
+      "days": [
+        "2026-09-20"
+      ],
+      "title": "Pınar Fidan Stand Up",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "1108 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne",
+      "availability": "available",
+      "owned": false,
+      "description": "Pınar Fidan Stand Up Gösterisi Bazı ailevi meseleler, kaşarlar, piyonlar, dirty talk, biraz sosyalistler, gladyo, açık ameliyat, Menemen Olayı ve Kutsi hakkındaki gösterisi ile Pınar Fidan sahnelerde.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pinar-fidan-stand-up-20253617267070cd7b86b214139ac1a41c0d33f486e.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne"
     },
     {
       "days": [
@@ -4342,6 +4750,23 @@
       "days": [
         "2026-09-21"
       ],
+      "title": "Macbeth",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu",
+      "availability": "available",
+      "owned": false,
+      "description": "Macbeth Tiyatro Oyunu Shakespeare en ünlü tragedyalarından olan Macbeth’te iktidar hırsının yıkıcılığını anlatır. Savaşta gösterdiği üstün başarıdan dolayı Kral Duncan tarafından Cawdır Beyliği ile mükafatlandırılan Macbeth karargaha dönüş yolunda Cadılarla karşılaşır. Cadılar şimdi Cawdor Beyi olduğunu sonrasında Kral olacağı kehanetini duyururlar Macbeth’e. Bu haberi hızlıca bir mektup ile lady Macbeth’e ulaştırır. Lady Macbeth kral olması konusunda cesaretlendirir. Macb",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/macbeth-moda-sahnesi-202411410643d923fcd44fac4dc98898eb737709422e.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu"
+    },
+    {
+      "days": [
+        "2026-09-21"
+      ],
       "title": "The Invite / Davet - Açık Hava Gösterimi",
       "kind": "film",
       "time": "20:30",
@@ -4375,6 +4800,23 @@
       "availability": "listed",
       "owned": false,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
+    },
+    {
+      "days": [
+        "2026-09-22"
+      ],
+      "title": "DIKŞIN: Büyük Şans",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans",
+      "availability": "available",
+      "owned": false,
+      "description": "DIKŞIN: Büyük Şans Tiyatro Oyunu Efendinin anlatısına yerleşmeye çalışan köleye efendi şöyle der: “Bana yardım etmen lazım, grup olarak oynamalıyız, en ufak, sigara kağıdı kadar bile ince bir kuşkuya mahal vermeden... Benden hiçbir şey saklamamalısın, bana her şeyi söylemelisin. Artık bana her şeyi söyleyeceğine söz verir misin, Stan?” Moda sahnesi yeni bir Koffi Kwahule metni ile seyirci karşısında. Daha Önce Fildişili yazarın, Bira Fabrikası, Arıza (Blue-s Cat) ve Ağaçların K",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diksin-buyuk-sans-202498101341861bfccbb7c7484ebb67536d75d15efc.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans"
     },
     {
       "days": [
@@ -4439,6 +4881,23 @@
     },
     {
       "days": [
+        "2026-09-22"
+      ],
+      "title": "Şebbaz",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "658 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sebbaz",
+      "availability": "available",
+      "owned": false,
+      "description": "Şebbaz Tiyatro Oyunu -“Bize Bu Oyunu Kim Oynadı?”- “Ağzımızı gazelle açtık; tozu dumana, efkârı buluta kattık!” Perdeyle hayalin, ışıkla suretin bir araya geldiği dev bir perde oyunuyla gerçek oyuncuların maharetli performanslarını sahnede ustalıkla birleştiren “Şebbaz”, karakterleri ve tasvirleriyle kökünü bu toprakların binlerce yıllık kadim geleneğinden alan cesur, masalsı ve şenlikli bir dostluk hikayesi... “Gölge sureti çağırır, hikâye ışığın koynunda ses bulur… ‘Şeb’ gece demek",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sebbaz-20259110538970b239a16834594ac02a06caf8860b8.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sebbaz"
+    },
+    {
+      "days": [
         "2026-09-23"
       ],
       "title": "Birbirimizi Hiç Göremeyecekmişiz",
@@ -4473,6 +4932,23 @@
       "days": [
         "2026-09-23"
       ],
+      "title": "Hizmetçiler",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/hizmetciler",
+      "availability": "available",
+      "owned": false,
+      "description": "Hizmetçiler Tiyatro Oyunu “Özgür Yaşa Ya Da Öl!” “Vivre Libre Ou Mourir!” Uzun yıllardır Hanımefendi’nin emrinde çalışan Solange ve Claire, yaşama tutundukları “oyunun” son dakikalarını yaşamaktadır. Taparcasına sevdikleri, saygıda kusur etmedikleri, varlıklarını borçlu oldukları Hanımefendi’yi öldürmeye karar vermişlerdir. Bir cinayetin işleneceği bu gece, dizginlenemeyen arzuların iktidarı devralışına, değişen rollerin kaosuna, aynaların kırılmasına, şiddetin salıverilmesine, ku",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hizmetciler-202542163235a68f95e8c0d4b28904ac177870d0f47.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/hizmetciler"
+    },
+    {
+      "days": [
+        "2026-09-23"
+      ],
       "title": "Protesto",
       "kind": "film",
       "time": "20:30",
@@ -4490,6 +4966,23 @@
       "duration": "PT1H35M",
       "genre": "Dram, Suç",
       "description": "Mathieu Kassovitz'in kült filmi La haine, Fransa'nın kaynayan gettolarından üç gencin 24 saat boyunca yaşadıklarını konu ediniyor. Paris’in gettolarında hararetli saatler yaşanmaktadır. Grup halinde dolaşan yerel gençlerle, çevreyi kuşatan polisler arasında nefret dolu bakışlardan oluşan bir gerilim vardır. Mahallenin gençlerinden Abdel, polis soruşturması sırasında dövüldüğü için hastanede ölüm döşeğinde yatmaktadır. Arkadaşı Vinz ise, Abdel’in ölmesi durumunda bir polis vurmaya ant içer. Protesto filmini sinemada izlemek için hemen biletini al!"
+    },
+    {
+      "days": [
+        "2026-09-23"
+      ],
+      "title": "Bengi İdil Uras ile Beng Beng Show",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "850 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bengi-idil-uras-ile-beng-beng-show",
+      "availability": "available",
+      "owned": false,
+      "description": "Bengi İdil Uras ile Beng Beng Show Bengi İdil Uras ile kahkaha dolu bir dünyaya hazır olun! Beng Beng Show”, o hep parıltılı gördüğümüz dünyanın arkasında dönen tatlı karmaşayı ve sahne tozu yutma sevdasının insanı düşürdüğü akılalmaz halleri önünüze seren dinamik bir gösteri. Bengi İdil Uras’ın bitmeyen enerjisiyle şekillenen bu şovda; bir yandan hayallerin peşinden koşarken başa gelen trajikomik manzaralara gülecek, bir yandan da \"Peki tüm bu yaşananların tam ortasına o tanıdık 'kahkül kad",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bengi-idil-uras-ile-beng-beng-show-202654151144e5260fcb553f409383bebdaf29cf6728.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bengi-idil-uras-ile-beng-beng-show"
     },
     {
       "days": [
@@ -4533,6 +5026,23 @@
       "days": [
         "2026-09-24"
       ],
+      "title": "Lazarus - Diriliş",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "776 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/lazarus-dirilis",
+      "availability": "available",
+      "owned": false,
+      "description": "LAZARUS - Diriliş Tiyatro Oyunu “Usulüne göre gömülmeyen her şey sonradan hortlar.” – Lacan Annesinin ölümüyle başlayıp yarım kalmış yasın, babasızlığın açtığı boşluğun ve suçluluk duygusunun gölgesinde yaşayan genç bir kadın… Bir gün, felç geçiren komşusuna yardım etmek isterken kendini bir hastanenin altıncı katında bulur. O andan itibaren, bilinci kapanmış hastaların arasında dolaşan, onlarla konuşan, hatta onları ölüme götüren bir refakatçiye dönüşür. Merhamet ile şiddet, sevgi ile ko",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/lazarus-dirilis-202644211815bd1b9461ede447ac90f74e2b6abd0a42.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/lazarus-dirilis"
+    },
+    {
+      "days": [
+        "2026-09-24"
+      ],
       "title": "Girl with a Pearl Earring / İnci Küpeli Kız - Açık Hava Gösterimi",
       "kind": "film",
       "time": "20:30",
@@ -4556,6 +5066,40 @@
       "days": [
         "2026-09-24"
       ],
+      "title": "Hizmetçiler",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/hizmetciler",
+      "availability": "available",
+      "owned": false,
+      "description": "Hizmetçiler Tiyatro Oyunu “Özgür Yaşa Ya Da Öl!” “Vivre Libre Ou Mourir!” Uzun yıllardır Hanımefendi’nin emrinde çalışan Solange ve Claire, yaşama tutundukları “oyunun” son dakikalarını yaşamaktadır. Taparcasına sevdikleri, saygıda kusur etmedikleri, varlıklarını borçlu oldukları Hanımefendi’yi öldürmeye karar vermişlerdir. Bir cinayetin işleneceği bu gece, dizginlenemeyen arzuların iktidarı devralışına, değişen rollerin kaosuna, aynaların kırılmasına, şiddetin salıverilmesine, ku",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hizmetciler-202542163235a68f95e8c0d4b28904ac177870d0f47.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/hizmetciler"
+    },
+    {
+      "days": [
+        "2026-09-24"
+      ],
+      "title": "Musti Kusti - Stand Up (Yeni Gösteri)",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "750 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/musti-kusti-stand-up-yeni-gosteri",
+      "availability": "available",
+      "owned": false,
+      "description": "Musti Kusti - Stand Up (Yeni Gösteri) Musti Kusti Youtube'da yayınladığı ve kısa zamanda büyük beğeni toplayan Kara Mizah isimli stand up gösterisinin ardından yeni gösterisiyle sahnede!",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/musti-kusti-stand-up-yeni-gosteri-202641202735c5ba9d166ba14d25a04fc642d8128cc0.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/musti-kusti-stand-up-yeni-gosteri"
+    },
+    {
+      "days": [
+        "2026-09-24"
+      ],
       "title": "İnci Küpeli Kız",
       "kind": "film",
       "time": "21:00",
@@ -4600,6 +5144,23 @@
       "days": [
         "2026-09-25"
       ],
+      "title": "On İkinci Ev",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "609 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/on-ikinci-ev",
+      "availability": "available",
+      "owned": false,
+      "description": "On İkinci Ev Tiyatro Oyunu “Artık kavga etmek istiyorum.” On İkinci Ev, yolculuğuna bu sözcüklerle başladı. Kadın anlatısının sınırlarını zorlayarak, otobiyografik ögelerle şekillenen oyun, hem biçim hem de içerik olarak yaşadığımız coğrafyada bir kadın olarak sesini bulmanın/duyurmanın temsilini, bir camekânın ardında yeniden inşa ediyor. Süreç Hakkında: On İkinci Ev performatif bir alanda gerçekleşen bir kadın anlatısı. Oyun, anlatıcı/oyuncu Melek Ceylan’ın, ülkemizdeki ilk Rehberli",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/on-ikinci-ev-202321816542.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/on-ikinci-ev"
+    },
+    {
+      "days": [
+        "2026-09-25"
+      ],
       "title": "Muhteşem Güzellik",
       "kind": "film",
       "time": "20:30",
@@ -4617,6 +5178,23 @@
       "duration": "PT2H21M",
       "genre": "Dram",
       "description": "Cannes Film Festivali'nde Altın Palmiye için yarışan ve Fellini'nin başyapıtı Tatlı Hayat'a benzetilen film, Avrupa Film Ödülleri'nde En İyi Film, En İyi Yönetmen, En İyi Erkek Oyuncu ve En İyi Kurgu ödüllerini kazanan \" Muhteşem Güzellik - The Great Beauty \", senenin en çok övgü alan filmlerinden biri. Büyüleyici ve görkemli atmosferiyle bir Roma yazı… İlerleyen yaşına rağmen karşı konulamaz bir cazibesi olan yakışıklı Jep Gamberdella, şehrin tadını sonuna kadar çıkarmaktadır. Şık akşam yemeklerinden çılgın partilere koşar. Kıvrak zekası ve mizahi kişiliğiyle her zaman baştan çıkarıcı ve bağımlılık yapan biri olmuştur. Aynı zamanda bir yazar olan Jep, gençliğinde ödül aldığı kitabı ile büyük bir başarı yakalar ve Roma yüksek sosyetesinde önemli bir itibar edinerek ihtişamlı bir hayat sürmeye başlar. Roma'nın en güzel manzaralı evlerinden birinde oturan Jep, terasında eğlenceli partilere ev sahipliği yapar. Takındığı alaycı tavır ile dejenere olmuş insanları ve hayal kırıklıklarını maskeleyerek dünyayı biraz daha iyi bir yer olarak görmeye çalışır. Onun için masumiyetini koruyan tek şey hala hayallerinde yaşattığı eski aşkıdır. Artık yeniden kalemi kağıdı eline almanın zamanı gelmiştir, ancak güzelliğiyle insanı etkisiz hale getiren bu göz kamaştırıcı şehirde içinde biriken derin yorgunluğun üstesinden gelebilecek midir?"
+    },
+    {
+      "days": [
+        "2026-09-25"
+      ],
+      "title": "Sevgili Arsız Ölüm Dirmit",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "942 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
+      "availability": "available",
+      "owned": false,
+      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
     },
     {
       "days": [
@@ -4644,6 +5222,23 @@
       "days": [
         "2026-09-26"
       ],
+      "title": "PERA ‘Kayıp Işığın Serüveni’",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "712 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni",
+      "availability": "available",
+      "owned": false,
+      "description": "PERA ‘Kayıp Işığın Serüveni’ Tiyatro Oyunu MÜZİKLİ•DANSLI•İNTERAKTİF ‘Çocuk Oyunu’ Işığını ve masalını kaybetmiş bir ülke… Dağın ardında beliren kocaman bir gölge… Ve bu gizemi çözmek için yola çıkan meraklı bir gezgin: Pera! Pera, kaybolan ışığın izini sürerken birbirinden renkli ve eğlenceli karakterlerle karşılaşır. Ancak bu yolculukta kısa sürede anlar ki duyduğu her söz doğru değildir ve gerçek bir kahraman, karar vermeden önce dinlemeyi öğrenmelidir. Müzik, dans, mizah",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pera-kayip-isigin-seruveni-20268291641253c26cc8a9c4918a682b360eb4dcf54.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni"
+    },
+    {
+      "days": [
+        "2026-09-26"
+      ],
       "title": "Mehmet Sindel ile \"La Grande Bellezza\" Film Okuması",
       "kind": "film",
       "time": "14:00",
@@ -4661,6 +5256,40 @@
       "days": [
         "2026-09-26"
       ],
+      "title": "PERA ‘Kayıp Işığın Serüveni’",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "712 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni",
+      "availability": "available",
+      "owned": false,
+      "description": "PERA ‘Kayıp Işığın Serüveni’ Tiyatro Oyunu MÜZİKLİ•DANSLI•İNTERAKTİF ‘Çocuk Oyunu’ Işığını ve masalını kaybetmiş bir ülke… Dağın ardında beliren kocaman bir gölge… Ve bu gizemi çözmek için yola çıkan meraklı bir gezgin: Pera! Pera, kaybolan ışığın izini sürerken birbirinden renkli ve eğlenceli karakterlerle karşılaşır. Ancak bu yolculukta kısa sürede anlar ki duyduğu her söz doğru değildir ve gerçek bir kahraman, karar vermeden önce dinlemeyi öğrenmelidir. Müzik, dans, mizah",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pera-kayip-isigin-seruveni-20268291641253c26cc8a9c4918a682b360eb4dcf54.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni"
+    },
+    {
+      "days": [
+        "2026-09-26"
+      ],
+      "title": "Sevgili Arsız Ölüm Dirmit",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "942 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
+      "availability": "available",
+      "owned": false,
+      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
+    },
+    {
+      "days": [
+        "2026-09-26"
+      ],
       "title": "Takva, 20. Yılına Özel Gösterimi",
       "kind": "film",
       "time": "18:00",
@@ -4673,7 +5302,7 @@
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/takva-20-yilina-ozel-gosterimi-2026951810138a912e95abde4caaa70bba47076a0ded.jpg",
       "duration": "PT1H36M",
       "genre": "Film Gösterimi",
-      "description": "Takva, 20. Yılına Özel Gösterimi Yeni Sinemacılar’dan Sarsıcı Bir Başyapıt: Takva, 20. Yılına Özel Gösterimiyle İstanbul ve Ankara’da! Aramızdan ayrılan kıymetli yönetmen Özer Kızıltan’ın imzasını taşıyan Takva; Erkan Can ve Güven Kıraç’ın hafızalara kazınan oyunculuklarıyla inanç, iktidar ve modern dünya çatışmasını Türk sinemasının en cesur anlatılarından biriyle perdeye taşımıştı. 2006 yapımı bu sarsıcı film, 20. yılına özel gösterimiyle ve değerli yönetmeni Özer Kızıltan’ın anısına Kadıköy Sineması’nın ve Kült Kavaklıdere’nin tarihi atmosferinde yeniden seyircisiyle buluşuyor! İstanbul gösteriminin ardından yönetmen Aydın Bulut’un katılımıyla Özer Kızıltan’ın sinema mirasına, filmin felsefi derinliğine ve bıraktığı güçlü ize odaklanan özel bir söyleşi ve anma programı düzenlenecektir. Yönetmen: Özer Kızıltan Senaryo: Önder Çakar Filmin Türü: Dram Süre: 96 dakika"
+      "description": "Takva, 20. Yılına Özel Gösterimi Yeni Sinemacılar’dan Sarsıcı Bir Başyapıt: Takva, 20. Yılına Özel Gösterimiyle İstanbul ve Ankara’da! Aramızdan ayrılan kıymetli yönetmen Özer Kızıltan’ın imzasını taşıyan Takva; Erkan Can ve Güven Kıraç’ın hafızalara kazınan oyunculuklarıyla inanç, iktidar ve modern dünya çatışmasını Türk sinemasının en cesur anlatılarından biriyle perdeye taşımıştı. 2006 yapımı bu sarsıcı film, 20. yılına özel gösterimiyle ve değerli yönetmeni Özer Kızıltan’ın anısına Kadıköy Sineması’nın ve Kült Kavaklıdere’nin tarihi atmosferinde yeniden seyircisiyle buluşuyor! İstanbul gösteriminin ardından yönetmen Aydın Bulut’un katılımıyla Özer Kızıltan’ın sinema mirasına, filmin felsefi derinliğine ve bıraktığı güçlü ize odaklanan özel bir söyleşi ve anma programı düzenlenecektir. Yönetmen: Özer Kızıltan Senaryo: Önder Çakar Filmin Türü: Dram Süre: 96 dakika"
     },
     {
       "days": [
@@ -4701,6 +5330,40 @@
       "days": [
         "2026-09-26"
       ],
+      "title": "Sevgili Arsız Ölüm Dirmit",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "942 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
+      "availability": "available",
+      "owned": false,
+      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
+    },
+    {
+      "days": [
+        "2026-09-26"
+      ],
+      "title": "Şafak Kaç",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "840 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/safak-kac",
+      "availability": "available",
+      "owned": false,
+      "description": "Şafak Kaç Tiyatro Oyunu Saftirik bir kocası olan Gülpembe depresyondadır ve doktorunun tavsiyesi ile uyku ilacı kullanmaya başlamıştır. Şile’de mahsur kalan Şafak Kaç, Gülpembe’nin evine yardım istemeye girer ilaçlı sudan içerek uyuya kalır. Gülpembe de bir köşede uyuyup kalmıştır. Eşine sürpriz yapmak üzere yazlığa erken dönen Nizamettin Yumuşak’ın eşinin başkasıyla uyuduğunu görmesiyle başlayan komik olaylar, Sevda’nın şöhret olma tutkusu ile sahneye girişleri ve Nizamettin'in kendini p",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/safak-kac-2026581018312348a804ccde48b6aa5fe493d8475c55.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/safak-kac"
+    },
+    {
+      "days": [
+        "2026-09-26"
+      ],
       "title": "Kızıl Çöl",
       "kind": "film",
       "time": "21:00",
@@ -4718,6 +5381,40 @@
       "duration": "PT1H57M",
       "genre": "Dram",
       "description": "Soğuk, yağmur ve sis, Ravenna'daki bir fabrikayı çevrelemiştir. Fabrika atıkları çevredeki gölleri kirletmektedir. Fabrikanın müdürü Ugo'nun karısı, ev kadını Guiliana psikolojik olarak rahatsızdır, ancak rahatsızlığını kocasından elinden geldiğince saklamaktadır. Guiliana Patagonya'ya gitmekte olan bir mühendis olan Zeller ile tanışır. Birlikte seksi oyunlarıyla dolu bir akşam yemeğine katılırlar; ardından Ugo iş için şehir dışındayken Guiliana oğlunun çocuk felcine yakalandığından şüphelenir. Ancak oğlunun hastalığı uydurduğunu fark edince, kimsenin ona ihtiyacı olmadığına dair paniğe kapılarak Zeller'a gider. Kızıl Çöl filmi için hemen sinema biletinizi alın!"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "80 Günde Dünya Turu",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "784 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
+      "availability": "available",
+      "owned": false,
+      "description": "80 Günde Dünya Turu Tiyatro Oyunu Phileas Fogg dünya turunu tamamlayan kişinin çok önemli bir bilgi öğreneceğini bilir.Bir gün bu bilgiyi öğrenmek için uşağı Passeportaut ile dünya turuna çıkar. Ancak Dedektif Fix soyulan bankanın soyguncusunun Bay Fogg olduğunu düşünür ve peşine düşer. Yolculuk sırasında türlü aksiliklere göğüs geren Fogg ve Passeportaut , hindistanda bir kadını kurtarıp yolculuklarına devam ederler.Trenler, gemiler, fil yolculuğundan bir çok ü",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "80 Günde Dünya Turu",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "784 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
+      "availability": "available",
+      "owned": false,
+      "description": "80 Günde Dünya Turu Tiyatro Oyunu Phileas Fogg dünya turunu tamamlayan kişinin çok önemli bir bilgi öğreneceğini bilir.Bir gün bu bilgiyi öğrenmek için uşağı Passeportaut ile dünya turuna çıkar. Ancak Dedektif Fix soyulan bankanın soyguncusunun Bay Fogg olduğunu düşünür ve peşine düşer. Yolculuk sırasında türlü aksiliklere göğüs geren Fogg ve Passeportaut , hindistanda bir kadını kurtarıp yolculuklarına devam ederler.Trenler, gemiler, fil yolculuğundan bir çok ü",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu"
     },
     {
       "days": [
@@ -4755,6 +5452,23 @@
       "days": [
         "2026-09-27"
       ],
+      "title": "Elma Labrador Çimen",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "997 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
+      "availability": "available",
+      "owned": false,
+      "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
       "title": "Issız Adam",
       "kind": "film",
       "time": "17:00",
@@ -4772,6 +5486,23 @@
       "duration": "PT1H53M",
       "genre": "Dram, Romantik",
       "description": "Çağan Irmak'ın yönettiği Issız Adam, aşk ve yalnızlık arasında sıkışıp kalan iki insanın dokunaklı hikayesini ele alıyor. Film, gurme seviyesinde yemek kültürü olan ve kendi restoranının sahibi şef Alper (Cemal Hünal) ile başlıyor. Lüks bir hayat yaşayan, işinde başarılı ama özel hayatında düzensiz olan Alper'in karşısına, Taksim'de çocuk kostümleri tasarlayıp diken mütevazı Ada (Melis Birkan) çıkar. Eski bir kitabı bulmak için aynı kitapçıya girmeleriyle başlayan tesadüfi ilişkileri, derinleşen duygular ve hayatın gerçekleriyle sınanır. İlişkilerinde görünürde bir sorun olmamasına rağmen, Alper'in yalnızlık arayışı ve toplumla bağ kurmaktan kaçınması, aşkın ve ayrılığın iz bırakan yanlarını gözler önüne sererek ilişkinin sonunu getirir."
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Elma Labrador Çimen",
+      "kind": "theatre",
+      "time": "19:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "997 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
+      "availability": "available",
+      "owned": false,
+      "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen"
     },
     {
       "days": [
@@ -4803,6 +5534,23 @@
       "days": [
         "2026-09-27"
       ],
+      "title": "Serdar Vatansever - İyi Gelecek",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1000 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali",
+      "availability": "available",
+      "owned": false,
+      "description": "Serdar Vatansever - İyi Gelecek Gösterisi Uzman Klinik Psikolog Serdar Vatansever, psikoloji bilimini akademik derinlik ve yaratıcı uygulama ile birleştiren, alanında tanınmış bir uzmandır. Hem klinik çalışmaları hem de eğitimcilik kimliğiyle birey aile ve sporcu psikolojisi üzerine odaklanmaktadır. Serdar Vatansever bu etkinlikte psikolojinin yalnızca teorik boyutuna değil, gündelik hayatta ve performans alanlarında nasıl karşılık bulduğuna da odaklanılıyor. Ruh sağlığına dair farkındalı",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serdar-vatansever-insanlik-hali-20268201624493d57bf6f144403f90cba72a554b6456.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
       "title": "Serüven",
       "kind": "film",
       "time": "20:30",
@@ -4820,6 +5568,23 @@
       "duration": "PT2H23M",
       "genre": "Dram, Romantik, Gizem",
       "description": "Anna, sevgilisi Sandro ve en yakın arkadaşı Claudia'nın da dahil olduğu bir grupla beraber bir yat gezisine çıkar. Yat Akdenize doğru açılırken, Anna sevgilisine karşı hissettiği duygularını sorgulamaya başlar. Yat bir adaya yaklaştıktan kısa bir süre sonra Anna gizemli bir şekilde kaybolur. Anna'yı arayamaya başlayan Sandro ve Claudia'nın arasında ise bir aşk başlar. Çok az dialog içeren film, gücünü yönetmenin hikayeyi anlatış tarzından ve filmdeki gizemi sürekli korumasından alıyor. Film bu sayede verdiği aşk hikayesinin yanı sıra gerilimi de koruyup tansiyonu arttırıyor. Michelangelo Antonioni'nin en yetkin filmlerinden olan L'Avventura, Akdeniz'in muhteşem güzelliğini de siyah beyaz estetikle bizlere verir. Serüven filmi için hemen sinema biletinizi alın!"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Şahane Pazar Sahnede",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "1250 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sahane-pazar-sahnede",
+      "availability": "available",
+      "owned": false,
+      "description": "Şahane Pazar Sahnede Tiyatro Oyunu Tiyatro sahnelerinin ve televizyon programlarının unutulmaz isimleri Süheyl ve Behzat Uygur, efsane programları Şahane Pazar’ı tiyatro sahnesine taşıyor. Gösteride, bir döneme damga vuran Belediye Çukuru, Bardak Oyunu ve Balon Oyunu gibi unutulmaz yarışmalar da sahneye özel yeni kurgularıyla yeniden hayat bulacak. Müzik, komedi, yarışmalar ve dans performanslarını bir araya getiren gösteri, Şahane Pazar’ın 25 yıl sonra bile özlenen ruhunu, günümüz sahne t",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sahane-pazar-sahnede-2026831103636b0b51ca5446e4f9aba147d1142698401.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sahane-pazar-sahnede"
     },
     {
       "days": [
@@ -4907,6 +5672,23 @@
       "days": [
         "2026-09-28"
       ],
+      "title": "Çok Küçük Bir İhtimalin Hikayesi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Sahne",
+      "area": "Istanbul",
+      "price": "1 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi",
+      "availability": "available",
+      "owned": false,
+      "description": "Çok Küçük Bir İhtimalin Hikayesi Tiyatro Oyunu Tek Perde Küçük bir kasabada yaşayan Kenneth yalnız bir adamdır. Yıllardır çalıştığı kitapçının kapanmasıyla işsiz kalır. Yeni bir iş arayışı, karşısına çıkan insanlar, kapalı ve rutin hayatını sarsar ve .onu geçmişiyle yüzleşmeye iter. Kenneth artık hayatını ve kendisiyle kurduğu ilişkiyi kökten değiştirecek bir dönüşümün eşiğindedir. Fakat en iyi dostu Bert ile ilgili şaşırtıcı gerçek karşısında ne yapacağını bilemez. Eboni Booth’ un yazd",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cok-kucuk-bir-ihtimalin-hikayesi-2026469125d166a5d22ba34eb99050e628cdd4bf71.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi"
+    },
+    {
+      "days": [
+        "2026-09-28"
+      ],
       "title": "Arzunun Şu Karanlık Nesnesi",
       "kind": "film",
       "time": "21:00",
@@ -4946,6 +5728,23 @@
       "imdbUrl": "https://www.imdb.com/title/tt0249462/",
       "imdbRating": "7.7",
       "imdbVotes": 153685
+    },
+    {
+      "days": [
+        "2026-09-29"
+      ],
+      "title": "Diyojen Podcast",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "400 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/diyojen-podcast-etkinligi",
+      "availability": "available",
+      "owned": false,
+      "description": "Diyojen Podcast Etkinliği Diyojen Podcast şehrinize geliyor! Sevdiğiniz Diyojen, şimdi canlı olarak sahnede. Sürpriz konuklar, interaktif sohbetler ve bol kahkahayla her gösteri birbirinden farklı bir deneyim sunacak. Biletler tükenmeden yerlerinizi almayı unutmayın!",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diyojen-podcast-2026725130477e8b1f077d544aedbaebb8e112a0259e.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/diyojen-podcast-etkinligi"
     },
     {
       "days": [
@@ -4992,6 +5791,89 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Cinema screenings rebuilt from Biletinial cinemaPartitions/tarihler/salonlar/seanslar and seancesData payloads for the three preferred venues. Same-day sessions are consolidated into times[] with time retained as a comma-separated UI fallback. Sold-out Yelken sessions omitted unless owned. Metadata and IMDb matches preserved.",
-  "lastUpdated": "2026-09-10"
+  "research_note": "Refreshed six preferred Biletinial venue tabs; detail-page tour schedules filtered to those venues only. Included only in-window InStock sessions with source-backed prices and direct ticket URLs.",
+  "lastUpdated": "2026-09-10",
+  "sources": [
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Moda Sahnesi",
+      "locationId": "15880",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
+      "checkedAt": "2026-09-10",
+      "listedItems": 33,
+      "listedEventLinks": 42
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Bostancı Gösteri Merkezi",
+      "locationId": "17011",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
+      "checkedAt": "2026-09-10",
+      "listedItems": 11,
+      "listedEventLinks": 19
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Akla Kara Tiyatro",
+      "locationId": "15863",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
+      "checkedAt": "2026-09-10",
+      "listedItems": 2,
+      "listedEventLinks": 11
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Caddebostan Kültür Merkezi",
+      "locationId": "15738",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
+      "checkedAt": "2026-09-10",
+      "listedItems": 25,
+      "listedEventLinks": 33
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Özgürlük Parkı",
+      "locationId": "15866",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15866",
+      "checkedAt": "2026-09-10",
+      "listedItems": 2,
+      "listedEventLinks": 10
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "venue_inventory",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "locationId": "18051",
+      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
+      "checkedAt": "2026-09-10",
+      "listedItems": 48,
+      "listedEventLinks": 52
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "cinema_inventory",
+      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
+      "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "cinema_inventory",
+      "venue": "Kadıköy Sineması",
+      "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "provider": "Biletinial",
+      "kind": "cinema_inventory",
+      "venue": "Caddebostan CKM Sineması",
+      "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
+      "checkedAt": "2026-09-10"
+    }
+  ]
 }
