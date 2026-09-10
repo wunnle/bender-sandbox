@@ -37,6 +37,13 @@ export type Ev = {
   owned?: boolean;
   /** Poster from the source listing. Present on roughly half the payload. */
   image?: string;
+  /** IMDb's own poster — much higher resolution than the seller's. */
+  imdbImage?: string;
+  imdbTitle?: string;
+  imdbYear?: number;
+  imdbType?: string;
+  /** The original local-language title, once `title` holds the IMDb one. */
+  sourceTitle?: string;
   ageLimit?: string;
   /** Per-venue, e.g. "Türkçe Altyazılı", "3D / Türkçe Dublaj". */
   formats?: string[];
@@ -53,6 +60,14 @@ type Payload = {
   };
   events: Ev[];
   cinemas: { name: string; area: string; films: string; url?: string }[];
+  /** Per-venue provenance: where each inventory was read from, and when. */
+  sources?: {
+    provider: string;
+    kind: string;
+    venue?: string;
+    url?: string;
+    checkedAt?: string;
+  }[];
   omitted_records?: number;
   research_note?: string;
 };
@@ -144,6 +159,8 @@ export const ALL_DAYS = [...DAYS, ...EXTRA_DAYS].sort();
 
 export const EVENTS: Ev[] = data.events;
 export const CINEMAS = data.cinemas ?? [];
+
+export const SOURCES = data.sources ?? [];
 
 export const META = {
   city: data.city,

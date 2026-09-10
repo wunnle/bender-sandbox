@@ -9,6 +9,7 @@ import {
   CINEMAS,
   EVENTS,
   META,
+  SOURCES,
   type Category,
   type Ev,
 } from "./data";
@@ -173,9 +174,16 @@ function Synopsis({ text }: { text: string }) {
 }
 
 /** Detail view for one title on one day: metadata, then every venue showing it. */
+/**
+ * IMDb serves the full-resolution master by default — 3158x5000, 1.3MB. The
+ * `UX300` segment asks their CDN for a 300px-wide copy instead, about 24KB.
+ */
+const imdbThumb = (url: string) => url.replace(/\._V1_.*?\.jpg$/, "._V1_QL75_UX300_.jpg");
+
 function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }) {
   const e = group[0];
   const facts = [e.genre, humanDuration(e.duration), e.ageLimit].filter(Boolean) as string[];
+  const poster = e.imdbImage ? imdbThumb(e.imdbImage) : e.image;
 
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && onClose();
@@ -196,12 +204,12 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
         className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-white/10 bg-neutral-900 p-5 shadow-2xl [scrollbar-width:thin]"
       >
         <div className="flex gap-4">
-          {e.image && (
+          {poster && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              src={e.image}
+              src={poster}
               alt=""
-              className="h-36 w-27 shrink-0 rounded-xl object-cover ring-1 ring-white/10"
+              className="h-36 w-24 shrink-0 rounded-xl object-cover ring-1 ring-white/10"
             />
           )}
           <div className="min-w-0 flex-1">
@@ -246,20 +254,18 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
           </dl>
         )}
 
-        <h3 className="mt-5 text-xs font-medium uppercase tracking-widest text-neutral-500">
-          {group.length > 1 ? `Where & when · ${group.length} venues` : "Where & when"}
-        </h3>
-        <ul className="mt-2 space-y-2">
+        {/* Each venue is one clickable card — the whole thing is the ticket link */}
+        <ul className="mt-5 space-y-2">
           {group.map((o, i) => {
             const times = sessionTimes(o);
             const price = realPrice(o.price);
-            return (
-              <li
-                key={`${o.venue}-${i}`}
-                className={`rounded-xl p-3 ${
-                  o.owned ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/40" : "bg-white/[0.04]"
-                }`}
-              >
+            const cls = `block rounded-xl p-3 transition ${
+              o.owned
+                ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/40"
+                : "bg-white/[0.04]"
+            } ${o.url ? "cursor-pointer hover:bg-white/[0.1]" : ""}`;
+            const body = (
+              <>
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="text-sm font-medium text-white">{o.venue}</span>
                   {price && <span className="shrink-0 text-xs text-neutral-400">{price}</span>}
@@ -280,28 +286,30 @@ function OptionsDialog({ group, onClose }: { group: Group; onClose: () => void }
                 {o.formats?.length ? (
                   <p className="mt-2 text-xs text-neutral-400">{o.formats.join(" · ")}</p>
                 ) : null}
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs">
-                  {o.owned && (
-                    <span className="font-semibold uppercase tracking-wide text-emerald-400">
-                      Booked
-                    </span>
-                  )}
-                  {o.availability && o.availability !== "available" && (
-                    <span className="text-rose-300/80">{o.availability.replace(/_/g, " ")}</span>
-                  )}
-                  {o.url ? (
-                    <a
-                      href={o.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-medium text-white underline underline-offset-4 hover:text-neutral-300"
-                    >
-                      Tickets
-                    </a>
-                  ) : (
-                    <span className="text-neutral-600">no ticket link</span>
-                  )}
-                </div>
+                {(o.owned || (o.availability && o.availability !== "available") || !o.url) && (
+                  <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs">
+                    {o.owned && (
+                      <span className="font-semibold uppercase tracking-wide text-emerald-400">
+                        Booked
+                      </span>
+                    )}
+                    {o.availability && o.availability !== "available" && (
+                      <span className="text-rose-300/80">{o.availability.replace(/_/g, " ")}</span>
+                    )}
+                    {!o.url && <span className="text-neutral-600">no ticket link</span>}
+                  </div>
+                )}
+              </>
+            );
+            return (
+              <li key={`${o.venue}-${i}`}>
+                {o.url ? (
+                  <a href={o.url} target="_blank" rel="noreferrer" className={cls}>
+                    {body}
+                  </a>
+                ) : (
+                  <div className={cls}>{body}</div>
+                )}
               </li>
             );
           })}
@@ -701,6 +709,40 @@ export default function IstanbulPage() {
             marketplace search links are never substituted for a real listing.
           </p>
           {META.researchNote && <p>{META.researchNote}</p>}
+
+          {SOURCES.length > 0 && (
+            <div className="sm:col-span-2">
+              <h2 className="text-xs font-medium uppercase tracking-widest text-neutral-500">
+                Sources
+              </h2>
+              <p className="mt-1">
+                {[...new Set(SOURCES.map((s) => s.provider))].join(", ")} · {SOURCES.length}{" "}
+                venue inventories
+                {SOURCES[0]?.checkedAt && <> · checked {fmt(SOURCES[0].checkedAt, {
+                  day: "numeric",
+                  month: "short",
+                })}</>}
+              </p>
+              <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                {SOURCES.map((s, i) => (
+                  <li key={`${s.venue}-${i}`}>
+                    {s.url ? (
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-4 transition hover:text-neutral-300"
+                      >
+                        {s.venue ?? s.provider}
+                      </a>
+                    ) : (
+                      (s.venue ?? s.provider)
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </footer>
       </div>
     </main>
