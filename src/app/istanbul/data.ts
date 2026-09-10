@@ -29,6 +29,10 @@ export type Ev = {
   rating?: string;
   reviewCount?: number;
   trailer?: string;
+  imdbId?: string;
+  imdbUrl?: string;
+  imdbRating?: string;
+  imdbVotes?: number;
   availability?: string;
   owned?: boolean;
   /** Poster from the source listing. Present on roughly half the payload. */

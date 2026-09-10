@@ -171,7 +171,11 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
         .filter(Boolean)
         .join(" ")
     : undefined;
-  const details = [e.genre, durationLabel, e.rating ? `★ ${e.rating}` : undefined].filter(Boolean);
+  const details = [
+    e.genre,
+    durationLabel,
+    e.imdbRating ? `IMDb ${e.imdbRating}` : e.rating ? `★ ${e.rating}` : undefined,
+  ].filter(Boolean);
 
   const art = e.image ? (
     // eslint-disable-next-line @next/next/no-img-element
