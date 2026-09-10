@@ -348,17 +348,8 @@ function TileBody({ e, extra = 0 }: { e: Ev; extra?: number }) {
   const times = sessionTimes(e);
   const price = realPrice(e.price);
   const meta = CATEGORY_META[cat];
-  const duration = e.duration?.match(/^PT(?:(\d+)H)?(?:(\d+)M)?/)?.slice(1);
-  const durationLabel = duration
-    ? [duration[0] ? `${duration[0]}h` : "", duration[1] ? `${duration[1]}m` : ""]
-        .filter(Boolean)
-        .join(" ")
-    : undefined;
-  const details = [
-    e.genre,
-    durationLabel,
-    e.imdbRating ? `IMDb ${e.imdbRating}` : e.rating ? `★ ${e.rating}` : undefined,
-  ].filter(Boolean);
+  // No score here — it has its own chip on the times row, above.
+  const details = [e.genre, humanDuration(e.duration)].filter(Boolean);
 
   const art = e.image ? (
     // eslint-disable-next-line @next/next/no-img-element
