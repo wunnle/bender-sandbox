@@ -2,8 +2,8 @@
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
   "range": {
-    "start": "2026-09-10",
-    "end": "2026-09-29"
+    "start": "2026-09-11",
+    "end": "2026-09-30"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -13,690 +13,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Minions & Monsters",
-      "kind": "film",
-      "time": "12:45",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/minyonlar-ve-canavarlar",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/minyonlar-ve-canavarlar-2026611164351198a2b05ad441c893d026f6c6a123dc.jpg",
-      "ageLimit": "6+",
-      "formats": [
-        "3D / Türkçe Dublaj"
-      ],
-      "duration": "PT1H30M00S",
-      "genre": "Macera",
-      "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre Coffin",
-      "rating": "4.5",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
-      "imdbId": "tt32890033",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "imdbRating": "6.3",
-      "imdbVotes": 31086,
-      "imdbTitle": "Minions & Monsters",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYzBjMDg4YjctYzg3ZS00ZDFmLWI1YjctM2RkZGVjZWEyYWQ0XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Minyonlar ve Canavarlar"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "The Invite",
-      "kind": "film",
-      "time": "12:50, 16:15",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "12:50",
-        "16:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H47M00S",
-      "genre": "Dram",
-      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
-      "director": "Olivia Wilde",
-      "cast": [
-        "Seth Rogen",
-        "Olivia Wilde",
-        "Edward Norton",
-        "Penélope Cruz",
-        "Skip Howland",
-        "Mel Powell"
-      ],
-      "rating": "3.9",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8",
-      "imdbId": "tt14173636",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "imdbRating": "7.5",
-      "imdbVotes": 63949,
-      "imdbTitle": "The Invite",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Davet"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Harry Potter and the Sorcerer's Stone",
-      "kind": "film",
-      "time": "13:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H32M00S",
-      "genre": "Macera",
-      "description": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sor",
-      "director": "Chris Columbus",
-      "cast": [
-        "Rupert Grint",
-        "Emma Watson",
-        "Richard Harris",
-        "Tom Felton",
-        "Alan Rickman",
-        "Robbie Coltrane"
-      ],
-      "rating": "4.7",
-      "reviewCount": 24,
-      "trailer": "https://www.youtube.com/watch?v=-j45eNLdIBQ",
-      "imdbId": "tt0241527",
-      "imdbUrl": "https://www.imdb.com/title/tt0241527/",
-      "imdbRating": "7.7",
-      "imdbVotes": 965808,
-      "imdbTitle": "Harry Potter and the Sorcerer's Stone",
-      "imdbYear": 2001,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Harry Potter ve Felsefe Taşı"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Harry Potter and the Sorcerer's Stone",
-      "kind": "film",
-      "time": "13:00, 17:15",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/harry-potter-ve-felsefe-tasi",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "13:00",
-        "17:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/harry-potter-ve-felsefe-tasi-20268211136354f42d1d06b97484f8a55537dd20f1a87.png",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H32M00S",
-      "genre": "Macera",
-      "description": "Harry, 11 yaşında Hogwarts'a kabul edilir ve yasaklı koridorda Felsefe Taşı’nı keşfeder. Voldemort da taşı ararken, Harry intikam almak ister. Ailesini küçük yaşta kaybeden Harry Potter, sıradan ve sevgisiz bir hayat sürerken 11. yaş gününde bir büyücü olduğunu öğrenir. Hogwarts Cadılık ve Büyücülük Okulu’na kabul edilen Harry, burada Ron Weasley ve Hermione Granger ile yakın dostluklar kurar. Okulda geçirdiği ilk yılda, büyücülük dünyasını tehdit eden karanlık güçlerle bağlantılı gizemli Sor",
-      "director": "Chris Columbus",
-      "cast": [
-        "Rupert Grint",
-        "Emma Watson",
-        "Richard Harris",
-        "Tom Felton",
-        "Alan Rickman",
-        "Robbie Coltrane"
-      ],
-      "rating": "4.7",
-      "reviewCount": 24,
-      "trailer": "https://www.youtube.com/watch?v=-j45eNLdIBQ",
-      "imdbId": "tt0241527",
-      "imdbUrl": "https://www.imdb.com/title/tt0241527/",
-      "imdbRating": "7.7",
-      "imdbVotes": 965808,
-      "imdbTitle": "Harry Potter and the Sorcerer's Stone",
-      "imdbYear": 2001,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Harry Potter ve Felsefe Taşı"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Salvation",
-      "kind": "film",
-      "time": "13:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kurtulus",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kurtulus-2026321517346ceb80e60f5e4eb6a849fe0277d18031.png",
-      "ageLimit": "18+",
-      "formats": [
-        "Türkçe"
-      ],
-      "duration": "PT1H57M00S",
-      "genre": "Dram",
-      "description": "Kurtuluş filmi, yıllar önce terk etmek zorunda kaldıkları köylerine geri dönen Bezariler ile bölgede hakimiyet kuran korucu Hazeran aşireti arasındaki toprak anlaşmazlığını ve tırmanan iktidar mücadelesini konu alıyor.",
-      "director": "Emin Alper",
-      "cast": [
-        "Caner Cindoruk",
-        "Berkay Ateş",
-        "Feyyaz Duman",
-        "Naz Göktan",
-        "Özlem Taş",
-        "Mehmet Selim Akgül"
-      ],
-      "rating": "4.5",
-      "reviewCount": 284,
-      "trailer": "https://www.youtube.com/watch?v=GWxm5QJERn4",
-      "imdbId": "tt36472181",
-      "imdbUrl": "https://www.imdb.com/title/tt36472181/",
-      "imdbRating": "6.9",
-      "imdbVotes": 725,
-      "imdbTitle": "Salvation",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNDEwZTFkY2MtOTY2ZS00Zjc5LWE4OGMtYjgxZDk2ZTU0OGJkXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Kurtuluş"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "The Invite",
-      "kind": "film",
-      "time": "13:30, 16:00, 18:30, 21:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "13:30",
-        "16:00",
-        "18:30",
-        "21:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H47M00S",
-      "genre": "Dram",
-      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
-      "director": "Olivia Wilde",
-      "cast": [
-        "Seth Rogen",
-        "Olivia Wilde",
-        "Edward Norton",
-        "Penélope Cruz",
-        "Skip Howland",
-        "Mel Powell"
-      ],
-      "rating": "3.9",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8",
-      "imdbId": "tt14173636",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "imdbRating": "7.5",
-      "imdbVotes": 63949,
-      "imdbTitle": "The Invite",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Davet"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "La La Land",
-      "kind": "film",
-      "time": "14:50, 20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "14:50",
-        "20:30"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H6M00S",
-      "genre": "Dram",
-      "description": "Aşıklar Şehri, her şeyin başladığı Los Angeles'da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını b",
-      "director": "Damien Chazelle",
-      "cast": [
-        "Ryan Gosling",
-        "Emma Stone",
-        "John Legend",
-        "J.K. Simmons",
-        "Finn Wittrock",
-        "Callie Hernandez"
-      ],
-      "rating": "4.6",
-      "reviewCount": 24,
-      "trailer": "https://www.youtube.com/watch?v=SuPYUmti_qo",
-      "imdbId": "tt3783958",
-      "imdbUrl": "https://www.imdb.com/title/tt3783958/",
-      "imdbRating": "8.0",
-      "imdbVotes": 777825,
-      "imdbTitle": "La La Land",
-      "imdbYear": 2016,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMDllYjliOTUtMDJjZC00ODIzLWJmNGMtOWI2NzQxMjA2NzdlXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Aşıklar Şehri"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Spider-Man: Brand New Day",
-      "kind": "film",
-      "time": "15:00, 18:00, 21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "15:00",
-        "18:00",
-        "21:00"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png",
-      "ageLimit": "13+",
-      "formats": [
-        "3D / Türkçe Altyazılı",
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H30M00S",
-      "genre": "Aksiyon",
-      "description": "Örümcek Adam: Yepyeni Bir Gün, kendini sevdiklerinin hafızasından gönüllü olarak silmek zorunda kalan Peter'ın, artık kimsenin gerçek kimliğini bilmediği New York sokaklarında tek başına suçla savaşırken, yaşamaya başladığı fiziksel değişimle boğuşmasını anlatıyor. Sevdiklerinin hafızasından kendini gönüllü olarak silen Peter, artık tamamen yalnız yaşayan bir yetişkin olarak, adını bile bilmeyen bir New York sokaklarında suçla savaşmaktadır. Kendisini tamamen şehrini korumaya adamış ‘tam zama",
-      "director": "Destin Daniel Cretton",
-      "cast": [
-        "Tom Holland",
-        "Zendaya",
-        "Sadie Sink",
-        "Jacob Batalon",
-        "Jon Bernthal",
-        "Tramell Tillman"
-      ],
-      "rating": "4.4",
-      "reviewCount": 1078,
-      "trailer": "https://www.youtube.com/watch?v=FdThKhBJNZY",
-      "imdbId": "tt22084616",
-      "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-      "imdbRating": "8.0",
-      "imdbVotes": 291673,
-      "imdbTitle": "Spider-Man: Brand New Day",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Örümcek-Adam: Yepyeni Bir Gün"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Pressure",
-      "kind": "film",
-      "time": "16:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/pressure",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png",
-      "ageLimit": "13+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H40M00S",
-      "genre": "Dram",
-      "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
-      "director": "Anthony Maras",
-      "cast": [
-        "Andrew Scott",
-        "Brendan Fraser",
-        "Kerry Condon",
-        "Chris Messina",
-        "Damian Lewis",
-        "Tamsin Topolski"
-      ],
-      "rating": "4.2",
-      "reviewCount": 4,
-      "trailer": "https://www.youtube.com/watch?v=_EGyIsEIplM",
-      "imdbId": "tt32547691",
-      "imdbUrl": "https://www.imdb.com/title/tt32547691/",
-      "imdbRating": "7.3",
-      "imdbVotes": 26114,
-      "imdbTitle": "Pressure",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjE2YjdkNDctMDg1MS00MjBjLWIyZjEtZWM1ZjczNTAzZGEyXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Fırtınadan Önce"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "The Odyssey",
-      "kind": "film",
-      "time": "16:30, 20:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "16:30",
-        "20:00"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H52M00S",
-      "genre": "Aksiyon",
-      "description": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor. Odyssey filmini izlemek için hemen sinema biletinizi alın!",
-      "director": "Christopher Nolan",
-      "cast": [
-        "Matt Damon",
-        "Tom Holland",
-        "Anne Hathaway",
-        "Robert Pattinson",
-        "Lupita Nyong'o",
-        "Charlize Theron"
-      ],
-      "rating": "4.7",
-      "reviewCount": 862,
-      "trailer": "https://www.youtube.com/watch?v=JrvTC4OyQjo",
-      "imdbId": "tt33764258",
-      "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-      "imdbRating": "8.4",
-      "imdbVotes": 483163,
-      "imdbTitle": "The Odyssey",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Odyssey"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "La La Land",
-      "kind": "film",
-      "time": "18:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/asiklar-sehri",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/asiklar-sehri-201712094112.jpg",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H6M00S",
-      "genre": "Dram",
-      "description": "Aşıklar Şehri, her şeyin başladığı Los Angeles'da bir otobanda başlıyor. Trafiğin sıkışık olduğu bir gün, kibirli bir korna sonucunda, hayatlarında yön bulmaya çalışan Sebastian ve Mia tanışıyor. İkisi de imkânsıza yakın olan hayallerine odaklanmışlardır. Sebastian 21. yüzyılda insanların geleneksel jazz müziğini umursamasını sağlamaya çalışmakta, Mia ise sadece kesintisiz bir oyuncu seçmesinde şansını denemek istemektedir. Ancak ikisi de yalnız bir şekilde bekledikleri sıçramayı yapacaklarını b",
-      "director": "Damien Chazelle",
-      "cast": [
-        "Ryan Gosling",
-        "Emma Stone",
-        "John Legend",
-        "J.K. Simmons",
-        "Finn Wittrock",
-        "Callie Hernandez"
-      ],
-      "rating": "4.6",
-      "reviewCount": 24,
-      "trailer": "https://www.youtube.com/watch?v=SuPYUmti_qo",
-      "imdbId": "tt3783958",
-      "imdbUrl": "https://www.imdb.com/title/tt3783958/",
-      "imdbRating": "8.0",
-      "imdbVotes": 777825,
-      "imdbTitle": "La La Land",
-      "imdbYear": 2016,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMDllYjliOTUtMDJjZC00ODIzLWJmNGMtOWI2NzQxMjA2NzdlXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Aşıklar Şehri"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Yabancı",
-      "kind": "theatre",
-      "time": "18:30",
-      "venue": "Moda Sahnesi",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/yabanci-1",
-      "image": "https://tiyatrolar.com.tr/files/activity/y/yabanci-1/image/yabanci-1.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "BlueScat",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Sahne",
-      "area": "Istanbul",
-      "price": "554 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/bluescat",
-      "availability": "available",
-      "owned": false,
-      "description": "BlueScat Tiyatro Oyunu Bir yüksek katlı rezidansta bir asansör. İş çıkışı dairelerinin bulunduğu kata doğru asansörle çıkmaktadırlar. Asansör ara katların birinde aniden arızalanıp durur. Birbirini hiç tanımayan bir kadın ve bir erkek kurtarılmayı beklerken birbirleriyle konuşmadan, temas etmeden, duymadan monologlarını terennüm ederler: bu terennümde korkuları, kaygıları, travmaları barınır. Bira Fabrikası, Dıkşın: Büyük Şans (Bigshoot), Ağaçların Kokusu adlı oyunları moda sahnesi’nde oyn",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bluescat-2026514917264a31e4b9100f4077b472e30d19106df8.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bluescat"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Howl's Moving Castle",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/yuruyen-sato-film",
-      "availability": "available",
-      "owned": true,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20257494112177508552cc24831890cb548d9f773e1.jpg",
-      "duration": "PT1H59M",
-      "genre": "Film Gösterimi",
-      "description": "Yürüyen Şato Film Gösterimi İlk kez vizyona girişinin 20. yılına özel olarak yeniden sinemalarda seyirciyle buluşan Hayao Miyazaki'nin başyapıtlarından Yürüyen Şato, kendisine yapılan büyüyü bozabilmek için arkadaşlarıyla birlikte yürüyen bir şatoda ikamet eden genç bir büyücü prensi bulması gereken Sophie'nin hikâyesini anlatıyor. Sıradan bir hayat süren genç kadın Sophie, kötü bir cadının yaptığı büyü sebebiyle çok yaşlı bir kadına dönüşür. Büyüyü bozması için tek umudu ise bacakları ola",
-      "imdbId": "tt0347149",
-      "imdbUrl": "https://www.imdb.com/title/tt0347149/",
-      "imdbRating": "8.2",
-      "imdbVotes": 521269,
-      "imdbTitle": "Howl's Moving Castle",
-      "imdbYear": 2004,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_.jpg",
-      "sourceTitle": "Yürüyen Şato"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Özgür Turhan - Yepyenisi",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "1120 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi",
-      "availability": "available",
-      "owned": false,
-      "description": "Özgür Turhan - Yepyenisi Stand Up Gösterisi Tek Perde Özgür Turhan, “Aynısı” ve “Yenisi” gösterilerinin ardından “Yepyenisi” ile sezona başlıyor, Türkiye turnesine hız kesmeden devam ediyor. Gösteride açılış komedyeni yer almaktadır. Küfür, argo vs içermektedir.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ozgur-turhan-yepyenisi-2026130175056babb6b85a98147238ce997fcc8092e0f.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "8½",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H18M00S",
-      "genre": "Dram",
-      "description": "Sekiz Buçuk, yeni filmine duyduğu ilgiyi kaybeden bir yönetmenin anıların ve fantazilerini konu ediyor. Guido Anselmi, merakla beklenen yeni projesini gerçekleştirmeye çalışırken yazar tıkanması tarzı bir handikapla karşılaşan ünlü bir İtalyan yönetmendir. Yeni projesi biyografik öğeler de barındıran bir bilimkurgu filmidir. Ancak yönetmen bir anda vuku bulan bu durum nedeniyle sanata ve filmine duyduğu tüm ilgisini ve heyecanını kaybetmiş durumdadır. İşi üzerinde yoğunlaşmaya ve bir şekilde bit",
-      "director": "Federico Fellini",
-      "cast": [
-        "Anouk Aimée",
-        "Sandra Milo",
-        "Claudia Cardinale",
-        "Rossella Falk",
-        "Barbara Steele",
-        "Madeleine Lebeau"
-      ],
-      "rating": "4.6",
-      "reviewCount": 5,
-      "trailer": "https://www.youtube.com/watch?v=jUc4oHnFBnc",
-      "imdbId": "tt0056801",
-      "imdbUrl": "https://www.imdb.com/title/tt0056801/",
-      "imdbRating": "8.0",
-      "imdbVotes": 133732,
-      "imdbTitle": "8½",
-      "imdbYear": 1963,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNmI4YWJlYzAtNGU5MS00NTljLThhN2QtNzMwMWM4NTA0ODNlXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "8½",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/sekiz-bucuk",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sekiz-bucuk-202571114554228c1ef47e595461994ed64678f05a755.jpg",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H18M00S",
-      "genre": "Dram",
-      "description": "Sekiz Buçuk, yeni filmine duyduğu ilgiyi kaybeden bir yönetmenin anıların ve fantazilerini konu ediyor. Guido Anselmi, merakla beklenen yeni projesini gerçekleştirmeye çalışırken yazar tıkanması tarzı bir handikapla karşılaşan ünlü bir İtalyan yönetmendir. Yeni projesi biyografik öğeler de barındıran bir bilimkurgu filmidir. Ancak yönetmen bir anda vuku bulan bu durum nedeniyle sanata ve filmine duyduğu tüm ilgisini ve heyecanını kaybetmiş durumdadır. İşi üzerinde yoğunlaşmaya ve bir şekilde bit",
-      "director": "Federico Fellini",
-      "cast": [
-        "Anouk Aimée",
-        "Sandra Milo",
-        "Claudia Cardinale",
-        "Rossella Falk",
-        "Barbara Steele",
-        "Madeleine Lebeau"
-      ],
-      "rating": "4.6",
-      "reviewCount": 5,
-      "trailer": "https://www.youtube.com/watch?v=jUc4oHnFBnc",
-      "imdbId": "tt0056801",
-      "imdbUrl": "https://www.imdb.com/title/tt0056801/",
-      "imdbRating": "8.0",
-      "imdbVotes": 133732,
-      "imdbTitle": "8½",
-      "imdbYear": 1963,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNmI4YWJlYzAtNGU5MS00NTljLThhN2QtNzMwMWM4NTA0ODNlXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Şairler Mezarlığı",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Özgürlük Parkı Amfi Tiyatro",
-      "area": "Kadıköy",
-      "price": "from ₺700",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
-      "availability": "available",
-      "owned": false,
-      "description": "Şairler Mezarlığı Tiyatro Oyunu Direklerarası Tiyatro Ödülleri 2025 \"Küçük Salon Kadın Oyuncu\" İsmet Küntay Tiyatro Ödülleri 2025 \"Yılın İsmet Küntay Özel Ödülü\" -Üstün Akmen Tiyatro Ödülleri 2025 Yılın Kadın Oyuncusu Adaylığı -Yılın Oyun Yazarı Adaylığı -Yılın Yardımcı Kadın Oyuncusu Adaylığı “Bilinen ve bilinmeyenin” sınırlarında gezinen bir hikâye: “Şairler Mezarlığı” Tiyatro ve şiir türünü buluşturan yepyeni bir deneyim, şiir ve bedenin iç içe geçtiği gerçeküstü bir dünyaya y"
-    },
-    {
-      "days": [
-        "2026-09-10"
-      ],
-      "title": "Şairler Mezarlığı",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Kadıköy Belediyesi Selamiçeşme Özgürlük Parkı",
-      "area": "Istanbul",
-      "price": "700 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi",
-      "availability": "available",
-      "owned": false,
-      "description": "Şairler Mezarlığı Tiyatro Oyunu Direklerarası Tiyatro Ödülleri 2025 \"Küçük Salon Kadın Oyuncu\" İsmet Küntay Tiyatro Ödülleri 2025 \"Yılın İsmet Küntay Özel Ödülü\" -Üstün Akmen Tiyatro Ödülleri 2025 Yılın Kadın Oyuncusu Adaylığı -Yılın Oyun Yazarı Adaylığı -Yılın Yardımcı Kadın Oyuncusu Adaylığı “Bilinen ve bilinmeyenin” sınırlarında gezinen bir hikâye: “Şairler Mezarlığı” Tiyatro ve şiir türünü buluşturan yepyeni bir deneyim, şiir ve bedenin iç içe geçtiği gerçeküstü bir dünyaya y",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sairler-mezarligi-202582311164876d0128db2a4649b0f9b90602c8ed2c.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sairler-mezarligi"
-    },
     {
       "days": [
         "2026-09-11"
@@ -6473,8 +5789,8 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Refreshed preferred Biletinial sessions; validated IMDb IDs now carry canonical IMDb title/year/type metadata where available. IMDb synopsis/runtime/credits enrichment remains omitted when IMDb endpoints do not expose reliable structured data.",
-  "lastUpdated": "2026-09-10",
+  "research_note": "Refresh 2026-09-11: six preferred Biletinial theatre venue tabs and three configured cinema venue pages returned successfully and were checked directly. Existing source-backed records were windowed and deduplicated; theatre production/session verification was limited to the returned inventory in this run. IMDb structured synopsis/runtime/credits/genres were not re-enriched where unavailable. Fastmail and Google colonist calendars checked; Google personal required interactive authorization and was unavailable. The calendar-owned The Invite / Davet screening remains visible and marked owned.",
+  "lastUpdated": "2026-09-11",
   "sources": [
     {
       "provider": "Biletinial",
@@ -6482,7 +5798,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 33,
       "listedEventLinks": 42
     },
@@ -6492,7 +5808,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 11,
       "listedEventLinks": 19
     },
@@ -6502,7 +5818,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -6512,7 +5828,7 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 25,
       "listedEventLinks": 33
     },
@@ -6522,7 +5838,7 @@
       "venue": "Özgürlük Parkı",
       "locationId": "15866",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15866",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 2,
       "listedEventLinks": 10
     },
@@ -6532,7 +5848,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-10",
+      "checkedAt": "2026-09-11",
       "listedItems": 48,
       "listedEventLinks": 52
     },
@@ -6541,21 +5857,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-10"
+      "checkedAt": "2026-09-11"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-10"
+      "checkedAt": "2026-09-11"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-10"
+      "checkedAt": "2026-09-11"
     }
   ]
 }
