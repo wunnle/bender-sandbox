@@ -175,6 +175,80 @@ export const META = {
   ],
 };
 
+/**
+ * Venue names are the only key we have — there are no ids, and they arrive with
+ * stray whitespace and Turkish casing. Lowercase the two dotted/dotless i pairs
+ * by hand (`toLowerCase` leaves `ı` alone and turns `İ` into i + combining dot),
+ * then strip the remaining diacritics through NFD.
+ */
+export const venueSlug = (name: string) =>
+  name
+    .trim()
+    .replace(/İ/g, "i")
+    .toLowerCase()
+    .replace(/ı/g, "i")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+export type Venue = {
+  slug: string;
+  name: string;
+  /** Areas seen for this venue; usually one, occasionally a vaguer duplicate. */
+  areas: string[];
+  events: Ev[];
+  days: string[];
+  source?: (typeof SOURCES)[number];
+};
+
+/**
+ * Source rows are named independently of the listings ("Caddebostan Kültür
+ * Merkezi" vs "Caddebostan CKM Sineması"), so an exact slug match is tried
+ * first and a prefix match only as a fallback.
+ */
+function sourceFor(slug: string) {
+  const named = SOURCES.filter((s) => s.venue);
+  return (
+    named.find((s) => venueSlug(s.venue!) === slug) ??
+    named.find((s) => {
+      const ss = venueSlug(s.venue!);
+      return slug.startsWith(`${ss}-`) || ss.startsWith(`${slug}-`);
+    })
+  );
+}
+
+/** One entry per distinct venue, biggest first. Slug collisions get a suffix. */
+export const VENUES: Venue[] = (() => {
+  const byName = new Map<string, Ev[]>();
+  for (const e of EVENTS) {
+    const name = e.venue?.trim();
+    if (!name) continue;
+    const list = byName.get(name);
+    if (list) list.push(e);
+    else byName.set(name, [e]);
+  }
+
+  const taken = new Set<string>();
+  const out: Venue[] = [];
+  for (const [name, events] of [...byName].sort((a, b) => b[1].length - a[1].length)) {
+    let slug = venueSlug(name) || "venue";
+    for (let n = 2; taken.has(slug); n += 1) slug = `${venueSlug(name)}-${n}`;
+    taken.add(slug);
+    out.push({
+      slug,
+      name,
+      areas: [...new Set(events.map((e) => e.area?.trim()).filter(Boolean) as string[])],
+      events,
+      days: [...new Set(events.flatMap((e) => e.days))].sort(),
+      source: sourceFor(slug),
+    });
+  }
+  return out;
+})();
+
+export const venueBySlug = (slug: string) => VENUES.find((v) => v.slug === slug);
+
 /** Categories present in this payload, in a stable order. */
 export const CATEGORIES = (Object.keys(CATEGORY_META) as Category[]).filter((c) =>
   EVENTS.some((e) => categoryOf(e.kind) === c),
