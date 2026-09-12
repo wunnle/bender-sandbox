@@ -1,9 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
+  "lastUpdated": "2026-09-12",
   "range": {
-    "start": "2026-09-11",
-    "end": "2026-09-30"
+    "start": "2026-09-12",
+    "end": "2026-10-01"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -5789,8 +5790,8 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Refresh 2026-09-11: six preferred Biletinial theatre venue tabs and three configured cinema venue pages returned successfully and were checked directly. Existing source-backed records were windowed and deduplicated; theatre production/session verification was limited to the returned inventory in this run. IMDb structured synopsis/runtime/credits/genres were not re-enriched where unavailable. Fastmail and Google colonist calendars checked; Google personal required interactive authorization and was unavailable. The calendar-owned The Invite / Davet screening remains visible and marked owned.",
-  "lastUpdated": "2026-09-11",
+  "research_note": "Refresh 2026-09-12: rolling metadata window advanced to 2026-09-12 through 2026-10-01. All six preferred Biletinial theatre-tab requests returned HTTP 500 during this run, so no new theatre or cinema inventory was fabricated; existing source-backed records were retained. IMDb structured synopsis/runtime/credits/genres were not re-enriched. Fastmail and Google colonist calendars checked; Google personal required interactive authorization and was unavailable. Calendar ownership evidence remains limited to the existing owned The Invite / Davet screening.",
+  "lastUpdated": "2026-09-12",
   "sources": [
     {
       "provider": "Biletinial",
