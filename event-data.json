@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-14",
+  "lastUpdated": "2026-09-15",
   "range": {
-    "start": "2026-09-14",
-    "end": "2026-10-03"
+    "start": "2026-09-15",
+    "end": "2026-10-04"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,564 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Sesler - Salih Bademci",
-      "kind": "theatre",
-      "time": "00:00",
-      "venue": "Kadıköy Belediyesi Selamiçeşme Özgürlük Parkı",
-      "area": "Istanbul",
-      "price": "1250 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci",
-      "availability": "available",
-      "owned": false,
-      "description": "Sesler - Salih Bademci Tiyatro Oyunu Sahnede genç bir adam, bize özel bir ilgi alanından bahsediyor: sesler. Doğrudan bizimle konuşuyor. Sanki bir sunum yapar gibi. Sahnenin merkezindeki uzun masa adeta teknik bir merkez gibi. Birtakım aletler, cihazlar, objeler, fotoğraflar, kayıtlar… Seslerin onun için nasıl bir etkiye sahip olduğundan bahsediyor. Çocukluğundan başlayarak, bu konudaki ilgisinin nasıl geliştiğini paylaşıyor bizimle. Anlattığı şeyler çok kişiselmiş gibi geliyor",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sesler-salih-bademci-202596142029591985ab928422196f27959cbddfb8a.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Minions & Monsters",
-      "kind": "film",
-      "time": "12:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/minyonlar-ve-canavarlar",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/minyonlar-ve-canavarlar-2026611164351198a2b05ad441c893d026f6c6a123dc.jpg",
-      "ageLimit": "6+",
-      "formats": [
-        "3D / Türkçe Dublaj"
-      ],
-      "duration": "PT1H30M00S",
-      "genre": "Macera",
-      "description": "Film, Minyonların Hollywood’u nasıl ele geçirdiğinin, film yıldızı olduklarının, her şeyi kaybettiklerinin, dünyaya canavarlar saldıklarının ve ardından yarattıkları kaosu durdurmak ve gezegeni kurtarmak için nasıl yeniden bir araya geldiklerinin hikâyesini anlatıyor. Minyonlar ve Canavarlar filmini sinemada izlemek için hemen biletini al!",
-      "director": "Pierre Coffin",
-      "rating": "4.5",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=y89F4cNr1BU",
-      "imdbId": "tt32890033",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "imdbRating": "6.3",
-      "imdbVotes": 31086,
-      "imdbTitle": "Minions & Monsters",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYzBjMDg4YjctYzg3ZS00ZDFmLWI1YjctM2RkZGVjZWEyYWQ0XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Minyonlar ve Canavarlar"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "The Unknown",
-      "kind": "film",
-      "time": "12:30, 18:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "12:30",
-        "18:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg",
-      "ageLimit": "18+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H19M00S",
-      "genre": "Dram",
-      "description": "İçe kapanık bir fotoğrafçı olan David Zimmerman, arkadaşlarının ısrarıyla katıldığı çılgın bir partiyle rutininin dışına çıkar. Burada tanıştığı gizemli bir kadın, kısa sürede onun zihnini tamamen ele geçirir. David, bu kadına karşı giderek artan bir takıntı geliştirir ve onu izlemeye başlar. Ancak gece sona erip şafak söktüğünde, her şey geri dönülmez biçimde değişir. David, gözlerini açtığında artık kendi bedeninde değildir; takıntı haline getirdiği kadının bedeninde uyanmıştır. İçimdeki Ya",
-      "director": "Arthur Harari",
-      "cast": [
-        "Léa Seydoux",
-        "Niels Schneider",
-        "Valérie Dréville",
-        "Lilith Grasmug",
-        "Radu Jude",
-        "Shanti Masud"
-      ],
-      "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
-      "imdbId": "tt32359586",
-      "imdbUrl": "https://www.imdb.com/title/tt32359586/",
-      "imdbRating": "6.3",
-      "imdbVotes": 363,
-      "imdbTitle": "The Unknown",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYzY4ZTQzNDAtNWU4ZC00YTQ0LThmYzQtYjBjOGJhNzE5ODZiXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "İçimdeki Yabancı"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Practical Magic 2",
-      "kind": "film",
-      "time": "13:00, 15:45, 18:30, 21:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/askin-buyusu-2",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "13:00",
-        "15:45",
-        "18:30",
-        "21:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/askin-buyusu-2-2026813111269c31321e56604d1db50badc217c6a9ef.png",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H50M00S",
-      "genre": "Dram",
-      "description": "Sally Owens (Sandra Bullock) ve Gillian Owens (Nicole Kidman), ailelerinin geleceğini tehdit eden karanlık bir lanetin ortaya çıkmasıyla yeniden güçlerini birleştirir. Aile bağlarını parçalama tehlikesi taşıyan bu lanet karşısında kardeşler, sevdiklerini korumaya ve karşı karşıya oldukları tehdidin üstesinden gelmeye çalışır. Aşkın Büyüsü 2 filmini izlemek için hemen sinema biletinizi alın!",
-      "director": "Susanne Bier",
-      "cast": [
-        "Sandra Bullock",
-        "Nicole Kidman",
-        "Joey King",
-        "Maisie Williams",
-        "Xolo Maridueña",
-        "Lee Pace"
-      ],
-      "trailer": "https://www.youtube.com/watch?v=LiAhgsRzreg",
-      "imdbId": "tt32588798",
-      "imdbUrl": "https://www.imdb.com/title/tt32588798/",
-      "imdbTitle": "Practical Magic 2",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMWUyY2UyNjgtYTg5MC00MDZmLWE1MzEtZmU2YWE2ZTMzMjUwXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Aşkın Büyüsü 2"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Cars",
-      "kind": "film",
-      "time": "13:45, 16:15",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/arabalar",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "13:45",
-        "16:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/arabalar-2025118185945e4c0bf5b364649d6a92fc60e01d06138.jpg",
-      "formats": [
-        "Türkçe Dublaj"
-      ],
-      "duration": "PT1H57M00S",
-      "genre": "Animasyon",
-      "description": "Piston Kupası şampiyonluğu için yarışmaya giden kibirli yarış arabası Şimşek McQueen’in, kaza eseri rotasından saparak unutulmuş bir kasaba olan Radyatör Kasabası’nda mahsur kalmasıyla değişen yaşamını konu alıyor. Arabalar filmi için hemen sinema biletinizi alın!",
-      "director": "John Lasseter",
-      "rating": "5",
-      "reviewCount": 2,
-      "imdbId": "tt0317219",
-      "imdbUrl": "https://www.imdb.com/title/tt0317219/",
-      "imdbRating": "7.3",
-      "imdbVotes": 548367,
-      "imdbTitle": "Cars",
-      "imdbYear": 2006,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTg5NzY0MzA2MV5BMl5BanBnXkFtZTYwNDc3NTc2._V1_.jpg",
-      "sourceTitle": "Arabalar"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "The Unknown",
-      "kind": "film",
-      "time": "13:45, 18:30, 21:00",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/the-unknown",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "13:45",
-        "18:30",
-        "21:00"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimdeki-yabanci-2026821162436e8cf1d77e41452fad925091b73d9154.jpg",
-      "ageLimit": "18+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H19M00S",
-      "genre": "Dram",
-      "description": "İçe kapanık bir fotoğrafçı olan David Zimmerman, arkadaşlarının ısrarıyla katıldığı çılgın bir partiyle rutininin dışına çıkar. Burada tanıştığı gizemli bir kadın, kısa sürede onun zihnini tamamen ele geçirir. David, bu kadına karşı giderek artan bir takıntı geliştirir ve onu izlemeye başlar. Ancak gece sona erip şafak söktüğünde, her şey geri dönülmez biçimde değişir. David, gözlerini açtığında artık kendi bedeninde değildir; takıntı haline getirdiği kadının bedeninde uyanmıştır. İçimdeki Ya",
-      "director": "Arthur Harari",
-      "cast": [
-        "Léa Seydoux",
-        "Niels Schneider",
-        "Valérie Dréville",
-        "Lilith Grasmug",
-        "Radu Jude",
-        "Shanti Masud"
-      ],
-      "trailer": "https://www.youtube.com/watch?v=IHbKVXgr2Gg",
-      "imdbId": "tt32359586",
-      "imdbUrl": "https://www.imdb.com/title/tt32359586/",
-      "imdbRating": "6.3",
-      "imdbVotes": 363,
-      "imdbTitle": "The Unknown",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYzY4ZTQzNDAtNWU4ZC00YTQ0LThmYzQtYjBjOGJhNzE5ODZiXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "İçimdeki Yabancı"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "The Invite",
-      "kind": "film",
-      "time": "14:00, 16:30, 19:00, 21:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "14:00",
-        "16:30",
-        "19:00",
-        "21:30"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H47M00S",
-      "genre": "Dram",
-      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
-      "director": "Olivia Wilde",
-      "cast": [
-        "Seth Rogen",
-        "Olivia Wilde",
-        "Edward Norton",
-        "Penélope Cruz",
-        "Skip Howland",
-        "Mel Powell"
-      ],
-      "rating": "3.9",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8",
-      "imdbId": "tt14173636",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "imdbRating": "7.5",
-      "imdbVotes": 63949,
-      "imdbTitle": "The Invite",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Davet"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Pressure",
-      "kind": "film",
-      "time": "14:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/pressure",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/firtinadan-once-2026716130456d8ffd390e42415988c0f571a1aa751b.png",
-      "ageLimit": "13+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H40M00S",
-      "genre": "Dram",
-      "description": "D-Day'den önceki 72 saat içinde, tek bir önemli unsur olan Britanya'nın hava durumu dışında her şey hazırlanır. Britanya'nın baş meteoroloğu James Stagg, tarihin en önemli tahminini yapmakla görevlendirilir ve kendisini tüm Müttefik liderleriyle gergin bir ikilemde bulur. Yanlış koşullar, şimdiye kadarki en büyük deniz işgalini mahvedebilirken, herhangi bir gecikme Alman istihbaratının farkına varma riskini taşır. Nihai karar, yalnızca sırdaşı Yüzbaşı Kay Summersby'ye güvenebilen ve felaketle so",
-      "director": "Anthony Maras",
-      "cast": [
-        "Andrew Scott",
-        "Brendan Fraser",
-        "Kerry Condon",
-        "Chris Messina",
-        "Damian Lewis",
-        "Tamsin Topolski"
-      ],
-      "rating": "4.2",
-      "reviewCount": 4,
-      "trailer": "https://www.youtube.com/watch?v=_EGyIsEIplM",
-      "imdbId": "tt32547691",
-      "imdbUrl": "https://www.imdb.com/title/tt32547691/",
-      "imdbRating": "7.3",
-      "imdbVotes": 26114,
-      "imdbTitle": "Pressure",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjE2YjdkNDctMDg1MS00MjBjLWIyZjEtZWM1ZjczNTAzZGEyXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Fırtınadan Önce"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Spider-Man: Brand New Day",
-      "kind": "film",
-      "time": "15:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/orumcek-adam-yepyeni-bir-gun",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/orumcek-adam-yepyeni-bir-gun-2026629142142ef0388d40821411089ca0eee45b88488.png",
-      "ageLimit": "13+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H30M00S",
-      "genre": "Aksiyon",
-      "description": "Örümcek Adam: Yepyeni Bir Gün, kendini sevdiklerinin hafızasından gönüllü olarak silmek zorunda kalan Peter'ın, artık kimsenin gerçek kimliğini bilmediği New York sokaklarında tek başına suçla savaşırken, yaşamaya başladığı fiziksel değişimle boğuşmasını anlatıyor. Sevdiklerinin hafızasından kendini gönüllü olarak silen Peter, artık tamamen yalnız yaşayan bir yetişkin olarak, adını bile bilmeyen bir New York sokaklarında suçla savaşmaktadır. Kendisini tamamen şehrini korumaya adamış ‘tam zama",
-      "director": "Destin Daniel Cretton",
-      "cast": [
-        "Tom Holland",
-        "Zendaya",
-        "Sadie Sink",
-        "Jacob Batalon",
-        "Jon Bernthal",
-        "Tramell Tillman"
-      ],
-      "rating": "4.4",
-      "reviewCount": 1078,
-      "trailer": "https://www.youtube.com/watch?v=FdThKhBJNZY",
-      "imdbId": "tt22084616",
-      "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-      "imdbRating": "8.0",
-      "imdbVotes": 291673,
-      "imdbTitle": "Spider-Man: Brand New Day",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Örümcek-Adam: Yepyeni Bir Gün"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "The Invite",
-      "kind": "film",
-      "time": "16:00, 18:20",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "16:00",
-        "18:20"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H47M00S",
-      "genre": "Dram",
-      "description": "Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yaptıkları sıra dışı açıklamalar ve sundukları",
-      "director": "Olivia Wilde",
-      "cast": [
-        "Seth Rogen",
-        "Olivia Wilde",
-        "Edward Norton",
-        "Penélope Cruz",
-        "Skip Howland",
-        "Mel Powell"
-      ],
-      "rating": "3.9",
-      "reviewCount": 52,
-      "trailer": "https://www.youtube.com/watch?v=2GTZ322PUz8",
-      "imdbId": "tt14173636",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "imdbRating": "7.5",
-      "imdbVotes": 63949,
-      "imdbTitle": "The Invite",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Davet"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "The Odyssey",
-      "kind": "film",
-      "time": "16:45, 20:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/odyssey-2026",
-      "availability": "available",
-      "owned": false,
-      "times": [
-        "16:45",
-        "20:15"
-      ],
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H52M00S",
-      "genre": "Aksiyon",
-      "description": "Homeros'un ünlü destanından uyarlanan film, İthaka kralı Odisseus'un Truva Savaşı sonrası doğduğu topraklara dönüş yolunda yaşadığı maceraları konu ediniyor. Odyssey filmini izlemek için hemen sinema biletinizi alın!",
-      "director": "Christopher Nolan",
-      "cast": [
-        "Matt Damon",
-        "Tom Holland",
-        "Anne Hathaway",
-        "Robert Pattinson",
-        "Lupita Nyong'o",
-        "Charlize Theron"
-      ],
-      "rating": "4.7",
-      "reviewCount": 862,
-      "trailer": "https://www.youtube.com/watch?v=JrvTC4OyQjo",
-      "imdbId": "tt33764258",
-      "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-      "imdbRating": "8.4",
-      "imdbVotes": 483163,
-      "imdbTitle": "The Odyssey",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Odyssey"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Love and Pride",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/ask-ve-gurur-filmi",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-gurur-202682114291641c0b01972ef4c8980173371afa193e2.jpg",
-      "ageLimit": "13+",
-      "duration": "PT2H9M",
-      "genre": "Film Gösterimi",
-      "description": "Aşk ve Gurur Film Gösterimi Keira Knightley, Matthew Macfadyen ve Donald Sutherland’ın başrollerinde yer aldığı Pride & Prejudice, farklı sınıflardan gelen iki insanın önyargılar ve yanlış anlaşılmalarla şekillenen ilişkisini anlatıyor.",
-      "imdbId": "tt33008368",
-      "imdbUrl": "https://www.imdb.com/title/tt33008368/",
-      "imdbTitle": "Love and Pride",
-      "imdbYear": 2025,
-      "imdbType": "TV series",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BOWYyMzdiMDktYzI0Zi00ODFjLTllZTctYjc4OGQxZTBhMTZkXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Aşk ve Gurur"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Ermiş",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "776 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/ermis-tiyatro-oyunu",
-      "availability": "available",
-      "owned": false,
-      "description": "Ermiş Tiyatro Oyunu On iki yıl bir liman kenti olan Orphalese'de yaşayan bilge bir adam, sonunda yurduna dönmeye hazırdır. Onu uğurlamaya gelen insanlar, \"Son kez bizimle konuş, bilgeliğinden ve hakikatinden bize de ver.\" derler. Ona aşk, evlilik, çocuklar, yasalar, özgürlük, çalışma, acı ve ölüm üzerine sorular sorarlar. Böylece Ermiş onlarla konuşmaya başlar. Halil Cibran'ın ölümsüz eseri, modern meddah geleneğinin anlatım olanaklarıyla sahneye uyarlanıyor. Meddah, oyun boyunca otu",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ermis-20267279303050351407eddd4a14bd8c2fa352863790.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/ermis-tiyatro-oyunu"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Howl's Moving Castle",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/yuruyen-sato",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg",
-      "ageLimit": "6+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H59M",
-      "genre": "Macera, Animasyon, Fantastik",
-      "description": "Yürüyen Şato Film Gösterimi İlk kez vizyona girişinin 20. yılına özel olarak yeniden sinemalarda seyirciyle buluşan Hayao Miyazaki'nin başyapıtlarından Yürüyen Şato, kendisine yapılan büyüyü bozabilmek için arkadaşlarıyla birlikte yürüyen bir şatoda ikamet eden genç bir büyücü prensi bulması gereken Sophie'nin hikâyesini anlatıyor. Sıradan bir hayat süren genç kadın Sophie, kötü bir cadının yaptığı büyü sebebiyle çok yaşlı bir kadına dönüşür. Büyüyü bozması için tek umudu ise bacakları ola",
-      "imdbId": "tt0347149",
-      "imdbUrl": "https://www.imdb.com/title/tt0347149/",
-      "imdbRating": "8.2",
-      "imdbVotes": 521269,
-      "imdbTitle": "Howl's Moving Castle",
-      "imdbYear": 2004,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_.jpg",
-      "sourceTitle": "Yürüyen Şato"
-    },
-    {
-      "days": [
-        "2026-09-14"
-      ],
-      "title": "Howl's Moving Castle",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/yuruyen-sato",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yuruyen-sato-20268271057475174d8291f4147bfa47cb40e30b6ffe7.jpg",
-      "ageLimit": "6+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H59M",
-      "genre": "Macera, Animasyon, Fantastik",
-      "description": "Yürüyen Şato Film Gösterimi İlk kez vizyona girişinin 20. yılına özel olarak yeniden sinemalarda seyirciyle buluşan Hayao Miyazaki'nin başyapıtlarından Yürüyen Şato, kendisine yapılan büyüyü bozabilmek için arkadaşlarıyla birlikte yürüyen bir şatoda ikamet eden genç bir büyücü prensi bulması gereken Sophie'nin hikâyesini anlatıyor. Sıradan bir hayat süren genç kadın Sophie, kötü bir cadının yaptığı büyü sebebiyle çok yaşlı bir kadına dönüşür. Büyüyü bozması için tek umudu ise bacakları ola",
-      "imdbId": "tt0347149",
-      "imdbUrl": "https://www.imdb.com/title/tt0347149/",
-      "imdbRating": "8.2",
-      "imdbVotes": 521269,
-      "imdbTitle": "Howl's Moving Castle",
-      "imdbYear": 2004,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTY1OTg0MjE3MV5BMl5BanBnXkFtZTcwNTUxMTkyMQ@@._V1_.jpg",
-      "sourceTitle": "Yürüyen Şato"
-    },
     {
       "days": [
         "2026-09-15"
@@ -1020,7 +462,7 @@
       "price": "831 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bahar-noktasi-sorusturmasi",
       "availability": "available",
-      "owned": false,
+      "owned": true,
       "description": "Bahar Noktası Soruşturması Tiyatro Oyunu BGST Tiyatro, yeni prodüksiyonu \"Bahar Noktası Soruşturması\" ile seyirciyi bir düğün sahnesinden bir sorgu odasına; bir Shakespeare komedisinden bir soruşturma atmosferine taşıyor. Oyun, William Shakespeare’in “A Midsummer Night’s Dream” adlı eserinin, Can Yücel imzalı “Bahar Noktası” çevirisini merkezine alıyor. Hikâye, Başkan Haretleri’nin düğününde sahnelenen bir klasik siparişi ile başlar. Güvenli, denenmiş, kültürel itibarı yüksek bir",
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bahar-noktasi-sorusturmasi-202622518289a70ebb90e27741318d71b991f5330a8e.png",
       "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bahar-noktasi-sorusturmasi"
@@ -1661,7 +1103,7 @@
       "price": "896 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/sabahattin-ali-yol-ve-otesi",
       "availability": "available",
-      "owned": false,
+      "owned": true,
       "description": "Sabahattin Ali - Yol ve Ötesi Tiyatro Oyunu Oyun Türkiye´de bilinen ilk faili meçhul cinayet olan Sabahattin Ali cinayetinden önceki 24 saati konu alıyor. Sabahattin Ali’nin yoğun tehditler aldığı ve yaşam alanının gittikçe daraldığı 1948 Türkiye’sinde, tek çare çok sevdiği vatanını bırakıp gitmektir. Bu gidiş onun için bir kaçış değil mücadelesi için yeni bir zemin arayışıdır. İstanbul’dan yola çıkan bir sebze kamyonuyla Edirne´den sınırı geçerek yurt dışına gitmeyi planlar. Yalnız bu",
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sabahattin-ali-yol-ve-otesi-202651714571666f0b827dc48449aa8c4c6778e60658d.jpeg",
       "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sabahattin-ali-yol-ve-otesi"
@@ -4022,7 +3464,7 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Rolling refresh 2026-09-14 through 2026-10-03. Preferred Biletinial venue inventory pages checked; production sessions restricted to originating venue. Fastmail checked and matched The Invite / Davet reservation; Google colonist checked, personal profile authorization unavailable during run. IMDb enrichment retained where previously validated; no new structured metadata asserted. Records normalized and deduplicated.",
+  "research_note": "Rolling refresh 2026-09-15 through 2026-10-04. Preferred Biletinial venue inventory tabs checked for Moda Sahnesi (15880), Bostancı Gösteri Merkezi (17011), Akla Kara Tiyatro (15863), Caddebostan Kültür Merkezi (15738), Özgürlük Parkı (15866), and Kadıköy Eğitim Sahnesi (18051); production sessions restricted to originating venue. Existing verified sessions were retained only when in-window; no newly verified sessions were added in this run. Fastmail checked and matched three reservations; Google colonist checked, personal profile authorization unavailable. IMDb metadata retained from prior validated enrichment; no new structured metadata asserted.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -4030,7 +3472,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 32,
       "listedEventLinks": 42
     },
@@ -4040,7 +3482,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 10,
       "listedEventLinks": 19
     },
@@ -4050,7 +3492,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -4060,7 +3502,7 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 27,
       "listedEventLinks": 33
     },
@@ -4070,7 +3512,7 @@
       "venue": "Özgürlük Parkı",
       "locationId": "15866",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15866",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 1,
       "listedEventLinks": 10
     },
@@ -4080,7 +3522,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-14",
+      "checkedAt": "2026-09-15",
       "listedItems": 50,
       "listedEventLinks": 52
     },
@@ -4089,21 +3531,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-15"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-15"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-14"
+      "checkedAt": "2026-09-15"
     }
   ]
 }
