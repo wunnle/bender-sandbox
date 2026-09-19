@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-18",
+  "lastUpdated": "2026-09-19",
   "range": {
-    "start": "2026-09-18",
-    "end": "2026-10-07"
+    "start": "2026-09-19",
+    "end": "2026-10-08"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,134 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-18"
-      ],
-      "title": "Vortex",
-      "kind": "film",
-      "time": "18:20",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/vortex",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vortex-2022511184919.jpeg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H15M00S",
-      "genre": "Dram",
-      "description": "Vortex, hayata, yönetmenin kendi ölümlülüğü üzerine de düşündüğü son derece kişisel bir pencereden bakıyor. Gaspar Noé bu projede, “her yaşam formunun kendi tünelinde yaşadığını” anlatmak üzere neredeyse baştan sona, bölünmüş ekran tekniği kullanıyor; filmdeki iki kameradan birinin arkasında bizzat kendisi yer alıyor. Gerilim-korku türünün ustalarından Dario Argento’nun başrolünü paylaştığı film, yaşlılık ve bunamadan mustarip sevgi dolu bir çiftin son günlerine odaklanıyor. Gaspar Noé filmini “",
-      "director": "Gaspar Noé",
-      "cast": [
-        "Françoise Lebrun",
-        "Alex Lutz",
-        "Kamel Benchemekh",
-        "Corinne Bruand",
-        "Nathalie Roubaud",
-        "Kylian Dheret"
-      ],
-      "trailer": "https://www.youtube.com/watch?v=YuuoT6CfeCQ",
-      "imdbId": "tt14821150",
-      "imdbUrl": "https://www.imdb.com/title/tt14821150/",
-      "imdbRating": "7.4",
-      "imdbVotes": 11168,
-      "imdbTitle": "Vortex",
-      "imdbYear": 2021,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMDBkNTIxM2MtZjMzMi00ODY0LTgwYjMtM2ZiNTUyYzIwZGYxXkEyXkFqcGc@._V1_.jpg"
-    },
-    {
-      "days": [
-        "2026-09-18"
-      ],
-      "title": "Lucy",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Decollage Art Space",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/lucy",
-      "image": "https://tiyatrolar.com.tr/files/activity/l/lucy/image/lucy.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-18"
-      ],
-      "title": "Meçhul Paşa",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/mechul-pasa-1",
-      "availability": "listed",
-      "owned": false,
-      "note": "Session and Kadıköy venue verified on the theatre detail page."
-    },
-    {
-      "days": [
-        "2026-09-18"
-      ],
-      "title": "Şirreti Evcilleştirmek",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "665 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
-      "availability": "available",
-      "owned": false,
-      "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek"
-    },
-    {
-      "days": [
-        "2026-09-18"
-      ],
-      "title": "Vortex",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/vortex",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vortex-2022511184919.jpeg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H15M00S",
-      "genre": "Dram",
-      "description": "Vortex, hayata, yönetmenin kendi ölümlülüğü üzerine de düşündüğü son derece kişisel bir pencereden bakıyor. Gaspar Noé bu projede, “her yaşam formunun kendi tünelinde yaşadığını” anlatmak üzere neredeyse baştan sona, bölünmüş ekran tekniği kullanıyor; filmdeki iki kameradan birinin arkasında bizzat kendisi yer alıyor. Gerilim-korku türünün ustalarından Dario Argento’nun başrolünü paylaştığı film, yaşlılık ve bunamadan mustarip sevgi dolu bir çiftin son günlerine odaklanıyor. Gaspar Noé filmini “",
-      "director": "Gaspar Noé",
-      "cast": [
-        "Françoise Lebrun",
-        "Alex Lutz",
-        "Kamel Benchemekh",
-        "Corinne Bruand",
-        "Nathalie Roubaud",
-        "Kylian Dheret"
-      ],
-      "trailer": "https://www.youtube.com/watch?v=YuuoT6CfeCQ",
-      "imdbId": "tt14821150",
-      "imdbUrl": "https://www.imdb.com/title/tt14821150/",
-      "imdbRating": "7.4",
-      "imdbVotes": 11168,
-      "imdbTitle": "Vortex",
-      "imdbYear": 2021,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMDBkNTIxM2MtZjMzMi00ODY0LTgwYjMtM2ZiNTUyYzIwZGYxXkEyXkFqcGc@._V1_.jpg"
-    },
     {
       "days": [
         "2026-09-19"
@@ -320,7 +192,7 @@
       "url": "https://tiyatrolar.com.tr/tiyatro-bilet/eylul",
       "image": "https://tiyatrolar.com.tr/files/activity/e/eylul/image/eylul.jpg",
       "availability": "listed",
-      "owned": false,
+      "owned": true,
       "note": "Date, venue, and source image verified from the theatre detail/ticket page."
     },
     {
@@ -1746,7 +1618,7 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "Daily refresh 2026-09-18. Preferred Biletinial venue tabs were checked directly; Moda Sahnesi, Bostancı Gösteri Merkezi, Akla Kara Tiyatro, Caddebostan Kültür Merkezi, Özgürlük Parkı, and Kadıköy Eğitim Sahnesi inventory was reviewed. Production/session verification is restricted to those venues. Fastmail and Google colonist calendars checked; Google personal calendar required interactive authorization and could not be fully checked. IMDb structured enrichment was not run; existing ticket-source metadata retained. Expired records rolled off the rolling window.",
+  "research_note": "2026-09-19 refresh: preferred Biletinial venue tabs checked directly; production schedules were restricted to the originating preferred venue. Existing verified sessions were rolled into the 20-day window and exact duplicate keys removed. Fastmail checked; Google colonist returned, but Google personal required interactive OAuth authorization and could not be checked. IMDb enrichment was not expanded where reliable structured metadata was unavailable; existing source-backed metadata retained.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -1754,7 +1626,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-18",
+      "checkedAt": "2026-09-19",
       "listedItems": 32,
       "listedEventLinks": 42
     },
@@ -1764,7 +1636,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-18",
+      "checkedAt": "2026-09-19",
       "listedItems": 10,
       "listedEventLinks": 19
     },
@@ -1774,7 +1646,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-18",
+      "checkedAt": "2026-09-19",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -1784,19 +1656,9 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-18",
+      "checkedAt": "2026-09-19",
       "listedItems": 27,
       "listedEventLinks": 33
-    },
-    {
-      "provider": "Biletinial",
-      "kind": "venue_inventory",
-      "venue": "Özgürlük Parkı",
-      "locationId": "15866",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15866",
-      "checkedAt": "2026-09-18",
-      "listedItems": 1,
-      "listedEventLinks": 10
     },
     {
       "provider": "Biletinial",
@@ -1804,7 +1666,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-18",
+      "checkedAt": "2026-09-19",
       "listedItems": 50,
       "listedEventLinks": 52
     },
@@ -1813,21 +1675,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-18"
+      "checkedAt": "2026-09-19"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-18"
+      "checkedAt": "2026-09-19"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-18"
+      "checkedAt": "2026-09-19"
     }
   ]
 }
