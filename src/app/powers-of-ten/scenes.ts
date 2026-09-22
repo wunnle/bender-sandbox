@@ -7,6 +7,7 @@ export type Art =
   | "star"
   | "planet"
   | "land"
+  | "aerial"
   | "grid"
   | "figure"
   | "moon"
@@ -56,11 +57,11 @@ export const SCENES: Scene[] = [
   { e: 8, title: "Near-Earth space", blurb: "The dashed ring is geostationary orbit, to scale. The Moon is still four frames further out.", art: "nearearth", hue: 205 },
   { e: 7, title: "Earth", blurb: "12,742 kilometres wide. A thin skin of water and air on a ball of iron and rock.", art: "planet", hue: 205 },
   { e: 6, title: "The Moon", blurb: "3,474 kilometres across — about the width of Australia, and the same size as a continent.", art: "moon", hue: 40 },
-  { e: 5, title: "A city and its region", blurb: "A hundred kilometres. The horizon from a high window; a morning's drive.", art: "land", hue: 140 },
-  { e: 4, title: "A city", blurb: "Ten kilometres of streets, laid down by a thousand years of small decisions.", art: "grid", hue: 130 },
-  { e: 3, title: "A neighbourhood", blurb: "One kilometre. Roughly how far you walk without noticing it.", art: "grid", hue: 125 },
-  { e: 2, title: "A city block", blurb: "A hundred metres. Close enough to recognise a friend's walk.", art: "grid", hue: 120 },
-  { e: 1, title: "A garden", blurb: "Ten metres. Room enough for a tree, a car, and the person standing in the middle of it.", art: "none", hue: 110 },
+  { e: 5, title: "A coast and its hinterland", blurb: "A hundred kilometres. Roads converge on one stain of grey; everything else is field and water.", art: "aerial", hue: 140 },
+  { e: 4, title: "A city", blurb: "Ten kilometres of streets and a river, laid down by a thousand years of small decisions.", art: "aerial", hue: 130 },
+  { e: 3, title: "A neighbourhood", blurb: "One kilometre. Roughly how far you walk without noticing that you walked.", art: "aerial", hue: 125 },
+  { e: 2, title: "A city block", blurb: "A hundred metres. Buildings around a courtyard — the lines one frame up were these streets.", art: "aerial", hue: 120 },
+  { e: 1, title: "A garden", blurb: "Ten metres. A tree, a path, a table — and the person standing in the middle of it.", art: "aerial", hue: 110 },
   { e: 0, title: "A person", blurb: "One metre. The scale the body understands without being told — everything else is a comparison to it.", art: "figure", hue: 100 },
   { e: -1, title: "A hand", blurb: "Ten centimetres. Twenty-seven bones, and a third of the brain's motor cortex devoted to them.", art: "none", hue: 20 },
   { e: -2, title: "Skin", blurb: "One centimetre of folded ridges — the fingerprint that is never repeated.", art: "skin", hue: 18 },

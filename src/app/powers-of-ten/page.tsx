@@ -199,13 +199,15 @@ export default function PowersOfTenPage() {
       {/* starfield backdrop */}
       <div className="pointer-events-none absolute inset-0 opacity-60 [background:radial-gradient(circle_at_20%_25%,rgba(120,140,255,0.18),transparent_55%),radial-gradient(circle_at_80%_70%,rgba(255,120,190,0.12),transparent_50%)]" />
 
-      <div className="absolute inset-0 grid place-items-center">
+      {/* `isolate` keeps the per-scene z-index from competing with the UI above it */}
+      <div className="absolute inset-0 isolate grid place-items-center">
         {SCENES.map((s) => {
           const d = s.e - view;
-          if (Math.abs(d) > SPAN) return null;
+          if (d > 0.6 || d < -SPAN) return null;
           const size = Math.pow(10, d) * 72; // vmin
-          const t = Math.abs(d) / SPAN;
-          const opacity = Math.pow(1 - t, 1.6);
+          // frames larger than the current one are gone by the time we come to rest,
+          // so nothing washes over the scene you are actually looking at
+          const opacity = d > 0 ? 1 - d / 0.6 : Math.min(1, (SPAN + d) / 0.7);
           return (
             <div
               key={s.e}
@@ -214,11 +216,11 @@ export default function PowersOfTenPage() {
                 width: `${size}vmin`,
                 height: `${size}vmin`,
                 opacity,
-                filter: t > 0.55 ? `blur(${(t - 0.55) * 14}px)` : undefined,
+                zIndex: 40 - s.e, // smaller scenes sit on top of the ones containing them
                 willChange: "opacity, width, height",
               }}
             >
-              <SceneArt art={s.art} hue={s.hue} seed={s.e + 30} />
+              <SceneArt art={s.art} hue={s.hue} seed={s.e + 30} e={s.e} />
             </div>
           );
         })}

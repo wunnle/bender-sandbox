@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Aerial } from "./Aerial";
 import type { Art } from "./scenes";
 
 function rng(seed: number) {
@@ -21,11 +22,13 @@ function dots(seed: number, n: number, minR: number, maxR: number) {
 }
 
 /** Everything draws inside a 100x100 box; the parent scales it. */
-function ArtImpl({ art, hue, seed }: { art: Art; hue: number; seed: number }) {
+function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e: number }) {
   const c = (l: number, s = 70) => `hsl(${hue} ${s}% ${l}%)`;
   const common = { viewBox: "0 0 100 100", width: "100%", height: "100%", preserveAspectRatio: "none" as const };
 
   switch (art) {
+    case "aerial":
+      return <Aerial level={e} />;
     case "web": {
       const nodes = dots(seed, 70, 0.3, 1.4);
       const r = rng(seed + 5);
@@ -79,19 +82,45 @@ function ArtImpl({ art, hue, seed }: { art: Art; hue: number; seed: number }) {
           ))}
         </svg>
       );
-    case "orbit":
+    case "orbit": {
+      // one orbit per frame, drawn as the bright thing in the picture; the tighter
+      // orbits arrive from the frames nested inside this one
+      const a = seed * 1.7;
+      const px = 50 + Math.cos(a) * 40;
+      const py = 50 + Math.sin(a) * 40;
       return (
-        <svg {...common}>
-          {[14, 24, 34, 44].map((rad, i) => (
-            <ellipse key={rad} cx={50} cy={50} rx={rad} ry={rad} fill="none" stroke={c(70)} strokeWidth={0.2} opacity={0.4 - i * 0.05} />
-          ))}
-          <circle cx={50} cy={50} r={3} fill={c(85, 90)} />
-          {[14, 24, 34, 44].map((rad, i) => {
-            const a = seed * 1.7 + i * 2.3;
-            return <circle key={`p${rad}`} cx={50 + Math.cos(a) * rad} cy={50 + Math.sin(a) * rad} r={1.3} fill={c(75)} />;
-          })}
+        <svg {...common} preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id={`og${seed}`}>
+              <stop offset="0%" stopColor={c(85, 95)} stopOpacity={0.9} />
+              <stop offset="100%" stopColor={c(85, 95)} stopOpacity={0} />
+            </radialGradient>
+            <linearGradient id={`ot${seed}`} x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor={c(85, 95)} stopOpacity={0.15} />
+              <stop offset="60%" stopColor={c(85, 95)} stopOpacity={0.55} />
+              <stop offset="100%" stopColor={c(92, 100)} stopOpacity={1} />
+            </linearGradient>
+          </defs>
+          {/* the orbit itself: a soft halo under a crisp, brightening line */}
+          <circle cx={50} cy={50} r={40} fill="none" stroke={c(75, 90)} strokeWidth={2.4} opacity={0.14} />
+          <circle
+            cx={50}
+            cy={50}
+            r={40}
+            fill="none"
+            stroke={`url(#ot${seed})`}
+            strokeWidth={0.55}
+            transform={`rotate(${(a * 180) / Math.PI - 45} 50 50)`}
+          />
+          {/* the previous decade's orbit, a tenth of the size */}
+          <circle cx={50} cy={50} r={4} fill="none" stroke={c(70)} strokeWidth={0.25} opacity={0.3} />
+          <circle cx={50} cy={50} r={1.6} fill={c(88, 95)} opacity={0.85} />
+          {/* the body riding the line */}
+          <circle cx={px} cy={py} r={5} fill={`url(#og${seed})`} />
+          <circle cx={px} cy={py} r={1.5} fill={c(92, 100)} />
         </svg>
       );
+    }
     case "star":
       return (
         <svg {...common}>
