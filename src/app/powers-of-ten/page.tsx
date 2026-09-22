@@ -11,10 +11,15 @@ const SPAN = 1.6; // decades of fade on either side of the focused scene
 const UNITS: [number, string][] = [
   [24, "Ym"], [21, "Zm"], [18, "Em"], [15, "Pm"], [12, "Tm"], [9, "Gm"],
   [6, "Mm"], [3, "km"], [0, "m"], [-3, "mm"], [-6, "µm"], [-9, "nm"],
-  [-12, "pm"], [-15, "fm"], [-18, "am"],
+  [-12, "pm"], [-15, "fm"], [-18, "am"], [-21, "zm"], [-24, "ym"],
+  [-27, "rm"], [-30, "qm"],
 ];
 
+const PLANCK = 1.616e-35;
+
 function humanScale(e: number) {
+  // below a quectometre the SI prefixes run out; measure in Planck lengths
+  if (e < -30) return `${(Math.pow(10, e) / PLANCK).toPrecision(2)} ℓP`;
   const u = UNITS.find(([p]) => e >= p) ?? UNITS[UNITS.length - 1];
   const v = Math.pow(10, e - u[0]);
   const n = v >= 100 ? v.toFixed(0) : v >= 10 ? v.toFixed(0) : v.toFixed(1);
@@ -28,6 +33,14 @@ function lightYears(e: number) {
   if (ly > 1e6) return `${(ly / 1e6).toFixed(0)} million light-years`;
   if (ly > 1e3) return `${(ly / 1e3).toFixed(0)} thousand light-years`;
   return `${ly.toFixed(ly < 1 ? 2 : 0)} light-years`;
+}
+
+function planckMultiples(e: number) {
+  if (e > -19) return null;
+  const n = Math.pow(10, e) / PLANCK;
+  if (n >= 1e6) return `${n.toExponential(0).replace("e+", " × 10^")} Planck lengths`;
+  if (n >= 10) return `${Math.round(n).toLocaleString()} Planck lengths`;
+  return `${n.toPrecision(2)} Planck lengths`;
 }
 
 export default function PowersOfTenPage() {
@@ -84,7 +97,7 @@ export default function PowersOfTenPage() {
       const dt = (now - last) / 1000;
       last = now;
       setView((v) => {
-        const next = v + dir.current * dt * 0.9;
+        const next = v + dir.current * dt * 1.3;
         if (next <= MIN) {
           dir.current = 1;
           return MIN;
@@ -135,7 +148,7 @@ export default function PowersOfTenPage() {
   const touchY = useRef<number | null>(null);
 
   const focus = SCENES.reduce((best, s) => (Math.abs(s.e - view) < Math.abs(best.e - view) ? s : best), SCENES[0]);
-  const ly = lightYears(view);
+  const aside = lightYears(view) ?? planckMultiples(view);
 
   return (
     <main
@@ -203,7 +216,7 @@ export default function PowersOfTenPage() {
               10<sup className="text-lg sm:text-xl">{Math.round(view)}</sup>
             </span>
             <span className="font-mono text-sm text-white/50">{humanScale(view)}</span>
-            {ly && <span className="hidden font-mono text-sm text-white/30 sm:inline">≈ {ly}</span>}
+            {aside && <span className="hidden font-mono text-sm text-white/30 sm:inline">≈ {aside}</span>}
           </div>
 
           <h2 className="mt-3 text-xl font-medium sm:text-2xl">{focus.title}</h2>
@@ -267,9 +280,11 @@ export default function PowersOfTenPage() {
               />
             </div>
           </div>
-          <div className="mt-2 flex justify-between font-mono text-[10px] text-white/25">
-            <span>10^{MIN} quark</span>
-            <span>10^0 you</span>
+          <div className="relative mt-2 flex justify-between font-mono text-[10px] text-white/25">
+            <span>10^{MIN} Planck</span>
+            <span className="absolute -translate-x-1/2" style={{ left: `${((0 - MIN) / (MAX - MIN)) * 100}%` }}>
+              10^0 you
+            </span>
             <span>10^{MAX} universe</span>
           </div>
         </div>

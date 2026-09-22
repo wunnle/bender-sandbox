@@ -271,6 +271,61 @@ function ArtImpl({ art, hue, seed }: { art: Art; hue: number; seed: number }) {
           <circle cx={50} cy={50} r={1.6} fill={c(90, 90)} />
         </svg>
       );
+    case "desert": {
+      const r = rng(seed);
+      return (
+        <svg {...common}>
+          {Array.from({ length: 14 }, (_, i) => (
+            <circle key={i} cx={r() * 100} cy={r() * 100} r={0.15 + r() * 0.3} fill={c(70)} opacity={0.18} />
+          ))}
+          <line x1={0} y1={50} x2={100} y2={50} stroke={c(70)} strokeWidth={0.15} opacity={0.12} />
+        </svg>
+      );
+    }
+    case "string": {
+      const r = rng(seed);
+      return (
+        <svg {...common}>
+          {Array.from({ length: 9 }, (_, i) => {
+            const y = 8 + i * 10.5;
+            const amp = 3 + r() * 7;
+            const k = 1 + Math.floor(r() * 3);
+            const pts = Array.from({ length: 41 }, (_, j) => {
+              const x = (j / 40) * 100;
+              return `${x},${y + Math.sin((j / 40) * Math.PI * 2 * k + i) * amp}`;
+            });
+            return <polyline key={i} points={pts.join(" ")} fill="none" stroke={c(78)} strokeWidth={0.55} opacity={0.3 + r() * 0.45} />;
+          })}
+        </svg>
+      );
+    }
+    case "foam": {
+      const r = rng(seed);
+      return (
+        <svg {...common}>
+          {Array.from({ length: 46 }, (_, i) => {
+            const x = r() * 100;
+            const y = r() * 100;
+            const rad = 2 + r() * 11;
+            return (
+              <circle
+                key={i}
+                cx={x}
+                cy={y}
+                r={rad}
+                fill="none"
+                stroke={`hsl(${hue + (r() - 0.5) * 80} 70% 72%)`}
+                strokeWidth={0.35}
+                opacity={0.2 + r() * 0.5}
+              />
+            );
+          })}
+          {Array.from({ length: 18 }, (_, i) => (
+            <circle key={`d${i}`} cx={r() * 100} cy={r() * 100} r={0.5 + r() * 0.9} fill={c(88)} opacity={0.5} />
+          ))}
+        </svg>
+      );
+    }
     case "void":
       return (
         <svg {...common}>
