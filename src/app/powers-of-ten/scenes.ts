@@ -10,7 +10,8 @@ export type Art =
   | "aerial"
   | "grid"
   | "figure"
-  | "moon"
+  | "region"
+  | "neutrino"
   | "nearearth"
   | "none"
   | "skin"
@@ -56,14 +57,14 @@ export const SCENES: Scene[] = [
   { e: 9, title: "The Sun", blurb: "1.4 million kilometres of hydrogen fusing into helium. 99.86% of the system's mass.", art: "star", hue: 40 },
   { e: 8, title: "Near-Earth space", blurb: "The dashed ring is geostationary orbit, to scale. The Moon is still four frames further out.", art: "nearearth", hue: 205 },
   { e: 7, title: "Earth", blurb: "12,742 kilometres wide. A thin skin of water and air on a ball of iron and rock.", art: "planet", hue: 205 },
-  { e: 6, title: "The Moon", blurb: "3,474 kilometres across — about the width of Australia, and the same size as a continent.", art: "moon", hue: 40 },
+  { e: 6, title: "A sea and its coasts", blurb: "A thousand kilometres. Not a continent — Australia is four of these frames wide, and so is the Moon.", art: "region", hue: 200 },
   { e: 5, title: "A coast and its hinterland", blurb: "A hundred kilometres. Roads converge on one stain of grey; everything else is field and water.", art: "aerial", hue: 140 },
   { e: 4, title: "A city", blurb: "Ten kilometres of streets and a river, laid down by a thousand years of small decisions.", art: "aerial", hue: 130 },
   { e: 3, title: "A neighbourhood", blurb: "One kilometre. Roughly how far you walk without noticing that you walked.", art: "aerial", hue: 125 },
   { e: 2, title: "A city block", blurb: "A hundred metres. Buildings around a courtyard — the lines one frame up were these streets.", art: "aerial", hue: 120 },
   { e: 1, title: "A garden", blurb: "Ten metres. A tree, a path, a table — and the person standing in the middle of it.", art: "aerial", hue: 110 },
-  { e: 0, title: "A person", blurb: "One metre. The scale the body understands without being told — everything else is a comparison to it.", art: "figure", hue: 100 },
-  { e: -1, title: "A hand", blurb: "Ten centimetres. Twenty-seven bones, and a third of the brain's motor cortex devoted to them.", art: "none", hue: 20 },
+  { e: 0, title: "A person", blurb: "One metre — a stride, or a torso. A whole adult is 1.7 of these, which is why the figure overflows the frame.", art: "figure", hue: 100 },
+  { e: -1, title: "A palm", blurb: "Ten centimetres. A whole hand is nearly twice this; the palm alone fits.", art: "none", hue: 20 },
   { e: -2, title: "Skin", blurb: "One centimetre of folded ridges — the fingerprint that is never repeated.", art: "skin", hue: 18 },
   { e: -3, title: "A millimetre", blurb: "A grain of salt, a mite, the thickness of a fingernail. The eye gives up somewhere around here.", art: "none", hue: 15 },
   { e: -4, title: "A hair's width", blurb: "A hundred micrometres. Past this point everything must be borrowed from a lens.", art: "cells", hue: 340 },
@@ -82,7 +83,7 @@ export const SCENES: Scene[] = [
   { e: -17, title: "Beyond measurement", blurb: "Colliders probe here by smashing things together and reading the wreckage.", art: "quark", hue: 310 },
   { e: -18, title: "A quark", blurb: "No measurable size. As far as anyone has looked, it is a point — and the looking continues.", art: "quark", hue: 320 },
   { e: -19, title: "The limit of the LHC", blurb: "The smallest distance any experiment has resolved. Below this, everything is inference.", art: "quark", hue: 330 },
-  { e: -20, title: "Past the evidence", blurb: "To see one decade smaller you would need a collider several times larger than it is.", art: "desert", hue: 335 },
+  { e: -20, title: "A neutrino", blurb: "Pointlike to every test. A hundred trillion pass through you each second and essentially none of them touch anything.", art: "neutrino", hue: 165 },
   { e: -21, title: "The great desert", blurb: "Theory predicts nothing new for many decades below here. It may be genuinely empty.", art: "desert", hue: 340 },
   { e: -22, title: "Still the desert", blurb: "Or it may not be. Extra dimensions, if they exist, could be curled up somewhere in this range.", art: "desert", hue: 345 },
   { e: -23, title: "Silence", blurb: "No particle, no force, no measurement. Only the arithmetic of ten, carrying on.", art: "desert", hue: 350 },

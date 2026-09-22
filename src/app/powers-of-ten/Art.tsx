@@ -178,44 +178,60 @@ function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e
         </svg>
       );
     }
-    case "moon": {
+    case "region": {
+      // 1,000 km: the sea the coast below belongs to. The same water lies to the
+      // lower right here as in the aerial frame nested inside it.
       const r = rng(seed);
       return (
-        <svg {...common} preserveAspectRatio="xMidYMid meet">
-          <defs>
-            <radialGradient id={`m${seed}`} cx="38%" cy="34%">
-              <stop offset="0%" stopColor="hsl(45 12% 82%)" />
-              <stop offset="72%" stopColor="hsl(45 10% 62%)" />
-              <stop offset="100%" stopColor="hsl(45 12% 34%)" />
-            </radialGradient>
-            <clipPath id={`mc${seed}`}>
-              <circle cx={50} cy={50} r={40} />
-            </clipPath>
-          </defs>
-          <circle cx={50} cy={50} r={40} fill={`url(#m${seed})`} />
-          <g clipPath={`url(#mc${seed})`}>
-            {/* maria */}
-            {[[38, 36, 15], [58, 30, 9], [62, 58, 12], [34, 60, 7]].map(([x, y, rad], i) => (
-              <ellipse key={`s${i}`} cx={x} cy={y} rx={rad} ry={rad * 0.8} fill="hsl(230 12% 42%)" opacity={0.45} />
-            ))}
-            {/* craters */}
-            {Array.from({ length: 26 }, (_, i) => {
-              const a = r() * Math.PI * 2;
-              const d = Math.sqrt(r()) * 38;
-              const x = 50 + Math.cos(a) * d;
-              const y = 50 + Math.sin(a) * d;
-              const rad = 1 + r() * 4.5;
-              return (
-                <g key={i}>
-                  <circle cx={x} cy={y} r={rad} fill="hsl(45 10% 45%)" opacity={0.5} />
-                  <circle cx={x - rad * 0.2} cy={y - rad * 0.2} r={rad * 0.8} fill="hsl(45 14% 78%)" opacity={0.28} />
-                </g>
-              );
-            })}
-          </g>
+        <svg {...common}>
+          <rect width={100} height={100} fill="#3d4a33" />
+          {/* highland speckle */}
+          {Array.from({ length: 70 }, (_, i) => (
+            <ellipse key={i} cx={r() * 100} cy={r() * 100} rx={2 + r() * 7} ry={1.5 + r() * 4} fill="#46523a" opacity={0.6} />
+          ))}
+          {/* the main sea, filling the lower right */}
+          <path d="M104 4 L104 104 L10 104 C 18 88, 34 78, 50 70 C 66 62, 76 44, 78 26 C 80 14, 90 6, 104 4 Z" fill="#1c3242" />
+          {/* a second sea and the strait between them */}
+          <path d="M-4 -4 L44 -4 C 40 8, 30 16, 18 20 C 8 24, 0 22, -4 18 Z" fill="#1c3242" />
+          <path d="M40 -2 C 46 12, 50 26, 56 38 C 60 46, 58 56, 52 64" fill="none" stroke="#1c3242" strokeWidth={2.4} />
+          {/* rivers */}
+          {["M-2 60 C 14 58, 26 66, 38 74", "M96 92 C 84 86, 78 74, 74 62"].map((d2, i) => (
+            <path key={i} d={d2} fill="none" stroke="#2a4658" strokeWidth={0.8} opacity={0.8} />
+          ))}
+          {/* cities — the largest is the one we came from, on the coast at centre */}
+          <ellipse cx={50} cy={50} rx={5.5} ry={4} fill="#4f4d45" />
+          {Array.from({ length: 9 }, (_, i) => (
+            <ellipse key={`c${i}`} cx={r() * 100} cy={r() * 100} rx={1 + r() * 2.5} ry={0.8 + r() * 1.8} fill="#4f4d45" opacity={0.75} />
+          ))}
         </svg>
       );
     }
+    case "neutrino":
+      // no size to draw — only the tracks of things that pass straight through
+      return (
+        <svg {...common}>
+          {Array.from({ length: 7 }, (_, i) => {
+            const off = i * 17 - 22;
+            return (
+              <line
+                key={i}
+                x1={off - 20}
+                y1={-10}
+                x2={off + 40}
+                y2={110}
+                stroke={c(80)}
+                strokeWidth={0.35}
+                opacity={0.45}
+                strokeDasharray="6 5"
+              />
+            );
+          })}
+          {/* the matter they ignore */}
+          {dots(seed, 10, 0.4, 1).map((n) => (
+            <circle key={n.key} cx={n.x} cy={n.y} r={n.r} fill={c(60)} opacity={0.22} />
+          ))}
+        </svg>
+      );
     case "nearearth":
       // Earth arrives from the 10^7 frame nested inside this one; only orbits are drawn here.
       return (
@@ -265,15 +281,20 @@ function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e
       );
     }
     case "figure":
+      // An adult is 1.7 m, so at 170 units tall they genuinely overflow this
+      // one-metre frame — top and bottom are drawn outside the viewBox on purpose.
       return (
-        <svg {...common} preserveAspectRatio="xMidYMid meet">
-          <g fill={c(78)} opacity={0.9}>
-            <circle cx={50} cy={17} r={8} />
-            <rect x={42} y={27} width={16} height={34} rx={7} />
-            <rect x={31} y={29} width={9} height={30} rx={4.5} />
-            <rect x={60} y={29} width={9} height={30} rx={4.5} />
-            <rect x={42.5} y={60} width={7} height={34} rx={3.5} />
-            <rect x={50.5} y={60} width={7} height={34} rx={3.5} />
+        <svg {...common} preserveAspectRatio="xMidYMid meet" style={{ overflow: "visible" }}>
+          <g fill={c(78)} opacity={0.92}>
+            <circle cx={50} cy={-21} r={13} />
+            <rect x={44} y={-9} width={12} height={10} rx={5} />
+            <rect x={35} y={-1} width={30} height={62} rx={12} />
+            <rect x={23} y={2} width={11} height={56} rx={5.5} />
+            <rect x={66} y={2} width={11} height={56} rx={5.5} />
+            <rect x={37} y={54} width={12} height={78} rx={6} />
+            <rect x={51} y={54} width={12} height={78} rx={6} />
+            <rect x={35} y={126} width={16} height={8} rx={3} />
+            <rect x={49} y={126} width={16} height={8} rx={3} />
           </g>
         </svg>
       );
