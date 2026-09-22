@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-21",
+  "lastUpdated": "2026-09-22",
   "range": {
-    "start": "2026-09-21",
-    "end": "2026-10-10"
+    "start": "2026-09-22",
+    "end": "2026-10-11"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,132 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-21"
-      ],
-      "title": "Once Upon a Time in Anatolia",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/bir-zamanlar-anadoluda",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg",
-      "formats": [
-        "Türkçe"
-      ],
-      "duration": "PT2H37M00S",
-      "genre": "Dram",
-      "description": "Nuri Bilge Ceylan, bu filmiyle kentsel kaygılarını bir kenara bırakıp, tekrar taşranın sıkıntılı dünyasına ama bu sefer bir cinayet hikayesinin gerilimi ile dönüyor... Bir doktor ile bir savcının 12 saatlik gerilimli öyküsünün peliküle aktarıldığı filmin başrollerinde Muhammet Uzuner, Yılmaz Erdoğan ve Taner Birsel yer alıyor. Senaryoda Ebru ve Nuri Bilge Ceylan'ın yanı sıra Ercan Kesal'ın da imzası var. Yolların tek düzeliği ve kasabanın insana yeni bir şey sunmamasının sıradanlığını fona alan",
-      "director": "Nuri Bilge Ceylan",
-      "cast": [
-        "Yılmaz Erdoğan",
-        "Taner Birsel",
-        "Ahmet Mümtaz Taylan",
-        "Fırat Tanış",
-        "Ercan Kesal",
-        "Erol Eraslan"
-      ],
-      "rating": "4.8",
-      "reviewCount": 5,
-      "imdbId": "tt1827487",
-      "imdbUrl": "https://www.imdb.com/title/tt1827487/",
-      "imdbRating": "7.8",
-      "imdbVotes": 54579,
-      "imdbTitle": "Once Upon a Time in Anatolia",
-      "imdbYear": 2011,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMzg3OTMyODQ1M15BMl5BanBnXkFtZTcwNjMwMTEwNw@@._V1_.jpg",
-      "sourceTitle": "Bir Zamanlar Anadolu'da"
-    },
-    {
-      "days": [
-        "2026-09-21"
-      ],
-      "title": "Once Upon a Time in Anatolia",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/bir-zamanlar-anadoluda",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-zamanlar-anadoluda-2020102510418.jpg",
-      "formats": [
-        "Türkçe"
-      ],
-      "duration": "PT2H37M00S",
-      "genre": "Dram",
-      "description": "Nuri Bilge Ceylan, bu filmiyle kentsel kaygılarını bir kenara bırakıp, tekrar taşranın sıkıntılı dünyasına ama bu sefer bir cinayet hikayesinin gerilimi ile dönüyor... Bir doktor ile bir savcının 12 saatlik gerilimli öyküsünün peliküle aktarıldığı filmin başrollerinde Muhammet Uzuner, Yılmaz Erdoğan ve Taner Birsel yer alıyor. Senaryoda Ebru ve Nuri Bilge Ceylan'ın yanı sıra Ercan Kesal'ın da imzası var. Yolların tek düzeliği ve kasabanın insana yeni bir şey sunmamasının sıradanlığını fona alan",
-      "director": "Nuri Bilge Ceylan",
-      "cast": [
-        "Yılmaz Erdoğan",
-        "Taner Birsel",
-        "Ahmet Mümtaz Taylan",
-        "Fırat Tanış",
-        "Ercan Kesal",
-        "Erol Eraslan"
-      ],
-      "rating": "4.8",
-      "reviewCount": 5,
-      "imdbId": "tt1827487",
-      "imdbUrl": "https://www.imdb.com/title/tt1827487/",
-      "imdbRating": "7.8",
-      "imdbVotes": 54579,
-      "imdbTitle": "Once Upon a Time in Anatolia",
-      "imdbYear": 2011,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMzg3OTMyODQ1M15BMl5BanBnXkFtZTcwNjMwMTEwNw@@._V1_.jpg",
-      "sourceTitle": "Bir Zamanlar Anadolu'da"
-    },
-    {
-      "days": [
-        "2026-09-21"
-      ],
-      "title": "Macbeth",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "665 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu",
-      "availability": "available",
-      "owned": false,
-      "description": "Macbeth Tiyatro Oyunu Shakespeare en ünlü tragedyalarından olan Macbeth’te iktidar hırsının yıkıcılığını anlatır. Savaşta gösterdiği üstün başarıdan dolayı Kral Duncan tarafından Cawdır Beyliği ile mükafatlandırılan Macbeth karargaha dönüş yolunda Cadılarla karşılaşır. Cadılar şimdi Cawdor Beyi olduğunu sonrasında Kral olacağı kehanetini duyururlar Macbeth’e. Bu haberi hızlıca bir mektup ile lady Macbeth’e ulaştırır. Lady Macbeth kral olması konusunda cesaretlendirir. Macb",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/macbeth-moda-sahnesi-202411410643d923fcd44fac4dc98898eb737709422e.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu"
-    },
-    {
-      "days": [
-        "2026-09-21"
-      ],
-      "title": "The Invite",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/the-invite-davet-acik-hava-gosterimi",
-      "availability": "owned",
-      "owned": true,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-invite-davet-acik-hava-gosterimi-202687911490d10d7a1a46e40c18c820fa4c609fb2c.jpg",
-      "duration": "PT1H47M",
-      "genre": "Film Gösterimi",
-      "description": "The Invite / Davet - Açık Hava Gösterimi Eski bir çiftin ev sahipliği yaptığı akşam yemeği, misafir olarak katılan yeni bir çiftin beklenmedik açıklamaları ve başlattıkları psikolojik oyunlarla gerilim dolu bir yüzleşmeye dönüşür. Olivia Wilde ve Seth Rogen’ın canlandırdığı ev sahibi çift, Edward Norton ve Penelope Cruz tarafından canlandırılan yeni bir çifti akşam yemeğine davet eder. Başlangıçta nazik ve sıradan bir sosyal etkileşim gibi görünen gece, misafir çiftin ilişkilerine dair yap",
-      "imdbId": "tt14173636",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "imdbRating": "7.5",
-      "imdbVotes": 63949,
-      "imdbTitle": "The Invite",
-      "imdbYear": 2026,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "The Invite / Davet - Açık Hava Gösterimi"
-    },
     {
       "days": [
         "2026-09-22"
@@ -1278,7 +1152,7 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "2026-09-21 refresh: active source confirmed as repository-root event-data.json. The five required Biletinial venue inventory tabs (loc=15880, 17011, 15863, 15738, 18051) were fetched directly; each returned HTTP 200 rendered HTML, but no reliable cinemaPartitions/seancesData session payload was exposed in the fetched response, so no new dated sessions were fabricated. Existing verified records were rolled forward, expired records removed, whitespace and duplicate event keys retained normalized. Fastmail was checked; Google colonist was readable, but the personal profile requested interactive OAuth authorization and was unavailable. IMDb metadata was retained from prior verified enrichment; no new film identity enrichment was applied.",
+  "research_note": "2026-09-21 refresh: active source confirmed as repository-root event-data.json. The five required Biletinial venue inventory tabs (loc=15880, 17011, 15863, 15738, 18051) were fetched directly; each returned HTTP 200 rendered HTML, but no reliable cinemaPartitions/seancesData session payload was exposed in the fetched response, so no new dated sessions were fabricated. Existing verified records were rolled forward, expired records removed, whitespace and duplicate event keys retained normalized. Fastmail was checked; Google colonist was readable, but the personal profile requested interactive OAuth authorization and was unavailable. IMDb metadata was retained from prior verified enrichment; no new film identity enrichment was applied. Calendar limitations: Fastmail was checked; Google profile colonist was checked; Google profile personal requires interactive OAuth authorization. No calendar-owned Istanbul event matched the retained records. Theatre venue tabs were checked directly; their current HTML exposed no active InStock theatre sessions for the requested window, so no new theatre records were added. Cinema sources exposed dated sessions; existing verified records were retained, with IMDb metadata kept only where already validated.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -1286,7 +1160,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-21",
+      "checkedAt": "2026-09-22",
       "listedItems": 32,
       "listedEventLinks": 42
     },
@@ -1296,7 +1170,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-21",
+      "checkedAt": "2026-09-22",
       "listedItems": 10,
       "listedEventLinks": 19
     },
@@ -1306,7 +1180,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-21",
+      "checkedAt": "2026-09-22",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -1316,7 +1190,7 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-21",
+      "checkedAt": "2026-09-22",
       "listedItems": 27,
       "listedEventLinks": 33
     },
@@ -1326,7 +1200,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-21",
+      "checkedAt": "2026-09-22",
       "listedItems": 50,
       "listedEventLinks": 52
     },
@@ -1335,21 +1209,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-21"
+      "checkedAt": "2026-09-22"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-21"
+      "checkedAt": "2026-09-22"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-21"
+      "checkedAt": "2026-09-22"
     }
   ]
 }
