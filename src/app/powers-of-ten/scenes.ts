@@ -57,7 +57,7 @@ export const SCENES: Scene[] = [
   { e: 9, title: "The Sun", blurb: "1.4 million kilometres of hydrogen fusing into helium. 99.86% of the system's mass.", art: "star", hue: 40 },
   { e: 8, title: "Near-Earth space", blurb: "The dashed ring is geostationary orbit, to scale. The Moon is still four frames further out.", art: "nearearth", hue: 205 },
   { e: 7, title: "Earth", blurb: "12,742 kilometres wide. A thin skin of water and air on a ball of iron and rock.", art: "planet", hue: 205 },
-  { e: 6, title: "A sea and its coasts", blurb: "A thousand kilometres. Not a continent — Australia is four of these frames wide, and so is the Moon.", art: "region", hue: 200 },
+  { e: 6, title: "Great Britain", blurb: "A thousand kilometres, end to end — it fills this frame exactly. Australia is four frames wide, and so is the Moon.", art: "region", hue: 200 },
   { e: 5, title: "A coast and its hinterland", blurb: "A hundred kilometres. Roads converge on one stain of grey; everything else is field and water.", art: "aerial", hue: 140 },
   { e: 4, title: "A city", blurb: "Ten kilometres of streets and a river, laid down by a thousand years of small decisions.", art: "aerial", hue: 130 },
   { e: 3, title: "A neighbourhood", blurb: "One kilometre. Roughly how far you walk without noticing that you walked.", art: "aerial", hue: 125 },

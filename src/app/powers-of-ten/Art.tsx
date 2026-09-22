@@ -247,30 +247,47 @@ function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e
       );
     }
     case "region": {
-      // 1,000 km: the sea the coast below belongs to. The same water lies to the
-      // lower right here as in the aerial frame nested inside it.
+      // 1,000 km: Great Britain is almost exactly that, end to end, so it fills the
+      // frame. It is positioned so the estuary at the centre is where the aerial
+      // frames nested inside this one pick up — sea to the lower right, as there.
       const r = rng(seed);
       return (
         <svg {...common}>
-          <rect width={100} height={100} fill="#3d4a33" />
-          {/* highland speckle */}
-          {Array.from({ length: 70 }, (_, i) => (
-            <ellipse key={i} cx={r() * 100} cy={r() * 100} rx={2 + r() * 7} ry={1.5 + r() * 4} fill="#46523a" opacity={0.6} />
-          ))}
-          {/* the main sea, filling the lower right */}
-          <path d="M104 4 L104 104 L10 104 C 18 88, 34 78, 50 70 C 66 62, 76 44, 78 26 C 80 14, 90 6, 104 4 Z" fill="#1c3242" />
-          {/* a second sea and the strait between them */}
-          <path d="M-4 -4 L44 -4 C 40 8, 30 16, 18 20 C 8 24, 0 22, -4 18 Z" fill="#1c3242" />
-          <path d="M40 -2 C 46 12, 50 26, 56 38 C 60 46, 58 56, 52 64" fill="none" stroke="#1c3242" strokeWidth={2.4} />
-          {/* rivers */}
-          {["M-2 60 C 14 58, 26 66, 38 74", "M96 92 C 84 86, 78 74, 74 62"].map((d2, i) => (
-            <path key={i} d={d2} fill="none" stroke="#2a4658" strokeWidth={0.8} opacity={0.8} />
-          ))}
-          {/* cities — the largest is the one we came from, on the coast at centre */}
-          <ellipse cx={50} cy={50} rx={5.5} ry={4} fill="#4f4d45" />
-          {Array.from({ length: 9 }, (_, i) => (
-            <ellipse key={`c${i}`} cx={r() * 100} cy={r() * 100} rx={1 + r() * 2.5} ry={0.8 + r() * 1.8} fill="#4f4d45" opacity={0.75} />
-          ))}
+          <rect width={100} height={100} fill="#16293a" />
+          {/* shallow water over the continental shelf */}
+          <rect width={100} height={100} fill="#1c3242" />
+          <g transform="translate(-13 -11)">
+            {/* mainland Europe, across the narrow sea */}
+            <path d="M78 66 L120 60 L124 120 L74 120 C 74 104, 72 86, 78 74 Z" fill="#3a4632" />
+            <path d="M78 66 L120 60" fill="none" stroke="#2a4658" strokeWidth={0.9} />
+            {/* Ireland */}
+            <path d="M8 44 C 16 40, 24 42, 26 48 C 28 56, 22 62, 14 62 C 6 62, 2 54, 8 44 Z" fill="#3f5236" />
+            {/* Great Britain */}
+            <path
+              d="M48 3 L54 6 L50 10 L58 14 L60 19 L56 24 L51 27 L57 29 L59 33 L62 40 L58 44 L64 47
+                 L69 52 L74 56 L70 60 L66 62 L70 65 L62 68 L54 70 L46 71 L38 73 L28 79 L20 84
+                 L25 80 L33 75 L40 71 L34 68 L26 67 L30 63 L26 60 L32 57 L36 55 L33 52 L38 50
+                 L36 46 L33 42 L36 38 L30 36 L33 32 L28 30 L32 27 L26 24 L30 20 L24 17 L30 14
+                 L34 10 L40 6 Z"
+              fill="#43593a"
+            />
+            {/* uplands down the spine */}
+            {Array.from({ length: 26 }, (_, i) => {
+              const t = i / 25;
+              const x = 34 + Math.sin(t * 6) * 5 + r() * 6;
+              const y = 8 + t * 58;
+              return <ellipse key={i} cx={x} cy={y} rx={2 + r() * 3} ry={1.5 + r() * 2} fill="#4e6343" opacity={0.75} />;
+            })}
+          </g>
+          {/* the estuary the city sits on, dead centre */}
+          <path d="M50 50 C 56 51, 62 54, 70 58" fill="none" stroke="#24405a" strokeWidth={1.6} />
+          <ellipse cx={50} cy={50} rx={4.5} ry={3} fill="#54524a" />
+          {/* other towns */}
+          {Array.from({ length: 11 }, (_, i) => {
+            const x = 14 + r() * 44;
+            const y = 4 + r() * 76;
+            return <ellipse key={`c${i}`} cx={x} cy={y} rx={0.9 + r() * 1.8} ry={0.7 + r() * 1.3} fill="#54524a" opacity={0.8} />;
+          })}
         </svg>
       );
     }
