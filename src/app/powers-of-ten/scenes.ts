@@ -8,6 +8,8 @@ export type Art =
   | "planet"
   | "land"
   | "aerial"
+  | "cosmos"
+  | "milkyway"
   | "grid"
   | "figure"
   | "region"
@@ -36,17 +38,17 @@ export type Scene = {
 };
 
 export const SCENES: Scene[] = [
-  { e: 27, title: "The observable universe", blurb: "93 billion light-years across. Every galaxy whose light has had time to reach us.", art: "web", hue: 250 },
-  { e: 26, title: "The cosmic web", blurb: "Matter is not sprinkled evenly. It hangs in filaments around voids the size of nothing else.", art: "web", hue: 255 },
-  { e: 25, title: "Galaxy filaments", blurb: "Superclusters strung along threads left by ripples in the infant universe.", art: "field", hue: 260 },
-  { e: 24, title: "Laniakea", blurb: "Our home supercluster — a hundred thousand galaxies all falling the same way.", art: "field", hue: 265 },
-  { e: 23, title: "The Virgo cluster", blurb: "A thousand galaxies bound by gravity, swimming in hot X-ray gas.", art: "field", hue: 270 },
-  { e: 22, title: "The Local Group", blurb: "The Milky Way, Andromeda, and fifty smaller galaxies. Andromeda is closing in.", art: "field", hue: 275 },
-  { e: 21, title: "The Milky Way", blurb: "A barred spiral, 100,000 light-years wide, holding a few hundred billion stars.", art: "galaxy", hue: 220 },
-  { e: 20, title: "A spiral arm", blurb: "Not a solid structure — a traffic jam of stars and gas that stars drift through.", art: "galaxy", hue: 210 },
-  { e: 19, title: "The Orion Spur", blurb: "Our minor arm. The Sun takes 230 million years to lap the galaxy once.", art: "cloud", hue: 200 },
-  { e: 18, title: "A molecular cloud", blurb: "Cold dust and hydrogen, a hundred light-years across, quietly collapsing into stars.", art: "cloud", hue: 320 },
-  { e: 17, title: "The stellar neighbourhood", blurb: "A dozen light-years. Alpha Centauri, Barnard's Star, Sirius — all of them suns.", art: "field", hue: 190 },
+  { e: 27, title: "The observable universe", blurb: "93 billion light-years across. Every galaxy whose light has had time to reach us; the ring marks where we go next.", art: "cosmos", hue: 250 },
+  { e: 26, title: "The cosmic web", blurb: "Matter is not sprinkled evenly. It hangs in filaments around voids, and one filament runs through this frame.", art: "cosmos", hue: 255 },
+  { e: 25, title: "A filament", blurb: "That same thread, end to end. Superclusters are the knots in it — ours is the one at the centre.", art: "cosmos", hue: 260 },
+  { e: 24, title: "Laniakea", blurb: "The knot resolves: a hundred thousand galaxies, all falling the same way.", art: "cosmos", hue: 265 },
+  { e: 23, title: "A galaxy cluster", blurb: "A thousand galaxies bound by gravity, swimming in gas hot enough to shine in X-rays.", art: "cosmos", hue: 270 },
+  { e: 22, title: "The Local Group", blurb: "Andromeda up on the left, the Milky Way at the centre, Triangulum below, and a scatter of dwarfs.", art: "cosmos", hue: 275 },
+  { e: 21, title: "The Milky Way", blurb: "A barred spiral 100,000 light-years wide. The core is off to the upper left — we live out in the suburbs.", art: "milkyway", hue: 220 },
+  { e: 20, title: "A spiral arm", blurb: "Not a solid thing — a traffic jam of stars and gas. The core still glows from the same corner.", art: "milkyway", hue: 210 },
+  { e: 19, title: "The Orion Spur", blurb: "Our minor arm, a spur off the Sagittarius arm. The Sun takes 230 million years to lap the galaxy once.", art: "milkyway", hue: 200 },
+  { e: 18, title: "A molecular cloud", blurb: "Cold dust and hydrogen a hundred light-years across, quietly collapsing into new stars.", art: "milkyway", hue: 320 },
+  { e: 17, title: "The stellar neighbourhood", blurb: "A dozen light-years. Alpha Centauri, Barnard's Star, Sirius — and the Sun, at the centre as always.", art: "milkyway", hue: 190 },
   { e: 16, title: "One light-year", blurb: "9.46 trillion metres. Still inside the Sun's grip: the Oort cloud starts here.", art: "cloud", hue: 185 },
   { e: 15, title: "The inner Oort cloud", blurb: "A shell of frozen comets, loosely held, occasionally nudged inward by a passing star.", art: "cloud", hue: 180 },
   { e: 14, title: "The Kuiper belt", blurb: "Pluto, Eris and a hundred thousand icy leftovers, inside the bubble the solar wind blows.", art: "orbit", hue: 175 },

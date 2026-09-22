@@ -1,5 +1,7 @@
 import { memo } from "react";
 import { Aerial } from "./Aerial";
+import { Cosmos } from "./Cosmos";
+import { Galaxy } from "./Galaxy";
 import type { Art } from "./scenes";
 
 function rng(seed: number) {
@@ -49,6 +51,10 @@ function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e
   switch (art) {
     case "aerial":
       return <Aerial level={e} />;
+    case "cosmos":
+      return <Cosmos level={e} />;
+    case "milkyway":
+      return <Galaxy level={e} />;
     case "web": {
       const nodes = dots(seed, 70, 0.3, 1.4);
       const r = rng(seed + 5);
