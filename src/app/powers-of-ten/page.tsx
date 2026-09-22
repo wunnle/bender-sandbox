@@ -46,7 +46,7 @@ function planckMultiples(e: number) {
 export default function PowersOfTenPage() {
   const [view, setView] = useState(0);
   const [playing, setPlaying] = useState(false);
-  const dir = useRef(-1);
+  const dir = useRef(1); // play heads outward from the human scale first
   const frame = useRef(0);
 
   const clamp = useCallback((v: number) => Math.min(MAX, Math.max(MIN, v)), []);
@@ -54,35 +54,53 @@ export default function PowersOfTenPage() {
   // mirror of `view` so the step animation can read it without re-binding
   const viewRef = useRef(0);
   viewRef.current = view;
+  const playingRef = useRef(false);
+  playingRef.current = playing;
   const stepFrame = useRef(0);
 
-  const stopAnimating = useCallback(() => cancelAnimationFrame(stepFrame.current), []);
+  /** true while a step is easing — input is ignored so we never rest between decades */
+  const moving = useRef(false);
 
-  /** Ease to an exact power of ten. */
+  const stopAnimating = useCallback(() => {
+    cancelAnimationFrame(stepFrame.current);
+    moving.current = false;
+  }, []);
+
+  /** Ease to an exact power of ten. The view only ever comes to rest on one. */
   const animateTo = useCallback(
     (target: number) => {
-      stopAnimating();
-      setPlaying(false);
       const from = viewRef.current;
-      const to = clamp(target);
+      const to = clamp(Math.round(target));
       if (from === to) return;
+      cancelAnimationFrame(stepFrame.current);
+      setPlaying(false);
+      moving.current = true;
+      const dist = Math.abs(to - from);
+      const ms = Math.min(1600, 420 + dist * 180);
       const t0 = performance.now();
       const tick = (now: number) => {
-        const p = Math.min(1, (now - t0) / 560);
+        const p = Math.min(1, (now - t0) / ms);
         const eased = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
         setView(from + (to - from) * eased);
         if (p < 1) stepFrame.current = requestAnimationFrame(tick);
+        else moving.current = false;
       };
       stepFrame.current = requestAnimationFrame(tick);
     },
-    [clamp, stopAnimating],
+    [clamp],
   );
 
-  /** One decade in the given direction, snapping to whole exponents. */
+  /** Stop the tour and settle on the nearest whole power of ten. */
+  const pause = useCallback(() => {
+    setPlaying(false);
+    animateTo(Math.round(viewRef.current));
+  }, [animateTo]);
+
+  /** One decade in the given direction. Ignored mid-step. */
   const step = useCallback(
     (d: 1 | -1) => {
-      const cur = viewRef.current;
-      animateTo(d > 0 ? Math.floor(cur + 1e-4) + 1 : Math.ceil(cur - 1e-4) - 1);
+      if (moving.current) return;
+      animateTo(Math.round(viewRef.current) + d);
     },
     [animateTo],
   );
@@ -128,24 +146,30 @@ export default function PowersOfTenPage() {
         animateTo(MIN);
       } else if (ev.key === " ") {
         ev.preventDefault();
-        setPlaying((p) => !p);
+        if (playingRef.current) pause();
+        else setPlaying(true);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [step, animateTo]);
+  }, [step, animateTo, pause]);
 
+  // a wheel gesture is many events; accumulate and fire one step per threshold crossed
+  const wheelAcc = useRef(0);
   const onWheel = useCallback(
     (ev: React.WheelEvent) => {
-      stopAnimating();
-      setPlaying(false);
-      setView((v) => clamp(v + ev.deltaY * 0.0022));
+      if (moving.current) return;
+      wheelAcc.current += ev.deltaY;
+      if (Math.abs(wheelAcc.current) < 60) return;
+      step(wheelAcc.current > 0 ? 1 : -1);
+      wheelAcc.current = 0;
     },
-    [clamp, stopAnimating],
+    [step],
   );
 
-  // touch: vertical drag zooms
+  // touch: a vertical swipe is one step
   const touchY = useRef<number | null>(null);
+  const touchAcc = useRef(0);
 
   const focus = SCENES.reduce((best, s) => (Math.abs(s.e - view) < Math.abs(best.e - view) ? s : best), SCENES[0]);
   const aside = lightYears(view) ?? planckMultiples(view);
@@ -156,17 +180,20 @@ export default function PowersOfTenPage() {
       onWheel={onWheel}
       onTouchStart={(e) => {
         touchY.current = e.touches[0].clientY;
-        stopAnimating();
+        touchAcc.current = 0;
         setPlaying(false);
       }}
       onTouchMove={(e) => {
-        if (touchY.current === null) return;
-        const dy = e.touches[0].clientY - touchY.current;
+        if (touchY.current === null || moving.current) return;
+        touchAcc.current += e.touches[0].clientY - touchY.current;
         touchY.current = e.touches[0].clientY;
-        setView((v) => clamp(v - dy * 0.012));
+        if (Math.abs(touchAcc.current) < 55) return;
+        step(touchAcc.current > 0 ? -1 : 1);
+        touchAcc.current = 0;
       }}
       onTouchEnd={() => {
         touchY.current = null;
+        touchAcc.current = 0;
       }}
     >
       {/* starfield backdrop */}
@@ -205,7 +232,7 @@ export default function PowersOfTenPage() {
       {/* header */}
       <header className="absolute left-0 right-0 top-0 p-5 sm:p-8">
         <h1 className="text-[11px] uppercase tracking-[0.35em] text-white/45">Powers of Ten</h1>
-        <p className="mt-1 text-[11px] text-white/30">← → step a power of ten · scroll to glide · space to play</p>
+        <p className="mt-1 text-[11px] text-white/30">Starts at human scale · scroll, swipe or ← → to step a power of ten</p>
       </header>
 
       {/* readout */}
@@ -240,7 +267,7 @@ export default function PowersOfTenPage() {
               Zoom out
             </button>
             <button
-              onClick={() => setPlaying((p) => !p)}
+              onClick={() => (playing ? pause() : setPlaying(true))}
               className="shrink-0 rounded-full border border-white/20 px-4 py-1.5 text-xs uppercase tracking-widest text-white/80 transition hover:bg-white/10"
             >
               {playing ? "Pause" : "Play"}
@@ -265,14 +292,9 @@ export default function PowersOfTenPage() {
                 type="range"
                 min={MIN}
                 max={MAX}
-                step={0.01}
-                value={view}
-                onChange={(e) => {
-                  stopAnimating();
-                  setPlaying(false);
-                  setView(Number(e.target.value));
-                }}
-                onPointerUp={() => animateTo(Math.round(viewRef.current))}
+                step={1}
+                value={Math.round(view)}
+                onChange={(e) => animateTo(Number(e.target.value))}
                 className="relative h-1 w-full cursor-pointer appearance-none rounded-full bg-white/15 accent-white"
                 aria-label="Scale"
               />
