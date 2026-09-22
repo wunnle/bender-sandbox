@@ -222,24 +222,22 @@ export default function PowersOfTenPage() {
           <h2 className="mt-3 text-xl font-medium sm:text-2xl">{focus.title}</h2>
           <p className="mt-1 max-w-lg text-sm leading-relaxed text-white/55">{focus.blurb}</p>
 
-          <div className="mt-5 flex items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-center gap-3">
             <button
               onClick={() => step(-1)}
               disabled={view <= MIN + 1e-6}
-              title="One power of ten smaller (←)"
-              className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/20 text-base text-white/80 transition hover:bg-white/10 disabled:opacity-25"
-              aria-label="Step one power of ten smaller"
+              title="In one power of ten (←)"
+              className="shrink-0 rounded-full border border-white/20 px-3.5 py-1.5 text-xs uppercase tracking-widest text-white/80 transition hover:bg-white/10 disabled:opacity-25"
             >
-              −
+              Zoom in
             </button>
             <button
               onClick={() => step(1)}
               disabled={view >= MAX - 1e-6}
-              title="One power of ten larger (→)"
-              className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/20 text-base text-white/80 transition hover:bg-white/10 disabled:opacity-25"
-              aria-label="Step one power of ten larger"
+              title="Out one power of ten (→)"
+              className="shrink-0 rounded-full border border-white/20 px-3.5 py-1.5 text-xs uppercase tracking-widest text-white/80 transition hover:bg-white/10 disabled:opacity-25"
             >
-              +
+              Zoom out
             </button>
             <button
               onClick={() => setPlaying((p) => !p)}
@@ -248,7 +246,7 @@ export default function PowersOfTenPage() {
               {playing ? "Pause" : "Play"}
             </button>
 
-            <div className="relative flex-1">
+            <div className="relative min-w-[150px] flex-1">
               <div className="pointer-events-none absolute inset-x-[7px] top-1/2 -translate-y-1/2">
                 {SCENES.map((s) => (
                   <span

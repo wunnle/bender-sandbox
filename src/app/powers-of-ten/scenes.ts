@@ -9,6 +9,9 @@ export type Art =
   | "land"
   | "grid"
   | "figure"
+  | "moon"
+  | "nearearth"
+  | "none"
   | "skin"
   | "cells"
   | "virus"
@@ -47,21 +50,21 @@ export const SCENES: Scene[] = [
   { e: 14, title: "The Kuiper belt", blurb: "Beyond Neptune: Pluto, Eris, Makemake, and a hundred thousand icy leftovers.", art: "orbit", hue: 175 },
   { e: 13, title: "The outer planets", blurb: "Neptune's orbit. Sunlight out here is a thousandth of what falls on Earth.", art: "orbit", hue: 200 },
   { e: 12, title: "Jupiter's orbit", blurb: "The giant that sweeps up comets and has quietly shaped the whole system.", art: "orbit", hue: 30 },
-  { e: 11, title: "Earth's orbit", blurb: "One astronomical unit, 150 million metres per side. Light crosses it in 8 minutes.", art: "orbit", hue: 45 },
+  { e: 11, title: "Earth's orbit", blurb: "One astronomical unit — 150 million kilometres. Light crosses it in eight minutes.", art: "orbit", hue: 45 },
   { e: 10, title: "The inner solar system", blurb: "Mercury, Venus, Earth, Mars — four rocks in the narrow band where water can be liquid.", art: "orbit", hue: 40 },
   { e: 9, title: "The Sun", blurb: "1.4 million kilometres of hydrogen fusing into helium. 99.86% of the system's mass.", art: "star", hue: 40 },
-  { e: 8, title: "Earth and Moon", blurb: "384,000 kilometres apart — the only gap humans have ever crossed.", art: "planet", hue: 205 },
+  { e: 8, title: "Near-Earth space", blurb: "The dashed ring is geostationary orbit, to scale. The Moon is still four frames further out.", art: "nearearth", hue: 205 },
   { e: 7, title: "Earth", blurb: "12,742 kilometres wide. A thin skin of water and air on a ball of iron and rock.", art: "planet", hue: 205 },
-  { e: 6, title: "A continent", blurb: "Plates drifting at the speed your fingernails grow, rearranging the map over aeons.", art: "land", hue: 150 },
+  { e: 6, title: "The Moon", blurb: "3,474 kilometres across — about the width of Australia, and the same size as a continent.", art: "moon", hue: 40 },
   { e: 5, title: "A city and its region", blurb: "A hundred kilometres. The horizon from a high window; a morning's drive.", art: "land", hue: 140 },
   { e: 4, title: "A city", blurb: "Ten kilometres of streets, laid down by a thousand years of small decisions.", art: "grid", hue: 130 },
   { e: 3, title: "A neighbourhood", blurb: "One kilometre. Roughly how far you walk without noticing it.", art: "grid", hue: 125 },
   { e: 2, title: "A city block", blurb: "A hundred metres. Close enough to recognise a friend's walk.", art: "grid", hue: 120 },
-  { e: 1, title: "A garden", blurb: "Ten metres. A house, a tree, a parked car — the scale the body understands best.", art: "figure", hue: 110 },
-  { e: 0, title: "A person", blurb: "One metre. Almost exactly halfway, in powers of ten, between a quark and the cosmos.", art: "figure", hue: 100 },
-  { e: -1, title: "A hand", blurb: "Ten centimetres. Twenty-seven bones and a third of the brain's motor cortex.", art: "skin", hue: 20 },
+  { e: 1, title: "A garden", blurb: "Ten metres. Room enough for a tree, a car, and the person standing in the middle of it.", art: "none", hue: 110 },
+  { e: 0, title: "A person", blurb: "One metre. The scale the body understands without being told — everything else is a comparison to it.", art: "figure", hue: 100 },
+  { e: -1, title: "A hand", blurb: "Ten centimetres. Twenty-seven bones, and a third of the brain's motor cortex devoted to them.", art: "none", hue: 20 },
   { e: -2, title: "Skin", blurb: "One centimetre of folded ridges — the fingerprint that is never repeated.", art: "skin", hue: 18 },
-  { e: -3, title: "A millimetre", blurb: "A grain of salt, a mite, the thickness of a fingernail. The eye gives up near here.", art: "skin", hue: 15 },
+  { e: -3, title: "A millimetre", blurb: "A grain of salt, a mite, the thickness of a fingernail. The eye gives up somewhere around here.", art: "none", hue: 15 },
   { e: -4, title: "A hair's width", blurb: "A hundred micrometres. Past this point everything must be borrowed from a lens.", art: "cells", hue: 340 },
   { e: -5, title: "Cells", blurb: "Ten micrometres. A red blood cell, folded into a disc so it can squeeze through capillaries.", art: "cells", hue: 350 },
   { e: -6, title: "A bacterium", blurb: "One micrometre. There are more of these on your skin than there are people on Earth.", art: "cells", hue: 300 },

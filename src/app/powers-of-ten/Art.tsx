@@ -109,25 +109,98 @@ function ArtImpl({ art, hue, seed }: { art: Art; hue: number; seed: number }) {
           ))}
         </svg>
       );
-    case "planet":
+    case "planet": {
+      const r = rng(seed);
       return (
-        <svg {...common}>
+        <svg {...common} preserveAspectRatio="xMidYMid meet">
           <defs>
-            <radialGradient id={`p${seed}`} cx="35%" cy="32%">
-              <stop offset="0%" stopColor={c(62, 60)} />
-              <stop offset="70%" stopColor={c(34, 55)} />
-              <stop offset="100%" stopColor={c(12, 45)} />
+            <radialGradient id={`p${seed}`} cx="36%" cy="32%">
+              <stop offset="0%" stopColor="hsl(200 75% 48%)" />
+              <stop offset="68%" stopColor="hsl(212 78% 32%)" />
+              <stop offset="100%" stopColor="hsl(222 70% 14%)" />
             </radialGradient>
+            <clipPath id={`pc${seed}`}>
+              <circle cx={50} cy={50} r={38} />
+            </clipPath>
           </defs>
-          <circle cx={50} cy={50} r={34} fill={`url(#p${seed})`} />
-          {dots(seed + 2, 14, 3, 9).map((n) => {
-            const x = 50 + (n.x - 50) * 0.6;
-            const y = 50 + (n.y - 50) * 0.6;
-            return <ellipse key={n.key} cx={x} cy={y} rx={n.r} ry={n.r * 0.6} fill="hsl(130 45% 40%)" opacity={0.45} />;
-          })}
-          <circle cx={50} cy={50} r={35.5} fill="none" stroke={c(80)} strokeWidth={1.2} opacity={0.3} />
+          <circle cx={50} cy={50} r={41} fill="hsl(200 90% 60%)" opacity={0.18} />
+          <circle cx={50} cy={50} r={38} fill={`url(#p${seed})`} />
+          <g clipPath={`url(#pc${seed})`} fill="hsl(105 38% 40%)" opacity={0.92}>
+            {/* Africa + Europe, facing us */}
+            <path d="M52 30 L61 31 L64 38 L60 45 L59 56 L53 66 L48 60 L46 48 L48 38 Z" />
+            <path d="M50 24 L62 25 L60 29 L51 28 Z" />
+            {/* Asia, curving off the limb */}
+            <path d="M64 28 L80 30 L86 38 L76 42 L66 39 L63 33 Z" />
+            {/* the Americas, just turning away */}
+            <path d="M28 30 L36 33 L34 41 L38 47 L35 62 L30 55 L31 43 L26 37 Z" />
+            {/* Australia */}
+            <path d="M76 56 L84 57 L83 63 L76 62 Z" />
+          </g>
+          <g clipPath={`url(#pc${seed})`}>
+            {Array.from({ length: 11 }, (_, i) => {
+              const y = 14 + r() * 72;
+              const x = 14 + r() * 72;
+              const w = 6 + r() * 16;
+              return <ellipse key={i} cx={x} cy={y} rx={w} ry={2 + r() * 2.5} fill="white" opacity={0.16 + r() * 0.16} />;
+            })}
+            {/* night side */}
+            <circle cx={70} cy={62} r={44} fill="hsl(230 60% 6%)" opacity={0.35} />
+          </g>
         </svg>
       );
+    }
+    case "moon": {
+      const r = rng(seed);
+      return (
+        <svg {...common} preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id={`m${seed}`} cx="38%" cy="34%">
+              <stop offset="0%" stopColor="hsl(45 12% 82%)" />
+              <stop offset="72%" stopColor="hsl(45 10% 62%)" />
+              <stop offset="100%" stopColor="hsl(45 12% 34%)" />
+            </radialGradient>
+            <clipPath id={`mc${seed}`}>
+              <circle cx={50} cy={50} r={40} />
+            </clipPath>
+          </defs>
+          <circle cx={50} cy={50} r={40} fill={`url(#m${seed})`} />
+          <g clipPath={`url(#mc${seed})`}>
+            {/* maria */}
+            {[[38, 36, 15], [58, 30, 9], [62, 58, 12], [34, 60, 7]].map(([x, y, rad], i) => (
+              <ellipse key={`s${i}`} cx={x} cy={y} rx={rad} ry={rad * 0.8} fill="hsl(230 12% 42%)" opacity={0.45} />
+            ))}
+            {/* craters */}
+            {Array.from({ length: 26 }, (_, i) => {
+              const a = r() * Math.PI * 2;
+              const d = Math.sqrt(r()) * 38;
+              const x = 50 + Math.cos(a) * d;
+              const y = 50 + Math.sin(a) * d;
+              const rad = 1 + r() * 4.5;
+              return (
+                <g key={i}>
+                  <circle cx={x} cy={y} r={rad} fill="hsl(45 10% 45%)" opacity={0.5} />
+                  <circle cx={x - rad * 0.2} cy={y - rad * 0.2} r={rad * 0.8} fill="hsl(45 14% 78%)" opacity={0.28} />
+                </g>
+              );
+            })}
+          </g>
+        </svg>
+      );
+    }
+    case "nearearth":
+      // Earth arrives from the 10^7 frame nested inside this one; only orbits are drawn here.
+      return (
+        <svg {...common} preserveAspectRatio="xMidYMid meet">
+          {/* geostationary ring, 42,164 km — genuinely to scale in this frame */}
+          <circle cx={50} cy={50} r={42} fill="none" stroke={c(80)} strokeWidth={0.3} opacity={0.35} strokeDasharray="2 3" />
+          {[0.4, 1.9, 3.5, 4.8].map((a, i) => (
+            <circle key={i} cx={50 + Math.cos(a) * 42} cy={50 + Math.sin(a) * 42} r={0.7} fill={c(90)} opacity={0.8} />
+          ))}
+          <circle cx={50} cy={50} r={7.1} fill="none" stroke={c(70)} strokeWidth={0.2} opacity={0.25} />
+        </svg>
+      );
+    case "none":
+      return null;
     case "land": {
       const r = rng(seed);
       const path = Array.from({ length: 5 }, (_, i) => {
