@@ -21,6 +21,26 @@ function dots(seed: number, n: number, minR: number, maxR: number) {
   }));
 }
 
+/** Semi-major axes in metres, with a fixed position on the dial so the frames agree. */
+const PLANETS = [
+  { name: "Mercury", a: 5.79e10, color: "#b9b2ab", t: 2.1 },
+  { name: "Venus", a: 1.082e11, color: "#e6cb95", t: 0.6 },
+  { name: "Earth", a: 1.496e11, color: "#7cc0ea", t: 3.5 },
+  { name: "Mars", a: 2.279e11, color: "#d5875b", t: 4.9 },
+  { name: "Jupiter", a: 7.785e11, color: "#dcb68d", t: 1.2 },
+  { name: "Saturn", a: 1.434e12, color: "#ead7a8", t: 5.6 },
+  { name: "Uranus", a: 2.871e12, color: "#a6dde2", t: 2.75 },
+  { name: "Neptune", a: 4.495e12, color: "#7d93e0", t: 0.25 },
+];
+
+/** Which orbit each frame is named for, and so which one gets the bright line. */
+const LEAD: Record<number, string> = {
+  11: "Mercury",
+  12: "Earth",
+  13: "Neptune",
+  14: "Kuiper",
+};
+
 /** Everything draws inside a 100x100 box; the parent scales it. */
 function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e: number }) {
   const c = (l: number, s = 70) => `hsl(${hue} ${s}% ${l}%)`;
@@ -83,41 +103,89 @@ function ArtImpl({ art, hue, seed, e }: { art: Art; hue: number; seed: number; e
         </svg>
       );
     case "orbit": {
-      // one orbit per frame, drawn as the bright thing in the picture; the tighter
-      // orbits arrive from the frames nested inside this one
-      const a = seed * 1.7;
-      const px = 50 + Math.cos(a) * 40;
-      const py = 50 + Math.sin(a) * 40;
+      // Every planet whose orbit lands inside this frame, at its real distance:
+      // radius in frame units = a / 10^e * 100. Whichever orbit the frame is named
+      // for gets the bright line; the rest are drawn faintly behind it.
+      const u = (a: number) => a * Math.pow(10, 2 - e);
+      const visible = PLANETS.map((p) => ({ ...p, r: u(p.a) })).filter((p) => p.r > 1.4 && p.r < 71);
+      const lead = visible.find((p) => p.name === LEAD[e]);
+      const kuiper = { inner: u(4.5e12), outer: u(7.5e12) };
+      const heliopause = u(1.8e13);
+      const r = rng(seed);
       return (
         <svg {...common} preserveAspectRatio="xMidYMid meet">
           <defs>
             <radialGradient id={`og${seed}`}>
-              <stop offset="0%" stopColor={c(85, 95)} stopOpacity={0.9} />
-              <stop offset="100%" stopColor={c(85, 95)} stopOpacity={0} />
+              <stop offset="0%" stopColor={lead?.color ?? "#fff"} stopOpacity={0.85} />
+              <stop offset="100%" stopColor={lead?.color ?? "#fff"} stopOpacity={0} />
             </radialGradient>
             <linearGradient id={`ot${seed}`} x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor={c(85, 95)} stopOpacity={0.15} />
-              <stop offset="60%" stopColor={c(85, 95)} stopOpacity={0.55} />
-              <stop offset="100%" stopColor={c(92, 100)} stopOpacity={1} />
+              <stop offset="0%" stopColor={lead?.color ?? "#fff"} stopOpacity={0.12} />
+              <stop offset="60%" stopColor={lead?.color ?? "#fff"} stopOpacity={0.5} />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity={1} />
             </linearGradient>
           </defs>
-          {/* the orbit itself: a soft halo under a crisp, brightening line */}
-          <circle cx={50} cy={50} r={40} fill="none" stroke={c(75, 90)} strokeWidth={2.4} opacity={0.14} />
-          <circle
-            cx={50}
-            cy={50}
-            r={40}
-            fill="none"
-            stroke={`url(#ot${seed})`}
-            strokeWidth={0.55}
-            transform={`rotate(${(a * 180) / Math.PI - 45} 50 50)`}
-          />
-          {/* the previous decade's orbit, a tenth of the size */}
-          <circle cx={50} cy={50} r={4} fill="none" stroke={c(70)} strokeWidth={0.25} opacity={0.3} />
-          <circle cx={50} cy={50} r={1.6} fill={c(88, 95)} opacity={0.85} />
-          {/* the body riding the line */}
-          <circle cx={px} cy={py} r={5} fill={`url(#og${seed})`} />
-          <circle cx={px} cy={py} r={1.5} fill={c(92, 100)} />
+
+          {/* the heliopause, where the solar wind finally stops */}
+          {heliopause > 2 && heliopause < 90 && (
+            <circle cx={50} cy={50} r={heliopause} fill="none" stroke="#8fb4d8" strokeWidth={1.6} opacity={0.12} />
+          )}
+          {/* the Kuiper belt as a band of ice rather than a line */}
+          {kuiper.outer > 3 && kuiper.inner < 71 &&
+            Array.from({ length: 150 }, (_, i) => {
+              const ang = r() * Math.PI * 2;
+              const rad = kuiper.inner + r() * (kuiper.outer - kuiper.inner);
+              return (
+                <circle
+                  key={`k${i}`}
+                  cx={50 + Math.cos(ang) * rad}
+                  cy={50 + Math.sin(ang) * rad * 0.99}
+                  r={0.3 + r() * 0.35}
+                  fill="#bcd6e6"
+                  opacity={LEAD[e] === "Kuiper" ? 0.75 : 0.3}
+                />
+              );
+            })}
+
+          {/* the other planets' orbits */}
+          {visible.map((p) => (
+            <circle
+              key={p.name}
+              cx={50}
+              cy={50}
+              r={p.r}
+              fill="none"
+              stroke={p.color}
+              strokeWidth={p === lead ? 2.2 : 0.22}
+              opacity={p === lead ? 0.13 : 0.4}
+            />
+          ))}
+          {/* the named orbit, brightening around toward its planet */}
+          {lead && (
+            <circle
+              cx={50}
+              cy={50}
+              r={lead.r}
+              fill="none"
+              stroke={`url(#ot${seed})`}
+              strokeWidth={0.6}
+              transform={`rotate(${(lead.t * 180) / Math.PI - 45} 50 50)`}
+            />
+          )}
+
+          <circle cx={50} cy={50} r={2.6} fill="#fff3cf" opacity={0.25} />
+          <circle cx={50} cy={50} r={1} fill="#fff8e2" />
+
+          {visible.map((p) => {
+            const x = 50 + Math.cos(p.t) * p.r;
+            const y = 50 + Math.sin(p.t) * p.r;
+            return (
+              <g key={`b${p.name}`}>
+                {p === lead && <circle cx={x} cy={y} r={5} fill={`url(#og${seed})`} />}
+                <circle cx={x} cy={y} r={p === lead ? 1.5 : 0.9} fill={p.color} />
+              </g>
+            );
+          })}
         </svg>
       );
     }
