@@ -38,8 +38,47 @@ export default function PowersOfTenPage() {
 
   const clamp = useCallback((v: number) => Math.min(MAX, Math.max(MIN, v)), []);
 
+  // mirror of `view` so the step animation can read it without re-binding
+  const viewRef = useRef(0);
+  viewRef.current = view;
+  const stepFrame = useRef(0);
+
+  const stopAnimating = useCallback(() => cancelAnimationFrame(stepFrame.current), []);
+
+  /** Ease to an exact power of ten. */
+  const animateTo = useCallback(
+    (target: number) => {
+      stopAnimating();
+      setPlaying(false);
+      const from = viewRef.current;
+      const to = clamp(target);
+      if (from === to) return;
+      const t0 = performance.now();
+      const tick = (now: number) => {
+        const p = Math.min(1, (now - t0) / 560);
+        const eased = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        setView(from + (to - from) * eased);
+        if (p < 1) stepFrame.current = requestAnimationFrame(tick);
+      };
+      stepFrame.current = requestAnimationFrame(tick);
+    },
+    [clamp, stopAnimating],
+  );
+
+  /** One decade in the given direction, snapping to whole exponents. */
+  const step = useCallback(
+    (d: 1 | -1) => {
+      const cur = viewRef.current;
+      animateTo(d > 0 ? Math.floor(cur + 1e-4) + 1 : Math.ceil(cur - 1e-4) - 1);
+    },
+    [animateTo],
+  );
+
+  useEffect(() => stopAnimating, [stopAnimating]);
+
   useEffect(() => {
     if (!playing) return;
+    stopAnimating();
     let last = performance.now();
     const tick = (now: number) => {
       const dt = (now - last) / 1000;
@@ -64,13 +103,16 @@ export default function PowersOfTenPage() {
 
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
-      const step = ev.shiftKey ? 1 : 0.25;
       if (ev.key === "ArrowDown" || ev.key === "ArrowLeft") {
-        setPlaying(false);
-        setView((v) => clamp(v - step));
+        ev.preventDefault();
+        step(-1);
       } else if (ev.key === "ArrowUp" || ev.key === "ArrowRight") {
-        setPlaying(false);
-        setView((v) => clamp(v + step));
+        ev.preventDefault();
+        step(1);
+      } else if (ev.key === "Home") {
+        animateTo(MAX);
+      } else if (ev.key === "End") {
+        animateTo(MIN);
       } else if (ev.key === " ") {
         ev.preventDefault();
         setPlaying((p) => !p);
@@ -78,14 +120,15 @@ export default function PowersOfTenPage() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [clamp]);
+  }, [step, animateTo]);
 
   const onWheel = useCallback(
     (ev: React.WheelEvent) => {
+      stopAnimating();
       setPlaying(false);
       setView((v) => clamp(v + ev.deltaY * 0.0022));
     },
-    [clamp],
+    [clamp, stopAnimating],
   );
 
   // touch: vertical drag zooms
@@ -100,6 +143,7 @@ export default function PowersOfTenPage() {
       onWheel={onWheel}
       onTouchStart={(e) => {
         touchY.current = e.touches[0].clientY;
+        stopAnimating();
         setPlaying(false);
       }}
       onTouchMove={(e) => {
@@ -148,7 +192,7 @@ export default function PowersOfTenPage() {
       {/* header */}
       <header className="absolute left-0 right-0 top-0 p-5 sm:p-8">
         <h1 className="text-[11px] uppercase tracking-[0.35em] text-white/45">Powers of Ten</h1>
-        <p className="mt-1 text-[11px] text-white/30">Scroll, drag, or press space</p>
+        <p className="mt-1 text-[11px] text-white/30">← → step a power of ten · scroll to glide · space to play</p>
       </header>
 
       {/* readout */}
@@ -165,26 +209,63 @@ export default function PowersOfTenPage() {
           <h2 className="mt-3 text-xl font-medium sm:text-2xl">{focus.title}</h2>
           <p className="mt-1 max-w-lg text-sm leading-relaxed text-white/55">{focus.blurb}</p>
 
-          <div className="mt-5 flex items-center gap-4">
+          <div className="mt-5 flex items-center gap-3">
+            <button
+              onClick={() => step(-1)}
+              disabled={view <= MIN + 1e-6}
+              title="One power of ten smaller (←)"
+              className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/20 text-base text-white/80 transition hover:bg-white/10 disabled:opacity-25"
+              aria-label="Step one power of ten smaller"
+            >
+              −
+            </button>
+            <button
+              onClick={() => step(1)}
+              disabled={view >= MAX - 1e-6}
+              title="One power of ten larger (→)"
+              className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/20 text-base text-white/80 transition hover:bg-white/10 disabled:opacity-25"
+              aria-label="Step one power of ten larger"
+            >
+              +
+            </button>
             <button
               onClick={() => setPlaying((p) => !p)}
               className="shrink-0 rounded-full border border-white/20 px-4 py-1.5 text-xs uppercase tracking-widest text-white/80 transition hover:bg-white/10"
             >
               {playing ? "Pause" : "Play"}
             </button>
-            <input
-              type="range"
-              min={MIN}
-              max={MAX}
-              step={0.01}
-              value={view}
-              onChange={(e) => {
-                setPlaying(false);
-                setView(Number(e.target.value));
-              }}
-              className="h-1 w-full cursor-pointer appearance-none rounded-full bg-white/15 accent-white"
-              aria-label="Scale"
-            />
+
+            <div className="relative flex-1">
+              <div className="pointer-events-none absolute inset-x-[7px] top-1/2 -translate-y-1/2">
+                {SCENES.map((s) => (
+                  <span
+                    key={s.e}
+                    className="absolute w-px -translate-x-1/2 bg-white/25"
+                    style={{
+                      left: `${((s.e - MIN) / (MAX - MIN)) * 100}%`,
+                      height: s.e % 5 === 0 ? 11 : 5,
+                      top: s.e % 5 === 0 ? -5.5 : -2.5,
+                      opacity: s.e % 5 === 0 ? 0.7 : 0.35,
+                    }}
+                  />
+                ))}
+              </div>
+              <input
+                type="range"
+                min={MIN}
+                max={MAX}
+                step={0.01}
+                value={view}
+                onChange={(e) => {
+                  stopAnimating();
+                  setPlaying(false);
+                  setView(Number(e.target.value));
+                }}
+                onPointerUp={() => animateTo(Math.round(viewRef.current))}
+                className="relative h-1 w-full cursor-pointer appearance-none rounded-full bg-white/15 accent-white"
+                aria-label="Scale"
+              />
+            </div>
           </div>
           <div className="mt-2 flex justify-between font-mono text-[10px] text-white/25">
             <span>10^{MIN} quark</span>
