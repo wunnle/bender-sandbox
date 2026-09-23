@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-22",
+  "lastUpdated": "2026-09-23",
   "range": {
-    "start": "2026-09-22",
-    "end": "2026-10-11"
+    "start": "2026-09-23",
+    "end": "2026-10-12"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,138 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Aşk Listesi",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Baba Sahne",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/ask-listesi-2",
-      "image": "https://tiyatrolar.com.tr/files/activity/a/ask-listesi-2/image/ask-listesi-2.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "DIKŞIN: Büyük Şans",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "554 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans",
-      "availability": "available",
-      "owned": false,
-      "description": "DIKŞIN: Büyük Şans Tiyatro Oyunu Efendinin anlatısına yerleşmeye çalışan köleye efendi şöyle der: “Bana yardım etmen lazım, grup olarak oynamalıyız, en ufak, sigara kağıdı kadar bile ince bir kuşkuya mahal vermeden... Benden hiçbir şey saklamamalısın, bana her şeyi söylemelisin. Artık bana her şeyi söyleyeceğine söz verir misin, Stan?” Moda sahnesi yeni bir Koffi Kwahule metni ile seyirci karşısında. Daha Önce Fildişili yazarın, Bira Fabrikası, Arıza (Blue-s Cat) ve Ağaçların K",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diksin-buyuk-sans-202498101341861bfccbb7c7484ebb67536d75d15efc.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans"
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Winter Sleep",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kis-uykusu",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kis-uykusu-2020102510302.jpg",
-      "formats": [
-        "Türkçe"
-      ],
-      "duration": "PT3H16M",
-      "genre": "Dram",
-      "description": "Kış Uykusu , Türk sinemasının bol ödüllü yönetmeni Nuri Bilge Ceylan'ın 2014 Cannes Film Festivali'nde en büyük ödül olan Altın Palmiye'yi kazandığı son filmi. Kış Uykusu filmi, eski bir tiyatro oyuncusu olan Aydın'ın, Anadolu bozkırlarının ortasında, adeta bir kış uykusuna yatmış gibi görünen ıssız bir mekanda, kendisiyle, hayalleriyle, sevdikleri ve taşrayla kurduğu ve düşe kalka sürdürmeye çalıştığı ilişkilerini konu alıyor. Karı-koca ve kardeşlik bağları da dahil her türlü insan ilişkisinin, çaresizlik, hayal kırıklığı, önyargılar ve çıkışsızlıkla mühürlenmiş olan o ağır kapısını aralıyor...",
-      "imdbId": "tt2758880",
-      "imdbUrl": "https://www.imdb.com/title/tt2758880/",
-      "imdbTitle": "Winter Sleep",
-      "imdbYear": 2014,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTU1NTY2Mzg5M15BMl5BanBnXkFtZTgwNDcwNjM5MTE@._V1_.jpg",
-      "sourceTitle": "Kış Uykusu"
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Winter Sleep",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kis-uykusu",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kis-uykusu-2020102510302.jpg",
-      "formats": [
-        "Türkçe"
-      ],
-      "duration": "PT3H16M",
-      "genre": "Dram",
-      "description": "Kış Uykusu , Türk sinemasının bol ödüllü yönetmeni Nuri Bilge Ceylan'ın 2014 Cannes Film Festivali'nde en büyük ödül olan Altın Palmiye'yi kazandığı son filmi. Kış Uykusu filmi, eski bir tiyatro oyuncusu olan Aydın'ın, Anadolu bozkırlarının ortasında, adeta bir kış uykusuna yatmış gibi görünen ıssız bir mekanda, kendisiyle, hayalleriyle, sevdikleri ve taşrayla kurduğu ve düşe kalka sürdürmeye çalıştığı ilişkilerini konu alıyor. Karı-koca ve kardeşlik bağları da dahil her türlü insan ilişkisinin, çaresizlik, hayal kırıklığı, önyargılar ve çıkışsızlıkla mühürlenmiş olan o ağır kapısını aralıyor...",
-      "imdbId": "tt2758880",
-      "imdbUrl": "https://www.imdb.com/title/tt2758880/",
-      "imdbTitle": "Winter Sleep",
-      "imdbYear": 2014,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTU1NTY2Mzg5M15BMl5BanBnXkFtZTgwNDcwNjM5MTE@._V1_.jpg",
-      "sourceTitle": "Kış Uykusu"
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Tavuk Suyuna Çorba",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/tavuk-film-gosterimi",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavuk-film-gosterimi-2026921340531d189d36d85449bfba15b86fa036b624.jpg",
-      "ageLimit": "16+",
-      "duration": "PT1H36M",
-      "genre": "Film Gösterimi",
-      "description": "Tavuk Film Gösterimi 2025 | DCP | Renkli Colour | 96’ | Yunanca; Türkçe altyazılı, Greek; Turkish sub. | Almanya, Yunanistan, Macaristan Germany, Greece, Hungry YÖNETMEN DIRECTOR György Pálfi OYUNCULAR CAST Tavuk, Yannis Kokiasmenos, Maria Diakopanayotou, Argyris Pandazaras Bu filmin baş karakteri bir tavuk. Bu sefer hayvanlar insanların hikâyelerine eşlik eden birer araç değil; hikâyenin merkezinde kendi iradesiyle hareket eden bir tavuk var. Kendi hikâyesine yön ver",
-      "imdbId": "tt34423325",
-      "imdbUrl": "https://www.imdb.com/title/tt34423325/",
-      "imdbTitle": "Tavuk Suyuna Çorba",
-      "imdbYear": 2024,
-      "imdbType": "short",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BZDRhYzhiZjUtN2E1Zi00YmE4LThmZWMtOGM4NjRlYzc0YWVkXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Tavuk"
-    },
-    {
-      "days": [
-        "2026-09-22"
-      ],
-      "title": "Şebbaz",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "658 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sebbaz",
-      "availability": "available",
-      "owned": false,
-      "description": "Şebbaz Tiyatro Oyunu -“Bize Bu Oyunu Kim Oynadı?”- “Ağzımızı gazelle açtık; tozu dumana, efkârı buluta kattık!” Perdeyle hayalin, ışıkla suretin bir araya geldiği dev bir perde oyunuyla gerçek oyuncuların maharetli performanslarını sahnede ustalıkla birleştiren “Şebbaz”, karakterleri ve tasvirleriyle kökünü bu toprakların binlerce yıllık kadim geleneğinden alan cesur, masalsı ve şenlikli bir dostluk hikayesi... “Gölge sureti çağırır, hikâye ışığın koynunda ses bulur… ‘Şeb’ gece demek",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sebbaz-20259110538970b239a16834594ac02a06caf8860b8.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sebbaz"
-    },
     {
       "days": [
         "2026-09-23"
@@ -1152,7 +1020,7 @@
   ],
   "cinemas": [],
   "omitted_records": 0,
-  "research_note": "2026-09-21 refresh: active source confirmed as repository-root event-data.json. The five required Biletinial venue inventory tabs (loc=15880, 17011, 15863, 15738, 18051) were fetched directly; each returned HTTP 200 rendered HTML, but no reliable cinemaPartitions/seancesData session payload was exposed in the fetched response, so no new dated sessions were fabricated. Existing verified records were rolled forward, expired records removed, whitespace and duplicate event keys retained normalized. Fastmail was checked; Google colonist was readable, but the personal profile requested interactive OAuth authorization and was unavailable. IMDb metadata was retained from prior verified enrichment; no new film identity enrichment was applied. Calendar limitations: Fastmail was checked; Google profile colonist was checked; Google profile personal requires interactive OAuth authorization. No calendar-owned Istanbul event matched the retained records. Theatre venue tabs were checked directly; their current HTML exposed no active InStock theatre sessions for the requested window, so no new theatre records were added. Cinema sources exposed dated sessions; existing verified records were retained, with IMDb metadata kept only where already validated.",
+  "research_note": "2026-09-23 refresh: active source confirmed as repository-root event-data.json. The five required Biletinial venue inventory tabs (loc=15880, 17011, 15863, 15738, 18051) were requested directly with the rolling date window; Biletinial returned HTTP 500/error HTML for these venue pages, so theatre sessions were not fabricated. Existing verified in-window records were retained and expired records removed. Fastmail was checked successfully (no events); Google colonist was readable, while Google personal requested interactive OAuth and was unavailable. No calendar-owned Istanbul event matched the retained records. IMDb metadata was retained from prior verified enrichment; no new film enrichment was applied because the required source refresh did not expose reliable new records. No new events added; changes are date-range rollover only.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -1160,7 +1028,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-09-23",
       "listedItems": 32,
       "listedEventLinks": 42
     },
@@ -1170,7 +1038,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-09-23",
       "listedItems": 10,
       "listedEventLinks": 19
     },
@@ -1180,7 +1048,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-09-23",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -1190,7 +1058,7 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-09-23",
       "listedItems": 27,
       "listedEventLinks": 33
     },
@@ -1200,7 +1068,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-22",
+      "checkedAt": "2026-09-23",
       "listedItems": 50,
       "listedEventLinks": 52
     },
@@ -1209,21 +1077,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-22"
+      "checkedAt": "2026-09-23"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-22"
+      "checkedAt": "2026-09-23"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-22"
+      "checkedAt": "2026-09-23"
     }
   ]
 }
