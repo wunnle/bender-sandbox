@@ -6,12 +6,12 @@ const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" }
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code" });
 
 /**
- * Derived from the payload rather than hardcoded, so a refresh that changes the
- * window updates the tab and any shared link along with the page.
+ * Composed from payload values, so a refresh that changes the window updates
+ * the tab and any shared link along with the page.
  */
 export function generateMetadata(): Metadata {
-  const title = "AI dev digest";
-  const description = `${ITEMS.length} worthwhile posts from ${META.accountsWithPosts} developers, ${META.window.duration_hours}h to ${META.window.end.slice(0, 10)}.`;
+  const title = `${META.window.start.slice(0, 10)} – ${META.window.end.slice(0, 10)}`;
+  const description = `${ITEMS.length} posts from ${META.accountsWithPosts} of ${META.accountsScanned} accounts. ${META.filter}`;
   return { title, description, openGraph: { title, description } };
 }
 

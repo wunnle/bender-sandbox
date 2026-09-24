@@ -1,13 +1,11 @@
 "use client";
 
 /**
- * The pieces shared by the feed view and the by-author view: date formatting
- * for a payload whose timestamps are UTC instants (not calendar days), and the
- * card that renders one post.
+ * Date formatting for a payload whose timestamps are UTC instants, and the card
+ * that renders one post. The card shows payload fields and nothing else.
  */
 
-import { CATEGORY_META, type Category, type Item } from "./data";
-import { CATEGORY_ICON } from "./icons";
+import type { Item } from "./data";
 
 /** "Wed, 23 Sep" — composed by hand because en-GB renders "Wed 23 Sept", no comma. */
 export const longDay = (iso: string) => {
@@ -17,7 +15,7 @@ export const longDay = (iso: string) => {
   return `${weekday}, ${d.getUTCDate()} ${month}`;
 };
 
-/** "23 – 24 September 2026", collapsing the month when both ends share one. */
+/** "22 – 24 September 2026", collapsing the month when both ends share one. */
 export const rangeLabel = (startIso: string, endIso: string) => {
   const s = new Date(startIso);
   const e = new Date(endIso);
@@ -29,7 +27,7 @@ export const rangeLabel = (startIso: string, endIso: string) => {
   return `${left} – ${e.toLocaleDateString("en-GB", { ...opts, year: "numeric" })}`;
 };
 
-/** "04:57 UTC" — the payload derives these from status IDs, so keep them exact. */
+/** "04:57" — the payload derives these from status IDs, so keep them exact. */
 export const timeLabel = (iso: string) =>
   new Date(iso).toLocaleTimeString("en-GB", {
     hour: "2-digit",
@@ -37,10 +35,15 @@ export const timeLabel = (iso: string) =>
     timeZone: "UTC",
   });
 
-export function Icon({ cat, className = "h-4 w-4" }: { cat: Category; className?: string }) {
-  const Glyph = CATEGORY_ICON[cat];
-  return <Glyph className={`shrink-0 ${className}`} />;
-}
+export const stamp = (iso: string) =>
+  new Date(iso).toLocaleString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "UTC",
+  });
 
 function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   return (
@@ -60,46 +63,35 @@ function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
 }
 
 /**
- * One post. The card is the author's `summary` and nothing else — the payload
- * also carries a `signal` line arguing why each post was kept, but that is the
- * scraper talking about them rather than them talking, so it stays off the page.
+ * One post: its topic, who posted it, the summary, when. Nothing is colour-coded,
+ * because the payload carries no categorisation to code — `topic` is free text,
+ * one per post, and is shown as the words it is.
  */
-export function Card({ group, showAuthor = true }: { group: Item; showAuthor?: boolean }) {
-  const meta = CATEGORY_META[group.category];
+export function Card({ item, showAuthor = true }: { item: Item; showAuthor?: boolean }) {
   return (
     <a
-      href={group.url}
+      href={item.url}
       target="_blank"
       rel="noreferrer"
-      className={`group flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 ${meta.ring}`}
+      className="group flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
     >
-      <div className="flex items-center gap-2 text-xs">
-        <span
-          className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 font-medium ring-1 ring-inset ${meta.chip}`}
-        >
-          <Icon cat={group.category} className="h-3.5 w-3.5" />
-          {meta.label}
-        </span>
-        <span className="truncate text-neutral-500">{group.topic}</span>
-      </div>
+      <p className="text-xs uppercase tracking-wider text-neutral-500">{item.topic}</p>
 
       {showAuthor && (
-        <p className="mt-4 flex flex-wrap items-baseline gap-x-2 text-[15px]">
-          <span className="font-semibold text-white">{group.name}</span>
-          <span className="font-mono text-xs text-neutral-500">@{group.handle}</span>
+        <p className="mt-3 flex flex-wrap items-baseline gap-x-2 text-[15px]">
+          <span className="font-semibold text-white">{item.name}</span>
+          <span className="font-mono text-xs text-neutral-500">@{item.handle}</span>
         </p>
       )}
 
       {/* The post itself carries the card — one step larger than the metadata
           around it, and the only thing competing for attention. */}
-      <p
-        className={`text-[19px] leading-relaxed text-neutral-50 ${showAuthor ? "mt-2" : "mt-4"}`}
-      >
-        {group.summary}
+      <p className={`text-[19px] leading-relaxed text-neutral-50 ${showAuthor ? "mt-2" : "mt-3"}`}>
+        {item.summary}
       </p>
 
       <p className="mt-auto flex items-center gap-1.5 pt-5 text-xs text-neutral-500 group-hover:text-neutral-300">
-        <span className="font-mono">{timeLabel(group.publishedAt)} UTC</span>
+        <span className="font-mono">{timeLabel(item.publishedAt)}</span>
         <span aria-hidden>·</span>
         <span className="underline-offset-4 group-hover:underline">Read on X</span>
         <ArrowIcon />
