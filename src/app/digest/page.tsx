@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AUTHORS, DAYS, ITEMS, META } from "./data";
-import { Card, longDay, rangeLabel, stamp } from "./ui";
+import { Card, rangeLabel, stamp, useRead } from "./ui";
 
 type View = "feed" | "authors";
 
@@ -36,17 +36,20 @@ export default function DigestPage() {
     history.replaceState(null, "", v === "feed" ? " " : `#${v}`);
   };
 
+  const { read, toggle, clear } = useRead();
+
   const on = (handle: string) => active.length === 0 || active.includes(handle);
 
-  const byDay = useMemo(() => {
-    const m = new Map<string, typeof ITEMS>();
-    for (const d of DAYS) m.set(d, []);
-    for (const i of ITEMS) if (on(i.handle)) m.get(i.day)?.push(i);
-    return m;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [active]);
+  const shown = useMemo(
+    () => ITEMS.filter((i) => active.length === 0 || active.includes(i.handle)),
+    [active],
+  );
 
-  const toggle = (h: string) =>
+  /** Counted over the whole payload, not the filtered view, so the number
+      doesn't appear to drop when a filter hides read posts. */
+  const readCount = useMemo(() => ITEMS.filter((i) => read.has(i.url)).length, [read]);
+
+  const toggleAccount = (h: string) =>
     setActive((prev) => (prev.includes(h) ? prev.filter((x) => x !== h) : [...prev, h]));
 
   return (
@@ -114,7 +117,7 @@ export default function DigestPage() {
             return (
               <button
                 key={a.handle}
-                onClick={() => toggle(a.handle)}
+                onClick={() => toggleAccount(a.handle)}
                 aria-pressed={sel}
                 className={`flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm ring-1 ring-inset transition ${
                   sel
@@ -136,35 +139,28 @@ export default function DigestPage() {
               clear
             </button>
           )}
+
+          {/* Without this, marking everything read leaves a page of faded cards
+              and no way back. */}
+          {readCount > 0 && (
+            <button
+              onClick={clear}
+              className="text-sm text-neutral-500 underline underline-offset-4 hover:text-neutral-300"
+            >
+              {readCount} read · reset
+            </button>
+          )}
         </div>
 
         {view === "feed" ? (
-          <div className="mt-8 space-y-10">
-            {DAYS.map((d) => {
-              const list = byDay.get(d) ?? [];
-              return (
-                <section key={d}>
-                  <div className="sticky top-0 z-10 -mx-1 flex items-baseline gap-3 bg-neutral-950/85 px-1 py-2 backdrop-blur">
-                    <h2 className="text-base font-semibold tracking-tight text-white sm:text-lg">
-                      {longDay(d)}
-                    </h2>
-                    <span className="text-sm text-neutral-500">
-                      {list.length} {list.length === 1 ? "post" : "posts"}
-                    </span>
-                  </div>
-                  {/* Masonry, not a grid: post lengths run from 15 to 1200-odd
-                      characters, and equal-height rows would leave a short post
-                      sitting in a column of whitespace next to a long one. */}
-                  {list.length > 0 && (
-                    <div className="mt-3 gap-4 md:columns-2 xl:columns-3">
-                      {list.map((i) => (
-                        <Card key={i.url} item={i} />
-                      ))}
-                    </div>
-                  )}
-                </section>
-              );
-            })}
+          /* One continuous masonry, newest first — no day breaks. Each card
+             carries its own date instead. Masonry rather than a grid because
+             post lengths run from 15 to 1200-odd characters, and equal-height
+             rows leave short posts stranded beside long ones. */
+          <div className="mt-8 gap-4 md:columns-2 xl:columns-3">
+            {shown.map((i) => (
+              <Card key={i.url} item={i} read={read.has(i.url)} onToggleRead={toggle} />
+            ))}
           </div>
         ) : (
           <div className="mt-8 space-y-10">
@@ -198,7 +194,13 @@ export default function DigestPage() {
                 {a.items.length > 0 && (
                   <div className="mt-3 gap-4 md:columns-2 xl:columns-3">
                     {a.items.map((i) => (
-                      <Card key={i.url} item={i} showAuthor={false} />
+                      <Card
+                        key={i.url}
+                        item={i}
+                        showAuthor={false}
+                        read={read.has(i.url)}
+                        onToggleRead={toggle}
+                      />
                     ))}
                   </div>
                 )}

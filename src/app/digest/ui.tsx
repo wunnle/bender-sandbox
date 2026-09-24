@@ -5,7 +5,52 @@
  * that renders one post. The card shows payload fields and nothing else.
  */
 
+import { useCallback, useEffect, useState } from "react";
 import type { Item, Media, Quote } from "./data";
+
+const READ_KEY = "digest:read";
+
+/**
+ * Which posts have been marked read, persisted across visits. Keyed by post URL
+ * rather than by index, so a refreshed payload keeps the marks on the posts that
+ * survive it and doesn't transfer them to unrelated new ones.
+ *
+ * Starts empty and fills after mount: the server has no localStorage, and
+ * seeding from it during render would mismatch hydration.
+ */
+export function useRead() {
+  const [read, setRead] = useState<ReadonlySet<string>>(new Set());
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(READ_KEY);
+      if (raw) setRead(new Set(JSON.parse(raw) as string[]));
+    } catch {
+      // A corrupt or blocked store just means nothing is marked read.
+    }
+  }, []);
+
+  const persist = (next: Set<string>) => {
+    try {
+      localStorage.setItem(READ_KEY, JSON.stringify([...next]));
+    } catch {
+      // Private mode and full quotas shouldn't break the toggle.
+    }
+    return next;
+  };
+
+  const toggle = useCallback((url: string) => {
+    setRead((prev) => {
+      const next = new Set(prev);
+      if (!next.delete(url)) next.add(url);
+      return persist(next);
+    });
+  }, []);
+
+  const clear = useCallback(() => setRead(persist(new Set())), []);
+
+  return { read, toggle, clear };
+}
 
 /** "Wed, 23 Sep" — composed by hand because en-GB renders "Wed 23 Sept", no comma. */
 export const longDay = (iso: string) => {
@@ -25,6 +70,17 @@ export const rangeLabel = (startIso: string, endIso: string) => {
       ? s.toLocaleDateString("en-GB", { day: "numeric", timeZone: "UTC" })
       : s.toLocaleDateString("en-GB", opts);
   return `${left} – ${e.toLocaleDateString("en-GB", { ...opts, year: "numeric" })}`;
+};
+
+/**
+ * "23 Sep" from a full instant — the per-card date, now that headings are gone.
+ * en-US for the month: en-GB renders September as "Sept", which reads as a typo
+ * next to every other three-letter month.
+ */
+export const shortDay = (iso: string) => {
+  const d = new Date(iso);
+  const month = d.toLocaleDateString("en-US", { month: "short", timeZone: "UTC" });
+  return `${d.getUTCDate()} ${month}`;
 };
 
 /** "04:57" — the payload derives these from status IDs, so keep them exact. */
@@ -164,23 +220,54 @@ function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   );
 }
 
+function CheckIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="m4 10.5 4 4 8-9" />
+    </svg>
+  );
+}
+
 /**
  * One post: its topic, who posted it, the post itself, its media, when. Nothing
  * is colour-coded, because the payload carries no categorisation to code —
  * `topic` is free text, one per post, and is shown as the words it is.
+ *
+ * A `div`, not an `<a>`: the read toggle is a button, and an anchor can't
+ * contain one. "Read on X" is an explicit link in the footer instead.
  */
-export function Card({ item, showAuthor = true }: { item: Item; showAuthor?: boolean }) {
+export function Card({
+  item,
+  showAuthor = true,
+  read = false,
+  onToggleRead,
+}: {
+  item: Item;
+  showAuthor?: boolean;
+  read?: boolean;
+  onToggleRead?: (url: string) => void;
+}) {
   return (
-    <a
-      href={item.url}
-      target="_blank"
-      rel="noreferrer"
-      className="group mb-4 flex break-inside-avoid flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-white/25 hover:bg-white/[0.06] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+    <div
+      className={`mb-4 flex break-inside-avoid flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-white/25 ${
+        // Read posts recede but stay legible, and come back on hover so a
+        // mis-click isn't a dead end.
+        read ? "opacity-35 hover:opacity-100" : ""
+      }`}
     >
       <p className="text-xs uppercase tracking-wider text-neutral-500">{item.topic}</p>
 
       {showAuthor && (
-        <p className="mt-3 flex flex-wrap items-baseline gap-x-2 text-[15px]">
+        <p className="mt-3 flex flex-wrap items-baseline gap-x-2 text-sm">
           <span className="font-semibold text-white">{item.name}</span>
           <span className="font-mono text-xs text-neutral-500">@{item.handle}</span>
         </p>
@@ -190,7 +277,7 @@ export function Card({ item, showAuthor = true }: { item: Item; showAuthor?: boo
           carry their own line breaks — lists and prompts that collapse into
           mush without them. */}
       <p
-        className={`whitespace-pre-line break-words text-[17px] leading-relaxed text-neutral-50 ${
+        className={`whitespace-pre-line break-words text-[15px] leading-relaxed text-neutral-100 ${
           showAuthor ? "mt-2" : "mt-3"
         }`}
       >
@@ -201,12 +288,38 @@ export function Card({ item, showAuthor = true }: { item: Item; showAuthor?: boo
 
       {item.quote && <QuoteBlock quote={item.quote} />}
 
-      <p className="mt-auto flex items-center gap-1.5 pt-5 text-xs text-neutral-500 group-hover:text-neutral-300">
-        <span className="font-mono">{timeLabel(item.publishedAt)}</span>
-        <span aria-hidden>·</span>
-        <span className="underline-offset-4 group-hover:underline">Read on X</span>
-        <ArrowIcon />
-      </p>
-    </a>
+      {/* Day and time both live here now that the day headings are gone. */}
+      <div className="mt-auto flex items-center justify-between gap-3 pt-5 text-xs text-neutral-500">
+        <span className="font-mono">
+          {shortDay(item.publishedAt)} {timeLabel(item.publishedAt)}
+        </span>
+
+        <span className="flex items-center gap-3">
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1 underline-offset-4 transition hover:text-neutral-200 hover:underline"
+          >
+            Read on X
+            <ArrowIcon />
+          </a>
+          {onToggleRead && (
+            <button
+              onClick={() => onToggleRead(item.url)}
+              aria-pressed={read}
+              className={`flex items-center gap-1 rounded-full px-2.5 py-1 ring-1 ring-inset transition ${
+                read
+                  ? "bg-white/10 text-neutral-300 ring-white/20"
+                  : "text-neutral-400 ring-white/10 hover:text-white hover:ring-white/30"
+              }`}
+            >
+              <CheckIcon />
+              {read ? "Read" : "Mark read"}
+            </button>
+          )}
+        </span>
+      </div>
+    </div>
   );
 }

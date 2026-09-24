@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { META, ITEMS } from "./data";
 
-const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
+/**
+ * Inter, not the display face this route started with. The page is now mostly
+ * other people's prose at 15px — including code, URLs and prompt text — and a
+ * geometric display face is tiring at that size and length.
+ */
+const body = Inter({ subsets: ["latin"], variable: "--font-body" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code" });
 
 /**
@@ -18,12 +23,12 @@ export function generateMetadata(): Metadata {
 export default function DigestLayout({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className={`${display.variable} ${mono.variable} font-sans`}
+      className={`${body.variable} ${mono.variable} font-sans`}
       /* Rebinding the globals the theme points at keeps the fonts scoped to this
          route — every other sandbox page keeps the default. */
       style={
         {
-          "--font-geist-sans": "var(--font-display)",
+          "--font-geist-sans": "var(--font-body)",
           "--font-geist-mono": "var(--font-code)",
         } as React.CSSProperties
       }
