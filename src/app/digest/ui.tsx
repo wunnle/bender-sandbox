@@ -8,48 +8,59 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Item, Media, Quote } from "./data";
 
-const READ_KEY = "digest:read";
+export const READ_KEY = "digest:read";
+export const LIKED_KEY = "digest:liked";
 
 /**
- * Which posts have been marked read, persisted across visits. Keyed by post URL
- * rather than by index, so a refreshed payload keeps the marks on the posts that
- * survive it and doesn't transfer them to unrelated new ones.
+ * A set of post URLs persisted across visits — used for both read marks and
+ * likes. Keyed by URL rather than by index, so a refreshed payload keeps the
+ * marks on the posts that survive it and doesn't transfer them to unrelated
+ * new ones.
  *
  * Starts empty and fills after mount: the server has no localStorage, and
  * seeding from it during render would mismatch hydration.
+ *
+ * This is the whole storage layer. Backing likes with a real database later
+ * means replacing the two effects below with fetches and keeping this
+ * signature — nothing above it knows where the set comes from.
  */
-export function useRead() {
-  const [read, setRead] = useState<ReadonlySet<string>>(new Set());
+export function usePersistedSet(key: string) {
+  const [items, setItems] = useState<ReadonlySet<string>>(new Set());
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(READ_KEY);
-      if (raw) setRead(new Set(JSON.parse(raw) as string[]));
+      const raw = localStorage.getItem(key);
+      if (raw) setItems(new Set(JSON.parse(raw) as string[]));
     } catch {
-      // A corrupt or blocked store just means nothing is marked read.
+      // A corrupt or blocked store just means nothing is marked.
     }
-  }, []);
+  }, [key]);
 
-  const persist = (next: Set<string>) => {
-    try {
-      localStorage.setItem(READ_KEY, JSON.stringify([...next]));
-    } catch {
-      // Private mode and full quotas shouldn't break the toggle.
-    }
-    return next;
-  };
+  const persist = useCallback(
+    (next: Set<string>) => {
+      try {
+        localStorage.setItem(key, JSON.stringify([...next]));
+      } catch {
+        // Private mode and full quotas shouldn't break the toggle.
+      }
+      return next;
+    },
+    [key],
+  );
 
-  const toggle = useCallback((url: string) => {
-    setRead((prev) => {
-      const next = new Set(prev);
-      if (!next.delete(url)) next.add(url);
-      return persist(next);
-    });
-  }, []);
+  const toggle = useCallback(
+    (url: string) =>
+      setItems((prev) => {
+        const next = new Set(prev);
+        if (!next.delete(url)) next.add(url);
+        return persist(next);
+      }),
+    [persist],
+  );
 
-  const clear = useCallback(() => setRead(persist(new Set())), []);
+  const clear = useCallback(() => setItems(persist(new Set())), [persist]);
 
-  return { read, toggle, clear };
+  return { items, toggle, clear };
 }
 
 /** "Wed, 23 Sep" — composed by hand because en-GB renders "Wed 23 Sept", no comma. */
@@ -409,6 +420,23 @@ function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   );
 }
 
+function HeartIcon({ filled, className = "h-4 w-4" }: { filled?: boolean; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill={filled ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="M12 20.5s-7.5-4.6-7.5-9.7a4.3 4.3 0 0 1 7.5-2.8 4.3 4.3 0 0 1 7.5 2.8c0 5.1-7.5 9.7-7.5 9.7Z" />
+    </svg>
+  );
+}
+
 function CheckIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   return (
     <svg
@@ -439,13 +467,17 @@ export function Card({
   item,
   showAuthor = true,
   read = false,
+  liked = false,
   onToggleRead,
+  onToggleLike,
   onOpenMedia,
 }: {
   item: Item;
   showAuthor?: boolean;
   read?: boolean;
+  liked?: boolean;
   onToggleRead?: (url: string) => void;
+  onToggleLike?: (url: string) => void;
   onOpenMedia?: OpenMedia;
 }) {
   const toggle = () => {
@@ -471,8 +503,14 @@ export function Card({
       role={onToggleRead ? "button" : undefined}
       tabIndex={onToggleRead ? 0 : undefined}
       aria-pressed={onToggleRead ? read : undefined}
-      className={`mb-4 flex break-inside-avoid flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 ${
+      className={`mb-4 flex break-inside-avoid flex-col rounded-2xl border p-5 transition duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 ${
         onToggleRead ? "cursor-pointer" : ""
+      } ${
+        // Liked posts keep a warm tint, which survives the read fade — a post
+        // can be both saved and already read.
+        liked
+          ? "border-rose-400/30 bg-rose-500/[0.08] hover:border-rose-400/50"
+          : "border-white/10 bg-white/[0.03] hover:border-white/25"
       } ${
         // Read posts recede but stay legible, and come back on hover so a
         // mis-click isn't a dead end.
@@ -509,7 +547,27 @@ export function Card({
           {shortDay(item.publishedAt)} {timeLabel(item.publishedAt)}
         </span>
 
-        <span className="flex items-center gap-3">
+        <span className="flex items-center gap-2">
+          {/* Also swallows its click — liking a post says nothing about whether
+              you've finished reading it. */}
+          {onToggleLike && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleLike(item.url);
+              }}
+              aria-pressed={liked}
+              aria-label={liked ? "Remove like" : "Like"}
+              className={`flex items-center rounded-full p-1.5 ring-1 ring-inset transition ${
+                liked
+                  ? "bg-rose-500/20 text-rose-300 ring-rose-400/40"
+                  : "text-neutral-400 ring-white/10 hover:text-rose-300 hover:ring-rose-400/30"
+              }`}
+            >
+              <HeartIcon filled={liked} />
+            </button>
+          )}
+
           {/* Swallows its click: opening the source shouldn't silently flip the
               card's read state behind the new tab. */}
           <a

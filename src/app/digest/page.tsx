@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { AUTHORS, DAYS, ITEMS, META, type Media } from "./data";
-import { Card, Lightbox, rangeLabel, stamp, useRead } from "./ui";
+import { Card, LIKED_KEY, Lightbox, READ_KEY, rangeLabel, stamp, usePersistedSet } from "./ui";
 
 type View = "feed" | "authors";
 
@@ -36,7 +36,11 @@ export default function DigestPage() {
     history.replaceState(null, "", v === "feed" ? " " : `#${v}`);
   };
 
-  const { read, toggle, clear } = useRead();
+  const { items: read, toggle, clear } = usePersistedSet(READ_KEY);
+  const { items: liked, toggle: toggleLike } = usePersistedSet(LIKED_KEY);
+
+  /** Narrow the page to saved posts. Off unless there's something to show. */
+  const [likedOnly, setLikedOnly] = useState(false);
 
   /** Which media set the lightbox is showing, and where in it. */
   const [zoom, setZoom] = useState<{ media: Media[]; index: number } | null>(null);
@@ -45,13 +49,18 @@ export default function DigestPage() {
   const on = (handle: string) => active.length === 0 || active.includes(handle);
 
   const shown = useMemo(
-    () => ITEMS.filter((i) => active.length === 0 || active.includes(i.handle)),
-    [active],
+    () =>
+      ITEMS.filter(
+        (i) =>
+          (active.length === 0 || active.includes(i.handle)) && (!likedOnly || liked.has(i.url)),
+      ),
+    [active, likedOnly, liked],
   );
 
-  /** Counted over the whole payload, not the filtered view, so the number
-      doesn't appear to drop when a filter hides read posts. */
+  /** Counted over the whole payload, not the filtered view, so the numbers
+      don't appear to drop when a filter hides posts. */
   const readCount = useMemo(() => ITEMS.filter((i) => read.has(i.url)).length, [read]);
+  const likedCount = useMemo(() => ITEMS.filter((i) => liked.has(i.url)).length, [liked]);
 
   const toggleAccount = (h: string) =>
     setActive((prev) => (prev.includes(h) ? prev.filter((x) => x !== h) : [...prev, h]));
@@ -118,6 +127,23 @@ export default function DigestPage() {
             ))}
           </div>
 
+          {/* Only appears once there's something saved — an always-on filter
+              that can only ever show nothing is just a dead control. */}
+          {likedCount > 0 && (
+            <button
+              onClick={() => setLikedOnly((v) => !v)}
+              aria-pressed={likedOnly}
+              className={`flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm ring-1 ring-inset transition ${
+                likedOnly
+                  ? "bg-rose-500/20 text-rose-200 ring-rose-400/40"
+                  : "text-neutral-400 ring-white/10 hover:text-rose-300 hover:ring-rose-400/30"
+              }`}
+            >
+              Liked
+              <span className="text-neutral-500">{likedCount}</span>
+            </button>
+          )}
+
           <span className="hidden h-5 w-px bg-white/10 sm:block" aria-hidden />
 
           {AUTHORS.map((a) => {
@@ -171,7 +197,9 @@ export default function DigestPage() {
                 key={i.url}
                 item={i}
                 read={read.has(i.url)}
+                liked={liked.has(i.url)}
                 onToggleRead={toggle}
+                onToggleLike={toggleLike}
                 onOpenMedia={openMedia}
               />
             ))}
@@ -213,7 +241,9 @@ export default function DigestPage() {
                         item={i}
                         showAuthor={false}
                         read={read.has(i.url)}
+                        liked={liked.has(i.url)}
                         onToggleRead={toggle}
+                        onToggleLike={toggleLike}
                         onOpenMedia={openMedia}
                       />
                     ))}
