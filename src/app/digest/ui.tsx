@@ -5,7 +5,7 @@
  * that renders one post. The card shows payload fields and nothing else.
  */
 
-import type { Item, Media } from "./data";
+import type { Item, Media, Quote } from "./data";
 
 /** "Wed, 23 Sep" — composed by hand because en-GB renders "Wed 23 Sept", no comma. */
 export const longDay = (iso: string) => {
@@ -126,6 +126,27 @@ function MediaBlock({ media }: { media: Media[] }) {
   );
 }
 
+/**
+ * The post this one quotes. Inset rather than linked: the card is already an
+ * `<a>` to the parent post, and an anchor can't contain another. Six of the
+ * twenty-two are quote tweets, and in several the quoted post is the substance
+ * — "my kind of slop" means nothing without the thing being called slop.
+ */
+function QuoteBlock({ quote }: { quote: Quote }) {
+  return (
+    <span className="mt-3 block rounded-xl border border-white/10 bg-white/[0.03] p-4">
+      <span className="flex flex-wrap items-baseline gap-x-2 text-sm">
+        <span className="font-semibold text-neutral-200">{quote.author.name}</span>
+        <span className="font-mono text-xs text-neutral-500">@{quote.author.handle}</span>
+      </span>
+      <span className="mt-1.5 block whitespace-pre-line break-words text-[15px] leading-relaxed text-neutral-300">
+        {quote.text}
+      </span>
+      <MediaBlock media={quote.media} />
+    </span>
+  );
+}
+
 function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   return (
     <svg
@@ -177,6 +198,8 @@ export function Card({ item, showAuthor = true }: { item: Item; showAuthor?: boo
       </p>
 
       <MediaBlock media={item.media} />
+
+      {item.quote && <QuoteBlock quote={item.quote} />}
 
       <p className="mt-auto flex items-center gap-1.5 pt-5 text-xs text-neutral-500 group-hover:text-neutral-300">
         <span className="font-mono">{timeLabel(item.publishedAt)}</span>

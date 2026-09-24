@@ -19,6 +19,15 @@ export type Media = {
   duration?: number;
 };
 
+/** A post quoted by one of the scanned accounts, by someone not in scope. */
+export type Quote = {
+  url: string;
+  publishedAt: string;
+  author: { name: string; handle: string };
+  text: string;
+  media: Media[];
+};
+
 export type Item = {
   handle: string;
   name: string;
@@ -30,6 +39,8 @@ export type Item = {
   /** The post as written, newlines and all. */
   text: string;
   media: Media[];
+  /** Present when the post is a quote tweet. Often the substance of the post. */
+  quote?: Quote;
 };
 
 export type Author = {
@@ -40,12 +51,21 @@ export type Author = {
   note?: string;
 };
 
+type RawQuote = {
+  url: string;
+  published_at: string;
+  author: { name: string; handle: string };
+  text: string;
+  media?: Media[];
+};
+
 type RawItem = {
   published_at: string;
   url: string;
   topic: string;
   text: string;
   media?: Media[];
+  quote_tweet?: RawQuote | null;
 };
 
 type Payload = {
@@ -90,6 +110,15 @@ export const AUTHORS: Author[] = handles.map((h) => {
       topic: i.topic,
       text: i.text,
       media: i.media ?? [],
+      quote: i.quote_tweet
+        ? {
+            url: i.quote_tweet.url,
+            publishedAt: i.quote_tweet.published_at,
+            author: i.quote_tweet.author,
+            text: i.quote_tweet.text,
+            media: i.quote_tweet.media ?? [],
+          }
+        : undefined,
     })),
   };
 });
