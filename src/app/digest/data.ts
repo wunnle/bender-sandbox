@@ -8,6 +8,17 @@ import payload from "../../../digest-data.json";
  * heading, a link). Drop in a fresh payload and the page follows.
  */
 
+/** A photo, or a video the payload also gives a poster frame for. */
+export type Media = {
+  type: "photo" | "video";
+  url: string;
+  width: number;
+  height: number;
+  thumbnail_url?: string;
+  format?: string;
+  duration?: number;
+};
+
 export type Item = {
   handle: string;
   name: string;
@@ -16,7 +27,9 @@ export type Item = {
   day: string;
   url: string;
   topic: string;
-  summary: string;
+  /** The post as written, newlines and all. */
+  text: string;
+  media: Media[];
 };
 
 export type Author = {
@@ -31,13 +44,20 @@ type RawItem = {
   published_at: string;
   url: string;
   topic: string;
-  summary: string;
+  text: string;
+  media?: Media[];
 };
 
 type Payload = {
   generated_at: string;
   window: { start: string; end: string; timezone: string; duration_hours: number };
-  scope: { accounts: string[]; filter: string; source: string; note?: string };
+  scope: {
+    accounts: string[];
+    filter: string;
+    source: string;
+    note?: string;
+    fields?: string;
+  };
   digest: { handle: string; name: string; items: RawItem[]; note?: string }[];
 };
 
@@ -68,7 +88,8 @@ export const AUTHORS: Author[] = handles.map((h) => {
       day: i.published_at.slice(0, 10),
       url: i.url,
       topic: i.topic,
-      summary: i.summary,
+      text: i.text,
+      media: i.media ?? [],
     })),
   };
 });
@@ -89,6 +110,7 @@ export const META = {
   filter: raw.scope.filter,
   source: raw.scope.source,
   note: raw.scope.note,
+  fields: raw.scope.fields,
   accountsScanned: raw.scope.accounts.length,
   accountsWithPosts: AUTHORS.filter((a) => a.items.length > 0).length,
 };

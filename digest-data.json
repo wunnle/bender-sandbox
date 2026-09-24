@@ -21,7 +21,8 @@
     ],
     "filter": "AI and software-development posts with concrete tools, workflows, evidence, experiments, or useful criticism",
     "source": "Public X profile timelines",
-    "note": "Replies and repost-only activity may not appear on logged-out public profile timelines. Off-topic and low-signal posts were omitted. Timestamps were derived from X status IDs."
+    "note": "Replies and repost-only activity may not appear on logged-out public profile timelines. Off-topic and low-signal posts were omitted. Timestamps were derived from X status IDs.",
+    "fields": "Each item contains the original post text and source-backed media URLs when present."
   },
   "digest": [
     {
@@ -32,29 +33,29 @@
           "published_at": "2026-09-24T00:22:32.554Z",
           "url": "https://x.com/simonw/status/2102916558712705427",
           "topic": "MCP and voice interfaces",
-          "summary": "Used datasette-mcp to have a voice conversation with a Datasette backup of his blog through the ChatGPT iPhone app.",
-          "signal": "Demonstrates a working personal-knowledge interface rather than merely describing one."
+          "text": "I just had a voice conversation with the Datasette backup of my blog via datasette-mcp, which you can now talk to using the ChatGPT iPhone app",
+          "media": []
         },
         {
           "published_at": "2026-09-23T20:45:19.125Z",
           "url": "https://x.com/simonw/status/2102861892549279922",
           "topic": "Gemini TTS playground",
-          "summary": "Built an interactive UI for Gemini 3.8 TTS, including multi-speaker conversations and voice cloning, then used Claude to script a two-pelican dialogue.",
-          "signal": "Ships a usable playground alongside the observation."
+          "text": "The new Gemini 3.8 TTS models are super-cheap and can generate conversations between multiple voices (from 2,000+, or you can clone your own) - I built a little UI for it, then had Claude knock up a script where two pelicans debate moving to Pacifica Pier https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
+          "media": []
         },
         {
           "published_at": "2026-09-22T23:50:29.264Z",
           "url": "https://x.com/simonw/status/2102546103984079131",
           "topic": "Frontier-model comparison",
-          "summary": "Published notes and comparison grids for Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna across reasoning levels.",
-          "signal": "Side-by-side artifacts make the model-release commentary inspectable."
+          "text": "Big model release today - I wrote about Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna - plus comparison grids of pelicans by the different model families at different reasoning levels https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+          "media": []
         },
         {
           "published_at": "2026-09-22T20:07:37.026Z",
           "url": "https://x.com/simonw/status/2102490016752779458",
           "topic": "Model selection",
-          "summary": "Highlighted GPT-6 Luna's lower price and described it as his preferred model for product features because of cost and speed.",
-          "signal": "Concrete deployment preference with explicit criteria."
+          "text": "GPT-6 Luna is half the price of 5.6 Luna, which was already an astonishingly cheap model given how capable it is\n\nLuna is my favorite model for building product features thanks to its cost (and speed)",
+          "media": []
         }
       ]
     },
@@ -66,15 +67,15 @@
           "published_at": "2026-09-23T21:38:50.475Z",
           "url": "https://x.com/mitsuhiko/status/2102875361927196678",
           "topic": "AI-driven language adoption",
-          "summary": "Suggested that DHH's recent work may have created a new wave of Rust programmers.",
-          "signal": "A compact observation about agents changing the practical cost of adopting unfamiliar languages."
+          "text": "I know that DHH made many of us buy macs and TextMate back in the day. Maybe today he minted a bunch of new Rust programmers.",
+          "media": []
         },
         {
           "published_at": "2026-09-23T18:00:32.595Z",
           "url": "https://x.com/mitsuhiko/status/2102820425436963165",
           "topic": "Cache warming",
-          "summary": "Briefly endorsed cache warming in the context of current development tooling.",
-          "signal": "Potentially useful operational note, though the public post lacks enough standalone context."
+          "text": "Love me my cache warming.",
+          "media": []
         }
       ]
     },
@@ -86,15 +87,15 @@
           "published_at": "2026-09-23T18:21:07.228Z",
           "url": "https://x.com/badlogicgames/status/2102825603863072965",
           "topic": "Rapid game prototyping",
-          "summary": "Highlighted a Broforce-style game built in a few hours with Astra and published as a playable artifact.",
-          "signal": "Points to a concrete, testable result rather than a capability claim."
+          "text": "my kind of slop",
+          "media": []
         },
         {
           "published_at": "2026-09-22T12:30:10.493Z",
           "url": "https://x.com/badlogicgames/status/2102374897649647627",
           "topic": "Maintaining engineering understanding",
-          "summary": "Recommended 'AI Has No Wisdom and Neither Will You,' arguing that teams stop reading and writing code at their peril.",
-          "signal": "Useful counterweight to hands-off vibe-coding claims."
+          "text": "recommended reading. i belive this to be true at this point in time.\n\nhttps://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/#isso-thread",
+          "media": []
         }
       ]
     },
@@ -106,22 +107,29 @@
           "published_at": "2026-09-23T22:34:18.303Z",
           "url": "https://x.com/steipete/status/2102889319849713698",
           "topic": "Claude Code AGENTS.md failure mode",
-          "summary": "Flagged that Claude Code 2.1.277 can silently skip a local AGENTS.md when telemetry or nonessential traffic is disabled because the loader is controlled by a remote feature flag.",
-          "signal": "High-value operational edge case with direct consequences for local agent behavior."
+          "text": "Huh. There is a catch. https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+          "media": []
         },
         {
           "published_at": "2026-09-23T08:13:25.118Z",
           "url": "https://x.com/steipete/status/2102672670689275965",
           "topic": "AI tooling observability",
-          "summary": "Expanded CodexBar support across a broad set of AI coding and inference providers and noted the removal of recurring keychain alerts.",
-          "signal": "Concrete tooling update for monitoring multi-provider AI usage."
+          "text": "CodexBar learned a few new tricks in the last few weeks!\n\nTypeSafe, Nous Portal, Muse Code, CodeRabbit, Replicate, HuggingFace, Pi, Helmcode, v0, Charm Hyper, GitKraken AI, Bifrost\n\nMy ambitions for this app REALLY outgrew the app name. (Oh and these keychain alerts are no more) http://codex.bar",
+          "media": []
         },
         {
           "published_at": "2026-09-23T07:50:54.207Z",
           "url": "https://x.com/steipete/status/2102667004557832497",
           "topic": "Decision models in agent control",
-          "summary": "Said the next OpenClaw version uses a decision model to choose automatically between steering and queueing, with API-compatible, local, and ONNX options.",
-          "signal": "Specific architectural use of a small decision model inside an agent harness."
+          "text": "Next version of OpenClaw uses a decision model to automatically decide between steer or queue. \n\n(Lab feature, we support Jef* and API-compat (e.g. local models like Kef...) and ONNX variants)",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS4rnuRbYAASOzE.jpg?name=orig",
+              "width": 1326,
+              "height": 786
+            }
+          ]
         }
       ]
     },
@@ -133,22 +141,47 @@
           "published_at": "2026-09-23T14:01:29.987Z",
           "url": "https://x.com/thorstenball/status/2102760268178891180",
           "topic": "Agent harness quality",
-          "summary": "Quoted a user's judgment that Amp is the strongest available harness.",
-          "signal": "Anecdotal rather than measured, but relevant as practitioner feedback."
+          "text": "\"the best harness in the market\"",
+          "media": []
         },
         {
           "published_at": "2026-09-23T06:37:57.003Z",
           "url": "https://x.com/thorstenball/status/2102648645233373328",
           "topic": "Same-prompt model comparison",
-          "summary": "Ran the same documentation-writing prompt through GPT-6 Sol, Opus 5.5, GPT-6 Astra High, and Fable 5.1 Ultra and shared the outputs.",
-          "signal": "Comparable prompt and visible outputs make the model comparison auditable."
+          "text": "Same prompt, four modes/models:\n\n- GPT-6 Sol\n- Opus 5.5\n- High (GPT-6 Astra)\n- Ultra (Fable 5.1)\n\nHere's the prompt:\n\n\"Look at the last two news posts we published on runner functionality: one runner is now enough, and one runner many worktrees.\n\nI now want you to write a news post that's similar but for the functionality behind the `shared-runners` feature flag.\n\nIt should probably also contain a screenshot of the picker that shows two normal runners and two shared runners, like `gpu-runner` or `macos-builder` or something and some nic elooking avatars and good data.\n\nAnd it should succinctly explain how it works and how people can use it.\"\n\nCosts:\n- Opus 5.5: $9.54\n- GPT-6 Sol: $3.10 (estimated list price, using sub)\n- High: $7.58 (estimated list price, using sub)\n- Ultra: $15\n\nNotes:\n\n- Ultra took by far the longest, Ultra is the only one that didn't create docs (I didn't say they should create docs but I think the other models looked at previous commits and figured out they should do that?)\n- Ultra was the only model that didn't prominently display the \"give me the grant to upload assets at the end\"\n- I think Opus 5.5 is the best result. It really feels like more creative (headline) and it nailed the screenshots.\n- High is my second favorite.",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS4bTR0W4AAL6Nh.jpg?name=orig",
+              "width": 2672,
+              "height": 3949
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS4bT3VXAAAi6hn.jpg?name=orig",
+              "width": 2612,
+              "height": 4096
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS4bUbcXgAAhI6j.jpg?name=orig",
+              "width": 2560,
+              "height": 3922
+            },
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS4bVE4WQAAzdsp.jpg?name=orig",
+              "width": 2151,
+              "height": 4096
+            }
+          ]
         },
         {
           "published_at": "2026-09-23T04:57:32.395Z",
           "url": "https://x.com/thorstenball/status/2102623376196194763",
           "topic": "Agent-driven end-to-end testing",
-          "summary": "Reported strong results from asking agents to test features end-to-end and provide irrefutable proof that they work, contrasting this with much of his historical unit-test effort.",
-          "signal": "A directly reusable verification prompt and a concrete testing philosophy."
+          "text": "I'll say this:\n\nI've gotten more out of using orbs and asking agents\n\n \"test this e2e & give me irrefutable proof it works\"\n\nthan out of 80% of tests I've written and ran over the last 15 years.\n\nIt's truly remarkable that we can now ask machines:\n\n\"Did you manually test it?\"",
+          "media": []
         }
       ]
     },
@@ -160,8 +193,15 @@
           "published_at": "2026-09-24T03:03:49.885Z",
           "url": "https://x.com/geoffreylitt/status/2102957148380750095",
           "topic": "Organizing AI context",
-          "summary": "Shared his personal recommendation for deciding where AI context belongs across documents, skills, memories, and related stores.",
-          "signal": "Directly addresses a recurring practical problem in agent-system design; the attached visual contains the useful detail."
+          "text": "my personal recommendation when people ask me where to put their AI context: docs, skills, memories, etc.",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS80J18b0AAid8P.jpg?name=orig",
+              "width": 1344,
+              "height": 840
+            }
+          ]
         }
       ]
     },
@@ -173,36 +213,57 @@
           "published_at": "2026-09-23T17:08:00.351Z",
           "url": "https://x.com/HamelHusain/status/2102807203967365549",
           "topic": "AI evals guide",
-          "summary": "Published a structured guide that routes humans and agents to the appropriate evaluation resources based on their problem.",
-          "signal": "A practical index designed to reduce aimless searching."
+          "text": "This is the most valuable free resource we've created on AI Evals 🎉 (not exaggerating!) \n\nI organized our public materials into this guide.  It allows you to find answers to your eval problems w/o searching  aimlessly. \n\nHumans: pick the row that sounds like you.\nAgents: point it at the post\n\nThe material draw on 60+ hours of office hours from our Evals course, where @sh_reya  and I have taught 5k engineers and PMs Evals.\n\nWe add new material often, with 15 FAQs added in the last two weeks. Recent additions are marked with a \"New\" badge. You can find all of these and more here: \n\nhttps://hamel.dev/blog/posts/evals-faq/#how-to-use-this-faq",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HSyUUecacAAYFyx.png?name=orig",
+              "width": 800,
+              "height": 795
+            }
+          ]
         },
         {
           "published_at": "2026-09-23T17:00:04.306Z",
           "url": "https://x.com/HamelHusain/status/2102805207289593987",
           "topic": "Evaluation fundamentals",
-          "summary": "Defined AI evals as tests of whether a system does what its builders want, while distinguishing product evals from model benchmarks.",
-          "signal": "Concise clarification of a distinction teams routinely blur."
+          "text": "Q: What are AI evals?\n\nA: Tests that tell you whether an AI system is doing what you want. Model benchmarks and product evals answer different questions.\n\nhttps://hamel.dev/blog/posts/evals-faq/what-are-llm-evals.html",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS6qMK5XkAA21KK.jpg?name=orig",
+              "width": 732,
+              "height": 1245
+            }
+          ]
         },
         {
           "published_at": "2026-09-23T13:49:46.686Z",
           "url": "https://x.com/HamelHusain/status/2102757318320648242",
           "topic": "Bot-generated reply pollution",
-          "summary": "Called out bots replying to other bots as a growing firehose of low-quality content.",
-          "signal": "Useful warning about automated engagement degrading feedback channels."
+          "text": "Now the bots are replying to each other.  \n\nIt’s a firehose of slop",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS5-o03bcAAl55W.jpg?name=orig",
+              "width": 1179,
+              "height": 1401
+            }
+          ]
         },
         {
           "published_at": "2026-09-22T23:36:23.362Z",
           "url": "https://x.com/HamelHusain/status/2102542556013932990",
           "topic": "Evaluation pipeline audit",
-          "summary": "Recommended installing the eval skills he created with Shreya Shankar and running /eval-audit against an existing pipeline to identify low-hanging improvements.",
-          "signal": "Immediately actionable workflow backed by public tooling."
+          "text": "I recommend grabbing these skills that @sh_reya and I created and at the very least doing an /eval-audit of your existing pipeline.\n\nWe've found that people often find low hanging fruits!  https://github.com/ai-evals-course/evals-skills",
+          "media": []
         },
         {
           "published_at": "2026-09-22T22:39:54.682Z",
           "url": "https://x.com/HamelHusain/status/2102528342859915487",
           "topic": "Testing model writing quality",
-          "summary": "Hosted a practical session testing whether Opus 5.5 reduces stereotypical AI writing slop.",
-          "signal": "Frames model-quality discussion as an evaluation exercise rather than a vibe."
+          "text": "Is Slop Dead?  (Testing Writing With 5.5 Opus) https://x.com/i/broadcasts/1DxLdZaydPmxm",
+          "media": []
         }
       ]
     },
@@ -214,15 +275,32 @@
           "published_at": "2026-09-23T01:47:11.026Z",
           "url": "https://x.com/RLanceMartin/status/2102575471502528989",
           "topic": "Claude prompt audit",
-          "summary": "Recommended running /claude-api prompt-audit in Claude Code to inspect skills, AGENTS.md, CLAUDE.md, and prompts for anti-patterns that hinder frontier models.",
-          "signal": "Specific command, defined scope, and updated guidance for the current model."
+          "text": "useful tip for Opus 5.5:\n\nrun “/claude-api prompt-audit” in Claude Code. this checks you skills, agent.md, Claude.md, prompts and removes anti-patterns that hobble frontier models. \n\ni updated the skill w/ the latest Opus 5.5 guidance.",
+          "media": [
+            {
+              "type": "photo",
+              "url": "https://pbs.twimg.com/media/HS3ZP4oakAASkwU.jpg?name=orig",
+              "width": 1260,
+              "height": 1102
+            }
+          ]
         },
         {
           "published_at": "2026-09-22T16:43:03.563Z",
           "url": "https://x.com/RLanceMartin/status/2102438538117816825",
           "topic": "Migrating to Claude Opus 5.5",
-          "summary": "Suggested /claude-api migrate for application code and /claude-api prompt-audit for skills and prompts when moving to Opus 5.5.",
-          "signal": "Concrete migration and validation workflow rather than release-day cheerleading."
+          "text": "Opus 5.5 is out! \n \nexcellent at coding, great at writing, reduced pricing.\n\nrun '/claude-api migrate' in the latest Claude Code to update your application code. run '/claude-api prompt-audit' to ensure your skills + prompts are well-tuned.\n\nshort video overview:",
+          "media": [
+            {
+              "type": "video",
+              "url": "https://video.twimg.com/amplify_video/2102437251963908098/vid/avc1/1696x1270/YRK5KCzYKIBDSF6G.mp4?tag=29",
+              "width": 1696,
+              "height": 1270,
+              "thumbnail_url": "https://pbs.twimg.com/amplify_video_thumb/2102437251963908098/img/NsAxM5pK7Hyojovg.jpg",
+              "format": "video/mp4",
+              "duration": 200.133
+            }
+          ]
         }
       ]
     },

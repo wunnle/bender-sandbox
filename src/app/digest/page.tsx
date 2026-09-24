@@ -152,8 +152,11 @@ export default function DigestPage() {
                       {list.length} {list.length === 1 ? "post" : "posts"}
                     </span>
                   </div>
+                  {/* Masonry, not a grid: post lengths run from 15 to 1200-odd
+                      characters, and equal-height rows would leave a short post
+                      sitting in a column of whitespace next to a long one. */}
                   {list.length > 0 && (
-                    <div className="mt-3 grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-3">
+                    <div className="mt-3 gap-4 md:columns-2 xl:columns-3">
                       {list.map((i) => (
                         <Card key={i.url} item={i} />
                       ))}
@@ -193,7 +196,7 @@ export default function DigestPage() {
                 )}
 
                 {a.items.length > 0 && (
-                  <div className="mt-3 grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  <div className="mt-3 gap-4 md:columns-2 xl:columns-3">
                     {a.items.map((i) => (
                       <Card key={i.url} item={i} showAuthor={false} />
                     ))}
@@ -206,6 +209,7 @@ export default function DigestPage() {
 
         {/* Only the payload's own account of itself. */}
         <footer className="mt-14 grid gap-3 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600 sm:grid-cols-2">
+          {META.fields && <p className="sm:col-span-2">{META.fields}</p>}
           {META.note && <p className="sm:col-span-2">{META.note}</p>}
           <p className="sm:col-span-2">
             {META.source} · generated {stamp(META.generatedAt)} {META.window.timezone}
