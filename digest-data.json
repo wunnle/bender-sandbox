@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-09-24T04:17:31Z",
+  "window": {
+    "start": "2026-09-22T04:17:31Z",
+    "end": "2026-09-24T04:17:31Z",
+    "timezone": "UTC",
+    "duration_hours": 48
+  },
+  "scope": {
+    "accounts": [
+      "simonw",
+      "mitsuhiko",
+      "badlogicgames",
+      "steipete",
+      "thorstenball",
+      "geoffreylitt",
+      "HamelHusain",
+      "RLanceMartin",
+      "sgoedecke",
+      "birgitta410"
+    ],
+    "filter": "AI and software-development posts with concrete tools, workflows, evidence, experiments, or useful criticism",
+    "source": "Public X profile timelines",
+    "note": "Replies and repost-only activity may not appear on logged-out public profile timelines. Off-topic and low-signal posts were omitted. Timestamps were derived from X status IDs."
+  },
+  "digest": [
+    {
+      "handle": "simonw",
+      "name": "Simon Willison",
+      "items": [
+        {
+          "published_at": "2026-09-24T00:22:32.554Z",
+          "url": "https://x.com/simonw/status/2102916558712705427",
+          "topic": "MCP and voice interfaces",
+          "summary": "Used datasette-mcp to have a voice conversation with a Datasette backup of his blog through the ChatGPT iPhone app.",
+          "signal": "Demonstrates a working personal-knowledge interface rather than merely describing one."
+        },
+        {
+          "published_at": "2026-09-23T20:45:19.125Z",
+          "url": "https://x.com/simonw/status/2102861892549279922",
+          "topic": "Gemini TTS playground",
+          "summary": "Built an interactive UI for Gemini 3.8 TTS, including multi-speaker conversations and voice cloning, then used Claude to script a two-pelican dialogue.",
+          "signal": "Ships a usable playground alongside the observation."
+        },
+        {
+          "published_at": "2026-09-22T23:50:29.264Z",
+          "url": "https://x.com/simonw/status/2102546103984079131",
+          "topic": "Frontier-model comparison",
+          "summary": "Published notes and comparison grids for Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna across reasoning levels.",
+          "signal": "Side-by-side artifacts make the model-release commentary inspectable."
+        },
+        {
+          "published_at": "2026-09-22T20:07:37.026Z",
+          "url": "https://x.com/simonw/status/2102490016752779458",
+          "topic": "Model selection",
+          "summary": "Highlighted GPT-6 Luna's lower price and described it as his preferred model for product features because of cost and speed.",
+          "signal": "Concrete deployment preference with explicit criteria."
+        }
+      ]
+    },
+    {
+      "handle": "mitsuhiko",
+      "name": "Armin Ronacher",
+      "items": [
+        {
+          "published_at": "2026-09-23T21:38:50.475Z",
+          "url": "https://x.com/mitsuhiko/status/2102875361927196678",
+          "topic": "AI-driven language adoption",
+          "summary": "Suggested that DHH's recent work may have created a new wave of Rust programmers.",
+          "signal": "A compact observation about agents changing the practical cost of adopting unfamiliar languages."
+        },
+        {
+          "published_at": "2026-09-23T18:00:32.595Z",
+          "url": "https://x.com/mitsuhiko/status/2102820425436963165",
+          "topic": "Cache warming",
+          "summary": "Briefly endorsed cache warming in the context of current development tooling.",
+          "signal": "Potentially useful operational note, though the public post lacks enough standalone context."
+        }
+      ]
+    },
+    {
+      "handle": "badlogicgames",
+      "name": "Mario Zechner",
+      "items": [
+        {
+          "published_at": "2026-09-23T18:21:07.228Z",
+          "url": "https://x.com/badlogicgames/status/2102825603863072965",
+          "topic": "Rapid game prototyping",
+          "summary": "Highlighted a Broforce-style game built in a few hours with Astra and published as a playable artifact.",
+          "signal": "Points to a concrete, testable result rather than a capability claim."
+        },
+        {
+          "published_at": "2026-09-22T12:30:10.493Z",
+          "url": "https://x.com/badlogicgames/status/2102374897649647627",
+          "topic": "Maintaining engineering understanding",
+          "summary": "Recommended 'AI Has No Wisdom and Neither Will You,' arguing that teams stop reading and writing code at their peril.",
+          "signal": "Useful counterweight to hands-off vibe-coding claims."
+        }
+      ]
+    },
+    {
+      "handle": "steipete",
+      "name": "Peter Steinberger",
+      "items": [
+        {
+          "published_at": "2026-09-23T22:34:18.303Z",
+          "url": "https://x.com/steipete/status/2102889319849713698",
+          "topic": "Claude Code AGENTS.md failure mode",
+          "summary": "Flagged that Claude Code 2.1.277 can silently skip a local AGENTS.md when telemetry or nonessential traffic is disabled because the loader is controlled by a remote feature flag.",
+          "signal": "High-value operational edge case with direct consequences for local agent behavior."
+        },
+        {
+          "published_at": "2026-09-23T08:13:25.118Z",
+          "url": "https://x.com/steipete/status/2102672670689275965",
+          "topic": "AI tooling observability",
+          "summary": "Expanded CodexBar support across a broad set of AI coding and inference providers and noted the removal of recurring keychain alerts.",
+          "signal": "Concrete tooling update for monitoring multi-provider AI usage."
+        },
+        {
+          "published_at": "2026-09-23T07:50:54.207Z",
+          "url": "https://x.com/steipete/status/2102667004557832497",
+          "topic": "Decision models in agent control",
+          "summary": "Said the next OpenClaw version uses a decision model to choose automatically between steering and queueing, with API-compatible, local, and ONNX options.",
+          "signal": "Specific architectural use of a small decision model inside an agent harness."
+        }
+      ]
+    },
+    {
+      "handle": "thorstenball",
+      "name": "Thorsten Ball",
+      "items": [
+        {
+          "published_at": "2026-09-23T14:01:29.987Z",
+          "url": "https://x.com/thorstenball/status/2102760268178891180",
+          "topic": "Agent harness quality",
+          "summary": "Quoted a user's judgment that Amp is the strongest available harness.",
+          "signal": "Anecdotal rather than measured, but relevant as practitioner feedback."
+        },
+        {
+          "published_at": "2026-09-23T06:37:57.003Z",
+          "url": "https://x.com/thorstenball/status/2102648645233373328",
+          "topic": "Same-prompt model comparison",
+          "summary": "Ran the same documentation-writing prompt through GPT-6 Sol, Opus 5.5, GPT-6 Astra High, and Fable 5.1 Ultra and shared the outputs.",
+          "signal": "Comparable prompt and visible outputs make the model comparison auditable."
+        },
+        {
+          "published_at": "2026-09-23T04:57:32.395Z",
+          "url": "https://x.com/thorstenball/status/2102623376196194763",
+          "topic": "Agent-driven end-to-end testing",
+          "summary": "Reported strong results from asking agents to test features end-to-end and provide irrefutable proof that they work, contrasting this with much of his historical unit-test effort.",
+          "signal": "A directly reusable verification prompt and a concrete testing philosophy."
+        }
+      ]
+    },
+    {
+      "handle": "geoffreylitt",
+      "name": "Geoffrey Litt",
+      "items": [
+        {
+          "published_at": "2026-09-24T03:03:49.885Z",
+          "url": "https://x.com/geoffreylitt/status/2102957148380750095",
+          "topic": "Organizing AI context",
+          "summary": "Shared his personal recommendation for deciding where AI context belongs across documents, skills, memories, and related stores.",
+          "signal": "Directly addresses a recurring practical problem in agent-system design; the attached visual contains the useful detail."
+        }
+      ]
+    },
+    {
+      "handle": "HamelHusain",
+      "name": "Hamel Husain",
+      "items": [
+        {
+          "published_at": "2026-09-23T17:08:00.351Z",
+          "url": "https://x.com/HamelHusain/status/2102807203967365549",
+          "topic": "AI evals guide",
+          "summary": "Published a structured guide that routes humans and agents to the appropriate evaluation resources based on their problem.",
+          "signal": "A practical index designed to reduce aimless searching."
+        },
+        {
+          "published_at": "2026-09-23T17:00:04.306Z",
+          "url": "https://x.com/HamelHusain/status/2102805207289593987",
+          "topic": "Evaluation fundamentals",
+          "summary": "Defined AI evals as tests of whether a system does what its builders want, while distinguishing product evals from model benchmarks.",
+          "signal": "Concise clarification of a distinction teams routinely blur."
+        },
+        {
+          "published_at": "2026-09-23T13:49:46.686Z",
+          "url": "https://x.com/HamelHusain/status/2102757318320648242",
+          "topic": "Bot-generated reply pollution",
+          "summary": "Called out bots replying to other bots as a growing firehose of low-quality content.",
+          "signal": "Useful warning about automated engagement degrading feedback channels."
+        },
+        {
+          "published_at": "2026-09-22T23:36:23.362Z",
+          "url": "https://x.com/HamelHusain/status/2102542556013932990",
+          "topic": "Evaluation pipeline audit",
+          "summary": "Recommended installing the eval skills he created with Shreya Shankar and running /eval-audit against an existing pipeline to identify low-hanging improvements.",
+          "signal": "Immediately actionable workflow backed by public tooling."
+        },
+        {
+          "published_at": "2026-09-22T22:39:54.682Z",
+          "url": "https://x.com/HamelHusain/status/2102528342859915487",
+          "topic": "Testing model writing quality",
+          "summary": "Hosted a practical session testing whether Opus 5.5 reduces stereotypical AI writing slop.",
+          "signal": "Frames model-quality discussion as an evaluation exercise rather than a vibe."
+        }
+      ]
+    },
+    {
+      "handle": "RLanceMartin",
+      "name": "Lance Martin",
+      "items": [
+        {
+          "published_at": "2026-09-23T01:47:11.026Z",
+          "url": "https://x.com/RLanceMartin/status/2102575471502528989",
+          "topic": "Claude prompt audit",
+          "summary": "Recommended running /claude-api prompt-audit in Claude Code to inspect skills, AGENTS.md, CLAUDE.md, and prompts for anti-patterns that hinder frontier models.",
+          "signal": "Specific command, defined scope, and updated guidance for the current model."
+        },
+        {
+          "published_at": "2026-09-22T16:43:03.563Z",
+          "url": "https://x.com/RLanceMartin/status/2102438538117816825",
+          "topic": "Migrating to Claude Opus 5.5",
+          "summary": "Suggested /claude-api migrate for application code and /claude-api prompt-audit for skills and prompts when moving to Opus 5.5.",
+          "signal": "Concrete migration and validation workflow rather than release-day cheerleading."
+        }
+      ]
+    },
+    {
+      "handle": "sgoedecke",
+      "name": "Sean Goedecke",
+      "items": [],
+      "note": "The supplied handle resolves to an unrelated, nearly inactive account. No verified current X account for Sean Goedecke was identified, so nothing was attributed to him."
+    },
+    {
+      "handle": "birgitta410",
+      "name": "Birgitta Böckeler",
+      "items": [],
+      "note": "No posts in the window. Her public X timeline appears inactive since November 2022; her profile points to Bluesky and Mastodon."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Most operationally useful",
+      "url": "https://x.com/steipete/status/2102889319849713698",
+      "reason": "Explains a silent Claude Code configuration failure caused by a remote feature flag."
+    },
+    {
+      "title": "Best reusable workflow",
+      "url": "https://x.com/HamelHusain/status/2102542556013932990",
+      "reason": "Run /eval-audit against an existing evaluation pipeline to find concrete improvements."
+    },
+    {
+      "title": "Best verification prompt",
+      "url": "https://x.com/thorstenball/status/2102623376196194763",
+      "reason": "Ask an agent to test end-to-end and provide irrefutable proof that the feature works."
+    },
+    {
+      "title": "Best shipped artifact",
+      "url": "https://x.com/simonw/status/2102861892549279922",
+      "reason": "A working Gemini TTS playground accompanies the post."
+    }
+  ]
+}
