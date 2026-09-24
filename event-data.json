@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "range": {
-    "start": "2026-09-23",
-    "end": "2026-10-12"
+    "start": "2026-09-24",
+    "end": "2026-10-13"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,146 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "Birbirimizi Hiç Göremeyecekmişiz",
-      "kind": "theatre",
-      "time": "19:00",
-      "venue": "Paribu Art",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/birbirimizi-hic-goremeyecekmisiz",
-      "image": "https://tiyatrolar.com.tr/files/activity/b/birbirimizi-hic-goremeyecekmisiz/image/birbirimizi-hic-goremeyecekmisiz.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "Herkes Kocama Benziyor",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Baba Sahne",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/herkes-kocama-benziyor-1",
-      "image": "https://tiyatrolar.com.tr/files/activity/h/herkes-kocama-benziyor-1/image/herkes-kocama-benziyor-1.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "Hizmetçiler",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "554 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/hizmetciler",
-      "availability": "available",
-      "owned": false,
-      "description": "Hizmetçiler Tiyatro Oyunu “Özgür Yaşa Ya Da Öl!” “Vivre Libre Ou Mourir!” Uzun yıllardır Hanımefendi’nin emrinde çalışan Solange ve Claire, yaşama tutundukları “oyunun” son dakikalarını yaşamaktadır. Taparcasına sevdikleri, saygıda kusur etmedikleri, varlıklarını borçlu oldukları Hanımefendi’yi öldürmeye karar vermişlerdir. Bir cinayetin işleneceği bu gece, dizginlenemeyen arzuların iktidarı devralışına, değişen rollerin kaosuna, aynaların kırılmasına, şiddetin salıverilmesine, ku",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hizmetciler-202542163235a68f95e8c0d4b28904ac177870d0f47.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/hizmetciler"
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "La haine",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/protesto-la-haine",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/protesto-202682710433846c0ed430a714098bb725ce3aabac23f.jpg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H35M",
-      "genre": "Dram, Suç",
-      "description": "Mathieu Kassovitz'in kült filmi La haine, Fransa'nın kaynayan gettolarından üç gencin 24 saat boyunca yaşadıklarını konu ediniyor. Paris’in gettolarında hararetli saatler yaşanmaktadır. Grup halinde dolaşan yerel gençlerle, çevreyi kuşatan polisler arasında nefret dolu bakışlardan oluşan bir gerilim vardır. Mahallenin gençlerinden Abdel, polis soruşturması sırasında dövüldüğü için hastanede ölüm döşeğinde yatmaktadır. Arkadaşı Vinz ise, Abdel’in ölmesi durumunda bir polis vurmaya ant içer. Protesto filmini sinemada izlemek için hemen biletini al!",
-      "imdbId": "tt0113247",
-      "imdbUrl": "https://www.imdb.com/title/tt0113247/",
-      "imdbTitle": "La haine",
-      "imdbYear": 1995,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMThlMDA3NDYtZGM2Zi00NmJhLThlYWItZjViZTkzZWU1ZWRiXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Protesto"
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "Bengi İdil Uras ile Beng Beng Show",
-      "kind": "theatre",
-      "time": "21:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "850 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/bengi-idil-uras-ile-beng-beng-show",
-      "availability": "available",
-      "owned": false,
-      "description": "Bengi İdil Uras ile Beng Beng Show Bengi İdil Uras ile kahkaha dolu bir dünyaya hazır olun! Beng Beng Show”, o hep parıltılı gördüğümüz dünyanın arkasında dönen tatlı karmaşayı ve sahne tozu yutma sevdasının insanı düşürdüğü akılalmaz halleri önünüze seren dinamik bir gösteri. Bengi İdil Uras’ın bitmeyen enerjisiyle şekillenen bu şovda; bir yandan hayallerin peşinden koşarken başa gelen trajikomik manzaralara gülecek, bir yandan da \"Peki tüm bu yaşananların tam ortasına o tanıdık 'kahkül kad",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bengi-idil-uras-ile-beng-beng-show-202654151144e5260fcb553f409383bebdaf29cf6728.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/bengi-idil-uras-ile-beng-beng-show"
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "La haine",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/protesto-la-haine",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/protesto-202682710433846c0ed430a714098bb725ce3aabac23f.jpg",
-      "ageLimit": "16+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H35M",
-      "genre": "Dram, Suç",
-      "description": "Mathieu Kassovitz'in kült filmi La haine, Fransa'nın kaynayan gettolarından üç gencin 24 saat boyunca yaşadıklarını konu ediniyor. Paris’in gettolarında hararetli saatler yaşanmaktadır. Grup halinde dolaşan yerel gençlerle, çevreyi kuşatan polisler arasında nefret dolu bakışlardan oluşan bir gerilim vardır. Mahallenin gençlerinden Abdel, polis soruşturması sırasında dövüldüğü için hastanede ölüm döşeğinde yatmaktadır. Arkadaşı Vinz ise, Abdel’in ölmesi durumunda bir polis vurmaya ant içer. Protesto filmini sinemada izlemek için hemen biletini al!",
-      "imdbId": "tt0113247",
-      "imdbUrl": "https://www.imdb.com/title/tt0113247/",
-      "imdbTitle": "La haine",
-      "imdbYear": 1995,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMThlMDA3NDYtZGM2Zi00NmJhLThlYWItZjViZTkzZWU1ZWRiXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Protesto"
-    },
-    {
-      "days": [
-        "2026-09-23"
-      ],
-      "title": "Clown Jam",
-      "kind": "stand-up",
-      "time": "22:00",
-      "venue": "Komünite",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro-bilet/clown-jam",
-      "image": "https://tiyatrolar.com.tr/files/activity/c/clown-jam/image/clown-jam.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
     {
       "days": [
         "2026-09-24"
@@ -1019,8 +879,8 @@
     }
   ],
   "cinemas": [],
-  "omitted_records": 0,
-  "research_note": "2026-09-23 refresh: active source confirmed as repository-root event-data.json. The five required Biletinial venue inventory tabs (loc=15880, 17011, 15863, 15738, 18051) were requested directly with the rolling date window; Biletinial returned HTTP 500/error HTML for these venue pages, so theatre sessions were not fabricated. Existing verified in-window records were retained and expired records removed. Fastmail was checked successfully (no events); Google colonist was readable, while Google personal requested interactive OAuth and was unavailable. No calendar-owned Istanbul event matched the retained records. IMDb metadata was retained from prior verified enrichment; no new film enrichment was applied because the required source refresh did not expose reliable new records. No new events added; changes are date-range rollover only.",
+  "omitted_records": 7,
+  "research_note": "Rolling refresh 2026-09-24. Preferred Biletinial venue tabs were checked directly for inventory; production-page sessions were restricted to the originating preferred venue. Existing records were retained only when dated in the rolling window; exact availability/price evidence is retained from direct event pages. Fastmail returned no events. Google colonist was checked; Google personal required interactive authorization and could not be completed in scheduled mode. IMDb enrichment was not expanded where reliable structured metadata was unavailable.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -1028,7 +888,7 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-23",
+      "checkedAt": "2026-09-24",
       "listedItems": 32,
       "listedEventLinks": 42
     },
@@ -1038,7 +898,7 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-23",
+      "checkedAt": "2026-09-24",
       "listedItems": 10,
       "listedEventLinks": 19
     },
@@ -1048,7 +908,7 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-23",
+      "checkedAt": "2026-09-24",
       "listedItems": 2,
       "listedEventLinks": 11
     },
@@ -1058,7 +918,7 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-23",
+      "checkedAt": "2026-09-24",
       "listedItems": 27,
       "listedEventLinks": 33
     },
@@ -1068,7 +928,7 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-23",
+      "checkedAt": "2026-09-24",
       "listedItems": 50,
       "listedEventLinks": 52
     },
@@ -1077,21 +937,21 @@
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-09-24"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-09-24"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-09-24"
     }
   ]
 }
