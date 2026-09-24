@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { AUTHORS, DAYS, ITEMS, META } from "./data";
-import { Card, rangeLabel, stamp, useRead } from "./ui";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { AUTHORS, DAYS, ITEMS, META, type Media } from "./data";
+import { Card, Lightbox, rangeLabel, stamp, useRead } from "./ui";
 
 type View = "feed" | "authors";
 
@@ -37,6 +37,10 @@ export default function DigestPage() {
   };
 
   const { read, toggle, clear } = useRead();
+
+  /** Which media set the lightbox is showing, and where in it. */
+  const [zoom, setZoom] = useState<{ media: Media[]; index: number } | null>(null);
+  const openMedia = useCallback((media: Media[], index: number) => setZoom({ media, index }), []);
 
   const on = (handle: string) => active.length === 0 || active.includes(handle);
 
@@ -92,6 +96,10 @@ export default function DigestPage() {
         </header>
 
         <p className="mt-4 max-w-3xl text-[15px] leading-relaxed text-neutral-500">{META.filter}</p>
+        {/* Click-to-read isn't discoverable on its own. */}
+        <p className="mt-1 text-[13px] text-neutral-600">
+          Click a card to mark it read. Click an image to enlarge it.
+        </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2">
           {/* View switch first — it changes what the account filter applies to */}
@@ -159,7 +167,13 @@ export default function DigestPage() {
              rows leave short posts stranded beside long ones. */
           <div className="mt-8 gap-4 md:columns-2 xl:columns-3">
             {shown.map((i) => (
-              <Card key={i.url} item={i} read={read.has(i.url)} onToggleRead={toggle} />
+              <Card
+                key={i.url}
+                item={i}
+                read={read.has(i.url)}
+                onToggleRead={toggle}
+                onOpenMedia={openMedia}
+              />
             ))}
           </div>
         ) : (
@@ -200,6 +214,7 @@ export default function DigestPage() {
                         showAuthor={false}
                         read={read.has(i.url)}
                         onToggleRead={toggle}
+                        onOpenMedia={openMedia}
                       />
                     ))}
                   </div>
@@ -207,6 +222,15 @@ export default function DigestPage() {
               </section>
             ))}
           </div>
+        )}
+
+        {zoom && (
+          <Lightbox
+            media={zoom.media}
+            index={zoom.index}
+            onIndex={(index) => setZoom((z) => (z ? { ...z, index } : z))}
+            onClose={() => setZoom(null)}
+          />
         )}
 
         {/* Only the payload's own account of itself. */}

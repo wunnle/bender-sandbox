@@ -107,6 +107,39 @@ const clock = (s: number) => {
   return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, "0")}`;
 };
 
+/** Stop a click inside the card from also toggling the card's read state. */
+const swallow = (e: React.MouseEvent) => e.stopPropagation();
+
+const URL_RE = /(https?:\/\/[^\s]+)/g;
+
+/**
+ * Post text with its URLs made clickable. The posts are full of links they'd
+ * otherwise only be readable as text — blog posts, repos, playgrounds. Trailing
+ * punctuation is pushed back into the text, so a URL ending a sentence doesn't
+ * swallow the full stop into the href.
+ */
+export function linkify(text: string) {
+  return text.split(URL_RE).map((chunk, i) => {
+    if (i % 2 === 0) return chunk;
+    const trailing = chunk.match(/[.,;:!?)\]]+$/)?.[0] ?? "";
+    const href = trailing ? chunk.slice(0, -trailing.length) : chunk;
+    return (
+      <span key={i}>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          onClick={swallow}
+          className="text-sky-300 underline decoration-sky-300/40 underline-offset-2 transition hover:decoration-sky-300"
+        >
+          {href}
+        </a>
+        {trailing}
+      </span>
+    );
+  });
+}
+
 function PlayIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
@@ -125,16 +158,40 @@ function Shot({
   m,
   className = "",
   style,
+  onOpen,
 }: {
   m: Media;
   className?: string;
   style?: React.CSSProperties;
+  onOpen?: () => void;
 }) {
   const src = m.type === "video" ? m.thumbnail_url : m.url;
   if (!src) return null;
   return (
     <span
-      className={`relative block overflow-hidden rounded-xl bg-white/5 ${className}`}
+      role={onOpen ? "button" : undefined}
+      tabIndex={onOpen ? 0 : undefined}
+      onClick={
+        onOpen
+          ? (e) => {
+              e.stopPropagation();
+              onOpen();
+            }
+          : undefined
+      }
+      onKeyDown={
+        onOpen
+          ? (e) => {
+              if (e.key !== "Enter" && e.key !== " ") return;
+              e.preventDefault();
+              e.stopPropagation();
+              onOpen();
+            }
+          : undefined
+      }
+      className={`relative block overflow-hidden rounded-xl bg-white/5 ${
+        onOpen ? "cursor-zoom-in transition hover:brightness-110" : ""
+      } ${className}`}
       style={style}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -158,8 +215,11 @@ function Shot({
   );
 }
 
+/** What the card hands up to the page when a thumbnail is clicked. */
+export type OpenMedia = (media: Media[], index: number) => void;
+
 /** One photo runs full width at its own ratio; several tile two-up. */
-function MediaBlock({ media }: { media: Media[] }) {
+function MediaBlock({ media, onOpen }: { media: Media[]; onOpen?: OpenMedia }) {
   if (media.length === 0) return null;
   if (media.length === 1) {
     const m = media[0];
@@ -170,25 +230,154 @@ function MediaBlock({ media }: { media: Media[] }) {
         m={m}
         className="mt-3 max-h-[30rem] w-full"
         style={{ aspectRatio: `${m.width} / ${m.height}` }}
+        onOpen={onOpen && (() => onOpen(media, 0))}
       />
     );
   }
   return (
     <span className="mt-3 grid grid-cols-2 gap-2">
-      {media.map((m) => (
-        <Shot key={m.url} m={m} className="aspect-[4/3]" />
+      {media.map((m, i) => (
+        <Shot key={m.url} m={m} className="aspect-[4/3]" onOpen={onOpen && (() => onOpen(media, i))} />
       ))}
     </span>
   );
 }
 
+function CloseIcon({ className = "h-5 w-5" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      className={className}
+      aria-hidden
+    >
+      <path d="m6 6 12 12M18 6 6 18" />
+    </svg>
+  );
+}
+
+function ChevronIcon({ dir, className = "h-6 w-6" }: { dir: -1 | 1; className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden
+    >
+      <path d={dir === 1 ? "m9 5 7 7-7 7" : "m15 5-7 7 7 7"} />
+    </svg>
+  );
+}
+
 /**
- * The post this one quotes. Inset rather than linked: the card is already an
- * `<a>` to the parent post, and an anchor can't contain another. Six of the
- * twenty-two are quote tweets, and in several the quoted post is the substance
- * — "my kind of slop" means nothing without the thing being called slop.
+ * Full-size view of one post's media. Photos load at `?name=orig`, so the
+ * lightbox is the only place their detail is legible — several are screenshots
+ * of text. Videos get a real player here, since the thumbnail can't be played.
  */
-function QuoteBlock({ quote }: { quote: Quote }) {
+export function Lightbox({
+  media,
+  index,
+  onIndex,
+  onClose,
+}: {
+  media: Media[];
+  index: number;
+  onIndex: (i: number) => void;
+  onClose: () => void;
+}) {
+  const step = useCallback(
+    (d: -1 | 1) => onIndex((index + d + media.length) % media.length),
+    [index, media.length, onIndex],
+  );
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
+    };
+    window.addEventListener("keydown", onKey);
+    // The page behind shouldn't scroll while the overlay is up.
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [onClose, step]);
+
+  const m = media[index];
+  if (!m) return null;
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm sm:p-8"
+    >
+      <button
+        onClick={onClose}
+        aria-label="Close"
+        className="absolute right-4 top-4 rounded-full p-2 text-neutral-300 ring-1 ring-white/20 transition hover:bg-white/10 hover:text-white"
+      >
+        <CloseIcon />
+      </button>
+
+      {media.length > 1 &&
+        ([-1, 1] as const).map((dir) => (
+          <button
+            key={dir}
+            onClick={(e) => {
+              e.stopPropagation();
+              step(dir);
+            }}
+            aria-label={dir === 1 ? "Next" : "Previous"}
+            className={`absolute top-1/2 -translate-y-1/2 rounded-full p-3 text-neutral-300 ring-1 ring-white/20 transition hover:bg-white/10 hover:text-white ${
+              dir === 1 ? "right-4" : "left-4"
+            }`}
+          >
+            <ChevronIcon dir={dir} />
+          </button>
+        ))}
+
+      {/* Stop clicks on the media itself from closing the overlay. */}
+      <div onClick={swallow} className="flex max-h-full max-w-full flex-col items-center gap-3">
+        {m.type === "video" ? (
+          <video
+            src={m.url}
+            poster={m.thumbnail_url}
+            controls
+            autoPlay
+            className="max-h-[85vh] max-w-full rounded-lg"
+          />
+        ) : (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img src={m.url} alt="" className="max-h-[85vh] max-w-full rounded-lg object-contain" />
+        )}
+        {media.length > 1 && (
+          <p className="font-mono text-xs text-neutral-400">
+            {index + 1} / {media.length}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/**
+ * The post this one quotes. Six of the twenty-two are quote tweets, and in
+ * several the quoted post is the substance — "my kind of slop" means nothing
+ * without the thing being called slop.
+ */
+function QuoteBlock({ quote, onOpen }: { quote: Quote; onOpen?: OpenMedia }) {
   return (
     <span className="mt-3 block rounded-xl border border-white/10 bg-white/[0.03] p-4">
       <span className="flex flex-wrap items-baseline gap-x-2 text-sm">
@@ -196,9 +385,9 @@ function QuoteBlock({ quote }: { quote: Quote }) {
         <span className="font-mono text-xs text-neutral-500">@{quote.author.handle}</span>
       </span>
       <span className="mt-1.5 block whitespace-pre-line break-words text-[15px] leading-relaxed text-neutral-300">
-        {quote.text}
+        {linkify(quote.text)}
       </span>
-      <MediaBlock media={quote.media} />
+      <MediaBlock media={quote.media} onOpen={onOpen} />
     </span>
   );
 }
@@ -242,23 +431,49 @@ function CheckIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
  * is colour-coded, because the payload carries no categorisation to code —
  * `topic` is free text, one per post, and is shown as the words it is.
  *
- * A `div`, not an `<a>`: the read toggle is a button, and an anchor can't
- * contain one. "Read on X" is an explicit link in the footer instead.
+ * A `div`, not an `<a>`: clicking the card toggles read, and it contains links
+ * and buttons of its own, which an anchor can't. "Read on X" is an explicit
+ * link in the footer instead.
  */
 export function Card({
   item,
   showAuthor = true,
   read = false,
   onToggleRead,
+  onOpenMedia,
 }: {
   item: Item;
   showAuthor?: boolean;
   read?: boolean;
   onToggleRead?: (url: string) => void;
+  onOpenMedia?: OpenMedia;
 }) {
+  const toggle = () => {
+    // Selecting text inside a card shouldn't also mark it read — the mouseup
+    // that ends a drag still fires a click on the card.
+    if (window.getSelection()?.toString()) return;
+    onToggleRead?.(item.url);
+  };
+
   return (
     <div
-      className={`mb-4 flex break-inside-avoid flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-white/25 ${
+      onClick={onToggleRead ? toggle : undefined}
+      onKeyDown={
+        onToggleRead
+          ? (e) => {
+              if (e.target !== e.currentTarget) return;
+              if (e.key !== "Enter" && e.key !== " ") return;
+              e.preventDefault();
+              toggle();
+            }
+          : undefined
+      }
+      role={onToggleRead ? "button" : undefined}
+      tabIndex={onToggleRead ? 0 : undefined}
+      aria-pressed={onToggleRead ? read : undefined}
+      className={`mb-4 flex break-inside-avoid flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40 ${
+        onToggleRead ? "cursor-pointer" : ""
+      } ${
         // Read posts recede but stay legible, and come back on hover so a
         // mis-click isn't a dead end.
         read ? "opacity-35 hover:opacity-100" : ""
@@ -281,12 +496,12 @@ export function Card({
           showAuthor ? "mt-2" : "mt-3"
         }`}
       >
-        {item.text}
+        {linkify(item.text)}
       </p>
 
-      <MediaBlock media={item.media} />
+      <MediaBlock media={item.media} onOpen={onOpenMedia} />
 
-      {item.quote && <QuoteBlock quote={item.quote} />}
+      {item.quote && <QuoteBlock quote={item.quote} onOpen={onOpenMedia} />}
 
       {/* Day and time both live here now that the day headings are gone. */}
       <div className="mt-auto flex items-center justify-between gap-3 pt-5 text-xs text-neutral-500">
@@ -295,28 +510,23 @@ export function Card({
         </span>
 
         <span className="flex items-center gap-3">
+          {/* Swallows its click: opening the source shouldn't silently flip the
+              card's read state behind the new tab. */}
           <a
             href={item.url}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1 underline-offset-4 transition hover:text-neutral-200 hover:underline"
+            onClick={swallow}
+            className="flex items-center gap-1 rounded-full px-2.5 py-1 ring-1 ring-inset ring-white/10 transition hover:text-white hover:ring-white/30"
           >
             Read on X
             <ArrowIcon />
           </a>
-          {onToggleRead && (
-            <button
-              onClick={() => onToggleRead(item.url)}
-              aria-pressed={read}
-              className={`flex items-center gap-1 rounded-full px-2.5 py-1 ring-1 ring-inset transition ${
-                read
-                  ? "bg-white/10 text-neutral-300 ring-white/20"
-                  : "text-neutral-400 ring-white/10 hover:text-white hover:ring-white/30"
-              }`}
-            >
+          {read && (
+            <span className="flex items-center gap-1 text-neutral-400">
               <CheckIcon />
-              {read ? "Read" : "Mark read"}
-            </button>
+              Read
+            </span>
           )}
         </span>
       </div>
