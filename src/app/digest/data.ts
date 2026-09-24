@@ -140,13 +140,6 @@ export const DAYS: string[] = [...new Set(ITEMS.map((i) => i.day))].sort((a, b) 
   b.localeCompare(a),
 );
 
-const BY_URL = new Map(ITEMS.map((i) => [i.url, i]));
-
-/** Curated picks, resolved back to the full item so a card can render them. */
-export const HIGHLIGHTS = raw.highlights
-  .map((h) => ({ ...h, item: BY_URL.get(h.url) }))
-  .filter((h): h is typeof h & { item: Item } => Boolean(h.item));
-
 export const META = {
   generatedAt: raw.generated_at,
   window: raw.window,

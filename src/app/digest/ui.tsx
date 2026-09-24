@@ -60,9 +60,9 @@ function ArrowIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
 }
 
 /**
- * One post. `summary` is what they said; `signal` is why it earned a place —
- * the two are visually separated because the second is the scraper's judgement,
- * not the author's words, and conflating them would misattribute opinion.
+ * One post. The card is the author's `summary` and nothing else — the payload
+ * also carries a `signal` line arguing why each post was kept, but that is the
+ * scraper talking about them rather than them talking, so it stays off the page.
  */
 export function Card({ group, showAuthor = true }: { group: Item; showAuthor?: boolean }) {
   const meta = CATEGORY_META[group.category];
@@ -90,17 +90,15 @@ export function Card({ group, showAuthor = true }: { group: Item; showAuthor?: b
         </p>
       )}
 
+      {/* The post itself carries the card — one step larger than the metadata
+          around it, and the only thing competing for attention. */}
       <p
-        className={`text-[17px] leading-relaxed text-neutral-100 ${showAuthor ? "mt-2" : "mt-4"}`}
+        className={`text-[19px] leading-relaxed text-neutral-50 ${showAuthor ? "mt-2" : "mt-4"}`}
       >
         {group.summary}
       </p>
 
-      <p className="mt-3 border-l-2 border-white/10 pl-3 text-[15px] leading-relaxed text-neutral-400">
-        {group.signal}
-      </p>
-
-      <p className="mt-4 flex items-center gap-1.5 pt-1 text-xs text-neutral-500 group-hover:text-neutral-300">
+      <p className="mt-auto flex items-center gap-1.5 pt-5 text-xs text-neutral-500 group-hover:text-neutral-300">
         <span className="font-mono">{timeLabel(group.publishedAt)} UTC</span>
         <span aria-hidden>·</span>
         <span className="underline-offset-4 group-hover:underline">Read on X</span>

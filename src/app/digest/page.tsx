@@ -6,7 +6,6 @@ import {
   CATEGORIES,
   CATEGORY_META,
   DAYS,
-  HIGHLIGHTS,
   ITEMS,
   META,
   type Category,
@@ -110,40 +109,7 @@ export default function DigestPage() {
           {META.filter}.
         </p>
 
-        {HIGHLIGHTS.length > 0 && (
-          <section className="mt-8">
-            <h2 className="text-xs font-medium uppercase tracking-widest text-neutral-500">
-              Picks
-            </h2>
-            <div className="mt-3 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-              {HIGHLIGHTS.map((h) => (
-                <a
-                  key={h.url}
-                  href={h.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group rounded-xl border border-white/10 bg-white/[0.04] p-4 transition hover:border-white/25 hover:bg-white/[0.08]"
-                >
-                  <p
-                    className={`flex items-center gap-2 text-sm font-semibold ${CATEGORY_META[h.item.category].text}`}
-                  >
-                    <span
-                      className={`h-1.5 w-1.5 rounded-full ${CATEGORY_META[h.item.category].dot}`}
-                      aria-hidden
-                    />
-                    {h.title}
-                  </p>
-                  <p className="mt-2 text-[15px] leading-relaxed text-neutral-200">{h.reason}</p>
-                  <p className="mt-3 font-mono text-xs text-neutral-500 group-hover:text-neutral-300">
-                    @{h.item.handle}
-                  </p>
-                </a>
-              ))}
-            </div>
-          </section>
-        )}
-
-        <div className="mt-9 flex flex-wrap items-center gap-x-3 gap-y-2">
+        <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2">
           {/* View switch first — it changes what the filters below apply to */}
           <div className="flex rounded-full p-0.5 ring-1 ring-inset ring-white/10">
             {VIEWS.map((v) => (
@@ -275,9 +241,8 @@ export default function DigestPage() {
 
         <footer className="mt-14 grid gap-4 border-t border-white/10 pt-6 text-sm leading-relaxed text-neutral-600 sm:grid-cols-2">
           <p>
-            Each card shows what was posted and, below the rule, why it was kept. The second line
-            is the scraper&rsquo;s judgement, not the author&rsquo;s words — follow the link for
-            what they actually wrote.
+            Each card is a summary of what was posted. Follow the link for what they actually
+            wrote.
           </p>
           <p>
             The four categories are derived here from each post&rsquo;s topic, not supplied by the
