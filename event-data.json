@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-24",
+  "lastUpdated": "2026-09-25",
   "range": {
-    "start": "2026-09-24",
-    "end": "2026-10-13"
+    "start": "2026-09-25",
+    "end": "2026-10-14"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,143 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Lazarus - Diriliş",
-      "kind": "theatre",
-      "time": "18:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "776 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/lazarus-dirilis",
-      "availability": "available",
-      "owned": false,
-      "description": "LAZARUS - Diriliş Tiyatro Oyunu “Usulüne göre gömülmeyen her şey sonradan hortlar.” – Lacan Annesinin ölümüyle başlayıp yarım kalmış yasın, babasızlığın açtığı boşluğun ve suçluluk duygusunun gölgesinde yaşayan genç bir kadın… Bir gün, felç geçiren komşusuna yardım etmek isterken kendini bir hastanenin altıncı katında bulur. O andan itibaren, bilinci kapanmış hastaların arasında dolaşan, onlarla konuşan, hatta onları ölüme götüren bir refakatçiye dönüşür. Merhamet ile şiddet, sevgi ile ko",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/lazarus-dirilis-202644211815bd1b9461ede447ac90f74e2b6abd0a42.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/lazarus-dirilis"
-    },
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Girl with a Pearl Earring",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
-      "area": "Fenerbahçe/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/etkinlik/girl-with-a-pearl-earring-inci-kupeli-kiz",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/girl-with-a-pearl-earring-inci-kupeli-kiz-20268211430119d96e708aa4f4e3fb561343cf2e57d54.jpg",
-      "ageLimit": "18+",
-      "duration": "PT1H40M",
-      "genre": "Film Gösterimi",
-      "description": "Girl with a Pearl Earring / İnci Küpeli Kız - Açık Hava Gösterimi 17. yüzyıl Hollanda’sında geçen film, ailesine destek olmak için ressam Johannes Vermeer’in evinde hizmetçi olarak çalışmaya başlayan genç Griet’in hikâyesini anlatır. Vermeer’in içine kapanık ve gergin dünyasına adım atan Griet, kısa sürede ressamın sanatına olan ilgisi ve renkleri kavrama yeteneğiyle onun dikkatini çeker. Aralarındaki usta-çırak ilişkisi sessiz bir hayranlığa ve sanatsal bir iş birliğine dönüşürken, bu yakınl",
-      "imdbId": "tt0335119",
-      "imdbUrl": "https://www.imdb.com/title/tt0335119/",
-      "imdbRating": "6.9",
-      "imdbVotes": 84853,
-      "imdbTitle": "Girl with a Pearl Earring",
-      "imdbYear": 2003,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYTQ0MGU5ODEtYTg5NC00N2MyLTkyMGQtOWJhYzMwNGU3MzEzXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Girl with a Pearl Earring / İnci Küpeli Kız - Açık Hava Gösterimi"
-    },
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Hizmetçiler",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "554 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/hizmetciler",
-      "availability": "available",
-      "owned": false,
-      "description": "Hizmetçiler Tiyatro Oyunu “Özgür Yaşa Ya Da Öl!” “Vivre Libre Ou Mourir!” Uzun yıllardır Hanımefendi’nin emrinde çalışan Solange ve Claire, yaşama tutundukları “oyunun” son dakikalarını yaşamaktadır. Taparcasına sevdikleri, saygıda kusur etmedikleri, varlıklarını borçlu oldukları Hanımefendi’yi öldürmeye karar vermişlerdir. Bir cinayetin işleneceği bu gece, dizginlenemeyen arzuların iktidarı devralışına, değişen rollerin kaosuna, aynaların kırılmasına, şiddetin salıverilmesine, ku",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hizmetciler-202542163235a68f95e8c0d4b28904ac177870d0f47.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/hizmetciler"
-    },
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Musti Kusti - Stand Up (Yeni Gösteri)",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "750 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/musti-kusti-stand-up-yeni-gosteri",
-      "availability": "available",
-      "owned": false,
-      "description": "Musti Kusti - Stand Up (Yeni Gösteri) Musti Kusti Youtube'da yayınladığı ve kısa zamanda büyük beğeni toplayan Kara Mizah isimli stand up gösterisinin ardından yeni gösterisiyle sahnede!",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/musti-kusti-stand-up-yeni-gosteri-202641202735c5ba9d166ba14d25a04fc642d8128cc0.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/musti-kusti-stand-up-yeni-gosteri"
-    },
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Girl with a Pearl Earring",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/inci-kupeli-kiz",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/inci-kupeli-kiz-2026825141512ec22e70322414f4f8b4eb2a07df5728b.png",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H40M",
-      "genre": "Dram",
-      "description": "Tracy Chevalier’in romanından uyarlanan film, Hollandalı ressam Johannes Vermeer’in “ İnci Küpeli Kız ” tablosunun yaratılış sürecini çevreleyen olayları anlatır. Tablodaki kız hakkında çok az şey bilinmektedir. Her ne kadar herhangi bir tarihi kanıt olmasa da ressamın evinde, uzun yıllar ailesi ve hizmetlileri ile birlikte yaşamış bir hizmetçi olduğuna dair spekülasyonlar söz konusudur. Bu usta film, tablodaki kızın gizemli yaşamını yeniden canlandırmak istemiş. Scarlett Johansson’ın oynadığı Griet, İngiliz aktör Colin Firth’ün oynadığı ressam Johannes Vermeer’in evindeki bir hizmetçidir. Vermeer’in zengin patronu ve biricik destekçisi Van Ruijven, Griet’in resmini yapması için kendisine görev verir. Esas amacı ise tablo bitmeden önce Griet’in tamamen kendisine ait olmasını sağlamaktır. Griet, bu zor pozu verirken Vermeer’in karısının, kendisine ait olan küpeleri, onun kulağında görmesi ile gerilim artacaktır.",
-      "imdbId": "tt0335119",
-      "imdbUrl": "https://www.imdb.com/title/tt0335119/",
-      "imdbTitle": "Girl with a Pearl Earring",
-      "imdbYear": 2003,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYTQ0MGU5ODEtYTg5NC00N2MyLTkyMGQtOWJhYzMwNGU3MzEzXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "İnci Küpeli Kız"
-    },
-    {
-      "days": [
-        "2026-09-24"
-      ],
-      "title": "Girl with a Pearl Earring",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/inci-kupeli-kiz",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/inci-kupeli-kiz-2026825141512ec22e70322414f4f8b4eb2a07df5728b.png",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT1H40M",
-      "genre": "Dram",
-      "description": "Tracy Chevalier’in romanından uyarlanan film, Hollandalı ressam Johannes Vermeer’in “ İnci Küpeli Kız ” tablosunun yaratılış sürecini çevreleyen olayları anlatır. Tablodaki kız hakkında çok az şey bilinmektedir. Her ne kadar herhangi bir tarihi kanıt olmasa da ressamın evinde, uzun yıllar ailesi ve hizmetlileri ile birlikte yaşamış bir hizmetçi olduğuna dair spekülasyonlar söz konusudur. Bu usta film, tablodaki kızın gizemli yaşamını yeniden canlandırmak istemiş. Scarlett Johansson’ın oynadığı Griet, İngiliz aktör Colin Firth’ün oynadığı ressam Johannes Vermeer’in evindeki bir hizmetçidir. Vermeer’in zengin patronu ve biricik destekçisi Van Ruijven, Griet’in resmini yapması için kendisine görev verir. Esas amacı ise tablo bitmeden önce Griet’in tamamen kendisine ait olmasını sağlamaktır. Griet, bu zor pozu verirken Vermeer’in karısının, kendisine ait olan küpeleri, onun kulağında görmesi ile gerilim artacaktır.",
-      "imdbId": "tt0335119",
-      "imdbUrl": "https://www.imdb.com/title/tt0335119/",
-      "imdbTitle": "Girl with a Pearl Earring",
-      "imdbYear": 2003,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BYTQ0MGU5ODEtYTg5NC00N2MyLTkyMGQtOWJhYzMwNGU3MzEzXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "İnci Küpeli Kız"
-    },
     {
       "days": [
         "2026-09-25"
@@ -167,6 +30,23 @@
       "description": "On İkinci Ev Tiyatro Oyunu “Artık kavga etmek istiyorum.” On İkinci Ev, yolculuğuna bu sözcüklerle başladı. Kadın anlatısının sınırlarını zorlayarak, otobiyografik ögelerle şekillenen oyun, hem biçim hem de içerik olarak yaşadığımız coğrafyada bir kadın olarak sesini bulmanın/duyurmanın temsilini, bir camekânın ardında yeniden inşa ediyor. Süreç Hakkında: On İkinci Ev performatif bir alanda gerçekleşen bir kadın anlatısı. Oyun, anlatıcı/oyuncu Melek Ceylan’ın, ülkemizdeki ilk Rehberli",
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/on-ikinci-ev-202321816542.jpg",
       "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/on-ikinci-ev"
+    },
+    {
+      "days": [
+        "2026-09-25"
+      ],
+      "title": "Sevgili Arsız Ölüm Dirmit",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Istanbul",
+      "price": "942 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
+      "availability": "available",
+      "owned": false,
+      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
     },
     {
       "days": [
@@ -196,23 +76,6 @@
       "imdbType": "feature",
       "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_.jpg",
       "sourceTitle": "Muhteşem Güzellik"
-    },
-    {
-      "days": [
-        "2026-09-25"
-      ],
-      "title": "Sevgili Arsız Ölüm Dirmit",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "942 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
-      "availability": "available",
-      "owned": false,
-      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
     },
     {
       "days": [
@@ -459,6 +322,20 @@
       "days": [
         "2026-09-27"
       ],
+      "title": "80 Günde Dünya Turu",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "784 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
       "title": "Bir Baba Hamlet",
       "kind": "theatre",
       "time": "16:00",
@@ -537,6 +414,20 @@
       "days": [
         "2026-09-27"
       ],
+      "title": "80 Günde Dünya Turu",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "784 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
       "title": "Elma Labrador Çimen",
       "kind": "theatre",
       "time": "19:00",
@@ -549,6 +440,66 @@
       "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg",
       "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Elma Labrador Çimen",
+      "kind": "theatre",
+      "time": "19:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "997 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "L'Avventura",
+      "kind": "film",
+      "time": "20:30",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/seruven",
+      "availability": "available",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seruven-20268271031519a6b287cc94e419e9beeaa3dca9d16e4.jpg",
+      "ageLimit": "10+",
+      "formats": [
+        "Türkçe Altyazılı"
+      ],
+      "duration": "PT2H23M",
+      "genre": "Dram, Romantik, Gizem",
+      "description": "Anna, sevgilisi Sandro ve en yakın arkadaşı Claudia'nın da dahil olduğu bir grupla beraber bir yat gezisine çıkar. Yat Akdenize doğru açılırken, Anna sevgilisine karşı hissettiği duygularını sorgulamaya başlar. Yat bir adaya yaklaştıktan kısa bir süre sonra Anna gizemli bir şekilde kaybolur. Anna'yı arayamaya başlayan Sandro ve Claudia'nın arasında ise bir aşk başlar. Çok az dialog içeren film, gücünü yönetmenin hikayeyi anlatış tarzından ve filmdeki gizemi sürekli korumasından alıyor. Film bu sayede verdiği aşk hikayesinin yanı sıra gerilimi de koruyup tansiyonu arttırıyor. Michelangelo Antonioni'nin en yetkin filmlerinden olan L'Avventura, Akdeniz'in muhteşem güzelliğini de siyah beyaz estetikle bizlere verir. Serüven filmi için hemen sinema biletinizi alın!",
+      "imdbId": "tt0053619",
+      "imdbUrl": "https://www.imdb.com/title/tt0053619/",
+      "imdbTitle": "L'Avventura",
+      "imdbYear": 1960,
+      "imdbType": "feature",
+      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMWExNWNkZTUtZjYzNi00NTAyLTk3YzAtNzcxNTRmZDExZTljXkEyXkFqcGc@._V1_.jpg",
+      "sourceTitle": "Serüven"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Serdar Vatansever - İyi Gelecek",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1000 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali",
+      "availability": "available",
+      "owned": false,
+      "description": "Serdar Vatansever - İyi Gelecek Gösterisi Uzman Klinik Psikolog Serdar Vatansever, psikoloji bilimini akademik derinlik ve yaratıcı uygulama ile birleştiren, alanında tanınmış bir uzmandır. Hem klinik çalışmaları hem de eğitimcilik kimliğiyle birey aile ve sporcu psikolojisi üzerine odaklanmaktadır. Serdar Vatansever bu etkinlikte psikolojinin yalnızca teorik boyutuna değil, gündelik hayatta ve performans alanlarında nasıl karşılık bulduğuna da odaklanılıyor. Ruh sağlığına dair farkındalı",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serdar-vatansever-insanlik-hali-20268201624493d57bf6f144403f90cba72a554b6456.jpg",
+      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali"
     },
     {
       "days": [
@@ -580,52 +531,6 @@
       "imdbType": "feature",
       "imdbImage": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg",
       "sourceTitle": "Ruhların Kaçışı"
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "Serdar Vatansever - İyi Gelecek",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "1000 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali",
-      "availability": "available",
-      "owned": false,
-      "description": "Serdar Vatansever - İyi Gelecek Gösterisi Uzman Klinik Psikolog Serdar Vatansever, psikoloji bilimini akademik derinlik ve yaratıcı uygulama ile birleştiren, alanında tanınmış bir uzmandır. Hem klinik çalışmaları hem de eğitimcilik kimliğiyle birey aile ve sporcu psikolojisi üzerine odaklanmaktadır. Serdar Vatansever bu etkinlikte psikolojinin yalnızca teorik boyutuna değil, gündelik hayatta ve performans alanlarında nasıl karşılık bulduğuna da odaklanılıyor. Ruh sağlığına dair farkındalı",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serdar-vatansever-insanlik-hali-20268201624493d57bf6f144403f90cba72a554b6456.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali"
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "L'Avventura",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/seruven",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seruven-20268271031519a6b287cc94e419e9beeaa3dca9d16e4.jpg",
-      "ageLimit": "10+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H23M",
-      "genre": "Dram, Romantik, Gizem",
-      "description": "Anna, sevgilisi Sandro ve en yakın arkadaşı Claudia'nın da dahil olduğu bir grupla beraber bir yat gezisine çıkar. Yat Akdenize doğru açılırken, Anna sevgilisine karşı hissettiği duygularını sorgulamaya başlar. Yat bir adaya yaklaştıktan kısa bir süre sonra Anna gizemli bir şekilde kaybolur. Anna'yı arayamaya başlayan Sandro ve Claudia'nın arasında ise bir aşk başlar. Çok az dialog içeren film, gücünü yönetmenin hikayeyi anlatış tarzından ve filmdeki gizemi sürekli korumasından alıyor. Film bu sayede verdiği aşk hikayesinin yanı sıra gerilimi de koruyup tansiyonu arttırıyor. Michelangelo Antonioni'nin en yetkin filmlerinden olan L'Avventura, Akdeniz'in muhteşem güzelliğini de siyah beyaz estetikle bizlere verir. Serüven filmi için hemen sinema biletinizi alın!",
-      "imdbId": "tt0053619",
-      "imdbUrl": "https://www.imdb.com/title/tt0053619/",
-      "imdbTitle": "L'Avventura",
-      "imdbYear": 1960,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMWExNWNkZTUtZjYzNi00NTAyLTk3YzAtNzcxNTRmZDExZTljXkEyXkFqcGc@._V1_.jpg",
-      "sourceTitle": "Serüven"
     },
     {
       "days": [
@@ -876,11 +781,865 @@
       "imdbType": "TV series",
       "imdbImage": "https://m.media-amazon.com/images/M/MV5BY2NlN2Q2ZTUtMmVmNy00YTNkLTk4NjEtZjNjYjJlZjU3YWZlXkEyXkFqcGc@._V1_.jpg",
       "sourceTitle": "Masumiyet"
+    },
+    {
+      "days": [
+        "2026-09-30"
+      ],
+      "title": "Kat:9 Daire:34",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kat-dokuz-daire-otuz-dort",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-09-30"
+      ],
+      "title": "Ölü'n Bizi Ayırana Dek",
+      "kind": "theatre",
+      "time": "20:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1250 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/olun-bizi-ayirana-dek-grg",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-01"
+      ],
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-01"
+      ],
+      "title": "Hikayeden Adamlar Mahalle",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1290 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/hikayeden-adamlar-ile-turkiye-turnesi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-02"
+      ],
+      "title": "Mutlu Bir Romanın Aşk Hikayesi",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "499 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/mutlu-bir-romanin-ask-hikayesi-tiyatro",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-02"
+      ],
+      "title": "Ortadaki Oyun",
+      "kind": "theatre",
+      "time": "20:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "987 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ortadaki-oyun-ss",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-02"
+      ],
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "713 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Küçük Prens ve Arkadaşları",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "643 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-prens-arkadaslari",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Nazik Korsan Piyu",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/nazik-korsan-piyu",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Küçük Prens ve Arkadaşları",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "643 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-prens-arkadaslari",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Ağustos Böceği ile Karınca Müzikali",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "877 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "713 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Ağustos Böceği ile Karınca Müzikali",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "877 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Çözülme",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cozulme",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Inishmore’lu Yüzbaşı",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1290 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/inishmorelu-yuzbasi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Seda Yüz Stand Up",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "1108 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seda-yuz-stand-up-",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "7 Kocalı Hürmüz Müzikali",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "2192 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/7-kocali-hurmuz-muzikali",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Kuğu Gölü Çocuk Balesi",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "822 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kugu-golu-cocuk-balesi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Çizmeli Kedi",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "840 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cizmeli-kedi-sariyer-snt",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Kuğu Gölü Çocuk Balesi",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "822 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kugu-golu-cocuk-balesi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Çizmeli Kedi",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "840 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cizmeli-kedi-sariyer-snt",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Bütün Çılgınlar Sever Beni",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Bütün Çılgınlar Sever Beni",
+      "kind": "theatre",
+      "time": "19:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "İçimizdeki Şeytan",
+      "kind": "theatre",
+      "time": "19:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "750 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/icimizdeki-seytan",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Seninle Evlenir Miyim?",
+      "kind": "theatre",
+      "time": "20:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "800 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/seninle-evlenir-miyim-tiyatro-oyunu",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-05"
+      ],
+      "title": "Tut Elimden Rovni",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1096 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tut-elimden-rovni-tiyatro",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-06"
+      ],
+      "title": "Aşk Listesi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1148 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ask-listesi-",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-07"
+      ],
+      "title": "Abdullah, Konuş!",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-07"
+      ],
+      "title": "Jan Dark'ın Öteki Ölümü",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "942 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/jean-darcin-oteki-olumu",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-07"
+      ],
+      "title": "Tut Elimden Rovni",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "542 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tut-elimden-rovni-tytr-keyfi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-08"
+      ],
+      "title": "Uzun Mesafe Koşucusunun Yalnızlığı",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "554 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/uzun-mesafe-kosucusunun-yalnizligi-bilet",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-08"
+      ],
+      "title": "Bu Hikaye Senden Uzun Osman",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "1108 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-08"
+      ],
+      "title": "Evlilikte Ufak Tefek Cinayetler",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1400 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/evlilikte-ufak-tefek-cinayetler-aysa",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-08"
+      ],
+      "title": "Suç ve Ceza",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "1200 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/suc-ve-ceza-ereke",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-09"
+      ],
+      "title": "Babamı Kim Öldürdü",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-09"
+      ],
+      "title": "Bir Delinin Hatıra Defteri",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "500 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-delinin-hatira-defteri-daire",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "3D Hologram Sirki",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "525 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "Kayıp Aslan Kardeşler",
+      "kind": "theatre",
+      "time": "14:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "672 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "3D Hologram Sirki",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "525 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "Babamı Kim Öldürdü",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "Karagöz Aranıyor 'Işkırlak'",
+      "kind": "theatre",
+      "time": "18:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/karagoz-araniyor-iskirlak-moda",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "3D Hologram Sirki",
+      "kind": "theatre",
+      "time": "12:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "575 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Büyülü Orman ve Altın Havuç",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "658 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-kardesler",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Huhu ile Bilim Şov",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "700 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/huhu-ile-bilim-sov",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "3D Hologram Sirki",
+      "kind": "theatre",
+      "time": "14:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "575 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Büyülü Orman ve Altın Havuç",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "658 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-kardesler",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Huhu ile Bilim Şov",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "700 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/huhu-ile-bilim-sov",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "BlueScat",
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bluescat",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Cinderella Çocuk Balesi",
+      "kind": "theatre",
+      "time": "17:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "700 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Cinderella Çocuk Balesi",
+      "kind": "theatre",
+      "time": "19:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "700 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "9/8'lik Kıyamet",
+      "kind": "theatre",
+      "time": "20:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "831 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/9-8lik-kiyamet",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Bir Aşk Hikayesi",
+      "kind": "theatre",
+      "time": "20:00",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "448 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-ask-hikayesi-",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-11"
+      ],
+      "title": "Özgür Turhan - Yepyenisi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1120 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-12"
+      ],
+      "title": "Yaver Coruk Stand Up Gösterisi",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1096 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/yaver-coruk",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-13"
+      ],
+      "title": "Havva",
+      "kind": "theatre",
+      "time": "18:00",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/havva",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-13"
+      ],
+      "title": "Herkes Kocama Benziyor",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "776 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/herkes-kocama-benziyor",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-13"
+      ],
+      "title": "Kadın Kafası",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "987 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/kadin-kafasi-epizot",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-14"
+      ],
+      "title": "Hadi Öldürsene Canikom",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Istanbul",
+      "price": "1402 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/hadi-oldursene-canikom-tiyatro-etkinligi",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-14"
+      ],
+      "title": "Othello",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Istanbul",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/othello-",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-14"
+      ],
+      "title": "Profesyonel",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Istanbul",
+      "price": "1580 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/profesyonel",
+      "availability": "available",
+      "owned": false
+    },
+    {
+      "days": [
+        "2026-10-14"
+      ],
+      "title": "Yapraklar",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Caddebostan Kültür Merkezi",
+      "area": "Istanbul",
+      "price": "542 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/yapraklar",
+      "availability": "available",
+      "owned": false
     }
   ],
   "cinemas": [],
   "omitted_records": 7,
-  "research_note": "Rolling refresh 2026-09-24. Preferred Biletinial venue tabs were checked directly for inventory; production-page sessions were restricted to the originating preferred venue. Existing records were retained only when dated in the rolling window; exact availability/price evidence is retained from direct event pages. Fastmail returned no events. Google colonist was checked; Google personal required interactive authorization and could not be completed in scheduled mode. IMDb enrichment was not expanded where reliable structured metadata was unavailable.",
+  "research_note": "Rolling refresh. Preferred Biletinial venue tabs swept directly; production JSON-LD sessions filtered to originating venue. Fastmail returned no events. Google colonist was checked; personal profile required interactive authorization and could not be completed. IMDb enrichment retained from prior validated records; no new reliable IMDb structured metadata was required for theatre additions. Venue sweep completed for: Moda Sahnesi, Bostancı Gösteri Merkezi, Akla Kara Tiyatro, Caddebostan Kültür Merkezi, Kadıköy Eğitim Sahnesi.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -888,9 +1647,10 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-24",
-      "listedItems": 32,
-      "listedEventLinks": 42
+      "checkedAt": "2026-09-25",
+      "listedEventLinks": 44,
+      "verifiedSessions": 33,
+      "includedSessions": 27
     },
     {
       "provider": "Biletinial",
@@ -898,9 +1658,10 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-24",
-      "listedItems": 10,
-      "listedEventLinks": 19
+      "checkedAt": "2026-09-25",
+      "listedEventLinks": 18,
+      "verifiedSessions": 7,
+      "includedSessions": 7
     },
     {
       "provider": "Biletinial",
@@ -908,9 +1669,10 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-24",
-      "listedItems": 2,
-      "listedEventLinks": 11
+      "checkedAt": "2026-09-25",
+      "listedEventLinks": 12,
+      "verifiedSessions": 0,
+      "includedSessions": 0
     },
     {
       "provider": "Biletinial",
@@ -918,9 +1680,10 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-24",
-      "listedItems": 27,
-      "listedEventLinks": 33
+      "checkedAt": "2026-09-25",
+      "listedEventLinks": 48,
+      "verifiedSessions": 13,
+      "includedSessions": 13
     },
     {
       "provider": "Biletinial",
@@ -928,30 +1691,31 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-24",
-      "listedItems": 50,
-      "listedEventLinks": 52
+      "checkedAt": "2026-09-25",
+      "listedEventLinks": 57,
+      "verifiedSessions": 27,
+      "includedSessions": 27
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-09-25"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-09-25"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-09-25"
     }
   ]
 }
