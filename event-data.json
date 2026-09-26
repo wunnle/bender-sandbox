@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-25",
+  "lastUpdated": "2026-09-26",
   "range": {
-    "start": "2026-09-25",
-    "end": "2026-10-14"
+    "start": "2026-09-26",
+    "end": "2026-10-15"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,115 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-09-25"
-      ],
-      "title": "On İkinci Ev",
-      "kind": "theatre",
-      "time": "18:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "609 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/on-ikinci-ev",
-      "availability": "available",
-      "owned": false,
-      "description": "On İkinci Ev Tiyatro Oyunu “Artık kavga etmek istiyorum.” On İkinci Ev, yolculuğuna bu sözcüklerle başladı. Kadın anlatısının sınırlarını zorlayarak, otobiyografik ögelerle şekillenen oyun, hem biçim hem de içerik olarak yaşadığımız coğrafyada bir kadın olarak sesini bulmanın/duyurmanın temsilini, bir camekânın ardında yeniden inşa ediyor. Süreç Hakkında: On İkinci Ev performatif bir alanda gerçekleşen bir kadın anlatısı. Oyun, anlatıcı/oyuncu Melek Ceylan’ın, ülkemizdeki ilk Rehberli",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/on-ikinci-ev-202321816542.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/on-ikinci-ev"
-    },
-    {
-      "days": [
-        "2026-09-25"
-      ],
-      "title": "Sevgili Arsız Ölüm Dirmit",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "942 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
-      "availability": "available",
-      "owned": false,
-      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
-    },
-    {
-      "days": [
-        "2026-09-25"
-      ],
-      "title": "The Great Beauty",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/muhtesem-guzellik",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/muhtesem-guzellik-2026521181341d22257907c044cb8bc8490163079bf07.JPG",
-      "ageLimit": "13+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H21M",
-      "genre": "Dram",
-      "description": "Cannes Film Festivali'nde Altın Palmiye için yarışan ve Fellini'nin başyapıtı Tatlı Hayat'a benzetilen film, Avrupa Film Ödülleri'nde En İyi Film, En İyi Yönetmen, En İyi Erkek Oyuncu ve En İyi Kurgu ödüllerini kazanan \" Muhteşem Güzellik - The Great Beauty \", senenin en çok övgü alan filmlerinden biri. Büyüleyici ve görkemli atmosferiyle bir Roma yazı… İlerleyen yaşına rağmen karşı konulamaz bir cazibesi olan yakışıklı Jep Gamberdella, şehrin tadını sonuna kadar çıkarmaktadır. Şık akşam yemeklerinden çılgın partilere koşar. Kıvrak zekası ve mizahi kişiliğiyle her zaman baştan çıkarıcı ve bağımlılık yapan biri olmuştur. Aynı zamanda bir yazar olan Jep, gençliğinde ödül aldığı kitabı ile büyük bir başarı yakalar ve Roma yüksek sosyetesinde önemli bir itibar edinerek ihtişamlı bir hayat sürmeye başlar. Roma'nın en güzel manzaralı evlerinden birinde oturan Jep, terasında eğlenceli partilere ev sahipliği yapar. Takındığı alaycı tavır ile dejenere olmuş insanları ve hayal kırıklıklarını maskeleyerek dünyayı biraz daha iyi bir yer olarak görmeye çalışır. Onun için masumiyetini koruyan tek şey hala hayallerinde yaşattığı eski aşkıdır. Artık yeniden kalemi kağıdı eline almanın zamanı gelmiştir, ancak güzelliğiyle insanı etkisiz hale getiren bu göz kamaştırıcı şehirde içinde biriken derin yorgunluğun üstesinden gelebilecek midir?",
-      "imdbId": "tt2358891",
-      "imdbUrl": "https://www.imdb.com/title/tt2358891/",
-      "imdbTitle": "The Great Beauty",
-      "imdbYear": 2013,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_.jpg",
-      "sourceTitle": "Muhteşem Güzellik"
-    },
-    {
-      "days": [
-        "2026-09-25"
-      ],
-      "title": "The Great Beauty",
-      "kind": "film",
-      "time": "21:00",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Caddebostan/Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/muhtesem-guzellik",
-      "availability": "available",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/muhtesem-guzellik-2026521181341d22257907c044cb8bc8490163079bf07.JPG",
-      "ageLimit": "13+",
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "duration": "PT2H21M",
-      "genre": "Dram",
-      "description": "Cannes Film Festivali'nde Altın Palmiye için yarışan ve Fellini'nin başyapıtı Tatlı Hayat'a benzetilen film, Avrupa Film Ödülleri'nde En İyi Film, En İyi Yönetmen, En İyi Erkek Oyuncu ve En İyi Kurgu ödüllerini kazanan \" Muhteşem Güzellik - The Great Beauty \", senenin en çok övgü alan filmlerinden biri. Büyüleyici ve görkemli atmosferiyle bir Roma yazı… İlerleyen yaşına rağmen karşı konulamaz bir cazibesi olan yakışıklı Jep Gamberdella, şehrin tadını sonuna kadar çıkarmaktadır. Şık akşam yemeklerinden çılgın partilere koşar. Kıvrak zekası ve mizahi kişiliğiyle her zaman baştan çıkarıcı ve bağımlılık yapan biri olmuştur. Aynı zamanda bir yazar olan Jep, gençliğinde ödül aldığı kitabı ile büyük bir başarı yakalar ve Roma yüksek sosyetesinde önemli bir itibar edinerek ihtişamlı bir hayat sürmeye başlar. Roma'nın en güzel manzaralı evlerinden birinde oturan Jep, terasında eğlenceli partilere ev sahipliği yapar. Takındığı alaycı tavır ile dejenere olmuş insanları ve hayal kırıklıklarını maskeleyerek dünyayı biraz daha iyi bir yer olarak görmeye çalışır. Onun için masumiyetini koruyan tek şey hala hayallerinde yaşattığı eski aşkıdır. Artık yeniden kalemi kağıdı eline almanın zamanı gelmiştir, ancak güzelliğiyle insanı etkisiz hale getiren bu göz kamaştırıcı şehirde içinde biriken derin yorgunluğun üstesinden gelebilecek midir?",
-      "imdbId": "tt2358891",
-      "imdbUrl": "https://www.imdb.com/title/tt2358891/",
-      "imdbTitle": "The Great Beauty",
-      "imdbYear": 2013,
-      "imdbType": "feature",
-      "imdbImage": "https://m.media-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_.jpg",
-      "sourceTitle": "Muhteşem Güzellik"
-    },
-    {
-      "days": [
-        "2026-09-26"
-      ],
-      "title": "PERA ‘Kayıp Işığın Serüveni’",
-      "kind": "theatre",
-      "time": "13:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "712 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni",
-      "availability": "available",
-      "owned": false,
-      "description": "PERA ‘Kayıp Işığın Serüveni’ Tiyatro Oyunu MÜZİKLİ•DANSLI•İNTERAKTİF ‘Çocuk Oyunu’ Işığını ve masalını kaybetmiş bir ülke… Dağın ardında beliren kocaman bir gölge… Ve bu gizemi çözmek için yola çıkan meraklı bir gezgin: Pera! Pera, kaybolan ışığın izini sürerken birbirinden renkli ve eğlenceli karakterlerle karşılaşır. Ancak bu yolculukta kısa sürede anlar ki duyduğu her söz doğru değildir ve gerçek bir kahraman, karar vermeden önce dinlemeyi öğrenmelidir. Müzik, dans, mizah",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pera-kayip-isigin-seruveni-20268291641253c26cc8a9c4918a682b360eb4dcf54.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni"
-    },
     {
       "days": [
         "2026-09-26"
@@ -148,31 +39,13 @@
       "kind": "theatre",
       "time": "15:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "712 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni",
       "availability": "available",
       "owned": false,
       "description": "PERA ‘Kayıp Işığın Serüveni’ Tiyatro Oyunu MÜZİKLİ•DANSLI•İNTERAKTİF ‘Çocuk Oyunu’ Işığını ve masalını kaybetmiş bir ülke… Dağın ardında beliren kocaman bir gölge… Ve bu gizemi çözmek için yola çıkan meraklı bir gezgin: Pera! Pera, kaybolan ışığın izini sürerken birbirinden renkli ve eğlenceli karakterlerle karşılaşır. Ancak bu yolculukta kısa sürede anlar ki duyduğu her söz doğru değildir ve gerçek bir kahraman, karar vermeden önce dinlemeyi öğrenmelidir. Müzik, dans, mizah",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pera-kayip-isigin-seruveni-20268291641253c26cc8a9c4918a682b360eb4dcf54.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/pera-kayip-isigin-seruveni"
-    },
-    {
-      "days": [
-        "2026-09-26"
-      ],
-      "title": "Sevgili Arsız Ölüm Dirmit",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "942 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
-      "availability": "available",
-      "owned": false,
-      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pera-kayip-isigin-seruveni-20268291641253c26cc8a9c4918a682b360eb4dcf54.jpg"
     },
     {
       "days": [
@@ -225,35 +98,17 @@
       "days": [
         "2026-09-26"
       ],
-      "title": "Sevgili Arsız Ölüm Dirmit",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "942 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda",
-      "availability": "available",
-      "owned": false,
-      "description": "Sevgili Arsız Ölüm Dirmit Tiyatro Oyunu Tek Perde Oyun Hakkında Köyden şehre göç eden kalabalık bir ailenin şehirle mücadelesini ailenin en küçük kızı Dirmit'in gözünden dinliyoruz. Sıkıştıkları tek odalı evde, şehre tutunma mücadelesinde hepsi kendilerince bir yol tutturuyor. Dirmit kız ise durmak bilmeyen merakı ve direnme gücü sayesinde karşısına çıkan zorluklarla baş etmenin türlü yollarını buluyor. Onu şehirden korumaya çalışan annesi Atiye, babası Huvat ve abileri Dirmit'in tür",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sevgili-arsiz-olum-dirmit-2023227111759.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sevgili-arsiz-olum-dirmit-moda"
-    },
-    {
-      "days": [
-        "2026-09-26"
-      ],
       "title": "Şafak Kaç",
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "840 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/safak-kac",
       "availability": "available",
       "owned": false,
       "description": "Şafak Kaç Tiyatro Oyunu Saftirik bir kocası olan Gülpembe depresyondadır ve doktorunun tavsiyesi ile uyku ilacı kullanmaya başlamıştır. Şile’de mahsur kalan Şafak Kaç, Gülpembe’nin evine yardım istemeye girer ilaçlı sudan içerek uyuya kalır. Gülpembe de bir köşede uyuyup kalmıştır. Eşine sürpriz yapmak üzere yazlığa erken dönen Nizamettin Yumuşak’ın eşinin başkasıyla uyuduğunu görmesiyle başlayan komik olaylar, Sevda’nın şöhret olma tutkusu ile sahneye girişleri ve Nizamettin'in kendini p",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/safak-kac-2026581018312348a804ccde48b6aa5fe493d8475c55.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/safak-kac"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/safak-kac-2026581018312348a804ccde48b6aa5fe493d8475c55.jpg"
     },
     {
       "days": [
@@ -292,14 +147,13 @@
       "kind": "theatre",
       "time": "13:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "784 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
       "availability": "available",
       "owned": false,
       "description": "80 Günde Dünya Turu Tiyatro Oyunu Phileas Fogg dünya turunu tamamlayan kişinin çok önemli bir bilgi öğreneceğini bilir.Bir gün bu bilgiyi öğrenmek için uşağı Passeportaut ile dünya turuna çıkar. Ancak Dedektif Fix soyulan bankanın soyguncusunun Bay Fogg olduğunu düşünür ve peşine düşer. Yolculuk sırasında türlü aksiliklere göğüs geren Fogg ve Passeportaut , hindistanda bir kadını kurtarıp yolculuklarına devam ederler.Trenler, gemiler, fil yolculuğundan bir çok ü",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg"
     },
     {
       "days": [
@@ -309,77 +163,13 @@
       "kind": "theatre",
       "time": "15:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "784 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
       "availability": "available",
       "owned": false,
       "description": "80 Günde Dünya Turu Tiyatro Oyunu Phileas Fogg dünya turunu tamamlayan kişinin çok önemli bir bilgi öğreneceğini bilir.Bir gün bu bilgiyi öğrenmek için uşağı Passeportaut ile dünya turuna çıkar. Ancak Dedektif Fix soyulan bankanın soyguncusunun Bay Fogg olduğunu düşünür ve peşine düşer. Yolculuk sırasında türlü aksiliklere göğüs geren Fogg ve Passeportaut , hindistanda bir kadını kurtarıp yolculuklarına devam ederler.Trenler, gemiler, fil yolculuğundan bir çok ü",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu"
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "80 Günde Dünya Turu",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "784 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "Bir Baba Hamlet",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Baba Sahne",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/bir-baba-hamlet",
-      "image": "https://tiyatrolar.com.tr/files/activity/b/bir-baba-hamlet/image/bir-baba-hamlet.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "Elma Labrador Çimen",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/elma-labrador-cimen",
-      "image": "https://tiyatrolar.com.tr/files/activity/e/elma-labrador-cimen/image/elma-labrador-cimen.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "Elma Labrador Çimen",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
-      "price": "997 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
-      "availability": "available",
-      "owned": false,
-      "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/80-gunde-dunya-turu-2022101792950.jpg"
     },
     {
       "days": [
@@ -414,46 +204,17 @@
       "days": [
         "2026-09-27"
       ],
-      "title": "80 Günde Dünya Turu",
-      "kind": "theatre",
-      "time": "18:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "784 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/seksen-gunde-dunya-turuu",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
       "title": "Elma Labrador Çimen",
       "kind": "theatre",
       "time": "19:00",
       "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "997 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
       "availability": "available",
       "owned": false,
       "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen"
-    },
-    {
-      "days": [
-        "2026-09-27"
-      ],
-      "title": "Elma Labrador Çimen",
-      "kind": "theatre",
-      "time": "19:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "997 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
-      "availability": "available",
-      "owned": false
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg"
     },
     {
       "days": [
@@ -492,14 +253,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1000 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali",
       "availability": "available",
       "owned": false,
       "description": "Serdar Vatansever - İyi Gelecek Gösterisi Uzman Klinik Psikolog Serdar Vatansever, psikoloji bilimini akademik derinlik ve yaratıcı uygulama ile birleştiren, alanında tanınmış bir uzmandır. Hem klinik çalışmaları hem de eğitimcilik kimliğiyle birey aile ve sporcu psikolojisi üzerine odaklanmaktadır. Serdar Vatansever bu etkinlikte psikolojinin yalnızca teorik boyutuna değil, gündelik hayatta ve performans alanlarında nasıl karşılık bulduğuna da odaklanılıyor. Ruh sağlığına dair farkındalı",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serdar-vatansever-insanlik-hali-20268201624493d57bf6f144403f90cba72a554b6456.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/serdar-vatansever-insanlik-hali"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serdar-vatansever-insanlik-hali-20268201624493d57bf6f144403f90cba72a554b6456.jpg"
     },
     {
       "days": [
@@ -540,14 +300,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
-      "price": "1250 TL",
+      "area": "Kadıköy",
+      "price": "2000 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/sahane-pazar-sahnede",
       "availability": "available",
       "owned": false,
       "description": "Şahane Pazar Sahnede Tiyatro Oyunu Tiyatro sahnelerinin ve televizyon programlarının unutulmaz isimleri Süheyl ve Behzat Uygur, efsane programları Şahane Pazar’ı tiyatro sahnesine taşıyor. Gösteride, bir döneme damga vuran Belediye Çukuru, Bardak Oyunu ve Balon Oyunu gibi unutulmaz yarışmalar da sahneye özel yeni kurgularıyla yeniden hayat bulacak. Müzik, komedi, yarışmalar ve dans performanslarını bir araya getiren gösteri, Şahane Pazar’ın 25 yıl sonra bile özlenen ruhunu, günümüz sahne t",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sahane-pazar-sahnede-2026831103636b0b51ca5446e4f9aba147d1142698401.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/sahane-pazar-sahnede"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sahane-pazar-sahnede-2026831103636b0b51ca5446e4f9aba147d1142698401.png"
     },
     {
       "days": [
@@ -577,6 +336,22 @@
       "imdbType": "feature",
       "imdbImage": "https://m.media-amazon.com/images/M/MV5BMWExNWNkZTUtZjYzNi00NTAyLTk3YzAtNzcxNTRmZDExZTljXkEyXkFqcGc@._V1_.jpg",
       "sourceTitle": "Serüven"
+    },
+    {
+      "days": [
+        "2026-09-27"
+      ],
+      "title": "Elma Labrador Çimen",
+      "kind": "theatre",
+      "time": "22:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "997 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/elma-labrador-cimen",
+      "availability": "available",
+      "owned": false,
+      "description": "Elma Labrador Çimen Tiyatro Oyunu Tek perde Tiyatro iN 12. Yılında, 9. Oyunuyla sizlerle: İnsan anılardan oluşuyor ama tutunmayı seçtiği anılar da bayağı tuhaf. Matthew Seager ‘ın hem yazıp hem de oynadığı (In Other Words), 2017 yılında \"The Hope Theatre\" tarafından sahnelenmeye başlamıştır. Duyulduğu andan itibaren de birçok başka ülkede farklı tiyatrolar tarafından oynanmıştır. 2023 yılında Fransa’da ‘Private Theatre’ bu oyunla ‘En İyi Oyun’ dahil 4 Moliere ödülü almıştır. Bir çift",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/elma-labrador-cimen-2025112816251f1dbc0896e72482383a3fa2c8d008e03.jpg"
     },
     {
       "days": [
@@ -634,31 +409,14 @@
       "title": "Çok Küçük Bir İhtimalin Hikayesi",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://tiyatrolar.com.tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi",
-      "image": "https://tiyatrolar.com.tr/files/activity/c/cok-kucuk-bir-ihtimalin-hikayesi/image/cok-kucuk-bir-ihtimalin-hikayesi.jpg",
-      "availability": "listed",
-      "owned": false,
-      "note": "Date, venue, and source image verified from the theatre detail/ticket page."
-    },
-    {
-      "days": [
-        "2026-09-28"
-      ],
-      "title": "Çok Küçük Bir İhtimalin Hikayesi",
-      "kind": "theatre",
-      "time": "20:30",
       "venue": "Moda Sahnesi Büyük Sahne",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi",
       "availability": "available",
       "owned": false,
       "description": "Çok Küçük Bir İhtimalin Hikayesi Tiyatro Oyunu Tek Perde Küçük bir kasabada yaşayan Kenneth yalnız bir adamdır. Yıllardır çalıştığı kitapçının kapanmasıyla işsiz kalır. Yeni bir iş arayışı, karşısına çıkan insanlar, kapalı ve rutin hayatını sarsar ve .onu geçmişiyle yüzleşmeye iter. Kenneth artık hayatını ve kendisiyle kurduğu ilişkiyi kökten değiştirecek bir dönüşümün eşiğindedir. Fakat en iyi dostu Bert ile ilgili şaşırtıcı gerçek karşısında ne yapacağını bilemez. Eboni Booth’ un yazd",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cok-kucuk-bir-ihtimalin-hikayesi-2026469125d166a5d22ba34eb99050e628cdd4bf71.jpg",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/cok-kucuk-bir-ihtimalin-hikayesi"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cok-kucuk-bir-ihtimalin-hikayesi-2026469125d166a5d22ba34eb99050e628cdd4bf71.jpg"
     },
     {
       "days": [
@@ -717,14 +475,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "400 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/diyojen-podcast-etkinligi",
       "availability": "available",
       "owned": false,
       "description": "Diyojen Podcast Etkinliği Diyojen Podcast şehrinize geliyor! Sevdiğiniz Diyojen, şimdi canlı olarak sahnede. Sürpriz konuklar, interaktif sohbetler ve bol kahkahayla her gösteri birbirinden farklı bir deneyim sunacak. Biletler tükenmeden yerlerinizi almayı unutmayın!",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diyojen-podcast-2026725130477e8b1f077d544aedbaebb8e112a0259e.png",
-      "sourceUrl": "https://biletinial.com/tr-tr/tiyatro/diyojen-podcast-etkinligi"
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diyojen-podcast-2026725130477e8b1f077d544aedbaebb8e112a0259e.png"
     },
     {
       "days": [
@@ -790,11 +547,13 @@
       "kind": "theatre",
       "time": "18:00",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "554 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kat-dokuz-daire-otuz-dort",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Kat:9 Daire:34 Tiyatro Oyunu “Biz kat kat apartmanlardan birinin bir penceresinden yansıyan ışıktık sadece. Bizim gibi aileler isimsiz… Bizim gibi aileleri tanımlamaya kimse gerek bile duymaz. Aynı metrekarenin içinde yukarı doğru dizilmiş, biraz demir biraz çimentoyla ayrılmış, birbirinden habersiz insanlar… Gece vakti gelir, ışıklar söner, televizyon kapanır. Şimdi uyku vakti… Ama… Bir gün bir evin ışığı yanık kalır. O ailenin başına bir şey gelir. Kimse önemsemez. Herkes ‘ben değilim",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kat9-daire34-20241229114351305ba930aec471db096c01f3b3e89fb.jpg"
     },
     {
       "days": [
@@ -804,25 +563,13 @@
       "kind": "theatre",
       "time": "20:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1250 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/olun-bizi-ayirana-dek-grg",
       "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-01"
-      ],
-      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "720 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
-      "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Ölü'n Bizi Ayırana Dek Tiyatro Oyunu 2 perde Cansu ve Serdar; evlilik hayatı canlarına tak etmiş ve boşanmaya karar vermiş bir çifttir. Boşanmadan bir gece önce, kendilerine düzenlenen bir “kutlama” partisi ardından, sabah uyandıklarında ise birbirlerini sızmış olarak aynı yatakta bulurlar. Bir gece öncesine dair çok az şey hatırlayan Cansu ve Serdar’ı bekleyen asıl sürpriz salondaki kanepede uzanmakta olan cesettir. Ne yapacağını bilemeyen çiftimiz bir yandan “Hangimiz katil?” sorusuna ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/olun-bizi-ayirana-dek-20253261320302f83b74d32594bd6aa947428116ec0d0.jpg"
     },
     {
       "days": [
@@ -832,11 +579,29 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1290 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/hikayeden-adamlar-ile-turkiye-turnesi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Hikayeden Adamlar Mahalle Tiyatro Oyunu Hikayeden Adamların Mahallesinde Buluşuyoruz! İnsanlık tarihinin en eski savaşı, ayrılsalar da beraber olan Kalp ve Beynin dalaşı. İyi ve kötü, Melek ve Şeytan. İkisi de sen değil misin? Hepimizin başı karar vermekle belada. Peki, doğru karar diye bir şey var mı? Mahallece bir araya gelip aklımızdaki sorulara cevap arıyoruz. Gülmekte ağlamakta arayışın bir parçası. Mahalle'de görüşmek üzere!",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hikayeden-adamlar-mahalle-20269211717352f877ad786844696a2e3816f9ddccca4.jpg"
+    },
+    {
+      "days": [
+        "2026-10-01"
+      ],
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "kind": "theatre",
+      "time": "23:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "availability": "available",
+      "owned": false,
+      "description": "Bir Kadının Kavgaları ve Dönüşümleri Tiyatro Oyunu Edouard Louis, dördüncü eseri “Bir Kadının Kavgaları ve Dönüşümleri’nde annesine odaklanıyor… Bir fotoğraftan, annesinin fotoğrafından yola çıkıyor… Annesinin, henüz selfi icat olmamışken fotoğraf makinesiyle kendini çektiği bir fotoğraftan… Mutlu, cilveli, özgür bir genç kadındır annesi bu fotoğrafta. “ben doğmadan önce özgür -ve mutlu- olduğunu unutmuş muydum” diye sorarak başlatıyor anlatısını. Evin içine kapanıp, ev işleri ile tutsak y",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-kadinin-kavgalari-ve-donusumleri-202510295836f19fc49b5b8546f28f9c5d252f0f7c05.jpg"
     },
     {
       "days": [
@@ -846,11 +611,13 @@
       "kind": "theatre",
       "time": "18:00",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "499 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/mutlu-bir-romanin-ask-hikayesi-tiyatro",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Mutlu Bir Romanın Aşk Hikayesi Tiyatro Oyunu “Mahallemiz güzel de, erkeklerimiz yaramaz… Gacolar pek sokulmaz yanımıza, kıçımın kenarları. Ama ben sevdiğime kavuşunca böyle olmayacak! Hem sonuçta sizin mahalle, bizim mahalle mi var? Hepimiz acı çekeriz ama, aç da olsak, yine güleriz. Ben de gülerim; mutluyum ben! Mutlu Sevda!” Çingene mahallesinde yaşayan Sevda’nın fişek gibi hayalleri ile beton gibi gerçekler arasında savruluşunun hikayesi… Yazar: İlayda Abay Yönetmen: Cansu Ekici",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mutlu-bir-romanin-ask-hikyesi-202491614452652e6671b97ec43de918f60f9b54ffebd.jpg"
     },
     {
       "days": [
@@ -860,11 +627,13 @@
       "kind": "theatre",
       "time": "20:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "987 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/ortadaki-oyun-ss",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Ortadaki Oyun Tiyatro Oyunu İki Perde Günümüz Türk Tiyatrosu’nun temellerini oluşturan orta oyunu geleneği anlatım biçimini genel olarak baz alan, yine o döneme ait müzikal ve sanat müziği parçalarının aralara serpiştirilmiş bir şekilde sahneye uyarlandığı müzikli hicivli bir güldürü sizi bekliyor. Orta oyunu geleneğinin usta isimleri Altan Erkekli ve Veysel Diker’in muhteşem performansıyla sahnelenen Ortadaki Oyun, izleyenleri güldürürken düşündürmeye geliyor. Söz ve müziğin bambaşka bir",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ortadaki-oyun-20252181783da7f982c5b1f40a7ab14800a0d8fa31b.png"
     },
     {
       "days": [
@@ -872,13 +641,31 @@
       ],
       "title": "Bir Kadının Kavgaları ve Dönüşümleri",
       "kind": "theatre",
-      "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "time": "23:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "713 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Bir Kadının Kavgaları ve Dönüşümleri Tiyatro Oyunu Edouard Louis, dördüncü eseri “Bir Kadının Kavgaları ve Dönüşümleri’nde annesine odaklanıyor… Bir fotoğraftan, annesinin fotoğrafından yola çıkıyor… Annesinin, henüz selfi icat olmamışken fotoğraf makinesiyle kendini çektiği bir fotoğraftan… Mutlu, cilveli, özgür bir genç kadındır annesi bu fotoğrafta. “ben doğmadan önce özgür -ve mutlu- olduğunu unutmuş muydum” diye sorarak başlatıyor anlatısını. Evin içine kapanıp, ev işleri ile tutsak y",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-kadinin-kavgalari-ve-donusumleri-202510295836f19fc49b5b8546f28f9c5d252f0f7c05.jpg"
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Ağustos Böceği ile Karınca Müzikali",
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "877 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
+      "availability": "available",
+      "owned": false,
+      "description": "Ağustos Böceği ile Karınca Müzikali Tek Perde Ormanın en neşeli melodisi sahnede! La Fontaine’in dünyaca ünlü eseri “Ağustos Böceği ile Karınca”, Uygur Çocuk Tiyatrosu’nun rengârenk ve eğlence dolu yorumuyla müzikale dönüşüyor! Ormanın neşeli müzisyeni Cino, günlerini şarkı söyleyip ukulele çalarak geçirirken karınca kolonisi yaklaşan günler için hummalı bir hazırlık içindedir. Kraliçe Karınca, Karin, Kiki ve çalışkan koloni üyeleri ona emeğin ve sorumluluğun önemini anlatmaya çalışs",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/agustos-bocegi-ile-karinca-muzikali-202681092439051dae4387d94072846077721c28fe61.jpg"
     },
     {
       "days": [
@@ -887,12 +674,14 @@
       "title": "Küçük Prens ve Arkadaşları",
       "kind": "theatre",
       "time": "13:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "643 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-prens-arkadaslari",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Küçük Prens ve Arkadaşları Tiyatro Oyunu (Tüm yaş grubu çocuklar ve yetişkinler bilete tabidir.) Tüm zamanların en çok okunan kitaplarından Küçük Prens benzersiz bir yorumla çocuklarla buluşuyor. Antoine de Saint-Exupéry unutulmaz eseri Küçük Prens felsefesine sadık kalınarak uyarlanan “Küçük Prens ve Arkadaşları” eğlenceli dili, dansları ve coşkusuyla çocuklara ve büyüklerin de \"içindeki çocuğa\" merhaba diyor. Çiçeğinden biraz uzaklaşmak için gezegeninde ayrılan Küçük Prens yolculuğunda",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-prens-ve-arkadaslari-deniz-2025820927302ac9994e568a4696a79215885b4b85fd.jpeg"
     },
     {
       "days": [
@@ -902,11 +691,29 @@
       "kind": "theatre",
       "time": "13:00",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "665 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/nazik-korsan-piyu",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Nazik Korsan Piyu Tiyatro Oyunu Merhaba çocuklar! Günlerden bir gün rengârenk bir papağan omzuma konup kulağıma fısıldayarak büyüüük büyük büyük nenesinden duyduğu bir masalı anlattı. Benimle Nazik Korsan Piyu'nun maceralarına katılmak ister misiniz? Çünkü bu masal öyle huşu içinde uyuyakalırken dinleyebileceğiniz bir masal değil. Kâh tayfa olup birlikte ritm tutacağız, kâh fırtına olup birlikte kopacağız. Hazır mısınız? Haydi bakalım yelkenler fora! “Nazik Korsan Piyu”, Ahmet A",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/nazik-korsan-piyu-2026826167174509af184c4441e8a7017668c67b23a1.jpg"
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Ağustos Böceği ile Karınca Müzikali",
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "877 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
+      "availability": "available",
+      "owned": false,
+      "description": "Ağustos Böceği ile Karınca Müzikali Tek Perde Ormanın en neşeli melodisi sahnede! La Fontaine’in dünyaca ünlü eseri “Ağustos Böceği ile Karınca”, Uygur Çocuk Tiyatrosu’nun rengârenk ve eğlence dolu yorumuyla müzikale dönüşüyor! Ormanın neşeli müzisyeni Cino, günlerini şarkı söyleyip ukulele çalarak geçirirken karınca kolonisi yaklaşan günler için hummalı bir hazırlık içindedir. Kraliçe Karınca, Karin, Kiki ve çalışkan koloni üyeleri ona emeğin ve sorumluluğun önemini anlatmaya çalışs",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/agustos-bocegi-ile-karinca-muzikali-202681092439051dae4387d94072846077721c28fe61.jpg"
     },
     {
       "days": [
@@ -915,54 +722,14 @@
       "title": "Küçük Prens ve Arkadaşları",
       "kind": "theatre",
       "time": "15:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "643 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-prens-arkadaslari",
       "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-03"
-      ],
-      "title": "Ağustos Böceği ile Karınca Müzikali",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "877 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-03"
-      ],
-      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "713 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
-      "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-03"
-      ],
-      "title": "Ağustos Böceği ile Karınca Müzikali",
-      "kind": "theatre",
-      "time": "18:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "877 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
-      "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Küçük Prens ve Arkadaşları Tiyatro Oyunu (Tüm yaş grubu çocuklar ve yetişkinler bilete tabidir.) Tüm zamanların en çok okunan kitaplarından Küçük Prens benzersiz bir yorumla çocuklarla buluşuyor. Antoine de Saint-Exupéry unutulmaz eseri Küçük Prens felsefesine sadık kalınarak uyarlanan “Küçük Prens ve Arkadaşları” eğlenceli dili, dansları ve coşkusuyla çocuklara ve büyüklerin de \"içindeki çocuğa\" merhaba diyor. Çiçeğinden biraz uzaklaşmak için gezegeninde ayrılan Küçük Prens yolculuğunda",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-prens-ve-arkadaslari-deniz-2025820927302ac9994e568a4696a79215885b4b85fd.jpeg"
     },
     {
       "days": [
@@ -972,11 +739,29 @@
       "kind": "theatre",
       "time": "18:30",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "665 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cozulme",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Çözülme Tiyatro Oyunu ÇÖZÜLME, iki erkek karakterin gündelik hayatın içinde sıkışıp kalan ilişkisi üzerinden, bastırılmış öfkeyi, suskunluğu ve görünmeyen şiddeti sahneye taşır. Büyük olaylardan çok küçük anların, söylenmeyen sözlerin ve ertelenmiş yüzleşmelerin birikimiyle ilerleyen oyun; izleyiciyi patlama anına değil, o ana giden sürecin içine çeker. Toplumsal roller, erkeklik algısı ve iletişimsizlik arasında gidip gelen karakterler, zamanla kendi içlerinde çözülmeye başlar. ÇÖZÜLME, seyi",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cozulme-20261289212038a314315a564244a74f87eced444484.jpg"
+    },
+    {
+      "days": [
+        "2026-10-03"
+      ],
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "kind": "theatre",
+      "time": "19:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "713 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "availability": "available",
+      "owned": false,
+      "description": "Bir Kadının Kavgaları ve Dönüşümleri Tiyatro Oyunu Edouard Louis, dördüncü eseri “Bir Kadının Kavgaları ve Dönüşümleri’nde annesine odaklanıyor… Bir fotoğraftan, annesinin fotoğrafından yola çıkıyor… Annesinin, henüz selfi icat olmamışken fotoğraf makinesiyle kendini çektiği bir fotoğraftan… Mutlu, cilveli, özgür bir genç kadındır annesi bu fotoğrafta. “ben doğmadan önce özgür -ve mutlu- olduğunu unutmuş muydum” diye sorarak başlatıyor anlatısını. Evin içine kapanıp, ev işleri ile tutsak y",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-kadinin-kavgalari-ve-donusumleri-202510295836f19fc49b5b8546f28f9c5d252f0f7c05.jpg"
     },
     {
       "days": [
@@ -986,11 +771,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1290 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/inishmorelu-yuzbasi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Inishmore’lu Yüzbaşı Tiyatro Oyunu Bir kedi ölür. Bir ada karışır. Ve işler hızla kontrolden çıkar. Martin McDonagh’ın dünyaca ünlü kara komedisi Inishmore’lu Yüzbaşı, şiddet, bağlılık ve fanatizmi acımasız bir mizahla sahneye taşıyor. Türkiye’de ilk kez tamamen monokrom bir sahneleme anlayışıyla seyirciyle buluşan oyun, siyah-beyaz bir filmin içine düşmüş hissi yaratan özgün görsel dünyasıyla dikkat çekiyor. Absürt olanın korkutucu, korkunç olanın ise kahkahaya dönüştüğü bu hikâyede hiçbi",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/inishmorelu-yuzbasi-2026916165224d958a39d0e144a159d23a50b7adecac3.jpg"
     },
     {
       "days": [
@@ -999,26 +786,30 @@
       "title": "Seda Yüz Stand Up",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "1108 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/seda-yuz-stand-up-",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Seda Yüz Stand Up Gösterisi Seda Yüz, dertlere derman yaralara merhem olan tek kişilik stand-up gösterisiyle seyircisiyle buluşuyor. Etkinlik boyunca kayıt alınması ve canlı yayın yapılması yasaktır.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seda-yuz-stand-up-20241228153248309f96d1cae94bae9ebd34a5726748cb.jpg"
     },
     {
       "days": [
-        "2026-10-03"
+        "2026-10-04"
       ],
       "title": "7 Kocalı Hürmüz Müzikali",
       "kind": "theatre",
-      "time": "21:00",
+      "time": "00:00",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "2192 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/7-kocali-hurmuz-muzikali",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "7 Kocalı Hürmüz Müzikali Türk mizahının önemli isimlerinden Sadık Şendil’in kaleme aldığı, farklı meslek ve tiplerden 6 kocası olan Hürmüz’ün yedinci kocasıyla evlenmesiyle yaşanan olayları mizahi bir dille anlatan “7 Kocalı Hürmüz” müzikali, Anadolu Ateşi Koreografisi iddialı kadrosu ve usta tiyatrocu Müjdat Gezen’in yorumuyla yeniden sahneye taşınıyor. Yazan : Sadık Şendil Yönetmen : Müjdat Gezen Dekor Tasarım : Barış Dinçel Kostüm Tasarım : Başak Özdoğan Koreografi : Anadolu Ate",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/7-kocali-hurmuz-muzikali-20251021847370be05b41115b492eb133923216a6f5ae.jpg"
     },
     {
       "days": [
@@ -1028,11 +819,13 @@
       "kind": "theatre",
       "time": "13:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "822 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kugu-golu-cocuk-balesi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Kuğu Gölü Çocuk Balesi Çaykovsky'nin ilk bale eseri olan \"Kuğu Gölü\" Eserinde, bir büyücü tarafından arkadaşları ile birlikte kuğuya dönüştürülen Odette'in hikayesi anlatılır. Odette ile Prens Siegfried arasındaki sevgi ile mutlu sona uyarlanan bale eseri, çocukların konusunu anlayarak izlemeleri ve bale sanatı ile tanışmaları için yaş gruplarına uygun olarak uyarlanmıştır. Bale sanatını seven veya bu sanat dalı ile tanışmak isteyen çocuklar için \"Kuğu Gölü\" dans ve oyunculuk içeren sevgi d",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kugu-golu-cocuk-balesi-2024112793344903de9479e3b4bd7b27a5fbb2d10d018.jpeg"
     },
     {
       "days": [
@@ -1041,12 +834,14 @@
       "title": "Çizmeli Kedi",
       "kind": "theatre",
       "time": "13:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi B Salonu(Küçük Salon)",
+      "area": "Kadıköy",
       "price": "840 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cizmeli-kedi-sariyer-snt",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Çizmeli Kedi Tiyatro Oyunu Yaşlı değirmenci, oğluna miras olarak Çizmeli Kedi'yi bırakmış. Bu kedi sıradan bir kedi değil;konuşan, dans eden, şarkı söyleyen çok akıllı bir kediymiş. Sahibi Riki'nin durumuna üzülen Çizmeli Kedi bir plan kurmuş; Riki'nin kuyuya girip soyulmuş numarası yapmasını istemiş. O sırada yoldan geçen kralın arabasının önüne atlayıp, sahibi Kont Karabaş'ın soyulduğunu söylemiş. Kral ve adamları Riki'yi kurtarmışlar. Bu sayede Riki prensesle tanışmış. Bu tanışma sonucunda",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cizmeli-kedi-sariyer-sanat-202692194239c5ce64d9ce6645de81629963a48441f9.jpg"
     },
     {
       "days": [
@@ -1056,11 +851,13 @@
       "kind": "theatre",
       "time": "15:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "822 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kugu-golu-cocuk-balesi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Kuğu Gölü Çocuk Balesi Çaykovsky'nin ilk bale eseri olan \"Kuğu Gölü\" Eserinde, bir büyücü tarafından arkadaşları ile birlikte kuğuya dönüştürülen Odette'in hikayesi anlatılır. Odette ile Prens Siegfried arasındaki sevgi ile mutlu sona uyarlanan bale eseri, çocukların konusunu anlayarak izlemeleri ve bale sanatı ile tanışmaları için yaş gruplarına uygun olarak uyarlanmıştır. Bale sanatını seven veya bu sanat dalı ile tanışmak isteyen çocuklar için \"Kuğu Gölü\" dans ve oyunculuk içeren sevgi d",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kugu-golu-cocuk-balesi-2024112793344903de9479e3b4bd7b27a5fbb2d10d018.jpeg"
     },
     {
       "days": [
@@ -1069,12 +866,14 @@
       "title": "Çizmeli Kedi",
       "kind": "theatre",
       "time": "15:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi B Salonu(Küçük Salon)",
+      "area": "Kadıköy",
       "price": "840 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cizmeli-kedi-sariyer-snt",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Çizmeli Kedi Tiyatro Oyunu Yaşlı değirmenci, oğluna miras olarak Çizmeli Kedi'yi bırakmış. Bu kedi sıradan bir kedi değil;konuşan, dans eden, şarkı söyleyen çok akıllı bir kediymiş. Sahibi Riki'nin durumuna üzülen Çizmeli Kedi bir plan kurmuş; Riki'nin kuyuya girip soyulmuş numarası yapmasını istemiş. O sırada yoldan geçen kralın arabasının önüne atlayıp, sahibi Kont Karabaş'ın soyulduğunu söylemiş. Kral ve adamları Riki'yi kurtarmışlar. Bu sayede Riki prensesle tanışmış. Bu tanışma sonucunda",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cizmeli-kedi-sariyer-sanat-202692194239c5ce64d9ce6645de81629963a48441f9.jpg"
     },
     {
       "days": [
@@ -1082,27 +881,15 @@
       ],
       "title": "Bütün Çılgınlar Sever Beni",
       "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "time": "19:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "720 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
       "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-04"
-      ],
-      "title": "Bütün Çılgınlar Sever Beni",
-      "kind": "theatre",
-      "time": "19:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
-      "price": "720 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
-      "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Bütün Çılgınlar Sever Beni Tiyatro Oyunu Tek perde İki eski arkadaş Yosif ve Angel yıllar sonra yeniden karşılaşırlar. Fakat iki arkadaş birbirlerine kırgındırlar. Yosif kendisi evlendikten sonra Angel’in uzaklaştığını, Angel ise evlendikten sonra Yosif’in çok değiştiğini söylerler. Aralarındaki bu diyalog daha sonrasında Yosif’in evliliği ve Maria’ya uzanır. Yıllar sonra bu bu buluşmanın arkasındaki sis perdesi aralanır. Maria’nın son derece kusursuzluğu ve sadakati Yosif’i rahatsız ed",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/butun-cilginlar-sever-beni-202692115055cebd55077f284c2ea92bd460208bf32e.jpg"
     },
     {
       "days": [
@@ -1112,11 +899,13 @@
       "kind": "theatre",
       "time": "19:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "750 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/icimizdeki-seytan",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "İçimizdeki Şeytan Tiyatro Oyunu 2024 Baykuş Edebiyat Dergisi Ödülleri: Yılın Tiyatro Oyunu En İyi Yönetmen Altın Körfez Ödülleri Yılın Tiyatro Oyunu İçimizdeki Şeytan, 3. sezonunda! 250+ gösterimle seyirciyle buluşmaya devam ediyor. Sabahattin Ali’ nin ölümsüz eseri “İçimizdeki Şeytan“ tiyatro sahnesinde!",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimizdeki-seytan-20241120102417006a1be2c9ea4186ba31d4dbc34ddde6.jpeg"
     },
     {
       "days": [
@@ -1125,12 +914,30 @@
       "title": "Seninle Evlenir Miyim?",
       "kind": "theatre",
       "time": "20:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "800 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/seninle-evlenir-miyim-tiyatro-oyunu",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Seninle Evlenir Miyim? Tiyatro Oyunu Haldun Dormen süpervizörlüğünde uzun yıllar sahnelenen ödüllü komedi sahnede. Melda Gür ve Barbaros Uzunöner’in rol aldığı mizah dozu yüksek komedi. Tanışma, sevgili olma, evlenme kararı alma, düğün hazırlıkları, düğün, evlilik hayatı gibi konuların işlendiği bir ilişkiler komedisi. Türkiye’nin en çok sahnelenen oyunlarından biri olan SENİNLE EVLENİR MİYİM? güldürmeye devam ediyor. FREUD’UN İNSANLARI, ETİK ALKOL, BOŞANMA TEKLİFİ oyunlarının ya",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seninle-evlenir-miyim-tiyatro-oyunu-20262261314432408200c3c074600bb889a7edd192d90.jpg"
+    },
+    {
+      "days": [
+        "2026-10-04"
+      ],
+      "title": "Bütün Çılgınlar Sever Beni",
+      "kind": "theatre",
+      "time": "22:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/butun-cilginlar-sever-beni",
+      "availability": "available",
+      "owned": false,
+      "description": "Bütün Çılgınlar Sever Beni Tiyatro Oyunu Tek perde İki eski arkadaş Yosif ve Angel yıllar sonra yeniden karşılaşırlar. Fakat iki arkadaş birbirlerine kırgındırlar. Yosif kendisi evlendikten sonra Angel’in uzaklaştığını, Angel ise evlendikten sonra Yosif’in çok değiştiğini söylerler. Aralarındaki bu diyalog daha sonrasında Yosif’in evliliği ve Maria’ya uzanır. Yıllar sonra bu bu buluşmanın arkasındaki sis perdesi aralanır. Maria’nın son derece kusursuzluğu ve sadakati Yosif’i rahatsız ed",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/butun-cilginlar-sever-beni-202692115055cebd55077f284c2ea92bd460208bf32e.jpg"
     },
     {
       "days": [
@@ -1140,11 +947,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1096 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/tut-elimden-rovni-tiyatro",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Tut Elimden Rovni Tiyatro Oyunu Ece Yaşar ve İlyas Odman’ın başrollerini üstlendiği, toplam 8 kişilik oyuncu/dansçı kadrosuyla bir sirk hikâyesini sahneye taşıyan bu özel gösteri sizlerle. Birbirlerine tutunarak yıllarca aynı gösteriyi paylaşan iki cambaz, Rovni ve Melâ… Sahnenin büyüleyici dünyasının ardında ise bastırılmış korkular, kırgınlıklar, kıskançlıklar ve geçmişten gelen hesaplaşmalar vardır. Bir sirk gösterisinin içinden, iki insanın aşkına, yalnızlığına, tutkularına ve birbirle",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tut-elimden-rovni-f-prd-202697114632038e25a79ea44c0283dd479220d1b204.jpg"
     },
     {
       "days": [
@@ -1154,11 +963,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1148 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/ask-listesi-",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Aşk Listesi Tiyatro Oyunu Kahkaha garantili komedi oyunu “Aşk Listesi” oyunu Serkan Üstüner rejisi ile Sevinç Erbulak, Hakan Bilgin ve Yosi Mizrahi’yi aynı sahnede buluşturuyor. Kulağa, ilk bakışta tatlı gelen bir soruyla başlayalım. Hayalinizdeki insanın bütün özelliklerini seçme şansınız olsaydı, beyaz bir kağıda neler yazardınız? O yazdığınız kadın veya erkek ansızın kapınızı çalsa ve hayatınıza girse “işte bu benim ruh eşim” der miydiniz? Hayalinizdeki insanı tarif edebilir misiniz ger",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-listesi-2024101893724e240f091bcb44790b79f4c3dcdebe5e1.jpg"
     },
     {
       "days": [
@@ -1168,11 +979,13 @@
       "kind": "theatre",
       "time": "18:30",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "554 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Abdullah, konuş! Tiyatro Oyunu Ahmet Hamdi Tanpınar’ın “Abdullah Efendinin Rüyaları” adlı eserinden hareketle yeniden yazılmıştır. XXV. Direklerarası Seyirci Ödülleri “Tek Kişilik Performans” Ödüllü Ahmet Hamdi Tanpınar’ın “Abdullah Efendi’nin Rüyaları” öyküsünden hareketle, ancak bambaşka bir bakış açısıyla yazılan metin, şefkatle nefret arasında gidip geldiğimiz bir karakter yaratıyor. Hem bize hem de canımızı yakan herkese çok benzeyen biri o. Abdullah’ın uzun gecesini kabusa çeviren",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/abdullah-konus-2026941038420b5c63447b114f5cbc523a12902e7faf.jpg"
     },
     {
       "days": [
@@ -1181,12 +994,14 @@
       "title": "Jan Dark'ın Öteki Ölümü",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "942 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/jean-darcin-oteki-olumu",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Jan Dark'ın Öteki Ölümü Tiyatro Oyunu Sürünerek, onursuzca yaşamak mı, yoksa sürünmemek, onurunu kaybetmemek ı̇çı̇n ölmek mı̇? İşte bütün mesele bu… Yıl 1431… Yüz yıldır İngiliz esareti altında inim inim inleyen Fransa Halkına, Tanrı bir kurtarıcı göndermiştir: “Kutsal Bakire Jan Dark” Jan, Kader-i İlahinin Kılıcı’yla Fransa ordusunun başında, İngilizlerle kahramanca savaşmış, fakat gel gör ki kimselere yaranamamıştır. Daha sonra onu azize ilan edecek olan kilise, henüz on dokuz yaşın",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/jan-darkin-oteki-olumu-2025931857435b3693cb38d3440e860304e2f2409b09.jpg"
     },
     {
       "days": [
@@ -1195,12 +1010,14 @@
       "title": "Tut Elimden Rovni",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "542 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/tut-elimden-rovni-tytr-keyfi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Tut Elimden Rovni Tiyatro Oyunu Tek perde Aziz Nesin'in klasik metninden Kemal Başar'ın reji ve dramaturjisini yaptığı, Can Atilla'nın eşsiz müzikleriyle Güney Kore'de Daejeon Uluslararası Tiyatro Festivali'nin ana tablosunda yer aldı. Yine Güney Kore'de Daegu Uluslararası Tiyatro Festivali'nden Özel Eser Ödülü aldı. Savaş Alp Başar bu eserle yılın umut veren oyuncusu ödülünü aldı. Savaş Alp Başar'a oyuncu dansçı akrobat Lola Polat eşlik ediyor. Rovni ve Mela gösteri dünyasında büyük ça",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tut-elimden-rovni-20255271541405f03adede6fc4c74abfa6c3b5d528930.jpg"
     },
     {
       "days": [
@@ -1210,11 +1027,13 @@
       "kind": "theatre",
       "time": "18:30",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "554 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/uzun-mesafe-kosucusunun-yalnizligi-bilet",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Uzun Mesafe Koşucusunun Yalnızlığı Tiyatro Oyunu Modern İngiliz edebiyatının önemli yazarlarından Alan Sillitoe'nun aynı adlı öyküsü Türkiye'de ilk defa sahneye uyarlanıyor. 16 yaşındaki Colin Smith işlediği suçtan dolayı ıslahevine girmiştir. İyi bir koşucu olduğu için koşu yarışına katılmak zorunda kalır. İşçi mahallesinde doğup büyümüş, biraz serseri biraz muzip Colin koşmaya başladıkça değişmeye başlar. Colin koştukça sınıfsal öfkesi, öğretilmiş çaresizlikleri ve kabullenmişlikleriyle,",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/uzun-mesafe-kosucusunun-yalnizligi-2026428153722694224b1d0274664ba5be15108d10671.jpg"
     },
     {
       "days": [
@@ -1223,26 +1042,14 @@
       "title": "Bu Hikaye Senden Uzun Osman",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "1108 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman",
       "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-08"
-      ],
-      "title": "Evlilikte Ufak Tefek Cinayetler",
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "1400 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/evlilikte-ufak-tefek-cinayetler-aysa",
-      "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Bu Hikaye Senden Uzun Osman Tiyatro Oyunu Etkinlik kurallarını lütfen dikkatle okuyunuz. Bilet satın alarak, etkinlik alanında geçerli olan tüm kuralları okuduğunuzu, anladığınızı ve bu kurallara uyacağınızı kabul etmiş olursunuz. Aylin Balboa’nın çok sevilen “Bu Hikaye Senden Uzun Osman” eseri uyarlanmıştır. Yönetmenliğini Salih Usta, metin danışmanlığını Sertaç Sayın, dramaturgluğunu Ozan Ömer Akgül’ün yaptığı oyunda, ülkemizin en değerli oyuncularından Şenay Gürler oynamaktadır. Oyun uz",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bu-hikaye-senden-uzun-osman-20261261503541ded16149524800894ad9eff23f0a5d.jpg"
     },
     {
       "days": [
@@ -1251,12 +1058,30 @@
       "title": "Suç ve Ceza",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "1200 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/suc-ve-ceza-ereke",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Suç ve Ceza Tiyatro Oyunu Vicdanın karanlık dehlizlerinde, bir baltanın gölgesinde yürümeye hazır mısınız? Dünya edebiyatının en büyük başyapıtı Suç ve Ceza, bu kez alışılmışın çok ötesinde, sarsıcı bir reji ile sahneye taşınıyor. Üstelik bu hikâyeyi ilk kez, suçun ve vicdanın bizzat muhatabından dinleyeceksiniz: Raskolnikov’un kendi zihninin içinden! Toplumsal adaletsizlikler, insan zihninin çelişkileri, yükselen bir hezeyan ve tefeci kadının odasında yankılanan o son nefes... Rodion",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/suc-ve-ceza-ereke-20269412340dcdb64dc1b244603a33572ea3dd3e56f.jpg"
+    },
+    {
+      "days": [
+        "2026-10-08"
+      ],
+      "title": "Evlilikte Ufak Tefek Cinayetler",
+      "kind": "theatre",
+      "time": "23:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "1400 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/evlilikte-ufak-tefek-cinayetler-aysa",
+      "availability": "available",
+      "owned": false,
+      "description": "Evlilikte Ufak Tefek Cinayetler Tiyatro Oyunu Tek perde Evlilikte Ufak Tefek Cinayetler, Dolunay Soysert ve Bülent İnal’ın çarpıcı performanslarıyla, sırların, yalanların ve tehlikeli oyunların gölgesinde evlilik kurumunun çatışmalarla örülü yüzünü sahneye taşıyor. Eric-Emmanuel Schmitt’in oyunu, Ersin Umut Güler’in rejisiyle, bir çiftin geçmişi ve gerçekleri arasında soluksuz bir hesaplaşmaya dönüşüyor. Estetik soyutlamalardan ve çağdaş sanat pratiklerinden ilham alan sahneleme bilinçd",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/evlilikte-ufak-tefek-cinayetler-aysa-202582815335bb8692fb95974464b9f68e0095f62f9e.jpg"
     },
     {
       "days": [
@@ -1265,12 +1090,14 @@
       "title": "Babamı Kim Öldürdü",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "720 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Babamı Kim Öldürdü Tiyatro Oyunu Edouard Louis, görmek istemediği, eşcinsel kimliğinden dolayı kendisini şiddet ve aşağılanmalara maruz bırakan babasını, geçirdiği iş kazası neticesinde yatalak olmasıyla yaşadığı şehirde ziyarete gelir. Karşısında gördüğü babası artık tanımakta güçlü çektiği bir haldedir. Onu gördüğünde ise geçmişindeki yaşanmışlıkları bugünün penceresinden anlatmaya başlar. Bu ziyaret yalnızca geçen yılların baba ve oğul yüzleşmesi değil, bedeni, artık çalışamayan, yürüy",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/babami-kim-oldurdu-2023218162015.jpeg"
     },
     {
       "days": [
@@ -1279,12 +1106,14 @@
       "title": "Bir Delinin Hatıra Defteri",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "500 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bir-delinin-hatira-defteri-daire",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Bir Delinin Hatıra Defteri Tiyatro Oyunu Nikolay Vasilyeviç Gogol (1809-1852) Ukrayna'nın Poltava bölgesinde doğan Nikolay Gogol, Rus edebiyatının kara mizah, hiciv ve gerçeküstücülükle harmanlanmış en özgün kalemlerinden biridir. Yaşamı boyunca hem güldüren hem de düşündüren eserler kaleme almış, bireyin toplum karşısındaki yalnızlığını ve bürokrasinin saçmalıklarını derin bir ironiyle ele almıştır. Bir Delinin Hatıra Defteri, Gogol'un kısa ama etkileyici eserlerinden biridir. Bir akıl h",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-delinin-hatira-defteri-daire-20254119341aa49bc551499432fad2baf7db71b4aa3.jpg"
     },
     {
       "days": [
@@ -1294,11 +1123,13 @@
       "kind": "theatre",
       "time": "13:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "525 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "3D Hologram Sirki BİR GÖSTERİDEN ÇOK DAHA FAZLASI Yepyeni bir deneyim Dünyada ilk kez sahnelenen 3D HOLOGRAM SİRKİ 3D ile hologram teknolojisini bir araya getirerek hayal gücünüzü sahneye taşıyor Gösteri başlamadan önce dağıtılan özel 3D gözlüklerle sahneden size doğru uzanan balinaları dinozorları filleri maymunları ve daha nicelerini neredeyse dokunabileceğiniz kadar yakından göreceksiniz Olağanüstü bir gerçeklik hissine hazır olun Hayvanlar ait oldukları doğada özgürce yaşamalı Ama",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1307,12 +1138,14 @@
       "title": "Kayıp Aslan Kardeşler",
       "kind": "theatre",
       "time": "14:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "672 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Kayıp Aslan Kardeşler Tiyatro Oyunu Pedagog onaylı, William Shakespeare’in Onikinci Gece oyunundan uyarlanan “Kayıp Aslan Kardeşler” adlı müzikli çocuk oyunumuz izleyicisiyle buluşuyor. ✨ Masalsı Dünyamıza Hoş Geldiniz! ✨ Hayvanların konuştuğu, şarkılar söylediği ve rengârenk karakterlerle dolu Illyria diyarında heyecanlı bir yolculuğa hazır mısınız? 🦁🌿 İkiz aslan kardeşler Violet ve Sebastian, bir gün birbirlerinden ayrı düşer. İşte macera tam da burada başlar! Onları ararken tavu",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kayip-aslan-kardesler-20251018133521ff0068c5a5b447b0a668cf71532e70c6.jpg"
     },
     {
       "days": [
@@ -1322,11 +1155,13 @@
       "kind": "theatre",
       "time": "15:00",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "525 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "3D Hologram Sirki BİR GÖSTERİDEN ÇOK DAHA FAZLASI Yepyeni bir deneyim Dünyada ilk kez sahnelenen 3D HOLOGRAM SİRKİ 3D ile hologram teknolojisini bir araya getirerek hayal gücünüzü sahneye taşıyor Gösteri başlamadan önce dağıtılan özel 3D gözlüklerle sahneden size doğru uzanan balinaları dinozorları filleri maymunları ve daha nicelerini neredeyse dokunabileceğiniz kadar yakından göreceksiniz Olağanüstü bir gerçeklik hissine hazır olun Hayvanlar ait oldukları doğada özgürce yaşamalı Ama",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1335,12 +1170,14 @@
       "title": "Babamı Kim Öldürdü",
       "kind": "theatre",
       "time": "16:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "720 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Babamı Kim Öldürdü Tiyatro Oyunu Edouard Louis, görmek istemediği, eşcinsel kimliğinden dolayı kendisini şiddet ve aşağılanmalara maruz bırakan babasını, geçirdiği iş kazası neticesinde yatalak olmasıyla yaşadığı şehirde ziyarete gelir. Karşısında gördüğü babası artık tanımakta güçlü çektiği bir haldedir. Onu gördüğünde ise geçmişindeki yaşanmışlıkları bugünün penceresinden anlatmaya başlar. Bu ziyaret yalnızca geçen yılların baba ve oğul yüzleşmesi değil, bedeni, artık çalışamayan, yürüy",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/babami-kim-oldurdu-2023218162015.jpeg"
     },
     {
       "days": [
@@ -1350,11 +1187,29 @@
       "kind": "theatre",
       "time": "18:30",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "665 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/karagoz-araniyor-iskirlak-moda",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Karagöz Aranıyor 'Işkırlak' Tiyatro Oyunu Karagöz, bir sabah uyandığında kendini yorgun, yaşlanmış ve tükenmiş hissetmektedir. Hacivat ona; bu haliyle, perdede daha fazla duramayacağını ve perdeyi terk etmesi gerektiğini söyler. Ancak yerine bir Karagöz bulması ve kafasındaki ışkırlağı devretmesi gereklidir. Karagöz olmak için iki şart vardır. Şartlardan birincisi komik olmak, ikincisi ise muhalif olmaktır. Hem komik hem de muhalif birini bulmak için her yere haber verilir ve gelen adaylar Ka",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/karagoz-araniyor-iskirlak-202665165031cb5ba95314284d0f9a6b6eefdf7e407d.jpeg"
+    },
+    {
+      "days": [
+        "2026-10-10"
+      ],
+      "title": "Bengi Apak - Büyülü Değil",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "665 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bengi-apak-stand-up",
+      "availability": "available",
+      "owned": false,
+      "description": "Bengi Apak - Büyülü Değil Stand Up Gösterisi Türkiye’nin en eski ödüllü komedi podcasti O Tarz Mı? ile ismini duyuran Bengi Apak, 3 sezondur sahnelediği ve çok konuşulan stand-up şovunun son sezonuyla turnede. Bengi, özel olmaya, büyülü anlara, kabak lifine ve sumaklı soğanlara isyan ettiği Büyülü Değil isimli şovunun son sezonunda izleyenlere yine keyifli anlar yaşatacak.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bengi-apak-stand-up-20268249339fef2a8abe9b340bb9d7d5059ae904524.jpg"
     },
     {
       "days": [
@@ -1364,11 +1219,13 @@
       "kind": "theatre",
       "time": "12:00",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "575 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "3D Hologram Sirki BİR GÖSTERİDEN ÇOK DAHA FAZLASI Yepyeni bir deneyim Dünyada ilk kez sahnelenen 3D HOLOGRAM SİRKİ 3D ile hologram teknolojisini bir araya getirerek hayal gücünüzü sahneye taşıyor Gösteri başlamadan önce dağıtılan özel 3D gözlüklerle sahneden size doğru uzanan balinaları dinozorları filleri maymunları ve daha nicelerini neredeyse dokunabileceğiniz kadar yakından göreceksiniz Olağanüstü bir gerçeklik hissine hazır olun Hayvanlar ait oldukları doğada özgürce yaşamalı Ama",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1377,26 +1234,14 @@
       "title": "Büyülü Orman ve Altın Havuç",
       "kind": "theatre",
       "time": "13:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "658 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-kardesler",
       "availability": "available",
-      "owned": false
-    },
-    {
-      "days": [
-        "2026-10-11"
-      ],
-      "title": "Huhu ile Bilim Şov",
-      "kind": "theatre",
-      "time": "13:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "700 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/huhu-ile-bilim-sov",
-      "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Büyülü Orman ve Altın Havuç Tiyatro Oyunu (Sahnemizde kullanılan ışık efektleri epilepsi hastaları için sakıncalı olabilir. Ayrıca, kar ve sis makineleri kullanıldığı için astım veya benzeri solunum hassasiyeti olan izleyicilerin en ön sıraları tercih etmemeleri önerilir.) Rubi ve Robi adındaki kardeşler, aileleriyle ormanda tatile çıkarlar. Ormanda gezerken, Sir Tavşan ile karşılaşırlar. Sir Tavşan, çocuklardan büyülü ormandan altın havucu getirmelerini ister. Bu sırada, Rubi ve Robi, S",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavsan-kardesler-20248281426457a21789b9384430e803db5c468a62024.jpg"
     },
     {
       "days": [
@@ -1406,11 +1251,13 @@
       "kind": "theatre",
       "time": "14:00",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "575 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "3D Hologram Sirki BİR GÖSTERİDEN ÇOK DAHA FAZLASI Yepyeni bir deneyim Dünyada ilk kez sahnelenen 3D HOLOGRAM SİRKİ 3D ile hologram teknolojisini bir araya getirerek hayal gücünüzü sahneye taşıyor Gösteri başlamadan önce dağıtılan özel 3D gözlüklerle sahneden size doğru uzanan balinaları dinozorları filleri maymunları ve daha nicelerini neredeyse dokunabileceğiniz kadar yakından göreceksiniz Olağanüstü bir gerçeklik hissine hazır olun Hayvanlar ait oldukları doğada özgürce yaşamalı Ama",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1419,26 +1266,30 @@
       "title": "Büyülü Orman ve Altın Havuç",
       "kind": "theatre",
       "time": "15:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "658 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-kardesler",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Büyülü Orman ve Altın Havuç Tiyatro Oyunu (Sahnemizde kullanılan ışık efektleri epilepsi hastaları için sakıncalı olabilir. Ayrıca, kar ve sis makineleri kullanıldığı için astım veya benzeri solunum hassasiyeti olan izleyicilerin en ön sıraları tercih etmemeleri önerilir.) Rubi ve Robi adındaki kardeşler, aileleriyle ormanda tatile çıkarlar. Ormanda gezerken, Sir Tavşan ile karşılaşırlar. Sir Tavşan, çocuklardan büyülü ormandan altın havucu getirmelerini ister. Bu sırada, Rubi ve Robi, S",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavsan-kardesler-20248281426457a21789b9384430e803db5c468a62024.jpg"
     },
     {
       "days": [
         "2026-10-11"
       ],
-      "title": "Huhu ile Bilim Şov",
+      "title": "3D Hologram Sirki",
       "kind": "theatre",
-      "time": "15:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
-      "price": "700 TL",
-      "url": "https://biletinial.com/tr-tr/tiyatro/huhu-ile-bilim-sov",
+      "time": "16:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Kadıköy",
+      "price": "575 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "3D Hologram Sirki BİR GÖSTERİDEN ÇOK DAHA FAZLASI Yepyeni bir deneyim Dünyada ilk kez sahnelenen 3D HOLOGRAM SİRKİ 3D ile hologram teknolojisini bir araya getirerek hayal gücünüzü sahneye taşıyor Gösteri başlamadan önce dağıtılan özel 3D gözlüklerle sahneden size doğru uzanan balinaları dinozorları filleri maymunları ve daha nicelerini neredeyse dokunabileceğiniz kadar yakından göreceksiniz Olağanüstü bir gerçeklik hissine hazır olun Hayvanlar ait oldukları doğada özgürce yaşamalı Ama",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1447,12 +1298,14 @@
       "title": "BlueScat",
       "kind": "theatre",
       "time": "16:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Sahne",
+      "area": "Kadıköy",
       "price": "665 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bluescat",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "BlueScat Tiyatro Oyunu Bir yüksek katlı rezidansta bir asansör. İş çıkışı dairelerinin bulunduğu kata doğru asansörle çıkmaktadırlar. Asansör ara katların birinde aniden arızalanıp durur. Birbirini hiç tanımayan bir kadın ve bir erkek kurtarılmayı beklerken birbirleriyle konuşmadan, temas etmeden, duymadan monologlarını terennüm ederler: bu terennümde korkuları, kaygıları, travmaları barınır. Bira Fabrikası, Dıkşın: Büyük Şans (Bigshoot), Ağaçların Kokusu adlı oyunları moda sahnesi’nde oyn",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bluescat-2026514917264a31e4b9100f4077b472e30d19106df8.jpg"
     },
     {
       "days": [
@@ -1462,11 +1315,13 @@
       "kind": "theatre",
       "time": "17:30",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "700 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Cinderella Çocuk Balesi Masalların büyüsü, balenin zarafetiyle buluşuyor…✨🪄🧚‍♀️ Fındıkkıran, Kuğu Gölü, Miyav Operası ve Don Kişot Çocuk Balesi ile binlerce çocuğu sanatla buluşturan Öykü Sanat Tiyatrosu ve Balesi, şimdi yepyeni ve büyüleyici bir yapımla karşınızda: Cinderella Çocuk Balesi👗 Işıl ışıl sahne tasarımı, göz kamaştıran kostümler ve masalsı atmosferiyle Cinderella, çocukları hayal gücünün en zarif dünyasına davet ediyor.🎭✨🎼 Minik izleyiciler için unutulmaz bir bale de",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cinderella-cocuk-balesi-2026311112981669c875be734d25970bd128bb820160.jpg"
     },
     {
       "days": [
@@ -1476,11 +1331,13 @@
       "kind": "theatre",
       "time": "19:30",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "700 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Cinderella Çocuk Balesi Masalların büyüsü, balenin zarafetiyle buluşuyor…✨🪄🧚‍♀️ Fındıkkıran, Kuğu Gölü, Miyav Operası ve Don Kişot Çocuk Balesi ile binlerce çocuğu sanatla buluşturan Öykü Sanat Tiyatrosu ve Balesi, şimdi yepyeni ve büyüleyici bir yapımla karşınızda: Cinderella Çocuk Balesi👗 Işıl ışıl sahne tasarımı, göz kamaştıran kostümler ve masalsı atmosferiyle Cinderella, çocukları hayal gücünün en zarif dünyasına davet ediyor.🎭✨🎼 Minik izleyiciler için unutulmaz bir bale de",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cinderella-cocuk-balesi-2026311112981669c875be734d25970bd128bb820160.jpg"
     },
     {
       "days": [
@@ -1489,12 +1346,14 @@
       "title": "9/8'lik Kıyamet",
       "kind": "theatre",
       "time": "20:00",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Sahne",
+      "area": "Kadıköy",
       "price": "831 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/9-8lik-kiyamet",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "9/8'lik Kıyamet Tiyatro Oyunu Yakın gelecek… İklim krizinin vurduğu bir dünyadayız! Kıyamet gibi “acayip” bir şey olmuş, ama tam öyle de olmamış! Hiçbir ülkenin istemediği, Parazitler denen göçebe topluluklar çıkmış ortaya. Bir oğlan: Diyar! Bu yeni toplumun hikâye anlatıcılarından biri. Her akşam, ateş başında toplanan Parazitler’e, kıyametin ilk günlerine dönüp darbukasıyla bir hikâye anlatıyor. Bir ihanet hikâyesi! İklim krizinin ilk günleri! İstanbul’dayız! Büyüyen açlık ve kıtlığ",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/98lik-kiyamet-202592317351634c9c5e5811d4232bf53ddb2b673f38f.png"
     },
     {
       "days": [
@@ -1503,12 +1362,14 @@
       "title": "Bir Aşk Hikayesi",
       "kind": "theatre",
       "time": "20:00",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi B Salonu",
+      "area": "Kadıköy",
       "price": "448 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/bir-ask-hikayesi-",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Bir Aşk Hikayesi Tiyatro Oyunu Tek Perde Pelin'e halasından büyük bir miras kalır. Fakat, aileden Pelin hariç kimseyle iletişimi olmayan bu hala vasiyete tek bir şart yazmıştır. Pelin'in evlenmesi ve bu evlilikte 1 yılı doldurması gerekir. Büyük bir borcu olan Pelin, Cemalettin'le olan evliliğinin 1.yılında bu mirası alacaktır. Hala, ölmeden önce avukat tarafından evliliğin onaylanmasını istemiştir. Avukat Burak ise bu evliliği denetlemek amacıyla çat kapı Pelin ve Cemalettin'in evine gide",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-ask-hikayesi-2026251149571673b470a0234aaeb5e92fc2d73102f6.jpg"
     },
     {
       "days": [
@@ -1518,11 +1379,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1120 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Özgür Turhan - Yepyenisi Stand Up Gösterisi Tek Perde Özgür Turhan, “Aynısı” ve “Yenisi” gösterilerinin ardından “Yepyenisi” ile sezona başlıyor, Türkiye turnesine hız kesmeden devam ediyor. Gösteride açılış komedyeni yer almaktadır. Küfür, argo vs içermektedir.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ozgur-turhan-yepyenisi-2026130175056babb6b85a98147238ce997fcc8092e0f.jpg"
     },
     {
       "days": [
@@ -1532,11 +1395,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1096 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/yaver-coruk",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Yaver Coruk Stand Up Gösterisi Yaver Coruk Stand Up Gösterisi Yaver Coruk ile Kahkahalarla Dolu Bir Gece! Hazır mısınız? Yaver Coruk, yepyeni stand-up gösterisiyle sahnede! Kendine has espri anlayışı ve enerjik performansıyla sizi kahkahalarla dolu bir geceye davet ediyor. Hayatın garipliklerinden, ilişkilerden, insanın kendisiyle olan savaşından ve daha pek çok konudan komik anekdotlarla dolu bir şov sizi bekliyor!",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yaver-coruk-standup-show-2026829132527e46a013e5b3e43a68c064b3f06298a75.jpg"
     },
     {
       "days": [
@@ -1546,11 +1411,13 @@
       "kind": "theatre",
       "time": "18:00",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "720 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/havva",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Havva Tiyatro Oyunu “Ben Havva...Haşaa, o Havva değil. Ben , Sübhaneke biliyom bi tek. Okuyayım mı? … Anlatmadan, sormadan gitmem! … Okul benim neyimeymiş?! Kızlar erkekler yan yana tövbe tövbe’ymiş. Günah yazıyon değil mi onlara? Niye hiç sevmiyorlar ? Kalpleri nerede çürüdü bunların ? Günah mı şarkı söylemek ? Hayal kurmak ? Okumak istemek ? Kız olarak dünyaya gelmek ? Sen şahidim ol bütün bunlara inat yaşayacağım bu hayatı! Benim hayatım yeniden doğacak, değişece",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/havva-2024213173311140d034167fb422a8b1df348fcfc52c5.jpg"
     },
     {
       "days": [
@@ -1559,12 +1426,14 @@
       "title": "Herkes Kocama Benziyor",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
       "price": "776 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/herkes-kocama-benziyor",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Herkes Kocama Benziyor Tiyatro Oyunu Tek Perde “Yok, o geceden beri bir rahatladım ama içim de sanki daha tam soğumadı. Anlamıyom, öfkem öylece alaftan top gibi duruyomuş içimde. Acık soğudu. Amma bazı bazı yine fena oluyom. O geceden beridir bir şey yapıştı. Kafam durmuyo, ha bire çalışıyo. Kafam beynim hep uyanık. 'Arada sus kız.' diyom. Ne bileyim, ben kadınsam kafamın içi de kadındır herhalde diye öyle söylüyom. Gözleri cin gibi açık bir kadın.” Bir pavyonda tuvaletçilik yapan Ayte",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/herkes-kocama-benziyor-2024425161216cf950a67a58643e3a2b9bede21807e31.jpeg"
     },
     {
       "days": [
@@ -1574,11 +1443,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "987 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/kadin-kafasi-epizot",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Kadın Kafası Tiyatro Oyunu Kadın ve erkek arasında yüz yıllardır bitmeyen bir savaş diye başlarlar klasik cümleye karşı 2 cinsi anlatırken. Peki bu bir savaş değil de gereklilikse. Yani kadının erkeğe, erkeğin kadına ihtiyaç duydukları bir dünyada beklentiler karşılanmadığı için ters düştülerse. Hangi toplumsal sınıf, sosyo ekonomik ve kültürel farklılıkları temsil etseler de kadın ve erkek aynı şeylere başta farklı tepkiler verip sonunda aynı noktada buluşuyorlarsa işte. Kadın Kafası da tam",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kadin-kafasi-epizot-202410221553768c4fb9dbefb4be99fd9c80bdc09d03b.jpg"
     },
     {
       "days": [
@@ -1588,11 +1459,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1402 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/hadi-oldursene-canikom-tiyatro-etkinligi",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Hadi Öldürsene Canikom Tiyatro Oyunu Tek Perde Eski bir apartmanın rutubetli, daracık bodrum katında hayata tutunan iki yaşlı şehirli komşu kadın… Bazen huysuz, bazen geçimsiz… Bazen neşeli, bazen umut dolu… Aynı yükü sırtlanan, yalnızlığa karşı birbirine yoldaş olan Diha ve Siyen’in tekdüze hayatı, bir gün radyodan duydukları bir anonsla değişir. Artık heyecanla bekledikleri biri vardır. Ve o bekleyiş, onları sanki yeniden eski günlerine götürür… Aziz Nesin, “Hadi Öldürsene",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hadi-oldursene-canikom-tiyatro-oyunu-2026316125547374f54101b3c4bad8ba9d90340df019c.jpg"
     },
     {
       "days": [
@@ -1602,11 +1475,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Moda Sahnesi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "720 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/othello-",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Othello Tiyatro Oyunu Shakespeare'nin ünlü trajedisi aşk ile başlar. Osmanlı'ya karşı savaşta Venedik ordusunun başında bulunan mağribi lakaplı Othello ile Venedik’in soylularından Brabantio’nun kızı Desdemona arasında başlayan aşk gizlice kıyılmış bir nikahla son bulur. İzni alınmadan gerçekleşen bu evliliğe Brabantio hiddetlenir ve nikahın geçersiz sayılmasını talep eder. Ancak Desdemona kendi iradesiyle evlendiğini beyan ederek babasının talebini geçersiz kılar. Osmanlı'nın Kıbr",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/othello-202495131465d1eb48411014420930f8465e7464672.jpg"
     },
     {
       "days": [
@@ -1616,11 +1491,13 @@
       "kind": "theatre",
       "time": "20:30",
       "venue": "Bostancı Gösteri Merkezi",
-      "area": "Istanbul",
+      "area": "Kadıköy",
       "price": "1580 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/profesyonel",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Profesyonel Tiyatro Oyunu Tek perde Ment Event yapım ve organizasyonuyla, yıllarca kapalı gişe sahnelenen efsane oyun “Profesyonel” yeniden sahnede. Dušan Kovačević’in zamansız eseri, Bülent Emin Yarar ve Yetkin Dikinciler’in usta yorumuyla sahnede yeniden kurulan bir hesaplaşmaya dönüşüyor. Yugoslavya’daki büyük dönüşümden önceki ve sonraki toplumsal-politik yaşamı, bir entelektüelin yaşam öyküsü içinde, karakomedi türünde ve ironik bir üslupla anlatıyor. 40 yaşlarında bir edebiyat",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/profesyonel-tiyatro-oyunu-20269111349204c9ae71138ac4da0bad0c832ad71c8a8.jpg"
     },
     {
       "days": [
@@ -1629,17 +1506,68 @@
       "title": "Yapraklar",
       "kind": "theatre",
       "time": "20:30",
-      "venue": "Caddebostan Kültür Merkezi",
-      "area": "Istanbul",
+      "venue": "Caddebostan Kültür Merkezi A Salonu",
+      "area": "Kadıköy",
       "price": "542 TL",
       "url": "https://biletinial.com/tr-tr/tiyatro/yapraklar",
       "availability": "available",
-      "owned": false
+      "owned": false,
+      "description": "Yapraklar Tiyatro Oyunu Yeni, çağdaş tiyatro edebiyatı akımının dünyadaki en önemli temsilcilerinden Andreas Flourakis’in Yapraklar oyunu şu temel cümleye odaklanır; insan kendi hayatının muhasebesini yaptığında geriye ne kalır? Bir kadın, zaman, yalnızlık ve hatırlama hikâyesi. Kuruyan her yaprak hayattan bir insanı, bir anıyı, bir acıyı, sevgiyi ya da nefreti götürür. Hayatımızı oluşturanlar aslında bizim yapraklarımız mıdır?",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yapraklar-tiyatro-keyfi-202683195334427ed5749fe64c40aa6e8c9e0358b7c5.jpg"
+    },
+    {
+      "days": [
+        "2026-10-15"
+      ],
+      "title": "Müzeyyen",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "784 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/muzeyyen-benzemez-kimse-sana",
+      "availability": "available",
+      "owned": false,
+      "description": "Müzeyyen Tiyatro Oyunu Kadıköy Halk Tiyatrosu iftiharla sunar! Türk müziğinin unutulmaz sesi, Cumhuriyet'in Divası Müzeyyen Senar iki önemli tiyatro sanatçısı tarafından sahnede yad ediliyor. Müzeyyen isimli biyografik oyunda; Celile isimli oyunla izleyicinin kalbinde taht kuran Yılın Kadın Performansı ödüllü Ayşegül Yalçıner ile 1994'de yayınlanan Kaygısızlar dizisinden beri ekranlarda ve sahnede olan Damla Özen rol alıyor. Kendi gençliği ile karşılaşınca ne yapar insan? Seçtiği yol",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/muzeyyen-benzemez-kimse-sana-2025921164219e910e3d5181245cf93850d16cb2bf30e.png"
+    },
+    {
+      "days": [
+        "2026-10-15"
+      ],
+      "title": "Othello",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi",
+      "area": "Kadıköy",
+      "price": "720 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/othello-",
+      "availability": "available",
+      "owned": false,
+      "description": "Othello Tiyatro Oyunu Shakespeare'nin ünlü trajedisi aşk ile başlar. Osmanlı'ya karşı savaşta Venedik ordusunun başında bulunan mağribi lakaplı Othello ile Venedik’in soylularından Brabantio’nun kızı Desdemona arasında başlayan aşk gizlice kıyılmış bir nikahla son bulur. İzni alınmadan gerçekleşen bu evliliğe Brabantio hiddetlenir ve nikahın geçersiz sayılmasını talep eder. Ancak Desdemona kendi iradesiyle evlendiğini beyan ederek babasının talebini geçersiz kılar. Osmanlı'nın Kıbr",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/othello-202495131465d1eb48411014420930f8465e7464672.jpg"
+    },
+    {
+      "days": [
+        "2026-10-15"
+      ],
+      "title": "Saatleri Ayarlama Enstitüsü",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Kadıköy",
+      "price": "1715 TL",
+      "url": "https://biletinial.com/tr-tr/tiyatro/saatleri-ayarlama-enstitusu",
+      "availability": "available",
+      "owned": true,
+      "description": "Saatleri Ayarlama Enstitüsü Tiyatro Oyunu Doğu ve batı, eski ve yeni, geleneksel ve modern kutupları arasında salınıp duran Ahmet Hamdi Tanpınar’ın ölümsüz eseri Saatleri Ayarlama Enstitüsü, Serkan Keskin’in onlarca surete büründüğü bir oyunculuk şöleniyle sinema ve tiyatronun iç içe geçtiği çağdaş bir uyarlama olarak izleyici ile buluşuyor. Hayri İrdal, çocukluğunu İstanbul'un yoksul sokaklarında, aile yadigarı olan bir ayaklı saatin etkisi altında geçirir. Bu saat, zamanın ve yaşamın anl",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/9a1f44e4140943a69876550fa02a5c39.png",
+      "note": "Fastmail ticket reservation verified."
     }
   ],
   "cinemas": [],
-  "omitted_records": 7,
-  "research_note": "Rolling refresh. Preferred Biletinial venue tabs swept directly; production JSON-LD sessions filtered to originating venue. Fastmail returned no events. Google colonist was checked; personal profile required interactive authorization and could not be completed. IMDb enrichment retained from prior validated records; no new reliable IMDb structured metadata was required for theatre additions. Venue sweep completed for: Moda Sahnesi, Bostancı Gösteri Merkezi, Akla Kara Tiyatro, Caddebostan Kültür Merkezi, Kadıköy Eğitim Sahnesi.",
+  "omitted_records": 62,
+  "research_note": "Preferred Biletinial theatre inventories swept 2026-09-26; only in-window InStock sessions whose venue matched the originating tab were included. Independent cinema venue pages were reachable; existing verified cinema sessions were retained after range rollover. Fastmail calendar was checked; Google calendar output was unavailable (empty/non-JSON response). IMDb enrichment was not refreshed because no reliable structured IMDb access was available; retained previously validated identity metadata.",
   "sources": [
     {
       "provider": "Biletinial",
@@ -1647,9 +1575,9 @@
       "venue": "Moda Sahnesi",
       "locationId": "15880",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-25",
-      "listedEventLinks": 44,
-      "verifiedSessions": 33,
+      "checkedAt": "2026-09-26",
+      "listedEventLinks": 34,
+      "verifiedSessions": 27,
       "includedSessions": 27
     },
     {
@@ -1658,10 +1586,10 @@
       "venue": "Bostancı Gösteri Merkezi",
       "locationId": "17011",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-25",
-      "listedEventLinks": 18,
-      "verifiedSessions": 7,
-      "includedSessions": 7
+      "checkedAt": "2026-09-26",
+      "listedEventLinks": 10,
+      "verifiedSessions": 9,
+      "includedSessions": 9
     },
     {
       "provider": "Biletinial",
@@ -1669,8 +1597,8 @@
       "venue": "Akla Kara Tiyatro",
       "locationId": "15863",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-25",
-      "listedEventLinks": 12,
+      "checkedAt": "2026-09-26",
+      "listedEventLinks": 3,
       "verifiedSessions": 0,
       "includedSessions": 0
     },
@@ -1680,8 +1608,8 @@
       "venue": "Caddebostan Kültür Merkezi",
       "locationId": "15738",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-25",
-      "listedEventLinks": 48,
+      "checkedAt": "2026-09-26",
+      "listedEventLinks": 39,
       "verifiedSessions": 13,
       "includedSessions": 13
     },
@@ -1691,31 +1619,31 @@
       "venue": "Kadıköy Eğitim Sahnesi",
       "locationId": "18051",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-25",
-      "listedEventLinks": 57,
-      "verifiedSessions": 27,
-      "includedSessions": 27
+      "checkedAt": "2026-09-26",
+      "listedEventLinks": 50,
+      "verifiedSessions": 25,
+      "includedSessions": 25
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-09-26"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-09-26"
     },
     {
       "provider": "Biletinial",
       "kind": "cinema_inventory",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-09-25"
+      "checkedAt": "2026-09-26"
     }
   ]
 }
