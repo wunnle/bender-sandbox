@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState, useSyncExternalStore } from "react";
+import { COVERS } from "./covers";
 import { GAMES, boothMap, splitBooth, type Game, type Kind, type Tag } from "./games";
 
 const STORAGE_KEY = "spiel-games:starred";
@@ -88,20 +90,8 @@ function chip(active: boolean) {
 function GameRow({ game, starred, onStar }: { game: Game; starred: boolean; onStar: () => void }) {
   const meta = [game.publisher, game.designers].filter(Boolean).join(" · ");
   return (
-    <li className="flex gap-3 border-b border-black/5 py-4 dark:border-white/10">
-      <button
-        type="button"
-        onClick={onStar}
-        aria-label={starred ? `Unstar ${game.title}` : `Star ${game.title}`}
-        aria-pressed={starred}
-        className={`mt-0.5 h-7 w-7 shrink-0 rounded-md text-lg leading-none transition-colors ${
-          starred
-            ? "bg-amber-500/15 text-amber-500"
-            : "text-neutral-300 hover:text-neutral-500 dark:text-neutral-600 dark:hover:text-neutral-400"
-        }`}
-      >
-        {starred ? "★" : "☆"}
-      </button>
+    <li className="flex gap-4 border-b border-black/5 py-4 dark:border-white/10">
+      <Cover game={game} />
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
           <a
@@ -139,7 +129,37 @@ function GameRow({ game, starred, onStar }: { game: Game; starred: boolean; onSt
           ))}
         </div>
       </div>
+      <button
+        type="button"
+        onClick={onStar}
+        aria-label={starred ? `Unstar ${game.title}` : `Star ${game.title}`}
+        aria-pressed={starred}
+        className={`-mr-1 h-8 w-8 shrink-0 rounded-md text-xl leading-none transition-colors ${
+          starred
+            ? "bg-amber-500/15 text-amber-500"
+            : "text-neutral-300 hover:text-neutral-500 dark:text-neutral-600 dark:hover:text-neutral-400"
+        }`}
+      >
+        {starred ? "★" : "☆"}
+      </button>
     </li>
+  );
+}
+
+function Cover({ game }: { game: Game }) {
+  const src = COVERS[game.title];
+  const box = "h-24 w-[4.5rem] shrink-0 rounded-md bg-black/[0.04] dark:bg-white/[0.06]";
+  if (!src) {
+    return (
+      <div aria-hidden className={`${box} flex items-center justify-center text-2xl font-semibold text-neutral-300 dark:text-neutral-600`}>
+        {game.title[0]}
+      </div>
+    );
+  }
+  return (
+    <a href={bggSearch(game)} target="_blank" rel="noreferrer" className={`${box} overflow-hidden`}>
+      <Image src={src} alt={`${game.title} box`} width={72} height={96} className="h-full w-full object-contain" />
+    </a>
   );
 }
 

@@ -1,0 +1,40 @@
+/**
+ * Box covers from the official SPIEL novelties list (the exhibitor's first image), copied into
+ * public/ on 29 Sep 2026 because the listing's own image URLs are versioned and rotate.
+ * Games not in the official list have no cover.
+ */
+export const COVERS: Record<string, string> = {
+  "Queen Alice": "/spiel-games/queen-alice.jpg",
+  "Kingdom Come: Deliverance – The Board Game": "/spiel-games/kingdom-come-deliverance-the-board-game.png",
+  "Carpet Racers": "/spiel-games/carpet-racers.jpg",
+  "Greenwood": "/spiel-games/greenwood.png",
+  "Stonesaga": "/spiel-games/stonesaga.png",
+  "Gaudí": "/spiel-games/gaudi.jpg",
+  "Blood Hunt": "/spiel-games/blood-hunt.png",
+  "Aridnyk": "/spiel-games/aridnyk.png",
+  "Entropy": "/spiel-games/entropy.png",
+  "Thessaloniki": "/spiel-games/thessaloniki.png",
+  "Maestro": "/spiel-games/maestro.jpg",
+  "Flügelschlag: Mittel- und Südamerika": "/spiel-games/flugelschlag-mittel-und-sudamerika.png",
+  "Flügelschlag: Regionen Fan-Set 1": "/spiel-games/flugelschlag-regionen-fan-set-1.jpg",
+  "Flossenschlag: Haie & Riffe": "/spiel-games/flossenschlag-haie-riffe.jpg",
+  "Age of Innovation: Zukunft und Vergangenheit": "/spiel-games/age-of-innovation-zukunft-und-vergangenheit.jpg",
+  "Viticulture: Bordeaux": "/spiel-games/viticulture-bordeaux.jpg",
+  "Melochs Duell": "/spiel-games/melochs-duell.jpg",
+  "Mischwald – Smoky Mountains": "/spiel-games/mischwald-smoky-mountains.jpg",
+  "Carcassonne 25 Jahre": "/spiel-games/carcassonne-25-jahre.jpg",
+  "Fourth Wing – Das Spiel": "/spiel-games/fourth-wing-das-spiel.png",
+  "EXIT – Der perfekte Einbruch": "/spiel-games/exit-der-perfekte-einbruch.png",
+  "Horrified: Dungeons & Dragons – Ravenloft": "/spiel-games/horrified-dungeons-dragons-ravenloft.png",
+  "Dorfromantik Südsee": "/spiel-games/dorfromantik-sudsee.png",
+  "Minikin City": "/spiel-games/minikin-city.png",
+  "Crossing Heroes": "/spiel-games/crossing-heroes.png",
+  "La Cosecha": "/spiel-games/la-cosecha.png",
+  "Québec": "/spiel-games/quebec.png",
+  "Molly House": "/spiel-games/molly-house.png",
+  "Spell": "/spiel-games/spell.png",
+  "Tinctura": "/spiel-games/tinctura.png",
+  "Nacht im Zoo": "/spiel-games/nacht-im-zoo.jpg",
+  "Yubibo": "/spiel-games/yubibo.jpg",
+  "Wuselige Wiesen": "/spiel-games/wuselige-wiesen.png",
+};

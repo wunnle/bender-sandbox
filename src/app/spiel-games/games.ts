@@ -76,7 +76,7 @@ export const GAMES: Game[] = [
     buzz: true,
     blurb: "Tile placement about the architect, scoring across Nature, Catalonia and Religion.",
     booths: ["3.3D600", "6.6B300"],
-    at: "DEVIR (3D600) and HUCH! (6B300)",
+    at: "DEVIR and HUCH!",
   },
   {
     title: "Personal Demons",
