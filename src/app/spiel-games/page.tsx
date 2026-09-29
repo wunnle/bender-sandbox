@@ -20,7 +20,9 @@ export default function SpielGamesPage() {
         <p className="mt-4 text-lg leading-relaxed text-neutral-600 dark:text-neutral-300">
           A shortlist of the releases worth knowing about, out of the 550-odd games heading to Essen. The ones
           tagged <strong>Buzz</strong> are the games press and community &ldquo;most anticipated&rdquo; lists keep
-          naming. Star the ones you want to find on the floor. Your stars are saved on this device.
+          naming. Star the ones you want to find on the floor, then filter to your stars and sort by booth for a
+          walking order. Every booth opens the official hall plan with the stand circled. Your stars are saved on
+          this device.
         </p>
         <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400">
           Also: <a className="underline underline-offset-4" href="/spiel-essen">where to stay</a>.
@@ -34,7 +36,7 @@ export default function SpielGamesPage() {
           Full lists
         </h2>
         <p className="mt-2 leading-relaxed text-neutral-600 dark:text-neutral-300">
-          For everything else, plus booth numbers, which this page doesn&apos;t have yet:
+          For the other 500-odd games:
         </p>
         <ul className="mt-4 space-y-3">
           {TRACKERS.map((t) => (
@@ -58,8 +60,14 @@ export default function SpielGamesPage() {
         <a className="underline underline-offset-4" href="https://www.wargamer.com/board-games/essen-spiel-wishlist" target="_blank" rel="noreferrer">Wargamer wishlist</a>,{" "}
         <a className="underline underline-offset-4" href="https://brettspielbox.de/brettspiel-neuheiten-spiel-2026-herbst-2026-a-z/" target="_blank" rel="noreferrer">brettspielbox</a>{" "}
         and publisher announcements. German titles are as listed for the German market, with the English name
-        alongside where it&apos;s known. Game names link to a BoardGameGeek search. Publisher line-ups change
-        right up to the fair, so check the BGG preview before you go.
+        alongside where it&apos;s known. Game names link to a BoardGameGeek search.
+        <br />
+        Booths come from the{" "}
+        <a className="underline underline-offset-4" href="https://www.spiel-essen.de/en/the-spiel/novelties" target="_blank" rel="noreferrer">official novelties list</a>
+        , checked 29 Sep 2026. It&apos;s filled in by exhibitors, so a game can sit at a distributor&apos;s
+        booth rather than its publisher&apos;s — that&apos;s what &ldquo;at …&rdquo; means. Games not in the list yet
+        point at their publisher&apos;s booth and say so. Exhibitors keep editing right up to the fair; check again
+        the week before.
       </footer>
     </main>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useSyncExternalStore } from "react";
-import { GAMES, type Game, type Kind, type Tag } from "./games";
+import { GAMES, boothMap, splitBooth, type Game, type Kind, type Tag } from "./games";
 
 const STORAGE_KEY = "spiel-games:starred";
 
@@ -28,6 +28,49 @@ function parseStarred(raw: string): string[] {
 }
 const KINDS: ("All" | Kind)[] = ["All", "New", "Expansion", "Spin-off"];
 const TAGS: Tag[] = ["Strategy", "Co-op", "Two-player", "Narrative"];
+const HALLS = [...new Set(GAMES.flatMap((g) => g.booths?.map((b) => splitBooth(b).hall) ?? []))].sort(
+  (a, b) => Number(a) - Number(b),
+);
+
+/** Games with no booth sort last; otherwise by their first booth, which reads as a walking order. */
+function boothOrder(a: Game, b: Game) {
+  const ka = a.booths?.[0] ?? "~";
+  const kb = b.booths?.[0] ?? "~";
+  return ka.localeCompare(kb, "en", { numeric: true });
+}
+
+function BoothLine({ game }: { game: Game }) {
+  if (!game.booths?.length) {
+    return <p className="mt-1 text-sm text-neutral-400 dark:text-neutral-500">Booth not announced yet</p>;
+  }
+  return (
+    <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-300">
+      {game.booths.map((id, i) => {
+        const { hall, stand } = splitBooth(id);
+        return (
+          <span key={id}>
+            {i > 0 ? ", " : null}
+            <a
+              href={boothMap(id)}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold tabular-nums text-neutral-900 underline decoration-neutral-300 underline-offset-4 hover:decoration-neutral-900 dark:text-neutral-100 dark:decoration-neutral-600 dark:hover:decoration-neutral-100"
+            >
+              {i === 0 || splitBooth(game.booths![i - 1]).hall !== hall ? `Hall ${hall} · ` : ""}
+              {stand}
+            </a>
+          </span>
+        );
+      })}
+      {game.at ? <span className="text-neutral-500 dark:text-neutral-400"> · at {game.at}</span> : null}
+      {game.boothFrom === "publisher" ? (
+        <span className="block text-neutral-400 dark:text-neutral-500">
+          Publisher&apos;s booth — this game isn&apos;t in the official novelties list yet
+        </span>
+      ) : null}
+    </p>
+  );
+}
 
 function bggSearch(game: Game) {
   const q = encodeURIComponent(game.en ?? game.title);
@@ -72,6 +115,7 @@ function GameRow({ game, starred, onStar }: { game: Game; starred: boolean; onSt
           {game.en ? <span className="text-sm text-neutral-500 dark:text-neutral-400">{game.en}</span> : null}
         </div>
         {meta ? <p className="mt-0.5 text-sm text-neutral-500 dark:text-neutral-400">{meta}</p> : null}
+        <BoothLine game={game} />
         {game.blurb ? (
           <p className="mt-1.5 leading-relaxed text-neutral-600 dark:text-neutral-300">{game.blurb}</p>
         ) : null}
@@ -105,6 +149,8 @@ export function GameList() {
   const [tags, setTags] = useState<Tag[]>([]);
   const [buzzOnly, setBuzzOnly] = useState(false);
   const [starredOnly, setStarredOnly] = useState(false);
+  const [hall, setHall] = useState<string | null>(null);
+  const [byBooth, setByBooth] = useState(false);
   const starredRaw = useSyncExternalStore(subscribe, readStarred, () => "[]");
   const starred = useMemo(() => parseStarred(starredRaw), [starredRaw]);
 
@@ -120,15 +166,20 @@ export function GameList() {
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return GAMES.filter((g) => {
+    const matches = GAMES.filter((g) => {
       if (kind !== "All" && g.kind !== kind) return false;
       if (buzzOnly && !g.buzz) return false;
       if (starredOnly && !starred.includes(g.title)) return false;
       if (tags.some((t) => !g.tags?.includes(t))) return false;
+      if (hall && !g.booths?.some((b) => splitBooth(b).hall === hall)) return false;
       if (!q) return true;
-      return [g.title, g.en, g.publisher, g.designers, g.blurb].some((f) => f?.toLowerCase().includes(q));
+      const booths = g.booths?.map((b) => splitBooth(b).stand).join(" ");
+      return [g.title, g.en, g.publisher, g.designers, g.blurb, g.at, booths].some((f) =>
+        f?.toLowerCase().includes(q),
+      );
     });
-  }, [query, kind, tags, buzzOnly, starredOnly, starred]);
+    return byBooth ? matches.sort(boothOrder) : matches;
+  }, [query, kind, tags, buzzOnly, starredOnly, starred, hall, byBooth]);
 
   return (
     <section>
@@ -137,7 +188,7 @@ export function GameList() {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search title, publisher, designer…"
+          placeholder="Search title, publisher, booth…"
           className="w-full rounded-lg border border-black/10 bg-transparent px-3.5 py-2.5 text-base outline-none placeholder:text-neutral-400 focus:border-black/30 dark:border-white/15 dark:focus:border-white/35"
         />
         <div className="flex flex-wrap gap-1.5">
@@ -160,11 +211,30 @@ export function GameList() {
             </button>
           ))}
         </div>
+        <div className="flex flex-wrap gap-1.5">
+          <button type="button" onClick={() => setHall(null)} className={chip(hall === null)}>
+            All halls
+          </button>
+          {HALLS.map((h) => (
+            <button key={h} type="button" onClick={() => setHall(h)} className={chip(hall === h)}>
+              Hall {h}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <p className="mt-5 text-sm text-neutral-500 dark:text-neutral-400">
-        {shown.length} of {GAMES.length} games
-      </p>
+      <div className="mt-5 flex items-baseline justify-between gap-4 text-sm text-neutral-500 dark:text-neutral-400">
+        <p>
+          {shown.length} of {GAMES.length} games
+        </p>
+        <button
+          type="button"
+          onClick={() => setByBooth((v) => !v)}
+          className="font-medium text-neutral-700 underline-offset-4 hover:underline dark:text-neutral-300"
+        >
+          {byBooth ? "Sorted by booth" : "Sort by booth"}
+        </button>
+      </div>
 
       {shown.length ? (
         <ul className="mt-1">
