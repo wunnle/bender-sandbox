@@ -90,20 +90,69 @@ const AFTERNOON: Stop[] = [
   },
 ];
 
+const SIGHTS: Stop[] = [
+  {
+    time: "any",
+    name: "TRX City Park",
+    kind: "Rooftop park",
+    notes: [
+      "10-acre public park on the roof of the Apple Store's mall, open from 07:00. Good for the repair wait.",
+    ],
+    where: { lat: 3.14254, lon: 101.71808 },
+  },
+  {
+    time: "check",
+    name: "Merdeka 118 — The View at 118",
+    kind: "Viewing deck",
+    notes: [
+      "World's second-tallest building, a few minutes from Jalan Pasar.",
+      "Deck was expected in 2026, but most of the tower was still closed as of July. Confirm it's open first.",
+    ],
+    where: { q: "Merdeka 118, Kuala Lumpur" },
+  },
+  {
+    time: "1.5–2h",
+    name: "Islamic Arts Museum",
+    kind: "Museum",
+    notes: [
+      "KL's best museum: domed ceilings, manuscripts, architecture models.",
+      "Sits in the Perdana Botanical Gardens — walk them too. Either this or Meeples in the afternoon, probably not both.",
+    ],
+    where: { lat: 3.14145, lon: 101.68987 },
+  },
+  {
+    time: "1h",
+    name: "Thean Hou Temple",
+    kind: "Temple",
+    notes: ["Six-tier Chinese temple on a hill with city views. Close to Bangsar — pairs with Boardgame Depot."],
+    where: { lat: 3.12184, lon: 101.68764 },
+  },
+  {
+    time: "1h",
+    name: "KL Forest Eco Park",
+    kind: "Canopy walk",
+    notes: ["Rainforest walkways in the middle of the city, at the foot of KL Tower."],
+    where: { lat: 3.15293, lon: 101.70269 },
+  },
+];
+
 const EVENING: Stop[] = [
   {
     time: "evening",
-    name: "KLCC Park",
-    kind: "Sights",
-    notes: ["Fountain show under the Petronas Towers."],
-    where: { q: "KLCC Park, Kuala Lumpur" },
+    name: "REXKL",
+    kind: "Bookshop / creative space",
+    notes: ["An old cinema turned bookshop and creative space, on the edge of Chinatown."],
+    where: { lat: 3.14485, lon: 101.69825 },
   },
   {
-    time: "dinner",
-    name: "Jalan Alor",
-    kind: "Street food",
-    notes: ["Bukit Bintang's food street, right by Low Yat."],
-    where: { q: "Jalan Alor, Kuala Lumpur" },
+    time: "night",
+    name: "Saloma Bridge → Kampung Baru",
+    kind: "Views + Malay food",
+    notes: [
+      "LED-lit pedestrian bridge with a good Petronas Towers view.",
+      "Leads into Kampung Baru, an old Malay village ringed by skyscrapers — go for dinner.",
+    ],
+    where: { lat: 3.16138, lon: 101.7078 },
   },
 ];
 
@@ -116,14 +165,16 @@ const SOURCES: [string, string][] = [
   ["Time Out: board game cafés", "https://www.timeout.com/kuala-lumpur/kids/the-best-board-game-cafes-in-kl"],
   ["Bean Brothers AeroPress", "https://beanbrothers.my/products/aeropress"],
   ["Time Out: best coffee in KL", "https://www.timeout.com/kuala-lumpur/food-and-drink/best-coffee-in-kl"],
+  ["TRX City Park (Wonderful Malaysia)", "https://www.wonderfulmalaysia.com/shopping/?p=42"],
+  ["Merdeka 118 (Wikipedia)", "https://en.wikipedia.org/wiki/Merdeka_118"],
 ];
 
 function StopCard({ s }: { s: Stop }) {
   return (
     <li>
-      {s.walk && <p className="mb-2 pl-[4.5rem] text-xs text-neutral-500">↓ {s.walk}</p>}
+      {s.walk && <p className="mb-2 pl-[5rem] text-xs text-neutral-500">↓ {s.walk}</p>}
       <div className="flex gap-4">
-        <div className="w-14 shrink-0 pt-4 text-right font-mono text-sm tabular-nums text-neutral-400">
+        <div className="w-16 shrink-0 pt-4 text-right font-mono text-sm tabular-nums text-neutral-400">
           {s.time}
         </div>
         <div className="flex-1 rounded-xl bg-neutral-900 p-4 ring-1 ring-white/10">
@@ -188,7 +239,12 @@ export default function KlPage() {
 
         <Section title="Morning loop" sub="On foot, while the phone is in repair." stops={LOOP} />
         <Section title="Board games" stops={AFTERNOON} />
-        <Section title="If there's energy left" stops={EVENING} />
+        <Section
+          title="Sights"
+          sub="Skipping the ones already seen: street food, KLCC Park, Chinatown."
+          stops={SIGHTS}
+        />
+        <Section title="Evening" stops={EVENING} />
 
         <footer className="mt-12 border-t border-white/10 pt-6">
           <h2 className="text-xs font-medium uppercase tracking-wide text-neutral-500">Sources</h2>
