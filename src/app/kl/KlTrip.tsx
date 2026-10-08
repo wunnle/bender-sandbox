@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { BEFORE, mapsHref, NUMBERED, SECTIONS, SOURCES } from "./data";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { BEFORE, mapsHref, NUMBERED, SECTIONS, SOURCES, type NumberedStop } from "./data";
 
 const LEAFLET = "https://unpkg.com/leaflet@1.9.4/dist/leaflet";
 
@@ -25,12 +25,44 @@ function loadLeaflet(): Promise<any> {
   return loading;
 }
 
+/** A place added on the device. Lives only in localStorage. */
+type Custom = { id: string; s: number; name: string; time: string; note: string; lat: number; lon: number };
+type TripStop = NumberedStop & { id?: string };
+
+const STORE = "kl-trip:places";
+
+function loadCustom(): Custom[] {
+  try {
+    const raw = JSON.parse(localStorage.getItem(STORE) ?? "[]");
+    return Array.isArray(raw)
+      ? raw.filter((c) => typeof c?.lat === "number" && typeof c?.lon === "number" && SECTIONS[c?.s])
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+/** Added places number on from the built-in stops, in the order they were added. */
+const toStops = (custom: Custom[]): TripStop[] => [
+  ...NUMBERED,
+  ...custom.map((c, i) => ({
+    id: c.id,
+    s: c.s,
+    n: NUMBERED.length + i + 1,
+    time: c.time,
+    name: c.name,
+    kind: "Added",
+    notes: c.note ? [c.note] : [],
+    where: { lat: c.lat, lon: c.lon },
+  })),
+];
+
 type Pin = { key: string; s: number; lat: number; lon: number; ns: number[] };
 
-/** Stops sharing a spot within a section (drop-off and pick-up at TRX) become one "1·5" pin. */
-const PINS: Pin[] = (() => {
+/** Stops sharing a spot within a section (drop-off and pick-up at TRX) become one "1·6" pin. */
+function toPins(stops: TripStop[]): Pin[] {
   const at = new Map<string, Pin>();
-  for (const stop of NUMBERED) {
+  for (const stop of stops) {
     if (!("lat" in stop.where)) continue;
     const { lat, lon } = stop.where;
     const key = `${stop.s}|${lat},${lon}`;
@@ -39,14 +71,41 @@ const PINS: Pin[] = (() => {
     at.set(key, pin);
   }
   return [...at.values()];
-})();
+}
 
 type PinState = "active" | "on" | "off";
 
-/* A zero-size anchor with a self-centring label, so "1·5" and "8" both sit on their point. */
+/* A zero-size anchor with a self-centring label, so "1·6" and "8" both sit on their point. */
 function pinHtml(pin: Pin, state: PinState) {
   const big = state === "active";
   return `<div style="position:absolute;transform:translate(-50%,-50%);width:max-content;min-width:${big ? 30 : 24}px;height:${big ? 30 : 24}px;padding:0 6px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;border-radius:8px;background:${SECTIONS[pin.s].color};color:#0a0a0a;font:600 ${big ? 13 : 12}px/1 ui-monospace,monospace;box-shadow:0 0 0 2px ${big ? "#fff" : "#0a0a0a"};opacity:${state === "off" ? 0.35 : 1}">${pin.ns.join("·")}</div>`;
+}
+
+const DRAFT_HTML = `<div style="position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:#fff;color:#0a0a0a;font:700 18px/1 ui-sans-serif,sans-serif;box-shadow:0 0 0 2px #0a0a0a">+</div>`;
+
+type Hit = { name: string; sub: string; lat: number; lon: number };
+
+/**
+ * OSM's Nominatim: free and keyless. Its policy allows search-on-submit but not
+ * autocomplete, so this only runs when the form is submitted. Biased, not bounded,
+ * to Greater KL.
+ */
+async function search(q: string): Promise<Hit[]> {
+  const url =
+    "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=6&accept-language=en&viewbox=101.50,3.30,101.85,2.95&q=" +
+    encodeURIComponent(q);
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`search ${res.status}`);
+  const rows: any[] = await res.json();
+  return rows.map((r) => {
+    const parts = String(r.display_name).split(", ");
+    return {
+      name: r.name || parts[0],
+      sub: parts.slice(1, 4).join(", "),
+      lat: Number(r.lat),
+      lon: Number(r.lon),
+    };
+  });
 }
 
 export default function KlTrip() {
@@ -56,15 +115,39 @@ export default function KlTrip() {
   const map = useRef<any>(null);
   const markers = useRef(new Map<string, any>());
   const lines = useRef(new Map<number, any>());
+  const draftMarker = useRef<any>(null);
   /** Set when something other than the strip picks a stop, so the strip follows. */
   const scrollTo = useRef<{ n: number; instant: boolean } | null>(null);
 
   const [ready, setReady] = useState(false);
   const [section, setSection] = useState(0);
   const [active, setActive] = useState(NUMBERED[0].n);
-  const [info, setInfo] = useState(false);
+  const [panel, setPanel] = useState<null | "info" | "add">(null);
+  const [custom, setCustom] = useState<Custom[]>([]);
 
-  const stops = NUMBERED.filter((s) => s.s === section);
+  // Add-place form.
+  const [query, setQuery] = useState("");
+  const [hits, setHits] = useState<Hit[] | null>(null);
+  const [searching, setSearching] = useState(false);
+  const [searchError, setSearchError] = useState(false);
+  const [draft, setDraft] = useState<{ lat: number; lon: number } | null>(null);
+  const [name, setName] = useState("");
+  const [time, setTime] = useState("");
+  const [note, setNote] = useState("");
+  const [target, setTarget] = useState(0);
+
+  // Read after mount, so the server render and the first client render agree.
+  useEffect(() => setCustom(loadCustom()), []);
+
+  const persist = (next: Custom[]) => {
+    setCustom(next);
+    localStorage.setItem(STORE, JSON.stringify(next));
+  };
+
+  const all = useMemo(() => toStops(custom), [custom]);
+  const pins = useMemo(() => toPins(all), [all]);
+  const byN = (n: number) => all.find((s) => s.n === n);
+  const stops = all.filter((s) => s.s === section);
 
   /** Keep pins clear of the header and the card strip, which both float over the map. */
   const pad = () => ({
@@ -73,26 +156,101 @@ export default function KlTrip() {
   });
 
   const fitSection = (i: number) => {
-    const pts = PINS.filter((p) => p.s === i).map((p) => [p.lat, p.lon]);
+    const pts = pins.filter((p) => p.s === i).map((p) => [p.lat, p.lon]);
     if (map.current && pts.length) map.current.fitBounds(pts, { ...pad(), maxZoom: 15 });
   };
 
   const pickSection = (i: number) => {
     setSection(i);
-    setActive(NUMBERED.find((s) => s.s === i)!.n);
+    setActive(all.find((s) => s.s === i)!.n);
     strip.current?.scrollTo({ left: 0 });
     fitSection(i);
   };
 
   const pickStop = (n: number) => {
-    const s = NUMBERED[n - 1].s;
+    const s = byN(n)?.s ?? section;
     scrollTo.current = { n, instant: s !== section };
     setSection(s);
     setActive(n);
   };
-  // Markers are bound once; route their clicks through the latest closure.
+
+  const openAdd = () => {
+    setPanel((p) => (p === "add" ? null : "add"));
+    setTarget(section);
+  };
+
+  const resetForm = () => {
+    setQuery("");
+    setHits(null);
+    setSearchError(false);
+    setDraft(null);
+    setName("");
+    setTime("");
+    setNote("");
+  };
+
+  const closePanel = () => {
+    setPanel(null);
+    resetForm();
+  };
+
+  const runSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!query.trim()) return;
+    setSearching(true);
+    setSearchError(false);
+    try {
+      setHits(await search(query.trim()));
+    } catch {
+      setHits(null);
+      setSearchError(true);
+    } finally {
+      setSearching(false);
+    }
+  };
+
+  const chooseHit = (h: Hit) => {
+    setDraft({ lat: h.lat, lon: h.lon });
+    setName(h.name);
+    setHits(null);
+    map.current?.setView([h.lat, h.lon], 16);
+  };
+
+  const save = () => {
+    if (!draft || !name.trim()) return;
+    const next: Custom[] = [
+      ...custom,
+      {
+        id: crypto.randomUUID(),
+        s: target,
+        name: name.trim(),
+        time: time.trim(),
+        note: note.trim(),
+        lat: draft.lat,
+        lon: draft.lon,
+      },
+    ];
+    persist(next);
+    const n = NUMBERED.length + next.length;
+    closePanel();
+    scrollTo.current = { n, instant: true };
+    setSection(target);
+    setActive(n);
+  };
+
+  const remove = (id: string) => {
+    const gone = all.find((s) => s.id === id);
+    persist(custom.filter((c) => c.id !== id));
+    if (gone?.n === active) setActive(NUMBERED.find((s) => s.s === section)!.n);
+  };
+
+  // Markers and the map are bound once; route their events through the latest closures.
   const pickStopRef = useRef(pickStop);
   pickStopRef.current = pickStop;
+  const mapClickRef = useRef((_lat: number, _lon: number) => {});
+  mapClickRef.current = (lat, lon) => {
+    if (panel === "add") setDraft({ lat, lon });
+  };
 
   useEffect(() => {
     let dead = false;
@@ -116,7 +274,9 @@ export default function KlTrip() {
         color: "#a3a3a3",
         fontSize: "10px",
       });
+      m.on("click", (e: any) => mapClickRef.current(e.latlng.lat, e.latlng.lng));
 
+      // The walking line follows the planned order, so it is drawn from the built-in stops only.
       SECTIONS.forEach((sec, i) => {
         if (!sec.path) return;
         const pts = NUMBERED.filter((s) => s.s === i && "lat" in s.where).map((s) => {
@@ -129,16 +289,10 @@ export default function KlTrip() {
         );
       });
 
-      for (const pin of PINS) {
-        const mk = L.marker([pin.lat, pin.lon], {
-          icon: L.divIcon({ className: "", html: pinHtml(pin, "off"), iconSize: [0, 0] }),
-        })
-          .on("click", () => pickStopRef.current(pin.ns[0]))
-          .addTo(m);
-        markers.current.set(pin.key, mk);
-      }
-
-      fitSection(0);
+      m.fitBounds(
+        toPins(NUMBERED).filter((p) => p.s === 0).map((p) => [p.lat, p.lon]),
+        { ...pad(), maxZoom: 15 },
+      );
       setReady(true);
     });
     return () => {
@@ -147,26 +301,58 @@ export default function KlTrip() {
       map.current = null;
       markers.current.clear();
       lines.current.clear();
+      draftMarker.current = null;
     };
     // Built once; later changes go through the refs.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Rebuild markers whenever the set of places changes.
+  useEffect(() => {
+    if (!ready || !map.current) return;
+    const L = (window as any).L;
+    markers.current.forEach((mk) => mk.remove());
+    markers.current.clear();
+    for (const pin of pins) {
+      const mk = L.marker([pin.lat, pin.lon], {
+        icon: L.divIcon({ className: "", html: pinHtml(pin, "off"), iconSize: [0, 0] }),
+      })
+        .on("click", () => pickStopRef.current(pin.ns[0]))
+        .addTo(map.current);
+      markers.current.set(pin.key, mk);
+    }
+  }, [ready, pins]);
+
   // Restyle pins for the current section and stop, and keep the active one in view.
   useEffect(() => {
     if (!ready || !map.current) return;
-    for (const pin of PINS) {
+    const L = (window as any).L;
+    for (const pin of pins) {
       const state: PinState = pin.ns.includes(active) ? "active" : pin.s === section ? "on" : "off";
       const mk = markers.current.get(pin.key);
-      mk.setIcon((window as any).L.divIcon({ className: "", html: pinHtml(pin, state), iconSize: [0, 0] }));
-      mk.setZIndexOffset(state === "active" ? 1000 : state === "on" ? 500 : 0);
+      mk?.setIcon(L.divIcon({ className: "", html: pinHtml(pin, state), iconSize: [0, 0] }));
+      mk?.setZIndexOffset(state === "active" ? 1000 : state === "on" ? 500 : 0);
     }
     lines.current.forEach((line, i) => line.setStyle({ opacity: i === section ? 0.8 : 0.2 }));
 
-    const where = NUMBERED[active - 1].where;
-    if ("lat" in where) map.current.panInside([where.lat, where.lon], pad());
+    const where = byN(active)?.where;
+    if (where && "lat" in where && panel !== "add") map.current.panInside([where.lat, where.lon], pad());
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, section, active]);
+  }, [ready, pins, section, active]);
+
+  // The pin being placed: a white "+" that follows search picks and map taps.
+  useEffect(() => {
+    if (!ready || !map.current) return;
+    const L = (window as any).L;
+    draftMarker.current?.remove();
+    draftMarker.current = draft
+      ? L.marker([draft.lat, draft.lon], {
+          icon: L.divIcon({ className: "", html: DRAFT_HTML, iconSize: [0, 0] }),
+          zIndexOffset: 2000,
+          interactive: false,
+        }).addTo(map.current)
+      : null;
+  }, [ready, draft]);
 
   // A pin tap (possibly in another section) brings its card to the middle of the strip.
   useEffect(() => {
@@ -176,7 +362,7 @@ export default function KlTrip() {
     strip.current
       ?.querySelector(`[data-n="${want.n}"]`)
       ?.scrollIntoView({ inline: "center", block: "nearest", behavior: want.instant ? "instant" : "smooth" });
-  }, [section, active]);
+  }, [section, active, custom]);
 
   // Swiping the strip selects whichever card settles in the middle.
   const settle = useRef<ReturnType<typeof setTimeout>>(undefined);
@@ -201,6 +387,9 @@ export default function KlTrip() {
   };
 
   const sec = SECTIONS[section];
+  // 16px text: iOS Safari zooms the page into any focused input smaller than that.
+  const field =
+    "min-w-0 flex-1 rounded-lg bg-white/5 px-3 py-2 text-base text-white placeholder:text-neutral-500 ring-1 ring-white/10 outline-none focus:ring-white/30";
 
   return (
     <main className="fixed inset-0 overflow-hidden bg-neutral-950 text-neutral-200">
@@ -212,23 +401,40 @@ export default function KlTrip() {
           ref={header}
           className="pointer-events-auto mx-auto max-w-xl rounded-xl bg-neutral-950/80 p-3 shadow-lg ring-1 ring-white/10 backdrop-blur-md"
         >
-          <div className="flex items-start justify-between gap-3">
-            <div>
+          <div className="flex items-start justify-between gap-2">
+            <div className="min-w-0">
               <p className="text-[11px] text-neutral-400">Friday, 9 October 2026</p>
-              <h1 className="font-semibold tracking-tight text-white">Kuala Lumpur day trip</h1>
+              <h1 className="font-semibold tracking-tight text-white">
+                {panel === "add" ? "Add a place" : "Kuala Lumpur day trip"}
+              </h1>
             </div>
-            <button
-              onClick={() => setInfo((v) => !v)}
-              aria-expanded={info}
-              className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium ring-1 transition ${
-                info ? "bg-amber-400 text-amber-950 ring-amber-400" : "text-amber-300 ring-amber-400/40"
-              }`}
-            >
-              {info ? "Close" : "Before Friday"}
-            </button>
+            {panel ? (
+              <button
+                onClick={closePanel}
+                className="shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-medium text-neutral-200 ring-1 ring-white/20"
+              >
+                Close
+              </button>
+            ) : (
+              <div className="flex shrink-0 gap-1.5">
+                <button
+                  onClick={openAdd}
+                  aria-label="Add a place"
+                  className="flex h-[30px] w-[30px] items-center justify-center rounded-lg text-lg leading-none text-white ring-1 ring-white/20"
+                >
+                  +
+                </button>
+                <button
+                  onClick={() => setPanel("info")}
+                  className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-amber-300 ring-1 ring-amber-400/40"
+                >
+                  Before Friday
+                </button>
+              </div>
+            )}
           </div>
 
-          {info ? (
+          {panel === "info" && (
             <div className="mt-3 max-h-[60dvh] overflow-y-auto text-sm leading-relaxed">
               <ul className="list-disc space-y-1.5 pl-5 text-neutral-200">
                 {BEFORE.map((b) => (
@@ -236,7 +442,8 @@ export default function KlTrip() {
                 ))}
               </ul>
               <p className="mt-3 text-xs text-neutral-400">
-                Merdeka 118 has no exact coordinates, so it has a card but no pin.
+                Merdeka 118 has no exact coordinates, so it has a card but no pin. Places you add are
+                saved in this browser only.
               </p>
               <h2 className="mt-4 text-[11px] font-medium uppercase tracking-wide text-neutral-500">Sources</h2>
               <ul className="mt-1 space-y-1 text-xs">
@@ -249,7 +456,89 @@ export default function KlTrip() {
                 ))}
               </ul>
             </div>
-          ) : (
+          )}
+
+          {panel === "add" && (
+            <div className="mt-3 max-h-[55dvh] space-y-3 overflow-y-auto">
+              <form onSubmit={runSearch} className="flex gap-2">
+                <input
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Search a place in KL"
+                  enterKeyHint="search"
+                  className={field}
+                />
+                <button
+                  type="submit"
+                  disabled={searching}
+                  className="shrink-0 rounded-lg bg-white/10 px-3 text-sm font-medium text-white disabled:opacity-50"
+                >
+                  {searching ? "…" : "Search"}
+                </button>
+              </form>
+
+              {searchError && <p className="text-xs text-red-300">Search failed — try again, or tap the map.</p>}
+              {hits && hits.length === 0 && <p className="text-xs text-neutral-400">No results. Tap the map instead.</p>}
+              {hits && hits.length > 0 && (
+                <ul className="overflow-hidden rounded-lg ring-1 ring-white/10">
+                  {hits.map((h, i) => (
+                    <li key={`${h.lat},${h.lon},${i}`}>
+                      <button
+                        onClick={() => chooseHit(h)}
+                        className="block w-full border-b border-white/5 px-3 py-2 text-left last:border-0 hover:bg-white/5"
+                      >
+                        <span className="block text-sm text-white">{h.name}</span>
+                        <span className="block truncate text-xs text-neutral-500">{h.sub}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              <p className="text-xs text-neutral-400">
+                {draft
+                  ? "Pin placed. Tap the map to move it."
+                  : "Or tap anywhere on the map to drop a pin."}
+              </p>
+
+              <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" className={`${field} w-full`} />
+
+              <div className="grid grid-cols-4 gap-1.5">
+                {SECTIONS.map((s, i) => (
+                  <button
+                    key={s.key}
+                    onClick={() => setTarget(i)}
+                    className={`flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-xs font-medium transition ${
+                      i === target ? "bg-white/10 text-white ring-1 ring-white/20" : "text-neutral-400"
+                    }`}
+                  >
+                    <span className="h-2 w-2 rounded-sm" style={{ background: s.color }} />
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+
+              <div className="flex gap-2">
+                <input
+                  value={time}
+                  onChange={(e) => setTime(e.target.value)}
+                  placeholder="Time"
+                  className={`${field} w-24 flex-none`}
+                />
+                <input value={note} onChange={(e) => setNote(e.target.value)} placeholder="Note (optional)" className={field} />
+              </div>
+
+              <button
+                onClick={save}
+                disabled={!draft || !name.trim()}
+                className="w-full rounded-lg bg-white py-2 text-sm font-semibold text-neutral-950 disabled:bg-white/10 disabled:text-neutral-500"
+              >
+                {draft ? (name.trim() ? "Add to the plan" : "Give it a name") : "Pick a location first"}
+              </button>
+            </div>
+          )}
+
+          {!panel && (
             <>
               <div className="mt-3 grid grid-cols-4 gap-1.5">
                 {SECTIONS.map((s, i) => (
@@ -271,7 +560,12 @@ export default function KlTrip() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1000] pb-[calc(env(safe-area-inset-bottom)+22px)]">
+      {/* Hidden while adding, so the map is free to tap. */}
+      <div
+        className={`pointer-events-none absolute inset-x-0 bottom-0 z-[1000] pb-[calc(env(safe-area-inset-bottom)+22px)] transition-opacity ${
+          panel === "add" ? "invisible opacity-0" : ""
+        }`}
+      >
         <div
           ref={strip}
           onScroll={onScroll}
@@ -305,11 +599,13 @@ export default function KlTrip() {
                 </div>
                 <h3 className="mt-2 font-semibold text-white">{stop.name}</h3>
                 {stop.walk && <p className="mt-0.5 text-xs text-neutral-500">↓ {stop.walk}</p>}
-                <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-neutral-300">
-                  {stop.notes.map((n) => (
-                    <li key={n}>{n}</li>
-                  ))}
-                </ul>
+                {stop.notes.length > 0 && (
+                  <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-neutral-300">
+                    {stop.notes.map((n) => (
+                      <li key={n}>{n}</li>
+                    ))}
+                  </ul>
+                )}
                 <div className="mt-3 flex items-center gap-3">
                   <a
                     href={mapsHref(stop.where)}
@@ -321,6 +617,17 @@ export default function KlTrip() {
                     Open in Google Maps
                   </a>
                   {!pinned && <span className="text-xs text-neutral-500">Not pinned</span>}
+                  {stop.id && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (confirm(`Remove ${stop.name}?`)) remove(stop.id!);
+                      }}
+                      className="ml-auto rounded-lg px-2.5 py-1.5 text-xs font-medium text-red-300 ring-1 ring-red-400/30 hover:bg-red-400/10"
+                    >
+                      Remove
+                    </button>
+                  )}
                 </div>
               </article>
             );
