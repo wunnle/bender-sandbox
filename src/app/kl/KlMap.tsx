@@ -48,9 +48,15 @@ export default function KlMap({ pins, path = false }: { pins: Pin[]; path?: bool
     loadLeaflet().then((L) => {
       if (dead || !el.current) return;
       map = L.map(el.current, { scrollWheelZoom: false, attributionControl: true });
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-        attribution: "© OpenStreetMap contributors © CARTO",
-        maxZoom: 19,
+      // Esri's dark canvas needs no key (CARTO's now watermarks "API KEY REQUIRED").
+      // Base and labels are separate layers; the reference layer adds street names.
+      const esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas";
+      L.tileLayer(`${esri}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+        attribution: "Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors",
+        maxZoom: 16,
+      }).addTo(map);
+      L.tileLayer(`${esri}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, {
+        maxZoom: 16,
       }).addTo(map);
 
       if (path) {
