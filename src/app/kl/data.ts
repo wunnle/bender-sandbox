@@ -149,7 +149,7 @@ export const SECTIONS: Section[] = [
           "World's second-tallest building, a few minutes from Jalan Pasar.",
           "Deck was expected in 2026, but most of the tower was still closed as of July. Confirm it's open first.",
         ],
-        where: { q: "Merdeka 118, Kuala Lumpur" },
+        where: { lat: 3.14162, lon: 101.70069 },
       },
       {
         time: "1.5–2h",

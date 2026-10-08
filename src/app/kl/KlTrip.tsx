@@ -135,6 +135,8 @@ export default function KlTrip() {
   const [time, setTime] = useState("");
   const [note, setNote] = useState("");
   const [target, setTarget] = useState(0);
+  /** Id of the added place being edited; null when adding a new one. */
+  const [editing, setEditing] = useState<string | null>(null);
 
   // Read after mount, so the server render and the first client render agree.
   useEffect(() => setCustom(loadCustom()), []);
@@ -187,6 +189,21 @@ export default function KlTrip() {
     setName("");
     setTime("");
     setNote("");
+    setEditing(null);
+  };
+
+  const openEdit = (id: string) => {
+    const c = custom.find((x) => x.id === id);
+    if (!c) return;
+    resetForm();
+    setEditing(id);
+    setDraft({ lat: c.lat, lon: c.lon });
+    setName(c.name);
+    setTime(c.time);
+    setNote(c.note);
+    setTarget(c.s);
+    setPanel("add");
+    map.current?.setView([c.lat, c.lon], 16);
   };
 
   const closePanel = () => {
@@ -218,20 +235,19 @@ export default function KlTrip() {
 
   const save = () => {
     if (!draft || !name.trim()) return;
-    const next: Custom[] = [
-      ...custom,
-      {
-        id: crypto.randomUUID(),
-        s: target,
-        name: name.trim(),
-        time: time.trim(),
-        note: note.trim(),
-        lat: draft.lat,
-        lon: draft.lon,
-      },
-    ];
+    const place: Custom = {
+      id: editing ?? crypto.randomUUID(),
+      s: target,
+      name: name.trim(),
+      time: time.trim(),
+      note: note.trim(),
+      lat: draft.lat,
+      lon: draft.lon,
+    };
+    // Editing replaces in place, so the place keeps its number.
+    const next = editing ? custom.map((c) => (c.id === editing ? place : c)) : [...custom, place];
     persist(next);
-    const n = NUMBERED.length + next.length;
+    const n = NUMBERED.length + next.findIndex((c) => c.id === place.id) + 1;
     closePanel();
     scrollTo.current = { n, instant: true };
     setSection(target);
@@ -405,7 +421,7 @@ export default function KlTrip() {
             <div className="min-w-0">
               <p className="text-[11px] text-neutral-400">Friday, 9 October 2026</p>
               <h1 className="font-semibold tracking-tight text-white">
-                {panel === "add" ? "Add a place" : "Kuala Lumpur day trip"}
+                {panel === "add" ? (editing ? "Edit place" : "Add a place") : "Kuala Lumpur day trip"}
               </h1>
             </div>
             {panel ? (
@@ -442,8 +458,7 @@ export default function KlTrip() {
                 ))}
               </ul>
               <p className="mt-3 text-xs text-neutral-400">
-                Merdeka 118 has no exact coordinates, so it has a card but no pin. Places you add are
-                saved in this browser only.
+                Places you add are saved in this browser only.
               </p>
               <h2 className="mt-4 text-[11px] font-medium uppercase tracking-wide text-neutral-500">Sources</h2>
               <ul className="mt-1 space-y-1 text-xs">
@@ -533,7 +548,13 @@ export default function KlTrip() {
                 disabled={!draft || !name.trim()}
                 className="w-full rounded-lg bg-white py-2 text-sm font-semibold text-neutral-950 disabled:bg-white/10 disabled:text-neutral-500"
               >
-                {draft ? (name.trim() ? "Add to the plan" : "Give it a name") : "Pick a location first"}
+                {!draft
+                  ? "Pick a location first"
+                  : !name.trim()
+                    ? "Give it a name"
+                    : editing
+                      ? "Save changes"
+                      : "Add to the plan"}
               </button>
             </div>
           )}
@@ -618,15 +639,26 @@ export default function KlTrip() {
                   </a>
                   {!pinned && <span className="text-xs text-neutral-500">Not pinned</span>}
                   {stop.id && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        if (confirm(`Remove ${stop.name}?`)) remove(stop.id!);
-                      }}
-                      className="ml-auto rounded-lg px-2.5 py-1.5 text-xs font-medium text-red-300 ring-1 ring-red-400/30 hover:bg-red-400/10"
-                    >
-                      Remove
-                    </button>
+                    <div className="ml-auto flex gap-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openEdit(stop.id!);
+                        }}
+                        className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-neutral-200 ring-1 ring-white/15 hover:bg-white/5"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (confirm(`Remove ${stop.name}?`)) remove(stop.id!);
+                        }}
+                        className="rounded-lg px-2.5 py-1.5 text-xs font-medium text-red-300 ring-1 ring-red-400/30 hover:bg-red-400/10"
+                      >
+                        Remove
+                      </button>
+                    </div>
                   )}
                 </div>
               </article>
