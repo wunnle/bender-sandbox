@@ -48,11 +48,18 @@ export default function KlMap({ pins, path = false }: { pins: Pin[]; path?: bool
     loadLeaflet().then((L) => {
       if (dead || !el.current) return;
       map = L.map(el.current, { scrollWheelZoom: false, attributionControl: true });
+      // Leaflet's stock credit bar is a white strip; keep it one quiet dark line.
+      map.attributionControl.setPrefix(false);
+      Object.assign(map.attributionControl.getContainer().style, {
+        background: "rgba(10,10,10,0.7)",
+        color: "#a3a3a3",
+        fontSize: "10px",
+      });
       // Esri's dark canvas needs no key (CARTO's now watermarks "API KEY REQUIRED").
       // Base and labels are separate layers; the reference layer adds street names.
       const esri = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas";
       L.tileLayer(`${esri}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
-        attribution: "Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors",
+        attribution: "© Esri, © OpenStreetMap",
         maxZoom: 16,
       }).addTo(map);
       L.tileLayer(`${esri}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, {
