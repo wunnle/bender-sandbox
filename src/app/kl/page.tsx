@@ -1,3 +1,5 @@
+import KlMap, { type Pin } from "./KlMap";
+
 type Stop = {
   time: string;
   name: string;
@@ -169,7 +171,7 @@ const SOURCES: [string, string][] = [
   ["Merdeka 118 (Wikipedia)", "https://en.wikipedia.org/wiki/Merdeka_118"],
 ];
 
-function StopCard({ s }: { s: Stop }) {
+function StopCard({ s, n }: { s: Stop; n: number }) {
   return (
     <li>
       {s.walk && <p className="mb-2 pl-[5rem] text-xs text-neutral-500">↓ {s.walk}</p>}
@@ -181,7 +183,14 @@ function StopCard({ s }: { s: Stop }) {
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="text-xs font-medium uppercase tracking-wide text-emerald-400">{s.kind}</p>
-              <h3 className="mt-1 font-semibold text-white">{s.name}</h3>
+              <h3 className="mt-1 flex items-center gap-2 font-semibold text-white">
+                {"lat" in s.where && (
+                  <span className="flex h-5 min-w-5 items-center justify-center rounded-md bg-emerald-400 px-1 font-mono text-[11px] text-emerald-950">
+                    {n}
+                  </span>
+                )}
+                {s.name}
+              </h3>
             </div>
             <a
               href={maps(s.where)}
@@ -203,14 +212,30 @@ function StopCard({ s }: { s: Stop }) {
   );
 }
 
-function Section({ title, sub, stops }: { title: string; sub?: string; stops: Stop[] }) {
+function Section({
+  title,
+  sub,
+  stops,
+  path,
+}: {
+  title: string;
+  sub?: string;
+  stops: Stop[];
+  /** Draw the stops in order as a line — only meaningful for the walking loop. */
+  path?: boolean;
+}) {
+  // Stops with only a search query have no coordinates, so they stay off the map.
+  const pins: Pin[] = stops.flatMap((s, i) =>
+    "lat" in s.where ? [{ n: i + 1, name: s.name, lat: s.where.lat, lon: s.where.lon }] : [],
+  );
   return (
     <section className="mt-10">
       <h2 className="text-lg font-semibold tracking-tight text-white">{title}</h2>
       {sub && <p className="mt-1 text-sm text-neutral-400">{sub}</p>}
+      {pins.length > 0 && <KlMap pins={pins} path={path} />}
       <ol className="mt-4 space-y-3">
         {stops.map((s, i) => (
-          <StopCard key={`${s.name}-${i}`} s={s} />
+          <StopCard key={`${s.name}-${i}`} s={s} n={i + 1} />
         ))}
       </ol>
     </section>
@@ -237,7 +262,7 @@ export default function KlPage() {
           </ul>
         </section>
 
-        <Section title="Morning loop" sub="On foot, while the phone is in repair." stops={LOOP} />
+        <Section title="Morning loop" sub="On foot, while the phone is in repair." stops={LOOP} path />
         <Section title="Board games" stops={AFTERNOON} />
         <Section
           title="Sights"
