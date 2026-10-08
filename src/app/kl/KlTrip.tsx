@@ -236,7 +236,7 @@ export default function KlTrip() {
                 ))}
               </ul>
               <p className="mt-3 text-xs text-neutral-400">
-                Meeples and Merdeka 118 have no exact coordinates, so they have cards but no pins.
+                Merdeka 118 has no exact coordinates, so it has a card but no pin.
               </p>
               <h2 className="mt-4 text-[11px] font-medium uppercase tracking-wide text-neutral-500">Sources</h2>
               <ul className="mt-1 space-y-1 text-xs">
