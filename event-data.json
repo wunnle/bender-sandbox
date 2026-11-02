@@ -15,6 +15,23 @@
   },
   "events": [
     {
+      "days": ["2026-11-03"],
+      "title": "Aşk ve Yaşam",
+      "kind": "film",
+      "time": "13:00",
+      "venue": "Kadıköy Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/ask-ve-yasam?cinemaBranchId=5603",
+      "availability": "listed",
+      "note": "Session opens the ticket login; seat availability and price were not verified.",
+      "owned": false,
+      "formats": ["Türkçe Altyazılı"],
+      "duration": "131 dakika",
+      "genre": "Dram",
+      "director": "Georgia Oakley"
+    },
+    {
       "days": [
         "2026-09-29"
       ],
@@ -1434,8 +1451,16 @@
   ],
   "cinemas": [],
   "omitted_records": 3,
-  "research_note": "Partial refresh: Bostancı Gösteri Merkezi verified on Biletix. Cinema programmes exist but the source format changed and screening times were not verified; no new cinema sessions are claimed. Previous expired records are retained for preservation. Other preferred venues have not been fully inventoried.",
+  "research_note": "Partial refresh: Bostancı Gösteri Merkezi verified on Biletix. One Kadıköy Sineması screening was verified on Biletinial; purchase requires login and seat availability was not verified. Other cinema sessions and preferred venues have not been fully inventoried. Previous expired records are retained for preservation.",
   "sources": [
+    {
+      "provider": "Biletinial",
+      "kind": "venue",
+      "venue": "Kadıköy Sineması",
+      "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
+      "checkedAt": "2026-11-02",
+      "note": "Partial inventory; one screening checked on its film detail page."
+    },
     {
       "provider": "Biletix",
       "kind": "venue",
