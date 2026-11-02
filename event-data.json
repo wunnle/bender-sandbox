@@ -34,7 +34,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -57,7 +58,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -78,7 +80,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -102,7 +105,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -126,7 +130,8 @@
       "director": "Georgia Oakley",
       "times": [
         "13:00"
-      ]
+      ],
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -148,7 +153,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -172,7 +178,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -193,7 +200,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -215,7 +223,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -237,7 +246,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -258,7 +268,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
     },
     {
       "title": "Bozkır - Payidar Muhtar",
@@ -273,7 +284,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/bozkir-tiyatro-oyunu/18674373",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/bozkir-tiyatro-oyunu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bozkir-20264181931165fdffe0771e047c492d8f3f3159870a6.jpg"
     },
     {
       "title": "Sesler - Salih Bademci",
@@ -288,7 +300,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci/18676150",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/sesler-salih-bademci",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sesler-salih-bademci-202596142029591985ab928422196f27959cbddfb8a.jpg"
     },
     {
       "title": "Ölü Ozanlar Derneği",
@@ -303,7 +316,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/olu-ozanlar-dernegi-bsmkt/18465221",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/olu-ozanlar-dernegi-bsmkt",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/olu-ozanlar-dernegi-20251214102351cce293c736aa401b92c864af01d93ed9.png"
     },
     {
       "days": [
@@ -324,7 +338,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/digger-202691416441aaf211f694c44db9839d9a3656d1b930.png"
     },
     {
       "days": [
@@ -345,7 +360,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sari-zarflar-20263169461947a20e76c61e43068a1bd0cbea80f5c3.png"
     },
     {
       "days": [
@@ -366,7 +382,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-doors-2025918144299fc9a473e1534760a51f26ee48fef912.jpg"
     },
     {
       "days": [
@@ -388,7 +405,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -411,7 +429,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -432,7 +451,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -456,7 +476,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -477,7 +498,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -498,7 +520,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -522,7 +545,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -543,7 +567,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -565,7 +590,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -587,7 +613,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -608,7 +635,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
     },
     {
       "days": [
@@ -629,7 +657,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-ayrilik-202092411712.jpg"
     },
     {
       "days": [
@@ -644,7 +673,8 @@
       "url": "https://www.biletix.com/etkinlik/5MN68/TURKIYE/tr/profesyonel-04-11-2026-istanbul",
       "availability": "available",
       "owned": true,
-      "note": "Ticket ownership confirmed by calendar."
+      "note": "Ticket ownership confirmed by calendar.",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5MN49-bu26.png"
     },
     {
       "title": "Terapist",
@@ -659,7 +689,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/terapist/18722667",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/terapist",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/terapist-20268271619191af94f350b464194bf7dc93fb41734d2.jpg"
     },
     {
       "title": "Veda Yemeği",
@@ -674,7 +705,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/veda-yemegi/18668531",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/veda-yemegi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/veda-yemegi-2026825145844ec1d6f06b6b54057912d37e8420e82b3.png"
     },
     {
       "days": [
@@ -695,7 +727,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/digger-202691416441aaf211f694c44db9839d9a3656d1b930.png"
     },
     {
       "days": [
@@ -716,7 +749,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsinin-kalbi-202610291053070673bf5b2642818f8498759f8940e2.png"
     },
     {
       "days": [
@@ -738,7 +772,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -761,7 +796,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -782,7 +818,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -806,7 +843,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -827,7 +865,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -848,7 +887,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -872,7 +912,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -893,7 +934,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -915,7 +957,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -938,7 +981,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -959,7 +1003,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/odyssey-20266151833235d1984e9d9b9446a9e30f746f56bf534.jpg"
     },
     {
       "title": "Ali Poyrazoğlu 'Şıngır Şıngır Beyoğlu",
@@ -974,7 +1019,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ali-poyrazoglu-singir-singir-beyoglu/18526061",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ali-poyrazoglu-singir-singir-beyoglu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/264829f20756435a801fdf5fa58238db.jpg"
     },
     {
       "days": [
@@ -995,7 +1041,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/amator-1979-202610151536d42ac116a8044dd5a3b62eb7350c1add.jpg"
     },
     {
       "title": "Hayal Satıcısı",
@@ -1010,7 +1057,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/hayal-saticisi/18661899",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/hayal-saticisi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hayal-saticisi-20259916283672ff27d844264416927c8c68d1fcd571.jpg"
     },
     {
       "title": "Herkes Kocama Benziyor",
@@ -1025,7 +1073,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/herkes-kocama-benziyor/18756160",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/herkes-kocama-benziyor",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/herkes-kocama-benziyor-20261012152825432ae0f7b7944c2597c17a47ebb20ead.jpg"
     },
     {
       "days": [
@@ -1046,7 +1095,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/digger-202691416441aaf211f694c44db9839d9a3656d1b930.png"
     },
     {
       "days": [
@@ -1067,7 +1117,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/amator-1979-202610151536d42ac116a8044dd5a3b62eb7350c1add.jpg"
     },
     {
       "days": [
@@ -1088,7 +1139,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -1109,7 +1161,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -1135,7 +1188,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -1158,7 +1212,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -1179,7 +1234,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -1203,7 +1259,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -1226,7 +1283,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -1247,7 +1305,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -1270,7 +1329,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -1293,7 +1353,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "title": "En İyi İkinci",
@@ -1308,7 +1369,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/en-iyi-ikinci/18719586",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/en-iyi-ikinci",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-iyi-ikinci-20261291627869a3811fb2474d278901074cfde42485.jpg"
     },
     {
       "title": "Evlilikte Ufak Tefek Cinayetler",
@@ -1323,7 +1385,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/evlilikte-ufak-tefek-cinayetler-aysa/18725050",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/evlilikte-ufak-tefek-cinayetler-aysa",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/evlilikte-ufak-tefek-cinayetler-aysa-202582815335bb8692fb95974464b9f68e0095f62f9e.jpg"
     },
     {
       "title": "Geceyarısı Hayaleti",
@@ -1338,7 +1401,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/geceyarisi-hayaleti/18793330",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/geceyarisi-hayaleti",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/geceyarisi-hayaleti-20261027225546c292a119b48485d8f6084ff47e622c3.jpg"
     },
     {
       "days": [
@@ -1359,7 +1423,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Othello",
@@ -1374,7 +1439,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/othello-/18752093",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/othello-",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/othello-202495131465d1eb48411014420930f8465e7464672.jpg"
     },
     {
       "days": [
@@ -1395,7 +1461,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -1410,7 +1477,8 @@
       "url": "https://www.biletix.com/etkinlik/5TMT4/TURKIYE/tr/karm6-06-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5TMT4-BOSTANCIOZEL-GORSEL.png"
     },
     {
       "days": [
@@ -1432,7 +1500,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -1455,7 +1524,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -1476,7 +1546,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "title": "3D Hologram Sirki",
@@ -1491,7 +1562,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki/18455580",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1513,7 +1585,8 @@
       "formats": [
         "Türkçe Dublaj"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-mamut-202610715173005acc2e0fb7740cca9d98239d88a5cb3.jpg"
     },
     {
       "days": [
@@ -1537,7 +1610,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -1563,7 +1637,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "title": "3D Hologram Sirki",
@@ -1578,7 +1653,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki/18455581",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/3d-hologram-sirki",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/3d-hologram-sirki-202595211759369f0719102f4d12979794c377897bb4.png"
     },
     {
       "days": [
@@ -1601,7 +1677,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -1623,7 +1700,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -1646,7 +1724,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -1667,7 +1746,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Her Şeyden Önce Hiçbir Yerde",
@@ -1682,7 +1762,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/her-seyden-once-hicbir-yerde/18715776",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/her-seyden-once-hicbir-yerde",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-seyden-once-hicbir-yerde-2026918141813a5298da3ae824c4d89366c85d15b9b26.jpg"
     },
     {
       "title": "Jan Dark'ın Öteki Ölümü",
@@ -1697,7 +1778,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/jean-darcin-oteki-olumu/18721971",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/jean-darcin-oteki-olumu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/jan-darkin-oteki-olumu-2025931857435b3693cb38d3440e860304e2f2409b09.jpg"
     },
     {
       "days": [
@@ -1712,7 +1794,8 @@
       "url": "https://www.biletix.com/etkinlik/5MN79/TURKIYE/tr/saatleri-ayarlama-enstitusu-07-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5MN01-saatleriayarlabu26.png"
     },
     {
       "days": [
@@ -1735,7 +1818,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -1756,7 +1840,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "title": "Küçük Kara Balık",
@@ -1771,7 +1856,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-kara-balik-bkt/18664037",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kucuk-kara-balik-bkt",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-kara-balik-20221212172546.png"
     },
     {
       "title": "Rapunzel'in Mutfak Hikayesi",
@@ -1786,7 +1872,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi/18691774",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/rapunzelin-mutfak-hikayesi-20261051528344f27c21f12cc44778b4b856d9c8d4168.jpg"
     },
     {
       "days": [
@@ -1808,7 +1895,8 @@
       "formats": [
         "Türkçe Dublaj"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-mamut-202610715173005acc2e0fb7740cca9d98239d88a5cb3.jpg"
     },
     {
       "days": [
@@ -1832,7 +1920,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "title": "Kayıp Aslan Kardeşler",
@@ -1847,7 +1936,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler/18693072",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kayip-aslan-kardesler-20251018133521ff0068c5a5b447b0a668cf71532e70c6.jpg"
     },
     {
       "days": [
@@ -1871,7 +1961,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -1893,7 +1984,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Küçük Kara Balık",
@@ -1908,7 +2000,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kucuk-kara-balik-bkt/18664038",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kucuk-kara-balik-bkt",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-kara-balik-20221212172546.png"
     },
     {
       "title": "Rapunzel'in Mutfak Hikayesi",
@@ -1923,7 +2016,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi/18691776",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/rapunzelin-mutfak-hikayesi-20261051528344f27c21f12cc44778b4b856d9c8d4168.jpg"
     },
     {
       "days": [
@@ -1946,7 +2040,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "title": "Seyfi Bey",
@@ -1961,7 +2056,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey/18671283",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seyfi-bey-20249111416500c1c3ece25f9464a878ca70fc2e325be.jpg"
     },
     {
       "days": [
@@ -1984,7 +2080,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "title": "Doğu Ekspresinde Cinayet",
@@ -1999,7 +2096,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/dogu-ekspresinde-cinayet-/18699521",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/dogu-ekspresinde-cinayet-",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/dogu-ekspresinde-cinayet-2026828173908ecb8a69230248f5a162a9303eaa8c14.jpg"
     },
     {
       "title": "Woyzeck",
@@ -2014,7 +2112,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/woyzeck-tiyatro-oyunu/18643706",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/woyzeck-tiyatro-oyunu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/woyzeck-tiyatro-oyunu-202692410305836a5062ee82348259305aac2a0707a9b.jpg"
     },
     {
       "title": "Seyfi Bey",
@@ -2029,7 +2128,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey/18671512",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seyfi-bey-20249111416500c1c3ece25f9464a878ca70fc2e325be.jpg"
     },
     {
       "days": [
@@ -2050,7 +2150,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Pınar Fidan Stand Up",
@@ -2065,7 +2166,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne/18766240",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pinar-fidan-stand-up-20253617267070cd7b86b214139ac1a41c0d33f486e.jpg"
     },
     {
       "days": [
@@ -2086,7 +2188,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -2107,7 +2210,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -2132,7 +2236,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2154,7 +2259,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -2177,7 +2283,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -2198,7 +2305,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -2222,7 +2330,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2244,7 +2353,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -2265,7 +2375,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -2288,7 +2399,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -2311,7 +2423,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -2332,7 +2445,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Hizmetçiler",
@@ -2347,7 +2461,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/hizmetciler/18794891",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/hizmetciler",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/hizmetciler-202542163235a68f95e8c0d4b28904ac177870d0f47.jpg"
     },
     {
       "title": "Özgür Turhan - Yepyenisi",
@@ -2362,7 +2477,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi/18651711",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ozgur-turhan-yepyenisi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ozgur-turhan-yepyenisi-2026130175056babb6b85a98147238ce997fcc8092e0f.jpg"
     },
     {
       "days": [
@@ -2383,7 +2499,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -2404,7 +2521,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -2429,7 +2547,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2452,7 +2571,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -2473,7 +2593,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -2497,7 +2618,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2519,7 +2641,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -2540,7 +2663,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -2563,7 +2687,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -2586,7 +2711,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -2607,7 +2733,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Macbeth",
@@ -2622,7 +2749,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu/18792674",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/macbeth-trajedi-tiyatro-oyunu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/macbeth-moda-sahnesi-202411410643d923fcd44fac4dc98898eb737709422e.jpg"
     },
     {
       "title": "Seninle Evlenir Miyim?",
@@ -2637,7 +2765,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/seninle-evlenir-miyim-tiyatro-oyunu/18718606",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/seninle-evlenir-miyim-tiyatro-oyunu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seninle-evlenir-miyim-tiyatro-oyunu-20262261314432408200c3c074600bb889a7edd192d90.jpg"
     },
     {
       "title": "Yerma",
@@ -2652,7 +2781,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/yerma-tiyatro/18491666",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/yerma-tiyatro",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/yerma-tiyatro-2026312135323088146a40d90409591701e72423cf1e8.jpg"
     },
     {
       "days": [
@@ -2673,7 +2803,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -2694,7 +2825,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -2715,7 +2847,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -2740,7 +2873,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2763,7 +2897,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -2784,7 +2919,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -2808,7 +2944,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -2830,7 +2967,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -2851,7 +2989,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -2874,7 +3013,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "title": "Abdullah, Konuş!",
@@ -2889,7 +3029,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus/18798161",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/abdullah-konus",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/abdullah-konus-2026941038420b5c63447b114f5cbc523a12902e7faf.jpg"
     },
     {
       "title": "Annemin Odası",
@@ -2904,7 +3045,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/annemin-odasi/18692796",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/annemin-odasi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/annemin-odasi-2026421334961c0b9e6ceef4313902ce8a26f0c37a6.jpg"
     },
     {
       "title": "Eşyanın Tabiatı",
@@ -2919,7 +3061,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/esyanin-tabiati/18725067",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/esyanin-tabiati",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/esyanin-tabiati-202510210135916acb8c53ba488689a81fba566cb765.jpg"
     },
     {
       "days": [
@@ -2940,7 +3083,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "İçimizdeki Şeytan",
@@ -2955,7 +3099,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/icimizdeki-seytan/18695731",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/icimizdeki-seytan",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/icimizdeki-seytan-20241120102417006a1be2c9ea4186ba31d4dbc34ddde6.jpeg"
     },
     {
       "title": "Şirreti Evcilleştirmek",
@@ -2970,7 +3115,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek/18759509",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png"
     },
     {
       "days": [
@@ -2991,7 +3137,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/the-audience-20261023201752312a991859946f29ce554b8099f96e4.jpg"
     },
     {
       "days": [
@@ -3012,7 +3159,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kralice-zor-durumda-20269221754290fc1b262de31466c9dbf857e3e9bd04d.jpg"
     },
     {
       "days": [
@@ -3033,7 +3181,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "days": [
@@ -3058,7 +3207,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -3081,7 +3231,8 @@
       "formats": [
         "Türkçe"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
     },
     {
       "days": [
@@ -3102,7 +3253,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
     },
     {
       "days": [
@@ -3126,7 +3278,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
     },
     {
       "days": [
@@ -3148,7 +3301,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "days": [
@@ -3169,7 +3323,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
     },
     {
       "days": [
@@ -3191,7 +3346,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
     },
     {
       "days": [
@@ -3214,7 +3370,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
     },
     {
       "title": "Evaristo",
@@ -3229,7 +3386,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/evaristo/18727522",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/evaristo",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/evaristo-20241169297f523962a078f4b74b2b842054fec734b.png"
     },
     {
       "title": "Ballı Süt",
@@ -3244,7 +3402,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/balli-sut/18657454",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/balli-sut",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/balli-sut-20262261419194699d451be5742e8a64a6d697f62bb73.jpg"
     },
     {
       "title": "Her Şey Biraz Yalan",
@@ -3259,7 +3418,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/her-sey-biraz-yalan/18725092",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/her-sey-biraz-yalan",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-biraz-yalan-202610151341335a4129452afc4eacb3158f28d4bde59a.jpg"
     },
     {
       "days": [
@@ -3280,7 +3440,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
     },
     {
       "title": "Şirreti Evcilleştirmek",
@@ -3295,7 +3456,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek/18759510",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png"
     },
     {
       "days": [
@@ -3316,7 +3478,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bagla-beni-2026101515225699a9437bf618401e92a37faab0a78bc9.png"
     },
     {
       "days": [
@@ -3331,7 +3494,8 @@
       "url": "https://www.biletix.com/etkinlik/55AN8/TURKIYE/tr/guldur-guldur-show-12-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/guldurguldurshow-13-10-26-su.png"
     },
     {
       "days": [
@@ -3352,7 +3516,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bagla-beni-2026101515225699a9437bf618401e92a37faab0a78bc9.png"
     },
     {
       "title": "Uzun Mesafe Koşucusunun Yalnızlığı",
@@ -3367,7 +3532,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/uzun-mesafe-kosucusunun-yalnizligi-bilet/18798252",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/uzun-mesafe-kosucusunun-yalnizligi-bilet",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/uzun-mesafe-kosucusunun-yalnizligi-2026428153722694224b1d0274664ba5be15108d10671.jpg"
     },
     {
       "title": "Ali Poyrazoğlu 'Şıngır Şıngır Beyoğlu",
@@ -3382,7 +3548,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ali-poyrazoglu-singir-singir-beyoglu/18725028",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ali-poyrazoglu-singir-singir-beyoglu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/264829f20756435a801fdf5fa58238db.jpg"
     },
     {
       "title": "Olağanüstü Bir Gece",
@@ -3397,7 +3564,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/olaganustu-bir-gece/18725923",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/olaganustu-bir-gece",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/olaganustu-bir-gece-202651619482554a3b287ac9f4476abd2dae6becab8ee.jpg"
     },
     {
       "title": "Şirreti Evcilleştirmek",
@@ -3412,7 +3580,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek/18759511",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/sirreti-evcillestirmek",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png"
     },
     {
       "days": [
@@ -3427,7 +3596,8 @@
       "url": "https://www.biletix.com/etkinlik/5SFRQ/TURKIYE/tr/cenk-eren-13-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5SFRQ-GORSEL.png"
     },
     {
       "title": "Cinderella Çocuk Balesi",
@@ -3442,7 +3612,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi/18585563",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cinderella-cocuk-balesi-2026311112981669c875be734d25970bd128bb820160.jpg"
     },
     {
       "title": "Serhat Abi'nin Bilim Fabrikası",
@@ -3457,7 +3628,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/serhat-abinin-bilim-atolyesi/18713961",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/serhat-abinin-bilim-atolyesi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serhat-abinin-bilim-fabrikasi-202610610321977ca4c640d884863b453a5e9a93d2121.jpg"
     },
     {
       "title": "Cinderella Çocuk Balesi",
@@ -3472,7 +3644,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi/18585564",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/cinderella-bale-gosterisi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cinderella-cocuk-balesi-2026311112981669c875be734d25970bd128bb820160.jpg"
     },
     {
       "title": "Serhat Abi'nin Bilim Fabrikası",
@@ -3487,7 +3660,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/serhat-abinin-bilim-atolyesi/18714277",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/serhat-abinin-bilim-atolyesi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/serhat-abinin-bilim-fabrikasi-202610610321977ca4c640d884863b453a5e9a93d2121.jpg"
     },
     {
       "title": "Emrah Kaman Yüksek Gelirim 2",
@@ -3502,7 +3676,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/emrah-kaman-yuksek-gelirim-versiyon-iki/18730010",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/emrah-kaman-yuksek-gelirim-versiyon-iki",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/emrah-kaman-yuksek-gelirim-2-20261013159957f4b598c45f4daa8a7d0852e0556f0e.jpg"
     },
     {
       "days": [
@@ -3517,7 +3692,8 @@
       "url": "https://www.biletix.com/etkinlik/5BG04/TURKIYE/tr/nilufer-14-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5BG04-nilufer-1920.png"
     },
     {
       "title": "Ho Ho Ho! Müzikali",
@@ -3532,7 +3708,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ho-ho-ho-muzikali/18628987",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ho-ho-ho-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ho-ho-ho-muzikali-20269141422487c14b795bc544339bb11a60646c26590.jpg"
     },
     {
       "title": "Ne Olacağım Ben?",
@@ -3547,7 +3724,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ne-olacagim-ben/18833706",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ne-olacagim-ben",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ne-olacagim-ben-2025929183233146f92d764654ca98814c8877c1c1747.jpeg"
     },
     {
       "title": "Ho Ho Ho! Müzikali",
@@ -3562,7 +3740,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ho-ho-ho-muzikali/18629024",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ho-ho-ho-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ho-ho-ho-muzikali-20269141422487c14b795bc544339bb11a60646c26590.jpg"
     },
     {
       "title": "Karagöz Aranıyor 'Işkırlak'",
@@ -3577,7 +3756,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/karagoz-araniyor-iskirlak-moda/18798299",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/karagoz-araniyor-iskirlak-moda",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/karagoz-araniyor-iskirlak-202665165031cb5ba95314284d0f9a6b6eefdf7e407d.jpeg"
     },
     {
       "title": "Düş Payı",
@@ -3592,7 +3772,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/dus-payi/18691994",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/dus-payi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/dus-payi-2026827218293b32e77d0ade4108a5ebbfe8d02bed85.png"
     },
     {
       "title": "Ran “Severmişim Meğer“",
@@ -3607,7 +3788,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/ran-entropi/18691631",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/ran-entropi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ran-severmisim-meger-20231220171536cf43bcb987704991a0d575a459da7c3f.jpg"
     },
     {
       "days": [
@@ -3622,7 +3804,8 @@
       "url": "https://www.biletix.com/etkinlik/5DTC5/TURKIYE/tr/ziynet-sali-15-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5DTC5-GORSEL.png"
     },
     {
       "days": [
@@ -3637,7 +3820,8 @@
       "url": "https://www.biletix.com/etkinlik/5BG07/TURKIYE/tr/aura-16-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5BG07-aura-1920.png"
     },
     {
       "title": "Barbaros Şansal Burda Olmaz",
@@ -3652,7 +3836,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/barbaros-sansal-terzi-yamagi-konusuyor-burda-olmaz/18691952",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/barbaros-sansal-terzi-yamagi-konusuyor-burda-olmaz",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/barbaros-sansal-burda-olmaz-2026105141415892d97ccccc840048254adf1094defe6.jpeg"
     },
     {
       "title": "Miss Turkey",
@@ -3667,7 +3852,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/miss-turkey/18692078",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/miss-turkey",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/miss-turkey-202633012475136dd0386ed624058bceeada9628e8bdc.jpg"
     },
     {
       "title": "Taşıdıklarımız / Çıplak Ayaklar Kumpanyası - EİRA",
@@ -3682,7 +3868,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/tasidiklarimiz-ciplak-ayaklar-kumpanyasi/18760912",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/tasidiklarimiz-ciplak-ayaklar-kumpanyasi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tasidiklarimiz-ciplak-ayaklar-kumpanyasi-eira-20261019115114c78887d93330426b8d06de6712b64726.jpg"
     },
     {
       "title": "Ağustos Böceği ile Karınca Müzikali",
@@ -3697,7 +3884,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali/18629054",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/agustos-bocegi-ile-karinca-muzikali-202681092439051dae4387d94072846077721c28fe61.jpg"
     },
     {
       "title": "Ağustos Böceği ile Karınca Müzikali",
@@ -3712,7 +3900,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali/18629055",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/agustos-bocegi-ile-karinca-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/agustos-bocegi-ile-karinca-muzikali-202681092439051dae4387d94072846077721c28fe61.jpg"
     },
     {
       "title": "Apsolit",
@@ -3727,7 +3916,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/apsolit/18783324",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/apsolit",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/apsolit-202642993620c97940cc3941411bbd88c919b4aa953d.png"
     },
     {
       "title": "Kel Diva",
@@ -3742,7 +3932,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kel-diva/18720547",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kel-diva",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kel-diva-202697151427d399aebba1cf40d6ad998746b255fc35.jpg"
     },
     {
       "title": "Macbeth: Bir Dans Tiyatrosu Yorumu",
@@ -3757,7 +3948,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/macbeth-bir-dans-tiyatrosu-yorumu/18776150",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/macbeth-bir-dans-tiyatrosu-yorumu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/macbeth-bir-dans-tiyatrosu-yorumu-202610271445551cc3f6c4e722462285c1591f30d94729.png"
     },
     {
       "days": [
@@ -3772,7 +3964,8 @@
       "url": "https://www.biletix.com/etkinlik/5ITK3/TURKIYE/tr/uzi-17-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5ITK3_19201080.png"
     },
     {
       "title": "Baba",
@@ -3787,7 +3980,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/baba-oyunu/18720551",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/baba-oyunu",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/baba-aysa-202673014265680148d61d474689bae9163567373fee.jpg"
     },
     {
       "title": "DIKŞIN: Büyük Şans",
@@ -3802,7 +3996,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans/18783107",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/diksin-buyuk-sans",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/diksin-buyuk-sans-202498101341861bfccbb7c7484ebb67536d75d15efc.jpg"
     },
     {
       "title": "Karışık Kaset",
@@ -3817,7 +4012,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/karisik-kaset-tiyatrol/18645064",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/karisik-kaset-tiyatrol",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/karisik-kaset-20261051052360b095a5e8797415b90768d7847e8a181.jpg"
     },
     {
       "title": "7 Kocalı Hürmüz Müzikali",
@@ -3832,7 +4028,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/7-kocali-hurmuz-muzikali/18811449",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/7-kocali-hurmuz-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/7-kocali-hurmuz-muzikali-20251021847370be05b41115b492eb133923216a6f5ae.jpg"
     },
     {
       "days": [
@@ -3853,7 +4050,8 @@
       "formats": [
         "Türkçe Altyazılı"
       ],
-      "note": "Session times listed; ticket price and seat availability not verified."
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bosluk-2026101516148aa7631a7565f485d8a3f604eb0029c94.jpg"
     },
     {
       "days": [
@@ -3868,7 +4066,8 @@
       "url": "https://www.biletix.com/etkinlik/5YS2Y/TURKIYE/tr/gokhan-cinar-katarsis-gel-yeniden-baslayalim-19-11-2026-istanbul",
       "availability": "available",
       "owned": false,
-      "note": ""
+      "note": "",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5RG11-katarsiswidebu26.png"
     },
     {
       "title": "Heim - Bir Göç Hikayesi",
@@ -3883,7 +4082,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/heim-bir-goc-hikayesi/18759439",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/heim-bir-goc-hikayesi",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/heim-bir-goc-hikayesi-2025372312541db853e62809411b994dc0bde8489927.jpeg"
     },
     {
       "title": "Şebbaz",
@@ -3898,7 +4098,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/sebbaz/18645837",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/sebbaz",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sebbaz-20259110538970b239a16834594ac02a06caf8860b8.jpg"
     },
     {
       "title": "Starry Night",
@@ -3913,7 +4114,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/starry-night/18751711",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/starry-night",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/starry-night-202592713524039f3aa2cc303406992a04de9bb4eea6c.jpg"
     },
     {
       "title": "Cem Eroğlu ile Bişi Dicem",
@@ -3928,7 +4130,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/cem-eroglu-bisi-dicem/18725219",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/cem-eroglu-bisi-dicem",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/cem-eroglu-ile-bisi-dicem-20261111531568616f05acad1459abcb66fe52d54017c.jpg"
     },
     {
       "title": "Davetli Misafir",
@@ -3943,7 +4146,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/davetli-misafir/18642207",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/davetli-misafir",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davetli-misafir-2026923141510546b62c93f3e448ba8a44c7f47fdbf8b.jpg"
     },
     {
       "title": "Filler ve Karıncalar",
@@ -3958,7 +4162,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/filler-ve-karincalar/18723740",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/filler-ve-karincalar",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/filler-ve-karincalar-20258191645267e2aef1a8edb4893bcf622e55ec6e9a6.jpg"
     },
     {
       "title": "Kar Küresi Müzikali",
@@ -3973,7 +4178,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kar-kuresi-muzikali/18457765",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kar-kuresi-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kar-kuresi-muzikali-202673014293688de9b7bf6054840bf3ce6f1dca4602e.jpg"
     },
     {
       "title": "Mevsimler Ormanı",
@@ -3988,7 +4194,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/mevsimler-ormani/18715744",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/mevsimler-ormani",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/mevsimler-ormani-20261081548319e636e759207432693f7916df74236f3.jpg"
     },
     {
       "title": "Kar Küresi Müzikali",
@@ -4003,7 +4210,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/kar-kuresi-muzikali/18457766",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/kar-kuresi-muzikali",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kar-kuresi-muzikali-202673014293688de9b7bf6054840bf3ce6f1dca4602e.jpg"
     },
     {
       "title": "Bu Hikaye Senden Uzun Osman",
@@ -4018,7 +4226,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman/18629537",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/bu-hikaye-senden-uzun-osman",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bu-hikaye-senden-uzun-osman-20261261503541ded16149524800894ad9eff23f0a5d.jpg"
     },
     {
       "title": "Doğu Ekspresinde Cinayet",
@@ -4033,7 +4242,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/dogu-ekspresinde-cinayet-/18699519",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/dogu-ekspresinde-cinayet-",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/dogu-ekspresinde-cinayet-2026828173908ecb8a69230248f5a162a9303eaa8c14.jpg"
     },
     {
       "title": "Seyfi Bey",
@@ -4048,7 +4258,8 @@
       "url": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey/18671593",
       "availability": "available",
       "source": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey",
-      "owned": false
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seyfi-bey-20249111416500c1c3ece25f9464a878ca70fc2e325be.jpg"
     }
   ],
   "cinemas": [],
