@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-09-29",
+  "lastUpdated": "2026-11-02",
   "range": {
-    "start": "2026-09-29",
-    "end": "2026-10-18"
+    "start": "2026-11-02",
+    "end": "2026-11-21"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -1280,46 +1280,169 @@
       "owned": false,
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sirreti-evcillestirmek-2023213105528.png",
       "description": "Şirreti Evcilleştirmek Tiyatro Oyunu 2 perde Shakespeare’nin ünlü komedilerinden the taming of the shrew türkiye’de Hırçık Kız olarak tanınıyor. moda sahnesi orijinal adına daha uygun bir çeviriyle Şirreti Evcilleştirmek adıyla sahneye taşıdı. Oyun hurdacı, tenekeci, ayı oynatıcısı Sly’ın körkütük sarhoşken bir barda olay çıkarması üzerine bardan kovuluşuyla başlar. Sokakta sızan Sly’a avdan dönerken rastlayan bir Lord ona bir oyun hazırlar. Onu evine taşıtır, kendi ya"
+    },
+    {
+      "days": [
+        "2026-11-04"
+      ],
+      "title": "Profesyonel",
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "2.700,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5MN68/TURKIYE/tr/profesyonel-04-11-2026-istanbul",
+      "availability": "available",
+      "owned": true,
+      "note": "Ticket ownership confirmed by calendar."
+    },
+    {
+      "days": [
+        "2026-11-06"
+      ],
+      "title": "KARM6",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "1.120,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5TMT4/TURKIYE/tr/karm6-06-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-07"
+      ],
+      "title": "Saatleri Ayarlama Enstitüsü",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "2.808,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5MN79/TURKIYE/tr/saatleri-ayarlama-enstitusu-07-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-12"
+      ],
+      "title": "Güldür Güldür Show",
+      "kind": "theatre",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "990,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/55AN8/TURKIYE/tr/guldur-guldur-show-12-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-13"
+      ],
+      "title": "Cenk Eren",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "450,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5SFRQ/TURKIYE/tr/cenk-eren-13-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-14"
+      ],
+      "title": "Nilüfer",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "3.360,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5BG04/TURKIYE/tr/nilufer-14-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-15"
+      ],
+      "title": "Ziynet Sali",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "700,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5DTC5/TURKIYE/tr/ziynet-sali-15-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-16"
+      ],
+      "title": "AURA",
+      "kind": "other",
+      "time": "20:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "1.344,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5BG07/TURKIYE/tr/aura-16-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-17"
+      ],
+      "title": "Uzi",
+      "kind": "concert",
+      "time": "21:00",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "1.705,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5ITK3/TURKIYE/tr/uzi-17-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
+    },
+    {
+      "days": [
+        "2026-11-19"
+      ],
+      "title": "Gökhan Çınar - Katarsis - Gel Yeniden Başlayalım",
+      "kind": "other",
+      "time": "20:30",
+      "venue": "Bostancı Gösteri Merkezi",
+      "area": "Bostancı/Kadıköy",
+      "price": "1.100,00₺'den itibaren",
+      "url": "https://www.biletix.com/etkinlik/5YS2Y/TURKIYE/tr/gokhan-cinar-katarsis-gel-yeniden-baslayalim-19-11-2026-istanbul",
+      "availability": "available",
+      "owned": false,
+      "note": ""
     }
   ],
   "cinemas": [],
   "omitted_records": 87,
-  "research_note": "Preferred Biletinial theatre venue tabs were checked on 2026-09-29. Sessions were verified from production JSON-LD and restricted to their originating venue; only InStock in-window sessions are shown. Fastmail and Google colonist calendars were checked; Google personal authorization was unavailable. A Fastmail ticket reservation marked Saatleri Ayarlama Enstitüsü (2026-10-15, Bostancı Gösteri Merkezi) as owned. IMDb enrichment was not run: this theatre-tab refresh did not collect new film screenings.",
+  "research_note": "Partial refresh: Bostancı Gösteri Merkezi verified on Biletix. Cinema programmes exist but the source format changed and screening times were not verified; no new cinema sessions are claimed. Previous expired records are retained for preservation. Other preferred venues have not been fully inventoried.",
   "sources": [
     {
-      "provider": "Biletinial",
-      "kind": "venue",
-      "venue": "Moda Sahnesi",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-09-29"
-    },
-    {
-      "provider": "Biletinial",
+      "provider": "Biletix",
       "kind": "venue",
       "venue": "Bostancı Gösteri Merkezi",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-09-29"
-    },
-    {
-      "provider": "Biletinial",
-      "kind": "venue",
-      "venue": "Akla Kara Tiyatro",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-09-29"
-    },
-    {
-      "provider": "Biletinial",
-      "kind": "venue",
-      "venue": "Caddebostan Kültür Merkezi",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-09-29"
-    },
-    {
-      "provider": "Biletinial",
-      "kind": "venue",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-09-29"
+      "url": "https://www.biletix.com/mekan/340BG/TURKIYE/tr",
+      "checkedAt": "2026-11-02",
+      "note": "On-sale performances; cancelled, relocated and excluded artists omitted."
     }
   ]
 }
