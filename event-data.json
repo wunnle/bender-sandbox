@@ -1,10 +1,10 @@
 {
   "city": "Istanbul",
   "timezone": "Europe/Istanbul",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "range": {
-    "start": "2026-11-08",
-    "end": "2026-11-27"
+    "start": "2026-11-09",
+    "end": "2026-11-28"
   },
   "preferences": {
     "owned_events_visible": true,
@@ -14,378 +14,6 @@
     "excluded_artists": []
   },
   "events": [
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Gupi ve Gülmeyen Kral",
-      "kind": "film",
-      "time": "12:15, 14:15, 16:15",
-      "times": [
-        "12:15",
-        "14:15",
-        "16:15"
-      ],
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/gupi-ve-gulmeyen-kral?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/gupi-ve-gulmeyen-kral-20269915738d9c12d9963f648be90dd8832d3c473be.png"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Aşk ve Yaşam",
-      "kind": "film",
-      "time": "12:45",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/ask-ve-yasam?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ask-ve-yasam-20261068374120367f34f7684993842b288954114edc.png"
-    },
-    {
-      "title": "Rapunzel'in Mutfak Hikayesi",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "13:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Kadıköy",
-      "price": "658 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi/18691774",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/rapunzelin-mutfak-hikayesi-20261051528344f27c21f12cc44778b4b856d9c8d4168.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Küçük Mamut",
-      "kind": "film",
-      "time": "13:00, 14:45",
-      "times": [
-        "13:00",
-        "14:45"
-      ],
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/kucuk-mamut?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Dublaj"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kucuk-mamut-202610715173005acc2e0fb7740cca9d98239d88a5cb3.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Vahşi At Dokuz",
-      "kind": "film",
-      "time": "13:00, 15:45, 18:30, 21:15",
-      "times": [
-        "13:00",
-        "15:45",
-        "18:30",
-        "21:15"
-      ],
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/vahsi-at-dokuz?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
-    },
-    {
-      "title": "Kayıp Aslan Kardeşler",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "14:00",
-      "venue": "Caddebostan Kültür Merkezi A Salonu",
-      "area": "Kadıköy",
-      "price": "672 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler/18693072",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/kayip-aslan-kardesler",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/kayip-aslan-kardesler-20251018133521ff0068c5a5b447b0a668cf71532e70c6.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Vahşi At Dokuz",
-      "kind": "film",
-      "time": "14:00, 16:15, 18:30, 21:00",
-      "times": [
-        "14:00",
-        "16:15",
-        "18:30",
-        "21:00"
-      ],
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/vahsi-at-dokuz?cinemaBranchId=5603",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/vahsi-at-dokuz-20261027168172e3415de25694f498e0f44c5d99c8f05.png"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Her Şey Ortada",
-      "kind": "film",
-      "time": "14:15, 17:40",
-      "times": [
-        "14:15",
-        "17:40"
-      ],
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/her-sey-ortada?cinemaBranchId=5603",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
-    },
-    {
-      "title": "Rapunzel'in Mutfak Hikayesi",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "15:00",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Kadıköy",
-      "price": "658 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi/18691776",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/rapunzelin-mutfak-hikayesi",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/rapunzelin-mutfak-hikayesi-20261051528344f27c21f12cc44778b4b856d9c8d4168.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "En Sevdiğim",
-      "kind": "film",
-      "time": "15:30, 18:15, 21:15",
-      "times": [
-        "15:30",
-        "18:15",
-        "21:15"
-      ],
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/en-sevdigim?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
-    },
-    {
-      "title": "Babamı Kim Öldürdü",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Kadıköy",
-      "price": "720 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn/18756153",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/babami-kim-oldurdu-tyndn",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/babami-kim-oldurdu-2023218162015.jpeg"
-    },
-    {
-      "title": "Seyfi Bey",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "16:00",
-      "venue": "Caddebostan Kültür Merkezi Büyük Salon",
-      "area": "Kadıköy",
-      "price": "1.644 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey/18671283",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seyfi-bey-20249111416500c1c3ece25f9464a878ca70fc2e325be.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Primetime",
-      "kind": "film",
-      "time": "16:45, 19:00, 21:30",
-      "times": [
-        "16:45",
-        "19:00",
-        "21:30"
-      ],
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/primetime?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/primetime-202699153031dd1d1b0060104a1fbd0a81181346dbb3.png"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Davet",
-      "kind": "film",
-      "time": "18:15",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/davet-2026?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/davet-2026-20266191325506a9537ba7bfc47e7bfdc3f14b78aa512.png"
-    },
-    {
-      "title": "Woyzeck",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "18:30",
-      "venue": "Moda Sahnesi",
-      "area": "Kadıköy",
-      "price": "831 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/woyzeck-tiyatro-oyunu/18643706",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/woyzeck-tiyatro-oyunu",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/woyzeck-tiyatro-oyunu-202692410305836a5062ee82348259305aac2a0707a9b.jpg"
-    },
-    {
-      "title": "Seyfi Bey",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "theatre",
-      "time": "20:00",
-      "venue": "Caddebostan Kültür Merkezi Büyük Salon",
-      "area": "Kadıköy",
-      "price": "1.644 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey/18671512",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/seyfi-bey",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/seyfi-bey-20249111416500c1c3ece25f9464a878ca70fc2e325be.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "Her Şey Ortada",
-      "kind": "film",
-      "time": "20:30",
-      "venue": "Caddebostan CKM Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/her-sey-ortada?cinemaBranchId=8773",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/her-sey-ortada-20261019101841a24724df5213495b8e4e699ab296cc0f.png"
-    },
-    {
-      "title": "Pınar Fidan Stand Up",
-      "days": [
-        "2026-11-08"
-      ],
-      "kind": "stand-up",
-      "time": "20:30",
-      "venue": "Moda Sahnesi Büyük Salon",
-      "area": "Kadıköy",
-      "price": "1.108 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne/18766240",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/pinar-fidan-stand-up-modasahne",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/pinar-fidan-stand-up-20253617267070cd7b86b214139ac1a41c0d33f486e.jpg"
-    },
-    {
-      "days": [
-        "2026-11-08"
-      ],
-      "title": "En Sevdiğim",
-      "kind": "film",
-      "time": "20:45",
-      "venue": "Kadıköy Sineması",
-      "area": "Kadıköy",
-      "price": "price unavailable",
-      "url": "https://biletinial.com/tr-tr/sinema/en-sevdigim?cinemaBranchId=5603",
-      "availability": "listed",
-      "owned": false,
-      "formats": [
-        "Türkçe Altyazılı"
-      ],
-      "note": "Session times listed; ticket price and seat availability not verified.",
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/en-sevdigim-20269151633015c661b1497642b8afe0f3fbd8015601.png"
-    },
     {
       "days": [
         "2026-11-09"
@@ -1955,22 +1583,6 @@
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/karagoz-araniyor-iskirlak-202665165031cb5ba95314284d0f9a6b6eefdf7e407d.jpeg"
     },
     {
-      "title": "Düş Payı",
-      "days": [
-        "2026-11-15"
-      ],
-      "kind": "theatre",
-      "time": "20:30",
-      "venue": "Kadıköy Eğitim Sahnesi",
-      "area": "Kadıköy",
-      "price": "987 ₺",
-      "url": "https://biletinial.com/tr-tr/tiyatro/dus-payi/18691994",
-      "availability": "available",
-      "source": "https://biletinial.com/tr-tr/tiyatro/dus-payi",
-      "owned": false,
-      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/dus-payi-2026827218293b32e77d0ade4108a5ebbfe8d02bed85.png"
-    },
-    {
       "title": "Ran “Severmişim Meğer“",
       "days": [
         "2026-11-15"
@@ -3101,74 +2713,228 @@
       "source": "https://biletinial.com/tr-tr/tiyatro/sakkadanak",
       "owned": false,
       "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/sakkadanak-202625151056e09fc736600c4c3a8a11ecc830d1c4f6.jpeg"
+    },
+    {
+      "days": [
+        "2026-11-28"
+      ],
+      "title": "İdeal Koca",
+      "kind": "film",
+      "time": "12:30, 14:45, 17:00, 19:15, 21:30",
+      "times": [
+        "12:30",
+        "14:45",
+        "17:00",
+        "19:15",
+        "21:30"
+      ],
+      "venue": "Caddebostan CKM Sineması",
+      "area": "Kadıköy",
+      "price": "price unavailable",
+      "url": "https://biletinial.com/tr-tr/sinema/ideal-koca?cinemaBranchId=8773",
+      "availability": "listed",
+      "owned": false,
+      "formats": [
+        "Türkçe Altyazılı"
+      ],
+      "note": "Session times listed; ticket price and seat availability not verified.",
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ideal-koca-202610301753604dadc4954ef4690b6916830fc4c11e8.png"
+    },
+    {
+      "title": "Şubadap",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "767 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk/18836233",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/subadap-20261121320575e7d9b35cfae43859fc708faa18209dd.jpg"
+    },
+    {
+      "title": "Tavşan Aranıyor",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "13:00",
+      "venue": "Caddebostan Kültür Merkezi B Salonu",
+      "area": "Kadıköy",
+      "price": "822 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-araniyor-wise/18799722",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/tavsan-araniyor-wise",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavsan-araniyor-202021394235.jpg"
+    },
+    {
+      "title": "Atta Festival: BasarKus’un Muhteşem Hikâyesi",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "14:00",
+      "venue": "Caddebostan Kültür Merkezi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "1.315 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/atta-festival-basarkusun-muhtesem-hikayesi/18766873",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/atta-festival-basarkusun-muhtesem-hikayesi",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/atta-festival-basarkusun-muhtesem-hikyesi-202610191762087e528c2d6bd4181ac878e90eafc2762.jpeg"
+    },
+    {
+      "title": "Şubadap",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Kadıköy Eğitim Sahnesi",
+      "area": "Kadıköy",
+      "price": "767 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk/18836234",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/subadap-cocuk",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/subadap-20261121320575e7d9b35cfae43859fc708faa18209dd.jpg"
+    },
+    {
+      "title": "Tavşan Aranıyor",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "15:00",
+      "venue": "Caddebostan Kültür Merkezi B Salonu",
+      "area": "Kadıköy",
+      "price": "822 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/tavsan-araniyor-wise/18799723",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/tavsan-araniyor-wise",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/tavsan-araniyor-202021394235.jpg"
+    },
+    {
+      "title": "Atta Festival: BasarKus’un Muhteşem Hikâyesi",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Caddebostan Kültür Merkezi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "1.315 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/atta-festival-basarkusun-muhtesem-hikayesi/18766875",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/atta-festival-basarkusun-muhtesem-hikayesi",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/atta-festival-basarkusun-muhtesem-hikyesi-202610191762087e528c2d6bd4181ac878e90eafc2762.jpeg"
+    },
+    {
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "16:00",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "720 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri/18833572",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-kadinin-kavgalari-ve-donusumleri-202510295836f19fc49b5b8546f28f9c5d252f0f7c05.jpg"
+    },
+    {
+      "title": "Bir Kadının Kavgaları ve Dönüşümleri",
+      "days": [
+        "2026-11-28"
+      ],
+      "kind": "theatre",
+      "time": "20:30",
+      "venue": "Moda Sahnesi Büyük Salon",
+      "area": "Kadıköy",
+      "price": "720 ₺",
+      "url": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri/18833571",
+      "availability": "available",
+      "source": "https://biletinial.com/tr-tr/tiyatro/bir-kadinin-kavgalari-ve-donusumleri",
+      "owned": false,
+      "image": "https://b6s54eznn8xq.merlincdn.net/Uploads/Films/bir-kadinin-kavgalari-ve-donusumleri-202510295836f19fc49b5b8546f28f9c5d252f0f7c05.jpg"
     }
   ],
   "cinemas": [],
-  "omitted_records": 11,
-  "research_note": "Biletinial preferred venues swept by scripts/istanbul-scrape.mjs on 2026-11-08. Regular cinema sessions are listed times; their price and seat availability are not verified. 7 records from other sources were carried over from the previous payload without re-checking. ",
+  "omitted_records": 9,
+  "research_note": "Biletinial preferred venues swept by scripts/istanbul-scrape.mjs on 2026-11-09. Regular cinema sessions are listed times; their price and seat availability are not verified. 7 records from other sources were carried over from the previous payload without re-checking. ",
   "sources": [
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Moda Sahnesi",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15880",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Bostancı Gösteri Merkezi",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=17011",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Tiyatro Akla Kara",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15863",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Caddebostan Kültür Merkezi",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15738",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Özgürlük Parkı",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=15866",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Kadıköy Eğitim Sahnesi",
       "url": "https://biletinial.com/tr-tr/tiyatro/istanbul-anadolu?loc=18051",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Kadıköy Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/kadikoy-sinemasi",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "Caddebostan CKM Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/caddebostan-ckm-sinemasi",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletinial",
       "kind": "venue",
       "venue": "İstanbul Yelken Kulübü Açık Hava Sineması",
       "url": "https://biletinial.com/tr-tr/mekan/istanbul-yelken-kulubu-acik-hava-sinemasi",
-      "checkedAt": "2026-11-08"
+      "checkedAt": "2026-11-09"
     },
     {
       "provider": "Biletix",
