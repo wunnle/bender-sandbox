@@ -22,6 +22,9 @@ export default function BenderLayout({ children }: { children: React.ReactNode }
             <Link href="/bender/privacy" className="hover:underline">
               Privacy policy
             </Link>
+            <Link href="/bender/terms" className="hover:underline">
+              Terms
+            </Link>
           </nav>
         </header>
         <main className="space-y-5 leading-7">{children}</main>
