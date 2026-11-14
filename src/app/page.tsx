@@ -1,40 +1,7 @@
-import fs from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import EyeLogo from "./EyeLogo";
-// Generated from git history by scripts/route-dates.mjs, committed by the
-// route-dates workflow. See that script for why it isn't read from git here.
-import routeDates from "./route-dates.json";
-
-const dates: Record<string, string> = routeDates;
-
-// Optional blurbs. Anything not listed still shows up, just without a description.
-const NOTES: Record<string, string> = {
-  dice: "Roll d4 through d100, up to six at a time",
-  qr: "Turn any text or URL into a QR code",
-  stopwatch: "Stopwatch with laps",
-  urban: "Pixel-art cafe life-sim — engine shell",
-};
-
-function experiments() {
-  const appDir = path.join(process.cwd(), "src/app");
-  return fs
-    .readdirSync(appDir, { withFileTypes: true })
-    .filter(
-      (e) =>
-        e.isDirectory() &&
-        !e.name.startsWith("_") &&
-        !e.name.startsWith("(") &&
-        fs.existsSync(path.join(appDir, e.name, "page.tsx")),
-    )
-    .map((e) => e.name)
-    .sort((a, b) => {
-      // Most recently changed first; anything without a date sinks to the bottom.
-      const da = dates[a] ?? "";
-      const db = dates[b] ?? "";
-      return db.localeCompare(da) || a.localeCompare(b);
-    });
-}
+import { NOTES, dates, experiments } from "./_lib/routes";
+import SearchButton from "./_lib/SearchButton";
 
 const formatDate = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
@@ -63,6 +30,8 @@ export default function Home() {
           </a>
         </div>
       </header>
+
+      <SearchButton />
 
       <ul className="flex flex-col gap-2">
         {routes.map((name) => (
