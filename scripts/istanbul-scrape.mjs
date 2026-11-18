@@ -369,7 +369,16 @@ const scrapedVenue = (venue) => {
 };
 const keys = new Set(scraped.map(sessionKey));
 const carried = [];
-for (const e of previous.events) {
+/**
+ * A booking only survives a refresh if its `note` says what confirmed it (a
+ * ticket email or calendar entry). A bare `owned: true` is how a 4 Nov booking
+ * once got carried onto the 19 Nov show in the same slot and stuck for weeks.
+ */
+const hasEvidence = (e) => /confirm/i.test(e.note || "");
+const dropped = [];
+for (const prev of previous.events) {
+  const e = prev.owned && !hasEvidence(prev) ? { ...prev, owned: false } : prev;
+  if (prev.owned && !e.owned && prev.days.some(inWindow)) dropped.push(prev.title);
   const days = e.days.filter(inWindow);
   if (!days.length) continue;
   const covered = scrapedVenue(e.venue) && !brokenVenues.includes(scrapedVenue(e.venue)) && /biletinial\.com/.test(e.url || "");
@@ -417,6 +426,8 @@ console.log(`Window ${start} → ${end} · ${events.length} events (${scraped.le
 for (const r of venueReports)
   console.log(`  ${r.broken ? "BROKEN " : ""}${r.venue}: ${r.productions} listed, ${r.sessions} sessions, ${r.soldOut} sold out/unavailable`);
 console.log(`Added ${added.length} · Removed ${removed.length} · Owned ${events.filter((e) => e.owned).length}`);
+if (dropped.length)
+  console.log(`Un-owned (no confirming note — re-check email/calendar before restoring):\n${dropped.map((t) => `  ${t}`).join("\n")}`);
 if (added.length) console.log(`New:\n${added.slice(0, 40).map(line).join("\n")}${added.length > 40 ? `\n  …and ${added.length - 40} more` : ""}`);
 if (carried.length) console.log(`Carried over (not re-checked):\n${carried.map(line).join("\n")}`);
 if (errors.length) console.log(`Errors (${errors.length}):\n${errors.slice(0, 20).map((e) => `  ${e}`).join("\n")}`);
