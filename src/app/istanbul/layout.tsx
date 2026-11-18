@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { META } from "./data";
+import { SearchPalette } from "./search";
+import "./istanbul.css";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-code" });
@@ -33,6 +35,7 @@ export default function IstanbulLayout({ children }: { children: React.ReactNode
       }
     >
       {children}
+      <SearchPalette />
     </div>
   );
 }

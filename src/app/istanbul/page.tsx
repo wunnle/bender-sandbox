@@ -25,6 +25,7 @@ import {
   Tile,
   type Group,
 } from "./ui";
+import { SearchButton } from "./search";
 
 /** One day: a heading, arrow controls, and a horizontally scrolled strip of tiles. */
 function DayRow({ iso, list }: { iso: string; list: Group[] }) {
@@ -61,7 +62,7 @@ function DayRow({ iso, list }: { iso: string; list: Group[] }) {
       >
         <div className="flex snap-x snap-mandatory items-start gap-4">
           {list.map((g, i) => (
-            <Tile key={`${iso}-${g[0].title}-${i}`} group={g} />
+            <Tile key={`${iso}-${g[0].title}-${i}`} group={g} day={iso} />
           ))}
         </div>
       </div>
@@ -168,6 +169,7 @@ export default function IstanbulPage() {
         )}
 
         <div className="mt-8 flex flex-wrap items-center gap-2">
+          <SearchButton className="mr-2" />
           {CATEGORIES.map((c) => {
             const on = active.includes(c);
             return (

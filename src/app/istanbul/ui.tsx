@@ -7,8 +7,18 @@
  */
 
 import Link from "next/link";
-import { useEffect, useState, useSyncExternalStore } from "react";
-import { CATEGORY_META, categoryOf, META, venueSlug, type Category, type Ev } from "./data";
+import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import {
+  CATEGORY_META,
+  categoryOf,
+  imdbThumb,
+  META,
+  showOf,
+  venueSlug,
+  type Category,
+  type Ev,
+  type Show,
+} from "./data";
 import { CATEGORY_ICON } from "./icons";
 
 export function fmt(iso: string, opts: Intl.DateTimeFormatOptions) {
@@ -242,181 +252,514 @@ function Synopsis({ text }: { text: string }) {
   );
 }
 
-/** Detail view for one title on one day: metadata, then every venue showing it. */
-/**
- * IMDb serves the full-resolution master by default — 3158x5000, 1.3MB. The
- * `UX300` segment asks their CDN for a 300px-wide copy instead, about 24KB.
- */
-export const imdbThumb = (url: string) => url.replace(/\._V1_.*?\.jpg$/, "._V1_QL75_UX300_.jpg");
+export const posterOf = (e: Ev) => (e.imdbImage ? imdbThumb(e.imdbImage) : e.image);
 
-function OptionsDialog({
-  group,
+/** Listings for one day, booked first, then earliest session. */
+export const listingsOn = (show: Show, day: string) =>
+  show.listings
+    .filter((e) => e.days.includes(day))
+    .sort(
+      (a, b) =>
+        Number(!!b.owned) - Number(!!a.owned) ||
+        (sessionTimes(a)[0] ?? "99:99").localeCompare(sessionTimes(b)[0] ?? "99:99"),
+    );
+
+/**
+ * Native share sheet where there is one (phones, Safari), clipboard otherwise.
+ * Returns the label to show on the button so the user sees it worked.
+ */
+export function useShare(path: string, title: string) {
+  const [state, setState] = useState<"idle" | "copied">("idle");
+  const share = async () => {
+    const url = new URL(path, window.location.origin).toString();
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, url });
+        return;
+      } catch (err) {
+        // The user dismissing the sheet is not a failure worth a fallback.
+        if ((err as Error).name === "AbortError") return;
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url);
+      setState("copied");
+      setTimeout(() => setState("idle"), 1800);
+    } catch {
+      window.prompt("Copy this link", url);
+    }
+  };
+  return { share, label: state === "copied" ? "Link copied" : "Share" };
+}
+
+function ShareIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" className={className} aria-hidden="true">
+      <path d="M10 2.5v10M6.5 6 10 2.5 13.5 6" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6 9H5a1.5 1.5 0 0 0-1.5 1.5v5A1.5 1.5 0 0 0 5 17h10a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 15 9h-1" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function ExternalIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden="true">
+      <path d="M8 4H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3M11 4h5v5M16 4l-7 7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function PinIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" className={className} aria-hidden="true">
+      <path d="M10 17.5s5.5-5 5.5-9.5a5.5 5.5 0 1 0-11 0c0 4.5 5.5 9.5 5.5 9.5Z" strokeLinejoin="round" />
+      <circle cx="10" cy="8" r="2" />
+    </svg>
+  );
+}
+
+const pill =
+  "inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-sm font-medium transition";
+
+/** Poster, title, facts and actions — the top of both the dialog and the page. */
+function Hero({
+  show,
+  e,
+  onClose,
+  inDialog,
+}: {
+  show: Show;
+  e: Ev;
+  onClose?: () => void;
+  inDialog: boolean;
+}) {
+  const cat = categoryOf(e.kind);
+  const meta = CATEGORY_META[cat];
+  const poster = posterOf(e);
+  const href = `/istanbul/event/${show.slug}`;
+  const { share, label } = useShare(href, `${show.title} — ${META.city}`);
+  const ticket = show.listings.find((o) => o.owned && o.url) ?? show.listings.find((o) => o.url);
+  const facts = [
+    e.imdbYear ? String(e.imdbYear) : null,
+    e.genre,
+    humanDuration(e.duration),
+    e.ageLimit,
+  ].filter(Boolean) as string[];
+  const original =
+    e.sourceTitle && e.sourceTitle.trim().toLowerCase() !== show.title.toLowerCase()
+      ? e.sourceTitle
+      : undefined;
+
+  return (
+    <div
+      className={`relative overflow-hidden ${
+        inDialog ? "" : "rounded-3xl bg-neutral-900 ring-1 ring-inset ring-white/10"
+      }`}
+    >
+      {/* The poster, blown up and blurred, tints the header to match the title */}
+      {poster && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={poster}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full scale-125 object-cover opacity-35 blur-3xl"
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/30 via-neutral-900/70 to-neutral-900" />
+
+      {onClose && (
+        <button
+          onClick={onClose}
+          aria-label="Close"
+          autoFocus
+          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-black/40 text-neutral-300 ring-1 ring-white/15 backdrop-blur transition hover:bg-black/60 hover:text-white"
+        >
+          ✕
+        </button>
+      )}
+
+      <div className={`relative flex gap-5 ${inDialog ? "p-5 pt-6 sm:p-7" : "p-5 sm:p-8"}`}>
+        <div
+          className={`shrink-0 overflow-hidden rounded-2xl bg-white/5 shadow-2xl shadow-black/60 ring-1 ring-white/15 ${
+            inDialog ? "w-28 sm:w-36" : "w-36 sm:w-56"
+          } aspect-[2/3]`}
+        >
+          {poster ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={poster} alt="" className="h-full w-full object-cover" />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-white/[0.1] to-white/[0.02]">
+              <Icon cat={cat} className={`h-12 w-12 opacity-50 ${meta.text}`} />
+            </div>
+          )}
+        </div>
+
+        <div className="flex min-w-0 flex-1 flex-col justify-end pr-8 sm:pr-0">
+          <span
+            className={`inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium capitalize ring-1 ring-inset ${meta.chip}`}
+          >
+            <Icon cat={cat} className="h-3.5 w-3.5" />
+            {e.kind}
+          </span>
+          <h2
+            className={`mt-2 font-semibold leading-[1.1] tracking-tight text-white ${
+              inDialog ? "text-2xl sm:text-3xl" : "text-3xl sm:text-5xl"
+            }`}
+          >
+            {show.title}
+          </h2>
+          {original && <p className="mt-1 text-sm italic text-neutral-400">{original}</p>}
+          {facts.length > 0 && (
+            <p className="mt-2 text-sm text-neutral-300">{facts.join("  ·  ")}</p>
+          )}
+          {e.imdbRating && (
+            <div className="mt-2">
+              <ImdbBlock e={e} />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Actions: the one thing you came for first, then sharing */}
+      <div className={`relative flex flex-wrap gap-2 ${inDialog ? "px-5 pb-5 sm:px-7" : "px-5 pb-5 sm:px-8 sm:pb-8"}`}>
+        {ticket?.url && (
+          <a
+            href={ticket.url}
+            target="_blank"
+            rel="noreferrer"
+            className={`${pill} bg-white text-neutral-950 hover:bg-neutral-200`}
+          >
+            {ticket.owned ? "Your tickets" : "Get tickets"}
+            <ExternalIcon />
+          </a>
+        )}
+        <button
+          onClick={share}
+          className={`${pill} bg-white/10 text-white ring-1 ring-inset ring-white/15 hover:bg-white/15`}
+        >
+          <ShareIcon />
+          {label}
+        </button>
+        {e.trailer && (
+          <a
+            href={e.trailer}
+            target="_blank"
+            rel="noreferrer"
+            className={`${pill} text-neutral-300 ring-1 ring-inset ring-white/15 hover:bg-white/5 hover:text-white`}
+          >
+            ▶ Trailer
+          </a>
+        )}
+        {inDialog && (
+          <Link
+            href={href}
+            className={`${pill} text-neutral-400 hover:text-white`}
+          >
+            Open page →
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/** Synopsis and credits. */
+function About({ e }: { e: Ev }) {
+  const cast = (e.cast ?? []).map((c) => c.replace(/\s+/g, " ").trim()).filter(Boolean);
+  if (!e.description && !e.director && cast.length === 0) return null;
+  return (
+    <section>
+      {e.description && <Synopsis text={e.description} />}
+      {(e.director || cast.length > 0) && (
+        <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-[auto_1fr] sm:gap-x-5">
+          {e.director && (
+            <>
+              <dt className="text-xs uppercase tracking-wider text-neutral-500 sm:pt-0.5">
+                Director
+              </dt>
+              <dd className="-mt-2 text-neutral-200 sm:mt-0">{e.director.replace(/\s+/g, " ")}</dd>
+            </>
+          )}
+          {cast.length > 0 && (
+            <>
+              <dt className="text-xs uppercase tracking-wider text-neutral-500 sm:pt-1.5">Cast</dt>
+              <dd className="-mt-2 flex flex-wrap gap-1.5 sm:mt-0">
+                {cast.slice(0, 8).map((c) => (
+                  <span key={c} className="rounded-full bg-white/[0.06] px-2.5 py-1 text-neutral-300">
+                    {c}
+                  </span>
+                ))}
+              </dd>
+            </>
+          )}
+        </dl>
+      )}
+    </section>
+  );
+}
+
+/** One venue on one day: where, when, how, and the ticket link. */
+function VenueCard({ o, atVenue }: { o: Ev; atVenue?: string }) {
+  const times = sessionTimes(o);
+  const price = realPrice(o.price);
+  const slug = venueSlug(o.venue ?? "");
+  const unavailable = o.availability && !/^(available|listed)$/.test(o.availability);
+  return (
+    <li
+      className={`rounded-2xl p-4 ${
+        o.owned ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/40" : "bg-white/[0.04] ring-1 ring-inset ring-white/[0.06]"
+      }`}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="font-medium text-white">{o.venue}</p>
+          <p className="mt-0.5 flex items-center gap-1 text-xs text-neutral-500">
+            {o.area && (
+              <>
+                <PinIcon />
+                {o.area}
+              </>
+            )}
+            {slug && slug !== atVenue && (
+              <Link
+                href={`/istanbul/venue/${slug}`}
+                className="ml-1 underline-offset-4 transition hover:text-neutral-300 hover:underline"
+              >
+                {o.area ? "· " : ""}venue programme
+              </Link>
+            )}
+          </p>
+        </div>
+        {o.owned ? (
+          <span className="shrink-0 rounded-full bg-emerald-400 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-neutral-950">
+            Booked
+          </span>
+        ) : price ? (
+          <span className="shrink-0 text-sm font-medium text-neutral-300">{price}</span>
+        ) : null}
+      </div>
+
+      {times.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {times.map((t) => (
+            <span
+              key={t}
+              className="rounded-lg bg-white/10 px-2.5 py-1 font-mono text-sm text-white"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-xs">
+        <span className="text-neutral-400">
+          {[...(o.formats ?? []), unavailable ? o.availability!.replace(/_/g, " ") : null]
+            .filter(Boolean)
+            .join(" · ")}
+        </span>
+        {o.url ? (
+          <a
+            href={o.url}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1.5 font-medium text-white transition hover:bg-white/20"
+          >
+            Tickets <ExternalIcon className="h-3 w-3" />
+          </a>
+        ) : (
+          <span className="text-neutral-600">no ticket link</span>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function DayTabs({
+  days,
+  day,
+  onPick,
+}: {
+  days: string[];
+  day: string;
+  onPick: (d: string) => void;
+}) {
+  if (days.length < 2) return null;
+  return (
+    <div role="tablist" className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 [scrollbar-width:none]">
+      {days.map((d) => {
+        const on = d === day;
+        return (
+          <button
+            key={d}
+            role="tab"
+            aria-selected={on}
+            onClick={() => onPick(d)}
+            className={`shrink-0 rounded-xl px-3 py-1.5 text-sm transition ${
+              on
+                ? "bg-white text-neutral-950"
+                : "text-neutral-400 ring-1 ring-inset ring-white/10 hover:text-white"
+            }`}
+          >
+            {longDay(d)}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/** Where and when: every venue for the chosen day(s). */
+function Schedule({
+  show,
+  days,
+  atVenue,
+  wide,
+}: {
+  show: Show;
+  days: string[];
+  atVenue?: string;
+  /** Lay venue cards out in columns — the page with no side column. */
+  wide?: boolean;
+}) {
+  return (
+    <div className="space-y-6">
+      {days.map((d) => (
+        <div key={d}>
+          {days.length > 1 && (
+            <h4 className="mb-2 text-sm font-semibold text-neutral-300">{longDay(d)}</h4>
+          )}
+          <ul className={`grid gap-2 ${wide ? "md:grid-cols-2 xl:grid-cols-3" : ""}`}>
+            {listingsOn(show, d).map((o, i) => (
+              <VenueCard key={`${o.venue}-${i}`} o={o} atVenue={atVenue} />
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+const sectionLabel = "text-xs font-medium uppercase tracking-widest text-neutral-500";
+
+/** Days a show still has to come; before hydration, all of them. */
+function useUpcoming(show: Show) {
+  const today = useToday();
+  return useMemo(() => {
+    const left = show.days.filter((d) => !today || d >= today);
+    return left.length ? left : show.days;
+  }, [show, today]);
+}
+
+/** Modal detail for one show, opened on a particular day. */
+export function EventDialog({
+  show,
+  day: initialDay,
   onClose,
   atVenue,
 }: {
-  group: Group;
+  show: Show;
+  day?: string;
   onClose: () => void;
-  /** Slug of the venue being browsed, if any — it gets no link back to itself. */
+  /** Slug of the venue being browsed — it gets no link back to itself. */
   atVenue?: string;
 }) {
-  const e = group[0];
-  const facts = [e.genre, humanDuration(e.duration), e.ageLimit].filter(Boolean) as string[];
-  const poster = e.imdbImage ? imdbThumb(e.imdbImage) : e.image;
+  const days = useUpcoming(show);
+  const [day, setDay] = useState(
+    initialDay && show.days.includes(initialDay) ? initialDay : days[0],
+  );
+  const listings = listingsOn(show, day);
+  const e = listings[0] ?? show.listings[0];
 
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    // Stop the page scrolling underneath the sheet.
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
   }, [onClose]);
 
   return (
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={`${group[0].title} — where to see it`}
+      aria-label={show.title}
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 p-4 backdrop-blur-sm sm:items-center"
+      className="fixed inset-0 z-50 flex items-end justify-center bg-black/75 backdrop-blur-sm ist-fade sm:items-center sm:p-6"
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
-        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-white/25 bg-neutral-900 p-5 shadow-2xl shadow-black/80 ring-1 ring-black/50 [scrollbar-width:thin]"
+        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-white/15 bg-neutral-900 shadow-2xl shadow-black/80 [scrollbar-width:thin] ist-up sm:rounded-3xl"
       >
-        <div className="flex gap-4">
-          {poster && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={poster}
-              alt=""
-              className="h-36 w-24 shrink-0 rounded-xl object-cover ring-1 ring-white/10"
-            />
+        <Hero show={show} e={e} onClose={onClose} inDialog />
+
+        <div className="space-y-7 px-5 pb-7 pt-2 sm:px-7">
+          <section>
+            <div className="mb-3 flex items-baseline justify-between gap-3">
+              <h3 className={sectionLabel}>Where &amp; when</h3>
+              <span className="text-xs text-neutral-500">
+                {days.length > 1 ? `${days.length} days` : longDay(day)}
+              </span>
+            </div>
+            <DayTabs days={days} day={day} onPick={setDay} />
+            <div className="mt-3">
+              <Schedule show={show} days={[day]} atVenue={atVenue} />
+            </div>
+          </section>
+
+          {(e.description || e.director || e.cast?.length) && (
+            <section>
+              <h3 className={`${sectionLabel} mb-1`}>About</h3>
+              <About e={e} />
+            </section>
           )}
-          <div className="min-w-0 flex-1">
-            <div className="flex items-start justify-between gap-3">
-              <h2 className="text-lg font-semibold leading-tight text-white">{e.title}</h2>
-              <button
-                onClick={onClose}
-                aria-label="Close"
-                className="-mr-1 -mt-1 shrink-0 rounded-full px-2 py-1 text-neutral-400 transition hover:bg-white/10 hover:text-white"
-              >
-                ✕
-              </button>
-            </div>
-            {/* Genre · duration · age limit — whichever exist */}
-            {facts.length > 0 && (
-              <p className="mt-1 text-sm text-neutral-400">{facts.join(" · ")}</p>
-            )}
-            <div className="mt-2">
-              <ImdbBlock e={e} />
-            </div>
-          </div>
+
+          {e.note && <p className="text-xs leading-relaxed text-neutral-600">{e.note}</p>}
         </div>
+      </div>
+    </div>
+  );
+}
 
-        {e.description && <Synopsis text={e.description} />}
-
-        {(e.director || e.cast?.length) && (
-          <dl className="mt-4 space-y-1 text-sm">
-            {e.director && (
-              <div className="flex gap-2">
-                <dt className="w-16 shrink-0 text-neutral-500">Director</dt>
-                <dd className="text-neutral-300">{e.director.replace(/\s+/g, " ")}</dd>
-              </div>
-            )}
-            {e.cast?.length ? (
-              <div className="flex gap-2">
-                <dt className="w-16 shrink-0 text-neutral-500">Cast</dt>
-                <dd className="text-neutral-300">
-                  {e.cast.slice(0, 4).map((c) => c.replace(/\s+/g, " ")).join(", ")}
-                </dd>
-              </div>
-            ) : null}
-          </dl>
-        )}
-
-        {/* Each venue is one clickable card — the whole thing is the ticket link */}
-        <ul className="mt-5 space-y-2">
-          {group.map((o, i) => {
-            const times = sessionTimes(o);
-            const price = realPrice(o.price);
-            const cls = `block rounded-xl p-3 transition ${
-              o.owned
-                ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/40"
-                : "bg-white/[0.04]"
-            } ${o.url ? "cursor-pointer hover:bg-white/[0.1]" : ""}`;
-            const body = (
-              <>
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="text-sm font-medium text-white">{o.venue}</span>
-                  {price && <span className="shrink-0 text-xs text-neutral-400">{price}</span>}
-                </div>
-                {times.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-1.5">
-                    {times.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-xs text-neutral-200"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                {/* Subtitled vs dubbed can differ by cinema, so it lives per venue */}
-                {o.formats?.length ? (
-                  <p className="mt-2 text-xs text-neutral-400">{o.formats.join(" · ")}</p>
-                ) : null}
-                {(o.owned || (o.availability && o.availability !== "available") || !o.url) && (
-                  <div className="mt-2 flex flex-wrap items-center gap-x-3 text-xs">
-                    {o.owned && (
-                      <span className="font-semibold uppercase tracking-wide text-emerald-400">
-                        Booked
-                      </span>
-                    )}
-                    {o.availability && o.availability !== "available" && (
-                      <span className="text-rose-300/80">{o.availability.replace(/_/g, " ")}</span>
-                    )}
-                    {!o.url && <span className="text-neutral-600">no ticket link</span>}
-                  </div>
-                )}
-              </>
-            );
-            const slug = venueSlug(o.venue ?? "");
-            return (
-              <li key={`${o.venue}-${i}`}>
-                {o.url ? (
-                  <a href={o.url} target="_blank" rel="noreferrer" className={cls}>
-                    {body}
-                  </a>
-                ) : (
-                  <div className={cls}>{body}</div>
-                )}
-                {/* Kept outside the card: an anchor can't nest inside the ticket link */}
-                {slug && slug !== atVenue && (
-                  <Link
-                    href={`/istanbul/venue/${slug}`}
-                    className="mt-1 inline-block px-3 text-xs text-neutral-500 underline underline-offset-4 transition hover:text-neutral-300"
-                  >
-                    Everything at {o.venue} →
-                  </Link>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-
-        {e.trailer && (
-          <a
-            href={e.trailer}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-block rounded-full px-3 py-1.5 text-sm text-neutral-300 ring-1 ring-white/15 transition hover:bg-white/5 hover:text-white"
-          >
-            Watch trailer ↗
-          </a>
+/** The same detail, as a standalone page — what a shared link opens. */
+export function EventPage({ show }: { show: Show }) {
+  const days = useUpcoming(show);
+  const e = listingsOn(show, days[0])[0] ?? show.listings[0];
+  const hasAbout = !!(e.description || e.director || e.cast?.length);
+  return (
+    <div className="space-y-10">
+      <Hero show={show} e={e} inDialog={false} />
+      {/* Without a synopsis there's nothing for a side column, so the schedule spreads out */}
+      <div className={`grid gap-10 ${hasAbout ? "lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]" : ""}`}>
+        <section>
+          <div className="mb-3 flex items-baseline justify-between">
+            <h3 className={sectionLabel}>Where &amp; when</h3>
+            <span className="text-xs text-neutral-500">
+              {days.length > 1 ? rangeLabel(days[0], days[days.length - 1]) : longDay(days[0])}
+            </span>
+          </div>
+          <Schedule show={show} days={days} wide={!hasAbout} />
+          {!hasAbout && e.note && (
+            <p className="mt-6 text-xs leading-relaxed text-neutral-600">{e.note}</p>
+          )}
+        </section>
+        {hasAbout && (
+          <section>
+            <h3 className={`${sectionLabel} mb-1`}>About</h3>
+            <About e={e} />
+            {e.note && <p className="mt-6 text-xs leading-relaxed text-neutral-600">{e.note}</p>}
+          </section>
         )}
       </div>
     </div>
   );
 }
+
 
 /** The visual body of a tile: poster, then title, venue and times. */
 function TileBody({
@@ -529,9 +872,9 @@ function TileBody({
           {details.join(" · ")}
         </p>
       )}
-      {(e.availability && e.availability !== "available") || !e.url ? (
+      {(e.availability && !/^(available|listed)$/.test(e.availability)) || !e.url ? (
         <p className="mt-1 text-xs text-neutral-600">
-          {e.availability && e.availability !== "available"
+          {e.availability && !/^(available|listed)$/.test(e.availability)
             ? e.availability.replace(/_/g, " ")
             : "no ticket link"}
         </p>
@@ -543,16 +886,21 @@ function TileBody({
 /** A poster-first tile sized for a horizontally scrolled row. */
 export function Tile({
   group,
+  day,
   atVenue,
   subtitle,
 }: {
   group: Group;
+  /** The day row this tile sits in; the dialog opens on it. */
+  day?: string;
   atVenue?: string;
   subtitle?: string;
 }) {
   const [open, setOpen] = useState(false);
   const e = group[0];
   const extra = group.length - 1;
+  const show = showOf(e);
+  const close = useCallback(() => setOpen(false), []);
 
   const className =
     "group w-32 shrink-0 snap-start focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 sm:w-56 " +
@@ -564,8 +912,8 @@ export function Tile({
       <button onClick={() => setOpen(true)} className={`${className} text-left`}>
         <TileBody e={e} extra={extra} subtitle={subtitle} />
       </button>
-      {open && (
-        <OptionsDialog group={group} atVenue={atVenue} onClose={() => setOpen(false)} />
+      {open && show && (
+        <EventDialog show={show} day={day ?? e.days[0]} atVenue={atVenue} onClose={close} />
       )}
     </>
   );

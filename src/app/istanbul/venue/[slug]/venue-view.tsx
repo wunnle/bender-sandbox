@@ -9,6 +9,7 @@ import {
   venueBySlug,
   type Category,
 } from "../../data";
+import { SearchButton } from "../../search";
 import { fmt, groupByDay, Icon, longDay, rangeLabel, Tile, useToday } from "../../ui";
 
 /**
@@ -64,12 +65,15 @@ export default function VenueView({ slug }: { slug: string }) {
         className="pointer-events-none absolute -top-40 left-1/2 h-[36rem] w-[80rem] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(180,83,9,0.18),transparent)] blur-2xl"
       />
       <div className="relative mx-auto max-w-[110rem]">
-        <Link
-          href="/istanbul"
-          className="text-sm text-neutral-500 transition hover:text-neutral-300"
-        >
-          ← All {META.city} events
-        </Link>
+        <div className="flex items-center justify-between gap-4">
+          <Link
+            href="/istanbul"
+            className="text-sm text-neutral-500 transition hover:text-neutral-300"
+          >
+            ← All {META.city} events
+          </Link>
+          <SearchButton />
+        </div>
 
         <header className="mt-4 flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div>
@@ -170,6 +174,7 @@ export default function VenueView({ slug }: { slug: string }) {
                     <Tile
                       key={`${d}-${g[0].title}-${i}`}
                       group={g}
+                      day={d}
                       atVenue={venue.slug}
                       // The venue is the page; the kind is the useful second line.
                       subtitle={g[0].kind}

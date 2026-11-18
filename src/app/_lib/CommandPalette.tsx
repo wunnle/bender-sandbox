@@ -108,6 +108,9 @@ export default function CommandPalette({ items }: { items: SearchItem[] }) {
   // Global shortcuts: Cmd/Ctrl+K toggles; "/" opens when not typing somewhere.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      // A route with its own search (e.g. /istanbul) claims the shortcut in the
+      // capture phase and prevents default; leave it to that one.
+      if (e.defaultPrevented) return;
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
         setOpen(!open);

@@ -247,7 +247,62 @@ export const VENUES: Venue[] = (() => {
   return out;
 })();
 
+/**
+ * IMDb serves the full-resolution master by default — 3158x5000, 1.3MB. The
+ * `UX300` segment asks their CDN for a 300px-wide copy instead, about 24KB.
+ * Lives here, not in ui.tsx, so server metadata can use it too.
+ */
+export const imdbThumb = (url: string) => url.replace(/\._V1_.*?\.jpg$/, "._V1_QL75_UX300_.jpg");
+
 export const venueBySlug = (slug: string) => VENUES.find((v) => v.slug === slug);
+
+/**
+ * One shareable page per title. A film playing six cinemas over four days is
+ * one "show" with many listings; the URL is the title's slug, since the payload
+ * has no ids and titles are what people search and share by.
+ */
+export type Show = {
+  slug: string;
+  title: string;
+  listings: Ev[];
+  days: string[];
+};
+
+const titleKey = (t: string) => t.trim().toLowerCase();
+
+export const SHOWS: Show[] = (() => {
+  const byTitle = new Map<string, Ev[]>();
+  for (const e of EVENTS) {
+    const k = titleKey(e.title);
+    const list = byTitle.get(k);
+    if (list) list.push(e);
+    else byTitle.set(k, [e]);
+  }
+  const taken = new Set<string>();
+  const out: Show[] = [];
+  for (const listings of byTitle.values()) {
+    const base = venueSlug(listings[0].title) || "event";
+    let slug = base;
+    for (let n = 2; taken.has(slug); n += 1) slug = `${base}-${n}`;
+    taken.add(slug);
+    out.push({
+      slug,
+      title: listings[0].title.trim(),
+      listings,
+      days: [...new Set(listings.flatMap((e) => e.days))].sort(),
+    });
+  }
+  return out;
+})();
+
+const SHOW_BY_KEY = new Map(SHOWS.map((s) => [titleKey(s.title), s]));
+
+export const showBySlug = (slug: string) => SHOWS.find((s) => s.slug === slug);
+export const showOf = (e: Ev) => SHOW_BY_KEY.get(titleKey(e.title));
+export const showHref = (e: Ev) => {
+  const s = showOf(e);
+  return s ? `/istanbul/event/${s.slug}` : "/istanbul";
+};
 
 /** Categories present in this payload, in a stable order. */
 export const CATEGORIES = (Object.keys(CATEGORY_META) as Category[]).filter((c) =>

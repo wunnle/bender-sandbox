@@ -1,0 +1,13 @@
+/* Entrance motion for the event dialog and search palette. */
+@keyframes ist-fade {
+  from { opacity: 0; }
+}
+@keyframes ist-up {
+  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+}
+.ist-fade { animation: ist-fade 0.15s ease-out; }
+.ist-up { animation: ist-up 0.22s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ist-fade, .ist-up { animation: none; }
+}
