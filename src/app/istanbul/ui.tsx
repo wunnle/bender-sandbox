@@ -7,7 +7,7 @@
  */
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import {
   CATEGORY_META,
   categoryOf,
@@ -454,6 +454,8 @@ function Hero({
         {inDialog && (
           <Link
             href={href}
+            // The URL already says this page; swap the dialog's entry for the real one.
+            replace
             className={`${pill} text-neutral-400 hover:text-white`}
           >
             Open page →
@@ -500,7 +502,7 @@ function About({ e }: { e: Ev }) {
 }
 
 /** One venue on one day: where, when, how, and the ticket link. */
-function VenueCard({ o, atVenue }: { o: Ev; atVenue?: string }) {
+function VenueCard({ o, atVenue, replace }: { o: Ev; atVenue?: string; replace?: boolean }) {
   const times = sessionTimes(o);
   const price = realPrice(o.price);
   const slug = venueSlug(o.venue ?? "");
@@ -524,6 +526,7 @@ function VenueCard({ o, atVenue }: { o: Ev; atVenue?: string }) {
             {slug && slug !== atVenue && (
               <Link
                 href={`/istanbul/venue/${slug}`}
+                replace={replace}
                 className="ml-1 underline-offset-4 transition hover:text-neutral-300 hover:underline"
               >
                 {o.area ? "· " : ""}venue programme
@@ -616,12 +619,15 @@ function Schedule({
   days,
   atVenue,
   wide,
+  replace,
 }: {
   show: Show;
   days: string[];
   atVenue?: string;
   /** Lay venue cards out in columns — the page with no side column. */
   wide?: boolean;
+  /** Links replace the dialog's history entry instead of stacking on it. */
+  replace?: boolean;
 }) {
   return (
     <div className="space-y-6">
@@ -632,7 +638,7 @@ function Schedule({
           )}
           <ul className={`grid gap-2 ${wide ? "md:grid-cols-2 xl:grid-cols-3" : ""}`}>
             {listingsOn(show, d).map((o, i) => (
-              <VenueCard key={`${o.venue}-${i}`} o={o} atVenue={atVenue} />
+              <VenueCard key={`${o.venue}-${i}`} o={o} atVenue={atVenue} replace={replace} />
             ))}
           </ul>
         </div>
@@ -672,8 +678,36 @@ export function EventDialog({
   const listings = listingsOn(show, day);
   const e = listings[0] ?? show.listings[0];
 
+  /**
+   * The address bar follows the dialog: opening it pushes the event's own URL,
+   * so copying the URL, refreshing or sharing lands on that event's page. Back
+   * closes the dialog rather than leaving the list, and closing it any other
+   * way steps history back so no stale event entry is left behind.
+   */
+  const href = `/istanbul/event/${show.slug}`;
+  const pushed = useRef(false);
+
   useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && onClose();
+    // Guarded so a double-run effect (dev StrictMode) doesn't push twice.
+    if (window.location.pathname !== href) {
+      window.history.pushState(null, "", href);
+      pushed.current = true;
+    }
+    const onPop = () => {
+      if (window.location.pathname !== href) onClose();
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, [href, onClose]);
+
+  const close = useCallback(() => {
+    // popstate then fires and calls onClose.
+    if (pushed.current && window.location.pathname === href) window.history.back();
+    else onClose();
+  }, [href, onClose]);
+
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => ev.key === "Escape" && close();
     window.addEventListener("keydown", onKey);
     // Stop the page scrolling underneath the sheet.
     const prev = document.body.style.overflow;
@@ -682,21 +716,21 @@ export function EventDialog({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [onClose]);
+  }, [close]);
 
   return (
     <div
       role="dialog"
       aria-modal="true"
       aria-label={show.title}
-      onClick={onClose}
+      onClick={close}
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/75 backdrop-blur-sm ist-fade sm:items-center sm:p-6"
     >
       <div
         onClick={(ev) => ev.stopPropagation()}
         className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-white/15 bg-neutral-900 shadow-2xl shadow-black/80 [scrollbar-width:thin] ist-up sm:rounded-3xl"
       >
-        <Hero show={show} e={e} onClose={onClose} inDialog />
+        <Hero show={show} e={e} onClose={close} inDialog />
 
         <div className="space-y-7 px-5 pb-7 pt-2 sm:px-7">
           <section>
@@ -708,7 +742,7 @@ export function EventDialog({
             </div>
             <DayTabs days={days} day={day} onPick={setDay} />
             <div className="mt-3">
-              <Schedule show={show} days={[day]} atVenue={atVenue} />
+              <Schedule show={show} days={[day]} atVenue={atVenue} replace />
             </div>
           </section>
 
